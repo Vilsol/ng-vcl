@@ -14,8 +14,8 @@
     "build:copy": "node copy.js",
     "build:bundle": "webpack --config webpack.config.js --env.ENV production",
     "build": "npm-run-all build:lint build:bundle build:ngc build:copy",
-    "deploy:dist": "",
-    "deploy:docs": "",
+    "deploy:dist": "git-directory-deploy --directory dist --branch dist",
+    "deploy:docs": "git-directory-deploy --directory docs --branch gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npm run build:lint && tslint demo/**/*.ts",
     "docker": "docker run -it -v $(pwd):/app -p 0.0.0.0:3000:3000 node:6.9.1 /bin/bash /app/entrypoint.bash"
@@ -28,10 +28,6 @@
     "web-component",
     "angular",
     "VCL"
-  ],
-  "pre-commit": [
-    "build",
-    "gitadddist"
   ],
   "author": "The ng-vcl authors",
   "license": "MIT",
@@ -77,9 +73,9 @@
     "html-webpack-plugin": "^2.24.1",
     "ignore-loader": "^0.1.2",
     "json-loader": "0.5.4",
+    "marked": "^0.3.6",
     "npm-run-all": "3.1.1",
     "postcss-cli": "2.6.0",
-    "pre-commit": "1.1.3",
     "raw-loader": "0.5.1",
     "rxjs": "5.0.0-rc.1",
     "style-loader": "0.13.1",
@@ -92,8 +88,7 @@
     "vcl-preprocessor": "^0.1.1",
     "webpack": "2.1.0-beta.27",
     "webpack-dev-server": "2.1.0-beta.11",
-    "zone.js": "0.6.26",
-    "marked": "^0.3.6"
+    "zone.js": "0.6.26"
   },
   "dependencies": {
     "hammerjs": "^2.0.8",
