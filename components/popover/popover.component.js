@@ -1,6 +1,6 @@
 "use strict";
 var core_1 = require('@angular/core');
-var overlayManager_service_1 = require('../../services/overlayManager.service');
+var overlayManager_service_1 = require('./overlayManager.service');
 var PopoverComponent = (function () {
     function PopoverComponent(overlayManger, myElement) {
         this.overlayManger = overlayManger;

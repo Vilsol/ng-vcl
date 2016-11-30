@@ -1,13 +1,22 @@
 /// <reference types="core-js" />
 import { EventEmitter, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
-export declare class JssFormObjectComponent {
+import { Observable } from 'rxjs';
+export declare class JssFormObjectComponent implements OnInit {
     schema: any;
     parentPath: string;
     formGroup: FormGroup;
+    error: any;
+    fieldErrors: {};
     constructor();
+    ngOnInit(): void;
+    /**
+     * if no formType is given, this will guess the right one
+     */
     formType(schemaObj: any): string;
     keys(obj: any): string[];
+    keyErrors(parentPath: any, key: any): any;
+    keyErrors$(parentPath: any, key: any): Observable<{}>;
     name(parentPath: any, key: any): string;
     placeholder(schemaObj: any): any;
     radioOptions(schemaObj: any): any;
@@ -28,7 +37,7 @@ export declare class JssFormComponent implements OnInit {
     formGroupFromSchema(schemaObj: any): FormGroup;
     /**
      * validate if value matches schema
-     * @return {?Object[]} error-array or null if no errors
+     * @return {?any[]} error-array or null if no errors
      */
     jsonSchemaValidate(obj: Object, schema?: any): Object[] | null;
     ngAfterViewInit(): void;

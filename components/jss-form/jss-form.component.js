@@ -1,12 +1,41 @@
 "use strict";
 var core_1 = require('@angular/core');
 var forms_1 = require('@angular/forms');
+var rxjs_1 = require('rxjs');
 var Validator = require('jsonschema').Validator; // TODO use import { Validator } from 'jsonschema'; when typings available
 var VALIDATOR;
 var JssFormObjectComponent = (function () {
     function JssFormObjectComponent() {
         this.parentPath = '';
+        this.fieldErrors = {};
     }
+    JssFormObjectComponent.prototype.ngOnInit = function () {
+        /*    console.log('Aaaa');
+            console.dir(this.error);
+            console.dir(this.schema);
+        */
+        var _this = this;
+        if (this.schema.properties) {
+            Object.keys(this.schema.properties)
+                .map(function (key) {
+                _this.error
+                    .filter(function (errAr) { return errAr != null; })
+                    .map(function (errAr) { return errAr
+                    .filter(function (er) { return er.property.startsWith('instance.' + _this.parentPath + key); }); })
+                    .map(function (errAr) {
+                    if (errAr.length == 0)
+                        return null;
+                    else
+                        return errAr.pop().message;
+                })
+                    .subscribe(function (errMsg) { return _this.fieldErrors[key] = errMsg; });
+                // TODO unsubscribe on destroy
+            });
+        }
+    };
+    /**
+     * if no formType is given, this will guess the right one
+     */
     JssFormObjectComponent.prototype.formType = function (schemaObj) {
         if (schemaObj.formType)
             return schemaObj.formType;
@@ -23,6 +52,22 @@ var JssFormObjectComponent = (function () {
     };
     JssFormObjectComponent.prototype.keys = function (obj) {
         return Object.keys(obj);
+    };
+    JssFormObjectComponent.prototype.keyErrors = function (parentPath, key) {
+        if (!this.error)
+            return null;
+        return this.error
+            .map(function (errAr) { return errAr
+            .filter(function (er) { return er.property.startsWith('instance.' + parentPath + key); }); })
+            .map(function (errAr) {
+            if (errAr.length == 0)
+                return null;
+            else
+                return errAr.pop().message;
+        });
+    };
+    JssFormObjectComponent.prototype.keyErrors$ = function (parentPath, key) {
+        return rxjs_1.Observable.from(this.keyErrors(parentPath, key));
     };
     JssFormObjectComponent.prototype.name = function (parentPath, key) {
         var name = parentPath + '.' + key;
@@ -77,6 +122,7 @@ var JssFormObjectComponent = (function () {
         'schema': [{ type: core_1.Input, args: ['schema',] },],
         'parentPath': [{ type: core_1.Input, args: ['parentPath',] },],
         'formGroup': [{ type: core_1.Input, args: ['formGroup',] },],
+        'error': [{ type: core_1.Input, args: ['error',] },],
     };
     return JssFormObjectComponent;
 }());
@@ -117,13 +163,15 @@ var JssFormComponent = (function () {
     };
     /**
      * validate if value matches schema
-     * @return {?Object[]} error-array or null if no errors
+     * @return {?any[]} error-array or null if no errors
      */
     JssFormComponent.prototype.jsonSchemaValidate = function (obj, schema) {
         if (schema === void 0) { schema = this.schema; }
         if (!VALIDATOR)
             VALIDATOR = new Validator();
         var valid = VALIDATOR.validate(obj, schema);
+        //  console.log('errrrrrors:');
+        //  console.dir(valid.errors);
         if (valid.errors.length == 0) {
             this.error.emit(null);
             return null;

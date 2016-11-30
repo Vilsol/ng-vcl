@@ -1,5 +1,5 @@
 import { EventEmitter, ElementRef } from '@angular/core';
-import { OverlayManagerService, OverlayManagedComponent } from '../../services/overlayManager.service';
+import { OverlayManagerService, OverlayManagedComponent } from './overlayManager.service';
 export declare class PopoverComponent implements OverlayManagedComponent {
     protected overlayManger: OverlayManagerService;
     protected myElement: ElementRef;
