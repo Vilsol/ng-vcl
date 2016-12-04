@@ -124,7 +124,7 @@ var CheckboxComponent = (function () {
         'uncheckedIcon': [{ type: core_1.Input },],
         'disabled': [{ type: core_1.Input },],
         'labelPosition': [{ type: core_1.Input, args: ['labelPosition',] },],
-        'tabindex': [{ type: core_1.HostBinding, args: ['attr.tabindex',] }, { type: core_1.Input },],
+        'tabindex': [{ type: core_1.Input },],
         'checked': [{ type: core_1.Input },],
         'checkedChange': [{ type: core_1.Output },],
         'clsVclDisabled': [{ type: core_1.HostBinding, args: ['class.vclDisabled',] },],

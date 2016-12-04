@@ -4,15 +4,12 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var core_1 = require('@angular/core');
 var BehaviorSubject_1 = require('rxjs/BehaviorSubject');
 var Observable_1 = require('rxjs/Observable');
 require('rxjs/add/operator/scan');
-require('rxjs/add/operator/filter');
-require('rxjs/add/operator/pluck');
-require('rxjs/add/operator/map');
-require('rxjs/add/operator/distinctUntilChanged');
 require('rxjs/add/operator/withLatestFrom');
+require('rxjs/add/operator/distinctUntilChanged');
+var core_1 = require('@angular/core');
 var actions_1 = require('./actions');
 var observable_1 = require('./observable');
 var utils_1 = require('./utils');
@@ -32,7 +29,7 @@ var Store = (function (_super) {
         this.state$ = this.actions$.withLatestFrom(this.reducer$).scan(function (currentState, _a) {
             var action = _a[0], reducer = _a[1];
             return reducer(currentState, action);
-        }, this.initialState).publishReplay(1);
+        }, this.initialState).distinctUntilChanged().publishReplay(1);
         // The source of the store observable is also the state stream
         this.source = this.state$;
         // Listen to actions by connecting the state observable
@@ -47,7 +44,6 @@ var Store = (function (_super) {
         enumerable: true,
         configurable: true
     });
-    ;
     Store.prototype.replaceReducer = function (reducer) {
         if (typeof reducer === 'object') {
             this._reducer.next(utils_1.combineReducers(reducer));

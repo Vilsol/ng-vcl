@@ -7,11 +7,13 @@ var core_1 = require('@angular/core');
 var store_1 = require('./store');
 var actions_1 = require('./actions');
 var effects_1 = require('./effects');
+var router_1 = require('./router');
 __export(require('./actions'));
 __export(require('./utils'));
 __export(require('./effects'));
 __export(require('./observable'));
 __export(require('./store'));
+__export(require('./router'));
 var StoreModule = (function () {
     function StoreModule() {
     }
@@ -40,11 +42,16 @@ var StoreModule = (function () {
         else {
             initialReducer = function (appState) { return appState; };
         }
+        // Merge router reducer
+        if (config.enableRouter) {
+            initialReducer = utils_1.reduceReducers(initialReducer, router_1.routerReducer);
+        }
         return {
             ngModule: StoreModule,
             providers: [
                 actions_1.StoreActions,
                 store_1.Store,
+                router_1.StoreRouter,
                 effects_1.Effects,
                 {
                     provide: store_1.STORE_INITIAL_STATE,
@@ -53,8 +60,15 @@ var StoreModule = (function () {
                 {
                     provide: store_1.STORE_INITIAL_REDUCER,
                     useValue: initialReducer
+                },
+            ].concat((config.enableRouter ? [
+                router_1.StoreRouter,
+                {
+                    provide: effects_1.STORE_EFFECTS,
+                    useClass: router_1.StoreRouterEffects,
+                    multi: true
                 }
-            ].concat((config.effects || []).map(function (type) {
+            ] : []), (config.effects || []).map(function (type) {
                 return {
                     provide: effects_1.STORE_EFFECTS,
                     useClass: type,
@@ -75,7 +89,7 @@ var StoreModule = (function () {
                         },
                         {
                             provide: store_1.STORE_INITIAL_REDUCER,
-                            useValue: {}
+                            useValue: function (appState) { return appState; }
                         }
                     ]
                 },] },

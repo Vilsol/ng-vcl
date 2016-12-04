@@ -1,4 +1,3 @@
-/// <reference types="core-js" />
 import { Router } from '@angular/router';
 import { QueryList, EventEmitter } from '@angular/core';
 export declare class NavigationItemComponent {
@@ -17,9 +16,8 @@ export declare class NavigationItemComponent {
     /**
      * transforms this NavigationItemComponent insto an object,
      * so it can be handled the same way as an inputList
-     * @return {Object}
      */
-    toObject(): Object;
+    toObject(): any;
 }
 export declare class NavigationComponent {
     private router;

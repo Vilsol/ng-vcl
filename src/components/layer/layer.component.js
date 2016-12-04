@@ -56,6 +56,7 @@ var LayerDirective = (function (_super) {
         this.layerService = layerService;
         this.visibilityChange$ = new core_1.EventEmitter();
         this.modal = true;
+        this.base = 'default';
         this.data = {};
         this.visible = false;
     }
@@ -95,8 +96,10 @@ var LayerDirective = (function (_super) {
         if (typeof data === 'object' && data) {
             this.data = data;
         }
-        this.visible = true;
-        this.visibilityChange$.emit(this.visible);
+        if (!this.visible) {
+            this.visible = true;
+            this.visibilityChange$.emit(this.visible);
+        }
         return this._instanceResults.asObservable();
     };
     LayerDirective.prototype.send = function (result) {
@@ -105,14 +108,16 @@ var LayerDirective = (function (_super) {
         }
     };
     LayerDirective.prototype.close = function (result) {
+        this.data = {};
         if (result !== undefined && this._instanceResults) {
             this._instanceResults.next(result);
             this._instanceResults.complete();
+            this._instanceResults = null;
         }
-        this.data = {};
-        this._instanceResults = null;
-        this.visible = false;
-        this.visibilityChange$.emit(this.visible);
+        if (this.visible) {
+            this.visible = false;
+            this.visibilityChange$.emit(this.visible);
+        }
     };
     LayerDirective.decorators = [
         { type: core_1.Directive, args: [{

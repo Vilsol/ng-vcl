@@ -1,24 +1,36 @@
 "use strict";
-var Subject_1 = require('rxjs/Subject');
+var BehaviorSubject_1 = require('rxjs/BehaviorSubject');
 var core_1 = require('@angular/core');
 var Observable_1 = require('rxjs/Observable');
+;
 var LayerService = (function () {
     function LayerService() {
         this.layerNameMap = new Map();
         this.layerMap = new Map();
-        this._visibleLayers = new Subject_1.Subject();
-        this._visibleLayers$ = this._visibleLayers.asObservable().scan(function (accLayers, layer) {
-            if (layer.visible) {
-                return accLayers.concat([layer]);
-            }
-            else {
-                return accLayers.filter(function (l) { return layer !== l; });
-            }
-        }, []);
+        this.visibleLayers = {};
+        this._visibleLayers = new BehaviorSubject_1.BehaviorSubject(this.visibleLayers);
     }
     LayerService.prototype.visibleLayersFor = function (base) {
         if (base === void 0) { base = 'default'; }
-        return this._visibleLayers$.map(function (layers) { return layers.filter(function (layer) { return layer.base !== base; }); });
+        return this._visibleLayers.asObservable().map(function (layers) { return layers[base] || []; }).distinctUntilChanged();
+    };
+    LayerService.prototype.getVisibleLayers = function (base) {
+        if (base === void 0) { base = 'default'; }
+        return this.visibleLayers[base] || [];
+    };
+    LayerService.prototype.hasVisibleLayers = function (base) {
+        if (base === void 0) { base = 'default'; }
+        return this.getVisibleLayers(base).length > 0;
+    };
+    LayerService.prototype.closeAll = function (base) {
+        if (base === void 0) { base = 'default'; }
+        this.getVisibleLayers(base).forEach(function (layer) { return layer.close(); });
+    };
+    LayerService.prototype.closeTop = function (base) {
+        if (base === void 0) { base = 'default'; }
+        var layer = this.getVisibleLayers(base).slice(-1)[0];
+        if (layer)
+            layer.close();
     };
     LayerService.prototype.open = function (layerName, data) {
         if (this.layerNameMap.has(layerName)) {
@@ -33,14 +45,22 @@ var LayerService = (function () {
             this.layerNameMap.get(layerName).close();
         }
     };
-    LayerService.prototype.register = function (layer, base) {
+    LayerService.prototype.register = function (layer) {
         var _this = this;
-        if (base === void 0) { base = 'default'; }
         if (layer.name && this.layerNameMap.has(layer.name)) {
             throw 'Duplicate layer name: ' + layer.name;
         }
         this.layerMap.set(layer, layer.visibilityChange$.subscribe(function () {
-            _this._visibleLayers.next(layer);
+            if (!_this.visibleLayers[layer.base]) {
+                _this.visibleLayers[layer.base] = [];
+            }
+            if (layer.visible) {
+                _this.visibleLayers[layer.base] = _this.visibleLayers[layer.base].concat([layer]);
+            }
+            else {
+                _this.visibleLayers[layer.base] = _this.visibleLayers[layer.base].filter(function (l) { return layer !== l; });
+            }
+            _this._visibleLayers.next(_this.visibleLayers);
         }));
         if (layer.name) {
             this.layerNameMap.set(layer.name, layer);

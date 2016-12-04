@@ -20,7 +20,6 @@ export declare class ButtonGroupComponent implements OnDestroy {
     private _change;
     readonly change: Observable<ButtonGroupChange>;
     buttons: QueryList<ButtonComponent>;
-    constructor();
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
     ngAfterContentInit(): void;

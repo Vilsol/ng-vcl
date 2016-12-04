@@ -1,6 +1,6 @@
 "use strict";
-var core_1 = require('@angular/core');
 var merge_1 = require('rxjs/observable/merge');
+var core_1 = require('@angular/core');
 var store_1 = require('./store');
 var EFFECTS_METADATA_KEY = 'ng-vcl/effects';
 exports.STORE_EFFECTS = new core_1.OpaqueToken('store.effects');

@@ -12,7 +12,6 @@ var NavigationItemComponent = (function () {
     /**
      * transforms this NavigationItemComponent insto an object,
      * so it can be handled the same way as an inputList
-     * @return {Object}
      */
     NavigationItemComponent.prototype.toObject = function () {
         var ret = {
@@ -28,7 +27,7 @@ var NavigationItemComponent = (function () {
         };
         if (this.route) {
             ret['route'] = this.route;
-            if (!ret['route'].length)
+            if (!Array.isArray(ret['route']))
                 ret['route'] = [ret['route']]; // force array
         }
         // add nested items

@@ -5,6 +5,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = require('rxjs/Observable');
+require('rxjs/add/operator/distinctUntilChanged');
+require('rxjs/add/operator/pluck');
+require('rxjs/add/operator/map');
 function select(path) {
     var paths = [];
     for (var _i = 1; _i < arguments.length; _i++) {

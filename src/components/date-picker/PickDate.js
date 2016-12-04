@@ -185,8 +185,10 @@ var PickDate = (function () {
         var oneDay = 24 * 60 * 60 * 1000;
         return Math.round(Math.abs((this.date.getTime() - to.date.getTime()) / (oneDay))) + 1;
     };
-    PickDate.prototype.dir = function () { console.dir(this.date); return ''; };
-    ;
+    PickDate.prototype.dir = function () {
+        console.dir(this.date);
+        return '';
+    };
     PickDate.monthNames = [
         'January',
         'February',

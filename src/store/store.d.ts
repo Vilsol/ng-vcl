@@ -1,14 +1,11 @@
 import { ConnectableObservable } from 'rxjs/observable/ConnectableObservable';
-import { OpaqueToken } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 import { Observer } from 'rxjs/Observer';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/scan';
-import 'rxjs/add/operator/filter';
-import 'rxjs/add/operator/pluck';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/operator/withLatestFrom';
+import 'rxjs/add/operator/distinctUntilChanged';
+import { OpaqueToken } from '@angular/core';
 import { StoreActions } from './actions';
 import { StoreObservable } from './observable';
 export declare const STORE_INITIAL_REDUCER: OpaqueToken;

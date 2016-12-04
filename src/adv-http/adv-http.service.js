@@ -136,42 +136,34 @@ var AdvHttp = (function (_super) {
         var _this = this;
         return _super.prototype.request.call(this, url, options).let(function (o) { return _this.errorHandler.attach(o, errorStrategy || _this.config.defaultErrorHandlingStrategy); });
     };
-    ;
     AdvHttp.prototype.get = function (url, options, errorStrategy) {
         var _this = this;
         return _super.prototype.get.call(this, url, options).let(function (o) { return _this.errorHandler.attach(o, errorStrategy || _this.config.defaultErrorHandlingStrategy); });
     };
-    ;
     AdvHttp.prototype.post = function (url, body, options, errorStrategy) {
         var _this = this;
         return _super.prototype.post.call(this, url, body, options).let(function (o) { return _this.errorHandler.attach(o, errorStrategy || _this.config.defaultErrorHandlingStrategy); });
     };
-    ;
     AdvHttp.prototype.put = function (url, body, options, errorStrategy) {
         var _this = this;
         return _super.prototype.put.call(this, url, body, options).let(function (o) { return _this.errorHandler.attach(o, errorStrategy || _this.config.defaultErrorHandlingStrategy); });
     };
-    ;
     AdvHttp.prototype.delete = function (url, options, errorStrategy) {
         var _this = this;
         return _super.prototype.delete.call(this, url, options).let(function (o) { return _this.errorHandler.attach(o, errorStrategy || _this.config.defaultErrorHandlingStrategy); });
     };
-    ;
     AdvHttp.prototype.patch = function (url, body, options, errorStrategy) {
         var _this = this;
         return _super.prototype.patch.call(this, url, body, options).let(function (o) { return _this.errorHandler.attach(o, errorStrategy || _this.config.defaultErrorHandlingStrategy); });
     };
-    ;
     AdvHttp.prototype.head = function (url, options, errorStrategy) {
         var _this = this;
         return _super.prototype.head.call(this, url, options).let(function (o) { return _this.errorHandler.attach(o, errorStrategy || _this.config.defaultErrorHandlingStrategy); });
     };
-    ;
     AdvHttp.prototype.options = function (url, options, errorStrategy) {
         var _this = this;
         return _super.prototype.options.call(this, url, options).let(function (o) { return _this.errorHandler.attach(o, errorStrategy || _this.config.defaultErrorHandlingStrategy); });
     };
-    ;
     AdvHttp.decorators = [
         { type: core_1.Injectable },
     ];
