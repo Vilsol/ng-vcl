@@ -1,9 +1,5 @@
 "use strict";
 var core_1 = require('@angular/core');
-function setAnimations(cls, animations) {
-    setAnnotation(cls, 'animations', animations);
-}
-exports.setAnimations = setAnimations;
 function setAnnotation(cls, key, value) {
     var annotation = getAnnotation(cls);
     // Change metadata
@@ -21,3 +17,7 @@ function getAnnotation(cls) {
     }
     return clsAnnotations[0];
 }
+function setAnimations(cls, animations) {
+    setAnnotation(cls, 'animations', animations);
+}
+exports.setAnimations = setAnimations;
