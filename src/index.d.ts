@@ -1,7 +1,5 @@
 import 'hammerjs';
 export * from './core/index';
-export * from './components/input/input.module';
-export * from './components/textarea/textarea.module';
 export * from './components/icon/icon.module';
 export * from './components/icogram/icogram.module';
 export * from './components/button/button.module';

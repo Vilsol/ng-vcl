@@ -34,6 +34,7 @@ export declare class SelectComponent implements ControlValueAccessor {
     ngOnInit(): void;
     ngAfterContentInit(): void;
     reDisplayValue(newValue: any): void;
+    selectItem(item: any): void;
     expand: () => boolean;
     onOutsideClick: () => false;
     onSelect(newItems: any[]): void;

@@ -98,6 +98,9 @@ var SelectComponent = (function () {
                 .join(', ');
         }
     };
+    SelectComponent.prototype.selectItem = function (item) {
+        this.dropdown.selectItem(item);
+    };
     SelectComponent.prototype.onSelect = function (newItems) {
         if (this.maxSelectableItems == 1)
             this.value = newItems[0].value; // single-select

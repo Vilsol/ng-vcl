@@ -5,7 +5,6 @@ function __export(m) {
 var core_1 = require('@angular/core');
 require('hammerjs');
 var input_module_1 = require('./components/input/input.module');
-var textarea_module_1 = require('./components/textarea/textarea.module');
 var flip_switch_module_1 = require('./components/flip-switch/flip-switch.module');
 var icon_module_1 = require('./components/icon/icon.module');
 var metalist_module_1 = require('./components/metalist/metalist.module');
@@ -38,8 +37,6 @@ var slider_module_1 = require('./components/slider/slider.module');
 var jss_form_module_1 = require('./components/jss-form/jss-form.module');
 var input_control_group_module_1 = require('./components/input-control-group/input-control-group.module');
 __export(require('./core/index'));
-__export(require('./components/input/input.module'));
-__export(require('./components/textarea/textarea.module'));
 __export(require('./components/icon/icon.module'));
 __export(require('./components/icogram/icogram.module'));
 __export(require('./components/button/button.module'));
@@ -84,7 +81,6 @@ var VCLModule = (function () {
                         tether_module_1.VCLTetherModule,
                         link_module_1.VCLLinkModule,
                         input_module_1.VCLInputModule,
-                        textarea_module_1.VCLTextareaModule,
                         flip_switch_module_1.VCLFlipSwitchModule,
                         tab_nav_module_1.VCLTabNavModule,
                         navigation_module_1.VCLNavigationModule,
@@ -119,7 +115,6 @@ var VCLModule = (function () {
                         tether_module_1.VCLTetherModule,
                         link_module_1.VCLLinkModule,
                         input_module_1.VCLInputModule,
-                        textarea_module_1.VCLTextareaModule,
                         flip_switch_module_1.VCLFlipSwitchModule,
                         tab_nav_module_1.VCLTabNavModule,
                         navigation_module_1.VCLNavigationModule,
