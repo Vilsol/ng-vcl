@@ -10,8 +10,8 @@ var VCLButtonModule = (function () {
     VCLButtonModule.decorators = [
         { type: core_1.NgModule, args: [{
                     imports: [common_1.CommonModule, icogram_module_1.VCLIcogramModule, l10n_module_1.L10nModule],
-                    exports: [button_component_1.ButtonComponent],
-                    declarations: [button_component_1.ButtonComponent],
+                    exports: [button_component_1.ButtonComponent, button_component_1.ButtonContentDirective],
+                    declarations: [button_component_1.ButtonComponent, button_component_1.ButtonContentDirective],
                     providers: [],
                 },] },
     ];

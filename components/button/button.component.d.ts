@@ -1,12 +1,25 @@
+import { Subscription } from 'rxjs/Subscription';
 import { Observable } from 'rxjs/Observable';
-import { OnInit, ElementRef } from '@angular/core';
-export declare class ButtonComponent implements OnInit {
+import 'rxjs/add/operator/distinctUntilChanged';
+import { ElementRef, TemplateRef, ViewContainerRef, QueryList } from '@angular/core';
+import { ObservableComponent } from '../../core/index';
+export declare class ButtonContentDirective {
+    private viewContainerRef;
+    private tempRef;
+    constructor(viewContainerRef: ViewContainerRef, tempRef: TemplateRef<any>);
+    private hasView;
+    state: string;
+    render(state: string): void;
+}
+export declare class ButtonComponent extends ObservableComponent {
     private elementRef;
     pressed: boolean;
     focused: boolean;
     hovered: boolean;
     selected: boolean;
     title: string;
+    disabled: boolean;
+    readonly isDisabled: boolean;
     busy: boolean;
     flexLabel: boolean;
     busyLabel: string;
@@ -18,8 +31,17 @@ export declare class ButtonComponent implements OnInit {
     appIconBusy: string;
     private _press;
     readonly press: Observable<any>;
+    private _stateChange;
+    readonly stateChange: Observable<string>;
+    readonly state: string;
+    state$: Observable<string>;
+    label$: Observable<string>;
+    prepIcon$: Observable<string>;
+    appIcon$: Observable<string>;
+    buttonContent: QueryList<ButtonContentDirective>;
+    stateSub: Subscription;
+    pressSub: Subscription;
     constructor(elementRef: ElementRef);
-    ngOnInit(): void;
     onMouseEnter(e: any): void;
     onMouseLeave(e: any): void;
     onMouseUp(e: any): void;
@@ -27,7 +49,6 @@ export declare class ButtonComponent implements OnInit {
     onFocus(e: any): void;
     onBlur(e: any): void;
     onTap(e: any): void;
-    readonly calculatedLabel: string;
-    readonly calculatedPrepIcon: string;
-    readonly calculatedAppIcon: string;
+    ngAfterViewInit(): void;
+    ngOnDestoy(): void;
 }

@@ -10,5 +10,5 @@ export declare abstract class ObservableComponent {
     ngOnChanges(changes: {
         [key: string]: SimpleChange;
     }): void;
-    observeChange<T>(propertyName: string): Observable<T>;
+    observeChange<T>(...props: string[]): Observable<T>;
 }
