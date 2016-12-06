@@ -17,8 +17,8 @@ export declare class SelectOptionComponent {
 export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any;
 export declare class SelectComponent implements ControlValueAccessor {
     popoverTarget: string;
+    dropdown: any;
     value: string | string[];
-    select: EventEmitter<any[]>;
     expanded: boolean;
     items: any[];
     templateItems: QueryList<SelectOptionComponent>;
@@ -28,18 +28,16 @@ export declare class SelectComponent implements ControlValueAccessor {
     collapsedIcon: string;
     displayValue: string;
     changeEE: EventEmitter<string | string[]>;
-    dropdown: any;
-    selectedItems: any;
     constructor();
+    expand: () => boolean;
+    onOutsideClick: () => false;
     ngOnInit(): void;
     ngAfterContentInit(): void;
     reDisplayValue(newValue: any): void;
     selectItem(item: any): void;
-    expand: () => boolean;
-    onOutsideClick: () => false;
     onSelect(newItems: any[]): void;
     /**
-     * things needed for ControlValueAccessor-Interface
+     * Things needed for ControlValueAccessor-Interface.
      */
     private onTouchedCallback;
     private onChangeCallback;

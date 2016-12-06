@@ -44,7 +44,6 @@ var SelectComponent = (function () {
     function SelectComponent() {
         var _this = this;
         this.popoverTarget = 'popoverTarget' + Math.random().toString().slice(2); // TODO cant this be solved via view/content-childs?
-        this.select = new core_1.EventEmitter();
         this.expanded = false;
         // options
         this.items = [];
@@ -131,8 +130,8 @@ var SelectComponent = (function () {
     /** @nocollapse */
     SelectComponent.ctorParameters = [];
     SelectComponent.propDecorators = {
+        'dropdown': [{ type: core_1.ViewChild, args: ['dropdown',] },],
         'value': [{ type: core_1.Input, args: ['value',] },],
-        'select': [{ type: core_1.Output, args: ['select',] },],
         'expanded': [{ type: core_1.Input, args: ['expanded',] },],
         'items': [{ type: core_1.Input, args: ['items',] },],
         'templateItems': [{ type: core_1.ContentChildren, args: [SelectOptionComponent,] },],
@@ -141,8 +140,7 @@ var SelectComponent = (function () {
         'expandedIcon': [{ type: core_1.Input },],
         'collapsedIcon': [{ type: core_1.Input },],
         'displayValue': [{ type: core_1.Input, args: ['displayValue',] },],
-        'changeEE': [{ type: core_1.Output, args: ['change',] },],
-        'dropdown': [{ type: core_1.ViewChild, args: ['dropdown',] },],
+        'changeEE': [{ type: core_1.Output, args: ['select',] },],
     };
     return SelectComponent;
 }());

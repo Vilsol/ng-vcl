@@ -11563,7 +11563,6 @@ var SelectComponent = (function () {
     function SelectComponent() {
         var _this = this;
         this.popoverTarget = 'popoverTarget' + Math.random().toString().slice(2); // TODO cant this be solved via view/content-childs?
-        this.select = new core_1.EventEmitter();
         this.expanded = false;
         // options
         this.items = [];
@@ -11641,13 +11640,13 @@ var SelectComponent = (function () {
     };
     __decorate([
         // TODO cant this be solved via view/content-childs?
+        core_1.ViewChild('dropdown'), 
+        __metadata('design:type', Object)
+    ], SelectComponent.prototype, "dropdown", void 0);
+    __decorate([
         core_1.Input('value'), 
         __metadata('design:type', Object)
     ], SelectComponent.prototype, "value", void 0);
-    __decorate([
-        core_1.Output('select'), 
-        __metadata('design:type', Object)
-    ], SelectComponent.prototype, "select", void 0);
     __decorate([
         core_1.Input('expanded'), 
         __metadata('design:type', Boolean)
@@ -11681,14 +11680,9 @@ var SelectComponent = (function () {
         __metadata('design:type', String)
     ], SelectComponent.prototype, "displayValue", void 0);
     __decorate([
-        core_1.Output('change'), 
+        core_1.Output('select'), 
         __metadata('design:type', Object)
     ], SelectComponent.prototype, "changeEE", void 0);
-    __decorate([
-        // string[] if multi-select
-        core_1.ViewChild('dropdown'), 
-        __metadata('design:type', Object)
-    ], SelectComponent.prototype, "dropdown", void 0);
     SelectComponent = __decorate([
         core_1.Component({
             selector: 'vcl-select',
