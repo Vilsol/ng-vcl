@@ -73,7 +73,7 @@ var ProgressBarComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    ProgressBarComponent.ctorParameters = [];
+    ProgressBarComponent.ctorParameters = function () { return []; };
     ProgressBarComponent.propDecorators = {
         'value': [{ type: core_1.Input },],
         'secondaryValue': [{ type: core_1.Input },],

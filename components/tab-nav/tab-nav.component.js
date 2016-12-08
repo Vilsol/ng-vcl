@@ -18,9 +18,9 @@ var TabLabelDirective = (function (_super) {
                 },] },
     ];
     /** @nocollapse */
-    TabLabelDirective.ctorParameters = [
+    TabLabelDirective.ctorParameters = function () { return [
         { type: core_1.TemplateRef, },
-    ];
+    ]; };
     return TabLabelDirective;
 }(wormhole_module_1.WormholeGenerator));
 exports.TabLabelDirective = TabLabelDirective;
@@ -36,9 +36,9 @@ var TabContentDirective = (function (_super) {
                 },] },
     ];
     /** @nocollapse */
-    TabContentDirective.ctorParameters = [
+    TabContentDirective.ctorParameters = function () { return [
         { type: core_1.TemplateRef, },
-    ];
+    ]; };
     return TabContentDirective;
 }(wormhole_module_1.WormholeGenerator));
 exports.TabContentDirective = TabContentDirective;
@@ -53,7 +53,7 @@ var TabComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    TabComponent.ctorParameters = [];
+    TabComponent.ctorParameters = function () { return []; };
     TabComponent.propDecorators = {
         'label': [{ type: core_1.ContentChild, args: [TabLabelDirective,] },],
         'content': [{ type: core_1.ContentChild, args: [TabContentDirective,] },],
@@ -119,7 +119,7 @@ var TabNavComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    TabNavComponent.ctorParameters = [];
+    TabNavComponent.ctorParameters = function () { return []; };
     TabNavComponent.propDecorators = {
         'tabs': [{ type: core_1.ContentChildren, args: [TabComponent,] },],
         'content': [{ type: core_1.ContentChild, args: [TabContentDirective,] },],

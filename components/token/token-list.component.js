@@ -41,7 +41,7 @@ var TokenListComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    TokenListComponent.ctorParameters = [];
+    TokenListComponent.ctorParameters = function () { return []; };
     TokenListComponent.propDecorators = {
         'tokens': [{ type: core_1.Input, args: ['tokens',] },],
         'onChange': [{ type: core_1.Output, args: ['onChange',] },],

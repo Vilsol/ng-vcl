@@ -15,7 +15,7 @@ var VCLFormControlLabelModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLFormControlLabelModule.ctorParameters = [];
+    VCLFormControlLabelModule.ctorParameters = function () { return []; };
     return VCLFormControlLabelModule;
 }());
 exports.VCLFormControlLabelModule = VCLFormControlLabelModule;

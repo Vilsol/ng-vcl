@@ -28,10 +28,10 @@ var ButtonContentDirective = (function () {
         { type: core_1.Directive, args: [{ selector: '[vcl-button-content]' },] },
     ];
     /** @nocollapse */
-    ButtonContentDirective.ctorParameters = [
+    ButtonContentDirective.ctorParameters = function () { return [
         { type: core_1.ViewContainerRef, },
         { type: core_1.TemplateRef, },
-    ];
+    ]; };
     ButtonContentDirective.propDecorators = {
         'state': [{ type: core_1.Input },],
     };
@@ -129,9 +129,9 @@ var ButtonComponent = (function (_super) {
                 },] },
     ];
     /** @nocollapse */
-    ButtonComponent.ctorParameters = [
+    ButtonComponent.ctorParameters = function () { return [
         { type: core_1.ElementRef, },
-    ];
+    ]; };
     ButtonComponent.propDecorators = {
         'hovered': [{ type: core_1.HostBinding, args: ['class.vclHovered',] },],
         'selected': [{ type: core_1.Input }, { type: core_1.HostBinding, args: ['class.vclSelected',] },],

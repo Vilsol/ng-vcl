@@ -14,7 +14,7 @@ var VCLInputControlGroupModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLInputControlGroupModule.ctorParameters = [];
+    VCLInputControlGroupModule.ctorParameters = function () { return []; };
     return VCLInputControlGroupModule;
 }());
 exports.VCLInputControlGroupModule = VCLInputControlGroupModule;

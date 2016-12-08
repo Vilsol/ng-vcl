@@ -16,7 +16,7 @@ var VCLFlipSwitchModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLFlipSwitchModule.ctorParameters = [];
+    VCLFlipSwitchModule.ctorParameters = function () { return []; };
     return VCLFlipSwitchModule;
 }());
 exports.VCLFlipSwitchModule = VCLFlipSwitchModule;

@@ -16,7 +16,7 @@ var VCLNavigationModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLNavigationModule.ctorParameters = [];
+    VCLNavigationModule.ctorParameters = function () { return []; };
     return VCLNavigationModule;
 }());
 exports.VCLNavigationModule = VCLNavigationModule;

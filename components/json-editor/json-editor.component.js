@@ -65,7 +65,7 @@ var JsonEditorComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    JsonEditorComponent.ctorParameters = [];
+    JsonEditorComponent.ctorParameters = function () { return []; };
     JsonEditorComponent.propDecorators = {
         'el': [{ type: core_1.ViewChild, args: ['el',] },],
         'mode': [{ type: core_1.Input, args: ['mode',] },],

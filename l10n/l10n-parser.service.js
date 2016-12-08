@@ -29,7 +29,7 @@ var L10nFormatParserService = (function (_super) {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    L10nFormatParserService.ctorParameters = [];
+    L10nFormatParserService.ctorParameters = function () { return []; };
     return L10nFormatParserService;
 }(L10nParserService));
 exports.L10nFormatParserService = L10nFormatParserService;

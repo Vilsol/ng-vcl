@@ -55,9 +55,9 @@ var L10nPipe = (function () {
                 },] },
     ];
     /** @nocollapse */
-    L10nPipe.ctorParameters = [
+    L10nPipe.ctorParameters = function () { return [
         { type: l10n_service_1.L10nService, decorators: [{ type: core_1.Optional },] },
-    ];
+    ]; };
     return L10nPipe;
 }());
 exports.L10nPipe = L10nPipe;

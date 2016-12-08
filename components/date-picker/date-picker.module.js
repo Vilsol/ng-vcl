@@ -16,7 +16,7 @@ var VCLDatePickerModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLDatePickerModule.ctorParameters = [];
+    VCLDatePickerModule.ctorParameters = function () { return []; };
     return VCLDatePickerModule;
 }());
 exports.VCLDatePickerModule = VCLDatePickerModule;

@@ -64,7 +64,7 @@ var DropdownComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    DropdownComponent.ctorParameters = [];
+    DropdownComponent.ctorParameters = function () { return []; };
     DropdownComponent.propDecorators = {
         'metalist': [{ type: core_1.ViewChild, args: ['metalist',] },],
         'select': [{ type: core_1.Output },],

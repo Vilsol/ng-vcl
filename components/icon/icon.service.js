@@ -42,7 +42,7 @@ var IconService = (function () {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    IconService.ctorParameters = [];
+    IconService.ctorParameters = function () { return []; };
     return IconService;
 }());
 exports.IconService = IconService;

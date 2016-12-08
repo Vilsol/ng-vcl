@@ -43,9 +43,9 @@ var LinkComponent = (function (_super) {
                 },] },
     ];
     /** @nocollapse */
-    LinkComponent.ctorParameters = [
+    LinkComponent.ctorParameters = function () { return [
         { type: l10n_module_1.L10nService, },
-    ];
+    ]; };
     LinkComponent.propDecorators = {
         'href': [{ type: core_1.Input },],
         'label': [{ type: core_1.Input },],

@@ -8,7 +8,7 @@ import 'rxjs/add/operator/distinctUntilChanged';
 import { OpaqueToken } from '@angular/core';
 import { StoreActions } from './actions';
 import { StoreObservable } from './observable';
-export declare const STORE_INITIAL_REDUCER: OpaqueToken;
+export declare const STORE_INITIAL_REDUCERS: OpaqueToken;
 export declare const STORE_INITIAL_STATE: OpaqueToken;
 export interface StoreState {
     [key: string]: any;
@@ -22,8 +22,8 @@ export interface Reducers {
 export declare class Store extends Observable<any> implements Observer<StoreState> {
     private actions$;
     private initialState;
-    private initialReducer;
-    constructor(actions$: StoreActions, initialState: any, initialReducer: Reducer<StoreState>);
+    private initialReducers;
+    constructor(actions$: StoreActions, initialState: any, initialReducers: Reducer<StoreState>[]);
     private _reducer;
     private readonly reducer$;
     state$: ConnectableObservable<StoreState>;

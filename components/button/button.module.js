@@ -16,7 +16,7 @@ var VCLButtonModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLButtonModule.ctorParameters = [];
+    VCLButtonModule.ctorParameters = function () { return []; };
     return VCLButtonModule;
 }());
 exports.VCLButtonModule = VCLButtonModule;

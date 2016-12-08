@@ -47,10 +47,10 @@ var Effects = (function () {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    Effects.ctorParameters = [
+    Effects.ctorParameters = function () { return [
         { type: store_1.Store, },
         { type: Array, decorators: [{ type: core_1.Optional }, { type: core_1.Inject, args: [exports.STORE_EFFECTS,] },] },
-    ];
+    ]; };
     return Effects;
 }());
 exports.Effects = Effects;

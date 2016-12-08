@@ -14,7 +14,7 @@ var VCLRadioButtonModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLRadioButtonModule.ctorParameters = [];
+    VCLRadioButtonModule.ctorParameters = function () { return []; };
     return VCLRadioButtonModule;
 }());
 exports.VCLRadioButtonModule = VCLRadioButtonModule;

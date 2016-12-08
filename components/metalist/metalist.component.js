@@ -119,7 +119,7 @@ var MetalistComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    MetalistComponent.ctorParameters = [];
+    MetalistComponent.ctorParameters = function () { return []; };
     MetalistComponent.propDecorators = {
         'select': [{ type: core_1.Output },],
         'items': [{ type: core_1.Input },],

@@ -114,9 +114,9 @@ var RadioButtonComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    RadioButtonComponent.ctorParameters = [
+    RadioButtonComponent.ctorParameters = function () { return [
         { type: core_1.ElementRef, },
-    ];
+    ]; };
     RadioButtonComponent.propDecorators = {
         'checkedIcon': [{ type: core_1.Input },],
         'uncheckedIcon': [{ type: core_1.Input },],

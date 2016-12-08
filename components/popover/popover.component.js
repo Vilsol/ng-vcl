@@ -63,11 +63,11 @@ var PopoverComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    PopoverComponent.ctorParameters = [
+    PopoverComponent.ctorParameters = function () { return [
         { type: overlayManager_service_1.OverlayManagerService, },
         { type: core_1.ElementRef, },
         { type: core_1.NgZone, },
-    ];
+    ]; };
     PopoverComponent.propDecorators = {
         'target': [{ type: core_1.Input },],
         'style': [{ type: core_1.Input },],

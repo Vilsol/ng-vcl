@@ -15,7 +15,7 @@ var VCLMetalistModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLMetalistModule.ctorParameters = [];
+    VCLMetalistModule.ctorParameters = function () { return []; };
     return VCLMetalistModule;
 }());
 exports.VCLMetalistModule = VCLMetalistModule;

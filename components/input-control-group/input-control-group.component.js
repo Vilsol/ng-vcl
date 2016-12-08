@@ -55,9 +55,9 @@ var InputControlGroup = (function () {
                 },] },
     ];
     /** @nocollapse */
-    InputControlGroup.ctorParameters = [
+    InputControlGroup.ctorParameters = function () { return [
         { type: core_1.ElementRef, },
-    ];
+    ]; };
     InputControlGroup.propDecorators = {
         'type': [{ type: core_1.Input, args: ['type',] },],
         'label': [{ type: core_1.Input, args: ['label',] },],

@@ -52,9 +52,9 @@ var TetherComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    TetherComponent.ctorParameters = [
+    TetherComponent.ctorParameters = function () { return [
         { type: core_1.ElementRef, },
-    ];
+    ]; };
     TetherComponent.propDecorators = {
         'target': [{ type: core_1.Input },],
         'class': [{ type: core_1.Input },],

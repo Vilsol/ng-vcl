@@ -25,7 +25,7 @@ var SelectOptionComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    SelectOptionComponent.ctorParameters = [];
+    SelectOptionComponent.ctorParameters = function () { return []; };
     SelectOptionComponent.propDecorators = {
         'value': [{ type: core_1.Input, args: ['value',] },],
         'label': [{ type: core_1.Input, args: ['label',] },],
@@ -128,7 +128,7 @@ var SelectComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    SelectComponent.ctorParameters = [];
+    SelectComponent.ctorParameters = function () { return []; };
     SelectComponent.propDecorators = {
         'dropdown': [{ type: core_1.ViewChild, args: ['dropdown',] },],
         'value': [{ type: core_1.Input, args: ['value',] },],

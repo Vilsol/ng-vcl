@@ -15,7 +15,7 @@ var VCLRadioGroupModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLRadioGroupModule.ctorParameters = [];
+    VCLRadioGroupModule.ctorParameters = function () { return []; };
     return VCLRadioGroupModule;
 }());
 exports.VCLRadioGroupModule = VCLRadioGroupModule;

@@ -13,7 +13,7 @@ var VCLInputModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLInputModule.ctorParameters = [];
+    VCLInputModule.ctorParameters = function () { return []; };
     return VCLInputModule;
 }());
 exports.VCLInputModule = VCLInputModule;

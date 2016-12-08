@@ -13,7 +13,7 @@ var VCLWormholeModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLWormholeModule.ctorParameters = [];
+    VCLWormholeModule.ctorParameters = function () { return []; };
     return VCLWormholeModule;
 }());
 exports.VCLWormholeModule = VCLWormholeModule;

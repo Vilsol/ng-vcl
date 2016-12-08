@@ -13,7 +13,7 @@ var VCLProgressBarModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLProgressBarModule.ctorParameters = [];
+    VCLProgressBarModule.ctorParameters = function () { return []; };
     return VCLProgressBarModule;
 }());
 exports.VCLProgressBarModule = VCLProgressBarModule;

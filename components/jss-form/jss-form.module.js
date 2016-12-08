@@ -30,7 +30,7 @@ var VCLJssFormModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLJssFormModule.ctorParameters = [];
+    VCLJssFormModule.ctorParameters = function () { return []; };
     return VCLJssFormModule;
 }());
 exports.VCLJssFormModule = VCLJssFormModule;

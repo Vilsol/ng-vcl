@@ -20,7 +20,7 @@ var VCLLayerModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLLayerModule.ctorParameters = [];
+    VCLLayerModule.ctorParameters = function () { return []; };
     return VCLLayerModule;
 }());
 exports.VCLLayerModule = VCLLayerModule;

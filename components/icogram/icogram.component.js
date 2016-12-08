@@ -16,9 +16,9 @@ var IcogramComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    IcogramComponent.ctorParameters = [
+    IcogramComponent.ctorParameters = function () { return [
         { type: core_1.ElementRef, },
-    ];
+    ]; };
     IcogramComponent.propDecorators = {
         'label': [{ type: core_1.Input },],
         'flexLabel': [{ type: core_1.Input },],

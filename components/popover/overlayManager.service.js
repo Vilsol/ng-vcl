@@ -23,7 +23,7 @@ var OverlayManagerService = (function () {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    OverlayManagerService.ctorParameters = [];
+    OverlayManagerService.ctorParameters = function () { return []; };
     return OverlayManagerService;
 }());
 exports.OverlayManagerService = OverlayManagerService;

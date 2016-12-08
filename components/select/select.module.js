@@ -19,7 +19,7 @@ var VCLSelectModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLSelectModule.ctorParameters = [];
+    VCLSelectModule.ctorParameters = function () { return []; };
     return VCLSelectModule;
 }());
 exports.VCLSelectModule = VCLSelectModule;

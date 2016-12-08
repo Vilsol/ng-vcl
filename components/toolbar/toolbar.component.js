@@ -19,7 +19,7 @@ var ToolbarComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    ToolbarComponent.ctorParameters = [];
+    ToolbarComponent.ctorParameters = function () { return []; };
     ToolbarComponent.propDecorators = {
         'ariaLevel': [{ type: core_1.Input },],
     };

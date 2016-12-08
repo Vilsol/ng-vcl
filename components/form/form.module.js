@@ -13,7 +13,7 @@ var VCLFormModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLFormModule.ctorParameters = [];
+    VCLFormModule.ctorParameters = function () { return []; };
     return VCLFormModule;
 }());
 exports.VCLFormModule = VCLFormModule;

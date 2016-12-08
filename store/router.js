@@ -74,11 +74,11 @@ var StoreRouterEffects = (function () {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    StoreRouterEffects.ctorParameters = [
+    StoreRouterEffects.ctorParameters = function () { return [
         { type: router_1.Router, },
         { type: store_1.Store, },
         { type: actions_1.StoreActions, },
-    ];
+    ]; };
     __decorate([
         effects_1.Effect(), 
         __metadata('design:type', Object)
@@ -104,9 +104,9 @@ var StoreRouter = (function () {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    StoreRouter.ctorParameters = [
+    StoreRouter.ctorParameters = function () { return [
         { type: store_1.Store, },
-    ];
+    ]; };
     return StoreRouter;
 }());
 exports.StoreRouter = StoreRouter;

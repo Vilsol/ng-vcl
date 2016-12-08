@@ -32,9 +32,9 @@ var IconComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    IconComponent.ctorParameters = [
+    IconComponent.ctorParameters = function () { return [
         { type: icon_service_1.IconService, },
-    ];
+    ]; };
     IconComponent.propDecorators = {
         'src': [{ type: core_1.Input },],
         'svguse': [{ type: core_1.Input },],

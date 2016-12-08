@@ -29,7 +29,7 @@ var VCLIconModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLIconModule.ctorParameters = [];
+    VCLIconModule.ctorParameters = function () { return []; };
     return VCLIconModule;
 }());
 exports.VCLIconModule = VCLIconModule;

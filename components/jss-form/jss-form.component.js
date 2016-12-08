@@ -117,7 +117,7 @@ var JssFormObjectComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    JssFormObjectComponent.ctorParameters = [];
+    JssFormObjectComponent.ctorParameters = function () { return []; };
     JssFormObjectComponent.propDecorators = {
         'schema': [{ type: core_1.Input, args: ['schema',] },],
         'parentPath': [{ type: core_1.Input, args: ['parentPath',] },],
@@ -188,9 +188,9 @@ var JssFormComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    JssFormComponent.ctorParameters = [
+    JssFormComponent.ctorParameters = function () { return [
         { type: forms_1.FormBuilder, },
-    ];
+    ]; };
     JssFormComponent.propDecorators = {
         'schema': [{ type: core_1.Input, args: ['schema',] },],
         'value': [{ type: core_1.Input, args: ['value',] },],

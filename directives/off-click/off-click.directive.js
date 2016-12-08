@@ -33,9 +33,9 @@ var OffClickDirective = (function () {
                 },] },
     ];
     /** @nocollapse */
-    OffClickDirective.ctorParameters = [
+    OffClickDirective.ctorParameters = function () { return [
         { type: core_1.ElementRef, },
-    ];
+    ]; };
     OffClickDirective.propDecorators = {
         'offClick': [{ type: core_1.Output, args: ['off-click',] },],
     };

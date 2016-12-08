@@ -45,7 +45,7 @@ var NavigationItemComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    NavigationItemComponent.ctorParameters = [];
+    NavigationItemComponent.ctorParameters = function () { return []; };
     NavigationItemComponent.propDecorators = {
         'label': [{ type: core_1.Input, args: ['label',] },],
         'route': [{ type: core_1.Input, args: ['route',] },],
@@ -152,9 +152,9 @@ var NavigationComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    NavigationComponent.ctorParameters = [
+    NavigationComponent.ctorParameters = function () { return [
         { type: router_1.Router, },
-    ];
+    ]; };
     NavigationComponent.propDecorators = {
         'ident': [{ type: core_1.Input, args: ['ident',] },],
         'selectedItem': [{ type: core_1.Input },],

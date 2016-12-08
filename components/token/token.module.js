@@ -19,7 +19,7 @@ var VCLTokenModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLTokenModule.ctorParameters = [];
+    VCLTokenModule.ctorParameters = function () { return []; };
     return VCLTokenModule;
 }());
 exports.VCLTokenModule = VCLTokenModule;

@@ -47,10 +47,10 @@ var TextareaDirective = (function () {
                 },] },
     ];
     /** @nocollapse */
-    TextareaDirective.ctorParameters = [
+    TextareaDirective.ctorParameters = function () { return [
         { type: core_1.ElementRef, },
         { type: forms_1.NgModel, },
-    ];
+    ]; };
     TextareaDirective.propDecorators = {
         'selectAllOnFocus': [{ type: core_1.Input },],
         'autogrow': [{ type: core_1.Input },],

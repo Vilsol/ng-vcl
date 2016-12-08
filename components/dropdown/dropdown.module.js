@@ -16,7 +16,7 @@ var VCLDropdownModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLDropdownModule.ctorParameters = [];
+    VCLDropdownModule.ctorParameters = function () { return []; };
     return VCLDropdownModule;
 }());
 exports.VCLDropdownModule = VCLDropdownModule;

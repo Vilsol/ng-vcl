@@ -16,7 +16,7 @@ var VCLLinkModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLLinkModule.ctorParameters = [];
+    VCLLinkModule.ctorParameters = function () { return []; };
     return VCLLinkModule;
 }());
 exports.VCLLinkModule = VCLLinkModule;

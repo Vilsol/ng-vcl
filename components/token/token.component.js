@@ -20,7 +20,7 @@ var TokenComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    TokenComponent.ctorParameters = [];
+    TokenComponent.ctorParameters = function () { return []; };
     TokenComponent.propDecorators = {
         'label': [{ type: core_1.Input, args: ['label',] },],
         'selected': [{ type: core_1.Input, args: ['selected',] },],

@@ -142,11 +142,11 @@ var L10nService = (function () {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    L10nService.ctorParameters = [
+    L10nService.ctorParameters = function () { return [
         { type: undefined, decorators: [{ type: core_1.Inject, args: [exports.L10N_CONFIG,] },] },
         { type: l10n_loader_service_1.L10nLoaderService, },
         { type: l10n_parser_service_1.L10nParserService, },
-    ];
+    ]; };
     return L10nService;
 }());
 exports.L10nService = L10nService;

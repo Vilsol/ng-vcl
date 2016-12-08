@@ -120,7 +120,7 @@ var ButtonGroupComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    ButtonGroupComponent.ctorParameters = [];
+    ButtonGroupComponent.ctorParameters = function () { return []; };
     ButtonGroupComponent.propDecorators = {
         'selectionMode': [{ type: core_1.Input },],
         'mode': [{ type: core_1.Input },],

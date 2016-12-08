@@ -45,7 +45,7 @@ function combineReducers(reducers) {
             nextState[key] = nextStateForKey;
             hasChanged = hasChanged || nextStateForKey !== previousStateForKey;
         }
-        return hasChanged ? nextState : state;
+        return hasChanged ? Object.assign({}, state, nextState) : state;
     };
 }
 exports.combineReducers = combineReducers;

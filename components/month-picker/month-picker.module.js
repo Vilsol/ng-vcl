@@ -16,7 +16,7 @@ var VCLMonthPickerModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLMonthPickerModule.ctorParameters = [];
+    VCLMonthPickerModule.ctorParameters = function () { return []; };
     return VCLMonthPickerModule;
 }());
 exports.VCLMonthPickerModule = VCLMonthPickerModule;

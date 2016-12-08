@@ -90,7 +90,7 @@ var LayerService = (function () {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    LayerService.ctorParameters = [];
+    LayerService.ctorParameters = function () { return []; };
     return LayerService;
 }());
 exports.LayerService = LayerService;

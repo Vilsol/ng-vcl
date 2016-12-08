@@ -234,7 +234,7 @@ var MonthPickerComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    MonthPickerComponent.ctorParameters = [];
+    MonthPickerComponent.ctorParameters = function () { return []; };
     MonthPickerComponent.propDecorators = {
         'prevYearBtnIcon': [{ type: core_1.Input },],
         'nextYearBtnIcon': [{ type: core_1.Input },],

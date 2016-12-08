@@ -29,7 +29,7 @@ var LabelComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    LabelComponent.ctorParameters = [];
+    LabelComponent.ctorParameters = function () { return []; };
     LabelComponent.propDecorators = {
         'label': [{ type: core_1.Input, args: ['label',] },],
         'subLabel': [{ type: core_1.Input, args: ['subLabel',] },],

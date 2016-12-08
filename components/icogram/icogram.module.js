@@ -16,7 +16,7 @@ var VCLIcogramModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLIcogramModule.ctorParameters = [];
+    VCLIcogramModule.ctorParameters = function () { return []; };
     return VCLIcogramModule;
 }());
 exports.VCLIcogramModule = VCLIcogramModule;

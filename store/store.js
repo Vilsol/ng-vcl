@@ -13,17 +13,17 @@ var core_1 = require('@angular/core');
 var actions_1 = require('./actions');
 var observable_1 = require('./observable');
 var utils_1 = require('./utils');
-exports.STORE_INITIAL_REDUCER = new core_1.OpaqueToken('store.reducers');
-exports.STORE_INITIAL_STATE = new core_1.OpaqueToken('store.state');
+exports.STORE_INITIAL_REDUCERS = new core_1.OpaqueToken('store.initial.reducers');
+exports.STORE_INITIAL_STATE = new core_1.OpaqueToken('store.initial.state');
 var Store = (function (_super) {
     __extends(Store, _super);
-    function Store(actions$, initialState, initialReducer) {
+    function Store(actions$, initialState, initialReducers) {
         _super.call(this);
         this.actions$ = actions$;
         this.initialState = initialState;
-        this.initialReducer = initialReducer;
+        this.initialReducers = initialReducers;
         // The reducer stream
-        this._reducer = new BehaviorSubject_1.BehaviorSubject(this.initialReducer);
+        this._reducer = new BehaviorSubject_1.BehaviorSubject(utils_1.reduceReducers.apply(void 0, this.initialReducers));
         // The state changes when an action is dispatched by running reducers
         // The new state is then cached for further subscribers
         this.state$ = this.actions$.withLatestFrom(this.reducer$).scan(function (currentState, _a) {
@@ -77,11 +77,11 @@ var Store = (function (_super) {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    Store.ctorParameters = [
+    Store.ctorParameters = function () { return [
         { type: actions_1.StoreActions, },
         { type: undefined, decorators: [{ type: core_1.Inject, args: [exports.STORE_INITIAL_STATE,] },] },
-        { type: undefined, decorators: [{ type: core_1.Inject, args: [exports.STORE_INITIAL_REDUCER,] },] },
-    ];
+        { type: Array, decorators: [{ type: core_1.Inject, args: [exports.STORE_INITIAL_REDUCERS,] },] },
+    ]; };
     return Store;
 }(Observable_1.Observable));
 exports.Store = Store;

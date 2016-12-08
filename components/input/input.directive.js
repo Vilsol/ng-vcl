@@ -44,9 +44,9 @@ var InputDirective = (function () {
                 },] },
     ];
     /** @nocollapse */
-    InputDirective.ctorParameters = [
+    InputDirective.ctorParameters = function () { return [
         { type: core_1.ElementRef, },
-    ];
+    ]; };
     InputDirective.propDecorators = {
         'valueType': [{ type: core_1.Input },],
         'typedValue': [{ type: core_1.Input },],

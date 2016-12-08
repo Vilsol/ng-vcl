@@ -139,7 +139,7 @@ var DatePickerComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    DatePickerComponent.ctorParameters = [];
+    DatePickerComponent.ctorParameters = function () { return []; };
     DatePickerComponent.propDecorators = {
         'closeOnSelect': [{ type: core_1.Input, args: ['closeOnSelect',] },],
         'highlightToday': [{ type: core_1.Input, args: ['highlightToday',] },],

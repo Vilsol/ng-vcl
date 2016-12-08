@@ -15,7 +15,7 @@ var VCLToolbarModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLToolbarModule.ctorParameters = [];
+    VCLToolbarModule.ctorParameters = function () { return []; };
     return VCLToolbarModule;
 }());
 exports.VCLToolbarModule = VCLToolbarModule;

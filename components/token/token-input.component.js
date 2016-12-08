@@ -45,7 +45,7 @@ var TokenInputComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    TokenInputComponent.ctorParameters = [];
+    TokenInputComponent.ctorParameters = function () { return []; };
     TokenInputComponent.propDecorators = {
         'tokens': [{ type: core_1.Input, args: ['tokens',] },],
     };

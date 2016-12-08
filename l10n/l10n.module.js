@@ -69,7 +69,7 @@ var L10nModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    L10nModule.ctorParameters = [];
+    L10nModule.ctorParameters = function () { return []; };
     return L10nModule;
 }());
 exports.L10nModule = L10nModule;

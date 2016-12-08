@@ -15,7 +15,7 @@ var VCLSliderModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLSliderModule.ctorParameters = [];
+    VCLSliderModule.ctorParameters = function () { return []; };
     return VCLSliderModule;
 }());
 exports.VCLSliderModule = VCLSliderModule;

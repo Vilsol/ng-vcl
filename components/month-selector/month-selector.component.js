@@ -121,7 +121,7 @@ var MonthSelectorComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    MonthSelectorComponent.ctorParameters = [];
+    MonthSelectorComponent.ctorParameters = function () { return []; };
     return MonthSelectorComponent;
 }());
 exports.MonthSelectorComponent = MonthSelectorComponent;

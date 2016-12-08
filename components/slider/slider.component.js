@@ -131,7 +131,7 @@ var SliderComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    SliderComponent.ctorParameters = [];
+    SliderComponent.ctorParameters = function () { return []; };
     SliderComponent.propDecorators = {
         'value': [{ type: core_1.Input, args: ['value',] },],
         'min': [{ type: core_1.Input, args: ['min',] },],

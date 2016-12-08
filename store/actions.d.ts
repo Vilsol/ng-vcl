@@ -10,6 +10,7 @@ export declare class StoreActions extends Observable<any> implements Observer<an
     private _dispatcher;
     actions$: Observable<any>;
     source: Observable<any>;
+    constructor();
     ofType(...actionClasses: Action[]): Observable<any>;
     dispatch(action: any): void;
     next(action: any): void;

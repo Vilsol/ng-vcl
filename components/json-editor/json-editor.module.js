@@ -16,7 +16,7 @@ var VCLJsonEditorModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLJsonEditorModule.ctorParameters = [];
+    VCLJsonEditorModule.ctorParameters = function () { return []; };
     return VCLJsonEditorModule;
 }());
 exports.VCLJsonEditorModule = VCLJsonEditorModule;

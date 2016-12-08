@@ -14,7 +14,7 @@ var VCLTextareaModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLTextareaModule.ctorParameters = [];
+    VCLTextareaModule.ctorParameters = function () { return []; };
     return VCLTextareaModule;
 }());
 exports.VCLTextareaModule = VCLTextareaModule;

@@ -11,7 +11,7 @@ var VCLOffClickModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLOffClickModule.ctorParameters = [];
+    VCLOffClickModule.ctorParameters = function () { return []; };
     return VCLOffClickModule;
 }());
 exports.VCLOffClickModule = VCLOffClickModule;

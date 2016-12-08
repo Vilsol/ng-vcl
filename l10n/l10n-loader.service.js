@@ -56,9 +56,9 @@ var L10nStaticLoaderService = (function (_super) {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    L10nStaticLoaderService.ctorParameters = [
+    L10nStaticLoaderService.ctorParameters = function () { return [
         { type: undefined, decorators: [{ type: core_1.Inject, args: [exports.L10N_LOADER_CONFIG,] },] },
-    ];
+    ]; };
     return L10nStaticLoaderService;
 }(L10nLoaderService));
 exports.L10nStaticLoaderService = L10nStaticLoaderService;
@@ -74,7 +74,7 @@ var L10nNoopLoaderService = (function (_super) {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    L10nNoopLoaderService.ctorParameters = [];
+    L10nNoopLoaderService.ctorParameters = function () { return []; };
     return L10nNoopLoaderService;
 }(L10nLoaderService));
 exports.L10nNoopLoaderService = L10nNoopLoaderService;

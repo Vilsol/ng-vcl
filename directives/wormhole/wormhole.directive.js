@@ -28,9 +28,9 @@ var WormholeGenerator = (function () {
                 },] },
     ];
     /** @nocollapse */
-    WormholeGenerator.ctorParameters = [
+    WormholeGenerator.ctorParameters = function () { return [
         { type: core_1.TemplateRef, },
-    ];
+    ]; };
     return WormholeGenerator;
 }());
 exports.WormholeGenerator = WormholeGenerator;
@@ -89,9 +89,9 @@ var Wormhole = (function () {
                 },] },
     ];
     /** @nocollapse */
-    Wormhole.ctorParameters = [
+    Wormhole.ctorParameters = function () { return [
         { type: core_1.ViewContainerRef, },
-    ];
+    ]; };
     Wormhole.propDecorators = {
         'indisposable': [{ type: core_1.Input, args: ['wormhole-indisposable',] },],
         'wormhole': [{ type: core_1.Input, args: ['wormhole',] },],

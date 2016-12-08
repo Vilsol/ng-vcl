@@ -13,7 +13,7 @@ var VCLTetherModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLTetherModule.ctorParameters = [];
+    VCLTetherModule.ctorParameters = function () { return []; };
     return VCLTetherModule;
 }());
 exports.VCLTetherModule = VCLTetherModule;

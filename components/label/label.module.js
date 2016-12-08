@@ -16,7 +16,7 @@ var VCLLabelModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLLabelModule.ctorParameters = [];
+    VCLLabelModule.ctorParameters = function () { return []; };
     return VCLLabelModule;
 }());
 exports.VCLLabelModule = VCLLabelModule;

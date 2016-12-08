@@ -121,7 +121,7 @@ var ErrorHandlerService = (function () {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    ErrorHandlerService.ctorParameters = [];
+    ErrorHandlerService.ctorParameters = function () { return []; };
     return ErrorHandlerService;
 }());
 exports.ErrorHandlerService = ErrorHandlerService;
@@ -168,12 +168,12 @@ var AdvHttp = (function (_super) {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    AdvHttp.ctorParameters = [
+    AdvHttp.ctorParameters = function () { return [
         { type: undefined, decorators: [{ type: core_1.Inject, args: [exports.ADV_HTTP_CONFIG,] },] },
         { type: ErrorHandlerService, },
         { type: http_1.ConnectionBackend, },
         { type: http_1.RequestOptions, },
-    ];
+    ]; };
     return AdvHttp;
 }(http_1.Http));
 exports.AdvHttp = AdvHttp;

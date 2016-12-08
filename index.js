@@ -148,7 +148,7 @@ var VCLModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLModule.ctorParameters = [];
+    VCLModule.ctorParameters = function () { return []; };
     return VCLModule;
 }());
 exports.VCLModule = VCLModule;

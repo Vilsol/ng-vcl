@@ -21,7 +21,7 @@ var FormComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    FormComponent.ctorParameters = [];
+    FormComponent.ctorParameters = function () { return []; };
     FormComponent.propDecorators = {
         'layout': [{ type: core_1.Input },],
         'valueChange': [{ type: core_1.Output, args: ['ngSubmit',] },],

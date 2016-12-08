@@ -21,7 +21,7 @@ var FormControlLabelComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    FormControlLabelComponent.ctorParameters = [];
+    FormControlLabelComponent.ctorParameters = function () { return []; };
     FormControlLabelComponent.propDecorators = {
         'disabled': [{ type: core_1.Input }, { type: core_1.HostBinding, args: ['class.vclDisabled',] },],
         'requiredIndicatorCharacter': [{ type: core_1.Input },],

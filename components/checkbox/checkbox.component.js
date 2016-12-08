@@ -116,9 +116,9 @@ var CheckboxComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    CheckboxComponent.ctorParameters = [
+    CheckboxComponent.ctorParameters = function () { return [
         { type: core_1.ElementRef, },
-    ];
+    ]; };
     CheckboxComponent.propDecorators = {
         'checkedIcon': [{ type: core_1.Input },],
         'uncheckedIcon': [{ type: core_1.Input },],

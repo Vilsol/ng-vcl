@@ -16,7 +16,7 @@ var VCLTabNavModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLTabNavModule.ctorParameters = [];
+    VCLTabNavModule.ctorParameters = function () { return []; };
     return VCLTabNavModule;
 }());
 exports.VCLTabNavModule = VCLTabNavModule;

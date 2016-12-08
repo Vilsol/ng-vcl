@@ -15,7 +15,7 @@ var VCLCheckboxModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLCheckboxModule.ctorParameters = [];
+    VCLCheckboxModule.ctorParameters = function () { return []; };
     return VCLCheckboxModule;
 }());
 exports.VCLCheckboxModule = VCLCheckboxModule;

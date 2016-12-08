@@ -37,9 +37,9 @@ var LayerBaseComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    LayerBaseComponent.ctorParameters = [
+    LayerBaseComponent.ctorParameters = function () { return [
         { type: layer_service_1.LayerService, },
-    ];
+    ]; };
     LayerBaseComponent.propDecorators = {
         'name': [{ type: core_1.Input },],
         'zIndex': [{ type: core_1.Input },],
@@ -126,11 +126,11 @@ var LayerDirective = (function (_super) {
                 },] },
     ];
     /** @nocollapse */
-    LayerDirective.ctorParameters = [
+    LayerDirective.ctorParameters = function () { return [
         { type: core_1.TemplateRef, },
         { type: core_1.ElementRef, },
         { type: layer_service_1.LayerService, },
-    ];
+    ]; };
     LayerDirective.propDecorators = {
         'visibilityChange': [{ type: core_1.Output },],
         'modal': [{ type: core_1.Input },],

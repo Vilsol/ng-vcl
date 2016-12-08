@@ -17,7 +17,7 @@ exports.InitAction = InitAction;
 var StoreActions = (function (_super) {
     __extends(StoreActions, _super);
     function StoreActions() {
-        _super.apply(this, arguments);
+        _super.call(this);
         // Action dispatcher
         this._dispatcher = new Subject_1.Subject();
         // Action stream ist just the last action
@@ -44,7 +44,7 @@ var StoreActions = (function (_super) {
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    StoreActions.ctorParameters = [];
+    StoreActions.ctorParameters = function () { return []; };
     return StoreActions;
 }(Observable_1.Observable));
 exports.StoreActions = StoreActions;

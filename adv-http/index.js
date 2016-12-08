@@ -62,7 +62,7 @@ var AdvHttpModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    AdvHttpModule.ctorParameters = [];
+    AdvHttpModule.ctorParameters = function () { return []; };
     return AdvHttpModule;
 }());
 exports.AdvHttpModule = AdvHttpModule;

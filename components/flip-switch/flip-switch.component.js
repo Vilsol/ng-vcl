@@ -39,7 +39,7 @@ var FlipSwitchComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    FlipSwitchComponent.ctorParameters = [];
+    FlipSwitchComponent.ctorParameters = function () { return []; };
     FlipSwitchComponent.propDecorators = {
         'onLabel': [{ type: core_1.Input, args: ['onLabel',] },],
         'offLabel': [{ type: core_1.Input, args: ['offLabel',] },],

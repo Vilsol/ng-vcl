@@ -23,7 +23,7 @@ var VCLPopoverModule = (function () {
                 },] },
     ];
     /** @nocollapse */
-    VCLPopoverModule.ctorParameters = [];
+    VCLPopoverModule.ctorParameters = function () { return []; };
     return VCLPopoverModule;
 }());
 exports.VCLPopoverModule = VCLPopoverModule;

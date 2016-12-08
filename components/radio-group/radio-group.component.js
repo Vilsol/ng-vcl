@@ -42,7 +42,7 @@ var RadioGroupComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    RadioGroupComponent.ctorParameters = [];
+    RadioGroupComponent.ctorParameters = function () { return []; };
     RadioGroupComponent.propDecorators = {
         'value': [{ type: core_1.Input, args: ['value',] },],
         'options': [{ type: core_1.Input, args: ['options',] },],
