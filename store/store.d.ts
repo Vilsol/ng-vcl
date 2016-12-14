@@ -6,7 +6,7 @@ import 'rxjs/add/operator/scan';
 import 'rxjs/add/operator/withLatestFrom';
 import 'rxjs/add/operator/distinctUntilChanged';
 import { OpaqueToken } from '@angular/core';
-import { StoreActions } from './actions';
+import { StoreActions, Action } from './actions';
 import { StoreObservable } from './observable';
 export declare const STORE_INITIAL_REDUCERS: OpaqueToken;
 export declare const STORE_INITIAL_STATE: OpaqueToken;
@@ -19,8 +19,14 @@ export interface Reducer<TState> {
 export interface Reducers {
     [key: string]: Reducer<any>;
 }
+export declare class StoreInitAction {
+}
+export declare class StoreErrorAction {
+    err: any;
+    constructor(err: any);
+}
 export declare class Store extends Observable<any> implements Observer<StoreState> {
-    private actions$;
+    actions$: StoreActions;
     private initialState;
     private initialReducers;
     constructor(actions$: StoreActions, initialState: any, initialReducers: Reducer<StoreState>[]);
@@ -34,6 +40,7 @@ export declare class Store extends Observable<any> implements Observer<StoreStat
     select<U>(path: {
         (value: any): U;
     } | string, ...paths: string[]): StoreObservable<U>;
+    actionOfType(...actionClasses: Action[]): Observable<any>;
     next(action: any): void;
     error(err: any): void;
     complete(): void;

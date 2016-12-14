@@ -61,7 +61,8 @@ var JsonEditorComponent = (function () {
                     styles: [JSONEditorCSS],
                     encapsulation: core_1.ViewEncapsulation.None,
                     templateUrl: 'json-editor.component.html',
-                    providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+                    providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
+                    changeDetection: core_1.ChangeDetectionStrategy.OnPush
                 },] },
     ];
     /** @nocollapse */

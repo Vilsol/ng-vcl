@@ -8,12 +8,6 @@ var Subject_1 = require('rxjs/Subject');
 var Observable_1 = require('rxjs/Observable');
 require('rxjs/add/operator/filter');
 var core_1 = require('@angular/core');
-var InitAction = (function () {
-    function InitAction() {
-    }
-    return InitAction;
-}());
-exports.InitAction = InitAction;
 var StoreActions = (function (_super) {
     __extends(StoreActions, _super);
     function StoreActions() {

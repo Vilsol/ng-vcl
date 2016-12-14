@@ -1,8 +1,6 @@
 import { Observer } from 'rxjs/Observer';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/filter';
-export declare class InitAction {
-}
 export interface Action {
     new (...args: any[]): any;
 }

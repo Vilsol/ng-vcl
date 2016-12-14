@@ -4,7 +4,6 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-require('rxjs/add/operator/distinctUntilChanged');
 require('rxjs/add/operator/publishBehavior');
 var core_1 = require('@angular/core');
 var index_1 = require('../../core/index');

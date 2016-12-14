@@ -9,16 +9,18 @@ exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
 var FlipSwitchComponent = (function () {
     function FlipSwitchComponent() {
         var _this = this;
+        this.onLabel = 'On';
+        this.offLabel = 'Off';
         this.value = false;
-        this.toggle$ = new core_1.EventEmitter();
-        this.toggle$.subscribe(function (newVal) {
+        this.change$ = new core_1.EventEmitter();
+        this.change$.subscribe(function (newVal) {
             _this.value = newVal;
             !!_this.onChangeCallback && _this.onChangeCallback(newVal);
         });
     }
     FlipSwitchComponent.prototype.onClick = function () {
         this.value = !this.value;
-        this.toggle$.emit(this.value);
+        this.change$.emit(this.value);
     };
     FlipSwitchComponent.prototype.writeValue = function (value) {
         if (value !== this.value)
@@ -44,7 +46,7 @@ var FlipSwitchComponent = (function () {
         'onLabel': [{ type: core_1.Input, args: ['onLabel',] },],
         'offLabel': [{ type: core_1.Input, args: ['offLabel',] },],
         'value': [{ type: core_1.Input, args: ['value',] },],
-        'toggle$': [{ type: core_1.Output },],
+        'change$': [{ type: core_1.Output, args: ['change',] },],
     };
     return FlipSwitchComponent;
 }());

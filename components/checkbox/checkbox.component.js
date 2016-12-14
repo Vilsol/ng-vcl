@@ -112,7 +112,8 @@ var CheckboxComponent = (function () {
                         '[class.vclCheckbox]': 'true',
                         '[class.vclScale130p]': 'true',
                     },
-                    providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+                    providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
+                    changeDetection: core_1.ChangeDetectionStrategy.OnPush
                 },] },
     ];
     /** @nocollapse */
@@ -123,7 +124,7 @@ var CheckboxComponent = (function () {
         'checkedIcon': [{ type: core_1.Input },],
         'uncheckedIcon': [{ type: core_1.Input },],
         'disabled': [{ type: core_1.Input },],
-        'labelPosition': [{ type: core_1.Input, args: ['labelPosition',] },],
+        'labelPosition': [{ type: core_1.Input },],
         'tabindex': [{ type: core_1.Input },],
         'checked': [{ type: core_1.Input },],
         'checkedChange': [{ type: core_1.Output },],

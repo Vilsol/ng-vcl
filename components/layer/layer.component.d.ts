@@ -2,23 +2,13 @@ import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Subscription';
 import { Observable } from 'rxjs/Observable';
 import { EventEmitter, TemplateRef, ElementRef } from '@angular/core';
-import { WormholeGenerator } from './../../directives/wormhole/wormhole.module';
+import { TemplateWormhole } from './../../directives/wormhole/wormhole.module';
 import { LayerService } from './layer.service';
-export declare class LayerBaseComponent {
-    private layerService;
-    visibleLayers: any[];
-    sub: Subscription;
-    name: string;
-    zIndex: number;
-    constructor(layerService: LayerService);
-    ngOnInit(): void;
-    ngOnDestroy(): void;
-}
 export interface LayerData {
     [key: string]: any;
 }
-export declare class LayerDirective extends WormholeGenerator {
-    protected templateRef: TemplateRef<any>;
+export declare class LayerDirective extends TemplateWormhole {
+    templateRef: TemplateRef<any>;
     private elementRef;
     private layerService;
     visibilityChange$: EventEmitter<boolean>;
@@ -38,4 +28,14 @@ export declare class LayerDirective extends WormholeGenerator {
     open(data?: LayerData): Observable<any>;
     send(result: any): void;
     close(result?: any): void;
+}
+export declare class LayerBaseComponent {
+    private layerService;
+    visibleLayers: LayerDirective[];
+    sub: Subscription;
+    name: string;
+    zIndex: number;
+    constructor(layerService: LayerService);
+    ngOnInit(): void;
+    ngOnDestroy(): void;
 }

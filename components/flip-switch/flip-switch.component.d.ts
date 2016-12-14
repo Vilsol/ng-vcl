@@ -5,9 +5,9 @@ export declare class FlipSwitchComponent implements ControlValueAccessor {
     onLabel: string;
     offLabel: string;
     value: boolean;
-    toggle$: EventEmitter<boolean>;
-    onClick(): void;
+    change$: EventEmitter<boolean>;
     constructor();
+    onClick(): void;
     /**
      * things needed for ControlValueAccessor-Interface
      */

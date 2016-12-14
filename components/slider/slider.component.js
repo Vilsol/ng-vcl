@@ -81,14 +81,14 @@ var SliderComponent = (function () {
     SliderComponent.prototype.onTap = function (event) {
         if (event.target.className == 'vclSliderKnob')
             return;
-        var layerX = event.changedPointers[0].layerX;
-        if (layerX != 0) {
-            this.percentLeftKnob = this.deltaPxToPercent(layerX);
-            if (this.stepsOnly)
-                this.percentLeftKnob = this.closestScalePoint(this.percentLeftKnob);
-            this.value = this.percentToValue(this.percentLeftKnob);
-            !!this.onChangeCallback && this.onChangeCallback(this.value);
-        }
+        var railX = event.changedPointers[0].offsetX;
+        if (railX <= 0)
+            return;
+        this.percentLeftKnob = this.deltaPxToPercent(railX);
+        if (this.stepsOnly)
+            this.percentLeftKnob = this.closestScalePoint(this.percentLeftKnob);
+        this.value = this.percentToValue(this.percentLeftKnob);
+        !!this.onChangeCallback && this.onChangeCallback(this.value);
     };
     SliderComponent.prototype.onPan = function (ev) {
         if (this.firstPan) {
@@ -127,7 +127,8 @@ var SliderComponent = (function () {
                     providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
                     host: {
                         '[class.vclSlider]': 'true'
-                    }
+                    },
+                    changeDetection: core_1.ChangeDetectionStrategy.OnPush
                 },] },
     ];
     /** @nocollapse */

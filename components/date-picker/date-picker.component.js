@@ -131,8 +131,11 @@ var DatePickerComponent = (function () {
         { type: core_1.Component, args: [{
                     selector: 'vcl-date-picker',
                     templateUrl: 'date-picker.component.html',
-                    styles: [".hidden{display:none;}"],
+                    styles: [
+                        ".hidden{display:none;}\n     .date-picker-pointer{cursor: pointer;}\n    "
+                    ],
                     providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
+                    changeDetection: core_1.ChangeDetectionStrategy.OnPush,
                     host: {
                         '[class.vclDatePicker]': 'true'
                     }

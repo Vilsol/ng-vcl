@@ -9,13 +9,13 @@ exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
 var DropdownComponent = (function () {
     function DropdownComponent() {
         var _this = this;
-        this.select = new core_1.EventEmitter();
         this.tabindex = 0;
         this.expanded = false;
-        this.expandedChange = new core_1.EventEmitter();
         this.maxSelectableItems = 1;
         this.minSelectableItems = 1;
         this.ariaRole = 'listbox';
+        this.expandedChange = new core_1.EventEmitter();
+        this.select = new core_1.EventEmitter();
         this.metaInformation = [];
         this.select.subscribe(function (selectedItems) {
             _this.selected = selectedItems;
@@ -67,14 +67,14 @@ var DropdownComponent = (function () {
     DropdownComponent.ctorParameters = function () { return []; };
     DropdownComponent.propDecorators = {
         'metalist': [{ type: core_1.ViewChild, args: ['metalist',] },],
-        'select': [{ type: core_1.Output },],
         'items': [{ type: core_1.Input },],
         'tabindex': [{ type: core_1.Input },],
         'expanded': [{ type: core_1.Input },],
-        'expandedChange': [{ type: core_1.Output },],
         'maxSelectableItems': [{ type: core_1.Input },],
         'minSelectableItems': [{ type: core_1.Input },],
         'ariaRole': [{ type: core_1.Input },],
+        'expandedChange': [{ type: core_1.Output },],
+        'select': [{ type: core_1.Output },],
     };
     return DropdownComponent;
 }());

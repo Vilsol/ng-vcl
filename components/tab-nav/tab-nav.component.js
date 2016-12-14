@@ -22,7 +22,7 @@ var TabLabelDirective = (function (_super) {
         { type: core_1.TemplateRef, },
     ]; };
     return TabLabelDirective;
-}(wormhole_module_1.WormholeGenerator));
+}(wormhole_module_1.TemplateWormhole));
 exports.TabLabelDirective = TabLabelDirective;
 var TabContentDirective = (function (_super) {
     __extends(TabContentDirective, _super);
@@ -40,7 +40,7 @@ var TabContentDirective = (function (_super) {
         { type: core_1.TemplateRef, },
     ]; };
     return TabContentDirective;
-}(wormhole_module_1.WormholeGenerator));
+}(wormhole_module_1.TemplateWormhole));
 exports.TabContentDirective = TabContentDirective;
 var TabComponent = (function () {
     function TabComponent() {

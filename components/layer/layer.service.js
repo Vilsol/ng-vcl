@@ -6,6 +6,7 @@ var Observable_1 = require('rxjs/Observable');
 var LayerService = (function () {
     function LayerService() {
         this.layerNameMap = new Map();
+        this.baseNameMap = new Map();
         this.layerMap = new Map();
         this.visibleLayers = {};
         this._visibleLayers = new BehaviorSubject_1.BehaviorSubject(this.visibleLayers);
@@ -48,7 +49,7 @@ var LayerService = (function () {
     LayerService.prototype.register = function (layer) {
         var _this = this;
         if (layer.name && this.layerNameMap.has(layer.name)) {
-            throw 'Duplicate layer name: ' + layer.name;
+            throw 'Duplicate vcl-layer: ' + layer.name;
         }
         this.layerMap.set(layer, layer.visibilityChange$.subscribe(function () {
             if (!_this.visibleLayers[layer.base]) {
@@ -76,6 +77,15 @@ var LayerService = (function () {
             sub.unsubscribe();
         }
         this.layerMap.delete(layer);
+    };
+    LayerService.prototype.registerBase = function (layerBase) {
+        if (layerBase.name && this.baseNameMap.has(layerBase.name)) {
+            throw 'Duplicate vcl-layer-base: ' + layerBase.name;
+        }
+        this.baseNameMap.set(layerBase.name, layerBase);
+    };
+    LayerService.prototype.unregisterBase = function (layerBase) {
+        this.baseNameMap.delete(layerBase.name);
     };
     LayerService.prototype.ngOnDestroy = function () {
         this.layerMap.forEach(function (sub) {

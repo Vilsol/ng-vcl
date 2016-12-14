@@ -4,6 +4,7 @@ var common_1 = require('@angular/common');
 var jss_form_component_1 = require('./jss-form.component');
 var l10n_module_1 = require('../../l10n/l10n.module');
 var forms_1 = require('@angular/forms');
+var dropdown_module_1 = require('../dropdown/dropdown.module');
 var flip_switch_module_1 = require('../flip-switch/flip-switch.module');
 var slider_module_1 = require('../slider/slider.module');
 var checkbox_module_1 = require('../checkbox/checkbox.module');
@@ -17,6 +18,7 @@ var VCLJssFormModule = (function () {
         { type: core_1.NgModule, args: [{
                     imports: [
                         common_1.CommonModule, l10n_module_1.L10nModule, forms_1.FormsModule, forms_1.ReactiveFormsModule,
+                        dropdown_module_1.VCLDropdownModule,
                         flip_switch_module_1.VCLFlipSwitchModule,
                         slider_module_1.VCLSliderModule,
                         checkbox_module_1.VCLCheckboxModule,

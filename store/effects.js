@@ -1,4 +1,5 @@
 "use strict";
+var Observable_1 = require('rxjs/Observable');
 var merge_1 = require('rxjs/observable/merge');
 var core_1 = require('@angular/core');
 var store_1 = require('./store');
@@ -35,7 +36,10 @@ var Effects = (function () {
             if (instance) {
                 var properties = getEffectsMetadata(instance);
                 var effects$ = merge_1.merge.apply(void 0, (properties.map(function (property) { return instance[property]; })));
-                var sub = effects$.subscribe(_this.store);
+                var sub = effects$.catch(function (err) {
+                    // Catch effect error and dispatch StoreErrorAction
+                    return Observable_1.Observable.of(new store_1.StoreErrorAction(err));
+                }).subscribe(_this.store);
                 _this.effectSubs.push(sub);
             }
         });

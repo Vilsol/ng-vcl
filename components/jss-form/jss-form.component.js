@@ -6,9 +6,11 @@ var Validator = require('jsonschema').Validator; // TODO use import { Validator 
 var VALIDATOR;
 var JssFormObjectComponent = (function () {
     function JssFormObjectComponent() {
+        var _this = this;
         this.parentPath = '';
         this.fieldErrors = {};
         this.subs = [];
+        this.ngOnDestroy = function () { return _this.subs.map(function (sub) { return sub.unsubscribe(); }); };
     }
     JssFormObjectComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -30,9 +32,6 @@ var JssFormObjectComponent = (function () {
             });
         }
     };
-    JssFormObjectComponent.prototype.ngOnDestroy = function () {
-        this.subs.map(function (sub) { return sub.unsubscribe(); });
-    };
     /**
      * if no formType is given, this will guess the right one
      */
@@ -40,10 +39,10 @@ var JssFormObjectComponent = (function () {
         if (schemaObj.formType)
             return schemaObj.formType;
         if (schemaObj.type == 'string') {
-            if (schemaObj.enum) {
+            if (schemaObj.enum)
                 return 'select';
-            }
-            return 'text';
+            else
+                return 'text';
         }
         if (schemaObj.type == 'number')
             return 'number';

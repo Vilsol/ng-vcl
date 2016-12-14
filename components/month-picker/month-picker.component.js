@@ -2,29 +2,30 @@
 var core_1 = require('@angular/core');
 var MonthPickerComponent = (function () {
     function MonthPickerComponent() {
+        this.now = new Date();
         this.yearMeta = {};
-        this.prevYearBtnIcon = "fa:chevron-left";
-        this.nextYearBtnIcon = "fa:chevron-right";
-        this.closeBtnIcon = "fa:times";
-        this.monthsPerRow = 3;
-        this.expandable = false;
         this.expanded = true;
         this.expandedChange = new core_1.EventEmitter();
-        this.maxYear = Number.MAX_SAFE_INTEGER;
-        this.currentYear = new Date().getUTCFullYear();
+        this.currentYear = this.now.getFullYear();
         this.currentYearChange = new core_1.EventEmitter();
-        this.useShortNames = false;
-        this.useAvailableMonths = false;
-        this.colors = null;
-        this.minSelectableItems = 1;
-        this.prevYearAvailable = false;
-        this.nextYearAvailable = false;
         this.prevYearBtnTap = new core_1.EventEmitter();
         this.nextYearBtnTap = new core_1.EventEmitter();
         this.select = new core_1.EventEmitter();
         this.deselect = new core_1.EventEmitter();
         this.tabindex = 0;
+        this.monthsPerRow = 3;
+        this.useShortNames = false;
+        this.useAvailableMonths = false;
+        this.expandable = false;
+        this.prevYearAvailable = false;
+        this.nextYearAvailable = false;
+        this.maxYear = Number.MAX_SAFE_INTEGER;
+        this.closeBtnIcon = "fa:times";
+        this.prevYearBtnIcon = "fa:chevron-left";
+        this.nextYearBtnIcon = "fa:chevron-right";
+        this.minSelectableItems = 1;
     }
+    //
     MonthPickerComponent.prototype.ngOnInit = function () {
         // TODO: Localize here instead of in the template so outside components
         // when calling month-picker.getMonth(month) get calendar's localized and used label.
@@ -45,7 +46,7 @@ var MonthPickerComponent = (function () {
         this.currentMeta = this.yearMeta[year];
     };
     MonthPickerComponent.prototype.createYearMeta = function (year) {
-        return this.months.map(function (monthMeta) { return new Object(); });
+        return this.months.map(function (monthMeta) { return ({}); });
     };
     MonthPickerComponent.prototype.selectMonth = function (month, year) {
         if (year === void 0) { year = this.currentYear; }
@@ -204,12 +205,12 @@ var MonthPickerComponent = (function () {
     };
     MonthPickerComponent.prototype.isCurrentMonth = function (month, year) {
         if (year === void 0) { year = this.currentYear; }
-        var now = new Date();
-        return now.getFullYear() == year && now.getUTCMonth() === month;
+        return this.now.getFullYear() == year && this.now.getMonth() === month;
     };
-    MonthPickerComponent.prototype.getMonth = function (month) {
-        return this.isMonthInBounds(month) ? this.months[month] : null;
+    MonthPickerComponent.prototype.getMonth = function (year, month) {
+        return this.isDateInBounds(year, month) ? this.getYearMeta(year)[month] : null;
     };
+    MonthPickerComponent.TAG = 'MonthPickerComponent';
     MonthPickerComponent.monthNames = [
         'January',
         'February',
@@ -236,28 +237,28 @@ var MonthPickerComponent = (function () {
     /** @nocollapse */
     MonthPickerComponent.ctorParameters = function () { return []; };
     MonthPickerComponent.propDecorators = {
-        'prevYearBtnIcon': [{ type: core_1.Input },],
-        'nextYearBtnIcon': [{ type: core_1.Input },],
-        'closeBtnIcon': [{ type: core_1.Input },],
-        'monthsPerRow': [{ type: core_1.Input },],
-        'expandable': [{ type: core_1.Input },],
         'expanded': [{ type: core_1.Input },],
         'expandedChange': [{ type: core_1.Output },],
-        'maxYear': [{ type: core_1.Input },],
         'currentYear': [{ type: core_1.Input },],
         'currentYearChange': [{ type: core_1.Output },],
-        'useShortNames': [{ type: core_1.Input },],
-        'useAvailableMonths': [{ type: core_1.Input },],
-        'colors': [{ type: core_1.Input },],
-        'maxSelectableItems': [{ type: core_1.Input },],
-        'minSelectableItems': [{ type: core_1.Input },],
-        'prevYearAvailable': [{ type: core_1.Input },],
-        'nextYearAvailable': [{ type: core_1.Input },],
         'prevYearBtnTap': [{ type: core_1.Output },],
         'nextYearBtnTap': [{ type: core_1.Output },],
         'select': [{ type: core_1.Output },],
         'deselect': [{ type: core_1.Output },],
+        'colors': [{ type: core_1.Input },],
         'tabindex': [{ type: core_1.Input },],
+        'monthsPerRow': [{ type: core_1.Input },],
+        'useShortNames': [{ type: core_1.Input },],
+        'useAvailableMonths': [{ type: core_1.Input },],
+        'expandable': [{ type: core_1.Input },],
+        'prevYearAvailable': [{ type: core_1.Input },],
+        'nextYearAvailable': [{ type: core_1.Input },],
+        'maxYear': [{ type: core_1.Input },],
+        'closeBtnIcon': [{ type: core_1.Input },],
+        'prevYearBtnIcon': [{ type: core_1.Input },],
+        'nextYearBtnIcon': [{ type: core_1.Input },],
+        'maxSelectableItems': [{ type: core_1.Input },],
+        'minSelectableItems': [{ type: core_1.Input },],
     };
     return MonthPickerComponent;
 }());

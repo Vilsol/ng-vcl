@@ -15,6 +15,20 @@ var observable_1 = require('./observable');
 var utils_1 = require('./utils');
 exports.STORE_INITIAL_REDUCERS = new core_1.OpaqueToken('store.initial.reducers');
 exports.STORE_INITIAL_STATE = new core_1.OpaqueToken('store.initial.state');
+// Some store actions
+var StoreInitAction = (function () {
+    function StoreInitAction() {
+    }
+    return StoreInitAction;
+}());
+exports.StoreInitAction = StoreInitAction;
+var StoreErrorAction = (function () {
+    function StoreErrorAction(err) {
+        this.err = err;
+    }
+    return StoreErrorAction;
+}());
+exports.StoreErrorAction = StoreErrorAction;
 var Store = (function (_super) {
     __extends(Store, _super);
     function Store(actions$, initialState, initialReducers) {
@@ -35,7 +49,7 @@ var Store = (function (_super) {
         // Listen to actions by connecting the state observable
         this.stateSub = this.state$.connect();
         // Init action
-        this.dispatch(new actions_1.InitAction());
+        this.dispatch(new StoreInitAction());
     }
     Object.defineProperty(Store.prototype, "reducer$", {
         get: function () {
@@ -64,10 +78,21 @@ var Store = (function (_super) {
         }
         return observable_1.select.call.apply(observable_1.select, [this, path].concat(paths));
     };
+    Store.prototype.actionOfType = function () {
+        var actionClasses = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            actionClasses[_i - 0] = arguments[_i];
+        }
+        return (_a = this.actions$).ofType.apply(_a, actionClasses);
+        var _a;
+    };
     Store.prototype.next = function (action) {
         this.dispatch(action);
     };
-    Store.prototype.error = function (err) { };
+    Store.prototype.error = function (err) {
+        // Errors result in a StoreErrorAction
+        this.dispatch(new StoreErrorAction(err));
+    };
     Store.prototype.complete = function () { };
     Store.prototype.ngOnDestroy = function () {
         if (this.stateSub && !this.stateSub.closed)

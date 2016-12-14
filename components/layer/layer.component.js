@@ -8,45 +8,6 @@ var Subject_1 = require('rxjs/Subject');
 var core_1 = require('@angular/core');
 var wormhole_module_1 = require('./../../directives/wormhole/wormhole.module');
 var layer_service_1 = require('./layer.service');
-var LayerBaseComponent = (function () {
-    function LayerBaseComponent(layerService) {
-        this.layerService = layerService;
-        this.visibleLayers = [];
-        this.name = 'default';
-        this.zIndex = 1000;
-    }
-    LayerBaseComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.sub = this.layerService.visibleLayersFor(this.name).subscribe(function (visibleLayers) {
-            _this.visibleLayers = visibleLayers;
-        });
-    };
-    LayerBaseComponent.prototype.ngOnDestroy = function () {
-        if (this.sub && !this.sub.closed) {
-            this.sub.unsubscribe();
-        }
-    };
-    LayerBaseComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-layer-base',
-                    templateUrl: 'layer-base.component.html',
-                    animations: [
-                        core_1.trigger('boxState', []),
-                        core_1.trigger('layerState', [])
-                    ]
-                },] },
-    ];
-    /** @nocollapse */
-    LayerBaseComponent.ctorParameters = function () { return [
-        { type: layer_service_1.LayerService, },
-    ]; };
-    LayerBaseComponent.propDecorators = {
-        'name': [{ type: core_1.Input },],
-        'zIndex': [{ type: core_1.Input },],
-    };
-    return LayerBaseComponent;
-}());
-exports.LayerBaseComponent = LayerBaseComponent;
 var LayerDirective = (function (_super) {
     __extends(LayerDirective, _super);
     function LayerDirective(templateRef, elementRef, layerService) {
@@ -138,5 +99,47 @@ var LayerDirective = (function (_super) {
         'base': [{ type: core_1.Input },],
     };
     return LayerDirective;
-}(wormhole_module_1.WormholeGenerator));
+}(wormhole_module_1.TemplateWormhole));
 exports.LayerDirective = LayerDirective;
+var LayerBaseComponent = (function () {
+    function LayerBaseComponent(layerService) {
+        this.layerService = layerService;
+        this.visibleLayers = [];
+        this.name = 'default';
+        this.zIndex = 1000;
+    }
+    LayerBaseComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.layerService.registerBase(this);
+        this.sub = this.layerService.visibleLayersFor(this.name).subscribe(function (visibleLayers) {
+            _this.visibleLayers = visibleLayers;
+        });
+    };
+    LayerBaseComponent.prototype.ngOnDestroy = function () {
+        this.layerService.unregisterBase(this);
+        this.visibleLayers.forEach(function (layer) { return layer.close(); });
+        if (this.sub && !this.sub.closed) {
+            this.sub.unsubscribe();
+        }
+    };
+    LayerBaseComponent.decorators = [
+        { type: core_1.Component, args: [{
+                    selector: 'vcl-layer-base',
+                    templateUrl: 'layer-base.component.html',
+                    animations: [
+                        core_1.trigger('boxState', []),
+                        core_1.trigger('layerState', [])
+                    ]
+                },] },
+    ];
+    /** @nocollapse */
+    LayerBaseComponent.ctorParameters = function () { return [
+        { type: layer_service_1.LayerService, },
+    ]; };
+    LayerBaseComponent.propDecorators = {
+        'name': [{ type: core_1.Input },],
+        'zIndex': [{ type: core_1.Input },],
+    };
+    return LayerBaseComponent;
+}());
+exports.LayerBaseComponent = LayerBaseComponent;

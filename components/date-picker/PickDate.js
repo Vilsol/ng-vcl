@@ -19,7 +19,7 @@ var PickDate = (function () {
      * gets the first day of the month for the given date's month.
      */
     PickDate.prototype.getFirstDateOfMonth = function (date) {
-        return new Date(date.getFullYear(), date.getMonth(), 1, date.getHours(), date.getMinutes(), date.getSeconds());
+        return new Date(date.getFullYear(), date.getMonth(), 1, 12, date.getMinutes(), date.getSeconds());
     };
     PickDate.prototype.moveToYear = function (year) {
         var newDate = new Date(year, this.date.getMonth(), 1, this.date.getHours(), this.date.getMinutes(), this.date.getSeconds());

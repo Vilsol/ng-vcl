@@ -11,7 +11,7 @@ export declare class JssFormObjectComponent implements OnInit, OnDestroy {
     subs: any[];
     constructor();
     ngOnInit(): void;
-    ngOnDestroy(): void;
+    ngOnDestroy: () => any[];
     /**
      * if no formType is given, this will guess the right one
      */

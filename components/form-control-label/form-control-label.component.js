@@ -17,7 +17,8 @@ var FormControlLabelComponent = (function () {
                     templateUrl: 'form-control-label.component.html',
                     host: {
                         '[class.vclFormControlLabel]': 'true',
-                    }
+                    },
+                    changeDetection: core_1.ChangeDetectionStrategy.OnPush
                 },] },
     ];
     /** @nocollapse */

@@ -4,7 +4,7 @@ export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any;
 export declare class JsonEditorComponent implements ControlValueAccessor {
     el: any;
     mode: 'tree' | 'form' | 'text' | 'view';
-    value: Object;
+    value: any;
     /**
      * @link https://github.com/josdejong/jsoneditor/blob/master/docs/api.md
      */
