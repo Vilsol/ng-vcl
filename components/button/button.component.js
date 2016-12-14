@@ -5,8 +5,14 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 require('rxjs/add/operator/distinctUntilChanged');
+require('rxjs/add/operator/publishBehavior');
 var core_1 = require('@angular/core');
 var index_1 = require('../../core/index');
+var InteractionType;
+(function (InteractionType) {
+    InteractionType[InteractionType["Click"] = 0] = "Click";
+    InteractionType[InteractionType["Tap"] = 1] = "Tap";
+})(InteractionType || (InteractionType = {}));
 var ButtonContentDirective = (function () {
     function ButtonContentDirective(viewContainerRef, tempRef) {
         this.viewContainerRef = viewContainerRef;
@@ -38,23 +44,51 @@ var ButtonContentDirective = (function () {
     return ButtonContentDirective;
 }());
 exports.ButtonContentDirective = ButtonContentDirective;
+function dispatch(el, eventType) {
+    var x = 10, y = 10;
+    var msEventType = window.MSPointerEvent &&
+        eventType.replace(/pointer([a-z])/, function (_, a) { return 'MSPointer' + a.toUpperCase(); });
+    var event = document.createEvent('Event');
+    event.initEvent(msEventType || eventType, true, true);
+    event.getCurrentPoint = function () { return ({ x: x, y: y }); };
+    event.setPointerCapture = event.releasePointerCapture = function () { };
+    event.pointerId = 0;
+    event.buttons = 1;
+    event.pageX = x;
+    event.pageY = y;
+    event.clientX = x;
+    event.clientY = y;
+    event.screenX = x;
+    event.screenY = y;
+    event.pointerType = 'touch';
+    event.identifier = 0;
+    el.dispatchEvent(event);
+}
+function dispatchTap(el) {
+    dispatch(el, 'pointerdown');
+    setTimeout(function () {
+        dispatch(el, 'pointerup');
+    }, 100);
+}
 var ButtonComponent = (function (_super) {
     __extends(ButtonComponent, _super);
     function ButtonComponent(elementRef) {
         var _this = this;
         _super.call(this);
         this.elementRef = elementRef;
+        this.latestInteractionTime = 0;
         this.pressed = false; // `true` if a pointer device is conducting a `down` gesture on the button
         this.focused = false; // `true` if the element is focused  (CSS' :focus)
         this.hovered = false; // `true` if a pointer device is hovering the button (CSS' :hover)
         this.selected = false;
         this.disabled = false;
+        this.disableA11yClick = false;
         this.busy = false; // State to indicate that the button is disabled as a operation is in progress
         this.flexLabel = false;
         this.autoBlur = true;
         this._press = new core_1.EventEmitter();
         this._stateChange = new core_1.EventEmitter();
-        this.state$ = this.observeChange('disabled', 'busy').publishBehavior(this.state).refCount().map(function () { return _this.state; }).distinctUntilChanged();
+        this.state$ = this.observeChange('disabled', 'busy', 'label', 'busyLabel', 'appIcon', 'appIconBusy').publishBehavior(this.state).refCount().map(function () { return _this.state; });
         this.label$ = this.state$.map(function (state) { return state === 'busy' && _this.busyLabel ? _this.busyLabel : _this.label; });
         this.prepIcon$ = this.state$.map(function (state) { return state === 'busy' && _this.prepIconBusy ? _this.prepIconBusy : _this.prepIcon; });
         this.appIcon$ = this.state$.map(function (state) { return state === 'busy' && _this.appIconBusy ? _this.appIconBusy : _this.appIcon; });
@@ -101,13 +135,45 @@ var ButtonComponent = (function (_super) {
         enumerable: true,
         configurable: true
     });
+    ButtonComponent.prototype.onKeypress = function (ev) {
+        // Trigger a11yClick
+        if (!this.disableA11yClick &&
+            this.elementRef.nativeElement &&
+            (ev.code === 'Space' ||
+                ev.code === 'NumpadEnter' ||
+                ev.code === 'Enter')) {
+            ev.preventDefault();
+            this.elementRef.nativeElement.click();
+            dispatchTap(this.elementRef.nativeElement);
+        }
+    };
     ButtonComponent.prototype.onMouseEnter = function (e) { this.hovered = true; };
     ButtonComponent.prototype.onMouseLeave = function (e) { this.hovered = false; };
     ButtonComponent.prototype.onMouseUp = function (e) { this.pressed = false; };
     ButtonComponent.prototype.onMouseDown = function (e) { this.pressed = true; };
     ButtonComponent.prototype.onFocus = function (e) { this.focused = true; };
     ButtonComponent.prototype.onBlur = function (e) { this.focused = false; };
-    ButtonComponent.prototype.onTap = function (e) { this._press.emit(e); };
+    ButtonComponent.prototype.onTap = function (e) {
+        this.handleGhostClick(InteractionType.Tap, event);
+    };
+    ButtonComponent.prototype.onClick = function (e) {
+        this.handleGhostClick(InteractionType.Click, event);
+    };
+    ButtonComponent.prototype.handleGhostClick = function (type, e) {
+        var ANTI_GHOST_DELAY = 2000;
+        var now = Date.now();
+        if (type !== this.latestInteractionType) {
+            if ((now - this.latestInteractionTime) > ANTI_GHOST_DELAY) {
+                this.latestInteractionType = type;
+                this._press.emit(e);
+            }
+        }
+        else {
+            this.latestInteractionType = type;
+            this._press.emit(e);
+        }
+        this.latestInteractionTime = now;
+    };
     ButtonComponent.prototype.ngAfterViewInit = function () {
         var _this = this;
         this.buttonContent.forEach(function (bc) { return bc.render(_this.state); });
@@ -137,6 +203,7 @@ var ButtonComponent = (function (_super) {
         'selected': [{ type: core_1.Input }, { type: core_1.HostBinding, args: ['class.vclSelected',] },],
         'title': [{ type: core_1.HostBinding, args: ['attr.aria-label',] }, { type: core_1.Input },],
         'disabled': [{ type: core_1.Input },],
+        'disableA11yClick': [{ type: core_1.Input },],
         'isDisabled': [{ type: core_1.HostBinding, args: ['attr.disabled',] },],
         'busy': [{ type: core_1.Input },],
         'flexLabel': [{ type: core_1.Input },],
@@ -150,6 +217,7 @@ var ButtonComponent = (function (_super) {
         'press': [{ type: core_1.Output },],
         'stateChange': [{ type: core_1.Output },],
         'buttonContent': [{ type: core_1.ContentChildren, args: [ButtonContentDirective,] },],
+        'onKeypress': [{ type: core_1.HostListener, args: ['keypress', ['$event'],] },],
         'onMouseEnter': [{ type: core_1.HostListener, args: ['mouseenter', ['$event'],] },],
         'onMouseLeave': [{ type: core_1.HostListener, args: ['mouseleave', ['$event'],] },],
         'onMouseUp': [{ type: core_1.HostListener, args: ['mouseup', ['$event'],] },],
@@ -157,6 +225,7 @@ var ButtonComponent = (function (_super) {
         'onFocus': [{ type: core_1.HostListener, args: ['onfocus', ['$event'],] },],
         'onBlur': [{ type: core_1.HostListener, args: ['onblur', ['$event'],] },],
         'onTap': [{ type: core_1.HostListener, args: ['tap', ['$event'],] },],
+        'onClick': [{ type: core_1.HostListener, args: ['click', ['$event'],] },],
     };
     return ButtonComponent;
 }(index_1.ObservableComponent));

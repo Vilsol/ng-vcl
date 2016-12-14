@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("jsonschema"), require("hammerjs"), require("tether"), require("rxjs/add/operator/catch"), require("rxjs/add/operator/combineLatest"), require("rxjs/add/operator/distinctUntilChanged"), require("rxjs/add/operator/filter"), require("rxjs/add/operator/let"), require("rxjs/add/operator/map"), require("rxjs/add/operator/pluck"), require("rxjs/add/operator/publish"), require("rxjs/add/operator/publishReplay"), require("rxjs/add/operator/retryWhen"), require("rxjs/add/operator/scan"), require("rxjs/add/operator/switchMap"), require("rxjs/add/operator/withLatestFrom"), require("rxjs/add/observable/combineLatest"), require("rxjs/add/observable/of"), require("rxjs/add/observable/throw"), require("rxjs/BehaviorSubject"), require("rxjs/Observable"), require("rxjs/ReplaySubject"), require("rxjs/Subject"), require("rxjs/observable/merge"), require("@angular/common"), require("@angular/core"), require("@angular/forms"), require("@angular/http"), require("@angular/router"));
+		module.exports = factory(require("jsonschema"), require("hammerjs"), require("tether"), require("rxjs/add/operator/catch"), require("rxjs/add/operator/combineLatest"), require("rxjs/add/operator/distinctUntilChanged"), require("rxjs/add/operator/filter"), require("rxjs/add/operator/let"), require("rxjs/add/operator/map"), require("rxjs/add/operator/pluck"), require("rxjs/add/operator/publish"), require("rxjs/add/operator/publishBehavior"), require("rxjs/add/operator/publishReplay"), require("rxjs/add/operator/retryWhen"), require("rxjs/add/operator/scan"), require("rxjs/add/operator/switchMap"), require("rxjs/add/operator/withLatestFrom"), require("rxjs/add/observable/combineLatest"), require("rxjs/add/observable/of"), require("rxjs/add/observable/throw"), require("rxjs/BehaviorSubject"), require("rxjs/Observable"), require("rxjs/ReplaySubject"), require("rxjs/Subject"), require("rxjs/observable/merge"), require("@angular/common"), require("@angular/core"), require("@angular/forms"), require("@angular/http"), require("@angular/router"));
 	else if(typeof define === 'function' && define.amd)
-		define(["jsonschema", "hammerjs", "tether", "rxjs/add/operator/catch", "rxjs/add/operator/combineLatest", "rxjs/add/operator/distinctUntilChanged", "rxjs/add/operator/filter", "rxjs/add/operator/let", "rxjs/add/operator/map", "rxjs/add/operator/pluck", "rxjs/add/operator/publish", "rxjs/add/operator/publishReplay", "rxjs/add/operator/retryWhen", "rxjs/add/operator/scan", "rxjs/add/operator/switchMap", "rxjs/add/operator/withLatestFrom", "rxjs/add/observable/combineLatest", "rxjs/add/observable/of", "rxjs/add/observable/throw", "rxjs/BehaviorSubject", "rxjs/Observable", "rxjs/ReplaySubject", "rxjs/Subject", "rxjs/observable/merge", "@angular/common", "@angular/core", "@angular/forms", "@angular/http", "@angular/router"], factory);
+		define(["jsonschema", "hammerjs", "tether", "rxjs/add/operator/catch", "rxjs/add/operator/combineLatest", "rxjs/add/operator/distinctUntilChanged", "rxjs/add/operator/filter", "rxjs/add/operator/let", "rxjs/add/operator/map", "rxjs/add/operator/pluck", "rxjs/add/operator/publish", "rxjs/add/operator/publishBehavior", "rxjs/add/operator/publishReplay", "rxjs/add/operator/retryWhen", "rxjs/add/operator/scan", "rxjs/add/operator/switchMap", "rxjs/add/operator/withLatestFrom", "rxjs/add/observable/combineLatest", "rxjs/add/observable/of", "rxjs/add/observable/throw", "rxjs/BehaviorSubject", "rxjs/Observable", "rxjs/ReplaySubject", "rxjs/Subject", "rxjs/observable/merge", "@angular/common", "@angular/core", "@angular/forms", "@angular/http", "@angular/router"], factory);
 	else if(typeof exports === 'object')
-		exports["NgVCL"] = factory(require("jsonschema"), require("hammerjs"), require("tether"), require("rxjs/add/operator/catch"), require("rxjs/add/operator/combineLatest"), require("rxjs/add/operator/distinctUntilChanged"), require("rxjs/add/operator/filter"), require("rxjs/add/operator/let"), require("rxjs/add/operator/map"), require("rxjs/add/operator/pluck"), require("rxjs/add/operator/publish"), require("rxjs/add/operator/publishReplay"), require("rxjs/add/operator/retryWhen"), require("rxjs/add/operator/scan"), require("rxjs/add/operator/switchMap"), require("rxjs/add/operator/withLatestFrom"), require("rxjs/add/observable/combineLatest"), require("rxjs/add/observable/of"), require("rxjs/add/observable/throw"), require("rxjs/BehaviorSubject"), require("rxjs/Observable"), require("rxjs/ReplaySubject"), require("rxjs/Subject"), require("rxjs/observable/merge"), require("@angular/common"), require("@angular/core"), require("@angular/forms"), require("@angular/http"), require("@angular/router"));
+		exports["NgVCL"] = factory(require("jsonschema"), require("hammerjs"), require("tether"), require("rxjs/add/operator/catch"), require("rxjs/add/operator/combineLatest"), require("rxjs/add/operator/distinctUntilChanged"), require("rxjs/add/operator/filter"), require("rxjs/add/operator/let"), require("rxjs/add/operator/map"), require("rxjs/add/operator/pluck"), require("rxjs/add/operator/publish"), require("rxjs/add/operator/publishBehavior"), require("rxjs/add/operator/publishReplay"), require("rxjs/add/operator/retryWhen"), require("rxjs/add/operator/scan"), require("rxjs/add/operator/switchMap"), require("rxjs/add/operator/withLatestFrom"), require("rxjs/add/observable/combineLatest"), require("rxjs/add/observable/of"), require("rxjs/add/observable/throw"), require("rxjs/BehaviorSubject"), require("rxjs/Observable"), require("rxjs/ReplaySubject"), require("rxjs/Subject"), require("rxjs/observable/merge"), require("@angular/common"), require("@angular/core"), require("@angular/forms"), require("@angular/http"), require("@angular/router"));
 	else
-		root["NgVCL"] = factory(root[undefined], root["Hammer"], root["Tether"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"], root["Rx"]["Observable"], root["Rx"]["Observable"], root["Rx"], root["Rx"], root["Rx"], root["Rx"], root["Rx"], root["ng"]["common"], root["ng"]["core"], root["ng"]["forms"], root["ng"]["http"], root["ng"]["router"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_477__, __WEBPACK_EXTERNAL_MODULE_129__, __WEBPACK_EXTERNAL_MODULE_478__, __WEBPACK_EXTERNAL_MODULE_479__, __WEBPACK_EXTERNAL_MODULE_480__, __WEBPACK_EXTERNAL_MODULE_81__, __WEBPACK_EXTERNAL_MODULE_82__, __WEBPACK_EXTERNAL_MODULE_481__, __WEBPACK_EXTERNAL_MODULE_50__, __WEBPACK_EXTERNAL_MODULE_482__, __WEBPACK_EXTERNAL_MODULE_483__, __WEBPACK_EXTERNAL_MODULE_123__, __WEBPACK_EXTERNAL_MODULE_484__, __WEBPACK_EXTERNAL_MODULE_485__, __WEBPACK_EXTERNAL_MODULE_486__, __WEBPACK_EXTERNAL_MODULE_487__, __WEBPACK_EXTERNAL_MODULE_488__, __WEBPACK_EXTERNAL_MODULE_489__, __WEBPACK_EXTERNAL_MODULE_490__, __WEBPACK_EXTERNAL_MODULE_83__, __WEBPACK_EXTERNAL_MODULE_13__, __WEBPACK_EXTERNAL_MODULE_491__, __WEBPACK_EXTERNAL_MODULE_84__, __WEBPACK_EXTERNAL_MODULE_492__, __WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_10__, __WEBPACK_EXTERNAL_MODULE_124__, __WEBPACK_EXTERNAL_MODULE_125__) {
+		root["NgVCL"] = factory(root[undefined], root["Hammer"], root["Tether"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"], root["Rx"]["Observable"], root["Rx"]["Observable"], root["Rx"], root["Rx"], root["Rx"], root["Rx"], root["Rx"], root["ng"]["common"], root["ng"]["core"], root["ng"]["forms"], root["ng"]["http"], root["ng"]["router"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_477__, __WEBPACK_EXTERNAL_MODULE_129__, __WEBPACK_EXTERNAL_MODULE_478__, __WEBPACK_EXTERNAL_MODULE_479__, __WEBPACK_EXTERNAL_MODULE_480__, __WEBPACK_EXTERNAL_MODULE_81__, __WEBPACK_EXTERNAL_MODULE_82__, __WEBPACK_EXTERNAL_MODULE_481__, __WEBPACK_EXTERNAL_MODULE_50__, __WEBPACK_EXTERNAL_MODULE_482__, __WEBPACK_EXTERNAL_MODULE_483__, __WEBPACK_EXTERNAL_MODULE_484__, __WEBPACK_EXTERNAL_MODULE_123__, __WEBPACK_EXTERNAL_MODULE_485__, __WEBPACK_EXTERNAL_MODULE_486__, __WEBPACK_EXTERNAL_MODULE_487__, __WEBPACK_EXTERNAL_MODULE_488__, __WEBPACK_EXTERNAL_MODULE_489__, __WEBPACK_EXTERNAL_MODULE_490__, __WEBPACK_EXTERNAL_MODULE_491__, __WEBPACK_EXTERNAL_MODULE_83__, __WEBPACK_EXTERNAL_MODULE_13__, __WEBPACK_EXTERNAL_MODULE_492__, __WEBPACK_EXTERNAL_MODULE_84__, __WEBPACK_EXTERNAL_MODULE_493__, __WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_10__, __WEBPACK_EXTERNAL_MODULE_124__, __WEBPACK_EXTERNAL_MODULE_125__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -71,7 +71,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 493);
+/******/ 	return __webpack_require__(__webpack_require__.s = 494);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -2366,8 +2366,8 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 var BehaviorSubject_1 = __webpack_require__(83);
 var Observable_1 = __webpack_require__(13);
-__webpack_require__(485);
-__webpack_require__(487);
+__webpack_require__(486);
+__webpack_require__(488);
 __webpack_require__(81);
 var core_1 = __webpack_require__(1);
 var actions_1 = __webpack_require__(38);
@@ -3517,7 +3517,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 var core_1 = __webpack_require__(1);
 var Observable_1 = __webpack_require__(13);
-__webpack_require__(489);
+__webpack_require__(490);
 ;
 exports.L10N_LOADER_CONFIG = new core_1.OpaqueToken('l10n.loader.config');
 var L10nLoaderService = (function () {
@@ -3659,10 +3659,10 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 var core_1 = __webpack_require__(1);
 var Observable_1 = __webpack_require__(13);
 var BehaviorSubject_1 = __webpack_require__(83);
-__webpack_require__(488);
+__webpack_require__(489);
 __webpack_require__(480);
 __webpack_require__(50);
-__webpack_require__(486);
+__webpack_require__(487);
 __webpack_require__(123);
 var l10n_loader_service_1 = __webpack_require__(67);
 var l10n_parser_service_1 = __webpack_require__(68);
@@ -3824,7 +3824,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-var merge_1 = __webpack_require__(492);
+var merge_1 = __webpack_require__(493);
 var core_1 = __webpack_require__(1);
 var store_1 = __webpack_require__(39);
 var EFFECTS_METADATA_KEY = 'ng-vcl/effects';
@@ -5075,13 +5075,13 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 var Observable_1 = __webpack_require__(13);
-var ReplaySubject_1 = __webpack_require__(491);
+var ReplaySubject_1 = __webpack_require__(492);
 __webpack_require__(123);
 __webpack_require__(483);
 __webpack_require__(479);
-__webpack_require__(484);
+__webpack_require__(485);
 __webpack_require__(481);
-__webpack_require__(490);
+__webpack_require__(491);
 var http_1 = __webpack_require__(124);
 var core_1 = __webpack_require__(1);
 /**
@@ -5266,8 +5266,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var Observable_1 = __webpack_require__(13);
 __webpack_require__(81);
+__webpack_require__(484);
 var core_1 = __webpack_require__(1);
 var index_1 = __webpack_require__(51);
+var InteractionType;
+(function (InteractionType) {
+    InteractionType[InteractionType["Click"] = 0] = "Click";
+    InteractionType[InteractionType["Tap"] = 1] = "Tap";
+})(InteractionType || (InteractionType = {}));
 var ButtonContentDirective = (function () {
     function ButtonContentDirective(viewContainerRef, tempRef) {
         this.viewContainerRef = viewContainerRef;
@@ -5297,23 +5303,51 @@ var ButtonContentDirective = (function () {
     var _a, _b;
 }());
 exports.ButtonContentDirective = ButtonContentDirective;
+function dispatch(el, eventType) {
+    var x = 10, y = 10;
+    var msEventType = window.MSPointerEvent &&
+        eventType.replace(/pointer([a-z])/, function (_, a) { return 'MSPointer' + a.toUpperCase(); });
+    var event = document.createEvent('Event');
+    event.initEvent(msEventType || eventType, true, true);
+    event.getCurrentPoint = function () { return ({ x: x, y: y }); };
+    event.setPointerCapture = event.releasePointerCapture = function () { };
+    event.pointerId = 0;
+    event.buttons = 1;
+    event.pageX = x;
+    event.pageY = y;
+    event.clientX = x;
+    event.clientY = y;
+    event.screenX = x;
+    event.screenY = y;
+    event.pointerType = 'touch';
+    event.identifier = 0;
+    el.dispatchEvent(event);
+}
+function dispatchTap(el) {
+    dispatch(el, 'pointerdown');
+    setTimeout(function () {
+        dispatch(el, 'pointerup');
+    }, 100);
+}
 var ButtonComponent = (function (_super) {
     __extends(ButtonComponent, _super);
     function ButtonComponent(elementRef) {
         var _this = this;
         _super.call(this);
         this.elementRef = elementRef;
+        this.latestInteractionTime = 0;
         this.pressed = false; // `true` if a pointer device is conducting a `down` gesture on the button
         this.focused = false; // `true` if the element is focused  (CSS' :focus)
         this.hovered = false; // `true` if a pointer device is hovering the button (CSS' :hover)
         this.selected = false;
         this.disabled = false;
+        this.disableA11yClick = false;
         this.busy = false; // State to indicate that the button is disabled as a operation is in progress
         this.flexLabel = false;
         this.autoBlur = true;
         this._press = new core_1.EventEmitter();
         this._stateChange = new core_1.EventEmitter();
-        this.state$ = this.observeChange('disabled', 'busy').publishBehavior(this.state).refCount().map(function () { return _this.state; }).distinctUntilChanged();
+        this.state$ = this.observeChange('disabled', 'busy', 'label', 'busyLabel', 'appIcon', 'appIconBusy').publishBehavior(this.state).refCount().map(function () { return _this.state; });
         this.label$ = this.state$.map(function (state) { return state === 'busy' && _this.busyLabel ? _this.busyLabel : _this.label; });
         this.prepIcon$ = this.state$.map(function (state) { return state === 'busy' && _this.prepIconBusy ? _this.prepIconBusy : _this.prepIcon; });
         this.appIcon$ = this.state$.map(function (state) { return state === 'busy' && _this.appIconBusy ? _this.appIconBusy : _this.appIcon; });
@@ -5360,13 +5394,45 @@ var ButtonComponent = (function (_super) {
         enumerable: true,
         configurable: true
     });
+    ButtonComponent.prototype.onKeypress = function (ev) {
+        // Trigger a11yClick
+        if (!this.disableA11yClick &&
+            this.elementRef.nativeElement &&
+            (ev.code === 'Space' ||
+                ev.code === 'NumpadEnter' ||
+                ev.code === 'Enter')) {
+            ev.preventDefault();
+            this.elementRef.nativeElement.click();
+            dispatchTap(this.elementRef.nativeElement);
+        }
+    };
     ButtonComponent.prototype.onMouseEnter = function (e) { this.hovered = true; };
     ButtonComponent.prototype.onMouseLeave = function (e) { this.hovered = false; };
     ButtonComponent.prototype.onMouseUp = function (e) { this.pressed = false; };
     ButtonComponent.prototype.onMouseDown = function (e) { this.pressed = true; };
     ButtonComponent.prototype.onFocus = function (e) { this.focused = true; };
     ButtonComponent.prototype.onBlur = function (e) { this.focused = false; };
-    ButtonComponent.prototype.onTap = function (e) { this._press.emit(e); };
+    ButtonComponent.prototype.onTap = function (e) {
+        this.handleGhostClick(InteractionType.Tap, event);
+    };
+    ButtonComponent.prototype.onClick = function (e) {
+        this.handleGhostClick(InteractionType.Click, event);
+    };
+    ButtonComponent.prototype.handleGhostClick = function (type, e) {
+        var ANTI_GHOST_DELAY = 2000;
+        var now = Date.now();
+        if (type !== this.latestInteractionType) {
+            if ((now - this.latestInteractionTime) > ANTI_GHOST_DELAY) {
+                this.latestInteractionType = type;
+                this._press.emit(e);
+            }
+        }
+        else {
+            this.latestInteractionType = type;
+            this._press.emit(e);
+        }
+        this.latestInteractionTime = now;
+    };
     ButtonComponent.prototype.ngAfterViewInit = function () {
         var _this = this;
         this.buttonContent.forEach(function (bc) { return bc.render(_this.state); });
@@ -5397,6 +5463,10 @@ var ButtonComponent = (function (_super) {
         core_1.Input(), 
         __metadata('design:type', Boolean)
     ], ButtonComponent.prototype, "disabled", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Boolean)
+    ], ButtonComponent.prototype, "disableA11yClick", void 0);
     __decorate([
         core_1.HostBinding('attr.disabled'), 
         __metadata('design:type', Boolean)
@@ -5451,6 +5521,12 @@ var ButtonComponent = (function (_super) {
         __metadata('design:type', (typeof (_c = typeof core_1.QueryList !== 'undefined' && core_1.QueryList) === 'function' && _c) || Object)
     ], ButtonComponent.prototype, "buttonContent", void 0);
     __decorate([
+        core_1.HostListener('keypress', ['$event']), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Object]), 
+        __metadata('design:returntype', void 0)
+    ], ButtonComponent.prototype, "onKeypress", null);
+    __decorate([
         core_1.HostListener('mouseenter', ['$event']), 
         __metadata('design:type', Function), 
         __metadata('design:paramtypes', [Object]), 
@@ -5492,6 +5568,12 @@ var ButtonComponent = (function (_super) {
         __metadata('design:paramtypes', [Object]), 
         __metadata('design:returntype', void 0)
     ], ButtonComponent.prototype, "onTap", null);
+    __decorate([
+        core_1.HostListener('click', ['$event']), 
+        __metadata('design:type', Function), 
+        __metadata('design:paramtypes', [Object]), 
+        __metadata('design:returntype', void 0)
+    ], ButtonComponent.prototype, "onClick", null);
     ButtonComponent = __decorate([
         core_1.Component({
             selector: '[vcl-button]',
@@ -63288,6 +63370,12 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_492__;
 
 /***/ },
 /* 493 */
+/***/ function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_493__;
+
+/***/ },
+/* 494 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";

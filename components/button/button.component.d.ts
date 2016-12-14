@@ -1,6 +1,7 @@
 import { Subscription } from 'rxjs/Subscription';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/distinctUntilChanged';
+import 'rxjs/add/operator/publishBehavior';
 import { ElementRef, TemplateRef, ViewContainerRef, QueryList } from '@angular/core';
 import { ObservableComponent } from '../../core/index';
 export declare class ButtonContentDirective {
@@ -13,12 +14,15 @@ export declare class ButtonContentDirective {
 }
 export declare class ButtonComponent extends ObservableComponent {
     private elementRef;
+    private latestInteractionTime;
+    private latestInteractionType;
     pressed: boolean;
     focused: boolean;
     hovered: boolean;
     selected: boolean;
     title: string;
     disabled: boolean;
+    disableA11yClick: boolean;
     readonly isDisabled: boolean;
     busy: boolean;
     flexLabel: boolean;
@@ -42,6 +46,7 @@ export declare class ButtonComponent extends ObservableComponent {
     stateSub: Subscription;
     pressSub: Subscription;
     constructor(elementRef: ElementRef);
+    onKeypress(ev: KeyboardEvent): void;
     onMouseEnter(e: any): void;
     onMouseLeave(e: any): void;
     onMouseUp(e: any): void;
@@ -49,6 +54,8 @@ export declare class ButtonComponent extends ObservableComponent {
     onFocus(e: any): void;
     onBlur(e: any): void;
     onTap(e: any): void;
+    onClick(e: any): void;
+    private handleGhostClick(type, e);
     ngAfterViewInit(): void;
     ngOnDestoy(): void;
 }
