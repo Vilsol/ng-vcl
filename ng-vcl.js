@@ -11170,6 +11170,7 @@ var MonthPickerComponent = (function () {
         this.expandable = false;
         this.prevYearAvailable = false;
         this.nextYearAvailable = false;
+        this.minYear = Number.MIN_SAFE_INTEGER;
         this.maxYear = Number.MAX_SAFE_INTEGER;
         this.closeBtnIcon = "fa:times";
         this.prevYearBtnIcon = "fa:chevron-left";
@@ -11180,10 +11181,7 @@ var MonthPickerComponent = (function () {
     MonthPickerComponent.prototype.ngOnInit = function () {
         // TODO: Localize here instead of in the template so outside components
         // when calling month-picker.getMonth(month) get calendar's localized and used label.
-        this.months = (this.useShortNames ? MonthPickerComponent.monthNamesShort :
-            MonthPickerComponent.monthNames).map(function (month) { return ({
-            label: month
-        }); });
+        this.months = this.useShortNames ? MonthPickerComponent.monthNamesShort : MonthPickerComponent.monthNames;
         if (!this.maxSelectableItems) {
             this.maxSelectableItems = this.colors && this.colors.length || 1;
         }
@@ -11199,17 +11197,16 @@ var MonthPickerComponent = (function () {
     MonthPickerComponent.prototype.createYearMeta = function (year) {
         return this.months.map(function (monthMeta) { return ({}); });
     };
-    MonthPickerComponent.prototype.selectMonth = function (month, year) {
-        if (year === void 0) { year = this.currentYear; }
-        if (!this.isMonthAvailable(month, year)) {
+    MonthPickerComponent.prototype.selectMonth = function (year, month) {
+        if (!this.isMonthAvailable(year, month)) {
             return;
         }
         var monthMeta = this.getYearMeta(year)[month];
         if (monthMeta.selected) {
-            return this.deselectMonth(month, year);
+            return this.deselectMonth(year, month);
         }
         if (this.maxSelectableItems === 1) {
-            this.iterateMonthMetas(function (month, year, mMeta) {
+            this.iterateMonthMetas(function (year, month, mMeta) {
                 mMeta.selected = mMeta === monthMeta;
             });
         }
@@ -11217,7 +11214,7 @@ var MonthPickerComponent = (function () {
             monthMeta.selected = true;
         }
         if (monthMeta.selected) {
-            this.setMonthBackgroundColor(month, year);
+            this.setMonthBackgroundColor(year, month);
             this.notifySelect(year + "." + month);
             if (this.maxSelectableItems === 1 && this.expandable) {
                 this.expanded = false;
@@ -11225,18 +11222,18 @@ var MonthPickerComponent = (function () {
             }
         }
     };
-    MonthPickerComponent.prototype.isMonthAvailable = function (month, year) {
-        return this.isDateInBounds(month, year) && (!this.useAvailableMonths ||
+    MonthPickerComponent.prototype.isMonthAvailable = function (year, month) {
+        return this.isDateInBounds(year, month) && (!this.useAvailableMonths ||
             this.yearMeta[year] && this.yearMeta[year][month].available);
     };
-    MonthPickerComponent.prototype.isDateInBounds = function (month, year) {
+    MonthPickerComponent.prototype.isDateInBounds = function (year, month) {
         return this.isMonthInBounds(month) && this.isYearInBounds(year);
     };
     MonthPickerComponent.prototype.isMonthInBounds = function (month) {
         return month > -1 && month < this.months.length;
     };
     MonthPickerComponent.prototype.isYearInBounds = function (year) {
-        return year > -1 && year < this.maxYear;
+        return year > this.minYear && year < this.maxYear;
     };
     MonthPickerComponent.prototype.getYearMeta = function (year) {
         if (!this.yearMeta[year]) {
@@ -11248,23 +11245,20 @@ var MonthPickerComponent = (function () {
         var _this = this;
         Object.keys(this.yearMeta).forEach(function (year) {
             _this.yearMeta[year].forEach(function (monthMeta, month) {
-                cb(month, +year, monthMeta);
+                cb(Number(year), month, monthMeta);
             });
         });
     };
     MonthPickerComponent.prototype.getSelectedDates = function () {
-        var _this = this;
         var selectedDates = [];
-        Object.keys(this.yearMeta).forEach(function (year) {
-            _this.yearMeta[year].forEach(function (monthMeta, month) {
-                if (monthMeta.selected) {
-                    selectedDates.push(year + "." + month);
-                }
-            });
+        this.iterateMonthMetas(function (year, month, monthMeta) {
+            if (monthMeta.selected) {
+                selectedDates.push(year + "." + month);
+            }
         });
         return selectedDates;
     };
-    MonthPickerComponent.prototype.setMonthBackgroundColor = function (month, year) {
+    MonthPickerComponent.prototype.setMonthBackgroundColor = function (year, month) {
         var color = this.getMonthBackgroundColor();
         if (color) {
             var monthMeta = this.getYearMeta(year)[month];
@@ -11278,20 +11272,19 @@ var MonthPickerComponent = (function () {
             return this.colors[index];
         }
     };
-    MonthPickerComponent.prototype.deselectMonth = function (month, year) {
-        if (year === void 0) { year = this.currentYear; }
-        if (this.isMonthSelected(month, year)) {
+    MonthPickerComponent.prototype.deselectMonth = function (year, month) {
+        if (this.isMonthSelected(year, month)) {
             var monthMeta = this.getYearMeta(year)[month];
             monthMeta.selected = false;
-            this.clearMonthBackgroundColor(month, year);
+            this.clearMonthBackgroundColor(year, month);
             this.notifyDeselect(year + "." + month);
         }
     };
-    MonthPickerComponent.prototype.isMonthSelected = function (month, year) {
-        return this.isDateInBounds(month, year) &&
+    MonthPickerComponent.prototype.isMonthSelected = function (year, month) {
+        return this.isDateInBounds(year, month) &&
             this.yearMeta[year] && this.yearMeta[year][month].selected;
     };
-    MonthPickerComponent.prototype.clearMonthBackgroundColor = function (month, year) {
+    MonthPickerComponent.prototype.clearMonthBackgroundColor = function (year, month) {
         if (this.availableColors) {
             var monthMeta = this.getYearMeta(year)[month];
             if (monthMeta.color) {
@@ -11303,24 +11296,24 @@ var MonthPickerComponent = (function () {
     };
     MonthPickerComponent.prototype.deselectAllMonths = function () {
         var _this = this;
-        this.iterateMonthMetas(function (month, year, monthMeta) {
+        this.iterateMonthMetas(function (year, month, monthMeta) {
             monthMeta.selected = false;
-            _this.clearMonthBackgroundColor(month, year);
+            _this.clearMonthBackgroundColor(year, month);
             _this.notifyDeselect(year + "." + month);
         });
     };
-    MonthPickerComponent.prototype.addAvailableMonth = function (month, year) {
-        if (this.isDateInBounds(month, year)) {
+    MonthPickerComponent.prototype.addAvailableMonth = function (year, month) {
+        if (this.isDateInBounds(year, month)) {
             this.getYearMeta(year)[month].available = true;
         }
     };
-    MonthPickerComponent.prototype.removeAvailableMonth = function (month, year) {
-        if (this.isDateInBounds(month, year) && this.yearMeta[year]) {
+    MonthPickerComponent.prototype.removeAvailableMonth = function (year, month) {
+        if (this.isDateInBounds(year, month) && this.yearMeta[year]) {
             this.yearMeta[year][month].available = false;
         }
     };
     MonthPickerComponent.prototype.removeAllAvailableMonths = function () {
-        this.iterateMonthMetas(function (month, year, monthMeta) {
+        this.iterateMonthMetas(function (year, month, monthMeta) {
             monthMeta.available = false;
         });
     };
@@ -11354,12 +11347,15 @@ var MonthPickerComponent = (function () {
     MonthPickerComponent.prototype.notifyDeselect = function (date) {
         this.deselect.emit(date);
     };
-    MonthPickerComponent.prototype.isCurrentMonth = function (month, year) {
-        if (year === void 0) { year = this.currentYear; }
+    MonthPickerComponent.prototype.isCurrentMonth = function (year, month) {
         return this.now.getFullYear() == year && this.now.getMonth() === month;
     };
     MonthPickerComponent.prototype.getMonth = function (year, month) {
-        return this.isDateInBounds(year, month) ? this.getYearMeta(year)[month] : null;
+        if (this.isDateInBounds(year, month)) {
+            return Object.assign({
+                label: this.months[month]
+            }, this.getYearMeta(year)[month]);
+        }
     };
     MonthPickerComponent.TAG = 'MonthPickerComponent';
     MonthPickerComponent.monthNames = [
@@ -11376,8 +11372,8 @@ var MonthPickerComponent = (function () {
         'November',
         'December'
     ];
-    MonthPickerComponent.monthNamesShort = MonthPickerComponent.monthNames
-        .map(function (name) { return name.substr(0, 3); });
+    MonthPickerComponent.monthNamesShort = MonthPickerComponent.monthNames.
+        map(function (name) { return name.substr(0, 3); });
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Boolean)
@@ -11442,6 +11438,10 @@ var MonthPickerComponent = (function () {
         core_1.Input(), 
         __metadata('design:type', Boolean)
     ], MonthPickerComponent.prototype, "nextYearAvailable", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Number)
+    ], MonthPickerComponent.prototype, "minYear", void 0);
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Number)
@@ -50346,7 +50346,7 @@ module.exports = "<template\n  *ngFor=\"let item of items\"\n  [ngTemplateOutlet
 /* 191 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"vclDatePicker\"\n    [class.vclLayoutHidden]=\"!expanded\">\n  <div class=\"vclDataGrid vclDGVAlignMiddle vclDGAlignCentered vclCalendar vclCalInput\"\n    [attr.role]=\"grid\"\n    [attr.tabindex]=\"tabindex\"\n    [attr.aria-multiselectable]=\"maxSelectableItems > 1\"\n    [attr.aria-expanded]=\"expanded\">\n\n    <div class=\"vclLayoutFlex vclDGRow vclLayoutAuto\">\n      <div class=\"vclToolbar vclLayoutFlex vclLayoutHorizontal vclLayoutJustified vclLayoutCenter\" role=\"menubar\" aria-level=\"1\">\n        <button vcl-button class=\"vclButton vclTransparent vclSquare\"\n          [class.vclDisabled]=\"!prevYearAvailable\"\n          [appIcon]=\"prevYearBtnIcon\"\n          (tap)=\"onPrevYearTap()\">\n        </button>\n\n        <span class=\"vclCalHeaderLabel\">{{ currentYear }}</span>\n\n        <button vcl-button class=\"vclButton vclTransparent vclSquare\"\n          [class.vclDisabled]=\"!nextYearAvailable\"\n          [appIcon]=\"nextYearBtnIcon\"\n          (tap)=\"onNextYearTap()\">\n        </button>\n\n        <button vcl-button *ngIf=\"expandable\" class=\"vclButton vclTransparent vclSquare\"\n          [appIcon]=\"closeBtnIcon\"\n          (tap)=\"onCloseBtnTap()\">\n        </button>\n      </div>\n    </div>\n\n    <div class=\"vclSeparator\"></div>\n\n    <template ngFor let-iM [ngForOf]=\"months\" let-i=\"index\">\n      <div *ngIf=\"i % monthsPerRow === 0\" class=\"vclLayoutFlex vclDGRow vclLayoutAuto\" role=\"row\">\n        <div *ngFor=\"let jM of months.slice(i, (i + monthsPerRow > months.length ? months.length : i + monthsPerRow)); let j = index;\"\n          (tap)=\"selectMonth(i+j)\"\n          class=\"vclDGCell vclCalItem\"\n          [class.vclAvailable]=\"!useAvailableMonths || currentMeta[i+j].available\"\n          [class.vclUnavailable]=\"useAvailableMonths && !currentMeta[i+j].available\"\n          [class.vclToday]=\"isCurrentMonth(i+j)\"\n          [class.vclOtherMonth]=\"!isCurrentMonth(i+j)\"\n          [class.vclDisabled]=\"useAvailableMonths && !currentMeta[i+j].available\"\n          [class.vclSelected]=\"currentMeta[i+j].selected\"\n          [style.background-color]=\"currentMeta[i+j].color\"\n          [style.order]=\"i+j\"\n          [attr.aria-selected]=\"currentMeta[i+j].selected\"\n          role=\"gridcell\"\n          tabindex=\"0\">\n            <div *ngIf=\"jM.label\" class=\"vclLayoutHorizontal vclLayoutCenterJustified vclMonthPickerListItemLabel\">\n              {{jM.label | loc}}\n            </div>\n\n            <div *ngIf=\"jM.sublabel\" class=\"vclLayoutHorizontal vclLayoutCenterJustified vclMonthPickerListItemSublabel\">\n              {{jM.sublabel | loc}}\n            </div>\n        </div>\n      </div>\n    </template>\n  </div>\n</div>\n"
+module.exports = "<div class=\"vclDatePicker\"\n    [class.vclLayoutHidden]=\"!expanded\">\n  <div class=\"vclDataGrid vclDGVAlignMiddle vclDGAlignCentered vclCalendar vclCalInput\"\n    [attr.role]=\"grid\"\n    [attr.tabindex]=\"tabindex\"\n    [attr.aria-multiselectable]=\"maxSelectableItems > 1\"\n    [attr.aria-expanded]=\"expanded\">\n\n    <div class=\"vclLayoutFlex vclDGRow vclLayoutAuto\">\n      <div class=\"vclToolbar vclLayoutFlex vclLayoutHorizontal vclLayoutJustified vclLayoutCenter\" role=\"menubar\" aria-level=\"1\">\n        <button vcl-button class=\"vclButton vclTransparent vclSquare\"\n          [class.vclDisabled]=\"!prevYearAvailable\"\n          [appIcon]=\"prevYearBtnIcon\"\n          (tap)=\"onPrevYearTap()\">\n        </button>\n\n        <span class=\"vclCalHeaderLabel\">{{ currentYear }}</span>\n\n        <button vcl-button class=\"vclButton vclTransparent vclSquare\"\n          [class.vclDisabled]=\"!nextYearAvailable\"\n          [appIcon]=\"nextYearBtnIcon\"\n          (tap)=\"onNextYearTap()\">\n        </button>\n\n        <button vcl-button *ngIf=\"expandable\" class=\"vclButton vclTransparent vclSquare\"\n          [appIcon]=\"closeBtnIcon\"\n          (tap)=\"onCloseBtnTap()\">\n        </button>\n      </div>\n    </div>\n\n    <div class=\"vclSeparator\"></div>\n\n    <template ngFor let-iM [ngForOf]=\"months\" let-i=\"index\">\n      <div *ngIf=\"i % monthsPerRow === 0\" class=\"vclLayoutFlex vclDGRow vclLayoutAuto\" role=\"row\">\n        <div *ngFor=\"let jM of months.slice(i, (i + monthsPerRow > months.length ? months.length : i + monthsPerRow)); let j = index;\"\n          (tap)=\"selectMonth(currentYear, i+j)\"\n          class=\"vclDGCell vclCalItem\"\n          [class.vclAvailable]=\"!useAvailableMonths || currentMeta[i+j].available\"\n          [class.vclUnavailable]=\"useAvailableMonths && !currentMeta[i+j].available\"\n          [class.vclToday]=\"isCurrentMonth(i+j)\"\n          [class.vclOtherMonth]=\"!isCurrentMonth(i+j)\"\n          [class.vclDisabled]=\"useAvailableMonths && !currentMeta[i+j].available\"\n          [class.vclSelected]=\"currentMeta[i+j].selected\"\n          [style.background-color]=\"currentMeta[i+j].color\"\n          [style.order]=\"i+j\"\n          [attr.aria-selected]=\"currentMeta[i+j].selected\"\n          role=\"gridcell\"\n          tabindex=\"0\">\n            <div class=\"vclLayoutHorizontal vclLayoutCenterJustified vclMonthPickerListItemLabel\">\n              {{months[i + j] | loc}}\n            </div>\n        </div>\n      </div>\n    </template>\n  </div>\n</div>\n"
 
 /***/ },
 /* 192 */
