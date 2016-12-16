@@ -139,7 +139,7 @@ var MonthPickerComponent = (function () {
             if (monthMeta.color) {
                 var index = this.colors.indexOf(monthMeta.color);
                 this.availableColors[index] = true;
-                monthMeta.color = undefined;
+                delete monthMeta.color;
             }
         }
     };
@@ -202,6 +202,7 @@ var MonthPickerComponent = (function () {
     MonthPickerComponent.prototype.getMonth = function (year, month) {
         if (this.isDateInBounds(year, month)) {
             return Object.assign({
+                date: year + "." + month,
                 label: this.months[month]
             }, this.getYearMeta(year)[month]);
         }

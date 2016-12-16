@@ -10,7 +10,8 @@ export declare class WormholeService {
     constructor(appRef: ApplicationRef, componentFactoryResolver: ComponentFactoryResolver, defaultInjector: Injector);
     ready(): void;
     attachComponent<T>(componentClass: ComponentType<T>, node?: HTMLElement): {
-        ();
+        componentRef: ComponentRef<T>;
+        dispose: () => void;
     };
     getNode(node?: HTMLElement): Promise<HTMLElement>;
     getComponentRootNode(componentRef: ComponentRef<any>): HTMLElement;

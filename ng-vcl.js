@@ -7,7 +7,7 @@
 		exports["NgVCL"] = factory(require("jsonschema"), require("hammerjs"), require("tether"), require("rxjs/add/operator/catch"), require("rxjs/add/operator/combineLatest"), require("rxjs/add/operator/distinctUntilChanged"), require("rxjs/add/operator/filter"), require("rxjs/add/operator/let"), require("rxjs/add/operator/map"), require("rxjs/add/operator/pluck"), require("rxjs/add/operator/publish"), require("rxjs/add/operator/publishBehavior"), require("rxjs/add/operator/publishReplay"), require("rxjs/add/operator/retryWhen"), require("rxjs/add/operator/scan"), require("rxjs/add/operator/switchMap"), require("rxjs/add/operator/withLatestFrom"), require("rxjs/add/observable/combineLatest"), require("rxjs/add/observable/of"), require("rxjs/add/observable/throw"), require("rxjs/BehaviorSubject"), require("rxjs/Observable"), require("rxjs/ReplaySubject"), require("rxjs/Subject"), require("rxjs/observable/merge"), require("@angular/common"), require("@angular/core"), require("@angular/forms"), require("@angular/http"), require("@angular/router"));
 	else
 		root["NgVCL"] = factory(root[undefined], root["Hammer"], root["Tether"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"], root["Rx"]["Observable"], root["Rx"]["Observable"], root["Rx"], root["Rx"], root["Rx"], root["Rx"], root["Rx"], root["ng"]["common"], root["ng"]["core"], root["ng"]["forms"], root["ng"]["http"], root["ng"]["router"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_479__, __WEBPACK_EXTERNAL_MODULE_130__, __WEBPACK_EXTERNAL_MODULE_480__, __WEBPACK_EXTERNAL_MODULE_481__, __WEBPACK_EXTERNAL_MODULE_482__, __WEBPACK_EXTERNAL_MODULE_123__, __WEBPACK_EXTERNAL_MODULE_82__, __WEBPACK_EXTERNAL_MODULE_483__, __WEBPACK_EXTERNAL_MODULE_50__, __WEBPACK_EXTERNAL_MODULE_484__, __WEBPACK_EXTERNAL_MODULE_485__, __WEBPACK_EXTERNAL_MODULE_486__, __WEBPACK_EXTERNAL_MODULE_124__, __WEBPACK_EXTERNAL_MODULE_487__, __WEBPACK_EXTERNAL_MODULE_488__, __WEBPACK_EXTERNAL_MODULE_489__, __WEBPACK_EXTERNAL_MODULE_490__, __WEBPACK_EXTERNAL_MODULE_491__, __WEBPACK_EXTERNAL_MODULE_492__, __WEBPACK_EXTERNAL_MODULE_493__, __WEBPACK_EXTERNAL_MODULE_83__, __WEBPACK_EXTERNAL_MODULE_13__, __WEBPACK_EXTERNAL_MODULE_494__, __WEBPACK_EXTERNAL_MODULE_84__, __WEBPACK_EXTERNAL_MODULE_495__, __WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_10__, __WEBPACK_EXTERNAL_MODULE_125__, __WEBPACK_EXTERNAL_MODULE_126__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE_479__, __WEBPACK_EXTERNAL_MODULE_131__, __WEBPACK_EXTERNAL_MODULE_480__, __WEBPACK_EXTERNAL_MODULE_481__, __WEBPACK_EXTERNAL_MODULE_482__, __WEBPACK_EXTERNAL_MODULE_124__, __WEBPACK_EXTERNAL_MODULE_82__, __WEBPACK_EXTERNAL_MODULE_483__, __WEBPACK_EXTERNAL_MODULE_50__, __WEBPACK_EXTERNAL_MODULE_484__, __WEBPACK_EXTERNAL_MODULE_485__, __WEBPACK_EXTERNAL_MODULE_486__, __WEBPACK_EXTERNAL_MODULE_125__, __WEBPACK_EXTERNAL_MODULE_487__, __WEBPACK_EXTERNAL_MODULE_488__, __WEBPACK_EXTERNAL_MODULE_489__, __WEBPACK_EXTERNAL_MODULE_490__, __WEBPACK_EXTERNAL_MODULE_491__, __WEBPACK_EXTERNAL_MODULE_492__, __WEBPACK_EXTERNAL_MODULE_493__, __WEBPACK_EXTERNAL_MODULE_83__, __WEBPACK_EXTERNAL_MODULE_13__, __WEBPACK_EXTERNAL_MODULE_494__, __WEBPACK_EXTERNAL_MODULE_84__, __WEBPACK_EXTERNAL_MODULE_495__, __WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_10__, __WEBPACK_EXTERNAL_MODULE_126__, __WEBPACK_EXTERNAL_MODULE_127__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -228,7 +228,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var isFunction_1 = __webpack_require__(80);
 var Subscription_1 = __webpack_require__(7);
-var Observer_1 = __webpack_require__(96);
+var Observer_1 = __webpack_require__(97);
 var rxSubscriber_1 = __webpack_require__(44);
 /**
  * Implements the {@link Observer} interface and extends the
@@ -514,8 +514,8 @@ exports.OuterSubscriber = OuterSubscriber;
 "use strict";
 var root_1 = __webpack_require__(11);
 var isArray_1 = __webpack_require__(15);
-var isPromise_1 = __webpack_require__(121);
-var isObject_1 = __webpack_require__(120);
+var isPromise_1 = __webpack_require__(122);
+var isObject_1 = __webpack_require__(121);
 var Observable_1 = __webpack_require__(0);
 var iterator_1 = __webpack_require__(29);
 var InnerSubscriber_1 = __webpack_require__(203);
@@ -693,11 +693,11 @@ exports.L10nModule = L10nModule;
 "use strict";
 "use strict";
 var isArray_1 = __webpack_require__(15);
-var isObject_1 = __webpack_require__(120);
+var isObject_1 = __webpack_require__(121);
 var isFunction_1 = __webpack_require__(80);
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(9);
-var UnsubscriptionError_1 = __webpack_require__(118);
+var UnsubscriptionError_1 = __webpack_require__(119);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -860,7 +860,7 @@ var Observable_1 = __webpack_require__(0);
 var Subscriber_1 = __webpack_require__(2);
 var Subscription_1 = __webpack_require__(7);
 var ObjectUnsubscribedError_1 = __webpack_require__(47);
-var SubjectSubscription_1 = __webpack_require__(97);
+var SubjectSubscription_1 = __webpack_require__(98);
 var rxSubscriber_1 = __webpack_require__(44);
 /**
  * @class SubjectSubscriber<T>
@@ -1243,7 +1243,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var icon_component_1 = __webpack_require__(140);
+var icon_component_1 = __webpack_require__(141);
 exports.IconComponent = icon_component_1.IconComponent;
 var icon_service_1 = __webpack_require__(89);
 exports.IconService = icon_service_1.IconService;
@@ -1428,12 +1428,80 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var wormhole_1 = __webpack_require__(168);
+var common_1 = __webpack_require__(5);
+var metalist_component_1 = __webpack_require__(149);
+var l10n_module_1 = __webpack_require__(6);
+var VCLMetalistModule = (function () {
+    function VCLMetalistModule() {
+    }
+    VCLMetalistModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule, l10n_module_1.L10nModule],
+            exports: [metalist_component_1.MetalistComponent],
+            declarations: [metalist_component_1.MetalistComponent],
+            providers: [],
+        }), 
+        __metadata('design:paramtypes', [])
+    ], VCLMetalistModule);
+    return VCLMetalistModule;
+}());
+exports.VCLMetalistModule = VCLMetalistModule;
+
+
+/***/ },
+/* 22 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = __webpack_require__(1);
+var off_click_directive_1 = __webpack_require__(167);
+var VCLOffClickModule = (function () {
+    function VCLOffClickModule() {
+    }
+    VCLOffClickModule = __decorate([
+        core_1.NgModule({
+            declarations: [off_click_directive_1.OffClickDirective],
+            exports: [off_click_directive_1.OffClickDirective]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], VCLOffClickModule);
+    return VCLOffClickModule;
+}());
+exports.VCLOffClickModule = VCLOffClickModule;
+
+
+/***/ },
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = __webpack_require__(1);
+var wormhole_1 = __webpack_require__(93);
 exports.TemplateWormhole = wormhole_1.TemplateWormhole;
 exports.ComponentWormhole = wormhole_1.ComponentWormhole;
 exports.ConnectWormholeDirective = wormhole_1.ConnectWormholeDirective;
 exports.Wormhole = wormhole_1.Wormhole;
-var wormhole_service_1 = __webpack_require__(167);
+var wormhole_service_1 = __webpack_require__(168);
 exports.WormholeService = wormhole_service_1.WormholeService;
 var VCLWormholeModule = (function () {
     function VCLWormholeModule() {
@@ -1485,80 +1553,12 @@ exports.VCLWormholeModule = VCLWormholeModule;
 
 
 /***/ },
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = __webpack_require__(1);
-var common_1 = __webpack_require__(5);
-var metalist_component_1 = __webpack_require__(148);
-var l10n_module_1 = __webpack_require__(6);
-var VCLMetalistModule = (function () {
-    function VCLMetalistModule() {
-    }
-    VCLMetalistModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule],
-            exports: [metalist_component_1.MetalistComponent],
-            declarations: [metalist_component_1.MetalistComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLMetalistModule);
-    return VCLMetalistModule;
-}());
-exports.VCLMetalistModule = VCLMetalistModule;
-
-
-/***/ },
-/* 23 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = __webpack_require__(1);
-var off_click_directive_1 = __webpack_require__(166);
-var VCLOffClickModule = (function () {
-    function VCLOffClickModule() {
-    }
-    VCLOffClickModule = __decorate([
-        core_1.NgModule({
-            declarations: [off_click_directive_1.OffClickDirective],
-            exports: [off_click_directive_1.OffClickDirective]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLOffClickModule);
-    return VCLOffClickModule;
-}());
-exports.VCLOffClickModule = VCLOffClickModule;
-
-
-/***/ },
 /* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var ConnectableObservable_1 = __webpack_require__(98);
+var ConnectableObservable_1 = __webpack_require__(99);
 /* tslint:disable:max-line-length */
 /**
  * Returns an Observable that emits the results of invoking a specified selector on items
@@ -1632,7 +1632,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var icogram_component_1 = __webpack_require__(139);
+var icogram_component_1 = __webpack_require__(140);
 var icon_module_1 = __webpack_require__(17);
 var l10n_module_1 = __webpack_require__(6);
 var VCLIcogramModule = (function () {
@@ -2048,7 +2048,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
 var icon_module_1 = __webpack_require__(17);
-var checkbox_component_1 = __webpack_require__(132);
+var checkbox_component_1 = __webpack_require__(133);
 exports.CheckboxComponent = checkbox_component_1.CheckboxComponent;
 var VCLCheckboxModule = (function () {
     function VCLCheckboxModule() {
@@ -2082,7 +2082,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var input_control_group_component_1 = __webpack_require__(141);
+var input_control_group_component_1 = __webpack_require__(142);
 var common_1 = __webpack_require__(5);
 var VCLInputControlGroupModule = (function () {
     function VCLInputControlGroupModule() {
@@ -2118,7 +2118,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var link_component_1 = __webpack_require__(147);
+var link_component_1 = __webpack_require__(148);
 var icogram_module_1 = __webpack_require__(25);
 var l10n_module_1 = __webpack_require__(6);
 var VCLLinkModule = (function () {
@@ -2155,10 +2155,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var popover_component_1 = __webpack_require__(151);
+var popover_component_1 = __webpack_require__(152);
 exports.PopoverComponent = popover_component_1.PopoverComponent;
 var tether_module_1 = __webpack_require__(37);
-var off_click_module_1 = __webpack_require__(23);
+var off_click_module_1 = __webpack_require__(22);
 var overlayManager_service_1 = __webpack_require__(91);
 exports.OverlayManagerService = overlayManager_service_1.OverlayManagerService;
 exports.OverlayManagedComponent = overlayManager_service_1.OverlayManagedComponent;
@@ -2201,7 +2201,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
 var icon_module_1 = __webpack_require__(17);
-var radio_button_component_1 = __webpack_require__(153);
+var radio_button_component_1 = __webpack_require__(154);
 var VCLRadioButtonModule = (function () {
     function VCLRadioButtonModule() {
     }
@@ -2236,7 +2236,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
 var icon_module_1 = __webpack_require__(17);
-var radio_group_component_1 = __webpack_require__(154);
+var radio_group_component_1 = __webpack_require__(155);
 var radio_button_module_1 = __webpack_require__(34);
 var VCLRadioGroupModule = (function () {
     function VCLRadioGroupModule() {
@@ -2271,7 +2271,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var slider_component_1 = __webpack_require__(156);
+var slider_component_1 = __webpack_require__(157);
 var l10n_module_1 = __webpack_require__(6);
 var VCLSliderModule = (function () {
     function VCLSliderModule() {
@@ -2307,7 +2307,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var tether_component_1 = __webpack_require__(158);
+var tether_component_1 = __webpack_require__(159);
 var VCLTetherModule = (function () {
     function VCLTetherModule() {
     }
@@ -2410,10 +2410,10 @@ var BehaviorSubject_1 = __webpack_require__(83);
 var Observable_1 = __webpack_require__(13);
 __webpack_require__(488);
 __webpack_require__(490);
-__webpack_require__(123);
+__webpack_require__(124);
 var core_1 = __webpack_require__(1);
 var actions_1 = __webpack_require__(38);
-var observable_1 = __webpack_require__(93);
+var observable_1 = __webpack_require__(94);
 var utils_1 = __webpack_require__(40);
 exports.STORE_INITIAL_REDUCERS = new core_1.OpaqueToken('store.initial.reducers');
 exports.STORE_INITIAL_STATE = new core_1.OpaqueToken('store.initial.state');
@@ -2999,8 +2999,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var dropdown_component_1 = __webpack_require__(135);
-var metalist_module_1 = __webpack_require__(22);
+var dropdown_component_1 = __webpack_require__(136);
+var metalist_module_1 = __webpack_require__(21);
 var l10n_module_1 = __webpack_require__(6);
 var VCLDropdownModule = (function () {
     function VCLDropdownModule() {
@@ -3028,9 +3028,9 @@ exports.VCLDropdownModule = VCLDropdownModule;
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(163));
 __export(__webpack_require__(164));
 __export(__webpack_require__(165));
+__export(__webpack_require__(166));
 
 
 /***/ },
@@ -3050,7 +3050,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var button_group_component_1 = __webpack_require__(131);
+var button_group_component_1 = __webpack_require__(132);
 var button_module_1 = __webpack_require__(20);
 var l10n_module_1 = __webpack_require__(6);
 var VCLButtonGroupModule = (function () {
@@ -3087,7 +3087,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var date_picker_component_1 = __webpack_require__(134);
+var date_picker_component_1 = __webpack_require__(135);
 var button_module_1 = __webpack_require__(20);
 var l10n_module_1 = __webpack_require__(6);
 var VCLDatePickerModule = (function () {
@@ -3124,7 +3124,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var forms_1 = __webpack_require__(10);
-var form_component_1 = __webpack_require__(138);
+var form_component_1 = __webpack_require__(139);
 var VCLFormModule = (function () {
     function VCLFormModule() {
     }
@@ -3157,7 +3157,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var input_directive_1 = __webpack_require__(142);
+var input_directive_1 = __webpack_require__(143);
 var VCLInputModule = (function () {
     function VCLInputModule() {
     }
@@ -3192,8 +3192,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var json_editor_component_1 = __webpack_require__(143);
-var metalist_module_1 = __webpack_require__(22);
+var json_editor_component_1 = __webpack_require__(144);
+var metalist_module_1 = __webpack_require__(21);
 var l10n_module_1 = __webpack_require__(6);
 var VCLJsonEditorModule = (function () {
     function VCLJsonEditorModule() {
@@ -3229,7 +3229,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var jss_form_component_1 = __webpack_require__(144);
+var jss_form_component_1 = __webpack_require__(145);
 var l10n_module_1 = __webpack_require__(6);
 var forms_1 = __webpack_require__(10);
 var dropdown_module_1 = __webpack_require__(51);
@@ -3282,8 +3282,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var label_component_1 = __webpack_require__(145);
-var metalist_module_1 = __webpack_require__(22);
+var label_component_1 = __webpack_require__(146);
+var metalist_module_1 = __webpack_require__(21);
 var l10n_module_1 = __webpack_require__(6);
 var VCLLabelModule = (function () {
     function VCLLabelModule() {
@@ -3319,37 +3319,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var layer_component_1 = __webpack_require__(146);
+var layer_component_1 = __webpack_require__(147);
 exports.LayerBaseComponent = layer_component_1.LayerBaseComponent;
 exports.LayerDirective = layer_component_1.LayerDirective;
 var layer_service_1 = __webpack_require__(90);
 exports.LayerService = layer_service_1.LayerService;
-var off_click_module_1 = __webpack_require__(23);
-var wormhole_module_1 = __webpack_require__(21);
+var off_click_module_1 = __webpack_require__(22);
+var wormhole_module_1 = __webpack_require__(23);
 function getComponentRootNode(componentRef) {
     return componentRef.hostView.rootNodes[0];
 }
-function bootstrapLayer(appRef, componentFactoryResolver, defaultInjector) {
+function bootstrapLayer(wormholeService) {
     return function () {
-        var layerBaseFactory = componentFactoryResolver.resolveComponentFactory(layer_component_1.LayerBaseComponent);
-        var layerBaseRef = layerBaseFactory.create(defaultInjector);
-        layerBaseRef.onDestroy(function () {
-            appRef.detachView(layerBaseRef.hostView);
-        });
-        appRef.attachView(layerBaseRef.hostView);
-        var rootComponents = appRef['_rootComponents'];
-        var rootComponent = rootComponents.length && rootComponents[0];
-        if (!rootComponent) {
-            console.log('Root View Container not found');
-            return;
-        }
-        var layerBaseRootNode = getComponentRootNode(layerBaseRef);
-        var appComponentNode = getComponentRootNode(rootComponent);
-        if (appComponentNode && layerBaseRef) {
-            appComponentNode.appendChild(layerBaseRootNode);
-        }
+        wormholeService.attachComponent(layer_component_1.LayerBaseComponent);
     };
 }
+var LAYER_BOOTSTRAP = {
+    provide: core_1.APP_BOOTSTRAP_LISTENER,
+    multi: true,
+    deps: [wormhole_module_1.WormholeService],
+    useFactory: bootstrapLayer
+};
 var VCLLayerModule = (function () {
     function VCLLayerModule() {
     }
@@ -3359,15 +3349,7 @@ var VCLLayerModule = (function () {
             exports: [layer_component_1.LayerBaseComponent, layer_component_1.LayerDirective],
             declarations: [layer_component_1.LayerBaseComponent, layer_component_1.LayerDirective],
             entryComponents: [layer_component_1.LayerBaseComponent],
-            providers: [
-                layer_service_1.LayerService,
-                {
-                    provide: core_1.APP_BOOTSTRAP_LISTENER,
-                    multi: true,
-                    deps: [core_1.ApplicationRef, core_1.ComponentFactoryResolver, core_1.Injector],
-                    useFactory: bootstrapLayer
-                }
-            ]
+            providers: [layer_service_1.LayerService, LAYER_BOOTSTRAP]
         }), 
         __metadata('design:paramtypes', [])
     ], VCLLayerModule);
@@ -3393,7 +3375,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var month_picker_component_1 = __webpack_require__(149);
+var month_picker_component_1 = __webpack_require__(150);
 var button_module_1 = __webpack_require__(20);
 var l10n_module_1 = __webpack_require__(6);
 var VCLMonthPickerModule = (function () {
@@ -3430,7 +3412,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var navigation_component_1 = __webpack_require__(150);
+var navigation_component_1 = __webpack_require__(151);
 var link_module_1 = __webpack_require__(32);
 var l10n_module_1 = __webpack_require__(6);
 var VCLNavigationModule = (function () {
@@ -3467,7 +3449,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var common_1 = __webpack_require__(5);
 var core_1 = __webpack_require__(1);
-var progress_bar_component_1 = __webpack_require__(152);
+var progress_bar_component_1 = __webpack_require__(153);
 var VCLProgressBarModule = (function () {
     function VCLProgressBarModule() {
     }
@@ -3501,9 +3483,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var tab_nav_component_1 = __webpack_require__(157);
+var tab_nav_component_1 = __webpack_require__(158);
 var l10n_module_1 = __webpack_require__(6);
-var wormhole_module_1 = __webpack_require__(21);
+var wormhole_module_1 = __webpack_require__(23);
 var VCLTabNavModule = (function () {
     function VCLTabNavModule() {
     }
@@ -3538,7 +3520,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var forms_1 = __webpack_require__(10);
-var textarea_directive_1 = __webpack_require__(159);
+var textarea_directive_1 = __webpack_require__(160);
 var VCLTextareaModule = (function () {
     function VCLTextareaModule() {
     }
@@ -3573,12 +3555,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var metalist_module_1 = __webpack_require__(22);
+var metalist_module_1 = __webpack_require__(21);
 var l10n_module_1 = __webpack_require__(6);
 var forms_1 = __webpack_require__(10);
 var token_component_1 = __webpack_require__(92);
-var token_list_component_1 = __webpack_require__(161);
-var token_input_component_1 = __webpack_require__(160);
+var token_list_component_1 = __webpack_require__(162);
+var token_input_component_1 = __webpack_require__(161);
 var VCLTokenModule = (function () {
     function VCLTokenModule() {
     }
@@ -3613,7 +3595,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var toolbar_component_1 = __webpack_require__(162);
+var toolbar_component_1 = __webpack_require__(163);
 var l10n_module_1 = __webpack_require__(6);
 var VCLToolbarModule = (function () {
     function VCLToolbarModule() {
@@ -3803,7 +3785,7 @@ __webpack_require__(491);
 __webpack_require__(482);
 __webpack_require__(50);
 __webpack_require__(489);
-__webpack_require__(124);
+__webpack_require__(125);
 var l10n_loader_service_1 = __webpack_require__(68);
 var l10n_parser_service_1 = __webpack_require__(69);
 exports.L10N_CONFIG = new core_1.OpaqueToken('l10n.config');
@@ -4036,11 +4018,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subject_1 = __webpack_require__(8);
-var queue_1 = __webpack_require__(114);
+var queue_1 = __webpack_require__(115);
 var Subscription_1 = __webpack_require__(7);
 var observeOn_1 = __webpack_require__(77);
 var ObjectUnsubscribedError_1 = __webpack_require__(47);
-var SubjectSubscription_1 = __webpack_require__(97);
+var SubjectSubscription_1 = __webpack_require__(98);
 /**
  * @class ReplaySubject<T>
  */
@@ -5115,8 +5097,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var flip_switch_component_1 = __webpack_require__(136);
-var metalist_module_1 = __webpack_require__(22);
+var flip_switch_component_1 = __webpack_require__(137);
+var metalist_module_1 = __webpack_require__(21);
 var l10n_module_1 = __webpack_require__(6);
 var VCLFlipSwitchModule = (function () {
     function VCLFlipSwitchModule() {
@@ -5154,10 +5136,10 @@ var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
 var dropdown_module_1 = __webpack_require__(51);
 var button_module_1 = __webpack_require__(20);
-var select_component_1 = __webpack_require__(155);
+var select_component_1 = __webpack_require__(156);
 var popover_module_1 = __webpack_require__(33);
 var l10n_module_1 = __webpack_require__(6);
-var off_click_module_1 = __webpack_require__(23);
+var off_click_module_1 = __webpack_require__(22);
 var VCLSelectModule = (function () {
     function VCLSelectModule() {
     }
@@ -5200,13 +5182,13 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 var Observable_1 = __webpack_require__(13);
 var ReplaySubject_1 = __webpack_require__(494);
-__webpack_require__(124);
+__webpack_require__(125);
 __webpack_require__(485);
 __webpack_require__(481);
 __webpack_require__(487);
 __webpack_require__(483);
 __webpack_require__(493);
-var http_1 = __webpack_require__(125);
+var http_1 = __webpack_require__(126);
 var core_1 = __webpack_require__(1);
 /**
  *  Data caching
@@ -6010,8 +5992,175 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = __webpack_require__(1);
+var Wormhole = (function () {
+    function Wormhole() {
+    }
+    Object.defineProperty(Wormhole.prototype, "isConnected", {
+        get: function () {
+            return !!this.bridge;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Wormhole.prototype.disconnect = function () {
+        this.detach();
+        this.bridge = null;
+    };
+    Wormhole.prototype.connect = function (bridge) {
+        this.bridge = bridge;
+        this.attach();
+    };
+    return Wormhole;
+}());
+exports.Wormhole = Wormhole;
+var TemplateWormhole = (function (_super) {
+    __extends(TemplateWormhole, _super);
+    // The wormhole directive needs a reference to the template
+    function TemplateWormhole(templateRef) {
+        _super.call(this);
+        this.templateRef = templateRef;
+    }
+    TemplateWormhole.prototype.attach = function () {
+        this.viewRef = this.bridge.viewContainerRef.createEmbeddedView(this.templateRef);
+    };
+    TemplateWormhole.prototype.detach = function () {
+        if (this.viewRef) {
+            var i = this.bridge.viewContainerRef.indexOf(this.viewRef);
+            if (i >= 0)
+                this.bridge.viewContainerRef.remove(i);
+        }
+    };
+    TemplateWormhole = __decorate([
+        core_1.Directive({
+            selector: '[wormhole]',
+            exportAs: 'wormhole',
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object])
+    ], TemplateWormhole);
+    return TemplateWormhole;
+    var _a;
+}(Wormhole));
+exports.TemplateWormhole = TemplateWormhole;
+var ComponentWormhole = (function (_super) {
+    __extends(ComponentWormhole, _super);
+    function ComponentWormhole(componentClass, opts) {
+        if (opts === void 0) { opts = {}; }
+        _super.call(this);
+        this.componentClass = componentClass;
+        this.injector = opts.injector;
+        this.data = opts.data;
+    }
+    ComponentWormhole.prototype.attach = function () {
+        var viewContainerRef = this.bridge.viewContainerRef;
+        var componentFactory = this.bridge.componentFactoryResolver.resolveComponentFactory(this.componentClass);
+        this.compRef = viewContainerRef.createComponent(componentFactory, viewContainerRef.length, this.injector || viewContainerRef.parentInjector);
+        this.setData(this.data);
+    };
+    ComponentWormhole.prototype.detach = function () {
+        if (this.compRef) {
+            var i = this.bridge.viewContainerRef.indexOf(this.compRef.hostView);
+            if (i >= 0)
+                this.bridge.viewContainerRef.remove(i);
+            this.compRef.destroy();
+        }
+        this.compRef = null;
+    };
+    ComponentWormhole.prototype.setData = function (data) {
+        if (data && typeof data === 'object') {
+            Object.assign(this.compRef.instance, data);
+            this.compRef.changeDetectorRef.detectChanges();
+        }
+    };
+    return ComponentWormhole;
+}(Wormhole));
+exports.ComponentWormhole = ComponentWormhole;
+var ConnectWormholeDirective = (function () {
+    function ConnectWormholeDirective(viewContainerRef, componentFactoryResolver) {
+        this.viewContainerRef = viewContainerRef;
+        this.componentFactoryResolver = componentFactoryResolver;
+        // TODO: workaround. Does not disconnect the view when destroying the element when true
+        // ngOnDestroy is called before the animations are fully traversed. This would remove the wormhole's ContentChild
+        // before its host is removed from the DOM
+        this.indisposable = false;
+    }
+    Object.defineProperty(ConnectWormholeDirective.prototype, "isConnected", {
+        get: function () {
+            return !!this.connectedWormhole;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ConnectWormholeDirective.prototype, "connectWormhole", {
+        set: function (wormhole) {
+            if (this.isConnected) {
+                this.disconnect();
+            }
+            if (wormhole) {
+                this.connect(wormhole);
+                this.wormhole = wormhole;
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ConnectWormholeDirective.prototype.connect = function (wormhole) {
+        this.connectedWormhole = wormhole;
+        wormhole.connect(this);
+    };
+    ConnectWormholeDirective.prototype.disconnect = function () {
+        if (this.connectedWormhole) {
+            this.connectedWormhole.disconnect();
+        }
+    };
+    ConnectWormholeDirective.prototype.ngOnDestroy = function () {
+        if (this.isConnected && !this.indisposable) {
+            this.disconnect();
+        }
+    };
+    __decorate([
+        core_1.Input('wormholeIndisposable'), 
+        __metadata('design:type', Boolean)
+    ], ConnectWormholeDirective.prototype, "indisposable", void 0);
+    __decorate([
+        core_1.Input('connectWormhole'), 
+        __metadata('design:type', Wormhole), 
+        __metadata('design:paramtypes', [Wormhole])
+    ], ConnectWormholeDirective.prototype, "connectWormhole", null);
+    ConnectWormholeDirective = __decorate([
+        core_1.Directive({
+            selector: '[connectWormhole]'
+        }), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ComponentFactoryResolver !== 'undefined' && core_1.ComponentFactoryResolver) === 'function' && _b) || Object])
+    ], ConnectWormholeDirective);
+    return ConnectWormholeDirective;
+    var _a, _b;
+}());
+exports.ConnectWormholeDirective = ConnectWormholeDirective;
+
+
+/***/ },
+/* 94 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
 var Observable_1 = __webpack_require__(13);
-__webpack_require__(123);
+__webpack_require__(124);
 __webpack_require__(484);
 __webpack_require__(50);
 function select(path) {
@@ -6058,7 +6207,7 @@ exports.StoreObservable = StoreObservable;
 
 
 /***/ },
-/* 94 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6075,7 +6224,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 __webpack_require__(82);
 __webpack_require__(50);
 var core_1 = __webpack_require__(1);
-var router_1 = __webpack_require__(126);
+var router_1 = __webpack_require__(127);
 var store_1 = __webpack_require__(39);
 var actions_1 = __webpack_require__(38);
 var utils_1 = __webpack_require__(40);
@@ -6182,7 +6331,7 @@ exports.routerReducer = utils_1.combineReducers({
 
 
 /***/ },
-/* 95 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6237,7 +6386,7 @@ exports.BehaviorSubject = BehaviorSubject;
 //# sourceMappingURL=BehaviorSubject.js.map
 
 /***/ },
-/* 96 */
+/* 97 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -6251,7 +6400,7 @@ exports.empty = {
 //# sourceMappingURL=Observer.js.map
 
 /***/ },
-/* 97 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6297,7 +6446,7 @@ exports.SubjectSubscription = SubjectSubscription;
 //# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ },
-/* 98 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6465,7 +6614,7 @@ var RefCountSubscriber = (function (_super) {
 //# sourceMappingURL=ConnectableObservable.js.map
 
 /***/ },
-/* 99 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6476,8 +6625,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var isArray_1 = __webpack_require__(15);
-var isPromise_1 = __webpack_require__(121);
-var PromiseObservable_1 = __webpack_require__(100);
+var isPromise_1 = __webpack_require__(122);
+var PromiseObservable_1 = __webpack_require__(101);
 var IteratorObservable_1 = __webpack_require__(344);
 var ArrayObservable_1 = __webpack_require__(16);
 var ArrayLikeObservable_1 = __webpack_require__(333);
@@ -6593,7 +6742,7 @@ exports.FromObservable = FromObservable;
 //# sourceMappingURL=FromObservable.js.map
 
 /***/ },
-/* 100 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6720,7 +6869,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=PromiseObservable.js.map
 
 /***/ },
-/* 101 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7126,7 +7275,7 @@ exports.AjaxTimeoutError = AjaxTimeoutError;
 //# sourceMappingURL=AjaxObservable.js.map
 
 /***/ },
-/* 102 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7210,7 +7359,7 @@ var DistinctUntilChangedSubscriber = (function (_super) {
 //# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ },
-/* 103 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7309,7 +7458,7 @@ var FilterSubscriber = (function (_super) {
 //# sourceMappingURL=filter.js.map
 
 /***/ },
-/* 104 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7416,7 +7565,7 @@ exports.FindValueSubscriber = FindValueSubscriber;
 //# sourceMappingURL=find.js.map
 
 /***/ },
-/* 105 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7566,7 +7715,7 @@ exports.mergeStatic = mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ },
-/* 106 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7743,7 +7892,7 @@ exports.MergeMapSubscriber = MergeMapSubscriber;
 //# sourceMappingURL=mergeMap.js.map
 
 /***/ },
-/* 107 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7904,7 +8053,7 @@ exports.MergeMapToSubscriber = MergeMapToSubscriber;
 //# sourceMappingURL=mergeMapTo.js.map
 
 /***/ },
-/* 108 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7914,7 +8063,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var FromObservable_1 = __webpack_require__(99);
+var FromObservable_1 = __webpack_require__(100);
 var isArray_1 = __webpack_require__(15);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
@@ -7986,7 +8135,7 @@ var OnErrorResumeNextSubscriber = (function (_super) {
 //# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
-/* 109 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8103,7 +8252,7 @@ exports.RaceSubscriber = RaceSubscriber;
 //# sourceMappingURL=race.js.map
 
 /***/ },
-/* 110 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8168,7 +8317,7 @@ var TimeIntervalSubscriber = (function (_super) {
 //# sourceMappingURL=timeInterval.js.map
 
 /***/ },
-/* 111 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8224,7 +8373,7 @@ var TimestampSubscriber = (function (_super) {
 //# sourceMappingURL=timestamp.js.map
 
 /***/ },
-/* 112 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8328,7 +8477,7 @@ exports.VirtualAction = VirtualAction;
 //# sourceMappingURL=VirtualTimeScheduler.js.map
 
 /***/ },
-/* 113 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8339,7 +8488,7 @@ exports.asap = new AsapScheduler_1.AsapScheduler(AsapAction_1.AsapAction);
 //# sourceMappingURL=asap.js.map
 
 /***/ },
-/* 114 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8350,7 +8499,7 @@ exports.queue = new QueueScheduler_1.QueueScheduler(QueueAction_1.QueueAction);
 //# sourceMappingURL=queue.js.map
 
 /***/ },
-/* 115 */
+/* 116 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -8367,12 +8516,12 @@ exports.SubscriptionLog = SubscriptionLog;
 //# sourceMappingURL=SubscriptionLog.js.map
 
 /***/ },
-/* 116 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var SubscriptionLog_1 = __webpack_require__(115);
+var SubscriptionLog_1 = __webpack_require__(116);
 var SubscriptionLoggable = (function () {
     function SubscriptionLoggable() {
         this.subscriptions = [];
@@ -8392,7 +8541,7 @@ exports.SubscriptionLoggable = SubscriptionLoggable;
 //# sourceMappingURL=SubscriptionLoggable.js.map
 
 /***/ },
-/* 117 */
+/* 118 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -8423,7 +8572,7 @@ exports.TimeoutError = TimeoutError;
 //# sourceMappingURL=TimeoutError.js.map
 
 /***/ },
-/* 118 */
+/* 119 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -8454,7 +8603,7 @@ exports.UnsubscriptionError = UnsubscriptionError;
 //# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ },
-/* 119 */
+/* 120 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -8473,7 +8622,7 @@ exports.applyMixins = applyMixins;
 //# sourceMappingURL=applyMixins.js.map
 
 /***/ },
-/* 120 */
+/* 121 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -8485,7 +8634,7 @@ exports.isObject = isObject;
 //# sourceMappingURL=isObject.js.map
 
 /***/ },
-/* 121 */
+/* 122 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -8497,7 +8646,7 @@ exports.isPromise = isPromise;
 //# sourceMappingURL=isPromise.js.map
 
 /***/ },
-/* 122 */
+/* 123 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -8506,12 +8655,6 @@ exports.isPromise = isPromise;
 function noop() { }
 exports.noop = noop;
 //# sourceMappingURL=noop.js.map
-
-/***/ },
-/* 123 */
-/***/ function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_123__;
 
 /***/ },
 /* 124 */
@@ -8533,6 +8676,12 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_126__;
 
 /***/ },
 /* 127 */
+/***/ function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_127__;
+
+/***/ },
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8550,7 +8699,7 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 var core_1 = __webpack_require__(1);
-var http_1 = __webpack_require__(125);
+var http_1 = __webpack_require__(126);
 var adv_http_service_1 = __webpack_require__(87);
 __export(__webpack_require__(87));
 var AdvHttpModule = (function () {
@@ -8615,7 +8764,7 @@ exports.AdvHttpModule = AdvHttpModule;
 
 
 /***/ },
-/* 128 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8632,7 +8781,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
 var icon_module_1 = __webpack_require__(17);
-var form_control_label_component_1 = __webpack_require__(137);
+var form_control_label_component_1 = __webpack_require__(138);
 var l10n_module_1 = __webpack_require__(6);
 var VCLFormControlLabelModule = (function () {
     function VCLFormControlLabelModule() {
@@ -8651,7 +8800,7 @@ exports.VCLFormControlLabelModule = VCLFormControlLabelModule;
 
 
 /***/ },
-/* 129 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8676,13 +8825,13 @@ var core_1 = __webpack_require__(1);
 var store_1 = __webpack_require__(39);
 var actions_1 = __webpack_require__(38);
 var effects_1 = __webpack_require__(71);
-var router_1 = __webpack_require__(94);
+var router_1 = __webpack_require__(95);
 __export(__webpack_require__(38));
 __export(__webpack_require__(40));
 __export(__webpack_require__(71));
-__export(__webpack_require__(93));
-__export(__webpack_require__(39));
 __export(__webpack_require__(94));
+__export(__webpack_require__(39));
+__export(__webpack_require__(95));
 exports.STORE_FORROOT_GUARD = new core_1.OpaqueToken('STORE_FORROOT_GUARD');
 function provideForRootGuard(store) {
     if (store) {
@@ -8809,13 +8958,13 @@ exports.StoreModule = StoreModule;
 
 
 /***/ },
-/* 130 */
+/* 131 */
 /***/ function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_130__;
+module.exports = __WEBPACK_EXTERNAL_MODULE_131__;
 
 /***/ },
-/* 131 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8983,7 +9132,7 @@ exports.ButtonGroupComponent = ButtonGroupComponent;
 
 
 /***/ },
-/* 132 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9175,7 +9324,7 @@ exports.CheckboxComponent = CheckboxComponent;
 
 
 /***/ },
-/* 133 */
+/* 134 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -9404,7 +9553,7 @@ exports.PickDateCreate = PickDateCreate;
 
 
 /***/ },
-/* 134 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9420,7 +9569,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var forms_1 = __webpack_require__(10);
-var PickDate_1 = __webpack_require__(133);
+var PickDate_1 = __webpack_require__(134);
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return DatePickerComponent; }),
@@ -9627,7 +9776,7 @@ exports.DatePickerComponent = DatePickerComponent;
 
 
 /***/ },
-/* 135 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9650,46 +9799,76 @@ exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
 };
 var DropdownComponent = (function () {
     function DropdownComponent() {
-        var _this = this;
+        this.change$ = new core_1.EventEmitter();
         this.tabindex = 0;
         this.expanded = false;
         this.maxSelectableItems = 1;
         this.minSelectableItems = 1;
         this.ariaRole = 'listbox';
-        this.expandedChange = new core_1.EventEmitter();
-        this.select = new core_1.EventEmitter();
-        this.metaInformation = [];
-        this.select.subscribe(function (selectedItems) {
-            _this.selected = selectedItems;
-            !!_this.onChangeCallback && _this.onChangeCallback(selectedItems);
-        });
     }
-    DropdownComponent.prototype._selectItem = function (item, meta, metalist) {
-        if (this.maxSelectableItems === 1) {
-            this.expanded = false;
-            this.expandedChange.emit(this.expanded);
-            metalist.selectItem(item);
+    Object.defineProperty(DropdownComponent.prototype, "value", {
+        get: function () {
+            var ret = this.items
+                .filter(function (i) { return i.selected; })
+                .map(function (i) { return i.value; });
+            if (this.maxSelectableItems == 1)
+                ret = ret[0];
+            return ret;
+        },
+        set: function (v) {
+            if (!Array.isArray(v))
+                v = [v];
+            this.items
+                .forEach(function (i) {
+                if (v.includes(i.value))
+                    i.selected = true;
+                else
+                    i.selected = false;
+            });
+            this.onChange();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ;
+    DropdownComponent.prototype.ngOnInit = function () {
+        // ensure items have a value
+        this.items = this.items.map(function (i) {
+            if (!i.value)
+                i.value = i.label;
+            if (!i.label)
+                i.label = i.value;
+            return i;
+        });
+    };
+    DropdownComponent.prototype.selectedItems = function () {
+        return this.items.filter(function (i) { return i.selected; });
+    };
+    DropdownComponent.prototype.clickItem = function (item) {
+        if (item.disabled)
+            return;
+        if (!item.selected) {
+            // prevent overflow maxSelectableItems
+            if (this.selectedItems().length >= this.maxSelectableItems)
+                this.items.find(function (i) { return i.selected; }).selected = false;
+            if (this.maxSelectableItems == 1)
+                this.items.forEach(function (i) { return i.selected = false; });
         }
         else {
-            if (meta.selected) {
-                metalist.deSelectItem(item);
-            }
-            else {
-                metalist.selectItem(item);
-            }
+            // prevent underflow minSelectableItems
+            if (this.selectedItems().length <= this.minSelectableItems)
+                return;
         }
+        item.selected = !item.selected;
+        this.onChange();
     };
-    DropdownComponent.prototype.selectItem = function (item) {
-        this.metalist.selectItem(item);
+    DropdownComponent.prototype.onChange = function () {
+        this.change$.emit(this.value);
+        !!this.onChangeCallback && this.onChangeCallback(this.value);
     };
-    DropdownComponent.prototype.onSelect = function (selectedItems) {
-        this.select.emit(selectedItems);
-    };
-    DropdownComponent.prototype.ngAfterContentInit = function () { };
-    DropdownComponent.prototype.writeValue = function (value) {
-        if (value !== this.selected) {
-            this.selected = value;
-        }
+    DropdownComponent.prototype.writeValue = function (v) {
+        if (v.toString() != this.value.toStrig())
+            this.value = v;
     };
     DropdownComponent.prototype.registerOnChange = function (fn) {
         this.onChangeCallback = fn;
@@ -9698,9 +9877,9 @@ var DropdownComponent = (function () {
         this.onTouchedCallback = fn;
     };
     __decorate([
-        core_1.ViewChild('metalist'), 
+        core_1.Output('change'), 
         __metadata('design:type', Object)
-    ], DropdownComponent.prototype, "metalist", void 0);
+    ], DropdownComponent.prototype, "change$", void 0);
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Array)
@@ -9726,13 +9905,10 @@ var DropdownComponent = (function () {
         __metadata('design:type', String)
     ], DropdownComponent.prototype, "ariaRole", void 0);
     __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], DropdownComponent.prototype, "expandedChange", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], DropdownComponent.prototype, "select", void 0);
+        core_1.Input(), 
+        __metadata('design:type', Object), 
+        __metadata('design:paramtypes', [Object])
+    ], DropdownComponent.prototype, "value", null);
     DropdownComponent = __decorate([
         core_1.Component({
             selector: 'vcl-dropdown',
@@ -9748,7 +9924,7 @@ exports.DropdownComponent = DropdownComponent;
 
 
 /***/ },
-/* 136 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9826,7 +10002,7 @@ exports.FlipSwitchComponent = FlipSwitchComponent;
 
 
 /***/ },
-/* 137 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9903,7 +10079,7 @@ exports.FormControlLabelComponent = FormControlLabelComponent;
 
 
 /***/ },
-/* 138 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9953,7 +10129,7 @@ exports.FormComponent = FormComponent;
 
 
 /***/ },
-/* 139 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10015,7 +10191,7 @@ exports.IcogramComponent = IcogramComponent;
 
 
 /***/ },
-/* 140 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10103,7 +10279,7 @@ exports.IconComponent = IconComponent;
 
 
 /***/ },
-/* 141 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10188,7 +10364,7 @@ exports.InputControlGroup = InputControlGroup;
 
 
 /***/ },
-/* 142 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10283,7 +10459,7 @@ exports.InputDirective = InputDirective;
 
 
 /***/ },
-/* 143 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10390,7 +10566,7 @@ exports.JsonEditorComponent = JsonEditorComponent;
 
 
 /***/ },
-/* 144 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10621,7 +10797,7 @@ exports.JssFormComponent = JssFormComponent;
 
 
 /***/ },
-/* 145 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10695,7 +10871,7 @@ exports.LabelComponent = LabelComponent;
 
 
 /***/ },
-/* 146 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10717,7 +10893,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var Subject_1 = __webpack_require__(84);
 var Observable_1 = __webpack_require__(13);
 var core_1 = __webpack_require__(1);
-var wormhole_module_1 = __webpack_require__(21);
+var wormhole_1 = __webpack_require__(93);
 var layer_service_1 = __webpack_require__(90);
 var LayerDirective = (function (_super) {
     __extends(LayerDirective, _super);
@@ -10728,6 +10904,7 @@ var LayerDirective = (function (_super) {
         this.layerService = layerService;
         this.visibilityChange$ = new core_1.EventEmitter();
         this.modal = true;
+        this.closeOnOffClick = true;
         this.base = 'default';
         this.data = {};
         this.visible = false;
@@ -10753,7 +10930,9 @@ var LayerDirective = (function (_super) {
         this.layerService.unregister(this);
     };
     LayerDirective.prototype.offClick = function () {
-        if (!this.modal) {
+        // allow offlick only on non-modal layers
+        var allowOffClick = !this.modal && this.closeOnOffClick;
+        if (allowOffClick) {
             this.close();
         }
     };
@@ -10801,6 +10980,10 @@ var LayerDirective = (function (_super) {
     ], LayerDirective.prototype, "modal", void 0);
     __decorate([
         core_1.Input(), 
+        __metadata('design:type', Boolean)
+    ], LayerDirective.prototype, "closeOnOffClick", void 0);
+    __decorate([
+        core_1.Input(), 
         __metadata('design:type', String)
     ], LayerDirective.prototype, "name", void 0);
     __decorate([
@@ -10816,7 +10999,7 @@ var LayerDirective = (function (_super) {
     ], LayerDirective);
     return LayerDirective;
     var _a, _b, _c, _d;
-}(wormhole_module_1.TemplateWormhole));
+}(wormhole_1.TemplateWormhole));
 exports.LayerDirective = LayerDirective;
 var LayerBaseComponent = (function () {
     function LayerBaseComponent(layerService) {
@@ -10865,7 +11048,7 @@ exports.LayerBaseComponent = LayerBaseComponent;
 
 
 /***/ },
-/* 147 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10968,7 +11151,7 @@ exports.LinkComponent = LinkComponent;
 
 
 /***/ },
-/* 148 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11136,7 +11319,7 @@ exports.MetalistComponent = MetalistComponent;
 
 
 /***/ },
-/* 149 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11290,7 +11473,7 @@ var MonthPickerComponent = (function () {
             if (monthMeta.color) {
                 var index = this.colors.indexOf(monthMeta.color);
                 this.availableColors[index] = true;
-                monthMeta.color = undefined;
+                delete monthMeta.color;
             }
         }
     };
@@ -11353,6 +11536,7 @@ var MonthPickerComponent = (function () {
     MonthPickerComponent.prototype.getMonth = function (year, month) {
         if (this.isDateInBounds(year, month)) {
             return Object.assign({
+                date: year + "." + month,
                 label: this.months[month]
             }, this.getYearMeta(year)[month]);
         }
@@ -11481,7 +11665,7 @@ exports.MonthPickerComponent = MonthPickerComponent;
 
 
 /***/ },
-/* 150 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11495,7 +11679,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var router_1 = __webpack_require__(126);
+var router_1 = __webpack_require__(127);
 var core_1 = __webpack_require__(1);
 var NavigationItemComponent = (function () {
     function NavigationItemComponent() {
@@ -11734,7 +11918,7 @@ exports.NavigationComponent = NavigationComponent;
 
 
 /***/ },
-/* 151 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11867,7 +12051,7 @@ exports.PopoverComponent = PopoverComponent;
 
 
 /***/ },
-/* 152 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11985,7 +12169,7 @@ exports.ProgressBarComponent = ProgressBarComponent;
 
 
 /***/ },
-/* 153 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12179,7 +12363,7 @@ exports.RadioButtonComponent = RadioButtonComponent;
 
 
 /***/ },
-/* 154 */
+/* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12250,7 +12434,7 @@ exports.RadioGroupComponent = RadioGroupComponent;
 
 
 /***/ },
-/* 155 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12266,10 +12450,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var forms_1 = __webpack_require__(10);
+/**
+ * see
+ * @link http://www.w3schools.com/tags/tag_option.asp
+ */
 var SelectOptionComponent = (function () {
-    function SelectOptionComponent() {
+    function SelectOptionComponent(elementRef) {
+        this.elementRef = elementRef;
         this.class = '';
+        this.disabled = false;
+        this.selected = false;
     }
+    SelectOptionComponent.prototype.ngOnInit = function () {
+        if (!this.label || this.label == '') {
+            this.label = this.elementRef.nativeElement.innerText;
+            if (!this.label || this.label == '') {
+                this.label = this.value;
+            }
+        }
+    };
     /**
      * transforms this NavigationItemComponent into an object,
      * so it can be handled the same way as an inputList
@@ -12280,7 +12479,9 @@ var SelectOptionComponent = (function () {
             value: this.value,
             label: this.label,
             sublabel: this.sublabel,
-            class: this.class
+            class: this.class,
+            disabled: this.disabled,
+            selected: this.selected
         };
         return ret;
     };
@@ -12289,24 +12490,33 @@ var SelectOptionComponent = (function () {
         __metadata('design:type', String)
     ], SelectOptionComponent.prototype, "value", void 0);
     __decorate([
-        core_1.Input('label'), 
-        __metadata('design:type', String)
-    ], SelectOptionComponent.prototype, "label", void 0);
-    __decorate([
         core_1.Input('sublabel'), 
         __metadata('design:type', String)
     ], SelectOptionComponent.prototype, "sublabel", void 0);
     __decorate([
+        core_1.Input('label'), 
+        __metadata('design:type', String)
+    ], SelectOptionComponent.prototype, "label", void 0);
+    __decorate([
         core_1.Input('class'), 
         __metadata('design:type', String)
     ], SelectOptionComponent.prototype, "class", void 0);
+    __decorate([
+        core_1.Input('disabled'), 
+        __metadata('design:type', Boolean)
+    ], SelectOptionComponent.prototype, "disabled", void 0);
+    __decorate([
+        core_1.Input('selected'), 
+        __metadata('design:type', Boolean)
+    ], SelectOptionComponent.prototype, "selected", void 0);
     SelectOptionComponent = __decorate([
         core_1.Directive({
             selector: 'vcl-select-option'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object])
     ], SelectOptionComponent);
     return SelectOptionComponent;
+    var _a;
 }());
 exports.SelectOptionComponent = SelectOptionComponent;
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
@@ -12374,11 +12584,8 @@ var SelectComponent = (function () {
     SelectComponent.prototype.selectItem = function (item) {
         this.dropdown.selectItem(item);
     };
-    SelectComponent.prototype.onSelect = function (newItems) {
-        if (this.maxSelectableItems == 1)
-            this.value = newItems[0].value; // single-select
-        else
-            this.value = newItems.map(function (i) { return i.value; }); // multi-select
+    SelectComponent.prototype.onSelect = function (newValue) {
+        this.value = newValue;
         this.changeEE.emit(this.value);
     };
     SelectComponent.prototype.writeValue = function (value) {
@@ -12454,7 +12661,7 @@ exports.SelectComponent = SelectComponent;
 
 
 /***/ },
-/* 156 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12645,7 +12852,7 @@ exports.SliderComponent = SliderComponent;
 
 
 /***/ },
-/* 157 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12665,7 +12872,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var Observable_1 = __webpack_require__(13);
-var wormhole_module_1 = __webpack_require__(21);
+var wormhole_module_1 = __webpack_require__(23);
 var core_1 = __webpack_require__(1);
 var TabLabelDirective = (function (_super) {
     __extends(TabLabelDirective, _super);
@@ -12828,7 +13035,7 @@ exports.TabNavComponent = TabNavComponent;
 
 
 /***/ },
-/* 158 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12927,7 +13134,7 @@ exports.TetherComponent = TetherComponent;
 
 
 /***/ },
-/* 159 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13028,7 +13235,7 @@ exports.TextareaDirective = TextareaDirective;
 
 
 /***/ },
-/* 160 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13098,7 +13305,7 @@ exports.TokenInputComponent = TokenInputComponent;
 
 
 /***/ },
-/* 161 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13173,7 +13380,7 @@ exports.TokenListComponent = TokenListComponent;
 
 
 /***/ },
-/* 162 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13217,7 +13424,7 @@ exports.ToolbarComponent = ToolbarComponent;
 
 
 /***/ },
-/* 163 */
+/* 164 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -13225,7 +13432,7 @@ exports.ToolbarComponent = ToolbarComponent;
 
 
 /***/ },
-/* 164 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13258,7 +13465,7 @@ exports.ObservableComponent = ObservableComponent;
 
 
 /***/ },
-/* 165 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13288,7 +13495,7 @@ exports.setAnimations = setAnimations;
 
 
 /***/ },
-/* 166 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13347,7 +13554,7 @@ exports.OffClickDirective = OffClickDirective;
 
 
 /***/ },
-/* 167 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13380,20 +13587,22 @@ var WormholeService = (function () {
         var componentFactory = this.componentFactoryResolver.resolveComponentFactory(componentClass);
         var componentRef = componentFactory.create(this.defaultInjector);
         var componentRefRootNode = this.getComponentRootNode(componentRef);
-        // const targetNode = node || this.appNode;
         this.appRef.attachView(componentRef.hostView);
         this.getNode(node).then(function (targetNode) {
             if (targetNode) {
                 targetNode.appendChild(componentRefRootNode);
             }
         });
-        return function () {
-            _this.appRef.detachView(componentRef.hostView);
-            _this.getNode(node).then(function (targetNode) {
-                if (targetNode) {
-                    targetNode.removeChild(componentRefRootNode);
-                }
-            });
+        return {
+            componentRef: componentRef,
+            dispose: function () {
+                _this.appRef.detachView(componentRef.hostView);
+                _this.getNode(node).then(function (targetNode) {
+                    if (targetNode) {
+                        targetNode.removeChild(componentRefRootNode);
+                    }
+                });
+            }
         };
     };
     WormholeService.prototype.getNode = function (node) {
@@ -13424,163 +13633,6 @@ var WormholeService = (function () {
     var _a, _b, _c;
 }());
 exports.WormholeService = WormholeService;
-
-
-/***/ },
-/* 168 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = __webpack_require__(1);
-var Wormhole = (function () {
-    function Wormhole() {
-    }
-    Object.defineProperty(Wormhole.prototype, "isConnected", {
-        get: function () {
-            return !!this.bridge;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Wormhole.prototype.disconnect = function () {
-        this.detach();
-        this.bridge = null;
-    };
-    Wormhole.prototype.connect = function (bridge) {
-        this.bridge = bridge;
-        this.attach();
-    };
-    return Wormhole;
-}());
-exports.Wormhole = Wormhole;
-var TemplateWormhole = (function (_super) {
-    __extends(TemplateWormhole, _super);
-    // The wormhole directive needs a reference to the template
-    function TemplateWormhole(templateRef) {
-        _super.call(this);
-        this.templateRef = templateRef;
-    }
-    TemplateWormhole.prototype.attach = function () {
-        this.viewRef = this.bridge.viewContainerRef.createEmbeddedView(this.templateRef);
-    };
-    TemplateWormhole.prototype.detach = function () {
-        if (this.viewRef) {
-            var i = this.bridge.viewContainerRef.indexOf(this.viewRef);
-            if (i >= 0)
-                this.bridge.viewContainerRef.remove(i);
-        }
-    };
-    TemplateWormhole = __decorate([
-        core_1.Directive({
-            selector: '[wormhole]',
-            exportAs: 'wormhole',
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object])
-    ], TemplateWormhole);
-    return TemplateWormhole;
-    var _a;
-}(Wormhole));
-exports.TemplateWormhole = TemplateWormhole;
-var ComponentWormhole = (function (_super) {
-    __extends(ComponentWormhole, _super);
-    function ComponentWormhole(componentClass) {
-        _super.call(this);
-        this.componentClass = componentClass;
-    }
-    ComponentWormhole.prototype.attach = function () {
-        var viewContainerRef = this.bridge.viewContainerRef;
-        var componentFactory = this.bridge.componentFactoryResolver.resolveComponentFactory(this.componentClass);
-        this.compRef = viewContainerRef.createComponent(componentFactory, viewContainerRef.length, viewContainerRef.parentInjector);
-    };
-    ComponentWormhole.prototype.detach = function () {
-        if (this.compRef) {
-            var i = this.bridge.viewContainerRef.indexOf(this.compRef.hostView);
-            if (i >= 0)
-                this.bridge.viewContainerRef.remove(i);
-            this.compRef.destroy();
-        }
-        this.compRef = null;
-    };
-    return ComponentWormhole;
-}(Wormhole));
-exports.ComponentWormhole = ComponentWormhole;
-var ConnectWormholeDirective = (function () {
-    function ConnectWormholeDirective(viewContainerRef, componentFactoryResolver) {
-        this.viewContainerRef = viewContainerRef;
-        this.componentFactoryResolver = componentFactoryResolver;
-        // TODO: workaround. Does not disconnect the view when destroying the element when true
-        // ngOnDestroy is called before the animations are fully traversed. This would remove the wormhole's ContentChild
-        // before its host is removed from the DOM
-        this.indisposable = false;
-    }
-    Object.defineProperty(ConnectWormholeDirective.prototype, "isConnected", {
-        get: function () {
-            return !!this.connectedWormhole;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(ConnectWormholeDirective.prototype, "connectWormhole", {
-        set: function (wormhole) {
-            if (this.isConnected) {
-                this.disconnect();
-            }
-            if (wormhole) {
-                this.connect(wormhole);
-                this.wormhole = wormhole;
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    ConnectWormholeDirective.prototype.connect = function (wormhole) {
-        this.connectedWormhole = wormhole;
-        wormhole.connect(this);
-    };
-    ConnectWormholeDirective.prototype.disconnect = function () {
-        if (this.connectedWormhole) {
-            this.connectedWormhole.disconnect();
-        }
-    };
-    ConnectWormholeDirective.prototype.ngOnDestroy = function () {
-        if (this.isConnected && !this.indisposable) {
-            this.disconnect();
-        }
-    };
-    __decorate([
-        core_1.Input('wormholeIndisposable'), 
-        __metadata('design:type', Boolean)
-    ], ConnectWormholeDirective.prototype, "indisposable", void 0);
-    __decorate([
-        core_1.Input('connectWormhole'), 
-        __metadata('design:type', Wormhole), 
-        __metadata('design:paramtypes', [Wormhole])
-    ], ConnectWormholeDirective.prototype, "connectWormhole", null);
-    ConnectWormholeDirective = __decorate([
-        core_1.Directive({
-            selector: '[connectWormhole]'
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ComponentFactoryResolver !== 'undefined' && core_1.ComponentFactoryResolver) === 'function' && _b) || Object])
-    ], ConnectWormholeDirective);
-    return ConnectWormholeDirective;
-    var _a, _b;
-}());
-exports.ConnectWormholeDirective = ConnectWormholeDirective;
 
 
 /***/ },
@@ -50262,7 +50314,7 @@ module.exports = "<div class=\"vclDataGrid vclDGVAlignMiddle vclDGAlignCentered 
 /* 177 */
 /***/ function(module, exports) {
 
-module.exports = "<ul class=\"vclDropdown\"\n  [class.vclOpen]=\"expanded\"\n  [attr.role]=\"ariaRole\"\n  [attr.tabindex]=\"tabindex\"\n  [attr.aria-multiselectable]=\"maxSelectableItems > 1\"\n  [attr.aria-expanded]=\"expanded\">\n  <vcl-metalist (select)=\"onSelect($event)\" #metalist [items]=\"items\"\n  [meta]=\"metaInformation\" [maxSelectableItems]=\"maxSelectableItems\"\n  [minSelectableItems]=\"minSelectableItems\">\n    <template let-item=\"item\" let-meta=\"meta\">\n      <li class=\"vclDropdownItem\"\n        [class.vclSelected]=\"meta.selected\"\n        [attr.aria-selected]=\"meta.selected\"\n        role=\"menuitem\"\n        tabindex=\"0\"\n        (tap)=\"_selectItem(item, meta, metalist)\"\n        [ngClass]=\"item.class\">\n        <div class=\"vclDropdownItemLabel\">\n          {{item.label}}\n        </div>\n        <div class=\"vclDropdownItemSubLabel\">\n          {{item.sublabel}}\n        </div>\n    </li>\n    </template>\n  </vcl-metalist>\n</ul>\n"
+module.exports = "<ul class=\"vclDropdown\"\n  [class.vclOpen]=\"expanded\"\n  [attr.role]=\"ariaRole\"\n  [attr.tabindex]=\"tabindex\"\n  [attr.aria-multiselectable]=\"maxSelectableItems > 1\"\n  [attr.aria-expanded]=\"expanded\">\n  <li\n    *ngFor=\"let item of items\"\n    class=\"vclDropdownItem\"\n    [class.vclSelected]=\"item.selected\"\n    [attr.aria-selected]=\"item.selected\"\n    [class.vclDisabled]=\"item.disabled\"\n    role=\"menuitem\"\n    tabindex=\"0\"\n    (tap)=\"clickItem(item)\"\n    [ngClass]=\"item.class\">\n    <div class=\"vclDropdownItemLabel\">\n      {{item.label}}\n    </div>\n    <div class=\"vclDropdownItemSubLabel\">\n      {{item.sublabel}}\n    </div>\n  </li>\n</ul>\n"
 
 /***/ },
 /* 178 */
@@ -50328,7 +50380,7 @@ module.exports = "{{ label | loc }}\n\n<span *ngIf=\"required\">{{requiredIndica
 /* 188 */
 /***/ function(module, exports) {
 
-module.exports = "<div *ngFor=\"let layer of visibleLayers; let i = index;\">\n  <div class=\"vclLayer\" role=\"dialog\" [@boxState]=\"layer.state\" [style.z-index]=\"zIndex + (i*10+1)\">\n    <div class=\"vclLayerBox vclLayerGutterPadding\" (off-click)=\"layer.offClick()\">\n      <div [connectWormhole]=\"layer\" [wormholeIndisposable]=\"true\"></div>\n    </div>\n  </div>\n  <div *ngIf=\"layer.modal\" class=\"vclLayerCover\" [@layerState]=\"layer.state\" [style.z-index]=\"zIndex + (i*10+0)\"></div>\n</div>\n"
+module.exports = "<div *ngFor=\"let layer of visibleLayers; let i = index;\">\n  <div class=\"vclLayer\" role=\"dialog\" [@boxState]=\"layer.state\" [style.pointer-events]=\"'none'\" [style.z-index]=\"zIndex + (i*10+1)\">\n    <div class=\"vclLayerBox vclLayerGutterPadding\" [style.pointer-events]=\"'all'\" (off-click)=\"layer.offClick()\">\n      <div [connectWormhole]=\"layer\" [wormholeIndisposable]=\"true\"></div>\n    </div>\n  </div>\n  <div *ngIf=\"layer.modal\" class=\"vclLayerCover\" [@layerState]=\"layer.state\" [style.z-index]=\"zIndex + (i*10+0)\"></div>\n</div>\n"
 
 /***/ },
 /* 189 */
@@ -50346,7 +50398,7 @@ module.exports = "<template\n  *ngFor=\"let item of items\"\n  [ngTemplateOutlet
 /* 191 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"vclDatePicker\"\n    [class.vclLayoutHidden]=\"!expanded\">\n  <div class=\"vclDataGrid vclDGVAlignMiddle vclDGAlignCentered vclCalendar vclCalInput\"\n    [attr.role]=\"grid\"\n    [attr.tabindex]=\"tabindex\"\n    [attr.aria-multiselectable]=\"maxSelectableItems > 1\"\n    [attr.aria-expanded]=\"expanded\">\n\n    <div class=\"vclLayoutFlex vclDGRow vclLayoutAuto\">\n      <div class=\"vclToolbar vclLayoutFlex vclLayoutHorizontal vclLayoutJustified vclLayoutCenter\" role=\"menubar\" aria-level=\"1\">\n        <button vcl-button class=\"vclButton vclTransparent vclSquare\"\n          [class.vclDisabled]=\"!prevYearAvailable\"\n          [appIcon]=\"prevYearBtnIcon\"\n          (tap)=\"onPrevYearTap()\">\n        </button>\n\n        <span class=\"vclCalHeaderLabel\">{{ currentYear }}</span>\n\n        <button vcl-button class=\"vclButton vclTransparent vclSquare\"\n          [class.vclDisabled]=\"!nextYearAvailable\"\n          [appIcon]=\"nextYearBtnIcon\"\n          (tap)=\"onNextYearTap()\">\n        </button>\n\n        <button vcl-button *ngIf=\"expandable\" class=\"vclButton vclTransparent vclSquare\"\n          [appIcon]=\"closeBtnIcon\"\n          (tap)=\"onCloseBtnTap()\">\n        </button>\n      </div>\n    </div>\n\n    <div class=\"vclSeparator\"></div>\n\n    <template ngFor let-iM [ngForOf]=\"months\" let-i=\"index\">\n      <div *ngIf=\"i % monthsPerRow === 0\" class=\"vclLayoutFlex vclDGRow vclLayoutAuto\" role=\"row\">\n        <div *ngFor=\"let jM of months.slice(i, (i + monthsPerRow > months.length ? months.length : i + monthsPerRow)); let j = index;\"\n          (tap)=\"selectMonth(currentYear, i+j)\"\n          class=\"vclDGCell vclCalItem\"\n          [class.vclAvailable]=\"!useAvailableMonths || currentMeta[i+j].available\"\n          [class.vclUnavailable]=\"useAvailableMonths && !currentMeta[i+j].available\"\n          [class.vclToday]=\"isCurrentMonth(i+j)\"\n          [class.vclOtherMonth]=\"!isCurrentMonth(i+j)\"\n          [class.vclDisabled]=\"useAvailableMonths && !currentMeta[i+j].available\"\n          [class.vclSelected]=\"currentMeta[i+j].selected\"\n          [style.background-color]=\"currentMeta[i+j].color\"\n          [style.order]=\"i+j\"\n          [attr.aria-selected]=\"currentMeta[i+j].selected\"\n          role=\"gridcell\"\n          tabindex=\"0\">\n            <div class=\"vclLayoutHorizontal vclLayoutCenterJustified vclMonthPickerListItemLabel\">\n              {{months[i + j] | loc}}\n            </div>\n        </div>\n      </div>\n    </template>\n  </div>\n</div>\n"
+module.exports = "<div class=\"vclDatePicker\"\n    [class.vclLayoutHidden]=\"!expanded\">\n  <div class=\"vclDataGrid vclDGVAlignMiddle vclDGAlignCentered vclCalendar vclCalInput\"\n    [attr.role]=\"grid\"\n    [attr.tabindex]=\"tabindex\"\n    [attr.aria-multiselectable]=\"maxSelectableItems > 1\"\n    [attr.aria-expanded]=\"expanded\">\n\n    <div class=\"vclLayoutFlex vclDGRow vclLayoutAuto\">\n      <div class=\"vclToolbar vclLayoutFlex vclLayoutHorizontal vclLayoutJustified vclLayoutCenter\" role=\"menubar\" aria-level=\"1\">\n        <button vcl-button class=\"vclButton vclTransparent vclSquare\"\n          [class.vclDisabled]=\"!prevYearAvailable\"\n          [appIcon]=\"prevYearBtnIcon\"\n          (tap)=\"onPrevYearTap()\">\n        </button>\n\n        <span class=\"vclCalHeaderLabel\">{{ currentYear }}</span>\n\n        <button vcl-button\n          class=\"vclButton vclTransparent vclSquare\"\n          [class.vclDisabled]=\"!nextYearAvailable\"\n          [appIcon]=\"nextYearBtnIcon\"\n          (tap)=\"onNextYearTap()\">\n        </button>\n\n        <button vcl-button *ngIf=\"expandable\"\n          class=\"vclButton vclTransparent vclSquare\"\n          [appIcon]=\"closeBtnIcon\"\n          (tap)=\"onCloseBtnTap()\">\n        </button>\n      </div>\n    </div>\n\n    <div class=\"vclSeparator\"></div>\n\n    <template ngFor let-iM [ngForOf]=\"months\" let-i=\"index\">\n      <div *ngIf=\"i % monthsPerRow === 0\" class=\"vclLayoutFlex vclDGRow vclLayoutAuto\" role=\"row\">\n        <div *ngFor=\"let jM of months.slice(i, (i + monthsPerRow > months.length ? months.length : i + monthsPerRow)); let j = index;\"\n          (tap)=\"selectMonth(currentYear, i+j)\"\n          class=\"vclDGCell vclCalItem\"\n          [class.vclAvailable]=\"!useAvailableMonths || currentMeta[i+j].available\"\n          [class.vclUnavailable]=\"useAvailableMonths && !currentMeta[i+j].available\"\n          [class.vclToday]=\"isCurrentMonth(i+j)\"\n          [class.vclOtherMonth]=\"!isCurrentMonth(i+j)\"\n          [class.vclDisabled]=\"useAvailableMonths && !currentMeta[i+j].available\"\n          [class.vclSelected]=\"currentMeta[i+j].selected\"\n          [style.background-color]=\"currentMeta[i+j].color\"\n          [style.order]=\"i+j\"\n          [attr.aria-selected]=\"currentMeta[i+j].selected\"\n          role=\"gridcell\"\n          tabindex=\"0\">\n            <div class=\"vclLayoutHorizontal vclLayoutCenterJustified vclMonthPickerListItemLabel\">\n              {{months[i + j] | loc}}\n            </div>\n        </div>\n      </div>\n    </template>\n  </div>\n</div>\n"
 
 /***/ },
 /* 192 */
@@ -50382,7 +50434,7 @@ module.exports = "<vcl-radio-button *ngFor=\"let option of options\"\n [checked]
 /* 197 */
 /***/ function(module, exports) {
 
-module.exports = "<div\n  [attr.id]=\"popoverTarget\"\n  (tap)=\"expand()\"\n  [attr.aria-autocomplete]=\"list\"\n  class=\"vclLayoutHorizontal vclSelect vclInputGroupEmb\">\n\n  <div class=\"vclInput\" readonly>\n    {{displayValue}}\n  </div>\n\n  <button vcl-button\n    tabindex=\"-1\"\n    class=\"vclTransparent vclSquare vclAppended\"\n    [appIcon]=\"expanded ? expandedIcon : collapsedIcon\">\n  </button>\n</div>\n\n<vcl-popover\n  [target]=\"'#' + popoverTarget\"\n  targetAttachment='bottom left'\n  attachment='top left'\n  [(open)]=\"expanded\">\n  <vcl-dropdown #dropdown\n    [(expanded)]=\"expanded\"\n    [items]=\"items\"\n    (select)=\"onSelect($event)\"\n    [minSelectableItems]=\"minSelectableItems\"\n    [maxSelectableItems]=\"maxSelectableItems\"\n    [tabindex]=\"0\">\n  </vcl-dropdown>\n</vcl-popover>\n"
+module.exports = "<div\n  [attr.id]=\"popoverTarget\"\n  (tap)=\"expand()\"\n  [attr.aria-autocomplete]=\"list\"\n  class=\"vclLayoutHorizontal vclSelect vclInputGroupEmb\">\n\n  <div class=\"vclInput\" readonly>\n    {{displayValue}}\n  </div>\n\n  <button vcl-button\n    tabindex=\"-1\"\n    class=\"vclTransparent vclSquare vclAppended\"\n    [appIcon]=\"expanded ? expandedIcon : collapsedIcon\">\n  </button>\n</div>\n\n<vcl-popover\n  [target]=\"'#' + popoverTarget\"\n  targetAttachment='bottom left'\n  attachment='top left'\n  [(open)]=\"expanded\">\n  <vcl-dropdown #dropdown\n    [(expanded)]=\"expanded\"\n    [items]=\"items\"\n    (change)=\"onSelect($event)\"\n    [minSelectableItems]=\"minSelectableItems\"\n    [maxSelectableItems]=\"maxSelectableItems\"\n    [tabindex]=\"0\">\n  </vcl-dropdown>\n</vcl-popover>\n"
 
 /***/ },
 /* 198 */
@@ -50612,9 +50664,9 @@ var AsyncSubject_1 = __webpack_require__(41);
 exports.AsyncSubject = AsyncSubject_1.AsyncSubject;
 var ReplaySubject_1 = __webpack_require__(72);
 exports.ReplaySubject = ReplaySubject_1.ReplaySubject;
-var BehaviorSubject_1 = __webpack_require__(95);
+var BehaviorSubject_1 = __webpack_require__(96);
 exports.BehaviorSubject = BehaviorSubject_1.BehaviorSubject;
-var ConnectableObservable_1 = __webpack_require__(98);
+var ConnectableObservable_1 = __webpack_require__(99);
 exports.ConnectableObservable = ConnectableObservable_1.ConnectableObservable;
 var Notification_1 = __webpack_require__(26);
 exports.Notification = Notification_1.Notification;
@@ -50624,25 +50676,25 @@ var ArgumentOutOfRangeError_1 = __webpack_require__(45);
 exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError_1.ArgumentOutOfRangeError;
 var ObjectUnsubscribedError_1 = __webpack_require__(47);
 exports.ObjectUnsubscribedError = ObjectUnsubscribedError_1.ObjectUnsubscribedError;
-var TimeoutError_1 = __webpack_require__(117);
+var TimeoutError_1 = __webpack_require__(118);
 exports.TimeoutError = TimeoutError_1.TimeoutError;
-var UnsubscriptionError_1 = __webpack_require__(118);
+var UnsubscriptionError_1 = __webpack_require__(119);
 exports.UnsubscriptionError = UnsubscriptionError_1.UnsubscriptionError;
-var timeInterval_1 = __webpack_require__(110);
+var timeInterval_1 = __webpack_require__(111);
 exports.TimeInterval = timeInterval_1.TimeInterval;
-var timestamp_1 = __webpack_require__(111);
+var timestamp_1 = __webpack_require__(112);
 exports.Timestamp = timestamp_1.Timestamp;
 var TestScheduler_1 = __webpack_require__(468);
 exports.TestScheduler = TestScheduler_1.TestScheduler;
-var VirtualTimeScheduler_1 = __webpack_require__(112);
+var VirtualTimeScheduler_1 = __webpack_require__(113);
 exports.VirtualTimeScheduler = VirtualTimeScheduler_1.VirtualTimeScheduler;
-var AjaxObservable_1 = __webpack_require__(101);
+var AjaxObservable_1 = __webpack_require__(102);
 exports.AjaxResponse = AjaxObservable_1.AjaxResponse;
 exports.AjaxError = AjaxObservable_1.AjaxError;
 exports.AjaxTimeoutError = AjaxObservable_1.AjaxTimeoutError;
-var asap_1 = __webpack_require__(113);
+var asap_1 = __webpack_require__(114);
 var async_1 = __webpack_require__(14);
-var queue_1 = __webpack_require__(114);
+var queue_1 = __webpack_require__(115);
 var animationFrame_1 = __webpack_require__(465);
 var rxSubscriber_1 = __webpack_require__(44);
 var iterator_1 = __webpack_require__(29);
@@ -50960,7 +51012,7 @@ Observable_1.Observable.of = of_1.of;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var onErrorResumeNext_1 = __webpack_require__(108);
+var onErrorResumeNext_1 = __webpack_require__(109);
 Observable_1.Observable.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNextStatic;
 //# sourceMappingURL=onErrorResumeNext.js.map
 
@@ -50982,7 +51034,7 @@ Observable_1.Observable.pairs = pairs_1.pairs;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var race_1 = __webpack_require__(109);
+var race_1 = __webpack_require__(110);
 Observable_1.Observable.race = race_1.raceStatic;
 //# sourceMappingURL=race.js.map
 
@@ -51291,7 +51343,7 @@ Observable_1.Observable.prototype.distinct = distinct_1.distinct;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var distinctUntilChanged_1 = __webpack_require__(102);
+var distinctUntilChanged_1 = __webpack_require__(103);
 Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
 //# sourceMappingURL=distinctUntilChanged.js.map
 
@@ -51380,7 +51432,7 @@ Observable_1.Observable.prototype.expand = expand_1.expand;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var filter_1 = __webpack_require__(103);
+var filter_1 = __webpack_require__(104);
 Observable_1.Observable.prototype.filter = filter_1.filter;
 //# sourceMappingURL=filter.js.map
 
@@ -51403,7 +51455,7 @@ Observable_1.Observable.prototype._finally = finally_1._finally;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var find_1 = __webpack_require__(104);
+var find_1 = __webpack_require__(105);
 Observable_1.Observable.prototype.find = find_1.find;
 //# sourceMappingURL=find.js.map
 
@@ -51536,7 +51588,7 @@ Observable_1.Observable.prototype.max = max_1.max;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var merge_1 = __webpack_require__(105);
+var merge_1 = __webpack_require__(106);
 Observable_1.Observable.prototype.merge = merge_1.merge;
 //# sourceMappingURL=merge.js.map
 
@@ -51558,7 +51610,7 @@ Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var mergeMap_1 = __webpack_require__(106);
+var mergeMap_1 = __webpack_require__(107);
 Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
 Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
 //# sourceMappingURL=mergeMap.js.map
@@ -51570,7 +51622,7 @@ Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var mergeMapTo_1 = __webpack_require__(107);
+var mergeMapTo_1 = __webpack_require__(108);
 Observable_1.Observable.prototype.flatMapTo = mergeMapTo_1.mergeMapTo;
 Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
 //# sourceMappingURL=mergeMapTo.js.map
@@ -51626,7 +51678,7 @@ Observable_1.Observable.prototype.observeOn = observeOn_1.observeOn;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var onErrorResumeNext_1 = __webpack_require__(108);
+var onErrorResumeNext_1 = __webpack_require__(109);
 Observable_1.Observable.prototype.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNext;
 //# sourceMappingURL=onErrorResumeNext.js.map
 
@@ -51714,7 +51766,7 @@ Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var race_1 = __webpack_require__(109);
+var race_1 = __webpack_require__(110);
 Observable_1.Observable.prototype.race = race_1.race;
 //# sourceMappingURL=race.js.map
 
@@ -52001,7 +52053,7 @@ Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var timeInterval_1 = __webpack_require__(110);
+var timeInterval_1 = __webpack_require__(111);
 Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
 //# sourceMappingURL=timeInterval.js.map
 
@@ -52034,7 +52086,7 @@ Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var timestamp_1 = __webpack_require__(111);
+var timestamp_1 = __webpack_require__(112);
 Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
 //# sourceMappingURL=timestamp.js.map
 
@@ -53630,7 +53682,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var noop_1 = __webpack_require__(122);
+var noop_1 = __webpack_require__(123);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -53888,7 +53940,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var asap_1 = __webpack_require__(113);
+var asap_1 = __webpack_require__(114);
 var isNumeric_1 = __webpack_require__(81);
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -54463,7 +54515,7 @@ exports.WebSocketSubject = WebSocketSubject;
 
 "use strict";
 "use strict";
-var AjaxObservable_1 = __webpack_require__(101);
+var AjaxObservable_1 = __webpack_require__(102);
 exports.ajax = AjaxObservable_1.AjaxObservable.create;
 //# sourceMappingURL=ajax.js.map
 
@@ -54503,7 +54555,7 @@ exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 
 "use strict";
 "use strict";
-var FromObservable_1 = __webpack_require__(99);
+var FromObservable_1 = __webpack_require__(100);
 exports.from = FromObservable_1.FromObservable.create;
 //# sourceMappingURL=from.js.map
 
@@ -54533,7 +54585,7 @@ exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservab
 
 "use strict";
 "use strict";
-var PromiseObservable_1 = __webpack_require__(100);
+var PromiseObservable_1 = __webpack_require__(101);
 exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 //# sourceMappingURL=fromPromise.js.map
 
@@ -54563,7 +54615,7 @@ exports.interval = IntervalObservable_1.IntervalObservable.create;
 
 "use strict";
 "use strict";
-var merge_1 = __webpack_require__(105);
+var merge_1 = __webpack_require__(106);
 exports.merge = merge_1.mergeStatic;
 //# sourceMappingURL=merge.js.map
 
@@ -55752,7 +55804,7 @@ exports.concatAll = concatAll;
 
 "use strict";
 "use strict";
-var mergeMap_1 = __webpack_require__(106);
+var mergeMap_1 = __webpack_require__(107);
 /* tslint:disable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -55828,7 +55880,7 @@ exports.concatMap = concatMap;
 
 "use strict";
 "use strict";
-var mergeMapTo_1 = __webpack_require__(107);
+var mergeMapTo_1 = __webpack_require__(108);
 /* tslint:disable:max-line-length */
 /**
  * Projects each source value to the same Observable which is merged multiple
@@ -56868,7 +56920,7 @@ exports.DistinctSubscriber = DistinctSubscriber;
 
 "use strict";
 "use strict";
-var distinctUntilChanged_1 = __webpack_require__(102);
+var distinctUntilChanged_1 = __webpack_require__(103);
 /* tslint:disable:max-line-length */
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item,
@@ -57643,7 +57695,7 @@ var FinallySubscriber = (function (_super) {
 
 "use strict";
 "use strict";
-var find_1 = __webpack_require__(104);
+var find_1 = __webpack_require__(105);
 /**
  * Emits only the index of the first value emitted by the source Observable that
  * meets some condition.
@@ -58095,7 +58147,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var noop_1 = __webpack_require__(122);
+var noop_1 = __webpack_require__(123);
 /**
  * Ignores all items emitted by the source Observable and only passes calls of `complete` or `error`.
  *
@@ -58759,7 +58811,7 @@ var PairwiseSubscriber = (function (_super) {
 "use strict";
 "use strict";
 var not_1 = __webpack_require__(476);
-var filter_1 = __webpack_require__(103);
+var filter_1 = __webpack_require__(104);
 /**
  * Splits the source Observable into two, one with values that satisfy a
  * predicate, and another with values that don't satisfy the predicate.
@@ -58909,7 +58961,7 @@ exports.publish = publish;
 
 "use strict";
 "use strict";
-var BehaviorSubject_1 = __webpack_require__(95);
+var BehaviorSubject_1 = __webpack_require__(96);
 var multicast_1 = __webpack_require__(24);
 /**
  * @param value
@@ -61263,7 +61315,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var async_1 = __webpack_require__(14);
 var isDate_1 = __webpack_require__(48);
 var Subscriber_1 = __webpack_require__(2);
-var TimeoutError_1 = __webpack_require__(117);
+var TimeoutError_1 = __webpack_require__(118);
 /**
  * @param {number} due
  * @param {Scheduler} [scheduler]
@@ -62820,8 +62872,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(0);
 var Subscription_1 = __webpack_require__(7);
-var SubscriptionLoggable_1 = __webpack_require__(116);
-var applyMixins_1 = __webpack_require__(119);
+var SubscriptionLoggable_1 = __webpack_require__(117);
+var applyMixins_1 = __webpack_require__(120);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -62872,8 +62924,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Subject_1 = __webpack_require__(8);
 var Subscription_1 = __webpack_require__(7);
-var SubscriptionLoggable_1 = __webpack_require__(116);
-var applyMixins_1 = __webpack_require__(119);
+var SubscriptionLoggable_1 = __webpack_require__(117);
+var applyMixins_1 = __webpack_require__(120);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -62928,8 +62980,8 @@ var Observable_1 = __webpack_require__(0);
 var Notification_1 = __webpack_require__(26);
 var ColdObservable_1 = __webpack_require__(466);
 var HotObservable_1 = __webpack_require__(467);
-var SubscriptionLog_1 = __webpack_require__(115);
-var VirtualTimeScheduler_1 = __webpack_require__(112);
+var SubscriptionLog_1 = __webpack_require__(116);
+var VirtualTimeScheduler_1 = __webpack_require__(113);
 var defaultMaxFrame = 750;
 var TestScheduler = (function (_super) {
     __extends(TestScheduler, _super);
@@ -63595,7 +63647,7 @@ exports.not = not;
 "use strict";
 var Subscriber_1 = __webpack_require__(2);
 var rxSubscriber_1 = __webpack_require__(44);
-var Observer_1 = __webpack_require__(96);
+var Observer_1 = __webpack_require__(97);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
         if (nextOrObserver instanceof Subscriber_1.Subscriber) {
@@ -63759,12 +63811,12 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 var core_1 = __webpack_require__(1);
-__webpack_require__(130);
+__webpack_require__(131);
 var input_module_1 = __webpack_require__(56);
 var textarea_module_1 = __webpack_require__(65);
 var flip_switch_module_1 = __webpack_require__(85);
 var icon_module_1 = __webpack_require__(17);
-var metalist_module_1 = __webpack_require__(22);
+var metalist_module_1 = __webpack_require__(21);
 var dropdown_module_1 = __webpack_require__(51);
 var select_module_1 = __webpack_require__(86);
 var icogram_module_1 = __webpack_require__(25);
@@ -63781,11 +63833,11 @@ var progress_bar_module_1 = __webpack_require__(63);
 var radio_button_module_1 = __webpack_require__(34);
 var radio_group_module_1 = __webpack_require__(35);
 var checkbox_module_1 = __webpack_require__(30);
-var off_click_module_1 = __webpack_require__(23);
-var form_control_label_module_1 = __webpack_require__(128);
+var off_click_module_1 = __webpack_require__(22);
+var form_control_label_module_1 = __webpack_require__(129);
 var form_module_1 = __webpack_require__(55);
 var json_editor_module_1 = __webpack_require__(57);
-var wormhole_module_1 = __webpack_require__(21);
+var wormhole_module_1 = __webpack_require__(23);
 var month_picker_module_1 = __webpack_require__(61);
 var date_picker_module_1 = __webpack_require__(54);
 var label_module_1 = __webpack_require__(59);
@@ -63820,11 +63872,11 @@ __export(__webpack_require__(66));
 __export(__webpack_require__(36));
 __export(__webpack_require__(58));
 __export(__webpack_require__(31));
+__export(__webpack_require__(22));
 __export(__webpack_require__(23));
-__export(__webpack_require__(21));
 __export(__webpack_require__(6));
-__export(__webpack_require__(127));
-__export(__webpack_require__(129));
+__export(__webpack_require__(128));
+__export(__webpack_require__(130));
 var VCLModule = (function () {
     function VCLModule() {
     }

@@ -6,7 +6,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Subject_1 = require('rxjs/Subject');
 var core_1 = require('@angular/core');
-var wormhole_module_1 = require('./../../directives/wormhole/wormhole.module');
+var wormhole_1 = require('./../../directives/wormhole/wormhole');
 var layer_service_1 = require('./layer.service');
 var LayerDirective = (function (_super) {
     __extends(LayerDirective, _super);
@@ -17,6 +17,7 @@ var LayerDirective = (function (_super) {
         this.layerService = layerService;
         this.visibilityChange$ = new core_1.EventEmitter();
         this.modal = true;
+        this.closeOnOffClick = true;
         this.base = 'default';
         this.data = {};
         this.visible = false;
@@ -42,7 +43,9 @@ var LayerDirective = (function (_super) {
         this.layerService.unregister(this);
     };
     LayerDirective.prototype.offClick = function () {
-        if (!this.modal) {
+        // allow offlick only on non-modal layers
+        var allowOffClick = !this.modal && this.closeOnOffClick;
+        if (allowOffClick) {
             this.close();
         }
     };
@@ -95,11 +98,12 @@ var LayerDirective = (function (_super) {
     LayerDirective.propDecorators = {
         'visibilityChange': [{ type: core_1.Output },],
         'modal': [{ type: core_1.Input },],
+        'closeOnOffClick': [{ type: core_1.Input },],
         'name': [{ type: core_1.Input },],
         'base': [{ type: core_1.Input },],
     };
     return LayerDirective;
-}(wormhole_module_1.TemplateWormhole));
+}(wormhole_1.TemplateWormhole));
 exports.LayerDirective = LayerDirective;
 var LayerBaseComponent = (function () {
     function LayerBaseComponent(layerService) {

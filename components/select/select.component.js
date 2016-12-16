@@ -1,10 +1,25 @@
 "use strict";
 var core_1 = require('@angular/core');
 var forms_1 = require('@angular/forms');
+/**
+ * see
+ * @link http://www.w3schools.com/tags/tag_option.asp
+ */
 var SelectOptionComponent = (function () {
-    function SelectOptionComponent() {
+    function SelectOptionComponent(elementRef) {
+        this.elementRef = elementRef;
         this.class = '';
+        this.disabled = false;
+        this.selected = false;
     }
+    SelectOptionComponent.prototype.ngOnInit = function () {
+        if (!this.label || this.label == '') {
+            this.label = this.elementRef.nativeElement.innerText;
+            if (!this.label || this.label == '') {
+                this.label = this.value;
+            }
+        }
+    };
     /**
      * transforms this NavigationItemComponent into an object,
      * so it can be handled the same way as an inputList
@@ -15,7 +30,9 @@ var SelectOptionComponent = (function () {
             value: this.value,
             label: this.label,
             sublabel: this.sublabel,
-            class: this.class
+            class: this.class,
+            disabled: this.disabled,
+            selected: this.selected
         };
         return ret;
     };
@@ -25,12 +42,16 @@ var SelectOptionComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    SelectOptionComponent.ctorParameters = function () { return []; };
+    SelectOptionComponent.ctorParameters = function () { return [
+        { type: core_1.ElementRef, },
+    ]; };
     SelectOptionComponent.propDecorators = {
         'value': [{ type: core_1.Input, args: ['value',] },],
-        'label': [{ type: core_1.Input, args: ['label',] },],
         'sublabel': [{ type: core_1.Input, args: ['sublabel',] },],
+        'label': [{ type: core_1.Input, args: ['label',] },],
         'class': [{ type: core_1.Input, args: ['class',] },],
+        'disabled': [{ type: core_1.Input, args: ['disabled',] },],
+        'selected': [{ type: core_1.Input, args: ['selected',] },],
     };
     return SelectOptionComponent;
 }());
@@ -100,11 +121,8 @@ var SelectComponent = (function () {
     SelectComponent.prototype.selectItem = function (item) {
         this.dropdown.selectItem(item);
     };
-    SelectComponent.prototype.onSelect = function (newItems) {
-        if (this.maxSelectableItems == 1)
-            this.value = newItems[0].value; // single-select
-        else
-            this.value = newItems.map(function (i) { return i.value; }); // multi-select
+    SelectComponent.prototype.onSelect = function (newValue) {
+        this.value = newValue;
         this.changeEE.emit(this.value);
     };
     SelectComponent.prototype.writeValue = function (value) {

@@ -58,14 +58,18 @@ var TemplateWormhole = (function (_super) {
 exports.TemplateWormhole = TemplateWormhole;
 var ComponentWormhole = (function (_super) {
     __extends(ComponentWormhole, _super);
-    function ComponentWormhole(componentClass) {
+    function ComponentWormhole(componentClass, opts) {
+        if (opts === void 0) { opts = {}; }
         _super.call(this);
         this.componentClass = componentClass;
+        this.injector = opts.injector;
+        this.data = opts.data;
     }
     ComponentWormhole.prototype.attach = function () {
         var viewContainerRef = this.bridge.viewContainerRef;
         var componentFactory = this.bridge.componentFactoryResolver.resolveComponentFactory(this.componentClass);
-        this.compRef = viewContainerRef.createComponent(componentFactory, viewContainerRef.length, viewContainerRef.parentInjector);
+        this.compRef = viewContainerRef.createComponent(componentFactory, viewContainerRef.length, this.injector || viewContainerRef.parentInjector);
+        this.setData(this.data);
     };
     ComponentWormhole.prototype.detach = function () {
         if (this.compRef) {
@@ -75,6 +79,12 @@ var ComponentWormhole = (function (_super) {
             this.compRef.destroy();
         }
         this.compRef = null;
+    };
+    ComponentWormhole.prototype.setData = function (data) {
+        if (data && typeof data === 'object') {
+            Object.assign(this.compRef.instance, data);
+            this.compRef.changeDetectorRef.detectChanges();
+        }
     };
     return ComponentWormhole;
 }(Wormhole));

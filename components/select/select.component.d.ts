@@ -1,12 +1,20 @@
 /// <reference types="core-js" />
-import { EventEmitter, QueryList } from '@angular/core';
+import { EventEmitter, QueryList, ElementRef, OnInit } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
-export declare class SelectOptionComponent {
+/**
+ * see
+ * @link http://www.w3schools.com/tags/tag_option.asp
+ */
+export declare class SelectOptionComponent implements OnInit {
+    private elementRef;
     value: string;
-    label: string;
     sublabel: string;
+    label: string;
     class: string;
-    constructor();
+    disabled: boolean;
+    selected: boolean;
+    constructor(elementRef: ElementRef);
+    ngOnInit(): void;
     /**
      * transforms this NavigationItemComponent into an object,
      * so it can be handled the same way as an inputList
@@ -35,7 +43,7 @@ export declare class SelectComponent implements ControlValueAccessor {
     ngAfterContentInit(): void;
     reDisplayValue(newValue: any): void;
     selectItem(item: any): void;
-    onSelect(newItems: any[]): void;
+    onSelect(newValue: any[]): void;
     /**
      * Things needed for ControlValueAccessor-Interface.
      */

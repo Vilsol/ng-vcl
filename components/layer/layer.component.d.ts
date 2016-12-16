@@ -2,7 +2,7 @@ import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Subscription';
 import { Observable } from 'rxjs/Observable';
 import { EventEmitter, TemplateRef, ElementRef } from '@angular/core';
-import { TemplateWormhole } from './../../directives/wormhole/wormhole.module';
+import { TemplateWormhole } from './../../directives/wormhole/wormhole';
 import { LayerService } from './layer.service';
 export interface LayerData {
     [key: string]: any;
@@ -14,6 +14,7 @@ export declare class LayerDirective extends TemplateWormhole {
     visibilityChange$: EventEmitter<boolean>;
     readonly visibilityChange: Observable<boolean>;
     modal: boolean;
+    closeOnOffClick: boolean;
     name: string;
     base: string;
     _instanceResults: Subject<any>;

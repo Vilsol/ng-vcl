@@ -11,27 +11,17 @@ var wormhole_module_1 = require('../../directives/wormhole/wormhole.module');
 function getComponentRootNode(componentRef) {
     return componentRef.hostView.rootNodes[0];
 }
-function bootstrapLayer(appRef, componentFactoryResolver, defaultInjector) {
+function bootstrapLayer(wormholeService) {
     return function () {
-        var layerBaseFactory = componentFactoryResolver.resolveComponentFactory(layer_component_1.LayerBaseComponent);
-        var layerBaseRef = layerBaseFactory.create(defaultInjector);
-        layerBaseRef.onDestroy(function () {
-            appRef.detachView(layerBaseRef.hostView);
-        });
-        appRef.attachView(layerBaseRef.hostView);
-        var rootComponents = appRef['_rootComponents'];
-        var rootComponent = rootComponents.length && rootComponents[0];
-        if (!rootComponent) {
-            console.log('Root View Container not found');
-            return;
-        }
-        var layerBaseRootNode = getComponentRootNode(layerBaseRef);
-        var appComponentNode = getComponentRootNode(rootComponent);
-        if (appComponentNode && layerBaseRef) {
-            appComponentNode.appendChild(layerBaseRootNode);
-        }
+        wormholeService.attachComponent(layer_component_1.LayerBaseComponent);
     };
 }
+var LAYER_BOOTSTRAP = {
+    provide: core_1.APP_BOOTSTRAP_LISTENER,
+    multi: true,
+    deps: [wormhole_module_1.WormholeService],
+    useFactory: bootstrapLayer
+};
 var VCLLayerModule = (function () {
     function VCLLayerModule() {
     }
@@ -41,15 +31,7 @@ var VCLLayerModule = (function () {
                     exports: [layer_component_1.LayerBaseComponent, layer_component_1.LayerDirective],
                     declarations: [layer_component_1.LayerBaseComponent, layer_component_1.LayerDirective],
                     entryComponents: [layer_component_1.LayerBaseComponent],
-                    providers: [
-                        layer_service_1.LayerService,
-                        {
-                            provide: core_1.APP_BOOTSTRAP_LISTENER,
-                            multi: true,
-                            deps: [core_1.ApplicationRef, core_1.ComponentFactoryResolver, core_1.Injector],
-                            useFactory: bootstrapLayer
-                        }
-                    ]
+                    providers: [layer_service_1.LayerService, LAYER_BOOTSTRAP]
                 },] },
     ];
     /** @nocollapse */

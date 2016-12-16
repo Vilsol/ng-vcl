@@ -1,30 +1,25 @@
-import { EventEmitter } from '@angular/core';
-import { MetalistComponent } from '../metalist/metalist.component';
+import { EventEmitter, OnInit } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any;
-export declare class DropdownComponent implements ControlValueAccessor {
-    metalist: any;
+export declare class DropdownComponent implements ControlValueAccessor, OnInit {
+    change$: EventEmitter<any[]>;
     items: any[];
     tabindex: number;
     expanded: boolean;
     maxSelectableItems: number;
     minSelectableItems: number;
     ariaRole: string;
-    expandedChange: EventEmitter<boolean>;
-    select: EventEmitter<any[]>;
-    selected: any[];
-    _selectItem(item: any, meta: any, metalist: MetalistComponent): void;
-    selectItem(item: any): void;
-    onSelect(selectedItems: any[]): void;
-    ngAfterContentInit(): void;
-    metaInformation: any;
-    constructor();
+    value: any;
+    ngOnInit(): void;
+    selectedItems(): any[];
+    clickItem(item: any): void;
+    onChange(): void;
     /**
      * things needed for ControlValueAccessor-Interface
      */
     private onTouchedCallback;
     private onChangeCallback;
-    writeValue(value: any): void;
+    writeValue(v: any): void;
     registerOnChange(fn: any): void;
     registerOnTouched(fn: any): void;
 }

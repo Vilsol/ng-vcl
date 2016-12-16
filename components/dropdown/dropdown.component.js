@@ -8,46 +8,76 @@ exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
 };
 var DropdownComponent = (function () {
     function DropdownComponent() {
-        var _this = this;
+        this.change$ = new core_1.EventEmitter();
         this.tabindex = 0;
         this.expanded = false;
         this.maxSelectableItems = 1;
         this.minSelectableItems = 1;
         this.ariaRole = 'listbox';
-        this.expandedChange = new core_1.EventEmitter();
-        this.select = new core_1.EventEmitter();
-        this.metaInformation = [];
-        this.select.subscribe(function (selectedItems) {
-            _this.selected = selectedItems;
-            !!_this.onChangeCallback && _this.onChangeCallback(selectedItems);
-        });
     }
-    DropdownComponent.prototype._selectItem = function (item, meta, metalist) {
-        if (this.maxSelectableItems === 1) {
-            this.expanded = false;
-            this.expandedChange.emit(this.expanded);
-            metalist.selectItem(item);
+    Object.defineProperty(DropdownComponent.prototype, "value", {
+        get: function () {
+            var ret = this.items
+                .filter(function (i) { return i.selected; })
+                .map(function (i) { return i.value; });
+            if (this.maxSelectableItems == 1)
+                ret = ret[0];
+            return ret;
+        },
+        set: function (v) {
+            if (!Array.isArray(v))
+                v = [v];
+            this.items
+                .forEach(function (i) {
+                if (v.includes(i.value))
+                    i.selected = true;
+                else
+                    i.selected = false;
+            });
+            this.onChange();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ;
+    DropdownComponent.prototype.ngOnInit = function () {
+        // ensure items have a value
+        this.items = this.items.map(function (i) {
+            if (!i.value)
+                i.value = i.label;
+            if (!i.label)
+                i.label = i.value;
+            return i;
+        });
+    };
+    DropdownComponent.prototype.selectedItems = function () {
+        return this.items.filter(function (i) { return i.selected; });
+    };
+    DropdownComponent.prototype.clickItem = function (item) {
+        if (item.disabled)
+            return;
+        if (!item.selected) {
+            // prevent overflow maxSelectableItems
+            if (this.selectedItems().length >= this.maxSelectableItems)
+                this.items.find(function (i) { return i.selected; }).selected = false;
+            if (this.maxSelectableItems == 1)
+                this.items.forEach(function (i) { return i.selected = false; });
         }
         else {
-            if (meta.selected) {
-                metalist.deSelectItem(item);
-            }
-            else {
-                metalist.selectItem(item);
-            }
+            // prevent underflow minSelectableItems
+            if (this.selectedItems().length <= this.minSelectableItems)
+                return;
         }
+        item.selected = !item.selected;
+        this.onChange();
     };
-    DropdownComponent.prototype.selectItem = function (item) {
-        this.metalist.selectItem(item);
+    DropdownComponent.prototype.onChange = function () {
+        this.change$.emit(this.value);
+        !!this.onChangeCallback && this.onChangeCallback(this.value);
     };
-    DropdownComponent.prototype.onSelect = function (selectedItems) {
-        this.select.emit(selectedItems);
-    };
-    DropdownComponent.prototype.ngAfterContentInit = function () { };
-    DropdownComponent.prototype.writeValue = function (value) {
-        if (value !== this.selected) {
-            this.selected = value;
-        }
+    DropdownComponent.prototype.writeValue = function (v) {
+        if (v.toString() != this.value.toStrig())
+            this.value = v;
     };
     DropdownComponent.prototype.registerOnChange = function (fn) {
         this.onChangeCallback = fn;
@@ -66,15 +96,14 @@ var DropdownComponent = (function () {
     /** @nocollapse */
     DropdownComponent.ctorParameters = function () { return []; };
     DropdownComponent.propDecorators = {
-        'metalist': [{ type: core_1.ViewChild, args: ['metalist',] },],
+        'change$': [{ type: core_1.Output, args: ['change',] },],
         'items': [{ type: core_1.Input },],
         'tabindex': [{ type: core_1.Input },],
         'expanded': [{ type: core_1.Input },],
         'maxSelectableItems': [{ type: core_1.Input },],
         'minSelectableItems': [{ type: core_1.Input },],
         'ariaRole': [{ type: core_1.Input },],
-        'expandedChange': [{ type: core_1.Output },],
-        'select': [{ type: core_1.Output },],
+        'value': [{ type: core_1.Input },],
     };
     return DropdownComponent;
 }());

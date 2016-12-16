@@ -18,20 +18,22 @@ var WormholeService = (function () {
         var componentFactory = this.componentFactoryResolver.resolveComponentFactory(componentClass);
         var componentRef = componentFactory.create(this.defaultInjector);
         var componentRefRootNode = this.getComponentRootNode(componentRef);
-        // const targetNode = node || this.appNode;
         this.appRef.attachView(componentRef.hostView);
         this.getNode(node).then(function (targetNode) {
             if (targetNode) {
                 targetNode.appendChild(componentRefRootNode);
             }
         });
-        return function () {
-            _this.appRef.detachView(componentRef.hostView);
-            _this.getNode(node).then(function (targetNode) {
-                if (targetNode) {
-                    targetNode.removeChild(componentRefRootNode);
-                }
-            });
+        return {
+            componentRef: componentRef,
+            dispose: function () {
+                _this.appRef.detachView(componentRef.hostView);
+                _this.getNode(node).then(function (targetNode) {
+                    if (targetNode) {
+                        targetNode.removeChild(componentRefRootNode);
+                    }
+                });
+            }
         };
     };
     WormholeService.prototype.getNode = function (node) {

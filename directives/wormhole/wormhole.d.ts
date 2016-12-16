@@ -1,4 +1,4 @@
-import { ComponentRef, EmbeddedViewRef, TemplateRef, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
+import { ComponentRef, EmbeddedViewRef, TemplateRef, ViewContainerRef, ComponentFactoryResolver, Injector } from '@angular/core';
 import { ComponentType } from './../../core/index';
 export declare abstract class Wormhole {
     protected bridge: ConnectWormholeDirective;
@@ -18,9 +18,15 @@ export declare class TemplateWormhole extends Wormhole {
 export declare class ComponentWormhole<T> extends Wormhole {
     private componentClass;
     compRef: ComponentRef<T>;
-    constructor(componentClass: ComponentType<T>);
+    injector: Injector;
+    data: any;
+    constructor(componentClass: ComponentType<T>, opts?: {
+        injector?: Injector;
+        data?: any;
+    });
     attach(): void;
     detach(): void;
+    setData(data?: any): void;
 }
 export declare class ConnectWormholeDirective {
     viewContainerRef: ViewContainerRef;
