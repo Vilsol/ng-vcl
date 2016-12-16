@@ -9844,7 +9844,7 @@ var DropdownComponent = (function () {
     DropdownComponent.prototype.selectedItems = function () {
         return this.items.filter(function (i) { return i.selected; });
     };
-    DropdownComponent.prototype.clickItem = function (item) {
+    DropdownComponent.prototype.selectItem = function (item) {
         if (item.disabled)
             return;
         if (!item.selected) {
@@ -50314,7 +50314,7 @@ module.exports = "<div class=\"vclDataGrid vclDGVAlignMiddle vclDGAlignCentered 
 /* 177 */
 /***/ function(module, exports) {
 
-module.exports = "<ul class=\"vclDropdown\"\n  [class.vclOpen]=\"expanded\"\n  [attr.role]=\"ariaRole\"\n  [attr.tabindex]=\"tabindex\"\n  [attr.aria-multiselectable]=\"maxSelectableItems > 1\"\n  [attr.aria-expanded]=\"expanded\">\n  <li\n    *ngFor=\"let item of items\"\n    class=\"vclDropdownItem\"\n    [class.vclSelected]=\"item.selected\"\n    [attr.aria-selected]=\"item.selected\"\n    [class.vclDisabled]=\"item.disabled\"\n    role=\"menuitem\"\n    tabindex=\"0\"\n    (tap)=\"clickItem(item)\"\n    [ngClass]=\"item.class\">\n    <div class=\"vclDropdownItemLabel\">\n      {{item.label}}\n    </div>\n    <div class=\"vclDropdownItemSubLabel\">\n      {{item.sublabel}}\n    </div>\n  </li>\n</ul>\n"
+module.exports = "<ul class=\"vclDropdown\"\n  [class.vclOpen]=\"expanded\"\n  [attr.role]=\"ariaRole\"\n  [attr.tabindex]=\"tabindex\"\n  [attr.aria-multiselectable]=\"maxSelectableItems > 1\"\n  [attr.aria-expanded]=\"expanded\">\n  <li\n    *ngFor=\"let item of items\"\n    class=\"vclDropdownItem\"\n    [class.vclSelected]=\"item.selected\"\n    [attr.aria-selected]=\"item.selected\"\n    [class.vclDisabled]=\"item.disabled\"\n    role=\"menuitem\"\n    tabindex=\"0\"\n    (tap)=\"selectItem(item)\"\n    [ngClass]=\"item.class\">\n    <div class=\"vclDropdownItemLabel\">\n      {{item.label}}\n    </div>\n    <div class=\"vclDropdownItemSubLabel\">\n      {{item.sublabel}}\n    </div>\n  </li>\n</ul>\n"
 
 /***/ },
 /* 178 */

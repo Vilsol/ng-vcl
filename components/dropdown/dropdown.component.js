@@ -53,7 +53,7 @@ var DropdownComponent = (function () {
     DropdownComponent.prototype.selectedItems = function () {
         return this.items.filter(function (i) { return i.selected; });
     };
-    DropdownComponent.prototype.clickItem = function (item) {
+    DropdownComponent.prototype.selectItem = function (item) {
         if (item.disabled)
             return;
         if (!item.selected) {

@@ -12,7 +12,7 @@ export declare class DropdownComponent implements ControlValueAccessor, OnInit {
     value: any;
     ngOnInit(): void;
     selectedItems(): any[];
-    clickItem(item: any): void;
+    selectItem(item: any): void;
     onChange(): void;
     /**
      * things needed for ControlValueAccessor-Interface
