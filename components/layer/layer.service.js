@@ -1,84 +1,86 @@
 "use strict";
-var BehaviorSubject_1 = require('rxjs/BehaviorSubject');
 var core_1 = require('@angular/core');
-var Observable_1 = require('rxjs/Observable');
-;
+var Subject_1 = require('rxjs/Subject');
+var layer_references_1 = require('./layer.references');
 var LayerService = (function () {
-    function LayerService() {
-        this.layerNameMap = new Map();
+    function LayerService(defaultInjector) {
+        this.defaultInjector = defaultInjector;
         this.baseNameMap = new Map();
-        this.layerMap = new Map();
-        this.visibleLayers = {};
-        this._visibleLayers = new BehaviorSubject_1.BehaviorSubject(this.visibleLayers);
+        this.layerDirectiveMap = new Map();
+        // private layers = new Set<LayerReference>();
+        this.layers = new Map();
+        this.layersChange = new Subject_1.Subject();
     }
-    LayerService.prototype.visibleLayersFor = function (base) {
+    LayerService.prototype.getVisibleLayersFor$ = function (base) {
         if (base === void 0) { base = 'default'; }
-        return this._visibleLayers.asObservable().map(function (layers) { return layers[base] || []; }).distinctUntilChanged();
+        return this.layersChange.scan(function (layers, layerRef) {
+            if (layerRef.visible) {
+                return layers.concat([layerRef]);
+            }
+            else {
+                return layers.filter(function (layer) { return layer !== layerRef; });
+            }
+        }, []);
     };
-    LayerService.prototype.getVisibleLayers = function (base) {
+    LayerService.prototype.getLayersFor = function (base) {
         if (base === void 0) { base = 'default'; }
-        return this.visibleLayers[base] || [];
+        return Array.from(this.layers.keys()).filter(function (li) { return li.base === base; });
+    };
+    LayerService.prototype.getVisibleLayersFor = function (base) {
+        if (base === void 0) { base = 'default'; }
+        return this.getLayersFor(base).filter(function (layer) { return !!layer.visible; });
     };
     LayerService.prototype.hasVisibleLayers = function (base) {
         if (base === void 0) { base = 'default'; }
-        return this.getVisibleLayers(base).length > 0;
+        return this.getLayersFor(base).some(function (layer) { return layer.visible; });
     };
     LayerService.prototype.closeAll = function (base) {
         if (base === void 0) { base = 'default'; }
-        this.getVisibleLayers(base).forEach(function (layer) { return layer.close(); });
+        this.getVisibleLayersFor(base).forEach(function (layer) { return layer.close(); });
     };
     LayerService.prototype.closeTop = function (base) {
         if (base === void 0) { base = 'default'; }
-        var layer = this.getVisibleLayers(base).slice(-1)[0];
+        var layer = this.getVisibleLayersFor(base).slice(-1)[0];
         if (layer)
             layer.close();
     };
-    LayerService.prototype.open = function (layerName, data) {
-        if (this.layerNameMap.has(layerName)) {
-            return this.layerNameMap.get(layerName).open(data);
-        }
-        else {
-            return Observable_1.Observable.throw('Layer not found: ' + layerName);
-        }
+    LayerService.prototype.registerComponent = function (layer, opts) {
+        if (opts === void 0) { opts = {}; }
+        var layerRef = new layer_references_1.LayerComponentReference(opts, this.defaultInjector, layer);
+        this.registerReference(layerRef);
+        return layerRef;
     };
-    LayerService.prototype.close = function (layerName) {
-        if (this.layerNameMap.has(layerName)) {
-            this.layerNameMap.get(layerName).close();
-        }
+    LayerService.prototype.registerDirective = function (layer, opts) {
+        if (opts === void 0) { opts = {}; }
+        var layerRef = new layer_references_1.LayerDirectiveReference(opts, layer);
+        this.layerDirectiveMap.set(layer, layerRef);
+        this.registerReference(layerRef);
+        return layerRef;
     };
-    LayerService.prototype.register = function (layer) {
+    LayerService.prototype.registerReference = function (layerRef) {
         var _this = this;
-        if (layer.name && this.layerNameMap.has(layer.name)) {
-            throw 'Duplicate vcl-layer: ' + layer.name;
-        }
-        this.layerMap.set(layer, layer.visibilityChange$.subscribe(function () {
-            if (!_this.visibleLayers[layer.base]) {
-                _this.visibleLayers[layer.base] = [];
-            }
-            if (layer.visible) {
-                _this.visibleLayers[layer.base] = _this.visibleLayers[layer.base].concat([layer]);
-            }
-            else {
-                _this.visibleLayers[layer.base] = _this.visibleLayers[layer.base].filter(function (l) { return layer !== l; });
-            }
-            _this._visibleLayers.next(_this.visibleLayers);
+        this.layers.set(layerRef, layerRef.subscribe(function (layerRef) {
+            _this.layersChange.next(layerRef);
         }));
-        if (layer.name) {
-            this.layerNameMap.set(layer.name, layer);
-        }
     };
-    LayerService.prototype.unregister = function (layer) {
-        layer.close();
-        if (layer.name) {
-            this.layerNameMap.delete(layer.name);
-        }
-        var sub = this.layerMap.get(layer);
+    LayerService.prototype.disposeReference = function (layerRef) {
+        var sub = this.layers.get(layerRef);
         if (sub && !sub.closed) {
             sub.unsubscribe();
         }
-        this.layerMap.delete(layer);
+        this.layers.delete(layerRef);
     };
-    LayerService.prototype.registerBase = function (layerBase) {
+    LayerService.prototype.unregisterDirective = function (layer) {
+        var layerRef = this.layerDirectiveMap.get(layer);
+        if (layerRef) {
+            layerRef.close();
+            this.layers.delete(layerRef);
+            this.layerDirectiveMap.delete(layer);
+            this.disposeReference(layerRef);
+        }
+    };
+    LayerService.prototype.registerBase = function (layerBase, opts) {
+        if (opts === void 0) { opts = {}; }
         if (layerBase.name && this.baseNameMap.has(layerBase.name)) {
             throw 'Duplicate vcl-layer-base: ' + layerBase.name;
         }
@@ -88,19 +90,21 @@ var LayerService = (function () {
         this.baseNameMap.delete(layerBase.name);
     };
     LayerService.prototype.ngOnDestroy = function () {
-        this.layerMap.forEach(function (sub) {
+        this.layerDirectiveMap.clear();
+        this.layers.forEach(function (sub) {
             if (sub && !sub.closed) {
                 sub.unsubscribe();
             }
         });
-        this.layerMap.clear();
-        this.layerNameMap.clear();
+        this.layers.clear();
     };
     LayerService.decorators = [
         { type: core_1.Injectable },
     ];
     /** @nocollapse */
-    LayerService.ctorParameters = function () { return []; };
+    LayerService.ctorParameters = function () { return [
+        { type: core_1.Injector, },
+    ]; };
     return LayerService;
 }());
 exports.LayerService = LayerService;

@@ -20,6 +20,9 @@ var Wormhole = (function () {
         this.bridge = null;
     };
     Wormhole.prototype.connect = function (bridge) {
+        if (this.bridge) {
+            this.disconnect();
+        }
         this.bridge = bridge;
         this.attach();
     };
@@ -34,7 +37,11 @@ var TemplateWormhole = (function (_super) {
         this.templateRef = templateRef;
     }
     TemplateWormhole.prototype.attach = function () {
+        var _this = this;
         this.viewRef = this.bridge.viewContainerRef.createEmbeddedView(this.templateRef);
+        this.viewRef.onDestroy(function () {
+            _this.viewRef = null;
+        });
     };
     TemplateWormhole.prototype.detach = function () {
         if (this.viewRef) {
@@ -66,9 +73,13 @@ var ComponentWormhole = (function (_super) {
         this.data = opts.data;
     }
     ComponentWormhole.prototype.attach = function () {
+        var _this = this;
         var viewContainerRef = this.bridge.viewContainerRef;
         var componentFactory = this.bridge.componentFactoryResolver.resolveComponentFactory(this.componentClass);
         this.compRef = viewContainerRef.createComponent(componentFactory, viewContainerRef.length, this.injector || viewContainerRef.parentInjector);
+        this.compRef.onDestroy(function () {
+            _this.compRef = null;
+        });
         this.setData(this.data);
     };
     ComponentWormhole.prototype.detach = function () {
@@ -76,14 +87,17 @@ var ComponentWormhole = (function (_super) {
             var i = this.bridge.viewContainerRef.indexOf(this.compRef.hostView);
             if (i >= 0)
                 this.bridge.viewContainerRef.remove(i);
-            this.compRef.destroy();
         }
-        this.compRef = null;
     };
     ComponentWormhole.prototype.setData = function (data) {
         if (data && typeof data === 'object') {
-            Object.assign(this.compRef.instance, data);
-            this.compRef.changeDetectorRef.detectChanges();
+            if (this.compRef && !this.compRef.hostView.destroyed) {
+                Object.assign(this.compRef.instance, data);
+                this.compRef.changeDetectorRef.detectChanges();
+            }
+            else {
+                this.data = data;
+            }
         }
     };
     return ComponentWormhole;

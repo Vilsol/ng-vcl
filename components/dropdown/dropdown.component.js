@@ -85,6 +85,7 @@ var DropdownComponent = (function () {
     DropdownComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
+    DropdownComponent.TAG = 'DropdownComponent';
     DropdownComponent.decorators = [
         { type: core_1.Component, args: [{
                     selector: 'vcl-dropdown',

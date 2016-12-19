@@ -158,7 +158,7 @@ var SelectComponent = (function () {
         'expandedIcon': [{ type: core_1.Input },],
         'collapsedIcon': [{ type: core_1.Input },],
         'displayValue': [{ type: core_1.Input, args: ['displayValue',] },],
-        'changeEE': [{ type: core_1.Output, args: ['select',] },],
+        'changeEE': [{ type: core_1.Output, args: ['change',] },],
     };
     return SelectComponent;
 }());

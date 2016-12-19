@@ -2,6 +2,7 @@ import { EventEmitter, OnInit } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any;
 export declare class DropdownComponent implements ControlValueAccessor, OnInit {
+    private static readonly TAG;
     change$: EventEmitter<any[]>;
     items: any[];
     tabindex: number;
