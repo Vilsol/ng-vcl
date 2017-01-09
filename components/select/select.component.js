@@ -1,6 +1,15 @@
 "use strict";
-var core_1 = require('@angular/core');
-var forms_1 = require('@angular/forms');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require("@angular/core");
+var forms_1 = require("@angular/forms");
 /**
  * see
  * @link http://www.w3schools.com/tags/tag_option.asp
@@ -36,25 +45,38 @@ var SelectOptionComponent = (function () {
         };
         return ret;
     };
-    SelectOptionComponent.decorators = [
-        { type: core_1.Directive, args: [{
-                    selector: 'vcl-select-option'
-                },] },
-    ];
-    /** @nocollapse */
-    SelectOptionComponent.ctorParameters = function () { return [
-        { type: core_1.ElementRef, },
-    ]; };
-    SelectOptionComponent.propDecorators = {
-        'value': [{ type: core_1.Input, args: ['value',] },],
-        'sublabel': [{ type: core_1.Input, args: ['sublabel',] },],
-        'label': [{ type: core_1.Input, args: ['label',] },],
-        'class': [{ type: core_1.Input, args: ['class',] },],
-        'disabled': [{ type: core_1.Input, args: ['disabled',] },],
-        'selected': [{ type: core_1.Input, args: ['selected',] },],
-    };
     return SelectOptionComponent;
 }());
+__decorate([
+    core_1.Input('value'),
+    __metadata("design:type", String)
+], SelectOptionComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Input('sublabel'),
+    __metadata("design:type", String)
+], SelectOptionComponent.prototype, "sublabel", void 0);
+__decorate([
+    core_1.Input('label'),
+    __metadata("design:type", String)
+], SelectOptionComponent.prototype, "label", void 0);
+__decorate([
+    core_1.Input('class'),
+    __metadata("design:type", String)
+], SelectOptionComponent.prototype, "class", void 0);
+__decorate([
+    core_1.Input('disabled'),
+    __metadata("design:type", Boolean)
+], SelectOptionComponent.prototype, "disabled", void 0);
+__decorate([
+    core_1.Input('selected'),
+    __metadata("design:type", Boolean)
+], SelectOptionComponent.prototype, "selected", void 0);
+SelectOptionComponent = __decorate([
+    core_1.Directive({
+        selector: 'vcl-select-option'
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], SelectOptionComponent);
 exports.SelectOptionComponent = SelectOptionComponent;
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
@@ -137,29 +159,59 @@ var SelectComponent = (function () {
     SelectComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    SelectComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-select',
-                    templateUrl: 'select.component.html',
-                    //  changeDetection: ChangeDetectionStrategy.OnPush,
-                    providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
-                },] },
-    ];
-    /** @nocollapse */
-    SelectComponent.ctorParameters = function () { return []; };
-    SelectComponent.propDecorators = {
-        'dropdown': [{ type: core_1.ViewChild, args: ['dropdown',] },],
-        'value': [{ type: core_1.Input, args: ['value',] },],
-        'expanded': [{ type: core_1.Input, args: ['expanded',] },],
-        'items': [{ type: core_1.Input, args: ['items',] },],
-        'templateItems': [{ type: core_1.ContentChildren, args: [SelectOptionComponent,] },],
-        'minSelectableItems': [{ type: core_1.Input },],
-        'maxSelectableItems': [{ type: core_1.Input },],
-        'expandedIcon': [{ type: core_1.Input },],
-        'collapsedIcon': [{ type: core_1.Input },],
-        'displayValue': [{ type: core_1.Input, args: ['displayValue',] },],
-        'changeEE': [{ type: core_1.Output, args: ['change',] },],
-    };
     return SelectComponent;
 }());
+__decorate([
+    core_1.ViewChild('dropdown'),
+    __metadata("design:type", Object)
+], SelectComponent.prototype, "dropdown", void 0);
+__decorate([
+    core_1.Input('value'),
+    __metadata("design:type", Object)
+], SelectComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Input('expanded'),
+    __metadata("design:type", Boolean)
+], SelectComponent.prototype, "expanded", void 0);
+__decorate([
+    core_1.Input('items'),
+    __metadata("design:type", Array)
+], SelectComponent.prototype, "items", void 0);
+__decorate([
+    core_1.ContentChildren(SelectOptionComponent),
+    __metadata("design:type", core_1.QueryList)
+], SelectComponent.prototype, "templateItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], SelectComponent.prototype, "minSelectableItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], SelectComponent.prototype, "maxSelectableItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], SelectComponent.prototype, "expandedIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], SelectComponent.prototype, "collapsedIcon", void 0);
+__decorate([
+    core_1.Input('displayValue'),
+    __metadata("design:type", String)
+], SelectComponent.prototype, "displayValue", void 0);
+__decorate([
+    core_1.Output('change'),
+    __metadata("design:type", Object)
+], SelectComponent.prototype, "changeEE", void 0);
+SelectComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-select',
+        templateUrl: 'select.component.html',
+        //  changeDetection: ChangeDetectionStrategy.OnPush,
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+    }),
+    __metadata("design:paramtypes", [])
+], SelectComponent);
 exports.SelectComponent = SelectComponent;

@@ -189,31 +189,31 @@ var PickDate = (function () {
         console.dir(this.date);
         return '';
     };
-    PickDate.monthNames = [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December'
-    ];
-    PickDate.weekDays = [
-        'Mo',
-        'Tu',
-        'We',
-        'Th',
-        'Fr',
-        'Sa',
-        'Su'
-    ];
     return PickDate;
 }());
+PickDate.monthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+];
+PickDate.weekDays = [
+    'Mo',
+    'Tu',
+    'We',
+    'Th',
+    'Fr',
+    'Sa',
+    'Su'
+];
 exports.PickDate = PickDate;
 function PickDateCreate(date) {
     if (date === void 0) { date = new Date(); }

@@ -1,5 +1,14 @@
 "use strict";
-var core_1 = require('@angular/core');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require("@angular/core");
 var ProgressBarComponent = (function () {
     function ProgressBarComponent() {
         this.value = null;
@@ -62,26 +71,41 @@ var ProgressBarComponent = (function () {
             value >= this.minValue &&
             value <= this.maxValue;
     };
-    ProgressBarComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-progress-bar',
-                    templateUrl: 'progress-bar.component.html',
-                    host: {
-                        '[attr.role]': '"progressbar"',
-                    },
-                    changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-                },] },
-    ];
-    /** @nocollapse */
-    ProgressBarComponent.ctorParameters = function () { return []; };
-    ProgressBarComponent.propDecorators = {
-        'value': [{ type: core_1.Input },],
-        'secondaryValue': [{ type: core_1.Input },],
-        'minValue': [{ type: core_1.Input },],
-        'maxValue': [{ type: core_1.Input },],
-        'indeterminate': [{ type: core_1.Input },],
-        'label': [{ type: core_1.Input },],
-    };
     return ProgressBarComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], ProgressBarComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], ProgressBarComponent.prototype, "secondaryValue", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], ProgressBarComponent.prototype, "minValue", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], ProgressBarComponent.prototype, "maxValue", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], ProgressBarComponent.prototype, "indeterminate", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ProgressBarComponent.prototype, "label", void 0);
+ProgressBarComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-progress-bar',
+        templateUrl: 'progress-bar.component.html',
+        host: {
+            '[attr.role]': '"progressbar"',
+        },
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+    }),
+    __metadata("design:paramtypes", [])
+], ProgressBarComponent);
 exports.ProgressBarComponent = ProgressBarComponent;

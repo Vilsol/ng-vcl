@@ -4,24 +4,37 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = require('rxjs/Observable');
-var ReplaySubject_1 = require('rxjs/ReplaySubject');
-require('rxjs/add/operator/publishReplay');
-require('rxjs/add/operator/publish');
-require('rxjs/add/operator/catch');
-require('rxjs/add/operator/retryWhen');
-require('rxjs/add/operator/let');
-require('rxjs/add/observable/throw');
-var http_1 = require('@angular/http');
-var core_1 = require('@angular/core');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+var Observable_1 = require("rxjs/Observable");
+var ReplaySubject_1 = require("rxjs/ReplaySubject");
+require("rxjs/add/operator/publishReplay");
+require("rxjs/add/operator/publish");
+require("rxjs/add/operator/catch");
+require("rxjs/add/operator/retryWhen");
+require("rxjs/add/operator/let");
+require("rxjs/add/observable/throw");
+var http_1 = require("@angular/http");
+var core_1 = require("@angular/core");
 /**
  *  Data caching
  */
 var SyncableObservable = (function (_super) {
     __extends(SyncableObservable, _super);
     function SyncableObservable(source) {
-        _super.call(this);
-        this.source = source;
+        var _this = _super.call(this) || this;
+        _this.source = source;
+        return _this;
     }
     SyncableObservable.prototype._subscribe = function (subscriber) {
         return this.getDataSubject().subscribe(subscriber);
@@ -64,12 +77,12 @@ Observable_1.Observable.prototype.syncable = function () {
 /**
  *  Error handling
  */
+var ErrorHandlingStrategy;
 (function (ErrorHandlingStrategy) {
     ErrorHandlingStrategy[ErrorHandlingStrategy["default"] = 0] = "default";
     ErrorHandlingStrategy[ErrorHandlingStrategy["retry"] = 1] = "retry";
     ErrorHandlingStrategy[ErrorHandlingStrategy["notify"] = 2] = "notify";
-})(exports.ErrorHandlingStrategy || (exports.ErrorHandlingStrategy = {}));
-var ErrorHandlingStrategy = exports.ErrorHandlingStrategy;
+})(ErrorHandlingStrategy = exports.ErrorHandlingStrategy || (exports.ErrorHandlingStrategy = {}));
 exports.ADV_HTTP_CONFIG = new core_1.OpaqueToken('adv.http.config');
 var ErrorHandlerService = (function () {
     function ErrorHandlerService() {
@@ -117,20 +130,20 @@ var ErrorHandlerService = (function () {
         }
         return source;
     };
-    ErrorHandlerService.decorators = [
-        { type: core_1.Injectable },
-    ];
-    /** @nocollapse */
-    ErrorHandlerService.ctorParameters = function () { return []; };
     return ErrorHandlerService;
 }());
+ErrorHandlerService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], ErrorHandlerService);
 exports.ErrorHandlerService = ErrorHandlerService;
 var AdvHttp = (function (_super) {
     __extends(AdvHttp, _super);
     function AdvHttp(config, errorHandler, _backend, _defaultOptions) {
-        _super.call(this, _backend, _defaultOptions);
-        this.config = config;
-        this.errorHandler = errorHandler;
+        var _this = _super.call(this, _backend, _defaultOptions) || this;
+        _this.config = config;
+        _this.errorHandler = errorHandler;
+        return _this;
     }
     AdvHttp.prototype.request = function (url, options, errorStrategy) {
         var _this = this;
@@ -164,16 +177,13 @@ var AdvHttp = (function (_super) {
         var _this = this;
         return _super.prototype.options.call(this, url, options).let(function (o) { return _this.errorHandler.attach(o, errorStrategy || _this.config.defaultErrorHandlingStrategy); });
     };
-    AdvHttp.decorators = [
-        { type: core_1.Injectable },
-    ];
-    /** @nocollapse */
-    AdvHttp.ctorParameters = function () { return [
-        { type: undefined, decorators: [{ type: core_1.Inject, args: [exports.ADV_HTTP_CONFIG,] },] },
-        { type: ErrorHandlerService, },
-        { type: http_1.ConnectionBackend, },
-        { type: http_1.RequestOptions, },
-    ]; };
     return AdvHttp;
 }(http_1.Http));
+AdvHttp = __decorate([
+    core_1.Injectable(),
+    __param(0, core_1.Inject(exports.ADV_HTTP_CONFIG)),
+    __metadata("design:paramtypes", [Object, ErrorHandlerService,
+        http_1.ConnectionBackend,
+        http_1.RequestOptions])
+], AdvHttp);
 exports.AdvHttp = AdvHttp;

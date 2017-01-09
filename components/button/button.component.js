@@ -4,9 +4,19 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-require('rxjs/add/operator/publishBehavior');
-var core_1 = require('@angular/core');
-var index_1 = require('../../core/index');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var Observable_1 = require("rxjs/Observable");
+require("rxjs/add/operator/publishBehavior");
+var core_1 = require("@angular/core");
+var index_1 = require("../../core/index");
 var InteractionType;
 (function (InteractionType) {
     InteractionType[InteractionType["Click"] = 0] = "Click";
@@ -29,19 +39,16 @@ var ButtonContentDirective = (function () {
             this.viewContainerRef.clear();
         }
     };
-    ButtonContentDirective.decorators = [
-        { type: core_1.Directive, args: [{ selector: '[vcl-button-content]' },] },
-    ];
-    /** @nocollapse */
-    ButtonContentDirective.ctorParameters = function () { return [
-        { type: core_1.ViewContainerRef, },
-        { type: core_1.TemplateRef, },
-    ]; };
-    ButtonContentDirective.propDecorators = {
-        'state': [{ type: core_1.Input },],
-    };
     return ButtonContentDirective;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonContentDirective.prototype, "state", void 0);
+ButtonContentDirective = __decorate([
+    core_1.Directive({ selector: '[vcl-button-content]' }),
+    __metadata("design:paramtypes", [core_1.ViewContainerRef, core_1.TemplateRef])
+], ButtonContentDirective);
 exports.ButtonContentDirective = ButtonContentDirective;
 function dispatch(el, eventType) {
     var x = 10, y = 10;
@@ -72,39 +79,39 @@ function dispatchTap(el) {
 var ButtonComponent = (function (_super) {
     __extends(ButtonComponent, _super);
     function ButtonComponent(elementRef) {
-        var _this = this;
-        _super.call(this);
-        this.elementRef = elementRef;
-        this.latestInteractionTime = 0;
-        this.pressed = false; // `true` if a pointer device is conducting a `down` gesture on the button
-        this.focused = false; // `true` if the element is focused  (CSS' :focus)
-        this.hovered = false; // `true` if a pointer device is hovering the button (CSS' :hover)
-        this.selected = false;
-        this.disabled = false;
-        this.disableA11yClick = false;
-        this.busy = false; // State to indicate that the button is disabled as a operation is in progress
-        this.flexLabel = false;
-        this.autoBlur = true;
-        this._press = new core_1.EventEmitter();
-        this._stateChange = new core_1.EventEmitter();
-        this.state$ = this.observeChange('disabled', 'busy', 'label', 'busyLabel', 'appIcon', 'appIconBusy').publishBehavior(this.state).refCount().map(function () { return _this.state; });
-        this.label$ = this.state$.map(function (state) { return state === 'busy' && _this.busyLabel ? _this.busyLabel : _this.label; });
-        this.prepIcon$ = this.state$.map(function (state) { return state === 'busy' && _this.prepIconBusy ? _this.prepIconBusy : _this.prepIcon; });
-        this.appIcon$ = this.state$.map(function (state) { return state === 'busy' && _this.appIconBusy ? _this.appIconBusy : _this.appIcon; });
-        this.buttonContent = null;
-        this.stateSub = this.state$.subscribe(function (state) {
+        var _this = _super.call(this) || this;
+        _this.elementRef = elementRef;
+        _this.latestInteractionTime = 0;
+        _this.pressed = false; // `true` if a pointer device is conducting a `down` gesture on the button
+        _this.focused = false; // `true` if the element is focused  (CSS' :focus)
+        _this.hovered = false; // `true` if a pointer device is hovering the button (CSS' :hover)
+        _this.selected = false;
+        _this.disabled = false;
+        _this.disableA11yClick = false;
+        _this.busy = false; // State to indicate that the button is disabled as a operation is in progress
+        _this.flexLabel = false;
+        _this.autoBlur = true;
+        _this._press = new core_1.EventEmitter();
+        _this._stateChange = new core_1.EventEmitter();
+        _this.state$ = _this.observeChange('disabled', 'busy', 'label', 'busyLabel', 'appIcon', 'appIconBusy').publishBehavior(_this.state).refCount().map(function () { return _this.state; });
+        _this.label$ = _this.state$.map(function (state) { return state === 'busy' && _this.busyLabel ? _this.busyLabel : _this.label; });
+        _this.prepIcon$ = _this.state$.map(function (state) { return state === 'busy' && _this.prepIconBusy ? _this.prepIconBusy : _this.prepIcon; });
+        _this.appIcon$ = _this.state$.map(function (state) { return state === 'busy' && _this.appIconBusy ? _this.appIconBusy : _this.appIcon; });
+        _this.buttonContent = null;
+        _this.stateSub = _this.state$.subscribe(function (state) {
             if (_this.buttonContent) {
                 _this.buttonContent.forEach(function (bc) { return bc.render(state); });
             }
             _this._stateChange.emit(state);
         });
-        this.pressSub = this.press.subscribe(function () {
+        _this.pressSub = _this.press.subscribe(function () {
             if (_this.autoBlur) {
                 if (_this.elementRef.nativeElement && _this.elementRef.nativeElement.blur) {
                     _this.elementRef.nativeElement.blur();
                 }
             }
         });
+        return _this;
     }
     Object.defineProperty(ButtonComponent.prototype, "isDisabled", {
         get: function () {
@@ -183,49 +190,148 @@ var ButtonComponent = (function (_super) {
         if (this.pressSub && !this.pressSub.closed)
             this.pressSub.unsubscribe();
     };
-    ButtonComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: '[vcl-button]',
-                    host: {
-                        '[class.vclButton]': 'true',
-                    },
-                    templateUrl: 'button.component.html',
-                    changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-                },] },
-    ];
-    /** @nocollapse */
-    ButtonComponent.ctorParameters = function () { return [
-        { type: core_1.ElementRef, },
-    ]; };
-    ButtonComponent.propDecorators = {
-        'hovered': [{ type: core_1.HostBinding, args: ['class.vclHovered',] },],
-        'selected': [{ type: core_1.Input }, { type: core_1.HostBinding, args: ['class.vclSelected',] },],
-        'title': [{ type: core_1.HostBinding, args: ['attr.aria-label',] }, { type: core_1.Input },],
-        'disabled': [{ type: core_1.Input },],
-        'disableA11yClick': [{ type: core_1.Input },],
-        'isDisabled': [{ type: core_1.HostBinding, args: ['attr.disabled',] },],
-        'busy': [{ type: core_1.Input },],
-        'flexLabel': [{ type: core_1.Input },],
-        'busyLabel': [{ type: core_1.Input },],
-        'label': [{ type: core_1.Input },],
-        'prepIcon': [{ type: core_1.Input },],
-        'prepIconBusy': [{ type: core_1.Input },],
-        'autoBlur': [{ type: core_1.Input },],
-        'appIcon': [{ type: core_1.Input },],
-        'appIconBusy': [{ type: core_1.Input },],
-        'press': [{ type: core_1.Output },],
-        'stateChange': [{ type: core_1.Output },],
-        'buttonContent': [{ type: core_1.ContentChildren, args: [ButtonContentDirective,] },],
-        'onKeypress': [{ type: core_1.HostListener, args: ['keypress', ['$event'],] },],
-        'onMouseEnter': [{ type: core_1.HostListener, args: ['mouseenter', ['$event'],] },],
-        'onMouseLeave': [{ type: core_1.HostListener, args: ['mouseleave', ['$event'],] },],
-        'onMouseUp': [{ type: core_1.HostListener, args: ['mouseup', ['$event'],] },],
-        'onMouseDown': [{ type: core_1.HostListener, args: ['mousedown', ['$event'],] },],
-        'onFocus': [{ type: core_1.HostListener, args: ['onfocus', ['$event'],] },],
-        'onBlur': [{ type: core_1.HostListener, args: ['onblur', ['$event'],] },],
-        'onTap': [{ type: core_1.HostListener, args: ['tap', ['$event'],] },],
-        'onClick': [{ type: core_1.HostListener, args: ['click', ['$event'],] },],
-    };
     return ButtonComponent;
 }(index_1.ObservableComponent));
+__decorate([
+    core_1.HostBinding('class.vclHovered'),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "hovered", void 0);
+__decorate([
+    core_1.Input(),
+    core_1.HostBinding('class.vclSelected'),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "selected", void 0);
+__decorate([
+    core_1.HostBinding('attr.aria-label'),
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "title", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "disabled", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "disableA11yClick", void 0);
+__decorate([
+    core_1.HostBinding('attr.disabled'),
+    __metadata("design:type", Boolean),
+    __metadata("design:paramtypes", [])
+], ButtonComponent.prototype, "isDisabled", null);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "busy", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "flexLabel", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "busyLabel", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "label", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "prepIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "prepIconBusy", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "autoBlur", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "appIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "appIconBusy", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], ButtonComponent.prototype, "press", null);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], ButtonComponent.prototype, "stateChange", null);
+__decorate([
+    core_1.ContentChildren(ButtonContentDirective),
+    __metadata("design:type", core_1.QueryList)
+], ButtonComponent.prototype, "buttonContent", void 0);
+__decorate([
+    core_1.HostListener('keypress', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [KeyboardEvent]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onKeypress", null);
+__decorate([
+    core_1.HostListener('mouseenter', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onMouseEnter", null);
+__decorate([
+    core_1.HostListener('mouseleave', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onMouseLeave", null);
+__decorate([
+    core_1.HostListener('mouseup', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onMouseUp", null);
+__decorate([
+    core_1.HostListener('mousedown', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onMouseDown", null);
+__decorate([
+    core_1.HostListener('onfocus', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onFocus", null);
+__decorate([
+    core_1.HostListener('onblur', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onBlur", null);
+__decorate([
+    core_1.HostListener('tap', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onTap", null);
+__decorate([
+    core_1.HostListener('click', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onClick", null);
+ButtonComponent = __decorate([
+    core_1.Component({
+        selector: '[vcl-button]',
+        host: {
+            '[class.vclButton]': 'true',
+        },
+        templateUrl: 'button.component.html',
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], ButtonComponent);
 exports.ButtonComponent = ButtonComponent;

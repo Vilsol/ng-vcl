@@ -1,11 +1,21 @@
 "use strict";
-var core_1 = require('@angular/core');
-var button_component_1 = require('../button/button.component');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var Observable_1 = require("rxjs/Observable");
+var core_1 = require("@angular/core");
+var button_component_1 = require("../button/button.component");
+var SelectionMode;
 (function (SelectionMode) {
     SelectionMode[SelectionMode["Single"] = 0] = "Single";
     SelectionMode[SelectionMode["Multiple"] = 1] = "Multiple";
-})(exports.SelectionMode || (exports.SelectionMode = {}));
-var SelectionMode = exports.SelectionMode;
+})(SelectionMode = exports.SelectionMode || (exports.SelectionMode = {}));
 var ButtonGroupComponent = (function () {
     function ButtonGroupComponent() {
         this.subscriptions = [];
@@ -109,26 +119,44 @@ var ButtonGroupComponent = (function () {
         this.subscriptions.forEach(function (s) { return s.unsubscribe(); });
         this.subscriptions = [];
     };
-    ButtonGroupComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-button-group',
-                    host: {
-                        '[class.vclButtonGroup]': 'true',
-                    },
-                    template: "<ng-content></ng-content>",
-                    changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-                },] },
-    ];
-    /** @nocollapse */
-    ButtonGroupComponent.ctorParameters = function () { return []; };
-    ButtonGroupComponent.propDecorators = {
-        'selectionMode': [{ type: core_1.Input },],
-        'mode': [{ type: core_1.Input },],
-        'selectedIndex': [{ type: core_1.Input },],
-        'selectedIndexChange': [{ type: core_1.Output },],
-        'change': [{ type: core_1.Output },],
-        'buttons': [{ type: core_1.ContentChildren, args: [button_component_1.ButtonComponent,] },],
-    };
     return ButtonGroupComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], ButtonGroupComponent.prototype, "selectionMode", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String),
+    __metadata("design:paramtypes", [String])
+], ButtonGroupComponent.prototype, "mode", null);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], ButtonGroupComponent.prototype, "selectedIndex", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], ButtonGroupComponent.prototype, "selectedIndexChange", null);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], ButtonGroupComponent.prototype, "change", null);
+__decorate([
+    core_1.ContentChildren(button_component_1.ButtonComponent),
+    __metadata("design:type", core_1.QueryList)
+], ButtonGroupComponent.prototype, "buttons", void 0);
+ButtonGroupComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-button-group',
+        host: {
+            '[class.vclButtonGroup]': 'true',
+        },
+        template: "<ng-content></ng-content>",
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+    }),
+    __metadata("design:paramtypes", [])
+], ButtonGroupComponent);
 exports.ButtonGroupComponent = ButtonGroupComponent;

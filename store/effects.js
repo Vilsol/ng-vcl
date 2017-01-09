@@ -1,8 +1,20 @@
 "use strict";
-var Observable_1 = require('rxjs/Observable');
-var merge_1 = require('rxjs/observable/merge');
-var core_1 = require('@angular/core');
-var store_1 = require('./store');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __param = (this && this.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+var Observable_1 = require("rxjs/Observable");
+var merge_1 = require("rxjs/observable/merge");
+var core_1 = require("@angular/core");
+var store_1 = require("./store");
 var EFFECTS_METADATA_KEY = 'ng-vcl/effects';
 exports.STORE_EFFECTS = new core_1.OpaqueToken('store.effects');
 function Effect() {
@@ -47,14 +59,12 @@ var Effects = (function () {
     Effects.prototype.ngOnDestroy = function () {
         this.effectSubs.slice().filter(function (sub) { return sub && !sub.closed; }).forEach(function (sub) { return sub.unsubscribe(); });
     };
-    Effects.decorators = [
-        { type: core_1.Injectable },
-    ];
-    /** @nocollapse */
-    Effects.ctorParameters = function () { return [
-        { type: store_1.Store, },
-        { type: Array, decorators: [{ type: core_1.Optional }, { type: core_1.Inject, args: [exports.STORE_EFFECTS,] },] },
-    ]; };
     return Effects;
 }());
+Effects = __decorate([
+    core_1.Injectable(),
+    __param(1, core_1.Optional()),
+    __param(1, core_1.Inject(exports.STORE_EFFECTS)),
+    __metadata("design:paramtypes", [store_1.Store, Array])
+], Effects);
 exports.Effects = Effects;

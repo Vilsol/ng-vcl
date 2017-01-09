@@ -1,9 +1,19 @@
 "use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var Observable_1 = require("rxjs/Observable");
 // TODO: This class is just a copy of the checkbox with slight modifications
 // Use inheritance once supported
 // https://github.com/angular/angular/issues/11606
-var core_1 = require('@angular/core');
-var forms_1 = require('@angular/forms');
+var core_1 = require("@angular/core");
+var forms_1 = require("@angular/forms");
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return RadioButtonComponent; }),
@@ -100,38 +110,81 @@ var RadioButtonComponent = (function () {
     RadioButtonComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    RadioButtonComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-radio-button',
-                    templateUrl: 'radio-button.component.html',
-                    host: {
-                        '[attr.role]': '"radio"',
-                        '[class.vclCheckbox]': 'true',
-                        '[class.vclScale130p]': 'true',
-                    },
-                    changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-                    providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
-                },] },
-    ];
-    /** @nocollapse */
-    RadioButtonComponent.ctorParameters = function () { return [
-        { type: core_1.ElementRef, },
-    ]; };
-    RadioButtonComponent.propDecorators = {
-        'checkedIcon': [{ type: core_1.Input },],
-        'uncheckedIcon': [{ type: core_1.Input },],
-        'disabled': [{ type: core_1.Input },],
-        'labelPosition': [{ type: core_1.Input, args: ['labelPosition',] },],
-        'tabindex': [{ type: core_1.HostBinding, args: ['attr.tabindex',] }, { type: core_1.Input },],
-        'checked': [{ type: core_1.Input, args: ['checked',] },],
-        '_checkedChange': [{ type: core_1.Output, args: ['change',] },],
-        'checkedChange': [{ type: core_1.Output },],
-        'clsVclDisabled': [{ type: core_1.HostBinding, args: ['class.vclDisabled',] },],
-        'attrAriaDisabled': [{ type: core_1.HostBinding, args: ['attr.aria-disabled',] },],
-        'attrChecked': [{ type: core_1.HostBinding, args: ['attr.checked',] },],
-        'onKeyup': [{ type: core_1.HostListener, args: ['keyup', ['$event'],] },],
-        'onClick': [{ type: core_1.HostListener, args: ['click', ['$event'],] },],
-    };
     return RadioButtonComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], RadioButtonComponent.prototype, "checkedIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], RadioButtonComponent.prototype, "uncheckedIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], RadioButtonComponent.prototype, "disabled", void 0);
+__decorate([
+    core_1.Input('labelPosition'),
+    __metadata("design:type", String)
+], RadioButtonComponent.prototype, "labelPosition", void 0);
+__decorate([
+    core_1.HostBinding('attr.tabindex'),
+    core_1.Input(),
+    __metadata("design:type", Object)
+], RadioButtonComponent.prototype, "tabindex", void 0);
+__decorate([
+    core_1.Input('checked'),
+    __metadata("design:type", Boolean)
+], RadioButtonComponent.prototype, "checked", void 0);
+__decorate([
+    core_1.Output('change'),
+    __metadata("design:type", Object)
+], RadioButtonComponent.prototype, "_checkedChange", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], RadioButtonComponent.prototype, "checkedChange", null);
+__decorate([
+    core_1.HostBinding('class.vclDisabled'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], RadioButtonComponent.prototype, "clsVclDisabled", null);
+__decorate([
+    core_1.HostBinding('attr.aria-disabled'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], RadioButtonComponent.prototype, "attrAriaDisabled", null);
+__decorate([
+    core_1.HostBinding('attr.checked'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], RadioButtonComponent.prototype, "attrChecked", null);
+__decorate([
+    core_1.HostListener('keyup', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], RadioButtonComponent.prototype, "onKeyup", null);
+__decorate([
+    core_1.HostListener('click', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], RadioButtonComponent.prototype, "onClick", null);
+RadioButtonComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-radio-button',
+        templateUrl: 'radio-button.component.html',
+        host: {
+            '[attr.role]': '"radio"',
+            '[class.vclCheckbox]': 'true',
+            '[class.vclScale130p]': 'true',
+        },
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], RadioButtonComponent);
 exports.RadioButtonComponent = RadioButtonComponent;

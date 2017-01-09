@@ -7,7 +7,7 @@
 		exports["NgVCL"] = factory(require("jsonschema"), require("hammerjs"), require("tether"), require("rxjs/add/operator/catch"), require("rxjs/add/operator/combineLatest"), require("rxjs/add/operator/distinctUntilChanged"), require("rxjs/add/operator/filter"), require("rxjs/add/operator/let"), require("rxjs/add/operator/map"), require("rxjs/add/operator/pluck"), require("rxjs/add/operator/publish"), require("rxjs/add/operator/publishBehavior"), require("rxjs/add/operator/publishReplay"), require("rxjs/add/operator/retryWhen"), require("rxjs/add/operator/scan"), require("rxjs/add/operator/switchMap"), require("rxjs/add/operator/withLatestFrom"), require("rxjs/add/observable/combineLatest"), require("rxjs/add/observable/of"), require("rxjs/add/observable/throw"), require("rxjs/BehaviorSubject"), require("rxjs/Observable"), require("rxjs/ReplaySubject"), require("rxjs/Subject"), require("rxjs/observable/merge"), require("@angular/common"), require("@angular/core"), require("@angular/forms"), require("@angular/http"), require("@angular/router"));
 	else
 		root["NgVCL"] = factory(root[undefined], root["Hammer"], root["Tether"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"], root["Rx"]["Observable"], root["Rx"]["Observable"], root["Rx"], root["Rx"], root["Rx"], root["Rx"], root["Rx"], root["ng"]["common"], root["ng"]["core"], root["ng"]["forms"], root["ng"]["http"], root["ng"]["router"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_481__, __WEBPACK_EXTERNAL_MODULE_132__, __WEBPACK_EXTERNAL_MODULE_482__, __WEBPACK_EXTERNAL_MODULE_483__, __WEBPACK_EXTERNAL_MODULE_484__, __WEBPACK_EXTERNAL_MODULE_124__, __WEBPACK_EXTERNAL_MODULE_84__, __WEBPACK_EXTERNAL_MODULE_485__, __WEBPACK_EXTERNAL_MODULE_51__, __WEBPACK_EXTERNAL_MODULE_486__, __WEBPACK_EXTERNAL_MODULE_487__, __WEBPACK_EXTERNAL_MODULE_488__, __WEBPACK_EXTERNAL_MODULE_125__, __WEBPACK_EXTERNAL_MODULE_489__, __WEBPACK_EXTERNAL_MODULE_490__, __WEBPACK_EXTERNAL_MODULE_491__, __WEBPACK_EXTERNAL_MODULE_492__, __WEBPACK_EXTERNAL_MODULE_493__, __WEBPACK_EXTERNAL_MODULE_494__, __WEBPACK_EXTERNAL_MODULE_495__, __WEBPACK_EXTERNAL_MODULE_126__, __WEBPACK_EXTERNAL_MODULE_13__, __WEBPACK_EXTERNAL_MODULE_496__, __WEBPACK_EXTERNAL_MODULE_52__, __WEBPACK_EXTERNAL_MODULE_497__, __WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_10__, __WEBPACK_EXTERNAL_MODULE_127__, __WEBPACK_EXTERNAL_MODULE_128__) {
+})(this, function(__WEBPACK_EXTERNAL_MODULE_480__, __WEBPACK_EXTERNAL_MODULE_132__, __WEBPACK_EXTERNAL_MODULE_481__, __WEBPACK_EXTERNAL_MODULE_482__, __WEBPACK_EXTERNAL_MODULE_483__, __WEBPACK_EXTERNAL_MODULE_124__, __WEBPACK_EXTERNAL_MODULE_84__, __WEBPACK_EXTERNAL_MODULE_484__, __WEBPACK_EXTERNAL_MODULE_50__, __WEBPACK_EXTERNAL_MODULE_485__, __WEBPACK_EXTERNAL_MODULE_486__, __WEBPACK_EXTERNAL_MODULE_487__, __WEBPACK_EXTERNAL_MODULE_125__, __WEBPACK_EXTERNAL_MODULE_488__, __WEBPACK_EXTERNAL_MODULE_489__, __WEBPACK_EXTERNAL_MODULE_490__, __WEBPACK_EXTERNAL_MODULE_491__, __WEBPACK_EXTERNAL_MODULE_492__, __WEBPACK_EXTERNAL_MODULE_493__, __WEBPACK_EXTERNAL_MODULE_494__, __WEBPACK_EXTERNAL_MODULE_126__, __WEBPACK_EXTERNAL_MODULE_13__, __WEBPACK_EXTERNAL_MODULE_495__, __WEBPACK_EXTERNAL_MODULE_51__, __WEBPACK_EXTERNAL_MODULE_496__, __WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_10__, __WEBPACK_EXTERNAL_MODULE_127__, __WEBPACK_EXTERNAL_MODULE_128__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -71,7 +71,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 498);
+/******/ 	return __webpack_require__(__webpack_require__.s = 497);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -81,8 +81,8 @@ return /******/ (function(modules) { // webpackBootstrap
 "use strict";
 "use strict";
 var root_1 = __webpack_require__(11);
-var toSubscriber_1 = __webpack_require__(479);
-var observable_1 = __webpack_require__(44);
+var toSubscriber_1 = __webpack_require__(478);
+var observable_1 = __webpack_require__(43);
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
  * of RxJS.
@@ -229,7 +229,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var isFunction_1 = __webpack_require__(82);
 var Subscription_1 = __webpack_require__(7);
 var Observer_1 = __webpack_require__(97);
-var rxSubscriber_1 = __webpack_require__(45);
+var rxSubscriber_1 = __webpack_require__(44);
 /**
  * Implements the {@link Observer} interface and extends the
  * {@link Subscription} class. While the {@link Observer} is the public API for
@@ -518,8 +518,8 @@ var isPromise_1 = __webpack_require__(122);
 var isObject_1 = __webpack_require__(121);
 var Observable_1 = __webpack_require__(0);
 var iterator_1 = __webpack_require__(29);
-var InnerSubscriber_1 = __webpack_require__(205);
-var observable_1 = __webpack_require__(44);
+var InnerSubscriber_1 = __webpack_require__(204);
+var observable_1 = __webpack_require__(43);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
     if (destination.closed) {
@@ -615,7 +615,7 @@ var core_1 = __webpack_require__(1);
 var l10n_loader_service_1 = __webpack_require__(70);
 var l10n_parser_service_1 = __webpack_require__(71);
 var l10n_service_1 = __webpack_require__(72);
-var l10n_pipe_1 = __webpack_require__(171);
+var l10n_pipe_1 = __webpack_require__(170);
 var l10n_loader_service_2 = __webpack_require__(70);
 exports.L10nNoopLoaderService = l10n_loader_service_2.L10nNoopLoaderService;
 exports.L10nStaticLoaderService = l10n_loader_service_2.L10nStaticLoaderService;
@@ -623,12 +623,12 @@ var l10n_parser_service_2 = __webpack_require__(71);
 exports.L10nFormatParserService = l10n_parser_service_2.L10nFormatParserService;
 var l10n_service_2 = __webpack_require__(72);
 exports.L10nService = l10n_service_2.L10nService;
-var L10nModule = (function () {
+var L10nModule = L10nModule_1 = (function () {
     function L10nModule() {
     }
     L10nModule.forRoot = function (config) {
         return {
-            ngModule: L10nModule,
+            ngModule: L10nModule_1,
             providers: [
                 l10n_service_1.L10nService,
                 {
@@ -648,42 +648,43 @@ var L10nModule = (function () {
             ]
         };
     };
-    L10nModule = __decorate([
-        core_1.NgModule({
-            imports: [],
-            declarations: [
-                l10n_pipe_1.L10nPipe
-            ],
-            exports: [
-                l10n_pipe_1.L10nPipe
-            ],
-            providers: [
-                // TODO: Remove provider. Should work when marked optional in pipe
-                // not sure why it isn't
-                {
-                    provide: l10n_service_1.L10N_CONFIG,
-                    useValue: {}
-                },
-                l10n_service_1.L10nService,
-                {
-                    provide: l10n_loader_service_1.L10nLoaderService,
-                    useClass: l10n_loader_service_1.L10nNoopLoaderService
-                },
-                {
-                    provide: l10n_loader_service_1.L10N_LOADER_CONFIG,
-                    useValue: {}
-                },
-                {
-                    provide: l10n_parser_service_1.L10nParserService,
-                    useClass: l10n_parser_service_1.L10nFormatParserService
-                }
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], L10nModule);
     return L10nModule;
 }());
+L10nModule = L10nModule_1 = __decorate([
+    core_1.NgModule({
+        imports: [],
+        declarations: [
+            l10n_pipe_1.L10nPipe
+        ],
+        exports: [
+            l10n_pipe_1.L10nPipe
+        ],
+        providers: [
+            // TODO: Remove provider. Should work when marked optional in pipe
+            // not sure why it isn't
+            {
+                provide: l10n_service_1.L10N_CONFIG,
+                useValue: {}
+            },
+            l10n_service_1.L10nService,
+            {
+                provide: l10n_loader_service_1.L10nLoaderService,
+                useClass: l10n_loader_service_1.L10nNoopLoaderService
+            },
+            {
+                provide: l10n_loader_service_1.L10N_LOADER_CONFIG,
+                useValue: {}
+            },
+            {
+                provide: l10n_parser_service_1.L10nParserService,
+                useClass: l10n_parser_service_1.L10nFormatParserService
+            }
+        ]
+    }),
+    __metadata("design:paramtypes", [])
+], L10nModule);
 exports.L10nModule = L10nModule;
+var L10nModule_1;
 
 
 /***/ },
@@ -692,6 +693,11 @@ exports.L10nModule = L10nModule;
 
 "use strict";
 "use strict";
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
 var isArray_1 = __webpack_require__(15);
 var isObject_1 = __webpack_require__(121);
 var isFunction_1 = __webpack_require__(82);
@@ -744,7 +750,8 @@ var Subscription = (function () {
             var trial = tryCatch_1.tryCatch(_unsubscribe).call(this);
             if (trial === errorObject_1.errorObject) {
                 hasErrors = true;
-                (errors = errors || []).push(errorObject_1.errorObject.e);
+                errors = errors || (errorObject_1.errorObject.e instanceof UnsubscriptionError_1.UnsubscriptionError ?
+                    flattenUnsubscriptionErrors(errorObject_1.errorObject.e.errors) : [errorObject_1.errorObject.e]);
             }
         }
         if (isArray_1.isArray(_subscriptions)) {
@@ -759,7 +766,7 @@ var Subscription = (function () {
                         errors = errors || [];
                         var err = errorObject_1.errorObject.e;
                         if (err instanceof UnsubscriptionError_1.UnsubscriptionError) {
-                            errors = errors.concat(err.errors);
+                            errors = errors.concat(flattenUnsubscriptionErrors(err.errors));
                         }
                         else {
                             errors.push(err);
@@ -803,19 +810,20 @@ var Subscription = (function () {
                 sub = new Subscription(teardown);
             case 'object':
                 if (sub.closed || typeof sub.unsubscribe !== 'function') {
-                    break;
+                    return sub;
                 }
                 else if (this.closed) {
                     sub.unsubscribe();
-                }
-                else {
-                    (this._subscriptions || (this._subscriptions = [])).push(sub);
+                    return sub;
                 }
                 break;
             default:
                 throw new Error('unrecognized teardown ' + teardown + ' added to Subscription.');
         }
-        return sub;
+        var childSub = new ChildSubscription(sub, this);
+        this._subscriptions = this._subscriptions || [];
+        this._subscriptions.push(childSub);
+        return childSub;
     };
     /**
      * Removes a Subscription from the internal list of subscriptions that will
@@ -843,6 +851,24 @@ var Subscription = (function () {
     return Subscription;
 }());
 exports.Subscription = Subscription;
+var ChildSubscription = (function (_super) {
+    __extends(ChildSubscription, _super);
+    function ChildSubscription(_innerSub, _parent) {
+        _super.call(this);
+        this._innerSub = _innerSub;
+        this._parent = _parent;
+    }
+    ChildSubscription.prototype._unsubscribe = function () {
+        var _a = this, _innerSub = _a._innerSub, _parent = _a._parent;
+        _parent.remove(this);
+        _innerSub.unsubscribe();
+    };
+    return ChildSubscription;
+}(Subscription));
+exports.ChildSubscription = ChildSubscription;
+function flattenUnsubscriptionErrors(errors) {
+    return errors.reduce(function (errs, err) { return errs.concat((err instanceof UnsubscriptionError_1.UnsubscriptionError) ? err.errors : err); }, []);
+}
 //# sourceMappingURL=Subscription.js.map
 
 /***/ },
@@ -859,9 +885,9 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(0);
 var Subscriber_1 = __webpack_require__(2);
 var Subscription_1 = __webpack_require__(7);
-var ObjectUnsubscribedError_1 = __webpack_require__(48);
+var ObjectUnsubscribedError_1 = __webpack_require__(47);
 var SubjectSubscription_1 = __webpack_require__(98);
-var rxSubscriber_1 = __webpack_require__(45);
+var rxSubscriber_1 = __webpack_require__(44);
 /**
  * @class SubjectSubscriber<T>
  */
@@ -1045,7 +1071,7 @@ if (!exports.root) {
     throw new Error('RxJS could not find any global context (window, self, global)');
 }
 //# sourceMappingURL=root.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(480)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(479)))
 
 /***/ },
 /* 12 */
@@ -1144,8 +1170,8 @@ var ArrayObservable = (function (_super) {
      * This static operator is useful for creating a simple Observable that only
      * emits the arguments given, and the complete notification thereafter. It can
      * be used for composing with other Observables, such as with {@link concat}.
-     * By default, it uses a `null` Scheduler, which means the `next`
-     * notifications are sent synchronously, although with a different Scheduler
+     * By default, it uses a `null` IScheduler, which means the `next`
+     * notifications are sent synchronously, although with a different IScheduler
      * it is possible to determine when those notifications will be delivered.
      *
      * @example <caption>Emit 10, 20, 30, then 'a', 'b', 'c', then start ticking every second.</caption>
@@ -1161,7 +1187,7 @@ var ArrayObservable = (function (_super) {
      * @see {@link throw}
      *
      * @param {...T} values Arguments that represent `next` values to be emitted.
-     * @param {Scheduler} [scheduler] A {@link Scheduler} to use for scheduling
+     * @param {Scheduler} [scheduler] A {@link IScheduler} to use for scheduling
      * the emissions of the `next` notifications.
      * @return {Observable<T>} An Observable that emits each given input value.
      * @static true
@@ -1248,12 +1274,12 @@ exports.IconComponent = icon_component_1.IconComponent;
 var icon_service_1 = __webpack_require__(89);
 exports.IconService = icon_service_1.IconService;
 var l10n_module_1 = __webpack_require__(6);
-var VCLIconModule = (function () {
+var VCLIconModule = VCLIconModule_1 = (function () {
     function VCLIconModule() {
     }
     VCLIconModule.forRoot = function (config) {
         return {
-            ngModule: VCLIconModule,
+            ngModule: VCLIconModule_1,
             providers: [
                 {
                     provide: icon_service_1.IconService,
@@ -1262,18 +1288,19 @@ var VCLIconModule = (function () {
             ]
         };
     };
-    VCLIconModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule],
-            exports: [icon_component_1.IconComponent],
-            declarations: [icon_component_1.IconComponent],
-            providers: [icon_service_1.IconService],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLIconModule);
     return VCLIconModule;
 }());
+VCLIconModule = VCLIconModule_1 = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, l10n_module_1.L10nModule],
+        exports: [icon_component_1.IconComponent],
+        declarations: [icon_component_1.IconComponent],
+        providers: [icon_service_1.IconService],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLIconModule);
 exports.VCLIconModule = VCLIconModule;
+var VCLIconModule_1;
 
 
 /***/ },
@@ -1292,23 +1319,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var wormhole_1 = __webpack_require__(170);
+var wormhole_1 = __webpack_require__(169);
 exports.TemplateWormhole = wormhole_1.TemplateWormhole;
 exports.ComponentWormhole = wormhole_1.ComponentWormhole;
 exports.ConnectWormholeDirective = wormhole_1.ConnectWormholeDirective;
 exports.Wormhole = wormhole_1.Wormhole;
-var wormhole_service_1 = __webpack_require__(169);
+var wormhole_service_1 = __webpack_require__(168);
 exports.WormholeService = wormhole_service_1.WormholeService;
-var VCLWormholeModule = (function () {
+var VCLWormholeModule = VCLWormholeModule_1 = (function () {
     function VCLWormholeModule() {
     }
     VCLWormholeModule.withRootComponents = function () {
         var components = [];
         for (var _i = 0; _i < arguments.length; _i++) {
-            components[_i - 0] = arguments[_i];
+            components[_i] = arguments[_i];
         }
         return {
-            ngModule: VCLWormholeModule,
+            ngModule: VCLWormholeModule_1,
             providers: [
                 {
                     provide: core_1.APP_BOOTSTRAP_LISTENER,
@@ -1323,29 +1350,30 @@ var VCLWormholeModule = (function () {
             ]
         };
     };
-    VCLWormholeModule = __decorate([
-        core_1.NgModule({
-            exports: [wormhole_1.ConnectWormholeDirective, wormhole_1.TemplateWormhole],
-            declarations: [wormhole_1.ConnectWormholeDirective, wormhole_1.TemplateWormhole],
-            providers: [
-                wormhole_service_1.WormholeService,
-                {
-                    provide: core_1.APP_BOOTSTRAP_LISTENER,
-                    multi: true,
-                    deps: [wormhole_service_1.WormholeService],
-                    useFactory: function (wormholeService) {
-                        return function () {
-                            wormholeService.ready();
-                        };
-                    }
-                }
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLWormholeModule);
     return VCLWormholeModule;
 }());
+VCLWormholeModule = VCLWormholeModule_1 = __decorate([
+    core_1.NgModule({
+        exports: [wormhole_1.ConnectWormholeDirective, wormhole_1.TemplateWormhole],
+        declarations: [wormhole_1.ConnectWormholeDirective, wormhole_1.TemplateWormhole],
+        providers: [
+            wormhole_service_1.WormholeService,
+            {
+                provide: core_1.APP_BOOTSTRAP_LISTENER,
+                multi: true,
+                deps: [wormhole_service_1.WormholeService],
+                useFactory: function (wormholeService) {
+                    return function () {
+                        wormholeService.ready();
+                    };
+                }
+            }
+        ]
+    }),
+    __metadata("design:paramtypes", [])
+], VCLWormholeModule);
 exports.VCLWormholeModule = VCLWormholeModule;
+var VCLWormholeModule_1;
 
 
 /***/ },
@@ -1406,7 +1434,7 @@ var EmptyObservable = (function (_super) {
      * @see {@link of}
      * @see {@link throw}
      *
-     * @param {Scheduler} [scheduler] A {@link Scheduler} to use for scheduling
+     * @param {Scheduler} [scheduler] A {@link IScheduler} to use for scheduling
      * the emission of the complete notification.
      * @return {Observable} An "empty" Observable: emits only the complete
      * notification.
@@ -1470,17 +1498,17 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLButtonModule = (function () {
     function VCLButtonModule() {
     }
-    VCLButtonModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, icogram_module_1.VCLIcogramModule, l10n_module_1.L10nModule],
-            exports: [button_component_1.ButtonComponent, button_component_1.ButtonContentDirective],
-            declarations: [button_component_1.ButtonComponent, button_component_1.ButtonContentDirective],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLButtonModule);
     return VCLButtonModule;
 }());
+VCLButtonModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, icogram_module_1.VCLIcogramModule, l10n_module_1.L10nModule],
+        exports: [button_component_1.ButtonComponent, button_component_1.ButtonContentDirective],
+        declarations: [button_component_1.ButtonComponent, button_component_1.ButtonContentDirective],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLButtonModule);
 exports.VCLButtonModule = VCLButtonModule;
 
 
@@ -1506,17 +1534,17 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLMetalistModule = (function () {
     function VCLMetalistModule() {
     }
-    VCLMetalistModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule],
-            exports: [metalist_component_1.MetalistComponent],
-            declarations: [metalist_component_1.MetalistComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLMetalistModule);
     return VCLMetalistModule;
 }());
+VCLMetalistModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, l10n_module_1.L10nModule],
+        exports: [metalist_component_1.MetalistComponent],
+        declarations: [metalist_component_1.MetalistComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLMetalistModule);
 exports.VCLMetalistModule = VCLMetalistModule;
 
 
@@ -1536,19 +1564,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var off_click_directive_1 = __webpack_require__(168);
+var off_click_directive_1 = __webpack_require__(167);
 var VCLOffClickModule = (function () {
     function VCLOffClickModule() {
     }
-    VCLOffClickModule = __decorate([
-        core_1.NgModule({
-            declarations: [off_click_directive_1.OffClickDirective],
-            exports: [off_click_directive_1.OffClickDirective]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLOffClickModule);
     return VCLOffClickModule;
 }());
+VCLOffClickModule = __decorate([
+    core_1.NgModule({
+        declarations: [off_click_directive_1.OffClickDirective],
+        exports: [off_click_directive_1.OffClickDirective]
+    }),
+    __metadata("design:paramtypes", [])
+], VCLOffClickModule);
 exports.VCLOffClickModule = VCLOffClickModule;
 
 
@@ -1638,17 +1666,17 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLIcogramModule = (function () {
     function VCLIcogramModule() {
     }
-    VCLIcogramModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, icon_module_1.VCLIconModule, l10n_module_1.L10nModule],
-            exports: [icogram_component_1.IcogramComponent],
-            declarations: [icogram_component_1.IcogramComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLIcogramModule);
     return VCLIcogramModule;
 }());
+VCLIcogramModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, icon_module_1.VCLIconModule, l10n_module_1.L10nModule],
+        exports: [icogram_component_1.IcogramComponent],
+        declarations: [icogram_component_1.IcogramComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLIcogramModule);
 exports.VCLIcogramModule = VCLIcogramModule;
 
 
@@ -1797,7 +1825,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var root_1 = __webpack_require__(11);
-var Action_1 = __webpack_require__(460);
+var Action_1 = __webpack_require__(459);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -1944,7 +1972,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Scheduler_1 = __webpack_require__(207);
+var Scheduler_1 = __webpack_require__(206);
 var AsyncScheduler = (function (_super) {
     __extends(AsyncScheduler, _super);
     function AsyncScheduler() {
@@ -2036,20 +2064,6 @@ exports.$$iterator = symbolIteratorPonyfill(root_1.root);
 
 "use strict";
 "use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-__export(__webpack_require__(165));
-__export(__webpack_require__(166));
-__export(__webpack_require__(167));
-
-
-/***/ },
-/* 31 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2067,21 +2081,21 @@ exports.CheckboxComponent = checkbox_component_1.CheckboxComponent;
 var VCLCheckboxModule = (function () {
     function VCLCheckboxModule() {
     }
-    VCLCheckboxModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, icon_module_1.VCLIconModule],
-            exports: [checkbox_component_1.CheckboxComponent],
-            declarations: [checkbox_component_1.CheckboxComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLCheckboxModule);
     return VCLCheckboxModule;
 }());
+VCLCheckboxModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, icon_module_1.VCLIconModule],
+        exports: [checkbox_component_1.CheckboxComponent],
+        declarations: [checkbox_component_1.CheckboxComponent]
+    }),
+    __metadata("design:paramtypes", [])
+], VCLCheckboxModule);
 exports.VCLCheckboxModule = VCLCheckboxModule;
 
 
 /***/ },
-/* 32 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2101,22 +2115,22 @@ var common_1 = __webpack_require__(5);
 var VCLInputControlGroupModule = (function () {
     function VCLInputControlGroupModule() {
     }
-    VCLInputControlGroupModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule],
-            exports: [input_control_group_component_1.InputControlGroup],
-            declarations: [input_control_group_component_1.InputControlGroup],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLInputControlGroupModule);
     return VCLInputControlGroupModule;
 }());
+VCLInputControlGroupModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule],
+        exports: [input_control_group_component_1.InputControlGroup],
+        declarations: [input_control_group_component_1.InputControlGroup],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLInputControlGroupModule);
 exports.VCLInputControlGroupModule = VCLInputControlGroupModule;
 
 
 /***/ },
-/* 33 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2138,22 +2152,22 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLLinkModule = (function () {
     function VCLLinkModule() {
     }
-    VCLLinkModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule, icogram_module_1.VCLIcogramModule],
-            exports: [link_component_1.LinkComponent],
-            declarations: [link_component_1.LinkComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLLinkModule);
     return VCLLinkModule;
 }());
+VCLLinkModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, l10n_module_1.L10nModule, icogram_module_1.VCLIcogramModule],
+        exports: [link_component_1.LinkComponent],
+        declarations: [link_component_1.LinkComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLLinkModule);
 exports.VCLLinkModule = VCLLinkModule;
 
 
 /***/ },
-/* 34 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2171,34 +2185,33 @@ var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
 var popover_component_1 = __webpack_require__(153);
 exports.PopoverComponent = popover_component_1.PopoverComponent;
-var tether_module_1 = __webpack_require__(38);
+var tether_module_1 = __webpack_require__(37);
 var off_click_module_1 = __webpack_require__(23);
 var overlayManager_service_1 = __webpack_require__(92);
 exports.OverlayManagerService = overlayManager_service_1.OverlayManagerService;
-exports.OverlayManagedComponent = overlayManager_service_1.OverlayManagedComponent;
 var VCLPopoverModule = (function () {
     function VCLPopoverModule() {
     }
-    VCLPopoverModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                common_1.CommonModule,
-                tether_module_1.VCLTetherModule,
-                off_click_module_1.VCLOffClickModule
-            ],
-            providers: [overlayManager_service_1.OverlayManagerService],
-            exports: [popover_component_1.PopoverComponent],
-            declarations: [popover_component_1.PopoverComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLPopoverModule);
     return VCLPopoverModule;
 }());
+VCLPopoverModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            common_1.CommonModule,
+            tether_module_1.VCLTetherModule,
+            off_click_module_1.VCLOffClickModule
+        ],
+        providers: [overlayManager_service_1.OverlayManagerService],
+        exports: [popover_component_1.PopoverComponent],
+        declarations: [popover_component_1.PopoverComponent]
+    }),
+    __metadata("design:paramtypes", [])
+], VCLPopoverModule);
 exports.VCLPopoverModule = VCLPopoverModule;
 
 
 /***/ },
-/* 35 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2219,21 +2232,21 @@ var radio_button_component_1 = __webpack_require__(155);
 var VCLRadioButtonModule = (function () {
     function VCLRadioButtonModule() {
     }
-    VCLRadioButtonModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, icon_module_1.VCLIconModule],
-            exports: [radio_button_component_1.RadioButtonComponent],
-            declarations: [radio_button_component_1.RadioButtonComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLRadioButtonModule);
     return VCLRadioButtonModule;
 }());
+VCLRadioButtonModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, icon_module_1.VCLIconModule],
+        exports: [radio_button_component_1.RadioButtonComponent],
+        declarations: [radio_button_component_1.RadioButtonComponent]
+    }),
+    __metadata("design:paramtypes", [])
+], VCLRadioButtonModule);
 exports.VCLRadioButtonModule = VCLRadioButtonModule;
 
 
 /***/ },
-/* 36 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2251,25 +2264,25 @@ var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
 var icon_module_1 = __webpack_require__(17);
 var radio_group_component_1 = __webpack_require__(156);
-var radio_button_module_1 = __webpack_require__(35);
+var radio_button_module_1 = __webpack_require__(34);
 var VCLRadioGroupModule = (function () {
     function VCLRadioGroupModule() {
     }
-    VCLRadioGroupModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, icon_module_1.VCLIconModule, radio_button_module_1.VCLRadioButtonModule],
-            exports: [radio_group_component_1.RadioGroupComponent],
-            declarations: [radio_group_component_1.RadioGroupComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLRadioGroupModule);
     return VCLRadioGroupModule;
 }());
+VCLRadioGroupModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, icon_module_1.VCLIconModule, radio_button_module_1.VCLRadioButtonModule],
+        exports: [radio_group_component_1.RadioGroupComponent],
+        declarations: [radio_group_component_1.RadioGroupComponent]
+    }),
+    __metadata("design:paramtypes", [])
+], VCLRadioGroupModule);
 exports.VCLRadioGroupModule = VCLRadioGroupModule;
 
 
 /***/ },
-/* 37 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2290,22 +2303,22 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLSliderModule = (function () {
     function VCLSliderModule() {
     }
-    VCLSliderModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule],
-            exports: [slider_component_1.SliderComponent],
-            declarations: [slider_component_1.SliderComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLSliderModule);
     return VCLSliderModule;
 }());
+VCLSliderModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, l10n_module_1.L10nModule],
+        exports: [slider_component_1.SliderComponent],
+        declarations: [slider_component_1.SliderComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLSliderModule);
 exports.VCLSliderModule = VCLSliderModule;
 
 
 /***/ },
-/* 38 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2325,21 +2338,21 @@ var tether_component_1 = __webpack_require__(160);
 var VCLTetherModule = (function () {
     function VCLTetherModule() {
     }
-    VCLTetherModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule],
-            exports: [tether_component_1.TetherComponent],
-            declarations: [tether_component_1.TetherComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLTetherModule);
     return VCLTetherModule;
 }());
+VCLTetherModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule],
+        exports: [tether_component_1.TetherComponent],
+        declarations: [tether_component_1.TetherComponent]
+    }),
+    __metadata("design:paramtypes", [])
+], VCLTetherModule);
 exports.VCLTetherModule = VCLTetherModule;
 
 
 /***/ },
-/* 39 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2358,24 +2371,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var Subject_1 = __webpack_require__(52);
+var Subject_1 = __webpack_require__(51);
 var Observable_1 = __webpack_require__(13);
 __webpack_require__(84);
 var core_1 = __webpack_require__(1);
 var StoreActions = (function (_super) {
     __extends(StoreActions, _super);
     function StoreActions() {
-        _super.call(this);
+        var _this = _super.call(this) || this;
         // Action dispatcher
-        this._dispatcher = new Subject_1.Subject();
+        _this._dispatcher = new Subject_1.Subject();
         // Action stream ist just the last action
-        this.actions$ = this._dispatcher.asObservable();
-        this.source = this.actions$;
+        _this.actions$ = _this._dispatcher.asObservable();
+        _this.source = _this.actions$;
+        return _this;
     }
     StoreActions.prototype.ofType = function () {
         var actionClasses = [];
         for (var _i = 0; _i < arguments.length; _i++) {
-            actionClasses[_i - 0] = arguments[_i];
+            actionClasses[_i] = arguments[_i];
         }
         return this.actions$.filter(function (action) { return actionClasses.some(function (cls) { return action instanceof cls; }); });
     };
@@ -2388,17 +2402,17 @@ var StoreActions = (function (_super) {
     };
     StoreActions.prototype.error = function (err) { };
     StoreActions.prototype.complete = function () { };
-    StoreActions = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], StoreActions);
     return StoreActions;
 }(Observable_1.Observable));
+StoreActions = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], StoreActions);
 exports.StoreActions = StoreActions;
 
 
 /***/ },
-/* 40 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2422,13 +2436,13 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 var BehaviorSubject_1 = __webpack_require__(126);
 var Observable_1 = __webpack_require__(13);
-__webpack_require__(490);
-__webpack_require__(492);
+__webpack_require__(489);
+__webpack_require__(491);
 __webpack_require__(124);
 var core_1 = __webpack_require__(1);
-var actions_1 = __webpack_require__(39);
+var actions_1 = __webpack_require__(38);
 var observable_1 = __webpack_require__(94);
-var utils_1 = __webpack_require__(41);
+var utils_1 = __webpack_require__(40);
 exports.STORE_INITIAL_REDUCERS = new core_1.OpaqueToken('store.initial.reducers');
 exports.STORE_INITIAL_STATE = new core_1.OpaqueToken('store.initial.state');
 // Some store actions
@@ -2448,24 +2462,25 @@ exports.StoreErrorAction = StoreErrorAction;
 var Store = (function (_super) {
     __extends(Store, _super);
     function Store(actions$, initialState, initialReducers) {
-        _super.call(this);
-        this.actions$ = actions$;
-        this.initialState = initialState;
-        this.initialReducers = initialReducers;
+        var _this = _super.call(this) || this;
+        _this.actions$ = actions$;
+        _this.initialState = initialState;
+        _this.initialReducers = initialReducers;
         // The reducer stream
-        this._reducer = new BehaviorSubject_1.BehaviorSubject(utils_1.reduceReducers.apply(void 0, this.initialReducers));
+        _this._reducer = new BehaviorSubject_1.BehaviorSubject(utils_1.reduceReducers.apply(void 0, _this.initialReducers));
         // The state changes when an action is dispatched by running reducers
         // The new state is then cached for further subscribers
-        this.state$ = this.actions$.withLatestFrom(this.reducer$).scan(function (currentState, _a) {
+        _this.state$ = _this.actions$.withLatestFrom(_this.reducer$).scan(function (currentState, _a) {
             var action = _a[0], reducer = _a[1];
             return reducer(currentState, action);
-        }, this.initialState).distinctUntilChanged().publishReplay(1);
+        }, _this.initialState).distinctUntilChanged().publishReplay(1);
         // The source of the store observable is also the state stream
-        this.source = this.state$;
+        _this.source = _this.state$;
         // Listen to actions by connecting the state observable
-        this.stateSub = this.state$.connect();
+        _this.stateSub = _this.state$.connect();
         // Init action
-        this.dispatch(new StoreInitAction());
+        _this.dispatch(new StoreInitAction());
+        return _this;
     }
     Object.defineProperty(Store.prototype, "reducer$", {
         get: function () {
@@ -2497,7 +2512,7 @@ var Store = (function (_super) {
     Store.prototype.actionOfType = function () {
         var actionClasses = [];
         for (var _i = 0; _i < arguments.length; _i++) {
-            actionClasses[_i - 0] = arguments[_i];
+            actionClasses[_i] = arguments[_i];
         }
         return (_a = this.actions$).ofType.apply(_a, actionClasses);
         var _a;
@@ -2514,20 +2529,19 @@ var Store = (function (_super) {
         if (this.stateSub && !this.stateSub.closed)
             this.stateSub.unsubscribe();
     };
-    Store = __decorate([
-        core_1.Injectable(),
-        __param(1, core_1.Inject(exports.STORE_INITIAL_STATE)),
-        __param(2, core_1.Inject(exports.STORE_INITIAL_REDUCERS)), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof actions_1.StoreActions !== 'undefined' && actions_1.StoreActions) === 'function' && _a) || Object, Object, Array])
-    ], Store);
     return Store;
-    var _a;
 }(Observable_1.Observable));
+Store = __decorate([
+    core_1.Injectable(),
+    __param(1, core_1.Inject(exports.STORE_INITIAL_STATE)),
+    __param(2, core_1.Inject(exports.STORE_INITIAL_REDUCERS)),
+    __metadata("design:paramtypes", [actions_1.StoreActions, Object, Array])
+], Store);
 exports.Store = Store;
 
 
 /***/ },
-/* 41 */
+/* 40 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -2535,7 +2549,7 @@ exports.Store = Store;
 exports.compose = function () {
     var functions = [];
     for (var _i = 0; _i < arguments.length; _i++) {
-        functions[_i - 0] = arguments[_i];
+        functions[_i] = arguments[_i];
     }
     return function (arg) {
         if (functions.length === 0) {
@@ -2549,7 +2563,7 @@ exports.compose = function () {
 function reduceReducers() {
     var reducers = [];
     for (var _i = 0; _i < arguments.length; _i++) {
-        reducers[_i - 0] = arguments[_i];
+        reducers[_i] = arguments[_i];
     }
     return function (state, action) {
         return reducers.reduce(function (prevState, reducer) { return reducer(prevState, action); }, state);
@@ -2585,7 +2599,7 @@ exports.combineReducers = combineReducers;
 
 
 /***/ },
-/* 42 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2639,7 +2653,7 @@ exports.AsyncSubject = AsyncSubject;
 //# sourceMappingURL=AsyncSubject.js.map
 
 /***/ },
-/* 43 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2756,7 +2770,7 @@ exports.MergeAllSubscriber = MergeAllSubscriber;
 //# sourceMappingURL=mergeAll.js.map
 
 /***/ },
-/* 44 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2784,7 +2798,7 @@ exports.$$observable = getSymbolObservable(root_1.root);
 //# sourceMappingURL=observable.js.map
 
 /***/ },
-/* 45 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2796,7 +2810,7 @@ exports.$$rxSubscriber = (typeof Symbol === 'function' && typeof Symbol.for === 
 //# sourceMappingURL=rxSubscriber.js.map
 
 /***/ },
-/* 46 */
+/* 45 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -2830,7 +2844,7 @@ exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError;
 //# sourceMappingURL=ArgumentOutOfRangeError.js.map
 
 /***/ },
-/* 47 */
+/* 46 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -2864,7 +2878,7 @@ exports.EmptyError = EmptyError;
 //# sourceMappingURL=EmptyError.js.map
 
 /***/ },
-/* 48 */
+/* 47 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -2897,7 +2911,7 @@ exports.ObjectUnsubscribedError = ObjectUnsubscribedError;
 //# sourceMappingURL=ObjectUnsubscribedError.js.map
 
 /***/ },
-/* 49 */
+/* 48 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -2909,10 +2923,10 @@ exports.isDate = isDate;
 //# sourceMappingURL=isDate.js.map
 
 /***/ },
-/* 50 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(173).nextTick;
+/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(172).nextTick;
 var apply = Function.prototype.apply;
 var slice = Array.prototype.slice;
 var immediateIds = {};
@@ -2988,7 +3002,13 @@ exports.setImmediate = typeof setImmediate === "function" ? setImmediate : funct
 exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate : function(id) {
   delete immediateIds[id];
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(50).setImmediate, __webpack_require__(50).clearImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(49).setImmediate, __webpack_require__(49).clearImmediate))
+
+/***/ },
+/* 50 */
+/***/ function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_50__;
 
 /***/ },
 /* 51 */
@@ -2998,12 +3018,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_51__;
 
 /***/ },
 /* 52 */
-/***/ function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_52__;
-
-/***/ },
-/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3025,18 +3039,31 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLDropdownModule = (function () {
     function VCLDropdownModule() {
     }
-    VCLDropdownModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule, metalist_module_1.VCLMetalistModule],
-            exports: [dropdown_component_1.DropdownComponent],
-            declarations: [dropdown_component_1.DropdownComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLDropdownModule);
     return VCLDropdownModule;
 }());
+VCLDropdownModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, l10n_module_1.L10nModule, metalist_module_1.VCLMetalistModule],
+        exports: [dropdown_component_1.DropdownComponent],
+        declarations: [dropdown_component_1.DropdownComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLDropdownModule);
 exports.VCLDropdownModule = VCLDropdownModule;
+
+
+/***/ },
+/* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+__export(__webpack_require__(165));
+__export(__webpack_require__(166));
 
 
 /***/ },
@@ -3062,17 +3089,17 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLButtonGroupModule = (function () {
     function VCLButtonGroupModule() {
     }
-    VCLButtonGroupModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, button_module_1.VCLButtonModule, l10n_module_1.L10nModule],
-            exports: [button_group_component_1.ButtonGroupComponent],
-            declarations: [button_group_component_1.ButtonGroupComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLButtonGroupModule);
     return VCLButtonGroupModule;
 }());
+VCLButtonGroupModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, button_module_1.VCLButtonModule, l10n_module_1.L10nModule],
+        exports: [button_group_component_1.ButtonGroupComponent],
+        declarations: [button_group_component_1.ButtonGroupComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLButtonGroupModule);
 exports.VCLButtonGroupModule = VCLButtonGroupModule;
 
 
@@ -3099,17 +3126,17 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLDatePickerModule = (function () {
     function VCLDatePickerModule() {
     }
-    VCLDatePickerModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, button_module_1.VCLButtonModule, l10n_module_1.L10nModule],
-            exports: [date_picker_component_1.DatePickerComponent],
-            declarations: [date_picker_component_1.DatePickerComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLDatePickerModule);
     return VCLDatePickerModule;
 }());
+VCLDatePickerModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, button_module_1.VCLButtonModule, l10n_module_1.L10nModule],
+        exports: [date_picker_component_1.DatePickerComponent],
+        declarations: [date_picker_component_1.DatePickerComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLDatePickerModule);
 exports.VCLDatePickerModule = VCLDatePickerModule;
 
 
@@ -3134,16 +3161,16 @@ var form_component_1 = __webpack_require__(140);
 var VCLFormModule = (function () {
     function VCLFormModule() {
     }
-    VCLFormModule = __decorate([
-        core_1.NgModule({
-            imports: [forms_1.ReactiveFormsModule, forms_1.FormsModule],
-            exports: [form_component_1.FormComponent, forms_1.FormsModule, forms_1.ReactiveFormsModule],
-            declarations: [form_component_1.FormComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLFormModule);
     return VCLFormModule;
 }());
+VCLFormModule = __decorate([
+    core_1.NgModule({
+        imports: [forms_1.ReactiveFormsModule, forms_1.FormsModule],
+        exports: [form_component_1.FormComponent, forms_1.FormsModule, forms_1.ReactiveFormsModule],
+        declarations: [form_component_1.FormComponent]
+    }),
+    __metadata("design:paramtypes", [])
+], VCLFormModule);
 exports.VCLFormModule = VCLFormModule;
 
 
@@ -3167,17 +3194,17 @@ var input_directive_1 = __webpack_require__(144);
 var VCLInputModule = (function () {
     function VCLInputModule() {
     }
-    VCLInputModule = __decorate([
-        core_1.NgModule({
-            imports: [],
-            exports: [input_directive_1.InputDirective],
-            declarations: [input_directive_1.InputDirective],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLInputModule);
     return VCLInputModule;
 }());
+VCLInputModule = __decorate([
+    core_1.NgModule({
+        imports: [],
+        exports: [input_directive_1.InputDirective],
+        declarations: [input_directive_1.InputDirective],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLInputModule);
 exports.VCLInputModule = VCLInputModule;
 
 
@@ -3204,17 +3231,17 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLJsonEditorModule = (function () {
     function VCLJsonEditorModule() {
     }
-    VCLJsonEditorModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule, metalist_module_1.VCLMetalistModule],
-            exports: [json_editor_component_1.JsonEditorComponent],
-            declarations: [json_editor_component_1.JsonEditorComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLJsonEditorModule);
     return VCLJsonEditorModule;
 }());
+VCLJsonEditorModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, l10n_module_1.L10nModule, metalist_module_1.VCLMetalistModule],
+        exports: [json_editor_component_1.JsonEditorComponent],
+        declarations: [json_editor_component_1.JsonEditorComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLJsonEditorModule);
 exports.VCLJsonEditorModule = VCLJsonEditorModule;
 
 
@@ -3238,36 +3265,36 @@ var common_1 = __webpack_require__(5);
 var jss_form_component_1 = __webpack_require__(146);
 var l10n_module_1 = __webpack_require__(6);
 var forms_1 = __webpack_require__(10);
-var dropdown_module_1 = __webpack_require__(53);
+var dropdown_module_1 = __webpack_require__(52);
 var flip_switch_module_1 = __webpack_require__(85);
-var slider_module_1 = __webpack_require__(37);
-var checkbox_module_1 = __webpack_require__(31);
+var slider_module_1 = __webpack_require__(36);
+var checkbox_module_1 = __webpack_require__(30);
 var select_module_1 = __webpack_require__(86);
-var radio_group_module_1 = __webpack_require__(36);
-var input_control_group_module_1 = __webpack_require__(32);
+var radio_group_module_1 = __webpack_require__(35);
+var input_control_group_module_1 = __webpack_require__(31);
 var VCLJssFormModule = (function () {
     function VCLJssFormModule() {
     }
-    VCLJssFormModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                common_1.CommonModule, l10n_module_1.L10nModule, forms_1.FormsModule, forms_1.ReactiveFormsModule,
-                dropdown_module_1.VCLDropdownModule,
-                flip_switch_module_1.VCLFlipSwitchModule,
-                slider_module_1.VCLSliderModule,
-                checkbox_module_1.VCLCheckboxModule,
-                select_module_1.VCLSelectModule,
-                radio_group_module_1.VCLRadioGroupModule,
-                input_control_group_module_1.VCLInputControlGroupModule
-            ],
-            exports: [jss_form_component_1.JssFormComponent, jss_form_component_1.JssFormObjectComponent],
-            declarations: [jss_form_component_1.JssFormComponent, jss_form_component_1.JssFormObjectComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLJssFormModule);
     return VCLJssFormModule;
 }());
+VCLJssFormModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            common_1.CommonModule, l10n_module_1.L10nModule, forms_1.FormsModule, forms_1.ReactiveFormsModule,
+            dropdown_module_1.VCLDropdownModule,
+            flip_switch_module_1.VCLFlipSwitchModule,
+            slider_module_1.VCLSliderModule,
+            checkbox_module_1.VCLCheckboxModule,
+            select_module_1.VCLSelectModule,
+            radio_group_module_1.VCLRadioGroupModule,
+            input_control_group_module_1.VCLInputControlGroupModule
+        ],
+        exports: [jss_form_component_1.JssFormComponent, jss_form_component_1.JssFormObjectComponent],
+        declarations: [jss_form_component_1.JssFormComponent, jss_form_component_1.JssFormObjectComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLJssFormModule);
 exports.VCLJssFormModule = VCLJssFormModule;
 
 
@@ -3294,17 +3321,17 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLLabelModule = (function () {
     function VCLLabelModule() {
     }
-    VCLLabelModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule, metalist_module_1.VCLMetalistModule],
-            exports: [label_component_1.LabelComponent],
-            declarations: [label_component_1.LabelComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLLabelModule);
     return VCLLabelModule;
 }());
+VCLLabelModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, l10n_module_1.L10nModule, metalist_module_1.VCLMetalistModule],
+        exports: [label_component_1.LabelComponent],
+        declarations: [label_component_1.LabelComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLLabelModule);
 exports.VCLLabelModule = VCLLabelModule;
 
 
@@ -3336,8 +3363,6 @@ var wormhole_module_1 = __webpack_require__(18);
 var layer_references_1 = __webpack_require__(91);
 exports.LayerDirectiveReference = layer_references_1.LayerDirectiveReference;
 exports.LayerComponentReference = layer_references_1.LayerComponentReference;
-exports.LayerOptions = layer_references_1.LayerOptions;
-exports.LayerData = layer_references_1.LayerData;
 function getComponentRootNode(componentRef) {
     return componentRef.hostView.rootNodes[0];
 }
@@ -3354,18 +3379,18 @@ var LAYER_BOOTSTRAP = {
 var VCLLayerModule = (function () {
     function VCLLayerModule() {
     }
-    VCLLayerModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, wormhole_module_1.VCLWormholeModule, off_click_module_1.VCLOffClickModule],
-            exports: [layer_base_component_1.LayerBaseComponent, layer_directive_1.LayerDirective],
-            declarations: [layer_base_component_1.LayerBaseComponent, layer_directive_1.LayerDirective],
-            entryComponents: [layer_base_component_1.LayerBaseComponent],
-            providers: [layer_service_1.LayerService, LAYER_BOOTSTRAP]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLLayerModule);
     return VCLLayerModule;
 }());
+VCLLayerModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, wormhole_module_1.VCLWormholeModule, off_click_module_1.VCLOffClickModule],
+        exports: [layer_base_component_1.LayerBaseComponent, layer_directive_1.LayerDirective],
+        declarations: [layer_base_component_1.LayerBaseComponent, layer_directive_1.LayerDirective],
+        entryComponents: [layer_base_component_1.LayerBaseComponent],
+        providers: [layer_service_1.LayerService, LAYER_BOOTSTRAP]
+    }),
+    __metadata("design:paramtypes", [])
+], VCLLayerModule);
 exports.VCLLayerModule = VCLLayerModule;
 
 
@@ -3392,17 +3417,17 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLMonthPickerModule = (function () {
     function VCLMonthPickerModule() {
     }
-    VCLMonthPickerModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, button_module_1.VCLButtonModule, l10n_module_1.L10nModule],
-            exports: [month_picker_component_1.MonthPickerComponent],
-            declarations: [month_picker_component_1.MonthPickerComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLMonthPickerModule);
     return VCLMonthPickerModule;
 }());
+VCLMonthPickerModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, button_module_1.VCLButtonModule, l10n_module_1.L10nModule],
+        exports: [month_picker_component_1.MonthPickerComponent],
+        declarations: [month_picker_component_1.MonthPickerComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLMonthPickerModule);
 exports.VCLMonthPickerModule = VCLMonthPickerModule;
 
 
@@ -3424,22 +3449,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
 var navigation_component_1 = __webpack_require__(152);
-var link_module_1 = __webpack_require__(33);
+var link_module_1 = __webpack_require__(32);
 var l10n_module_1 = __webpack_require__(6);
 var VCLNavigationModule = (function () {
     function VCLNavigationModule() {
     }
-    VCLNavigationModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule, link_module_1.VCLLinkModule],
-            exports: [navigation_component_1.NavigationComponent, navigation_component_1.NavigationItemComponent],
-            declarations: [navigation_component_1.NavigationComponent, navigation_component_1.NavigationItemComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLNavigationModule);
     return VCLNavigationModule;
 }());
+VCLNavigationModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, l10n_module_1.L10nModule, link_module_1.VCLLinkModule],
+        exports: [navigation_component_1.NavigationComponent, navigation_component_1.NavigationItemComponent],
+        declarations: [navigation_component_1.NavigationComponent, navigation_component_1.NavigationItemComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLNavigationModule);
 exports.VCLNavigationModule = VCLNavigationModule;
 
 
@@ -3464,16 +3489,16 @@ var progress_bar_component_1 = __webpack_require__(154);
 var VCLProgressBarModule = (function () {
     function VCLProgressBarModule() {
     }
-    VCLProgressBarModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule],
-            exports: [progress_bar_component_1.ProgressBarComponent],
-            declarations: [progress_bar_component_1.ProgressBarComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLProgressBarModule);
     return VCLProgressBarModule;
 }());
+VCLProgressBarModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule],
+        exports: [progress_bar_component_1.ProgressBarComponent],
+        declarations: [progress_bar_component_1.ProgressBarComponent]
+    }),
+    __metadata("design:paramtypes", [])
+], VCLProgressBarModule);
 exports.VCLProgressBarModule = VCLProgressBarModule;
 
 
@@ -3500,17 +3525,17 @@ var wormhole_module_1 = __webpack_require__(18);
 var VCLTabNavModule = (function () {
     function VCLTabNavModule() {
     }
-    VCLTabNavModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule, wormhole_module_1.VCLWormholeModule],
-            exports: [tab_nav_component_1.TabComponent, tab_nav_component_1.TabContentDirective, tab_nav_component_1.TabLabelDirective, tab_nav_component_1.TabNavComponent],
-            declarations: [tab_nav_component_1.TabComponent, tab_nav_component_1.TabContentDirective, tab_nav_component_1.TabLabelDirective, tab_nav_component_1.TabNavComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLTabNavModule);
     return VCLTabNavModule;
 }());
+VCLTabNavModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, l10n_module_1.L10nModule, wormhole_module_1.VCLWormholeModule],
+        exports: [tab_nav_component_1.TabComponent, tab_nav_component_1.TabContentDirective, tab_nav_component_1.TabLabelDirective, tab_nav_component_1.TabNavComponent],
+        declarations: [tab_nav_component_1.TabComponent, tab_nav_component_1.TabContentDirective, tab_nav_component_1.TabLabelDirective, tab_nav_component_1.TabNavComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLTabNavModule);
 exports.VCLTabNavModule = VCLTabNavModule;
 
 
@@ -3535,17 +3560,17 @@ var textarea_directive_1 = __webpack_require__(161);
 var VCLTextareaModule = (function () {
     function VCLTextareaModule() {
     }
-    VCLTextareaModule = __decorate([
-        core_1.NgModule({
-            imports: [forms_1.FormsModule],
-            exports: [textarea_directive_1.TextareaDirective],
-            declarations: [textarea_directive_1.TextareaDirective],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLTextareaModule);
     return VCLTextareaModule;
 }());
+VCLTextareaModule = __decorate([
+    core_1.NgModule({
+        imports: [forms_1.FormsModule],
+        exports: [textarea_directive_1.TextareaDirective],
+        declarations: [textarea_directive_1.TextareaDirective],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLTextareaModule);
 exports.VCLTextareaModule = VCLTextareaModule;
 
 
@@ -3575,17 +3600,17 @@ var token_input_component_1 = __webpack_require__(162);
 var VCLTokenModule = (function () {
     function VCLTokenModule() {
     }
-    VCLTokenModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule, metalist_module_1.VCLMetalistModule, forms_1.FormsModule],
-            exports: [token_component_1.TokenComponent, token_list_component_1.TokenListComponent, token_input_component_1.TokenInputComponent],
-            declarations: [token_component_1.TokenComponent, token_list_component_1.TokenListComponent, token_input_component_1.TokenInputComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLTokenModule);
     return VCLTokenModule;
 }());
+VCLTokenModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, l10n_module_1.L10nModule, metalist_module_1.VCLMetalistModule, forms_1.FormsModule],
+        exports: [token_component_1.TokenComponent, token_list_component_1.TokenListComponent, token_input_component_1.TokenInputComponent],
+        declarations: [token_component_1.TokenComponent, token_list_component_1.TokenListComponent, token_input_component_1.TokenInputComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLTokenModule);
 exports.VCLTokenModule = VCLTokenModule;
 
 
@@ -3611,17 +3636,17 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLToolbarModule = (function () {
     function VCLToolbarModule() {
     }
-    VCLToolbarModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule],
-            exports: [toolbar_component_1.ToolbarComponent],
-            declarations: [toolbar_component_1.ToolbarComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLToolbarModule);
     return VCLToolbarModule;
 }());
+VCLToolbarModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, l10n_module_1.L10nModule],
+        exports: [toolbar_component_1.ToolbarComponent],
+        declarations: [toolbar_component_1.ToolbarComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLToolbarModule);
 exports.VCLToolbarModule = VCLToolbarModule;
 
 
@@ -3641,7 +3666,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var Subject_1 = __webpack_require__(52);
+var Subject_1 = __webpack_require__(51);
 var layer_references_1 = __webpack_require__(91);
 var LayerService = (function () {
     function LayerService(defaultInjector) {
@@ -3739,13 +3764,12 @@ var LayerService = (function () {
         });
         this.layers.clear();
     };
-    LayerService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.Injector !== 'undefined' && core_1.Injector) === 'function' && _a) || Object])
-    ], LayerService);
     return LayerService;
-    var _a;
 }());
+LayerService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [core_1.Injector])
+], LayerService);
 exports.LayerService = LayerService;
 
 
@@ -3774,7 +3798,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 var core_1 = __webpack_require__(1);
 var Observable_1 = __webpack_require__(13);
-__webpack_require__(494);
+__webpack_require__(493);
 ;
 exports.L10N_LOADER_CONFIG = new core_1.OpaqueToken('l10n.loader.config');
 var L10nLoaderService = (function () {
@@ -3789,9 +3813,10 @@ exports.L10nLoaderService = L10nLoaderService;
 var L10nStaticLoaderService = (function (_super) {
     __extends(L10nStaticLoaderService, _super);
     function L10nStaticLoaderService(config // TODO: L10nLoaderConfig - problem with ngc
-        ) {
-        _super.call(this);
-        this.config = config;
+    ) {
+        var _this = _super.call(this) || this;
+        _this.config = config; // TODO: L10nLoaderConfig - problem with ngc
+        return _this;
     }
     L10nStaticLoaderService.prototype.flatten = function (locale, data) {
         var pkg = {};
@@ -3820,28 +3845,28 @@ var L10nStaticLoaderService = (function (_super) {
         var pkg = this.flatten(locale, this.config);
         return Observable_1.Observable.of(pkg);
     };
-    L10nStaticLoaderService = __decorate([
-        core_1.Injectable(),
-        __param(0, core_1.Inject(exports.L10N_LOADER_CONFIG)), 
-        __metadata('design:paramtypes', [Object])
-    ], L10nStaticLoaderService);
     return L10nStaticLoaderService;
 }(L10nLoaderService));
+L10nStaticLoaderService = __decorate([
+    core_1.Injectable(),
+    __param(0, core_1.Inject(exports.L10N_LOADER_CONFIG)),
+    __metadata("design:paramtypes", [Object])
+], L10nStaticLoaderService);
 exports.L10nStaticLoaderService = L10nStaticLoaderService;
 var L10nNoopLoaderService = (function (_super) {
     __extends(L10nNoopLoaderService, _super);
     function L10nNoopLoaderService() {
-        _super.apply(this, arguments);
+        return _super.apply(this, arguments) || this;
     }
     L10nNoopLoaderService.prototype.getTranslationPackage = function (locale) {
         return Observable_1.Observable.of({});
     };
-    L10nNoopLoaderService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], L10nNoopLoaderService);
     return L10nNoopLoaderService;
 }(L10nLoaderService));
+L10nNoopLoaderService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], L10nNoopLoaderService);
 exports.L10nNoopLoaderService = L10nNoopLoaderService;
 
 
@@ -3875,7 +3900,7 @@ exports.L10nParserService = L10nParserService;
 var L10nFormatParserService = (function (_super) {
     __extends(L10nFormatParserService, _super);
     function L10nFormatParserService() {
-        _super.apply(this, arguments);
+        return _super.apply(this, arguments) || this;
     }
     L10nFormatParserService.prototype.parse = function (value) {
         var args = [];
@@ -3886,12 +3911,12 @@ var L10nFormatParserService = (function (_super) {
             return typeof args[idx] === 'string' ? args[idx] : match;
         });
     };
-    L10nFormatParserService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], L10nFormatParserService);
     return L10nFormatParserService;
 }(L10nParserService));
+L10nFormatParserService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], L10nFormatParserService);
 exports.L10nFormatParserService = L10nFormatParserService;
 
 
@@ -3916,10 +3941,10 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 var core_1 = __webpack_require__(1);
 var Observable_1 = __webpack_require__(13);
 var BehaviorSubject_1 = __webpack_require__(126);
-__webpack_require__(493);
-__webpack_require__(484);
-__webpack_require__(51);
-__webpack_require__(491);
+__webpack_require__(492);
+__webpack_require__(483);
+__webpack_require__(50);
+__webpack_require__(490);
 __webpack_require__(125);
 var l10n_loader_service_1 = __webpack_require__(70);
 var l10n_parser_service_1 = __webpack_require__(71);
@@ -4052,14 +4077,14 @@ var L10nService = (function () {
             }
         }
     };
-    L10nService = __decorate([
-        core_1.Injectable(),
-        __param(0, core_1.Inject(exports.L10N_CONFIG)), 
-        __metadata('design:paramtypes', [Object, (typeof (_a = typeof l10n_loader_service_1.L10nLoaderService !== 'undefined' && l10n_loader_service_1.L10nLoaderService) === 'function' && _a) || Object, (typeof (_b = typeof l10n_parser_service_1.L10nParserService !== 'undefined' && l10n_parser_service_1.L10nParserService) === 'function' && _b) || Object])
-    ], L10nService);
     return L10nService;
-    var _a, _b;
 }());
+L10nService = __decorate([
+    core_1.Injectable(),
+    __param(0, core_1.Inject(exports.L10N_CONFIG)),
+    __metadata("design:paramtypes", [Object, l10n_loader_service_1.L10nLoaderService,
+        l10n_parser_service_1.L10nParserService])
+], L10nService);
 exports.L10nService = L10nService;
 
 
@@ -4082,9 +4107,9 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 var Observable_1 = __webpack_require__(13);
-var merge_1 = __webpack_require__(497);
+var merge_1 = __webpack_require__(496);
 var core_1 = __webpack_require__(1);
-var store_1 = __webpack_require__(40);
+var store_1 = __webpack_require__(39);
 var EFFECTS_METADATA_KEY = 'ng-vcl/effects';
 exports.STORE_EFFECTS = new core_1.OpaqueToken('store.effects');
 function Effect() {
@@ -4129,15 +4154,14 @@ var Effects = (function () {
     Effects.prototype.ngOnDestroy = function () {
         this.effectSubs.slice().filter(function (sub) { return sub && !sub.closed; }).forEach(function (sub) { return sub.unsubscribe(); });
     };
-    Effects = __decorate([
-        core_1.Injectable(),
-        __param(1, core_1.Optional()),
-        __param(1, core_1.Inject(exports.STORE_EFFECTS)), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof store_1.Store !== 'undefined' && store_1.Store) === 'function' && _a) || Object, Array])
-    ], Effects);
     return Effects;
-    var _a;
 }());
+Effects = __decorate([
+    core_1.Injectable(),
+    __param(1, core_1.Optional()),
+    __param(1, core_1.Inject(exports.STORE_EFFECTS)),
+    __metadata("design:paramtypes", [store_1.Store, Array])
+], Effects);
 exports.Effects = Effects;
 
 
@@ -4156,7 +4180,7 @@ var Subject_1 = __webpack_require__(8);
 var queue_1 = __webpack_require__(115);
 var Subscription_1 = __webpack_require__(7);
 var observeOn_1 = __webpack_require__(79);
-var ObjectUnsubscribedError_1 = __webpack_require__(48);
+var ObjectUnsubscribedError_1 = __webpack_require__(47);
 var SubjectSubscription_1 = __webpack_require__(98);
 /**
  * @class ReplaySubject<T>
@@ -4479,7 +4503,7 @@ exports.CombineLatestSubscriber = CombineLatestSubscriber;
 "use strict";
 var isScheduler_1 = __webpack_require__(20);
 var ArrayObservable_1 = __webpack_require__(16);
-var mergeAll_1 = __webpack_require__(43);
+var mergeAll_1 = __webpack_require__(42);
 /* tslint:disable:max-line-length */
 /**
  * Creates an output Observable which sequentially emits all values from every
@@ -4523,7 +4547,7 @@ var mergeAll_1 = __webpack_require__(43);
  *
  * @param {Observable} other An input Observable to concatenate after the source
  * Observable. More than one input Observables may be given as argument.
- * @param {Scheduler} [scheduler=null] An optional Scheduler to schedule each
+ * @param {Scheduler} [scheduler=null] An optional IScheduler to schedule each
  * Observable subscription on.
  * @return {Observable} All values of each passed Observable merged into a
  * single Observable, in order, in serial fashion.
@@ -4581,7 +4605,7 @@ exports.concat = concat;
  * @param {Observable} input1 An input Observable to concatenate with others.
  * @param {Observable} input2 An input Observable to concatenate with others.
  * More than one input Observables may be given as argument.
- * @param {Scheduler} [scheduler=null] An optional Scheduler to schedule each
+ * @param {Scheduler} [scheduler=null] An optional IScheduler to schedule each
  * Observable subscription on.
  * @return {Observable} All values of each passed Observable merged into a
  * single Observable, in order, in serial fashion.
@@ -4753,11 +4777,15 @@ var ObserveOnSubscriber = (function (_super) {
         this.delay = delay;
     }
     ObserveOnSubscriber.dispatch = function (arg) {
-        var notification = arg.notification, destination = arg.destination;
+        var notification = arg.notification, destination = arg.destination, subscription = arg.subscription;
         notification.observe(destination);
+        if (subscription) {
+            subscription.unsubscribe();
+        }
     };
     ObserveOnSubscriber.prototype.scheduleMessage = function (notification) {
-        this.add(this.scheduler.schedule(ObserveOnSubscriber.dispatch, this.delay, new ObserveOnMessage(notification, this.destination)));
+        var message = new ObserveOnMessage(notification, this.destination);
+        message.subscription = this.add(this.scheduler.schedule(ObserveOnSubscriber.dispatch, this.delay, message));
     };
     ObserveOnSubscriber.prototype._next = function (value) {
         this.scheduleMessage(Notification_1.Notification.createNext(value));
@@ -4944,6 +4972,30 @@ function zipProto() {
 exports.zipProto = zipProto;
 /* tslint:enable:max-line-length */
 /**
+ * Combines multiple Observables to create an Observable whose values are calculated from the values, in order, of each
+ * of its input Observables.
+ *
+ * If the latest parameter is a function, this function is used to compute the created value from the input values.
+ * Otherwise, an array of the input values is returned.
+ *
+ * @example <caption>Combine age and name from different sources</caption>
+ *
+ * let age$ = Observable.of<number>(27, 25, 29);
+ * let name$ = Observable.of<string>('Foo', 'Bar', 'Beer');
+ * let isDev$ = Observable.of<boolean>(true, true, false);
+ *
+ * Observable
+ *     .zip(age$,
+ *          name$,
+ *          isDev$,
+ *          (age: number, name: string, isDev: boolean) => ({ age, name, isDev }))
+ *     .subscribe(x => console.log(x));
+ *
+ * // outputs
+ * // { age: 7, name: 'Foo', isDev: true }
+ * // { age: 5, name: 'Bar', isDev: true }
+ * // { age: 9, name: 'Beer', isDev: false }
+ *
  * @param observables
  * @return {Observable<R>}
  * @static true
@@ -5226,17 +5278,17 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLFlipSwitchModule = (function () {
     function VCLFlipSwitchModule() {
     }
-    VCLFlipSwitchModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule, metalist_module_1.VCLMetalistModule],
-            exports: [flip_switch_component_1.FlipSwitchComponent],
-            declarations: [flip_switch_component_1.FlipSwitchComponent],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLFlipSwitchModule);
     return VCLFlipSwitchModule;
 }());
+VCLFlipSwitchModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, l10n_module_1.L10nModule, metalist_module_1.VCLMetalistModule],
+        exports: [flip_switch_component_1.FlipSwitchComponent],
+        declarations: [flip_switch_component_1.FlipSwitchComponent],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLFlipSwitchModule);
 exports.VCLFlipSwitchModule = VCLFlipSwitchModule;
 
 
@@ -5257,26 +5309,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var dropdown_module_1 = __webpack_require__(53);
+var dropdown_module_1 = __webpack_require__(52);
 var button_module_1 = __webpack_require__(21);
 var select_component_1 = __webpack_require__(157);
-var popover_module_1 = __webpack_require__(34);
+var popover_module_1 = __webpack_require__(33);
 var l10n_module_1 = __webpack_require__(6);
 var off_click_module_1 = __webpack_require__(23);
 var VCLSelectModule = (function () {
     function VCLSelectModule() {
     }
-    VCLSelectModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, l10n_module_1.L10nModule, dropdown_module_1.VCLDropdownModule, button_module_1.VCLButtonModule, off_click_module_1.VCLOffClickModule, popover_module_1.VCLPopoverModule],
-            exports: [select_component_1.SelectComponent, select_component_1.SelectOptionComponent],
-            declarations: [select_component_1.SelectComponent, select_component_1.SelectOptionComponent],
-            providers: []
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLSelectModule);
     return VCLSelectModule;
 }());
+VCLSelectModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, l10n_module_1.L10nModule, dropdown_module_1.VCLDropdownModule, button_module_1.VCLButtonModule, off_click_module_1.VCLOffClickModule, popover_module_1.VCLPopoverModule],
+        exports: [select_component_1.SelectComponent, select_component_1.SelectOptionComponent],
+        declarations: [select_component_1.SelectComponent, select_component_1.SelectOptionComponent],
+        providers: []
+    }),
+    __metadata("design:paramtypes", [])
+], VCLSelectModule);
 exports.VCLSelectModule = VCLSelectModule;
 
 
@@ -5304,13 +5356,13 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 var Observable_1 = __webpack_require__(13);
-var ReplaySubject_1 = __webpack_require__(496);
+var ReplaySubject_1 = __webpack_require__(495);
 __webpack_require__(125);
-__webpack_require__(487);
-__webpack_require__(483);
-__webpack_require__(489);
-__webpack_require__(485);
-__webpack_require__(495);
+__webpack_require__(486);
+__webpack_require__(482);
+__webpack_require__(488);
+__webpack_require__(484);
+__webpack_require__(494);
 var http_1 = __webpack_require__(127);
 var core_1 = __webpack_require__(1);
 /**
@@ -5319,8 +5371,9 @@ var core_1 = __webpack_require__(1);
 var SyncableObservable = (function (_super) {
     __extends(SyncableObservable, _super);
     function SyncableObservable(source) {
-        _super.call(this);
-        this.source = source;
+        var _this = _super.call(this) || this;
+        _this.source = source;
+        return _this;
     }
     SyncableObservable.prototype._subscribe = function (subscriber) {
         return this.getDataSubject().subscribe(subscriber);
@@ -5363,12 +5416,12 @@ Observable_1.Observable.prototype.syncable = function () {
 /**
  *  Error handling
  */
+var ErrorHandlingStrategy;
 (function (ErrorHandlingStrategy) {
     ErrorHandlingStrategy[ErrorHandlingStrategy["default"] = 0] = "default";
     ErrorHandlingStrategy[ErrorHandlingStrategy["retry"] = 1] = "retry";
     ErrorHandlingStrategy[ErrorHandlingStrategy["notify"] = 2] = "notify";
-})(exports.ErrorHandlingStrategy || (exports.ErrorHandlingStrategy = {}));
-var ErrorHandlingStrategy = exports.ErrorHandlingStrategy;
+})(ErrorHandlingStrategy = exports.ErrorHandlingStrategy || (exports.ErrorHandlingStrategy = {}));
 exports.ADV_HTTP_CONFIG = new core_1.OpaqueToken('adv.http.config');
 var ErrorHandlerService = (function () {
     function ErrorHandlerService() {
@@ -5416,19 +5469,20 @@ var ErrorHandlerService = (function () {
         }
         return source;
     };
-    ErrorHandlerService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], ErrorHandlerService);
     return ErrorHandlerService;
 }());
+ErrorHandlerService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], ErrorHandlerService);
 exports.ErrorHandlerService = ErrorHandlerService;
 var AdvHttp = (function (_super) {
     __extends(AdvHttp, _super);
     function AdvHttp(config, errorHandler, _backend, _defaultOptions) {
-        _super.call(this, _backend, _defaultOptions);
-        this.config = config;
-        this.errorHandler = errorHandler;
+        var _this = _super.call(this, _backend, _defaultOptions) || this;
+        _this.config = config;
+        _this.errorHandler = errorHandler;
+        return _this;
     }
     AdvHttp.prototype.request = function (url, options, errorStrategy) {
         var _this = this;
@@ -5462,14 +5516,15 @@ var AdvHttp = (function (_super) {
         var _this = this;
         return _super.prototype.options.call(this, url, options).let(function (o) { return _this.errorHandler.attach(o, errorStrategy || _this.config.defaultErrorHandlingStrategy); });
     };
-    AdvHttp = __decorate([
-        core_1.Injectable(),
-        __param(0, core_1.Inject(exports.ADV_HTTP_CONFIG)), 
-        __metadata('design:paramtypes', [Object, ErrorHandlerService, (typeof (_a = typeof http_1.ConnectionBackend !== 'undefined' && http_1.ConnectionBackend) === 'function' && _a) || Object, (typeof (_b = typeof http_1.RequestOptions !== 'undefined' && http_1.RequestOptions) === 'function' && _b) || Object])
-    ], AdvHttp);
     return AdvHttp;
-    var _a, _b;
 }(http_1.Http));
+AdvHttp = __decorate([
+    core_1.Injectable(),
+    __param(0, core_1.Inject(exports.ADV_HTTP_CONFIG)),
+    __metadata("design:paramtypes", [Object, ErrorHandlerService,
+        http_1.ConnectionBackend,
+        http_1.RequestOptions])
+], AdvHttp);
 exports.AdvHttp = AdvHttp;
 
 
@@ -5494,9 +5549,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var Observable_1 = __webpack_require__(13);
-__webpack_require__(488);
+__webpack_require__(487);
 var core_1 = __webpack_require__(1);
-var index_1 = __webpack_require__(30);
+var index_1 = __webpack_require__(53);
 var InteractionType;
 (function (InteractionType) {
     InteractionType[InteractionType["Click"] = 0] = "Click";
@@ -5519,17 +5574,16 @@ var ButtonContentDirective = (function () {
             this.viewContainerRef.clear();
         }
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], ButtonContentDirective.prototype, "state", void 0);
-    ButtonContentDirective = __decorate([
-        core_1.Directive({ selector: '[vcl-button-content]' }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _b) || Object])
-    ], ButtonContentDirective);
     return ButtonContentDirective;
-    var _a, _b;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonContentDirective.prototype, "state", void 0);
+ButtonContentDirective = __decorate([
+    core_1.Directive({ selector: '[vcl-button-content]' }),
+    __metadata("design:paramtypes", [core_1.ViewContainerRef, core_1.TemplateRef])
+], ButtonContentDirective);
 exports.ButtonContentDirective = ButtonContentDirective;
 function dispatch(el, eventType) {
     var x = 10, y = 10;
@@ -5560,39 +5614,39 @@ function dispatchTap(el) {
 var ButtonComponent = (function (_super) {
     __extends(ButtonComponent, _super);
     function ButtonComponent(elementRef) {
-        var _this = this;
-        _super.call(this);
-        this.elementRef = elementRef;
-        this.latestInteractionTime = 0;
-        this.pressed = false; // `true` if a pointer device is conducting a `down` gesture on the button
-        this.focused = false; // `true` if the element is focused  (CSS' :focus)
-        this.hovered = false; // `true` if a pointer device is hovering the button (CSS' :hover)
-        this.selected = false;
-        this.disabled = false;
-        this.disableA11yClick = false;
-        this.busy = false; // State to indicate that the button is disabled as a operation is in progress
-        this.flexLabel = false;
-        this.autoBlur = true;
-        this._press = new core_1.EventEmitter();
-        this._stateChange = new core_1.EventEmitter();
-        this.state$ = this.observeChange('disabled', 'busy', 'label', 'busyLabel', 'appIcon', 'appIconBusy').publishBehavior(this.state).refCount().map(function () { return _this.state; });
-        this.label$ = this.state$.map(function (state) { return state === 'busy' && _this.busyLabel ? _this.busyLabel : _this.label; });
-        this.prepIcon$ = this.state$.map(function (state) { return state === 'busy' && _this.prepIconBusy ? _this.prepIconBusy : _this.prepIcon; });
-        this.appIcon$ = this.state$.map(function (state) { return state === 'busy' && _this.appIconBusy ? _this.appIconBusy : _this.appIcon; });
-        this.buttonContent = null;
-        this.stateSub = this.state$.subscribe(function (state) {
+        var _this = _super.call(this) || this;
+        _this.elementRef = elementRef;
+        _this.latestInteractionTime = 0;
+        _this.pressed = false; // `true` if a pointer device is conducting a `down` gesture on the button
+        _this.focused = false; // `true` if the element is focused  (CSS' :focus)
+        _this.hovered = false; // `true` if a pointer device is hovering the button (CSS' :hover)
+        _this.selected = false;
+        _this.disabled = false;
+        _this.disableA11yClick = false;
+        _this.busy = false; // State to indicate that the button is disabled as a operation is in progress
+        _this.flexLabel = false;
+        _this.autoBlur = true;
+        _this._press = new core_1.EventEmitter();
+        _this._stateChange = new core_1.EventEmitter();
+        _this.state$ = _this.observeChange('disabled', 'busy', 'label', 'busyLabel', 'appIcon', 'appIconBusy').publishBehavior(_this.state).refCount().map(function () { return _this.state; });
+        _this.label$ = _this.state$.map(function (state) { return state === 'busy' && _this.busyLabel ? _this.busyLabel : _this.label; });
+        _this.prepIcon$ = _this.state$.map(function (state) { return state === 'busy' && _this.prepIconBusy ? _this.prepIconBusy : _this.prepIcon; });
+        _this.appIcon$ = _this.state$.map(function (state) { return state === 'busy' && _this.appIconBusy ? _this.appIconBusy : _this.appIcon; });
+        _this.buttonContent = null;
+        _this.stateSub = _this.state$.subscribe(function (state) {
             if (_this.buttonContent) {
                 _this.buttonContent.forEach(function (bc) { return bc.render(state); });
             }
             _this._stateChange.emit(state);
         });
-        this.pressSub = this.press.subscribe(function () {
+        _this.pressSub = _this.press.subscribe(function () {
             if (_this.autoBlur) {
                 if (_this.elementRef.nativeElement && _this.elementRef.nativeElement.blur) {
                     _this.elementRef.nativeElement.blur();
                 }
             }
         });
+        return _this;
     }
     Object.defineProperty(ButtonComponent.prototype, "isDisabled", {
         get: function () {
@@ -5671,151 +5725,150 @@ var ButtonComponent = (function (_super) {
         if (this.pressSub && !this.pressSub.closed)
             this.pressSub.unsubscribe();
     };
-    __decorate([
-        // `true` if the element is focused  (CSS' :focus)
-        core_1.HostBinding('class.vclHovered'), 
-        __metadata('design:type', Boolean)
-    ], ButtonComponent.prototype, "hovered", void 0);
-    __decorate([
-        // `true` if a pointer device is hovering the button (CSS' :hover)
-        core_1.Input(),
-        core_1.HostBinding('class.vclSelected'), 
-        __metadata('design:type', Boolean)
-    ], ButtonComponent.prototype, "selected", void 0);
-    __decorate([
-        core_1.HostBinding('attr.aria-label'),
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], ButtonComponent.prototype, "title", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], ButtonComponent.prototype, "disabled", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], ButtonComponent.prototype, "disableA11yClick", void 0);
-    __decorate([
-        core_1.HostBinding('attr.disabled'), 
-        __metadata('design:type', Boolean)
-    ], ButtonComponent.prototype, "isDisabled", null);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], ButtonComponent.prototype, "busy", void 0);
-    __decorate([
-        // State to indicate that the button is disabled as a operation is in progress
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], ButtonComponent.prototype, "flexLabel", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], ButtonComponent.prototype, "busyLabel", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], ButtonComponent.prototype, "label", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], ButtonComponent.prototype, "prepIcon", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], ButtonComponent.prototype, "prepIconBusy", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], ButtonComponent.prototype, "autoBlur", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], ButtonComponent.prototype, "appIcon", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], ButtonComponent.prototype, "appIconBusy", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', (typeof (_a = typeof Observable_1.Observable !== 'undefined' && Observable_1.Observable) === 'function' && _a) || Object)
-    ], ButtonComponent.prototype, "press", null);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', (typeof (_b = typeof Observable_1.Observable !== 'undefined' && Observable_1.Observable) === 'function' && _b) || Object)
-    ], ButtonComponent.prototype, "stateChange", null);
-    __decorate([
-        core_1.ContentChildren(ButtonContentDirective), 
-        __metadata('design:type', (typeof (_c = typeof core_1.QueryList !== 'undefined' && core_1.QueryList) === 'function' && _c) || Object)
-    ], ButtonComponent.prototype, "buttonContent", void 0);
-    __decorate([
-        core_1.HostListener('keypress', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], ButtonComponent.prototype, "onKeypress", null);
-    __decorate([
-        core_1.HostListener('mouseenter', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], ButtonComponent.prototype, "onMouseEnter", null);
-    __decorate([
-        core_1.HostListener('mouseleave', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], ButtonComponent.prototype, "onMouseLeave", null);
-    __decorate([
-        core_1.HostListener('mouseup', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], ButtonComponent.prototype, "onMouseUp", null);
-    __decorate([
-        core_1.HostListener('mousedown', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], ButtonComponent.prototype, "onMouseDown", null);
-    __decorate([
-        core_1.HostListener('onfocus', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], ButtonComponent.prototype, "onFocus", null);
-    __decorate([
-        core_1.HostListener('onblur', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], ButtonComponent.prototype, "onBlur", null);
-    __decorate([
-        core_1.HostListener('tap', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], ButtonComponent.prototype, "onTap", null);
-    __decorate([
-        core_1.HostListener('click', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], ButtonComponent.prototype, "onClick", null);
-    ButtonComponent = __decorate([
-        core_1.Component({
-            selector: '[vcl-button]',
-            host: {
-                '[class.vclButton]': 'true',
-            },
-            template: __webpack_require__(176),
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-        }), 
-        __metadata('design:paramtypes', [(typeof (_d = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _d) || Object])
-    ], ButtonComponent);
     return ButtonComponent;
-    var _a, _b, _c, _d;
 }(index_1.ObservableComponent));
+__decorate([
+    core_1.HostBinding('class.vclHovered'),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "hovered", void 0);
+__decorate([
+    core_1.Input(),
+    core_1.HostBinding('class.vclSelected'),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "selected", void 0);
+__decorate([
+    core_1.HostBinding('attr.aria-label'),
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "title", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "disabled", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "disableA11yClick", void 0);
+__decorate([
+    core_1.HostBinding('attr.disabled'),
+    __metadata("design:type", Boolean),
+    __metadata("design:paramtypes", [])
+], ButtonComponent.prototype, "isDisabled", null);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "busy", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "flexLabel", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "busyLabel", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "label", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "prepIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "prepIconBusy", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], ButtonComponent.prototype, "autoBlur", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "appIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ButtonComponent.prototype, "appIconBusy", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], ButtonComponent.prototype, "press", null);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], ButtonComponent.prototype, "stateChange", null);
+__decorate([
+    core_1.ContentChildren(ButtonContentDirective),
+    __metadata("design:type", core_1.QueryList)
+], ButtonComponent.prototype, "buttonContent", void 0);
+__decorate([
+    core_1.HostListener('keypress', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [KeyboardEvent]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onKeypress", null);
+__decorate([
+    core_1.HostListener('mouseenter', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onMouseEnter", null);
+__decorate([
+    core_1.HostListener('mouseleave', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onMouseLeave", null);
+__decorate([
+    core_1.HostListener('mouseup', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onMouseUp", null);
+__decorate([
+    core_1.HostListener('mousedown', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onMouseDown", null);
+__decorate([
+    core_1.HostListener('onfocus', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onFocus", null);
+__decorate([
+    core_1.HostListener('onblur', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onBlur", null);
+__decorate([
+    core_1.HostListener('tap', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onTap", null);
+__decorate([
+    core_1.HostListener('click', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], ButtonComponent.prototype, "onClick", null);
+ButtonComponent = __decorate([
+    core_1.Component({
+        selector: '[vcl-button]',
+        host: {
+            '[class.vclButton]': 'true',
+        },
+        template: __webpack_require__(175),
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], ButtonComponent);
 exports.ButtonComponent = ButtonComponent;
 
 
@@ -5873,12 +5926,12 @@ var IconService = (function () {
         }
         return icon;
     };
-    IconService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], IconService);
     return IconService;
 }());
+IconService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], IconService);
 exports.IconService = IconService;
 
 
@@ -5908,13 +5961,14 @@ var layer_service_1 = __webpack_require__(69);
 var LayerDirective = (function (_super) {
     __extends(LayerDirective, _super);
     function LayerDirective(templateRef, elementRef, layerService) {
-        _super.call(this, templateRef);
-        this.templateRef = templateRef;
-        this.elementRef = elementRef;
-        this.layerService = layerService;
-        this.modal = true;
-        this.closeOnOffClick = true;
-        this.base = 'default';
+        var _this = _super.call(this, templateRef) || this;
+        _this.templateRef = templateRef;
+        _this.elementRef = elementRef;
+        _this.layerService = layerService;
+        _this.modal = true;
+        _this.closeOnOffClick = true;
+        _this.base = 'default';
+        return _this;
     }
     LayerDirective.prototype.ngOnInit = function () {
         this.layerRef = this.layerService.registerDirective(this, {
@@ -5935,28 +5989,27 @@ var LayerDirective = (function (_super) {
     LayerDirective.prototype.close = function (result) {
         this.layerRef.close();
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], LayerDirective.prototype, "modal", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], LayerDirective.prototype, "closeOnOffClick", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], LayerDirective.prototype, "base", void 0);
-    LayerDirective = __decorate([
-        core_1.Directive({
-            selector: '[vcl-layer]',
-            exportAs: 'layer',
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _b) || Object, (typeof (_c = typeof layer_service_1.LayerService !== 'undefined' && layer_service_1.LayerService) === 'function' && _c) || Object])
-    ], LayerDirective);
     return LayerDirective;
-    var _a, _b, _c;
 }(wormhole_module_1.TemplateWormhole));
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], LayerDirective.prototype, "modal", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], LayerDirective.prototype, "closeOnOffClick", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], LayerDirective.prototype, "base", void 0);
+LayerDirective = __decorate([
+    core_1.Directive({
+        selector: '[vcl-layer]',
+        exportAs: 'layer',
+    }),
+    __metadata("design:paramtypes", [core_1.TemplateRef, core_1.ElementRef, layer_service_1.LayerService])
+], LayerDirective);
 exports.LayerDirective = LayerDirective;
 
 
@@ -5981,22 +6034,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var Subject_1 = __webpack_require__(52);
+var Subject_1 = __webpack_require__(51);
 var Observable_1 = __webpack_require__(13);
 var wormhole_module_1 = __webpack_require__(18);
-var index_1 = __webpack_require__(30);
 var layer_directive_1 = __webpack_require__(90);
 var LayerReference = (function (_super) {
     __extends(LayerReference, _super);
     function LayerReference(opts) {
-        _super.call(this);
-        this.stateChange = new Subject_1.Subject();
-        this.source = this.stateChange.asObservable();
-        this.visible = false;
-        this.base = opts.base || 'default';
-        this.modal = !!opts.modal;
-        this.closeOnOffClick = !!opts.closeOnOffClick;
-        this.data = {};
+        var _this = _super.call(this) || this;
+        _this.stateChange = new Subject_1.Subject();
+        _this.source = _this.stateChange.asObservable();
+        _this.visible = false;
+        _this.base = opts.base || 'default';
+        _this.modal = !!opts.modal;
+        _this.closeOnOffClick = !!opts.closeOnOffClick;
+        _this.data = {};
+        return _this;
     }
     LayerReference.prototype.open = function (data) {
         this.visible = true;
@@ -6012,11 +6065,13 @@ var LayerReference = (function (_super) {
         this.visible = false;
         this.data = {};
         this.wormhole = null;
-        if (typeof result !== 'undefined') {
-            this.results.next(result);
+        if (this.results) {
+            if (typeof result !== 'undefined') {
+                this.results.next(result);
+            }
+            this.results.complete();
+            this.results = null;
         }
-        this.results.complete();
-        this.results = null;
         this.stateChange.next(this);
     };
     LayerReference.prototype.send = function (result) {
@@ -6030,30 +6085,31 @@ exports.LayerReference = LayerReference;
 var LayerDirectiveReference = (function (_super) {
     __extends(LayerDirectiveReference, _super);
     function LayerDirectiveReference(opts, layer) {
-        _super.call(this, opts);
-        this.layer = layer;
+        var _this = _super.call(this, opts) || this;
+        _this.layer = layer;
+        return _this;
     }
     LayerDirectiveReference.prototype.createWormhole = function () {
         return this.layer;
     };
-    LayerDirectiveReference = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [Object, (typeof (_a = typeof layer_directive_1.LayerDirective !== 'undefined' && layer_directive_1.LayerDirective) === 'function' && _a) || Object])
-    ], LayerDirectiveReference);
     return LayerDirectiveReference;
-    var _a;
 }(LayerReference));
+LayerDirectiveReference = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [Object, layer_directive_1.LayerDirective])
+], LayerDirectiveReference);
 exports.LayerDirectiveReference = LayerDirectiveReference;
-var LayerComponentReference = (function (_super) {
+var LayerComponentReference = LayerComponentReference_1 = (function (_super) {
     __extends(LayerComponentReference, _super);
     function LayerComponentReference(opts, defaultInjector, LayerClass) {
-        _super.call(this, opts);
-        this.defaultInjector = defaultInjector;
-        this.LayerClass = LayerClass;
-        this.injector = core_1.ReflectiveInjector.resolveAndCreate([{
-                provide: LayerComponentReference,
-                useValue: this
-            }], this.defaultInjector);
+        var _this = _super.call(this, opts) || this;
+        _this.defaultInjector = defaultInjector;
+        _this.LayerClass = LayerClass;
+        _this.injector = core_1.ReflectiveInjector.resolveAndCreate([{
+                provide: LayerComponentReference_1,
+                useValue: _this
+            }], _this.defaultInjector);
+        return _this;
     }
     LayerComponentReference.prototype.createWormhole = function () {
         if (this.wormhole instanceof wormhole_module_1.ComponentWormhole) {
@@ -6064,14 +6120,14 @@ var LayerComponentReference = (function (_super) {
         }
         return new wormhole_module_1.ComponentWormhole(this.LayerClass, { data: this.data, injector: this.injector });
     };
-    LayerComponentReference = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [Object, (typeof (_a = typeof core_1.Injector !== 'undefined' && core_1.Injector) === 'function' && _a) || Object, (typeof (_b = typeof index_1.ComponentType !== 'undefined' && index_1.ComponentType) === 'function' && _b) || Object])
-    ], LayerComponentReference);
     return LayerComponentReference;
-    var _a, _b;
 }(LayerReference));
+LayerComponentReference = LayerComponentReference_1 = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [Object, core_1.Injector, Object])
+], LayerComponentReference);
 exports.LayerComponentReference = LayerComponentReference;
+var LayerComponentReference_1;
 
 
 /***/ },
@@ -6109,12 +6165,12 @@ var OverlayManagerService = (function () {
         this.components.splice(index, 1);
         return -1;
     };
-    OverlayManagerService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], OverlayManagerService);
     return OverlayManagerService;
 }());
+OverlayManagerService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], OverlayManagerService);
 exports.OverlayManagerService = OverlayManagerService;
 
 
@@ -6143,35 +6199,35 @@ var TokenComponent = (function () {
     TokenComponent.prototype.remove = function () {
         this.onRemove.emit();
     };
-    __decorate([
-        core_1.Input('label'), 
-        __metadata('design:type', String)
-    ], TokenComponent.prototype, "label", void 0);
-    __decorate([
-        core_1.Input('selected'), 
-        __metadata('design:type', Boolean)
-    ], TokenComponent.prototype, "selected", void 0);
-    __decorate([
-        core_1.Input('removeable'), 
-        __metadata('design:type', Boolean)
-    ], TokenComponent.prototype, "removeable", void 0);
-    __decorate([
-        core_1.Output('onRemove'), 
-        __metadata('design:type', Object)
-    ], TokenComponent.prototype, "onRemove", void 0);
-    TokenComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-token',
-            template: "\n      <span class=\"vclTokenLabel\">{{ label }}</span>\n      <button *ngIf=\"removeable\" type=\"button\" title=\"Remove\"\n      class=\"vclTransparent vclButton\">\n        <div class=\"vclIcogram\" (tap)=\"remove()\">\n          <span class=\"vclIcon fa fa-remove\"></span>\n        </div>\n      </button>",
-            host: {
-                '[class.vclToken]': 'true',
-                '[class.vclSelected]': 'selected'
-            }
-        }), 
-        __metadata('design:paramtypes', [])
-    ], TokenComponent);
     return TokenComponent;
 }());
+__decorate([
+    core_1.Input('label'),
+    __metadata("design:type", String)
+], TokenComponent.prototype, "label", void 0);
+__decorate([
+    core_1.Input('selected'),
+    __metadata("design:type", Boolean)
+], TokenComponent.prototype, "selected", void 0);
+__decorate([
+    core_1.Input('removeable'),
+    __metadata("design:type", Boolean)
+], TokenComponent.prototype, "removeable", void 0);
+__decorate([
+    core_1.Output('onRemove'),
+    __metadata("design:type", Object)
+], TokenComponent.prototype, "onRemove", void 0);
+TokenComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-token',
+        template: "\n      <span class=\"vclTokenLabel\">{{ label }}</span>\n      <button *ngIf=\"removeable\" type=\"button\" title=\"Remove\"\n      class=\"vclTransparent vclButton\">\n        <div class=\"vclIcogram\" (tap)=\"remove()\">\n          <span class=\"vclIcon fa fa-remove\"></span>\n        </div>\n      </button>",
+        host: {
+            '[class.vclToken]': 'true',
+            '[class.vclSelected]': 'selected'
+        }
+    }),
+    __metadata("design:paramtypes", [])
+], TokenComponent);
 exports.TokenComponent = TokenComponent;
 
 
@@ -6188,8 +6244,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(13);
 __webpack_require__(124);
-__webpack_require__(486);
-__webpack_require__(51);
+__webpack_require__(485);
+__webpack_require__(50);
 function select(path) {
     var paths = [];
     for (var _i = 1; _i < arguments.length; _i++) {
@@ -6212,8 +6268,9 @@ exports.select = select;
 var StoreObservable = (function (_super) {
     __extends(StoreObservable, _super);
     function StoreObservable(source) {
-        _super.call(this);
-        this.source = source;
+        var _this = _super.call(this) || this;
+        _this.source = source;
+        return _this;
     }
     StoreObservable.prototype.select = function (path) {
         var paths = [];
@@ -6249,12 +6306,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 __webpack_require__(84);
-__webpack_require__(51);
+__webpack_require__(50);
 var core_1 = __webpack_require__(1);
 var router_1 = __webpack_require__(128);
-var store_1 = __webpack_require__(40);
-var actions_1 = __webpack_require__(39);
-var utils_1 = __webpack_require__(41);
+var store_1 = __webpack_require__(39);
+var actions_1 = __webpack_require__(38);
+var utils_1 = __webpack_require__(40);
 var effects_1 = __webpack_require__(73);
 exports.initialRouterState = {
     url: ''
@@ -6310,21 +6367,20 @@ var StoreRouterEffects = (function () {
         if (this.routerSub && !this.routerSub.closed)
             this.routerSub.unsubscribe();
     };
-    __decorate([
-        effects_1.Effect(), 
-        __metadata('design:type', Object)
-    ], StoreRouterEffects.prototype, "navigateEffect", void 0);
-    __decorate([
-        effects_1.Effect(), 
-        __metadata('design:type', Object)
-    ], StoreRouterEffects.prototype, "navigateByUrlEffect", void 0);
-    StoreRouterEffects = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof store_1.Store !== 'undefined' && store_1.Store) === 'function' && _b) || Object, (typeof (_c = typeof actions_1.StoreActions !== 'undefined' && actions_1.StoreActions) === 'function' && _c) || Object])
-    ], StoreRouterEffects);
     return StoreRouterEffects;
-    var _a, _b, _c;
 }());
+__decorate([
+    effects_1.Effect(),
+    __metadata("design:type", Object)
+], StoreRouterEffects.prototype, "navigateEffect", void 0);
+__decorate([
+    effects_1.Effect(),
+    __metadata("design:type", Object)
+], StoreRouterEffects.prototype, "navigateByUrlEffect", void 0);
+StoreRouterEffects = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [router_1.Router, store_1.Store, actions_1.StoreActions])
+], StoreRouterEffects);
 exports.StoreRouterEffects = StoreRouterEffects;
 var StoreRouter = (function () {
     function StoreRouter(store) {
@@ -6336,13 +6392,12 @@ var StoreRouter = (function () {
     StoreRouter.prototype.navigateByUrl = function (url, extras) {
         this.store.dispatch(new RouterNavigateByUrlAction(url, extras));
     };
-    StoreRouter = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof store_1.Store !== 'undefined' && store_1.Store) === 'function' && _a) || Object])
-    ], StoreRouter);
     return StoreRouter;
-    var _a;
 }());
+StoreRouter = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [store_1.Store])
+], StoreRouter);
 exports.StoreRouter = StoreRouter;
 exports.routerReducer = utils_1.combineReducers({
     router: function (state, action) {
@@ -6369,7 +6424,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subject_1 = __webpack_require__(8);
-var ObjectUnsubscribedError_1 = __webpack_require__(48);
+var ObjectUnsubscribedError_1 = __webpack_require__(47);
 /**
  * @class BehaviorSubject<T>
  */
@@ -6654,13 +6709,13 @@ var __extends = (this && this.__extends) || function (d, b) {
 var isArray_1 = __webpack_require__(15);
 var isPromise_1 = __webpack_require__(122);
 var PromiseObservable_1 = __webpack_require__(101);
-var IteratorObservable_1 = __webpack_require__(346);
+var IteratorObservable_1 = __webpack_require__(345);
 var ArrayObservable_1 = __webpack_require__(16);
-var ArrayLikeObservable_1 = __webpack_require__(335);
+var ArrayLikeObservable_1 = __webpack_require__(334);
 var iterator_1 = __webpack_require__(29);
 var Observable_1 = __webpack_require__(0);
 var observeOn_1 = __webpack_require__(79);
-var observable_1 = __webpack_require__(44);
+var observable_1 = __webpack_require__(43);
 var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -6812,7 +6867,7 @@ var PromiseObservable = (function (_super) {
      * @see {@link from}
      *
      * @param {Promise<T>} promise The promise to be converted.
-     * @param {Scheduler} [scheduler] An optional Scheduler to use for scheduling
+     * @param {Scheduler} [scheduler] An optional IScheduler to use for scheduling
      * the delivery of the resolved value (or the rejection).
      * @return {Observable<T>} An Observable which wraps the Promise.
      * @static true
@@ -7094,7 +7149,12 @@ var AjaxSubscriber = (function (_super) {
         }
         else {
             this.xhr = xhr;
-            // open XHR first
+            // set up the events before open XHR
+            // https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
+            // You need to add the event listeners before calling open() on the request.
+            // Otherwise the progress events will not fire.
+            this.setupEvents(xhr, request);
+            // open XHR
             var result = void 0;
             if (user) {
                 result = tryCatch_1.tryCatch(xhr.open).call(xhr, method, url, async, user, password);
@@ -7111,8 +7171,6 @@ var AjaxSubscriber = (function (_super) {
             xhr.responseType = request.responseType;
             // set headers
             this.setHeaders(xhr, headers);
-            // now set up the events
-            this.setupEvents(xhr, request);
             // finally send the request
             result = body ? tryCatch_1.tryCatch(xhr.send).call(xhr, body) : tryCatch_1.tryCatch(xhr.send).call(xhr);
             if (result === errorObject_1.errorObject) {
@@ -7165,14 +7223,19 @@ var AjaxSubscriber = (function (_super) {
         xhrTimeout.request = request;
         xhrTimeout.subscriber = this;
         xhrTimeout.progressSubscriber = progressSubscriber;
-        if (xhr.upload && 'withCredentials' in xhr && root_1.root.XDomainRequest) {
+        if (xhr.upload && 'withCredentials' in xhr) {
             if (progressSubscriber) {
                 var xhrProgress_1;
                 xhrProgress_1 = function (e) {
                     var progressSubscriber = xhrProgress_1.progressSubscriber;
                     progressSubscriber.next(e);
                 };
-                xhr.onprogress = xhrProgress_1;
+                if (root_1.root.XDomainRequest) {
+                    xhr.onprogress = xhrProgress_1;
+                }
+                else {
+                    xhr.upload.onprogress = xhrProgress_1;
+                }
                 xhrProgress_1.progressSubscriber = progressSubscriber;
             }
             var xhrError_1;
@@ -7318,8 +7381,38 @@ var errorObject_1 = __webpack_require__(9);
 /* tslint:disable:max-line-length */
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item.
+ *
  * If a comparator function is provided, then it will be called for each item to test for whether or not that value should be emitted.
+ *
  * If a comparator function is not provided, an equality check is used by default.
+ *
+ * @example <caption>A simple example with numbers</caption>
+ * Observable.of(1, 1, 2, 2, 2, 1, 1, 2, 3, 3, 4)
+ *   .distinctUntilChanged()
+ *   .subscribe(x => console.log(x)); // 1, 2, 1, 2, 3, 4
+ *
+ * @example <caption>An example using a compare function</caption>
+ * interface Person {
+ *    age: number,
+ *    name: string
+ * }
+ *
+ * Observable.of<Person>(
+ *     { age: 4, name: 'Foo'},
+ *     { age: 7, name: 'Bar'},
+ *     { age: 5, name: 'Foo'})
+ *     { age: 6, name: 'Foo'})
+ *     .distinctUntilChanged((p: Person, q: Person) => p.name === q.name)
+ *     .subscribe(x => console.log(x));
+ *
+ * // displays:
+ * // { age: 4, name: 'Foo' }
+ * // { age: 7, name: 'Bar' }
+ * // { age: 5, name: 'Foo' }
+ *
+ * @see {@link distinct}
+ * @see {@link distinctUntilKeyChanged}
+ *
  * @param {function} [compare] optional comparison function called to test if an item is distinct from the previous item in the source.
  * @return {Observable} an Observable that emits items from the source Observable with distinct values.
  * @method distinctUntilChanged
@@ -7598,7 +7691,7 @@ exports.FindValueSubscriber = FindValueSubscriber;
 "use strict";
 "use strict";
 var ArrayObservable_1 = __webpack_require__(16);
-var mergeAll_1 = __webpack_require__(43);
+var mergeAll_1 = __webpack_require__(42);
 var isScheduler_1 = __webpack_require__(20);
 /* tslint:disable:max-line-length */
 /**
@@ -7640,7 +7733,7 @@ var isScheduler_1 = __webpack_require__(20);
  * Observable. More than one input Observables may be given as argument.
  * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
  * Observables being subscribed to concurrently.
- * @param {Scheduler} [scheduler=null] The Scheduler to use for managing
+ * @param {Scheduler} [scheduler=null] The IScheduler to use for managing
  * concurrency of input Observables.
  * @return {Observable} an Observable that emits items that are the result of
  * every input Observable.
@@ -7708,7 +7801,7 @@ exports.merge = merge;
  * @param {...Observable} observables Input Observables to merge together.
  * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
  * Observables being subscribed to concurrently.
- * @param {Scheduler} [scheduler=null] The Scheduler to use for managing
+ * @param {Scheduler} [scheduler=null] The IScheduler to use for managing
  * concurrency of input Observables.
  * @return {Observable} an Observable that emits items that are the result of
  * every input Observable.
@@ -8464,8 +8557,16 @@ var VirtualAction = (function (_super) {
     }
     VirtualAction.prototype.schedule = function (state, delay) {
         if (delay === void 0) { delay = 0; }
-        return !this.id ?
-            _super.prototype.schedule.call(this, state, delay) : this.add(new VirtualAction(this.scheduler, this.work)).schedule(state, delay);
+        if (!this.id) {
+            return _super.prototype.schedule.call(this, state, delay);
+        }
+        // If an action is rescheduled, we save allocations by mutating its state,
+        // pushing it to the end of the scheduler queue, and recycling the action.
+        // But since the VirtualTimeScheduler is used for testing, VirtualActions
+        // must be immutable so they can be inspected later.
+        var action = new VirtualAction(this.scheduler, this.work);
+        this.add(action);
+        return action.schedule(state, delay);
     };
     VirtualAction.prototype.requestAsyncId = function (scheduler, id, delay) {
         if (delay === void 0) { delay = 0; }
@@ -8509,8 +8610,8 @@ exports.VirtualAction = VirtualAction;
 
 "use strict";
 "use strict";
-var AsapAction_1 = __webpack_require__(463);
-var AsapScheduler_1 = __webpack_require__(464);
+var AsapAction_1 = __webpack_require__(462);
+var AsapScheduler_1 = __webpack_require__(463);
 exports.asap = new AsapScheduler_1.AsapScheduler(AsapAction_1.AsapAction);
 //# sourceMappingURL=asap.js.map
 
@@ -8520,8 +8621,8 @@ exports.asap = new AsapScheduler_1.AsapScheduler(AsapAction_1.AsapAction);
 
 "use strict";
 "use strict";
-var QueueAction_1 = __webpack_require__(465);
-var QueueScheduler_1 = __webpack_require__(466);
+var QueueAction_1 = __webpack_require__(464);
+var QueueScheduler_1 = __webpack_require__(465);
 exports.queue = new QueueScheduler_1.QueueScheduler(QueueAction_1.QueueAction);
 //# sourceMappingURL=queue.js.map
 
@@ -8735,12 +8836,12 @@ var core_1 = __webpack_require__(1);
 var http_1 = __webpack_require__(127);
 var adv_http_service_1 = __webpack_require__(87);
 __export(__webpack_require__(87));
-var AdvHttpModule = (function () {
+var AdvHttpModule = AdvHttpModule_1 = (function () {
     function AdvHttpModule() {
     }
     AdvHttpModule.forRoot = function (config) {
         return {
-            ngModule: AdvHttpModule,
+            ngModule: AdvHttpModule_1,
             providers: [
                 {
                     provide: adv_http_service_1.ADV_HTTP_CONFIG,
@@ -8762,38 +8863,39 @@ var AdvHttpModule = (function () {
             ]
         };
     };
-    AdvHttpModule = __decorate([
-        core_1.NgModule({
-            imports: [http_1.HttpModule],
-            providers: [
-                {
-                    provide: adv_http_service_1.ADV_HTTP_CONFIG,
-                    useValue: {}
-                },
-                adv_http_service_1.AdvHttp,
-                {
-                    provide: adv_http_service_1.ErrorHandlerService,
-                    useClass: adv_http_service_1.ErrorHandlerService
-                },
-                {
-                    provide: adv_http_service_1.AdvHttp,
-                    useClass: adv_http_service_1.AdvHttp,
-                    // useFactory: (config: any, errorHandler: ErrorHandlerService, backend: XHRBackend, defaultOptions: RequestOptions) => {
-                    //   return new AdvHttp(config, errorHandler, backend, defaultOptions);
-                    // },
-                    deps: [adv_http_service_1.ADV_HTTP_CONFIG, adv_http_service_1.ErrorHandlerService, http_1.XHRBackend, http_1.RequestOptions]
-                },
-                {
-                    provide: adv_http_service_1.ADV_HTTP_CONFIG,
-                    useValue: {}
-                }
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AdvHttpModule);
     return AdvHttpModule;
 }());
+AdvHttpModule = AdvHttpModule_1 = __decorate([
+    core_1.NgModule({
+        imports: [http_1.HttpModule],
+        providers: [
+            {
+                provide: adv_http_service_1.ADV_HTTP_CONFIG,
+                useValue: {}
+            },
+            adv_http_service_1.AdvHttp,
+            {
+                provide: adv_http_service_1.ErrorHandlerService,
+                useClass: adv_http_service_1.ErrorHandlerService
+            },
+            {
+                provide: adv_http_service_1.AdvHttp,
+                useClass: adv_http_service_1.AdvHttp,
+                // useFactory: (config: any, errorHandler: ErrorHandlerService, backend: XHRBackend, defaultOptions: RequestOptions) => {
+                //   return new AdvHttp(config, errorHandler, backend, defaultOptions);
+                // },
+                deps: [adv_http_service_1.ADV_HTTP_CONFIG, adv_http_service_1.ErrorHandlerService, http_1.XHRBackend, http_1.RequestOptions]
+            },
+            {
+                provide: adv_http_service_1.ADV_HTTP_CONFIG,
+                useValue: {}
+            }
+        ]
+    }),
+    __metadata("design:paramtypes", [])
+], AdvHttpModule);
 exports.AdvHttpModule = AdvHttpModule;
+var AdvHttpModule_1;
 
 
 /***/ },
@@ -8819,16 +8921,16 @@ var l10n_module_1 = __webpack_require__(6);
 var VCLFormControlLabelModule = (function () {
     function VCLFormControlLabelModule() {
     }
-    VCLFormControlLabelModule = __decorate([
-        core_1.NgModule({
-            imports: [common_1.CommonModule, icon_module_1.VCLIconModule, l10n_module_1.L10nModule],
-            exports: [form_control_label_component_1.FormControlLabelComponent],
-            declarations: [form_control_label_component_1.FormControlLabelComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLFormControlLabelModule);
     return VCLFormControlLabelModule;
 }());
+VCLFormControlLabelModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, icon_module_1.VCLIconModule, l10n_module_1.L10nModule],
+        exports: [form_control_label_component_1.FormControlLabelComponent],
+        declarations: [form_control_label_component_1.FormControlLabelComponent]
+    }),
+    __metadata("design:paramtypes", [])
+], VCLFormControlLabelModule);
 exports.VCLFormControlLabelModule = VCLFormControlLabelModule;
 
 
@@ -8853,17 +8955,17 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-var utils_1 = __webpack_require__(41);
+var utils_1 = __webpack_require__(40);
 var core_1 = __webpack_require__(1);
-var store_1 = __webpack_require__(40);
-var actions_1 = __webpack_require__(39);
+var store_1 = __webpack_require__(39);
+var actions_1 = __webpack_require__(38);
 var effects_1 = __webpack_require__(73);
 var router_1 = __webpack_require__(95);
-__export(__webpack_require__(39));
-__export(__webpack_require__(41));
+__export(__webpack_require__(38));
+__export(__webpack_require__(40));
 __export(__webpack_require__(73));
 __export(__webpack_require__(94));
-__export(__webpack_require__(40));
+__export(__webpack_require__(39));
 __export(__webpack_require__(95));
 exports.STORE_FORROOT_GUARD = new core_1.OpaqueToken('STORE_FORROOT_GUARD');
 function provideForRootGuard(store) {
@@ -8899,7 +9001,7 @@ function createReducer(reducers) {
     }
     return reducer;
 }
-var StoreModule = (function () {
+var StoreModule = StoreModule_1 = (function () {
     function StoreModule(guard) {
     }
     StoreModule.forRoot = function (config) {
@@ -8909,7 +9011,7 @@ var StoreModule = (function () {
             initialReducer = utils_1.reduceReducers(initialReducer, router_1.routerReducer);
         }
         return {
-            ngModule: StoreModule,
+            ngModule: StoreModule_1,
             providers: [
                 {
                     provide: exports.STORE_FORROOT_GUARD,
@@ -8948,7 +9050,7 @@ var StoreModule = (function () {
     StoreModule.forChild = function (config) {
         var initialReducer = createReducer(config.reducers);
         return {
-            ngModule: StoreModule,
+            ngModule: StoreModule_1,
             providers: [
                 {
                     provide: store_1.STORE_INITIAL_REDUCERS,
@@ -8964,30 +9066,30 @@ var StoreModule = (function () {
             }))
         };
     };
-    StoreModule = __decorate([
-        core_1.NgModule({
-            providers: [
-                actions_1.StoreActions,
-                store_1.Store,
-                effects_1.Effects,
-                {
-                    provide: store_1.STORE_INITIAL_STATE,
-                    useValue: {}
-                },
-                {
-                    provide: store_1.STORE_INITIAL_REDUCERS,
-                    useValue: function (appState) { return appState; },
-                    multi: true
-                }
-            ]
-        }),
-        __param(0, core_1.Optional()),
-        __param(0, core_1.Inject(exports.STORE_FORROOT_GUARD)), 
-        __metadata('design:paramtypes', [Object])
-    ], StoreModule);
     return StoreModule;
 }());
+StoreModule = StoreModule_1 = __decorate([
+    core_1.NgModule({
+        providers: [
+            actions_1.StoreActions,
+            store_1.Store,
+            effects_1.Effects,
+            {
+                provide: store_1.STORE_INITIAL_STATE,
+                useValue: {}
+            },
+            {
+                provide: store_1.STORE_INITIAL_REDUCERS,
+                useValue: function (appState) { return appState; },
+                multi: true
+            }
+        ]
+    }),
+    __param(0, core_1.Optional()), __param(0, core_1.Inject(exports.STORE_FORROOT_GUARD)),
+    __metadata("design:paramtypes", [Object])
+], StoreModule);
 exports.StoreModule = StoreModule;
+var StoreModule_1;
 
 
 /***/ },
@@ -9014,11 +9116,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var Observable_1 = __webpack_require__(13);
 var core_1 = __webpack_require__(1);
 var button_component_1 = __webpack_require__(88);
+var SelectionMode;
 (function (SelectionMode) {
     SelectionMode[SelectionMode["Single"] = 0] = "Single";
     SelectionMode[SelectionMode["Multiple"] = 1] = "Multiple";
-})(exports.SelectionMode || (exports.SelectionMode = {}));
-var SelectionMode = exports.SelectionMode;
+})(SelectionMode = exports.SelectionMode || (exports.SelectionMode = {}));
 var ButtonGroupComponent = (function () {
     function ButtonGroupComponent() {
         this.subscriptions = [];
@@ -9122,45 +9224,46 @@ var ButtonGroupComponent = (function () {
         this.subscriptions.forEach(function (s) { return s.unsubscribe(); });
         this.subscriptions = [];
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], ButtonGroupComponent.prototype, "selectionMode", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String), 
-        __metadata('design:paramtypes', [String])
-    ], ButtonGroupComponent.prototype, "mode", null);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], ButtonGroupComponent.prototype, "selectedIndex", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], ButtonGroupComponent.prototype, "selectedIndexChange", null);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', (typeof (_a = typeof Observable_1.Observable !== 'undefined' && Observable_1.Observable) === 'function' && _a) || Object)
-    ], ButtonGroupComponent.prototype, "change", null);
-    __decorate([
-        core_1.ContentChildren(button_component_1.ButtonComponent), 
-        __metadata('design:type', (typeof (_b = typeof core_1.QueryList !== 'undefined' && core_1.QueryList) === 'function' && _b) || Object)
-    ], ButtonGroupComponent.prototype, "buttons", void 0);
-    ButtonGroupComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-button-group',
-            host: {
-                '[class.vclButtonGroup]': 'true',
-            },
-            template: "<ng-content></ng-content>",
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ButtonGroupComponent);
     return ButtonGroupComponent;
-    var _a, _b;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], ButtonGroupComponent.prototype, "selectionMode", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String),
+    __metadata("design:paramtypes", [String])
+], ButtonGroupComponent.prototype, "mode", null);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], ButtonGroupComponent.prototype, "selectedIndex", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], ButtonGroupComponent.prototype, "selectedIndexChange", null);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], ButtonGroupComponent.prototype, "change", null);
+__decorate([
+    core_1.ContentChildren(button_component_1.ButtonComponent),
+    __metadata("design:type", core_1.QueryList)
+], ButtonGroupComponent.prototype, "buttons", void 0);
+ButtonGroupComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-button-group',
+        host: {
+            '[class.vclButtonGroup]': 'true',
+        },
+        template: "<ng-content></ng-content>",
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+    }),
+    __metadata("design:paramtypes", [])
+], ButtonGroupComponent);
 exports.ButtonGroupComponent = ButtonGroupComponent;
 
 
@@ -9284,75 +9387,78 @@ var CheckboxComponent = (function () {
     CheckboxComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], CheckboxComponent.prototype, "checkedIcon", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], CheckboxComponent.prototype, "uncheckedIcon", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], CheckboxComponent.prototype, "disabled", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], CheckboxComponent.prototype, "labelPosition", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], CheckboxComponent.prototype, "tabindex", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], CheckboxComponent.prototype, "checked", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', (typeof (_a = typeof Observable_1.Observable !== 'undefined' && Observable_1.Observable) === 'function' && _a) || Object)
-    ], CheckboxComponent.prototype, "checkedChange", null);
-    __decorate([
-        core_1.HostBinding('class.vclDisabled'), 
-        __metadata('design:type', Object)
-    ], CheckboxComponent.prototype, "clsVclDisabled", null);
-    __decorate([
-        core_1.HostBinding('attr.aria-disabled'), 
-        __metadata('design:type', Object)
-    ], CheckboxComponent.prototype, "attrAriaDisabled", null);
-    __decorate([
-        core_1.HostBinding('attr.checked'), 
-        __metadata('design:type', Object)
-    ], CheckboxComponent.prototype, "attrChecked", null);
-    __decorate([
-        core_1.HostListener('keyup', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], CheckboxComponent.prototype, "onKeyup", null);
-    __decorate([
-        core_1.HostListener('click', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], CheckboxComponent.prototype, "onClick", null);
-    CheckboxComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-checkbox',
-            template: __webpack_require__(177),
-            host: {
-                '[attr.role]': '"checkbox"',
-                '[class.vclCheckbox]': 'true',
-                '[class.vclScale130p]': 'true',
-            },
-            providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush
-        }), 
-        __metadata('design:paramtypes', [(typeof (_b = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _b) || Object])
-    ], CheckboxComponent);
     return CheckboxComponent;
-    var _a, _b;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], CheckboxComponent.prototype, "checkedIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], CheckboxComponent.prototype, "uncheckedIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], CheckboxComponent.prototype, "disabled", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], CheckboxComponent.prototype, "labelPosition", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], CheckboxComponent.prototype, "tabindex", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], CheckboxComponent.prototype, "checked", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], CheckboxComponent.prototype, "checkedChange", null);
+__decorate([
+    core_1.HostBinding('class.vclDisabled'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], CheckboxComponent.prototype, "clsVclDisabled", null);
+__decorate([
+    core_1.HostBinding('attr.aria-disabled'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], CheckboxComponent.prototype, "attrAriaDisabled", null);
+__decorate([
+    core_1.HostBinding('attr.checked'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], CheckboxComponent.prototype, "attrChecked", null);
+__decorate([
+    core_1.HostListener('keyup', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], CheckboxComponent.prototype, "onKeyup", null);
+__decorate([
+    core_1.HostListener('click', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], CheckboxComponent.prototype, "onClick", null);
+CheckboxComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-checkbox',
+        template: __webpack_require__(176),
+        host: {
+            '[attr.role]': '"checkbox"',
+            '[class.vclCheckbox]': 'true',
+            '[class.vclScale130p]': 'true',
+        },
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], CheckboxComponent);
 exports.CheckboxComponent = CheckboxComponent;
 
 
@@ -9552,31 +9658,31 @@ var PickDate = (function () {
         console.dir(this.date);
         return '';
     };
-    PickDate.monthNames = [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December'
-    ];
-    PickDate.weekDays = [
-        'Mo',
-        'Tu',
-        'We',
-        'Th',
-        'Fr',
-        'Sa',
-        'Su'
-    ];
     return PickDate;
 }());
+PickDate.monthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+];
+PickDate.weekDays = [
+    'Mo',
+    'Tu',
+    'We',
+    'Th',
+    'Fr',
+    'Sa',
+    'Su'
+];
 exports.PickDate = PickDate;
 function PickDateCreate(date) {
     if (date === void 0) { date = new Date(); }
@@ -9728,83 +9834,83 @@ var DatePickerComponent = (function () {
     DatePickerComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    __decorate([
-        core_1.Input('closeOnSelect'), 
-        __metadata('design:type', Boolean)
-    ], DatePickerComponent.prototype, "closeOnSelect", void 0);
-    __decorate([
-        core_1.Input('highlightToday'), 
-        __metadata('design:type', Boolean)
-    ], DatePickerComponent.prototype, "highlightToday", void 0);
-    __decorate([
-        core_1.Input('highlightSelected'), 
-        __metadata('design:type', Boolean)
-    ], DatePickerComponent.prototype, "highlightSelected", void 0);
-    __decorate([
-        core_1.Input('displayWeekNumbers'), 
-        __metadata('design:type', Boolean)
-    ], DatePickerComponent.prototype, "displayWeekNumbers", void 0);
-    __decorate([
-        core_1.Input('displayWeekdays'), 
-        __metadata('design:type', Boolean)
-    ], DatePickerComponent.prototype, "displayWeekdays", void 0);
-    __decorate([
-        core_1.Input('prevYearBtnIcon'), 
-        __metadata('design:type', String)
-    ], DatePickerComponent.prototype, "prevYearBtnIcon", void 0);
-    __decorate([
-        core_1.Input('nextYearBtnIcon'), 
-        __metadata('design:type', String)
-    ], DatePickerComponent.prototype, "nextYearBtnIcon", void 0);
-    __decorate([
-        core_1.Input('displayJumpToday'), 
-        __metadata('design:type', Boolean)
-    ], DatePickerComponent.prototype, "displayJumpToday", void 0);
-    __decorate([
-        core_1.Input('displayJumpSelected'), 
-        __metadata('design:type', Boolean)
-    ], DatePickerComponent.prototype, "displayJumpSelected", void 0);
-    __decorate([
-        core_1.Input('selectedDate'), 
-        __metadata('design:type', Object)
-    ], DatePickerComponent.prototype, "selectedDate", void 0);
-    __decorate([
-        core_1.Input('selectRange'), 
-        __metadata('design:type', Boolean)
-    ], DatePickerComponent.prototype, "selectRange", void 0);
-    __decorate([
-        core_1.Input('selectedRangeEnd'), 
-        __metadata('design:type', Object)
-    ], DatePickerComponent.prototype, "selectedRangeEnd", void 0);
-    __decorate([
-        core_1.Input('maxRangeLength'), 
-        __metadata('design:type', Number)
-    ], DatePickerComponent.prototype, "maxRangeLength", void 0);
-    __decorate([
-        core_1.Input('minDate'), 
-        __metadata('design:type', Object)
-    ], DatePickerComponent.prototype, "minDate", void 0);
-    __decorate([
-        core_1.Input('maxDate'), 
-        __metadata('design:type', Object)
-    ], DatePickerComponent.prototype, "maxDate", void 0);
-    DatePickerComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-date-picker',
-            template: __webpack_require__(178),
-            styles: [
-                ".hidden{display:none;}\n     .date-picker-pointer{cursor: pointer;}\n    "
-            ],
-            providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-            host: {
-                '[class.vclDatePicker]': 'true'
-            }
-        }), 
-        __metadata('design:paramtypes', [])
-    ], DatePickerComponent);
     return DatePickerComponent;
 }());
+__decorate([
+    core_1.Input('closeOnSelect'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "closeOnSelect", void 0);
+__decorate([
+    core_1.Input('highlightToday'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "highlightToday", void 0);
+__decorate([
+    core_1.Input('highlightSelected'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "highlightSelected", void 0);
+__decorate([
+    core_1.Input('displayWeekNumbers'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "displayWeekNumbers", void 0);
+__decorate([
+    core_1.Input('displayWeekdays'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "displayWeekdays", void 0);
+__decorate([
+    core_1.Input('prevYearBtnIcon'),
+    __metadata("design:type", String)
+], DatePickerComponent.prototype, "prevYearBtnIcon", void 0);
+__decorate([
+    core_1.Input('nextYearBtnIcon'),
+    __metadata("design:type", String)
+], DatePickerComponent.prototype, "nextYearBtnIcon", void 0);
+__decorate([
+    core_1.Input('displayJumpToday'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "displayJumpToday", void 0);
+__decorate([
+    core_1.Input('displayJumpSelected'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "displayJumpSelected", void 0);
+__decorate([
+    core_1.Input('selectedDate'),
+    __metadata("design:type", Date)
+], DatePickerComponent.prototype, "selectedDate", void 0);
+__decorate([
+    core_1.Input('selectRange'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "selectRange", void 0);
+__decorate([
+    core_1.Input('selectedRangeEnd'),
+    __metadata("design:type", Date)
+], DatePickerComponent.prototype, "selectedRangeEnd", void 0);
+__decorate([
+    core_1.Input('maxRangeLength'),
+    __metadata("design:type", Number)
+], DatePickerComponent.prototype, "maxRangeLength", void 0);
+__decorate([
+    core_1.Input('minDate'),
+    __metadata("design:type", Date)
+], DatePickerComponent.prototype, "minDate", void 0);
+__decorate([
+    core_1.Input('maxDate'),
+    __metadata("design:type", Date)
+], DatePickerComponent.prototype, "maxDate", void 0);
+DatePickerComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-date-picker',
+        template: __webpack_require__(177),
+        styles: [
+            ".hidden{display:none;}\n     .date-picker-pointer{cursor: pointer;}\n    "
+        ],
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+        host: {
+            '[class.vclDatePicker]': 'true'
+        }
+    }),
+    __metadata("design:paramtypes", [])
+], DatePickerComponent);
 exports.DatePickerComponent = DatePickerComponent;
 
 
@@ -9909,51 +10015,51 @@ var DropdownComponent = (function () {
     DropdownComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    DropdownComponent.TAG = 'DropdownComponent';
-    __decorate([
-        core_1.Output('change'), 
-        __metadata('design:type', Object)
-    ], DropdownComponent.prototype, "change$", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Array)
-    ], DropdownComponent.prototype, "items", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], DropdownComponent.prototype, "tabindex", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], DropdownComponent.prototype, "expanded", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], DropdownComponent.prototype, "maxSelectableItems", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], DropdownComponent.prototype, "minSelectableItems", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], DropdownComponent.prototype, "ariaRole", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object), 
-        __metadata('design:paramtypes', [Object])
-    ], DropdownComponent.prototype, "value", null);
-    DropdownComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-dropdown',
-            template: __webpack_require__(179),
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-            providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], DropdownComponent);
     return DropdownComponent;
 }());
+DropdownComponent.TAG = 'DropdownComponent';
+__decorate([
+    core_1.Output('change'),
+    __metadata("design:type", Object)
+], DropdownComponent.prototype, "change$", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Array)
+], DropdownComponent.prototype, "items", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], DropdownComponent.prototype, "tabindex", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], DropdownComponent.prototype, "expanded", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], DropdownComponent.prototype, "maxSelectableItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], DropdownComponent.prototype, "minSelectableItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], DropdownComponent.prototype, "ariaRole", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [Object])
+], DropdownComponent.prototype, "value", null);
+DropdownComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-dropdown',
+        template: __webpack_require__(178),
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+    }),
+    __metadata("design:paramtypes", [])
+], DropdownComponent);
 exports.DropdownComponent = DropdownComponent;
 
 
@@ -10005,33 +10111,33 @@ var FlipSwitchComponent = (function () {
     FlipSwitchComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    __decorate([
-        core_1.Input('onLabel'), 
-        __metadata('design:type', String)
-    ], FlipSwitchComponent.prototype, "onLabel", void 0);
-    __decorate([
-        core_1.Input('offLabel'), 
-        __metadata('design:type', String)
-    ], FlipSwitchComponent.prototype, "offLabel", void 0);
-    __decorate([
-        core_1.Input('value'), 
-        __metadata('design:type', Boolean)
-    ], FlipSwitchComponent.prototype, "value", void 0);
-    __decorate([
-        core_1.Output('change'), 
-        __metadata('design:type', Object)
-    ], FlipSwitchComponent.prototype, "change$", void 0);
-    FlipSwitchComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-flip-switch',
-            template: __webpack_require__(180),
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-            providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], FlipSwitchComponent);
     return FlipSwitchComponent;
 }());
+__decorate([
+    core_1.Input('onLabel'),
+    __metadata("design:type", String)
+], FlipSwitchComponent.prototype, "onLabel", void 0);
+__decorate([
+    core_1.Input('offLabel'),
+    __metadata("design:type", String)
+], FlipSwitchComponent.prototype, "offLabel", void 0);
+__decorate([
+    core_1.Input('value'),
+    __metadata("design:type", Boolean)
+], FlipSwitchComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Output('change'),
+    __metadata("design:type", Object)
+], FlipSwitchComponent.prototype, "change$", void 0);
+FlipSwitchComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-flip-switch',
+        template: __webpack_require__(179),
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+    }),
+    __metadata("design:paramtypes", [])
+], FlipSwitchComponent);
 exports.FlipSwitchComponent = FlipSwitchComponent;
 
 
@@ -10062,53 +10168,53 @@ var FormControlLabelComponent = (function () {
         // Whether an indicator that an input in to the labelled control is required
         this.required = false;
     }
-    __decorate([
-        core_1.Input(),
-        core_1.HostBinding('class.vclDisabled'), 
-        __metadata('design:type', Boolean)
-    ], FormControlLabelComponent.prototype, "disabled", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], FormControlLabelComponent.prototype, "requiredIndicatorCharacter", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], FormControlLabelComponent.prototype, "label", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], FormControlLabelComponent.prototype, "subLabel", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], FormControlLabelComponent.prototype, "prepend", void 0);
-    __decorate([
-        core_1.Input(),
-        core_1.HostBinding('class.vclFormControlLabelWrapping'), 
-        __metadata('design:type', Boolean)
-    ], FormControlLabelComponent.prototype, "wrapping", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], FormControlLabelComponent.prototype, "required", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], FormControlLabelComponent.prototype, "requiredIndLabel", void 0);
-    FormControlLabelComponent = __decorate([
-        core_1.Component({
-            selector: '[vcl-form-control-label]',
-            template: __webpack_require__(181),
-            host: {
-                '[class.vclFormControlLabel]': 'true',
-            },
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush
-        }), 
-        __metadata('design:paramtypes', [])
-    ], FormControlLabelComponent);
     return FormControlLabelComponent;
 }());
+__decorate([
+    core_1.Input(),
+    core_1.HostBinding('class.vclDisabled'),
+    __metadata("design:type", Boolean)
+], FormControlLabelComponent.prototype, "disabled", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], FormControlLabelComponent.prototype, "requiredIndicatorCharacter", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], FormControlLabelComponent.prototype, "label", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], FormControlLabelComponent.prototype, "subLabel", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], FormControlLabelComponent.prototype, "prepend", void 0);
+__decorate([
+    core_1.Input(),
+    core_1.HostBinding('class.vclFormControlLabelWrapping'),
+    __metadata("design:type", Boolean)
+], FormControlLabelComponent.prototype, "wrapping", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], FormControlLabelComponent.prototype, "required", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], FormControlLabelComponent.prototype, "requiredIndLabel", void 0);
+FormControlLabelComponent = __decorate([
+    core_1.Component({
+        selector: '[vcl-form-control-label]',
+        template: __webpack_require__(180),
+        host: {
+            '[class.vclFormControlLabel]': 'true',
+        },
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush
+    }),
+    __metadata("design:paramtypes", [])
+], FormControlLabelComponent);
 exports.FormControlLabelComponent = FormControlLabelComponent;
 
 
@@ -10139,26 +10245,26 @@ var FormComponent = (function () {
     FormComponent.prototype.ngSubmit = function (form) {
         this.valueChange.emit(form);
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], FormComponent.prototype, "layout", void 0);
-    __decorate([
-        core_1.Output('ngSubmit'), 
-        __metadata('design:type', Object)
-    ], FormComponent.prototype, "valueChange", void 0);
-    FormComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-form',
-            template: __webpack_require__(182),
-            host: {
-                '[class.vclForm]': 'true',
-            }
-        }), 
-        __metadata('design:paramtypes', [])
-    ], FormComponent);
     return FormComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], FormComponent.prototype, "layout", void 0);
+__decorate([
+    core_1.Output('ngSubmit'),
+    __metadata("design:type", Object)
+], FormComponent.prototype, "valueChange", void 0);
+FormComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-form',
+        template: __webpack_require__(181),
+        host: {
+            '[class.vclForm]': 'true',
+        }
+    }),
+    __metadata("design:paramtypes", [])
+], FormComponent);
 exports.FormComponent = FormComponent;
 
 
@@ -10182,45 +10288,44 @@ var IcogramComponent = (function () {
     function IcogramComponent(elRef) {
         this.elRef = elRef;
     }
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], IcogramComponent.prototype, "label", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], IcogramComponent.prototype, "flexLabel", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], IcogramComponent.prototype, "prepIcon", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], IcogramComponent.prototype, "appIcon", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], IcogramComponent.prototype, "prepIconSrc", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], IcogramComponent.prototype, "appIconSrc", void 0);
-    IcogramComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-icogram, [vcl-icogram]',
-            host: {
-                '[class.vclIcogram]': 'true',
-                '[attr.role]': 'img'
-            },
-            template: __webpack_require__(183),
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object])
-    ], IcogramComponent);
     return IcogramComponent;
-    var _a;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], IcogramComponent.prototype, "label", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], IcogramComponent.prototype, "flexLabel", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], IcogramComponent.prototype, "prepIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], IcogramComponent.prototype, "appIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], IcogramComponent.prototype, "prepIconSrc", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], IcogramComponent.prototype, "appIconSrc", void 0);
+IcogramComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-icogram, [vcl-icogram]',
+        host: {
+            '[class.vclIcogram]': 'true',
+            '[attr.role]': 'img'
+        },
+        template: __webpack_require__(182),
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], IcogramComponent);
 exports.IcogramComponent = IcogramComponent;
 
 
@@ -10261,54 +10366,55 @@ var IconComponent = (function () {
         enumerable: true,
         configurable: true
     });
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], IconComponent.prototype, "src", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], IconComponent.prototype, "svguse", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], IconComponent.prototype, "iconClass", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], IconComponent.prototype, "icon", void 0);
-    __decorate([
-        core_1.HostBinding('attr.aria-label'),
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], IconComponent.prototype, "label", void 0);
-    __decorate([
-        core_1.HostBinding('attr.role'),
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], IconComponent.prototype, "ariaRole", void 0);
-    __decorate([
-        core_1.HostBinding('class'), 
-        __metadata('design:type', String)
-    ], IconComponent.prototype, "mergedIconClass", null);
-    __decorate([
-        core_1.HostBinding('attr.aria-hidden'), 
-        __metadata('design:type', Object)
-    ], IconComponent.prototype, "isAriaHidden", null);
-    IconComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-icon, [vcl-icon]',
-            template: __webpack_require__(184),
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-            host: {
-                '[class.vclIcon]': 'true',
-            },
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof icon_service_1.IconService !== 'undefined' && icon_service_1.IconService) === 'function' && _a) || Object])
-    ], IconComponent);
     return IconComponent;
-    var _a;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], IconComponent.prototype, "src", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], IconComponent.prototype, "svguse", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], IconComponent.prototype, "iconClass", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], IconComponent.prototype, "icon", void 0);
+__decorate([
+    core_1.HostBinding('attr.aria-label'),
+    core_1.Input(),
+    __metadata("design:type", String)
+], IconComponent.prototype, "label", void 0);
+__decorate([
+    core_1.HostBinding('attr.role'),
+    core_1.Input(),
+    __metadata("design:type", String)
+], IconComponent.prototype, "ariaRole", void 0);
+__decorate([
+    core_1.HostBinding('class'),
+    __metadata("design:type", String),
+    __metadata("design:paramtypes", [])
+], IconComponent.prototype, "mergedIconClass", null);
+__decorate([
+    core_1.HostBinding('attr.aria-hidden'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], IconComponent.prototype, "isAriaHidden", null);
+IconComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-icon, [vcl-icon]',
+        template: __webpack_require__(183),
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+        host: {
+            '[class.vclIcon]': 'true',
+        },
+    }),
+    __metadata("design:paramtypes", [icon_service_1.IconService])
+], IconComponent);
 exports.IconComponent = IconComponent;
 
 
@@ -10373,27 +10479,26 @@ var InputControlGroup = (function () {
     InputControlGroup.prototype.ucfirst = function (str) {
         return str.charAt(0).toUpperCase() + str.slice(1);
     };
-    __decorate([
-        core_1.Input('type'), 
-        __metadata('design:type', Object)
-    ], InputControlGroup.prototype, "type", void 0);
-    __decorate([
-        core_1.Input('label'), 
-        __metadata('design:type', String)
-    ], InputControlGroup.prototype, "label", void 0);
-    InputControlGroup = __decorate([
-        core_1.Component({
-            selector: 'vcl-input-control-group',
-            host: {
-                '[class.vclInputControlGroup]': 'true',
-            },
-            template: __webpack_require__(185)
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object])
-    ], InputControlGroup);
     return InputControlGroup;
-    var _a;
 }());
+__decorate([
+    core_1.Input('type'),
+    __metadata("design:type", String)
+], InputControlGroup.prototype, "type", void 0);
+__decorate([
+    core_1.Input('label'),
+    __metadata("design:type", String)
+], InputControlGroup.prototype, "label", void 0);
+InputControlGroup = __decorate([
+    core_1.Component({
+        selector: 'vcl-input-control-group',
+        host: {
+            '[class.vclInputControlGroup]': 'true',
+        },
+        template: __webpack_require__(184)
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], InputControlGroup);
 exports.InputControlGroup = InputControlGroup;
 
 
@@ -10449,46 +10554,46 @@ var InputDirective = (function () {
             }
         }
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], InputDirective.prototype, "valueType", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], InputDirective.prototype, "typedValue", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', (typeof (_a = typeof Observable_1.Observable !== 'undefined' && Observable_1.Observable) === 'function' && _a) || Object)
-    ], InputDirective.prototype, "typedValueChange", null);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], InputDirective.prototype, "selectAllOnFocus", void 0);
-    __decorate([
-        core_1.HostListener('input', ['$event.target.value']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], InputDirective.prototype, "onChange", null);
-    __decorate([
-        core_1.HostListener('focus', ['$event.target.value']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], InputDirective.prototype, "onFocus", null);
-    InputDirective = __decorate([
-        core_1.Directive({
-            selector: '[vcl-input]',
-            host: {
-                '[class.vclInput]': 'true',
-            },
-        }), 
-        __metadata('design:paramtypes', [(typeof (_b = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _b) || Object])
-    ], InputDirective);
     return InputDirective;
-    var _a, _b;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], InputDirective.prototype, "valueType", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], InputDirective.prototype, "typedValue", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], InputDirective.prototype, "typedValueChange", null);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], InputDirective.prototype, "selectAllOnFocus", void 0);
+__decorate([
+    core_1.HostListener('input', ['$event.target.value']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], InputDirective.prototype, "onChange", null);
+__decorate([
+    core_1.HostListener('focus', ['$event.target.value']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], InputDirective.prototype, "onFocus", null);
+InputDirective = __decorate([
+    core_1.Directive({
+        selector: '[vcl-input]',
+        host: {
+            '[class.vclInput]': 'true',
+        },
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], InputDirective);
 exports.InputDirective = InputDirective;
 
 
@@ -10509,7 +10614,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var forms_1 = __webpack_require__(10);
-var JSONEditor = __webpack_require__(172);
+var JSONEditor = __webpack_require__(171);
 /**
  * The JSON editor needs styling and some graphics
  * We read the raw css and svg files and replace any file reference to the svg with
@@ -10517,8 +10622,8 @@ var JSONEditor = __webpack_require__(172);
  *
  * The css must be added as a style with  ViewEncapsulation set to None
  */
-var JSONEditorSVG = __webpack_require__(174);
-var JSONEditorCSS = __webpack_require__(175)
+var JSONEditorSVG = __webpack_require__(173);
+var JSONEditorCSS = __webpack_require__(174)
     .replace(/img\/jsoneditor-icons\.svg/g, 'data:image/svg+xml;base64,' + btoa(JSONEditorSVG));
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
@@ -10563,39 +10668,39 @@ var JsonEditorComponent = (function () {
     JsonEditorComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    __decorate([
-        core_1.ViewChild('el'), 
-        __metadata('design:type', Object)
-    ], JsonEditorComponent.prototype, "el", void 0);
-    __decorate([
-        core_1.Input('mode'), 
-        __metadata('design:type', Object)
-    ], JsonEditorComponent.prototype, "mode", void 0);
-    __decorate([
-        core_1.Input('value'), 
-        __metadata('design:type', Object)
-    ], JsonEditorComponent.prototype, "value", void 0);
-    __decorate([
-        core_1.Input('options'), 
-        __metadata('design:type', Object)
-    ], JsonEditorComponent.prototype, "options", void 0);
-    __decorate([
-        core_1.Input('height'), 
-        __metadata('design:type', String)
-    ], JsonEditorComponent.prototype, "height", void 0);
-    JsonEditorComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-json-editor',
-            styles: [JSONEditorCSS],
-            encapsulation: core_1.ViewEncapsulation.None,
-            template: __webpack_require__(186),
-            providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush
-        }), 
-        __metadata('design:paramtypes', [])
-    ], JsonEditorComponent);
     return JsonEditorComponent;
 }());
+__decorate([
+    core_1.ViewChild('el'),
+    __metadata("design:type", Object)
+], JsonEditorComponent.prototype, "el", void 0);
+__decorate([
+    core_1.Input('mode'),
+    __metadata("design:type", String)
+], JsonEditorComponent.prototype, "mode", void 0);
+__decorate([
+    core_1.Input('value'),
+    __metadata("design:type", Object)
+], JsonEditorComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Input('options'),
+    __metadata("design:type", Object)
+], JsonEditorComponent.prototype, "options", void 0);
+__decorate([
+    core_1.Input('height'),
+    __metadata("design:type", String)
+], JsonEditorComponent.prototype, "height", void 0);
+JsonEditorComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-json-editor',
+        styles: [JSONEditorCSS],
+        encapsulation: core_1.ViewEncapsulation.None,
+        template: __webpack_require__(185),
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush
+    }),
+    __metadata("design:paramtypes", [])
+], JsonEditorComponent);
 exports.JsonEditorComponent = JsonEditorComponent;
 
 
@@ -10616,8 +10721,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var forms_1 = __webpack_require__(10);
-var rxjs_1 = __webpack_require__(206);
-var Validator = __webpack_require__(481).Validator; // TODO use import { Validator } from 'jsonschema'; when typings available
+var rxjs_1 = __webpack_require__(205);
+var Validator = __webpack_require__(480).Validator; // TODO use import { Validator } from 'jsonschema'; when typings available
 var VALIDATOR;
 var JssFormObjectComponent = (function () {
     function JssFormObjectComponent() {
@@ -10724,32 +10829,31 @@ var JssFormObjectComponent = (function () {
             });
         }
     };
-    __decorate([
-        core_1.Input('schema'), 
-        __metadata('design:type', Object)
-    ], JssFormObjectComponent.prototype, "schema", void 0);
-    __decorate([
-        core_1.Input('parentPath'), 
-        __metadata('design:type', String)
-    ], JssFormObjectComponent.prototype, "parentPath", void 0);
-    __decorate([
-        core_1.Input('formGroup'), 
-        __metadata('design:type', (typeof (_a = typeof forms_1.FormGroup !== 'undefined' && forms_1.FormGroup) === 'function' && _a) || Object)
-    ], JssFormObjectComponent.prototype, "formGroup", void 0);
-    __decorate([
-        core_1.Input('error'), 
-        __metadata('design:type', Object)
-    ], JssFormObjectComponent.prototype, "error", void 0);
-    JssFormObjectComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-jss-form-object',
-            template: __webpack_require__(187),
-        }), 
-        __metadata('design:paramtypes', [])
-    ], JssFormObjectComponent);
     return JssFormObjectComponent;
-    var _a;
 }());
+__decorate([
+    core_1.Input('schema'),
+    __metadata("design:type", Object)
+], JssFormObjectComponent.prototype, "schema", void 0);
+__decorate([
+    core_1.Input('parentPath'),
+    __metadata("design:type", String)
+], JssFormObjectComponent.prototype, "parentPath", void 0);
+__decorate([
+    core_1.Input('formGroup'),
+    __metadata("design:type", forms_1.FormGroup)
+], JssFormObjectComponent.prototype, "formGroup", void 0);
+__decorate([
+    core_1.Input('error'),
+    __metadata("design:type", Object)
+], JssFormObjectComponent.prototype, "error", void 0);
+JssFormObjectComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-jss-form-object',
+        template: __webpack_require__(186),
+    }),
+    __metadata("design:paramtypes", [])
+], JssFormObjectComponent);
 exports.JssFormObjectComponent = JssFormObjectComponent;
 var JssFormComponent = (function () {
     function JssFormComponent(fb) {
@@ -10805,28 +10909,27 @@ var JssFormComponent = (function () {
     };
     JssFormComponent.prototype.ngAfterViewInit = function () {
     };
-    __decorate([
-        core_1.Input('schema'), 
-        __metadata('design:type', Object)
-    ], JssFormComponent.prototype, "schema", void 0);
-    __decorate([
-        core_1.Input('value'), 
-        __metadata('design:type', Object)
-    ], JssFormComponent.prototype, "value", void 0);
-    __decorate([
-        core_1.Output('error'), 
-        __metadata('design:type', Object)
-    ], JssFormComponent.prototype, "error", void 0);
-    JssFormComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-jss-form',
-            template: __webpack_require__(188)
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof forms_1.FormBuilder !== 'undefined' && forms_1.FormBuilder) === 'function' && _a) || Object])
-    ], JssFormComponent);
     return JssFormComponent;
-    var _a;
 }());
+__decorate([
+    core_1.Input('schema'),
+    __metadata("design:type", Object)
+], JssFormComponent.prototype, "schema", void 0);
+__decorate([
+    core_1.Input('value'),
+    __metadata("design:type", Object)
+], JssFormComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Output('error'),
+    __metadata("design:type", Object)
+], JssFormComponent.prototype, "error", void 0);
+JssFormComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-jss-form',
+        template: __webpack_require__(187)
+    }),
+    __metadata("design:paramtypes", [forms_1.FormBuilder])
+], JssFormComponent);
 exports.JssFormComponent = JssFormComponent;
 
 
@@ -10864,43 +10967,43 @@ var LabelComponent = (function () {
     LabelComponent.prototype.ucfirst = function (str) {
         return str.charAt(0).toUpperCase() + str.slice(1);
     };
-    __decorate([
-        core_1.Input('label'), 
-        __metadata('design:type', String)
-    ], LabelComponent.prototype, "label", void 0);
-    __decorate([
-        core_1.Input('subLabel'), 
-        __metadata('design:type', String)
-    ], LabelComponent.prototype, "subLabel", void 0);
-    __decorate([
-        core_1.Input('type'), 
-        __metadata('design:type', Object)
-    ], LabelComponent.prototype, "type", void 0);
-    __decorate([
-        core_1.Input('requiredIndicatorCharacter'), 
-        __metadata('design:type', String)
-    ], LabelComponent.prototype, "requiredIndicatorCharacter", void 0);
-    __decorate([
-        core_1.Input('required'), 
-        __metadata('design:type', Boolean)
-    ], LabelComponent.prototype, "required", void 0);
-    __decorate([
-        core_1.Input('for'), 
-        __metadata('design:type', String)
-    ], LabelComponent.prototype, "for", void 0);
-    LabelComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-label',
-            template: __webpack_require__(189),
-            host: {
-                '[class.vclFormControlLabel]': 'true',
-                '[class]': 'labelClass',
-            }
-        }), 
-        __metadata('design:paramtypes', [])
-    ], LabelComponent);
     return LabelComponent;
 }());
+__decorate([
+    core_1.Input('label'),
+    __metadata("design:type", String)
+], LabelComponent.prototype, "label", void 0);
+__decorate([
+    core_1.Input('subLabel'),
+    __metadata("design:type", String)
+], LabelComponent.prototype, "subLabel", void 0);
+__decorate([
+    core_1.Input('type'),
+    __metadata("design:type", String)
+], LabelComponent.prototype, "type", void 0);
+__decorate([
+    core_1.Input('requiredIndicatorCharacter'),
+    __metadata("design:type", String)
+], LabelComponent.prototype, "requiredIndicatorCharacter", void 0);
+__decorate([
+    core_1.Input('required'),
+    __metadata("design:type", Boolean)
+], LabelComponent.prototype, "required", void 0);
+__decorate([
+    core_1.Input('for'),
+    __metadata("design:type", String)
+], LabelComponent.prototype, "for", void 0);
+LabelComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-label',
+        template: __webpack_require__(188),
+        host: {
+            '[class.vclFormControlLabel]': 'true',
+            '[class]': 'labelClass',
+        }
+    }),
+    __metadata("design:paramtypes", [])
+], LabelComponent);
 exports.LabelComponent = LabelComponent;
 
 
@@ -10948,29 +11051,28 @@ var LayerBaseComponent = (function () {
             layerRef.close();
         }
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], LayerBaseComponent.prototype, "name", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], LayerBaseComponent.prototype, "zIndex", void 0);
-    LayerBaseComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-layer-base',
-            template: __webpack_require__(190),
-            // changeDetection: ChangeDetectionStrategy.OnPush,
-            animations: [
-                core_1.trigger('boxState', []),
-                core_1.trigger('layerState', [])
-            ]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof layer_service_1.LayerService !== 'undefined' && layer_service_1.LayerService) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ChangeDetectorRef !== 'undefined' && core_1.ChangeDetectorRef) === 'function' && _b) || Object])
-    ], LayerBaseComponent);
     return LayerBaseComponent;
-    var _a, _b;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], LayerBaseComponent.prototype, "name", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], LayerBaseComponent.prototype, "zIndex", void 0);
+LayerBaseComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-layer-base',
+        template: __webpack_require__(189),
+        // changeDetection: ChangeDetectionStrategy.OnPush,
+        animations: [
+            core_1.trigger('boxState', []),
+            core_1.trigger('layerState', [])
+        ]
+    }),
+    __metadata("design:paramtypes", [layer_service_1.LayerService, core_1.ChangeDetectorRef])
+], LayerBaseComponent);
 exports.LayerBaseComponent = LayerBaseComponent;
 
 
@@ -10996,14 +11098,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var l10n_module_1 = __webpack_require__(6);
-var index_1 = __webpack_require__(30);
+var index_1 = __webpack_require__(53);
 var LinkComponent = (function (_super) {
     __extends(LinkComponent, _super);
     function LinkComponent(l10n) {
-        var _this = this;
-        _super.call(this);
-        this.l10n = l10n;
-        this.locTitle$ = this.observeChange('title').switchMap(function (title) { return _this.l10n.localize(title); });
+        var _this = _super.call(this) || this;
+        _this.l10n = l10n;
+        _this.locTitle$ = _this.observeChange('title').switchMap(function (title) { return _this.l10n.localize(title); });
+        return _this;
     }
     Object.defineProperty(LinkComponent.prototype, "attrHref", {
         get: function () {
@@ -11023,57 +11125,57 @@ var LinkComponent = (function (_super) {
     LinkComponent.prototype.ngOnDestroy = function () {
         this.locTitleSub.unsubscribe();
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], LinkComponent.prototype, "href", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], LinkComponent.prototype, "label", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], LinkComponent.prototype, "title", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], LinkComponent.prototype, "scheme", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], LinkComponent.prototype, "prepIcon", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], LinkComponent.prototype, "appIcon", void 0);
-    __decorate([
-        core_1.HostBinding('class.vclDisabled'),
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], LinkComponent.prototype, "disabled", void 0);
-    __decorate([
-        core_1.HostBinding('attr.href'), 
-        __metadata('design:type', String)
-    ], LinkComponent.prototype, "attrHref", null);
-    __decorate([
-        core_1.HostBinding('attr.title'),
-        core_1.HostBinding('attr.aria-label'), 
-        __metadata('design:type', String)
-    ], LinkComponent.prototype, "locTitle", void 0);
-    LinkComponent = __decorate([
-        core_1.Component({
-            selector: '[vcl-link]',
-            template: __webpack_require__(191),
-            host: {
-                '[attr.touch-action]': 'touchAction' // TODO - no function?
-            },
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof l10n_module_1.L10nService !== 'undefined' && l10n_module_1.L10nService) === 'function' && _a) || Object])
-    ], LinkComponent);
     return LinkComponent;
-    var _a;
 }(index_1.ObservableComponent));
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], LinkComponent.prototype, "href", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], LinkComponent.prototype, "label", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], LinkComponent.prototype, "title", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], LinkComponent.prototype, "scheme", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], LinkComponent.prototype, "prepIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], LinkComponent.prototype, "appIcon", void 0);
+__decorate([
+    core_1.HostBinding('class.vclDisabled'),
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], LinkComponent.prototype, "disabled", void 0);
+__decorate([
+    core_1.HostBinding('attr.href'),
+    __metadata("design:type", String),
+    __metadata("design:paramtypes", [])
+], LinkComponent.prototype, "attrHref", null);
+__decorate([
+    core_1.HostBinding('attr.title'),
+    core_1.HostBinding('attr.aria-label'),
+    __metadata("design:type", String)
+], LinkComponent.prototype, "locTitle", void 0);
+LinkComponent = __decorate([
+    core_1.Component({
+        selector: '[vcl-link]',
+        template: __webpack_require__(190),
+        host: {
+            '[attr.touch-action]': 'touchAction' // TODO - no function?
+        },
+    }),
+    __metadata("design:paramtypes", [l10n_module_1.L10nService])
+], LinkComponent);
 exports.LinkComponent = LinkComponent;
 
 
@@ -11205,43 +11307,43 @@ var MetalistComponent = (function () {
         }
         return this.meta[key];
     };
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], MetalistComponent.prototype, "select", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Array)
-    ], MetalistComponent.prototype, "items", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], MetalistComponent.prototype, "meta", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], MetalistComponent.prototype, "minSelectableItems", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], MetalistComponent.prototype, "maxSelectableItems", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Boolean)
-    ], MetalistComponent.prototype, "maxItemsSelected", void 0);
-    __decorate([
-        core_1.ContentChild(core_1.TemplateRef), 
-        __metadata('design:type', Object)
-    ], MetalistComponent.prototype, "template", void 0);
-    MetalistComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-metalist',
-            template: __webpack_require__(192)
-        }), 
-        __metadata('design:paramtypes', [])
-    ], MetalistComponent);
     return MetalistComponent;
 }());
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], MetalistComponent.prototype, "select", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Array)
+], MetalistComponent.prototype, "items", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], MetalistComponent.prototype, "meta", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MetalistComponent.prototype, "minSelectableItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MetalistComponent.prototype, "maxSelectableItems", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Boolean)
+], MetalistComponent.prototype, "maxItemsSelected", void 0);
+__decorate([
+    core_1.ContentChild(core_1.TemplateRef),
+    __metadata("design:type", Object)
+], MetalistComponent.prototype, "template", void 0);
+MetalistComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-metalist',
+        template: __webpack_require__(191)
+    }),
+    __metadata("design:paramtypes", [])
+], MetalistComponent);
 exports.MetalistComponent = MetalistComponent;
 
 
@@ -11261,7 +11363,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var MonthPickerComponent = (function () {
+var MonthPickerComponent = MonthPickerComponent_1 = (function () {
     function MonthPickerComponent() {
         this.now = new Date();
         this.yearMeta = {};
@@ -11291,7 +11393,7 @@ var MonthPickerComponent = (function () {
     MonthPickerComponent.prototype.ngOnInit = function () {
         // TODO: Localize here instead of in the template so outside components
         // when calling month-picker.getMonth(month) get calendar's localized and used label.
-        this.months = this.useShortNames ? MonthPickerComponent.monthNamesShort : MonthPickerComponent.monthNames;
+        this.months = this.useShortNames ? MonthPickerComponent_1.monthNamesShort : MonthPickerComponent_1.monthNames;
         if (!this.maxSelectableItems) {
             this.maxSelectableItems = this.colors && this.colors.length || 1;
         }
@@ -11468,127 +11570,127 @@ var MonthPickerComponent = (function () {
             }, this.getYearMeta(year)[month]);
         }
     };
-    MonthPickerComponent.TAG = 'MonthPickerComponent';
-    MonthPickerComponent.monthNames = [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December'
-    ];
-    MonthPickerComponent.monthNamesShort = MonthPickerComponent.monthNames.
-        map(function (name) { return name.substr(0, 3); });
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], MonthPickerComponent.prototype, "expanded", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
-    ], MonthPickerComponent.prototype, "expandedChange", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], MonthPickerComponent.prototype, "currentYear", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', (typeof (_b = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _b) || Object)
-    ], MonthPickerComponent.prototype, "currentYearChange", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], MonthPickerComponent.prototype, "prevYearBtnTap", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], MonthPickerComponent.prototype, "nextYearBtnTap", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], MonthPickerComponent.prototype, "select", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], MonthPickerComponent.prototype, "deselect", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Array)
-    ], MonthPickerComponent.prototype, "colors", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], MonthPickerComponent.prototype, "tabindex", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], MonthPickerComponent.prototype, "monthsPerRow", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], MonthPickerComponent.prototype, "useShortNames", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], MonthPickerComponent.prototype, "useAvailableMonths", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], MonthPickerComponent.prototype, "expandable", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], MonthPickerComponent.prototype, "prevYearAvailable", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], MonthPickerComponent.prototype, "nextYearAvailable", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], MonthPickerComponent.prototype, "minYear", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], MonthPickerComponent.prototype, "maxYear", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], MonthPickerComponent.prototype, "closeBtnIcon", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], MonthPickerComponent.prototype, "prevYearBtnIcon", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], MonthPickerComponent.prototype, "nextYearBtnIcon", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], MonthPickerComponent.prototype, "maxSelectableItems", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], MonthPickerComponent.prototype, "minSelectableItems", void 0);
-    MonthPickerComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-month-picker',
-            template: __webpack_require__(193),
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush
-        }), 
-        __metadata('design:paramtypes', [])
-    ], MonthPickerComponent);
     return MonthPickerComponent;
-    var _a, _b;
 }());
+MonthPickerComponent.TAG = 'MonthPickerComponent';
+MonthPickerComponent.monthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+];
+MonthPickerComponent.monthNamesShort = MonthPickerComponent_1.monthNames.
+    map(function (name) { return name.substr(0, 3); });
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], MonthPickerComponent.prototype, "expanded", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", core_1.EventEmitter)
+], MonthPickerComponent.prototype, "expandedChange", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "currentYear", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", core_1.EventEmitter)
+], MonthPickerComponent.prototype, "currentYearChange", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], MonthPickerComponent.prototype, "prevYearBtnTap", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], MonthPickerComponent.prototype, "nextYearBtnTap", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], MonthPickerComponent.prototype, "select", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], MonthPickerComponent.prototype, "deselect", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Array)
+], MonthPickerComponent.prototype, "colors", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "tabindex", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "monthsPerRow", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], MonthPickerComponent.prototype, "useShortNames", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], MonthPickerComponent.prototype, "useAvailableMonths", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], MonthPickerComponent.prototype, "expandable", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], MonthPickerComponent.prototype, "prevYearAvailable", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], MonthPickerComponent.prototype, "nextYearAvailable", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "minYear", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "maxYear", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], MonthPickerComponent.prototype, "closeBtnIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], MonthPickerComponent.prototype, "prevYearBtnIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], MonthPickerComponent.prototype, "nextYearBtnIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "maxSelectableItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "minSelectableItems", void 0);
+MonthPickerComponent = MonthPickerComponent_1 = __decorate([
+    core_1.Component({
+        selector: 'vcl-month-picker',
+        template: __webpack_require__(192),
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush
+    }),
+    __metadata("design:paramtypes", [])
+], MonthPickerComponent);
 exports.MonthPickerComponent = MonthPickerComponent;
+var MonthPickerComponent_1;
 
 
 /***/ },
@@ -11608,7 +11710,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var router_1 = __webpack_require__(128);
 var core_1 = __webpack_require__(1);
-var NavigationItemComponent = (function () {
+var NavigationItemComponent = NavigationItemComponent_1 = (function () {
     function NavigationItemComponent() {
         this.active = true;
         this.selected = false;
@@ -11646,59 +11748,58 @@ var NavigationItemComponent = (function () {
             ret['items'] = items; // only add if length>0 to not show nested-icons
         return ret;
     };
-    __decorate([
-        core_1.Input('label'), 
-        __metadata('design:type', String)
-    ], NavigationItemComponent.prototype, "label", void 0);
-    __decorate([
-        core_1.Input('route'), 
-        __metadata('design:type', Object)
-    ], NavigationItemComponent.prototype, "route", void 0);
-    __decorate([
-        core_1.ContentChildren(NavigationItemComponent), 
-        __metadata('design:type', (typeof (_a = typeof core_1.QueryList !== 'undefined' && core_1.QueryList) === 'function' && _a) || Object)
-    ], NavigationItemComponent.prototype, "items", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], NavigationItemComponent.prototype, "active", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], NavigationItemComponent.prototype, "selected", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], NavigationItemComponent.prototype, "opened", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], NavigationItemComponent.prototype, "heading", void 0);
-    __decorate([
-        core_1.Input('href'), 
-        __metadata('design:type', String)
-    ], NavigationItemComponent.prototype, "href", void 0);
-    __decorate([
-        core_1.Input('prepIcon'), 
-        __metadata('design:type', String)
-    ], NavigationItemComponent.prototype, "prepIcon", void 0);
-    __decorate([
-        core_1.Input('appIcon'), 
-        __metadata('design:type', String)
-    ], NavigationItemComponent.prototype, "appIcon", void 0);
-    __decorate([
-        core_1.Input('class'), 
-        __metadata('design:type', String)
-    ], NavigationItemComponent.prototype, "class", void 0);
-    NavigationItemComponent = __decorate([
-        core_1.Directive({
-            selector: 'vcl-navitem'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], NavigationItemComponent);
     return NavigationItemComponent;
-    var _a;
 }());
+__decorate([
+    core_1.Input('label'),
+    __metadata("design:type", String)
+], NavigationItemComponent.prototype, "label", void 0);
+__decorate([
+    core_1.Input('route'),
+    __metadata("design:type", Object)
+], NavigationItemComponent.prototype, "route", void 0);
+__decorate([
+    core_1.ContentChildren(NavigationItemComponent_1),
+    __metadata("design:type", core_1.QueryList)
+], NavigationItemComponent.prototype, "items", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], NavigationItemComponent.prototype, "active", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], NavigationItemComponent.prototype, "selected", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], NavigationItemComponent.prototype, "opened", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], NavigationItemComponent.prototype, "heading", void 0);
+__decorate([
+    core_1.Input('href'),
+    __metadata("design:type", String)
+], NavigationItemComponent.prototype, "href", void 0);
+__decorate([
+    core_1.Input('prepIcon'),
+    __metadata("design:type", String)
+], NavigationItemComponent.prototype, "prepIcon", void 0);
+__decorate([
+    core_1.Input('appIcon'),
+    __metadata("design:type", String)
+], NavigationItemComponent.prototype, "appIcon", void 0);
+__decorate([
+    core_1.Input('class'),
+    __metadata("design:type", String)
+], NavigationItemComponent.prototype, "class", void 0);
+NavigationItemComponent = NavigationItemComponent_1 = __decorate([
+    core_1.Directive({
+        selector: 'vcl-navitem'
+    }),
+    __metadata("design:paramtypes", [])
+], NavigationItemComponent);
 exports.NavigationItemComponent = NavigationItemComponent;
 var NavigationComponent = (function () {
     //  isVert: boolean = true;
@@ -11780,68 +11881,69 @@ var NavigationComponent = (function () {
     NavigationComponent.prototype.toggleMenu = function (item) {
         item.opened = !item.opened;
     };
-    __decorate([
-        core_1.Input('ident'), 
-        __metadata('design:type', String)
-    ], NavigationComponent.prototype, "ident", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], NavigationComponent.prototype, "selectedItem", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], NavigationComponent.prototype, "ariaRole", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], NavigationComponent.prototype, "tabindex", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], NavigationComponent.prototype, "type", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], NavigationComponent.prototype, "subLevelHintIconClosed", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], NavigationComponent.prototype, "subLevelHintIconOpened", void 0);
-    __decorate([
-        core_1.Input('subLevelHintIconSide'), 
-        __metadata('design:type', Object)
-    ], NavigationComponent.prototype, "subLevelHintIconSide", void 0);
-    __decorate([
-        core_1.ContentChildren(NavigationItemComponent), 
-        __metadata('design:type', (typeof (_a = typeof core_1.QueryList !== 'undefined' && core_1.QueryList) === 'function' && _a) || Object)
-    ], NavigationComponent.prototype, "templateItems", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Array)
-    ], NavigationComponent.prototype, "navigationItems", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', Object)
-    ], NavigationComponent.prototype, "select", void 0);
-    __decorate([
-        core_1.HostBinding('class.vclVertical'), 
-        __metadata('design:type', Object)
-    ], NavigationComponent.prototype, "isVertical", null);
-    NavigationComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-navigation',
-            host: {
-                '[class.vclNavigation]': 'true'
-            },
-            template: __webpack_require__(194),
-        }), 
-        __metadata('design:paramtypes', [(typeof (_b = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _b) || Object])
-    ], NavigationComponent);
     return NavigationComponent;
-    var _a, _b;
 }());
+__decorate([
+    core_1.Input('ident'),
+    __metadata("design:type", String)
+], NavigationComponent.prototype, "ident", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], NavigationComponent.prototype, "selectedItem", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], NavigationComponent.prototype, "ariaRole", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], NavigationComponent.prototype, "tabindex", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], NavigationComponent.prototype, "type", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], NavigationComponent.prototype, "subLevelHintIconClosed", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], NavigationComponent.prototype, "subLevelHintIconOpened", void 0);
+__decorate([
+    core_1.Input('subLevelHintIconSide'),
+    __metadata("design:type", String)
+], NavigationComponent.prototype, "subLevelHintIconSide", void 0);
+__decorate([
+    core_1.ContentChildren(NavigationItemComponent),
+    __metadata("design:type", core_1.QueryList)
+], NavigationComponent.prototype, "templateItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Array)
+], NavigationComponent.prototype, "navigationItems", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], NavigationComponent.prototype, "select", void 0);
+__decorate([
+    core_1.HostBinding('class.vclVertical'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], NavigationComponent.prototype, "isVertical", null);
+NavigationComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-navigation',
+        host: {
+            '[class.vclNavigation]': 'true'
+        },
+        template: __webpack_require__(193),
+    }),
+    __metadata("design:paramtypes", [router_1.Router])
+], NavigationComponent);
 exports.NavigationComponent = NavigationComponent;
+var NavigationItemComponent_1;
 
 
 /***/ },
@@ -11913,67 +12015,68 @@ var PopoverComponent = (function () {
         }
         catch (ex) { }
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], PopoverComponent.prototype, "target", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], PopoverComponent.prototype, "style", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], PopoverComponent.prototype, "class", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], PopoverComponent.prototype, "zIndex", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], PopoverComponent.prototype, "targetAttachment", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], PopoverComponent.prototype, "attachment", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], PopoverComponent.prototype, "open", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], PopoverComponent.prototype, "layer", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', (typeof (_a = typeof core_1.EventEmitter !== 'undefined' && core_1.EventEmitter) === 'function' && _a) || Object)
-    ], PopoverComponent.prototype, "openChange", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], PopoverComponent.prototype, "zIndexManaged", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], PopoverComponent.prototype, "expandManaged", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], PopoverComponent.prototype, "timeout", void 0);
-    PopoverComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-popover',
-            template: __webpack_require__(195),
-            animations: [
-                core_1.trigger('popOverState', [])
-            ]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_b = typeof overlayManager_service_1.OverlayManagerService !== 'undefined' && overlayManager_service_1.OverlayManagerService) === 'function' && _b) || Object, (typeof (_c = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _c) || Object, (typeof (_d = typeof core_1.NgZone !== 'undefined' && core_1.NgZone) === 'function' && _d) || Object])
-    ], PopoverComponent);
     return PopoverComponent;
-    var _a, _b, _c, _d;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], PopoverComponent.prototype, "target", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], PopoverComponent.prototype, "style", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], PopoverComponent.prototype, "class", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], PopoverComponent.prototype, "zIndex", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], PopoverComponent.prototype, "targetAttachment", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], PopoverComponent.prototype, "attachment", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], PopoverComponent.prototype, "open", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], PopoverComponent.prototype, "layer", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", core_1.EventEmitter)
+], PopoverComponent.prototype, "openChange", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], PopoverComponent.prototype, "zIndexManaged", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], PopoverComponent.prototype, "expandManaged", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], PopoverComponent.prototype, "timeout", void 0);
+PopoverComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-popover',
+        template: __webpack_require__(194),
+        animations: [
+            core_1.trigger('popOverState', [])
+        ]
+    }),
+    __metadata("design:paramtypes", [overlayManager_service_1.OverlayManagerService,
+        core_1.ElementRef,
+        core_1.NgZone])
+], PopoverComponent);
 exports.PopoverComponent = PopoverComponent;
 
 
@@ -12055,43 +12158,43 @@ var ProgressBarComponent = (function () {
             value >= this.minValue &&
             value <= this.maxValue;
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], ProgressBarComponent.prototype, "value", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], ProgressBarComponent.prototype, "secondaryValue", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], ProgressBarComponent.prototype, "minValue", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], ProgressBarComponent.prototype, "maxValue", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], ProgressBarComponent.prototype, "indeterminate", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], ProgressBarComponent.prototype, "label", void 0);
-    ProgressBarComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-progress-bar',
-            template: __webpack_require__(196),
-            host: {
-                '[attr.role]': '"progressbar"',
-            },
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ProgressBarComponent);
     return ProgressBarComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], ProgressBarComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], ProgressBarComponent.prototype, "secondaryValue", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], ProgressBarComponent.prototype, "minValue", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], ProgressBarComponent.prototype, "maxValue", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], ProgressBarComponent.prototype, "indeterminate", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], ProgressBarComponent.prototype, "label", void 0);
+ProgressBarComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-progress-bar',
+        template: __webpack_require__(195),
+        host: {
+            '[attr.role]': '"progressbar"',
+        },
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+    }),
+    __metadata("design:paramtypes", [])
+], ProgressBarComponent);
 exports.ProgressBarComponent = ProgressBarComponent;
 
 
@@ -12212,80 +12315,83 @@ var RadioButtonComponent = (function () {
     RadioButtonComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], RadioButtonComponent.prototype, "checkedIcon", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], RadioButtonComponent.prototype, "uncheckedIcon", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], RadioButtonComponent.prototype, "disabled", void 0);
-    __decorate([
-        core_1.Input('labelPosition'), 
-        __metadata('design:type', Object)
-    ], RadioButtonComponent.prototype, "labelPosition", void 0);
-    __decorate([
-        core_1.HostBinding('attr.tabindex'),
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], RadioButtonComponent.prototype, "tabindex", void 0);
-    __decorate([
-        core_1.Input('checked'), 
-        __metadata('design:type', Boolean)
-    ], RadioButtonComponent.prototype, "checked", void 0);
-    __decorate([
-        core_1.Output('change'), 
-        __metadata('design:type', Object)
-    ], RadioButtonComponent.prototype, "_checkedChange", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', (typeof (_a = typeof Observable_1.Observable !== 'undefined' && Observable_1.Observable) === 'function' && _a) || Object)
-    ], RadioButtonComponent.prototype, "checkedChange", null);
-    __decorate([
-        core_1.HostBinding('class.vclDisabled'), 
-        __metadata('design:type', Object)
-    ], RadioButtonComponent.prototype, "clsVclDisabled", null);
-    __decorate([
-        core_1.HostBinding('attr.aria-disabled'), 
-        __metadata('design:type', Object)
-    ], RadioButtonComponent.prototype, "attrAriaDisabled", null);
-    __decorate([
-        core_1.HostBinding('attr.checked'), 
-        __metadata('design:type', Object)
-    ], RadioButtonComponent.prototype, "attrChecked", null);
-    __decorate([
-        core_1.HostListener('keyup', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], RadioButtonComponent.prototype, "onKeyup", null);
-    __decorate([
-        core_1.HostListener('click', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], RadioButtonComponent.prototype, "onClick", null);
-    RadioButtonComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-radio-button',
-            template: __webpack_require__(197),
-            host: {
-                '[attr.role]': '"radio"',
-                '[class.vclCheckbox]': 'true',
-                '[class.vclScale130p]': 'true',
-            },
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-            providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
-        }), 
-        __metadata('design:paramtypes', [(typeof (_b = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _b) || Object])
-    ], RadioButtonComponent);
     return RadioButtonComponent;
-    var _a, _b;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], RadioButtonComponent.prototype, "checkedIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], RadioButtonComponent.prototype, "uncheckedIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], RadioButtonComponent.prototype, "disabled", void 0);
+__decorate([
+    core_1.Input('labelPosition'),
+    __metadata("design:type", String)
+], RadioButtonComponent.prototype, "labelPosition", void 0);
+__decorate([
+    core_1.HostBinding('attr.tabindex'),
+    core_1.Input(),
+    __metadata("design:type", Object)
+], RadioButtonComponent.prototype, "tabindex", void 0);
+__decorate([
+    core_1.Input('checked'),
+    __metadata("design:type", Boolean)
+], RadioButtonComponent.prototype, "checked", void 0);
+__decorate([
+    core_1.Output('change'),
+    __metadata("design:type", Object)
+], RadioButtonComponent.prototype, "_checkedChange", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], RadioButtonComponent.prototype, "checkedChange", null);
+__decorate([
+    core_1.HostBinding('class.vclDisabled'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], RadioButtonComponent.prototype, "clsVclDisabled", null);
+__decorate([
+    core_1.HostBinding('attr.aria-disabled'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], RadioButtonComponent.prototype, "attrAriaDisabled", null);
+__decorate([
+    core_1.HostBinding('attr.checked'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], RadioButtonComponent.prototype, "attrChecked", null);
+__decorate([
+    core_1.HostListener('keyup', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], RadioButtonComponent.prototype, "onKeyup", null);
+__decorate([
+    core_1.HostListener('click', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], RadioButtonComponent.prototype, "onClick", null);
+RadioButtonComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-radio-button',
+        template: __webpack_require__(196),
+        host: {
+            '[attr.role]': '"radio"',
+            '[class.vclCheckbox]': 'true',
+            '[class.vclScale130p]': 'true',
+        },
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], RadioButtonComponent);
 exports.RadioButtonComponent = RadioButtonComponent;
 
 
@@ -12337,26 +12443,26 @@ var RadioGroupComponent = (function () {
     RadioGroupComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    __decorate([
-        core_1.Input('value'), 
-        __metadata('design:type', String)
-    ], RadioGroupComponent.prototype, "value", void 0);
-    __decorate([
-        core_1.Input('options'), 
-        __metadata('design:type', Array)
-    ], RadioGroupComponent.prototype, "options", void 0);
-    RadioGroupComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-radio-group',
-            template: __webpack_require__(198),
-            host: {},
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-            providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], RadioGroupComponent);
     return RadioGroupComponent;
 }());
+__decorate([
+    core_1.Input('value'),
+    __metadata("design:type", String)
+], RadioGroupComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Input('options'),
+    __metadata("design:type", Array)
+], RadioGroupComponent.prototype, "options", void 0);
+RadioGroupComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-radio-group',
+        template: __webpack_require__(197),
+        host: {},
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+    }),
+    __metadata("design:paramtypes", [])
+], RadioGroupComponent);
 exports.RadioGroupComponent = RadioGroupComponent;
 
 
@@ -12412,39 +12518,38 @@ var SelectOptionComponent = (function () {
         };
         return ret;
     };
-    __decorate([
-        core_1.Input('value'), 
-        __metadata('design:type', String)
-    ], SelectOptionComponent.prototype, "value", void 0);
-    __decorate([
-        core_1.Input('sublabel'), 
-        __metadata('design:type', String)
-    ], SelectOptionComponent.prototype, "sublabel", void 0);
-    __decorate([
-        core_1.Input('label'), 
-        __metadata('design:type', String)
-    ], SelectOptionComponent.prototype, "label", void 0);
-    __decorate([
-        core_1.Input('class'), 
-        __metadata('design:type', String)
-    ], SelectOptionComponent.prototype, "class", void 0);
-    __decorate([
-        core_1.Input('disabled'), 
-        __metadata('design:type', Boolean)
-    ], SelectOptionComponent.prototype, "disabled", void 0);
-    __decorate([
-        core_1.Input('selected'), 
-        __metadata('design:type', Boolean)
-    ], SelectOptionComponent.prototype, "selected", void 0);
-    SelectOptionComponent = __decorate([
-        core_1.Directive({
-            selector: 'vcl-select-option'
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object])
-    ], SelectOptionComponent);
     return SelectOptionComponent;
-    var _a;
 }());
+__decorate([
+    core_1.Input('value'),
+    __metadata("design:type", String)
+], SelectOptionComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Input('sublabel'),
+    __metadata("design:type", String)
+], SelectOptionComponent.prototype, "sublabel", void 0);
+__decorate([
+    core_1.Input('label'),
+    __metadata("design:type", String)
+], SelectOptionComponent.prototype, "label", void 0);
+__decorate([
+    core_1.Input('class'),
+    __metadata("design:type", String)
+], SelectOptionComponent.prototype, "class", void 0);
+__decorate([
+    core_1.Input('disabled'),
+    __metadata("design:type", Boolean)
+], SelectOptionComponent.prototype, "disabled", void 0);
+__decorate([
+    core_1.Input('selected'),
+    __metadata("design:type", Boolean)
+], SelectOptionComponent.prototype, "selected", void 0);
+SelectOptionComponent = __decorate([
+    core_1.Directive({
+        selector: 'vcl-select-option'
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], SelectOptionComponent);
 exports.SelectOptionComponent = SelectOptionComponent;
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
@@ -12527,63 +12632,61 @@ var SelectComponent = (function () {
     SelectComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    __decorate([
-        // TODO cant this be solved via view/content-childs?
-        core_1.ViewChild('dropdown'), 
-        __metadata('design:type', Object)
-    ], SelectComponent.prototype, "dropdown", void 0);
-    __decorate([
-        core_1.Input('value'), 
-        __metadata('design:type', Object)
-    ], SelectComponent.prototype, "value", void 0);
-    __decorate([
-        core_1.Input('expanded'), 
-        __metadata('design:type', Boolean)
-    ], SelectComponent.prototype, "expanded", void 0);
-    __decorate([
-        core_1.Input('items'), 
-        __metadata('design:type', Array)
-    ], SelectComponent.prototype, "items", void 0);
-    __decorate([
-        core_1.ContentChildren(SelectOptionComponent), 
-        __metadata('design:type', (typeof (_a = typeof core_1.QueryList !== 'undefined' && core_1.QueryList) === 'function' && _a) || Object)
-    ], SelectComponent.prototype, "templateItems", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], SelectComponent.prototype, "minSelectableItems", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], SelectComponent.prototype, "maxSelectableItems", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], SelectComponent.prototype, "expandedIcon", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], SelectComponent.prototype, "collapsedIcon", void 0);
-    __decorate([
-        core_1.Input('displayValue'), 
-        __metadata('design:type', String)
-    ], SelectComponent.prototype, "displayValue", void 0);
-    __decorate([
-        core_1.Output('change'), 
-        __metadata('design:type', Object)
-    ], SelectComponent.prototype, "changeEE", void 0);
-    SelectComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-select',
-            template: __webpack_require__(199),
-            //  changeDetection: ChangeDetectionStrategy.OnPush,
-            providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], SelectComponent);
     return SelectComponent;
-    var _a;
 }());
+__decorate([
+    core_1.ViewChild('dropdown'),
+    __metadata("design:type", Object)
+], SelectComponent.prototype, "dropdown", void 0);
+__decorate([
+    core_1.Input('value'),
+    __metadata("design:type", Object)
+], SelectComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Input('expanded'),
+    __metadata("design:type", Boolean)
+], SelectComponent.prototype, "expanded", void 0);
+__decorate([
+    core_1.Input('items'),
+    __metadata("design:type", Array)
+], SelectComponent.prototype, "items", void 0);
+__decorate([
+    core_1.ContentChildren(SelectOptionComponent),
+    __metadata("design:type", core_1.QueryList)
+], SelectComponent.prototype, "templateItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], SelectComponent.prototype, "minSelectableItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], SelectComponent.prototype, "maxSelectableItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], SelectComponent.prototype, "expandedIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], SelectComponent.prototype, "collapsedIcon", void 0);
+__decorate([
+    core_1.Input('displayValue'),
+    __metadata("design:type", String)
+], SelectComponent.prototype, "displayValue", void 0);
+__decorate([
+    core_1.Output('change'),
+    __metadata("design:type", Object)
+], SelectComponent.prototype, "changeEE", void 0);
+SelectComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-select',
+        template: __webpack_require__(198),
+        //  changeDetection: ChangeDetectionStrategy.OnPush,
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+    }),
+    __metadata("design:paramtypes", [])
+], SelectComponent);
 exports.SelectComponent = SelectComponent;
 
 
@@ -12723,58 +12826,58 @@ var SliderComponent = (function () {
     SliderComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    __decorate([
-        core_1.Input('value'), 
-        __metadata('design:type', Number)
-    ], SliderComponent.prototype, "value", void 0);
-    __decorate([
-        core_1.Input('min'), 
-        __metadata('design:type', Number)
-    ], SliderComponent.prototype, "min", void 0);
-    __decorate([
-        core_1.Input('max'), 
-        __metadata('design:type', Number)
-    ], SliderComponent.prototype, "max", void 0);
-    __decorate([
-        core_1.Input('step'), 
-        __metadata('design:type', Number)
-    ], SliderComponent.prototype, "step", void 0);
-    __decorate([
-        core_1.Input('stepsOnly'), 
-        __metadata('design:type', Boolean)
-    ], SliderComponent.prototype, "stepsOnly", void 0);
-    __decorate([
-        core_1.Input('round'), 
-        __metadata('design:type', Number)
-    ], SliderComponent.prototype, "round", void 0);
-    __decorate([
-        core_1.Input('scaleNames'), 
-        __metadata('design:type', Array)
-    ], SliderComponent.prototype, "scaleNames", void 0);
-    __decorate([
-        core_1.ViewChild('scale'), 
-        __metadata('design:type', Object)
-    ], SliderComponent.prototype, "scale", void 0);
-    __decorate([
-        core_1.HostListener('tap', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], SliderComponent.prototype, "onTap", null);
-    SliderComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-slider',
-            template: __webpack_require__(200),
-            providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
-            host: {
-                '[class.vclSlider]': 'true'
-            },
-            changeDetection: core_1.ChangeDetectionStrategy.OnPush
-        }), 
-        __metadata('design:paramtypes', [])
-    ], SliderComponent);
     return SliderComponent;
 }());
+__decorate([
+    core_1.Input('value'),
+    __metadata("design:type", Number)
+], SliderComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Input('min'),
+    __metadata("design:type", Number)
+], SliderComponent.prototype, "min", void 0);
+__decorate([
+    core_1.Input('max'),
+    __metadata("design:type", Number)
+], SliderComponent.prototype, "max", void 0);
+__decorate([
+    core_1.Input('step'),
+    __metadata("design:type", Number)
+], SliderComponent.prototype, "step", void 0);
+__decorate([
+    core_1.Input('stepsOnly'),
+    __metadata("design:type", Boolean)
+], SliderComponent.prototype, "stepsOnly", void 0);
+__decorate([
+    core_1.Input('round'),
+    __metadata("design:type", Number)
+], SliderComponent.prototype, "round", void 0);
+__decorate([
+    core_1.Input('scaleNames'),
+    __metadata("design:type", Array)
+], SliderComponent.prototype, "scaleNames", void 0);
+__decorate([
+    core_1.ViewChild('scale'),
+    __metadata("design:type", Object)
+], SliderComponent.prototype, "scale", void 0);
+__decorate([
+    core_1.HostListener('tap', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], SliderComponent.prototype, "onTap", null);
+SliderComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-slider',
+        template: __webpack_require__(199),
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
+        host: {
+            '[class.vclSlider]': 'true'
+        },
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush
+    }),
+    __metadata("design:paramtypes", [])
+], SliderComponent);
 exports.SliderComponent = SliderComponent;
 
 
@@ -12804,64 +12907,64 @@ var core_1 = __webpack_require__(1);
 var TabLabelDirective = (function (_super) {
     __extends(TabLabelDirective, _super);
     function TabLabelDirective(templateRef) {
-        _super.call(this, templateRef);
-        this.templateRef = templateRef;
+        var _this = _super.call(this, templateRef) || this;
+        _this.templateRef = templateRef;
+        return _this;
     }
-    TabLabelDirective = __decorate([
-        core_1.Directive({
-            selector: '[vcl-tab-label]'
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object])
-    ], TabLabelDirective);
     return TabLabelDirective;
-    var _a;
 }(wormhole_module_1.TemplateWormhole));
+TabLabelDirective = __decorate([
+    core_1.Directive({
+        selector: '[vcl-tab-label]'
+    }),
+    __metadata("design:paramtypes", [core_1.TemplateRef])
+], TabLabelDirective);
 exports.TabLabelDirective = TabLabelDirective;
 var TabContentDirective = (function (_super) {
     __extends(TabContentDirective, _super);
     function TabContentDirective(templateRef) {
-        _super.call(this, templateRef);
-        this.templateRef = templateRef;
+        var _this = _super.call(this, templateRef) || this;
+        _this.templateRef = templateRef;
+        return _this;
     }
-    TabContentDirective = __decorate([
-        core_1.Directive({
-            selector: '[vcl-tab-content]'
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object])
-    ], TabContentDirective);
     return TabContentDirective;
-    var _a;
 }(wormhole_module_1.TemplateWormhole));
+TabContentDirective = __decorate([
+    core_1.Directive({
+        selector: '[vcl-tab-content]'
+    }),
+    __metadata("design:paramtypes", [core_1.TemplateRef])
+], TabContentDirective);
 exports.TabContentDirective = TabContentDirective;
 var TabComponent = (function () {
     function TabComponent() {
         this.disabled = false;
         this.tabClass = '';
     }
-    __decorate([
-        core_1.ContentChild(TabLabelDirective), 
-        __metadata('design:type', TabLabelDirective)
-    ], TabComponent.prototype, "label", void 0);
-    __decorate([
-        core_1.ContentChild(TabContentDirective), 
-        __metadata('design:type', TabContentDirective)
-    ], TabComponent.prototype, "content", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], TabComponent.prototype, "disabled", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], TabComponent.prototype, "tabClass", void 0);
-    TabComponent = __decorate([
-        core_1.Directive({
-            selector: 'vcl-tab'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], TabComponent);
     return TabComponent;
 }());
+__decorate([
+    core_1.ContentChild(TabLabelDirective),
+    __metadata("design:type", TabLabelDirective)
+], TabComponent.prototype, "label", void 0);
+__decorate([
+    core_1.ContentChild(TabContentDirective),
+    __metadata("design:type", TabContentDirective)
+], TabComponent.prototype, "content", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], TabComponent.prototype, "disabled", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], TabComponent.prototype, "tabClass", void 0);
+TabComponent = __decorate([
+    core_1.Directive({
+        selector: 'vcl-tab'
+    }),
+    __metadata("design:paramtypes", [])
+], TabComponent);
 exports.TabComponent = TabComponent;
 var TabNavComponent = (function () {
     function TabNavComponent() {
@@ -12912,52 +13015,52 @@ var TabNavComponent = (function () {
             this.selectedTabIndexChange$.emit(tabIdx);
         }
     };
-    __decorate([
-        core_1.ContentChildren(TabComponent), 
-        __metadata('design:type', (typeof (_a = typeof core_1.QueryList !== 'undefined' && core_1.QueryList) === 'function' && _a) || Object)
-    ], TabNavComponent.prototype, "tabs", void 0);
-    __decorate([
-        core_1.ContentChild(TabContentDirective), 
-        __metadata('design:type', TabContentDirective)
-    ], TabNavComponent.prototype, "content", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], TabNavComponent.prototype, "layout", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], TabNavComponent.prototype, "tabbableClass", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], TabNavComponent.prototype, "tabsClass", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], TabNavComponent.prototype, "tabContentClass", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Boolean)
-    ], TabNavComponent.prototype, "borders", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], TabNavComponent.prototype, "selectedTabIndex", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', (typeof (_b = typeof Observable_1.Observable !== 'undefined' && Observable_1.Observable) === 'function' && _b) || Object)
-    ], TabNavComponent.prototype, "selectedTabIndexChange", null);
-    TabNavComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-tab-nav',
-            template: __webpack_require__(201)
-        }), 
-        __metadata('design:paramtypes', [])
-    ], TabNavComponent);
     return TabNavComponent;
-    var _a, _b;
 }());
+__decorate([
+    core_1.ContentChildren(TabComponent),
+    __metadata("design:type", core_1.QueryList)
+], TabNavComponent.prototype, "tabs", void 0);
+__decorate([
+    core_1.ContentChild(TabContentDirective),
+    __metadata("design:type", TabContentDirective)
+], TabNavComponent.prototype, "content", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], TabNavComponent.prototype, "layout", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], TabNavComponent.prototype, "tabbableClass", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], TabNavComponent.prototype, "tabsClass", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], TabNavComponent.prototype, "tabContentClass", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], TabNavComponent.prototype, "borders", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], TabNavComponent.prototype, "selectedTabIndex", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], TabNavComponent.prototype, "selectedTabIndexChange", null);
+TabNavComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-tab-nav',
+        template: __webpack_require__(200)
+    }),
+    __metadata("design:paramtypes", [])
+], TabNavComponent);
 exports.TabNavComponent = TabNavComponent;
 
 
@@ -12978,7 +13081,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var Observable_1 = __webpack_require__(13);
 var core_1 = __webpack_require__(1);
-var Tether = __webpack_require__(482);
+var Tether = __webpack_require__(481);
 var tetherID = 10000;
 var TetherComponent = (function () {
     function TetherComponent(myElement) {
@@ -13023,40 +13126,40 @@ var TetherComponent = (function () {
         }
         catch (ex) { }
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], TetherComponent.prototype, "target", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], TetherComponent.prototype, "class", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], TetherComponent.prototype, "zIndex", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], TetherComponent.prototype, "targetAttachment", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', String)
-    ], TetherComponent.prototype, "attachment", void 0);
-    __decorate([
-        core_1.Output(), 
-        __metadata('design:type', (typeof (_a = typeof Observable_1.Observable !== 'undefined' && Observable_1.Observable) === 'function' && _a) || Object)
-    ], TetherComponent.prototype, "error", null);
-    TetherComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-tether',
-            template: __webpack_require__(202)
-        }), 
-        __metadata('design:paramtypes', [(typeof (_b = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _b) || Object])
-    ], TetherComponent);
     return TetherComponent;
-    var _a, _b;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], TetherComponent.prototype, "target", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], TetherComponent.prototype, "class", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], TetherComponent.prototype, "zIndex", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], TetherComponent.prototype, "targetAttachment", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], TetherComponent.prototype, "attachment", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], TetherComponent.prototype, "error", null);
+TetherComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-tether',
+        template: __webpack_require__(201)
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], TetherComponent);
 exports.TetherComponent = TetherComponent;
 
 
@@ -13114,50 +13217,49 @@ var TextareaDirective = (function () {
             }
         }
     };
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], TextareaDirective.prototype, "selectAllOnFocus", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Object)
-    ], TextareaDirective.prototype, "autogrow", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], TextareaDirective.prototype, "maxRows", void 0);
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], TextareaDirective.prototype, "minRows", void 0);
-    __decorate([
-        core_1.HostListener('ngModelChange', ['$event']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], TextareaDirective.prototype, "onModelChange", null);
-    __decorate([
-        core_1.HostListener('focus', ['$event.target.value']), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Object]), 
-        __metadata('design:returntype', void 0)
-    ], TextareaDirective.prototype, "onFocus", null);
-    __decorate([
-        core_1.HostBinding('attr.rows'), 
-        __metadata('design:type', Number)
-    ], TextareaDirective.prototype, "rows", void 0);
-    TextareaDirective = __decorate([
-        core_1.Directive({
-            selector: '[vcl-textarea]',
-            host: {
-                '[class.vclInput]': 'true',
-            }
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof forms_1.NgModel !== 'undefined' && forms_1.NgModel) === 'function' && _b) || Object])
-    ], TextareaDirective);
     return TextareaDirective;
-    var _a, _b;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], TextareaDirective.prototype, "selectAllOnFocus", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], TextareaDirective.prototype, "autogrow", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], TextareaDirective.prototype, "maxRows", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], TextareaDirective.prototype, "minRows", void 0);
+__decorate([
+    core_1.HostListener('ngModelChange', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], TextareaDirective.prototype, "onModelChange", null);
+__decorate([
+    core_1.HostListener('focus', ['$event.target.value']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], TextareaDirective.prototype, "onFocus", null);
+__decorate([
+    core_1.HostBinding('attr.rows'),
+    __metadata("design:type", Number)
+], TextareaDirective.prototype, "rows", void 0);
+TextareaDirective = __decorate([
+    core_1.Directive({
+        selector: '[vcl-textarea]',
+        host: {
+            '[class.vclInput]': 'true',
+        }
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef, forms_1.NgModel])
+], TextareaDirective);
 exports.TextareaDirective = TextareaDirective;
 
 
@@ -13210,24 +13312,24 @@ var TokenInputComponent = (function () {
     TokenInputComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    __decorate([
-        core_1.Input('tokens'), 
-        __metadata('design:type', Array)
-    ], TokenInputComponent.prototype, "tokens", void 0);
-    TokenInputComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-token-input',
-            template: __webpack_require__(203),
-            host: {
-                '[class.vclInput]': 'true',
-                '[class.vclTokenInput]': 'true'
-            },
-            providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR2]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], TokenInputComponent);
     return TokenInputComponent;
 }());
+__decorate([
+    core_1.Input('tokens'),
+    __metadata("design:type", Array)
+], TokenInputComponent.prototype, "tokens", void 0);
+TokenInputComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-token-input',
+        template: __webpack_require__(202),
+        host: {
+            '[class.vclInput]': 'true',
+            '[class.vclTokenInput]': 'true'
+        },
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR2]
+    }),
+    __metadata("design:paramtypes", [])
+], TokenInputComponent);
 exports.TokenInputComponent = TokenInputComponent;
 
 
@@ -13276,33 +13378,32 @@ var TokenListComponent = (function () {
     TokenListComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    __decorate([
-        core_1.Input('tokens'), 
-        __metadata('design:type', Array)
-    ], TokenListComponent.prototype, "tokens", void 0);
-    __decorate([
-        core_1.Output('onChange'), 
-        __metadata('design:type', Object)
-    ], TokenListComponent.prototype, "onChange", void 0);
-    __decorate([
-        core_1.ContentChildren(token_component_1.TokenComponent), 
-        __metadata('design:type', (typeof (_a = typeof core_1.QueryList !== 'undefined' && core_1.QueryList) === 'function' && _a) || Object)
-    ], TokenListComponent.prototype, "templateItems", void 0);
-    TokenListComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-token-list',
-            template: __webpack_require__(204),
-            host: {
-                '[class.vclTokenList]': 'true',
-                '[class.vclTokenContainer]': 'true'
-            },
-            providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], TokenListComponent);
     return TokenListComponent;
-    var _a;
 }());
+__decorate([
+    core_1.Input('tokens'),
+    __metadata("design:type", Array)
+], TokenListComponent.prototype, "tokens", void 0);
+__decorate([
+    core_1.Output('onChange'),
+    __metadata("design:type", Object)
+], TokenListComponent.prototype, "onChange", void 0);
+__decorate([
+    core_1.ContentChildren(token_component_1.TokenComponent),
+    __metadata("design:type", core_1.QueryList)
+], TokenListComponent.prototype, "templateItems", void 0);
+TokenListComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-token-list',
+        template: __webpack_require__(203),
+        host: {
+            '[class.vclTokenList]': 'true',
+            '[class.vclTokenContainer]': 'true'
+        },
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+    }),
+    __metadata("design:paramtypes", [])
+], TokenListComponent);
 exports.TokenListComponent = TokenListComponent;
 
 
@@ -13326,47 +13427,39 @@ var ToolbarComponent = (function () {
     function ToolbarComponent() {
         this.ariaLevel = 1;
     }
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', Number)
-    ], ToolbarComponent.prototype, "ariaLevel", void 0);
-    ToolbarComponent = __decorate([
-        core_1.Component({
-            selector: 'vcl-toolbar',
-            template: '<ng-content></ng-content>',
-            host: {
-                '[class.vclToolbar]': 'true',
-                '[class.vclLayoutHorizontal]': 'true',
-                '[class.vclLayoutJustified]': 'true',
-                '[class.vclSecondary]': 'ariaLevel == 2',
-                '[attr.aria-level]': 'ariaLevel',
-                '[attr.role]': '"menubar"',
-            }
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ToolbarComponent);
     return ToolbarComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], ToolbarComponent.prototype, "ariaLevel", void 0);
+ToolbarComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-toolbar',
+        template: '<ng-content></ng-content>',
+        host: {
+            '[class.vclToolbar]': 'true',
+            '[class.vclLayoutHorizontal]': 'true',
+            '[class.vclLayoutJustified]': 'true',
+            '[class.vclSecondary]': 'ariaLevel == 2',
+            '[attr.aria-level]': 'ariaLevel',
+            '[attr.role]': '"menubar"',
+        }
+    }),
+    __metadata("design:paramtypes", [])
+], ToolbarComponent);
 exports.ToolbarComponent = ToolbarComponent;
 
 
 /***/ },
 /* 165 */
-/***/ function(module, exports) {
-
-"use strict";
-"use strict";
-
-
-/***/ },
-/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var Subject_1 = __webpack_require__(52);
+var Subject_1 = __webpack_require__(51);
 __webpack_require__(84);
-__webpack_require__(51);
+__webpack_require__(50);
 var ObservableComponent = (function () {
     function ObservableComponent() {
         this.changesSubject = new Subject_1.Subject();
@@ -13378,7 +13471,7 @@ var ObservableComponent = (function () {
     ObservableComponent.prototype.observeChange = function () {
         var props = [];
         for (var _i = 0; _i < arguments.length; _i++) {
-            props[_i - 0] = arguments[_i];
+            props[_i] = arguments[_i];
         }
         return this.changes$
             .filter(function (changes) { return props.some(function (p) { return changes.hasOwnProperty(p); }); })
@@ -13392,7 +13485,7 @@ exports.ObservableComponent = ObservableComponent;
 
 
 /***/ },
-/* 167 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13422,7 +13515,7 @@ exports.setAnimations = setAnimations;
 
 
 /***/ },
-/* 168 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13464,24 +13557,23 @@ var OffClickDirective = (function () {
             document.removeEventListener('click', this.listener);
         }
     };
-    __decorate([
-        core_1.Output('off-click'), 
-        __metadata('design:type', Object)
-    ], OffClickDirective.prototype, "offClick", void 0);
-    OffClickDirective = __decorate([
-        core_1.Directive({
-            selector: '[off-click]',
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object])
-    ], OffClickDirective);
     return OffClickDirective;
-    var _a;
 }());
+__decorate([
+    core_1.Output('off-click'),
+    __metadata("design:type", Object)
+], OffClickDirective.prototype, "offClick", void 0);
+OffClickDirective = __decorate([
+    core_1.Directive({
+        selector: '[off-click]',
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], OffClickDirective);
 exports.OffClickDirective = OffClickDirective;
 
 
 /***/ },
-/* 169 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13552,18 +13644,17 @@ var WormholeService = (function () {
     WormholeService.prototype.getComponentRootNode = function (componentRef) {
         return componentRef.hostView.rootNodes[0];
     };
-    WormholeService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ApplicationRef !== 'undefined' && core_1.ApplicationRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ComponentFactoryResolver !== 'undefined' && core_1.ComponentFactoryResolver) === 'function' && _b) || Object, (typeof (_c = typeof core_1.Injector !== 'undefined' && core_1.Injector) === 'function' && _c) || Object])
-    ], WormholeService);
     return WormholeService;
-    var _a, _b, _c;
 }());
+WormholeService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [core_1.ApplicationRef, core_1.ComponentFactoryResolver, core_1.Injector])
+], WormholeService);
 exports.WormholeService = WormholeService;
 
 
 /***/ },
-/* 170 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13611,8 +13702,9 @@ var TemplateWormhole = (function (_super) {
     __extends(TemplateWormhole, _super);
     // The wormhole directive needs a reference to the template
     function TemplateWormhole(templateRef) {
-        _super.call(this);
-        this.templateRef = templateRef;
+        var _this = _super.call(this) || this;
+        _this.templateRef = templateRef;
+        return _this;
     }
     TemplateWormhole.prototype.attach = function () {
         var _this = this;
@@ -13628,25 +13720,25 @@ var TemplateWormhole = (function (_super) {
                 this.bridge.viewContainerRef.remove(i);
         }
     };
-    TemplateWormhole = __decorate([
-        core_1.Directive({
-            selector: '[wormhole]',
-            exportAs: 'wormhole',
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.TemplateRef !== 'undefined' && core_1.TemplateRef) === 'function' && _a) || Object])
-    ], TemplateWormhole);
     return TemplateWormhole;
-    var _a;
 }(Wormhole));
+TemplateWormhole = __decorate([
+    core_1.Directive({
+        selector: '[wormhole]',
+        exportAs: 'wormhole',
+    }),
+    __metadata("design:paramtypes", [core_1.TemplateRef])
+], TemplateWormhole);
 exports.TemplateWormhole = TemplateWormhole;
 var ComponentWormhole = (function (_super) {
     __extends(ComponentWormhole, _super);
     function ComponentWormhole(componentClass, opts) {
         if (opts === void 0) { opts = {}; }
-        _super.call(this);
-        this.componentClass = componentClass;
-        this.injector = opts.injector;
-        this.data = opts.data;
+        var _this = _super.call(this) || this;
+        _this.componentClass = componentClass;
+        _this.injector = opts.injector;
+        _this.data = opts.data;
+        return _this;
     }
     ComponentWormhole.prototype.attach = function () {
         var _this = this;
@@ -13722,29 +13814,28 @@ var ConnectWormholeDirective = (function () {
             this.disconnect();
         }
     };
-    __decorate([
-        core_1.Input('wormholeIndisposable'), 
-        __metadata('design:type', Boolean)
-    ], ConnectWormholeDirective.prototype, "indisposable", void 0);
-    __decorate([
-        core_1.Input('connectWormhole'), 
-        __metadata('design:type', Wormhole), 
-        __metadata('design:paramtypes', [Wormhole])
-    ], ConnectWormholeDirective.prototype, "connectWormhole", null);
-    ConnectWormholeDirective = __decorate([
-        core_1.Directive({
-            selector: '[connectWormhole]'
-        }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ViewContainerRef !== 'undefined' && core_1.ViewContainerRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.ComponentFactoryResolver !== 'undefined' && core_1.ComponentFactoryResolver) === 'function' && _b) || Object])
-    ], ConnectWormholeDirective);
     return ConnectWormholeDirective;
-    var _a, _b;
 }());
+__decorate([
+    core_1.Input('wormholeIndisposable'),
+    __metadata("design:type", Boolean)
+], ConnectWormholeDirective.prototype, "indisposable", void 0);
+__decorate([
+    core_1.Input('connectWormhole'),
+    __metadata("design:type", Wormhole),
+    __metadata("design:paramtypes", [Wormhole])
+], ConnectWormholeDirective.prototype, "connectWormhole", null);
+ConnectWormholeDirective = __decorate([
+    core_1.Directive({
+        selector: '[connectWormhole]'
+    }),
+    __metadata("design:paramtypes", [core_1.ViewContainerRef, core_1.ComponentFactoryResolver])
+], ConnectWormholeDirective);
 exports.ConnectWormholeDirective = ConnectWormholeDirective;
 
 
 /***/ },
-/* 171 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13810,22 +13901,21 @@ var L10nPipe = (function () {
             this._dispose();
         }
     };
-    L10nPipe = __decorate([
-        core_1.Pipe({
-            name: 'loc',
-            pure: false
-        }),
-        __param(0, core_1.Optional()), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof l10n_service_1.L10nService !== 'undefined' && l10n_service_1.L10nService) === 'function' && _a) || Object])
-    ], L10nPipe);
     return L10nPipe;
-    var _a;
 }());
+L10nPipe = __decorate([
+    core_1.Pipe({
+        name: 'loc',
+        pure: false
+    }),
+    __param(0, core_1.Optional()),
+    __metadata("design:paramtypes", [l10n_service_1.L10nService])
+], L10nPipe);
 exports.L10nPipe = L10nPipe;
 
 
 /***/ },
-/* 172 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 /*!
@@ -13851,11 +13941,11 @@ exports.L10nPipe = L10nPipe;
  * License for the specific language governing permissions and limitations under
  * the License.
  *
- * Copyright (c) 2011-2016 Jos de Jong, http://jsoneditoronline.org
+ * Copyright (c) 2011-2017 Jos de Jong, http://jsoneditoronline.org
  *
  * @author  Jos de Jong, <wjosdejong@gmail.com>
- * @version 5.5.10
- * @date    2016-11-02
+ * @version 5.5.11
+ * @date    2017-01-06
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(true)
@@ -29728,6 +29818,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var MAX_ERRORS = 3; // maximum number of displayed errors at the bottom
 
+	var DEFAULT_THEME = 'ace/theme/jsoneditor';
+
 	/**
 	 * Create a text editor
 	 * @param {Element} container
@@ -29775,7 +29867,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  // determine theme
-	  this.theme = options.theme || 'ace/theme/jsoneditor';
+	  this.theme = options.theme || DEFAULT_THEME;
+	  if (this.theme === DEFAULT_THEME && window.ace) {
+	    __webpack_require__(70);
+	  }
 
 	  var me = this;
 	  this.container = container;
@@ -30213,7 +30308,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	// load required ace modules
 	__webpack_require__(67);
 	__webpack_require__(69);
-	__webpack_require__(70);
 
 	module.exports = ace;
 
@@ -50203,7 +50297,7 @@ return /******/ (function(modules) { // webpackBootstrap
 ;
 
 /***/ },
-/* 173 */
+/* 172 */
 /***/ function(module, exports) {
 
 // shim for using process in browser
@@ -50389,193 +50483,193 @@ process.umask = function() { return 0; };
 
 
 /***/ },
-/* 174 */
+/* 173 */
 /***/ function(module, exports) {
 
 module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   width=\"216\"\n   height=\"144\"\n   id=\"svg4136\"\n   version=\"1.1\"\n   inkscape:version=\"0.91 r\"\n   sodipodi:docname=\"jsoneditor-icons.svg\">\n  <title\n     id=\"title6512\">JSON Editor Icons</title>\n  <metadata\n     id=\"metadata4148\">\n    <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n        <dc:format>image/svg+xml</dc:format>\n        <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\" />\n        <dc:title>JSON Editor Icons</dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n  <defs\n     id=\"defs4146\" />\n  <sodipodi:namedview\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#666666\"\n     borderopacity=\"1\"\n     objecttolerance=\"10\"\n     gridtolerance=\"10\"\n     guidetolerance=\"10\"\n     inkscape:pageopacity=\"0\"\n     inkscape:pageshadow=\"2\"\n     inkscape:window-width=\"1920\"\n     inkscape:window-height=\"1028\"\n     id=\"namedview4144\"\n     showgrid=\"true\"\n     inkscape:zoom=\"4\"\n     inkscape:cx=\"97.217248\"\n     inkscape:cy=\"59.950227\"\n     inkscape:window-x=\"0\"\n     inkscape:window-y=\"0\"\n     inkscape:window-maximized=\"1\"\n     inkscape:current-layer=\"svg4136\"\n     showguides=\"false\"\n     borderlayer=\"false\"\n     inkscape:showpageshadow=\"true\"\n     showborder=\"true\">\n    <inkscape:grid\n       type=\"xygrid\"\n       id=\"grid4640\"\n       empspacing=\"24\" />\n  </sodipodi:namedview>\n  <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->\n  <g\n     id=\"g4394\">\n    <rect\n       x=\"4\"\n       y=\"4\"\n       width=\"16\"\n       height=\"16\"\n       id=\"svg_1\"\n       style=\"fill:#1aae1c;fill-opacity:1;stroke:none;stroke-width:0\" />\n    <rect\n       style=\"fill:#ec3f29;fill-opacity:0.94117647;stroke:none;stroke-width:0\"\n       x=\"28.000006\"\n       y=\"3.999995\"\n       width=\"16\"\n       height=\"16\"\n       id=\"svg_1-7\" />\n    <rect\n       id=\"rect4165\"\n       height=\"16\"\n       width=\"16\"\n       y=\"3.999995\"\n       x=\"52.000004\"\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none;stroke-width:0\" />\n    <rect\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none;stroke-width:0\"\n       x=\"172.00002\"\n       y=\"3.9999852\"\n       width=\"16\"\n       height=\"16\"\n       id=\"rect4175\" />\n    <rect\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none;stroke-width:0\"\n       x=\"196\"\n       y=\"3.999995\"\n       width=\"16\"\n       height=\"16\"\n       id=\"rect4175-3\" />\n    <g\n       style=\"stroke:none\"\n       id=\"g4299\">\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n         id=\"svg_1-1\"\n         height=\"1.9999986\"\n         width=\"9.9999924\"\n         y=\"10.999998\"\n         x=\"7.0000048\" />\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n         id=\"svg_1-1-1\"\n         height=\"9.9999838\"\n         width=\"1.9999955\"\n         y=\"7.0000114\"\n         x=\"11.000005\" />\n    </g>\n    <g\n       style=\"stroke:none\"\n       transform=\"matrix(0.70710678,-0.70710678,0.70710678,0.70710678,19.029435,12.000001)\"\n       id=\"g4299-3\">\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n         id=\"svg_1-1-0\"\n         height=\"1.9999986\"\n         width=\"9.9999924\"\n         y=\"10.999998\"\n         x=\"7.0000048\" />\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n         id=\"svg_1-1-1-9\"\n         height=\"9.9999838\"\n         width=\"1.9999955\"\n         y=\"7.0000114\"\n         x=\"11.000005\" />\n    </g>\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n       x=\"55.000004\"\n       y=\"7.0000048\"\n       width=\"6.9999909\"\n       height=\"6.9999905\"\n       id=\"svg_1-7-5\" />\n    <rect\n       id=\"rect4354\"\n       height=\"6.9999905\"\n       width=\"6.9999909\"\n       y=\"10.00001\"\n       x=\"58\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#4c4c4c;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#3c80df;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.94117647\"\n       x=\"58.000004\"\n       y=\"10.000005\"\n       width=\"6.9999909\"\n       height=\"6.9999905\"\n       id=\"svg_1-7-5-7\" />\n    <g\n       id=\"g4378\">\n      <rect\n         id=\"svg_1-7-5-3\"\n         height=\"1.9999965\"\n         width=\"7.9999909\"\n         y=\"10.999999\"\n         x=\"198\"\n         style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n         x=\"198\"\n         y=\"7.0000005\"\n         width=\"11.999995\"\n         height=\"1.9999946\"\n         id=\"rect4374\" />\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n         x=\"198\"\n         y=\"14.999996\"\n         width=\"3.9999928\"\n         height=\"1.9999995\"\n         id=\"rect4376\" />\n    </g>\n    <g\n       id=\"g4383\"\n       transform=\"matrix(1,0,0,-1,-23.999995,23.999995)\">\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n         x=\"198\"\n         y=\"10.999999\"\n         width=\"7.9999909\"\n         height=\"1.9999965\"\n         id=\"rect4385\" />\n      <rect\n         id=\"rect4387\"\n         height=\"1.9999946\"\n         width=\"11.999995\"\n         y=\"7.0000005\"\n         x=\"198\"\n         style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n      <rect\n         id=\"rect4389\"\n         height=\"1.9999995\"\n         width=\"3.9999928\"\n         y=\"14.999996\"\n         x=\"198\"\n         style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n    </g>\n    <rect\n       y=\"3.9999199\"\n       x=\"76\"\n       height=\"16\"\n       width=\"16\"\n       id=\"rect3754-4\"\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none\" />\n    <path\n       sodipodi:nodetypes=\"cccccccc\"\n       inkscape:connector-curvature=\"0\"\n       id=\"path4351\"\n       d=\"m 85.10447,6.0157384 -0.0156,1.4063 c 3.02669,-0.2402 0.33008,3.6507996 2.48438,4.5780996 -2.18694,1.0938 0.49191,4.9069 -2.45313,4.5781 l -0.0156,1.4219 c 5.70828,0.559 1.03264,-5.1005 4.70313,-5.2656 l 0,-1.4063 c -3.61303,-0.027 1.11893,-5.7069996 -4.70313,-5.3124996 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n    <path\n       sodipodi:nodetypes=\"cccccccc\"\n       inkscape:connector-curvature=\"0\"\n       id=\"path4351-9\"\n       d=\"m 82.78125,5.9984384 0.0156,1.4063 c -3.02668,-0.2402 -0.33007,3.6506996 -2.48437,4.5780996 2.18694,1.0938 -0.49192,4.9069 2.45312,4.5781 l 0.0156,1.4219 c -5.70827,0.559 -1.03263,-5.1004 -4.70312,-5.2656 l 0,-1.4063 c 3.61303,-0.027 -1.11894,-5.7070996 4.70312,-5.3124996 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n    <rect\n       y=\"3.9999199\"\n       x=\"100\"\n       height=\"16\"\n       width=\"16\"\n       id=\"rect3754-25\"\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n       id=\"path2987\"\n       d=\"m 103.719,5.6719384 0,12.7187996 3.03125,0 0,-1.5313 -1.34375,0 0,-9.6249996 1.375,0 0,-1.5625 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n       id=\"path2987-1\"\n       d=\"m 112.2185,5.6721984 0,12.7187996 -3.03125,0 0,-1.5313 1.34375,0 0,-9.6249996 -1.375,0 0,-1.5625 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none\" />\n    <rect\n       y=\"3.9999199\"\n       x=\"124\"\n       height=\"16\"\n       width=\"16\"\n       id=\"rect3754-73\"\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none\" />\n    <path\n       sodipodi:nodetypes=\"ccccccccc\"\n       inkscape:connector-curvature=\"0\"\n       id=\"path3780\"\n       d=\"m 126.2824,17.602938 1.78957,0 1.14143,-2.8641 5.65364,0 1.14856,2.8641 1.76565,0 -4.78687,-11.1610996 -1.91903,0 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n       id=\"path3782\"\n       d=\"m 129.72704,13.478838 4.60852,0.01 -2.30426,-5.5497996 z\"\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none\" />\n    <rect\n       y=\"3.9999199\"\n       x=\"148\"\n       height=\"16\"\n       width=\"16\"\n       id=\"rect3754-35\"\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none\" />\n    <path\n       sodipodi:nodetypes=\"ccccccc\"\n       inkscape:connector-curvature=\"0\"\n       id=\"path5008-2\"\n       d=\"m 156.47655,5.8917384 0,2.1797 0.46093,2.3983996 1.82813,0 0.39844,-2.3983996 0,-2.1797 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none\" />\n    <path\n       sodipodi:nodetypes=\"ccccccc\"\n       inkscape:connector-curvature=\"0\"\n       id=\"path5008-2-8\"\n       d=\"m 152.51561,5.8906384 0,2.1797 0.46094,2.3983996 1.82812,0 0.39844,-2.3983996 0,-2.1797 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none\" />\n  </g>\n  <rect\n     x=\"4\"\n     y=\"27.999994\"\n     width=\"16\"\n     height=\"16\"\n     id=\"rect4432\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0\"\n     x=\"28.000006\"\n     y=\"27.99999\"\n     width=\"16\"\n     height=\"16\"\n     id=\"rect4434\" />\n  <rect\n     id=\"rect4436\"\n     height=\"16\"\n     width=\"16\"\n     y=\"27.99999\"\n     x=\"52.000004\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n  <rect\n     style=\"fill:#d3d3d3;stroke:#000000;stroke-width:0\"\n     x=\"172.00002\"\n     y=\"27.999981\"\n     width=\"16\"\n     height=\"16\"\n     id=\"rect4446\" />\n  <rect\n     style=\"fill:#d3d3d3;stroke:#000000;stroke-width:0\"\n     x=\"196\"\n     y=\"27.99999\"\n     width=\"16\"\n     height=\"16\"\n     id=\"rect4448\" />\n  <g\n     id=\"g4466\"\n     style=\"stroke:none\"\n     transform=\"translate(0,23.999995)\">\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n       id=\"rect4468\"\n       height=\"1.9999986\"\n       width=\"9.9999924\"\n       y=\"10.999998\"\n       x=\"7.0000048\" />\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n       id=\"rect4470\"\n       height=\"9.9999838\"\n       width=\"1.9999955\"\n       y=\"7.0000114\"\n       x=\"11.000005\" />\n  </g>\n  <g\n     transform=\"matrix(0.70710678,-0.70710678,0.70710678,0.70710678,19.029435,35.999996)\"\n     id=\"g4472\"\n     style=\"stroke:none\">\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n       id=\"rect4474\"\n       height=\"1.9999986\"\n       width=\"9.9999924\"\n       y=\"10.999998\"\n       x=\"7.0000048\" />\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n       id=\"rect4476\"\n       height=\"9.9999838\"\n       width=\"1.9999955\"\n       y=\"7.0000114\"\n       x=\"11.000005\" />\n  </g>\n  <rect\n     style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n     x=\"55.000004\"\n     y=\"31\"\n     width=\"6.9999909\"\n     height=\"6.9999905\"\n     id=\"rect4478\" />\n  <rect\n     id=\"rect4480\"\n     height=\"6.9999905\"\n     width=\"6.9999909\"\n     y=\"34.000008\"\n     x=\"58\"\n     style=\"fill:#ffffff;fill-opacity:1;stroke:#d3d3d3;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none\" />\n  <rect\n     style=\"fill:#ffffff;fill-opacity:1;stroke:#d3d3d3;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none\"\n     x=\"58.000004\"\n     y=\"34.000004\"\n     width=\"6.9999909\"\n     height=\"6.9999905\"\n     id=\"rect4482\" />\n  <g\n     id=\"g4484\"\n     transform=\"translate(0,23.999995)\">\n    <rect\n       id=\"rect4486\"\n       height=\"1.9999965\"\n       width=\"7.9999909\"\n       y=\"10.999999\"\n       x=\"198\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n       x=\"198\"\n       y=\"7.0000005\"\n       width=\"11.999995\"\n       height=\"1.9999946\"\n       id=\"rect4488\" />\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n       x=\"198\"\n       y=\"14.999996\"\n       width=\"3.9999928\"\n       height=\"1.9999995\"\n       id=\"rect4490\" />\n  </g>\n  <g\n     id=\"g4492\"\n     transform=\"matrix(1,0,0,-1,-23.999995,47.99999)\">\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n       x=\"198\"\n       y=\"10.999999\"\n       width=\"7.9999909\"\n       height=\"1.9999965\"\n       id=\"rect4494\" />\n    <rect\n       id=\"rect4496\"\n       height=\"1.9999946\"\n       width=\"11.999995\"\n       y=\"7.0000005\"\n       x=\"198\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n    <rect\n       id=\"rect4498\"\n       height=\"1.9999995\"\n       width=\"3.9999928\"\n       y=\"14.999996\"\n       x=\"198\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n  </g>\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none\"\n     id=\"rect3754-8\"\n     width=\"16\"\n     height=\"16\"\n     x=\"76\"\n     y=\"27.99992\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\"\n     d=\"m 85.10448,30.015537 -0.0156,1.4063 c 3.02668,-0.2402 0.33007,3.6508 2.48438,4.5781 -2.18695,1.0938 0.49191,4.90688 -2.45313,4.57808 l -0.0156,1.4219 c 5.70827,0.559 1.03263,-5.10048 4.70313,-5.26558 l 0,-1.4063 c -3.61304,-0.027 1.11893,-5.707 -4.70313,-5.3125 z\"\n     id=\"path4351-1\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cccccccc\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\"\n     d=\"m 82.78126,29.998237 0.0156,1.4063 c -3.02668,-0.2402 -0.33008,3.6507 -2.48438,4.5781 2.18694,1.0938 -0.49191,4.90688 2.45313,4.57808 l 0.0156,1.4219 c -5.70828,0.559 -1.03264,-5.10038 -4.70313,-5.26558 l 0,-1.4063 c 3.61303,-0.027 -1.11893,-5.7071 4.70313,-5.3125 z\"\n     id=\"path4351-9-5\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cccccccc\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none\"\n     id=\"rect3754-65\"\n     width=\"16\"\n     height=\"16\"\n     x=\"100\"\n     y=\"27.99992\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:none\"\n     d=\"m 103.719,29.671937 0,12.71878 3.03125,0 0,-1.5313 -1.34375,0 0,-9.62498 1.375,0 0,-1.5625 z\"\n     id=\"path2987-8\"\n     inkscape:connector-curvature=\"0\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:none\"\n     d=\"m 112.2185,29.671937 0,12.71878 -3.03125,0 0,-1.5313 1.34375,0 0,-9.62498 -1.375,0 0,-1.5625 z\"\n     id=\"path2987-1-9\"\n     inkscape:connector-curvature=\"0\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none\"\n     id=\"rect3754-92\"\n     width=\"16\"\n     height=\"16\"\n     x=\"124\"\n     y=\"27.99992\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:none\"\n     d=\"m 126.2824,41.602917 1.78957,0 1.14143,-2.86408 5.65364,0 1.14856,2.86408 1.76565,0 -4.78687,-11.16108 -1.91902,0 z\"\n     id=\"path3780-9\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"ccccccccc\" />\n  <path\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none\"\n     d=\"m 129.72704,37.478837 4.60852,0.01 -2.30426,-5.5498 z\"\n     id=\"path3782-2\"\n     inkscape:connector-curvature=\"0\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none\"\n     id=\"rect3754-47\"\n     width=\"16\"\n     height=\"16\"\n     x=\"148\"\n     y=\"27.99992\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:none\"\n     d=\"m 156.47656,29.891737 0,2.1797 0.46093,2.3984 1.82813,0 0.39844,-2.3984 0,-2.1797 z\"\n     id=\"path5008-2-1\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"ccccccc\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:none\"\n     d=\"m 152.51562,29.890637 0,2.1797 0.46094,2.3984 1.82812,0 0.39844,-2.3984 0,-2.1797 z\"\n     id=\"path5008-2-8-8\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"ccccccc\" />\n  <rect\n     id=\"svg_1-7-2\"\n     height=\"1.9999961\"\n     width=\"11.999996\"\n     y=\"64\"\n     x=\"54\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"svg_1-7-2-2\"\n     height=\"2.9999905\"\n     width=\"2.9999907\"\n     y=\"52\"\n     x=\"80.000008\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\" />\n  <rect\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     x=\"85.000008\"\n     y=\"52\"\n     width=\"2.9999907\"\n     height=\"2.9999905\"\n     id=\"rect4561\" />\n  <rect\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     x=\"80.000008\"\n     y=\"58\"\n     width=\"2.9999907\"\n     height=\"2.9999905\"\n     id=\"rect4563\" />\n  <rect\n     id=\"rect4565\"\n     height=\"2.9999905\"\n     width=\"2.9999907\"\n     y=\"58\"\n     x=\"85.000008\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4567\"\n     height=\"2.9999905\"\n     width=\"2.9999907\"\n     y=\"64\"\n     x=\"80.000008\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\" />\n  <rect\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     x=\"85.000008\"\n     y=\"64\"\n     width=\"2.9999907\"\n     height=\"2.9999905\"\n     id=\"rect4569\" />\n  <circle\n     style=\"opacity:1;fill:none;fill-opacity:1;stroke:#4c4c4c;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none\"\n     id=\"path4571\"\n     cx=\"110.06081\"\n     cy=\"57.939209\"\n     r=\"4.7438836\" />\n  <rect\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     x=\"116.64566\"\n     y=\"-31.79752\"\n     width=\"4.229713\"\n     height=\"6.4053884\"\n     id=\"rect4563-2\"\n     transform=\"matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)\" />\n  <path\n     style=\"fill:#4c4c4c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\"\n     d=\"M 125,56 138.77027,56.095 132,64 Z\"\n     id=\"path4613\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cccc\" />\n  <path\n     sodipodi:nodetypes=\"cccc\"\n     inkscape:connector-curvature=\"0\"\n     id=\"path4615\"\n     d=\"M 149,64 162.77027,63.905 156,56 Z\"\n     style=\"fill:#4c4c4c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n  <rect\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     x=\"54\"\n     y=\"53\"\n     width=\"11.999996\"\n     height=\"1.9999961\"\n     id=\"rect4638\" />\n  <rect\n     id=\"svg_1-7-2-24\"\n     height=\"1.9999957\"\n     width=\"12.99999\"\n     y=\"-56\"\n     x=\"53\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     transform=\"matrix(0,1,-1,0,0,0)\" />\n  <rect\n     transform=\"matrix(0,1,-1,0,0,0)\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     x=\"53\"\n     y=\"-66\"\n     width=\"12.99999\"\n     height=\"1.9999957\"\n     id=\"rect4657\" />\n  <rect\n     id=\"rect4659\"\n     height=\"0.99999291\"\n     width=\"11.999999\"\n     y=\"57\"\n     x=\"54\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     x=\"54\"\n     y=\"88.000122\"\n     width=\"11.999996\"\n     height=\"1.9999961\"\n     id=\"rect4661\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     x=\"80.000008\"\n     y=\"76.000122\"\n     width=\"2.9999907\"\n     height=\"2.9999905\"\n     id=\"rect4663\" />\n  <rect\n     id=\"rect4665\"\n     height=\"2.9999905\"\n     width=\"2.9999907\"\n     y=\"76.000122\"\n     x=\"85.000008\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\" />\n  <rect\n     id=\"rect4667\"\n     height=\"2.9999905\"\n     width=\"2.9999907\"\n     y=\"82.000122\"\n     x=\"80.000008\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     x=\"85.000008\"\n     y=\"82.000122\"\n     width=\"2.9999907\"\n     height=\"2.9999905\"\n     id=\"rect4669\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     x=\"80.000008\"\n     y=\"88.000122\"\n     width=\"2.9999907\"\n     height=\"2.9999905\"\n     id=\"rect4671\" />\n  <rect\n     id=\"rect4673\"\n     height=\"2.9999905\"\n     width=\"2.9999907\"\n     y=\"88.000122\"\n     x=\"85.000008\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\" />\n  <circle\n     r=\"4.7438836\"\n     cy=\"81.939331\"\n     cx=\"110.06081\"\n     id=\"circle4675\"\n     style=\"opacity:1;fill:none;fill-opacity:1;stroke:#d3d3d3;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n  <rect\n     transform=\"matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)\"\n     id=\"rect4677\"\n     height=\"6.4053884\"\n     width=\"4.229713\"\n     y=\"-14.826816\"\n     x=\"133.6163\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:#d3d3d3;stroke-width:0;stroke-opacity:1\" />\n  <path\n     sodipodi:nodetypes=\"cccc\"\n     inkscape:connector-curvature=\"0\"\n     id=\"path4679\"\n     d=\"m 125,80.000005 13.77027,0.09499 L 132,87.999992 Z\"\n     style=\"fill:#d3d3d3;fill-opacity:1;fill-rule:evenodd;stroke:#d3d3d3;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n  <path\n     style=\"fill:#d3d3d3;fill-opacity:1;fill-rule:evenodd;stroke:#d3d3d3;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\"\n     d=\"M 149,88.0002 162.77027,87.9052 156,80.0002 Z\"\n     id=\"path4681\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cccc\" />\n  <rect\n     id=\"rect4683\"\n     height=\"1.9999961\"\n     width=\"11.999996\"\n     y=\"77.000122\"\n     x=\"54\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\" />\n  <rect\n     transform=\"matrix(0,1,-1,0,0,0)\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     x=\"77.000122\"\n     y=\"-56\"\n     width=\"12.99999\"\n     height=\"1.9999957\"\n     id=\"rect4685\" />\n  <rect\n     id=\"rect4687\"\n     height=\"1.9999957\"\n     width=\"12.99999\"\n     y=\"-66\"\n     x=\"77.000122\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     transform=\"matrix(0,1,-1,0,0,0)\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     x=\"54\"\n     y=\"81.000122\"\n     width=\"11.999999\"\n     height=\"0.99999291\"\n     id=\"rect4689\" />\n  <rect\n     id=\"rect4761-1\"\n     height=\"1.9999945\"\n     width=\"15.99999\"\n     y=\"101\"\n     x=\"76.000008\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4761-0\"\n     height=\"1.9999945\"\n     width=\"15.99999\"\n     y=\"105\"\n     x=\"76.000008\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4761-7\"\n     height=\"1.9999945\"\n     width=\"9\"\n     y=\"109\"\n     x=\"76.000008\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4761-1-1\"\n     height=\"1.9999945\"\n     width=\"12\"\n     y=\"125\"\n     x=\"76.000008\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4761-1-1-4\"\n     height=\"1.9999945\"\n     width=\"10\"\n     y=\"137\"\n     x=\"76.000008\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4761-1-1-4-4\"\n     height=\"1.9999945\"\n     width=\"10\"\n     y=\"129\"\n     x=\"82\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4761-1-1-4-4-3\"\n     height=\"1.9999945\"\n     width=\"9\"\n     y=\"133\"\n     x=\"82\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <path\n     inkscape:connector-curvature=\"0\"\n     style=\"color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.8;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.66157866;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate\"\n     d=\"m 36.398438,100.0254 c -0.423362,-0.013 -0.846847,0.01 -1.265626,0.062 -1.656562,0.2196 -3.244567,0.9739 -4.507812,2.2266 L 29,100.5991 l -2.324219,7.7129 7.826172,-1.9062 -1.804687,-1.9063 c 1.597702,-1.5308 4.048706,-1.8453 5.984375,-0.7207 1.971162,1.1452 2.881954,3.3975 2.308593,5.5508 -0.573361,2.1533 -2.533865,3.6953 -4.830078,3.6953 l 0,3.0742 c 3.550756,0 6.710442,-2.4113 7.650391,-5.9414 0.939949,-3.5301 -0.618463,-7.2736 -3.710938,-9.0703 -1.159678,-0.6738 -2.431087,-1.0231 -3.701171,-1.0625 z\"\n     id=\"path4138\" />\n  <path\n     inkscape:connector-curvature=\"0\"\n     style=\"color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.8;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.66157866;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate\"\n     d=\"m 59.722656,99.9629 c -1.270084,0.039 -2.541493,0.3887 -3.701172,1.0625 -3.092475,1.7967 -4.650886,5.5402 -3.710937,9.0703 0.939949,3.5301 4.09768,5.9414 7.648437,5.9414 l 0,-3.0742 c -2.296214,0 -4.256717,-1.542 -4.830078,-3.6953 -0.573361,-2.1533 0.337432,-4.4056 2.308594,-5.5508 1.935731,-1.1246 4.38863,-0.8102 5.986326,0.7207 l -1.806638,1.9063 7.828128,1.9062 -2.32422,-7.7129 -1.62696,1.7168 c -1.26338,-1.2531 -2.848917,-2.0088 -4.505855,-2.2285 -0.418778,-0.055 -0.842263,-0.076 -1.265625,-0.062 z\"\n     id=\"path4138-1\" />\n  <path\n     inkscape:connector-curvature=\"0\"\n     style=\"opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.966;stroke-miterlimit:4;stroke-dasharray:none\"\n     d=\"m 10.5,100 0,2 -2.4999996,0 L 12,107 l 4,-5 -2.5,0 0,-2 -3,0 z\"\n     id=\"path3055-0-77\" />\n  <path\n     style=\"opacity:0.8;fill:none;stroke:#ffffff;stroke-width:1.966;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\"\n     d=\"m 4.9850574,108.015 14.0298856,-0.03\"\n     id=\"path5244-5-0-5\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cc\" />\n  <path\n     style=\"opacity:0.8;fill:none;stroke:#ffffff;stroke-width:1.966;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\"\n     d=\"m 4.9849874,132.015 14.0298866,-0.03\"\n     id=\"path5244-5-0-5-8\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cc\" />\n  <path\n     inkscape:connector-curvature=\"0\"\n     style=\"color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.4;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.66157866;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate\"\n     d=\"m 36.398438,123.9629 c -0.423362,-0.013 -0.846847,0.01 -1.265626,0.062 -1.656562,0.2196 -3.244567,0.9739 -4.507812,2.2266 L 29,124.5366 l -2.324219,7.7129 7.826172,-1.9062 -1.804687,-1.9063 c 1.597702,-1.5308 4.048706,-1.8453 5.984375,-0.7207 1.971162,1.1453 2.881954,3.3975 2.308593,5.5508 -0.573361,2.1533 -2.533864,3.6953 -4.830078,3.6953 l 0,3.0742 c 3.550757,0 6.710442,-2.4093 7.650391,-5.9394 0.939949,-3.5301 -0.618463,-7.2756 -3.710938,-9.0723 -1.159678,-0.6737 -2.431087,-1.0231 -3.701171,-1.0625 z\"\n     id=\"path4138-12\" />\n  <path\n     inkscape:connector-curvature=\"0\"\n     style=\"color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.4;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.66157866;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate\"\n     d=\"m 59.722656,123.9629 c -1.270084,0.039 -2.541493,0.3888 -3.701172,1.0625 -3.092475,1.7967 -4.650886,5.5422 -3.710937,9.0723 0.939949,3.5301 4.09768,5.9394 7.648437,5.9394 l 0,-3.0742 c -2.296214,0 -4.256717,-1.542 -4.830078,-3.6953 -0.573361,-2.1533 0.337432,-4.4055 2.308594,-5.5508 1.935731,-1.1246 4.38863,-0.8102 5.986326,0.7207 l -1.806638,1.9063 7.828128,1.9062 -2.32422,-7.7129 -1.62696,1.7168 c -1.26338,-1.2531 -2.848917,-2.0088 -4.505855,-2.2285 -0.418778,-0.055 -0.842263,-0.076 -1.265625,-0.062 z\"\n     id=\"path4138-1-3\" />\n  <path\n     id=\"path6191\"\n     d=\"m 10.5,116 0,-2 -2.4999996,0 L 12,109 l 4,5 -2.5,0 0,2 -3,0 z\"\n     style=\"opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.966;stroke-miterlimit:4;stroke-dasharray:none\"\n     inkscape:connector-curvature=\"0\" />\n  <path\n     inkscape:connector-curvature=\"0\"\n     style=\"opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.966;stroke-miterlimit:4;stroke-dasharray:none\"\n     d=\"m 10.5,129 0,-2 -2.4999996,0 L 12,122 l 4,5 -2.5,0 0,2 -3,0 z\"\n     id=\"path6193\" />\n  <path\n     id=\"path6195\"\n     d=\"m 10.5,135 0,2 -2.4999996,0 L 12,142 l 4,-5 -2.5,0 0,-2 -3,0 z\"\n     style=\"opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.966;stroke-miterlimit:4;stroke-dasharray:none\"\n     inkscape:connector-curvature=\"0\" />\n  <path\n     sodipodi:type=\"star\"\n     style=\"fill:#4d4d4d;fill-opacity:0.90196078;stroke:#d3d3d3;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none\"\n     id=\"path4500\"\n     sodipodi:sides=\"3\"\n     sodipodi:cx=\"11.55581\"\n     sodipodi:cy=\"60.073242\"\n     sodipodi:r1=\"5.1116104\"\n     sodipodi:r2=\"2.5558052\"\n     sodipodi:arg1=\"0\"\n     sodipodi:arg2=\"1.0471976\"\n     inkscape:flatsided=\"false\"\n     inkscape:rounded=\"0\"\n     inkscape:randomized=\"0\"\n     d=\"m 16.66742,60.073242 -3.833708,2.213392 -3.8337072,2.213393 0,-4.426785 0,-4.426784 3.8337082,2.213392 z\"\n     inkscape:transform-center-x=\"-1.2779026\" />\n  <path\n     inkscape:transform-center-x=\"1.277902\"\n     d=\"m -31.500004,60.073242 -3.833708,2.213392 -3.833707,2.213393 0,-4.426785 0,-4.426784 3.833707,2.213392 z\"\n     inkscape:randomized=\"0\"\n     inkscape:rounded=\"0\"\n     inkscape:flatsided=\"false\"\n     sodipodi:arg2=\"1.0471976\"\n     sodipodi:arg1=\"0\"\n     sodipodi:r2=\"2.5558052\"\n     sodipodi:r1=\"5.1116104\"\n     sodipodi:cy=\"60.073242\"\n     sodipodi:cx=\"-36.611614\"\n     sodipodi:sides=\"3\"\n     id=\"path4502\"\n     style=\"fill:#4d4d4d;fill-opacity:0.90196078;stroke:#d3d3d3;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none\"\n     sodipodi:type=\"star\"\n     transform=\"scale(-1,1)\" />\n  <path\n     d=\"m 16.66742,60.073212 -3.833708,2.213392 -3.8337072,2.213392 0,-4.426784 0,-4.426785 3.8337082,2.213392 z\"\n     inkscape:randomized=\"0\"\n     inkscape:rounded=\"0\"\n     inkscape:flatsided=\"false\"\n     sodipodi:arg2=\"1.0471976\"\n     sodipodi:arg1=\"0\"\n     sodipodi:r2=\"2.5558052\"\n     sodipodi:r1=\"5.1116104\"\n     sodipodi:cy=\"60.073212\"\n     sodipodi:cx=\"11.55581\"\n     sodipodi:sides=\"3\"\n     id=\"path4504\"\n     style=\"fill:#4d4d4d;fill-opacity:0.90196078;stroke:#d3d3d3;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none\"\n     sodipodi:type=\"star\"\n     transform=\"matrix(0,1,-1,0,72.0074,71.7877)\"\n     inkscape:transform-center-y=\"1.2779029\" />\n  <path\n     inkscape:transform-center-y=\"-1.2779026\"\n     transform=\"matrix(0,-1,-1,0,96,96)\"\n     sodipodi:type=\"star\"\n     style=\"fill:#4d4d4d;fill-opacity:0.90196078;stroke:#d3d3d3;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none\"\n     id=\"path4506\"\n     sodipodi:sides=\"3\"\n     sodipodi:cx=\"11.55581\"\n     sodipodi:cy=\"60.073212\"\n     sodipodi:r1=\"5.1116104\"\n     sodipodi:r2=\"2.5558052\"\n     sodipodi:arg1=\"0\"\n     sodipodi:arg2=\"1.0471976\"\n     inkscape:flatsided=\"false\"\n     inkscape:rounded=\"0\"\n     inkscape:randomized=\"0\"\n     d=\"m 16.66742,60.073212 -3.833708,2.213392 -3.8337072,2.213392 0,-4.426784 0,-4.426785 3.8337082,2.213392 z\" />\n  <path\n     sodipodi:nodetypes=\"cccc\"\n     inkscape:connector-curvature=\"0\"\n     id=\"path4615-5\"\n     d=\"m 171.82574,65.174193 16.34854,0 -8.17427,-13.348454 z\"\n     style=\"fill:#fbb917;fill-opacity:1;fill-rule:evenodd;stroke:#fbb917;stroke-width:1.65161395;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n  <path\n     style=\"opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"\n     d=\"m 179,55 0,6 2,0 0,-6\"\n     id=\"path4300\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cccc\" />\n  <path\n     style=\"opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"\n     d=\"m 179,62 0,2 2,0 0,-2\"\n     id=\"path4300-6\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cccc\" />\n</svg>\n"
 
 /***/ },
-/* 175 */
+/* 174 */
 /***/ function(module, exports) {
 
-module.exports = "/* reset styling (prevent conflicts with bootstrap, materialize.css, etc.) */\n\ndiv.jsoneditor input {\n  height: auto;\n  border: inherit;\n}\n\ndiv.jsoneditor input:focus {\n  border: none !important;\n  box-shadow: none !important;\n}\n\ndiv.jsoneditor table {\n  border-collapse: collapse;\n  width: auto;\n}\n\ndiv.jsoneditor td,\ndiv.jsoneditor th {\n  padding: 0;\n  display: table-cell;\n  text-align: left;\n  vertical-align: inherit;\n  border-radius: inherit;\n}\n\n\ndiv.jsoneditor-field,\ndiv.jsoneditor-value,\ndiv.jsoneditor-readonly {\n  border: 1px solid transparent;\n  min-height: 16px;\n  min-width: 32px;\n  padding: 2px;\n  margin: 1px;\n  word-wrap: break-word;\n  float: left;\n}\n\n/* adjust margin of p elements inside editable divs, needed for Opera, IE */\n\ndiv.jsoneditor-field p,\ndiv.jsoneditor-value p {\n  margin: 0;\n}\n\ndiv.jsoneditor-value {\n  word-break: break-word;\n}\n\ndiv.jsoneditor-readonly {\n  min-width: 16px;\n  color: gray;\n}\n\ndiv.jsoneditor-empty {\n  border-color: lightgray;\n  border-style: dashed;\n  border-radius: 2px;\n}\n\ndiv.jsoneditor-field.jsoneditor-empty::after,\ndiv.jsoneditor-value.jsoneditor-empty::after {\n  pointer-events: none;\n  color: lightgray;\n  font-size: 8pt;\n}\n\ndiv.jsoneditor-field.jsoneditor-empty::after {\n  content: \"field\";\n}\n\ndiv.jsoneditor-value.jsoneditor-empty::after {\n  content: \"value\";\n}\n\ndiv.jsoneditor-value.jsoneditor-url,\na.jsoneditor-value.jsoneditor-url {\n  color: green;\n  text-decoration: underline;\n}\n\na.jsoneditor-value.jsoneditor-url {\n  display: inline-block;\n  padding: 2px;\n  margin: 2px;\n}\n\na.jsoneditor-value.jsoneditor-url:hover,\na.jsoneditor-value.jsoneditor-url:focus {\n  color: #ee422e;\n}\n\ndiv.jsoneditor td.jsoneditor-separator {\n  padding: 3px 0;\n  vertical-align: top;\n  color: gray;\n}\n\ndiv.jsoneditor-field[contenteditable=true]:focus,\ndiv.jsoneditor-field[contenteditable=true]:hover,\ndiv.jsoneditor-value[contenteditable=true]:focus,\ndiv.jsoneditor-value[contenteditable=true]:hover,\ndiv.jsoneditor-field.jsoneditor-highlight,\ndiv.jsoneditor-value.jsoneditor-highlight {\n  background-color: #FFFFAB;\n  border: 1px solid yellow;\n  border-radius: 2px;\n}\n\ndiv.jsoneditor-field.jsoneditor-highlight-active,\ndiv.jsoneditor-field.jsoneditor-highlight-active:focus,\ndiv.jsoneditor-field.jsoneditor-highlight-active:hover,\ndiv.jsoneditor-value.jsoneditor-highlight-active,\ndiv.jsoneditor-value.jsoneditor-highlight-active:focus,\ndiv.jsoneditor-value.jsoneditor-highlight-active:hover {\n  background-color: #ffee00;\n  border: 1px solid #ffc700;\n  border-radius: 2px;\n}\n\ndiv.jsoneditor-value.jsoneditor-string {\n  color: #008000;\n}\n\ndiv.jsoneditor-value.jsoneditor-object,\ndiv.jsoneditor-value.jsoneditor-array {\n  min-width: 16px;\n  color: #808080;\n}\n\ndiv.jsoneditor-value.jsoneditor-number {\n  color: #ee422e;\n}\n\ndiv.jsoneditor-value.jsoneditor-boolean {\n  color: #ff8c00;\n}\n\ndiv.jsoneditor-value.jsoneditor-null {\n  color: #004ED0;\n}\n\ndiv.jsoneditor-value.jsoneditor-invalid {\n  color: #000000;\n}\n\ndiv.jsoneditor-tree button {\n  width: 24px;\n  height: 24px;\n  padding: 0;\n  margin: 0;\n  border: none;\n  cursor: pointer;\n  background: transparent url(\"img/jsoneditor-icons.svg\");\n}\n\ndiv.jsoneditor-mode-view tr.jsoneditor-expandable td.jsoneditor-tree,\ndiv.jsoneditor-mode-form tr.jsoneditor-expandable td.jsoneditor-tree {\n  cursor: pointer;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-collapsed {\n  background-position: 0 -48px;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-expanded {\n  background-position: 0 -72px;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-contextmenu {\n  background-position: -48px -72px;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-contextmenu:hover,\ndiv.jsoneditor-tree button.jsoneditor-contextmenu:focus,\ndiv.jsoneditor-tree button.jsoneditor-contextmenu.jsoneditor-selected,\ntr.jsoneditor-selected.jsoneditor-first button.jsoneditor-contextmenu {\n  background-position: -48px -48px;\n}\n\ndiv.jsoneditor-tree *:focus {\n  outline: none;\n}\n\ndiv.jsoneditor-tree button:focus {\n  /* TODO: nice outline for buttons with focus\n  outline: #97B0F8 solid 2px;\n  box-shadow: 0 0 8px #97B0F8;\n  */\n  background-color: #f5f5f5;\n  outline: #e5e5e5 solid 1px;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-invisible {\n  visibility: hidden;\n  background: none;\n}\n\ndiv.jsoneditor {\n  color: #1A1A1A;\n  border: 1px solid #3883fa;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  position: relative;\n  padding: 0;\n  line-height: 100%;\n}\n\ndiv.jsoneditor-tree table.jsoneditor-tree {\n  border-collapse: collapse;\n  border-spacing: 0;\n  width: 100%;\n  margin: 0;\n}\n\ndiv.jsoneditor-outer {\n  width: 100%;\n  height: 100%;\n  margin: -35px 0 0 0;\n  padding: 35px 0 0 0;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n}\n\ntextarea.jsoneditor-text,\n.ace-jsoneditor {\n  min-height: 150px;\n}\n\ndiv.jsoneditor-tree {\n  width: 100%;\n  height: 100%;\n  position: relative;\n  overflow: auto;\n}\n\ntextarea.jsoneditor-text {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n  outline-width: 0;\n  border: none;\n  background-color: white;\n  resize: none;\n}\n\ntr.jsoneditor-highlight,\ntr.jsoneditor-selected {\n  background-color: #e6e6e6;\n}\n\ntr.jsoneditor-selected button.jsoneditor-dragarea,\ntr.jsoneditor-selected button.jsoneditor-contextmenu {\n  visibility: hidden;\n}\n\ntr.jsoneditor-selected.jsoneditor-first button.jsoneditor-dragarea,\ntr.jsoneditor-selected.jsoneditor-first button.jsoneditor-contextmenu {\n  visibility: visible;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-dragarea {\n  background: url(\"img/jsoneditor-icons.svg\") -72px -72px;\n  cursor: move;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-dragarea:hover,\ndiv.jsoneditor-tree button.jsoneditor-dragarea:focus,\ntr.jsoneditor-selected.jsoneditor-first button.jsoneditor-dragarea {\n  background-position: -72px -48px;\n}\n\ndiv.jsoneditor tr,\ndiv.jsoneditor th,\ndiv.jsoneditor td {\n  padding: 0;\n  margin: 0;\n}\n\ndiv.jsoneditor td {\n  vertical-align: top;\n}\n\ndiv.jsoneditor td.jsoneditor-tree {\n  vertical-align: top;\n}\n\ndiv.jsoneditor-field,\ndiv.jsoneditor-value,\ndiv.jsoneditor td,\ndiv.jsoneditor th,\ndiv.jsoneditor textarea,\n.jsoneditor-schema-error {\n  font-family: droid sans mono, consolas, monospace, courier new, courier, sans-serif;\n  font-size: 10pt;\n  color: #1A1A1A;\n}\n\n/* popover */\n\n.jsoneditor-schema-error {\n  cursor: default;\n  display: inline-block;\n  /*font-family: arial, sans-serif;*/\n  height: 24px;\n  line-height: 24px;\n  position: relative;\n  text-align: center;\n  width: 24px;\n}\n\ndiv.jsoneditor-tree .jsoneditor-schema-error {\n  width: 24px;\n  height: 24px;\n  padding: 0;\n  margin: 0 4px 0 0;\n  background: url(\"img/jsoneditor-icons.svg\")  -168px -48px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover {\n  background-color: #4c4c4c;\n  border-radius: 3px;\n  box-shadow: 0 0 5px rgba(0,0,0,0.4);\n  color: #fff;\n  display: none;\n  padding: 7px 10px;\n  position: absolute;\n  width: 200px;\n  z-index: 4;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-above {\n  bottom: 32px;\n  left: -98px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-below {\n  top: 32px;\n  left: -98px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-left {\n  top: -7px;\n  right: 32px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-right {\n  top: -7px;\n  left: 32px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover:before {\n  border-right: 7px solid transparent;\n  border-left: 7px solid transparent;\n  content: '';\n  display: block;\n  left: 50%;\n  margin-left: -7px;\n  position: absolute;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-above:before {\n  border-top: 7px solid #4c4c4c;\n  bottom: -7px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-below:before {\n  border-bottom: 7px solid #4c4c4c;\n  top: -7px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-left:before {\n  border-left: 7px solid #4c4c4c;\n  border-top: 7px solid transparent;\n  border-bottom: 7px solid transparent;\n  content: '';\n  top: 19px;\n  right: -14px;\n  left: inherit;\n  margin-left: inherit;\n  margin-top: -7px;\n  position: absolute;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-right:before {\n  border-right: 7px solid #4c4c4c;\n  border-top: 7px solid transparent;\n  border-bottom: 7px solid transparent;\n  content: '';\n  top: 19px;\n  left: -14px;\n  margin-left: inherit;\n  margin-top: -7px;\n  position: absolute;\n}\n\n.jsoneditor-schema-error:hover .jsoneditor-popover,\n.jsoneditor-schema-error:focus .jsoneditor-popover {\n  display: block;\n  -webkit-animation: fade-in .3s linear 1, move-up .3s linear 1;\n  -moz-animation: fade-in .3s linear 1, move-up .3s linear 1;\n  -ms-animation: fade-in .3s linear 1, move-up .3s linear 1;\n}\n\n@-webkit-keyframes fade-in {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@-moz-keyframes fade-in {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@-ms-keyframes fade-in {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n/*@-webkit-keyframes move-up {*/\n\n/*from   { bottom: 24px; }*/\n\n/*to { bottom: 32px; }*/\n\n/*}*/\n\n/*@-moz-keyframes move-up {*/\n\n/*from   { bottom: 24px; }*/\n\n/*to { bottom: 32px; }*/\n\n/*}*/\n\n/*@-ms-keyframes move-up {*/\n\n/*from   { bottom: 24px; }*/\n\n/*to { bottom: 32px; }*/\n\n/*}*/\n\n/* JSON schema errors displayed at the bottom of the editor in mode text and code */\n\n.jsoneditor .jsoneditor-text-errors {\n  width: 100%;\n  border-collapse: collapse;\n  background-color: #ffef8b;\n  border-top: 1px solid #ffd700;\n}\n\n.jsoneditor .jsoneditor-text-errors td {\n  padding: 3px 6px;\n  vertical-align: middle;\n}\n\n.jsoneditor-text-errors .jsoneditor-schema-error {\n  border: none;\n  width: 24px;\n  height: 24px;\n  padding: 0;\n  margin: 0 4px 0 0;\n  background: url(\"img/jsoneditor-icons.svg\")  -168px -48px;\n}\n/* ContextMenu - main menu */\n\ndiv.jsoneditor-contextmenu-root {\n  position: relative;\n  width: 0;\n  height: 0;\n}\n\ndiv.jsoneditor-contextmenu {\n  position: absolute;\n  box-sizing: content-box;\n  z-index: 99999;\n}\n\ndiv.jsoneditor-contextmenu ul,\ndiv.jsoneditor-contextmenu li {\n  box-sizing: content-box;\n}\n\ndiv.jsoneditor-contextmenu ul {\n  position: relative;\n  left: 0;\n  top: 0;\n  width: 124px;\n  background: white;\n  border: 1px solid #d3d3d3;\n  box-shadow: 2px 2px 12px rgba(128, 128, 128, 0.3);\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\ndiv.jsoneditor-contextmenu ul li button {\n  padding: 0;\n  margin: 0;\n  width: 124px;\n  height: 24px;\n  border: none;\n  cursor: pointer;\n  color: #4d4d4d;\n  background: transparent;\n  font-size: 10pt;\n  font-family: arial, sans-serif;\n  box-sizing: border-box;\n  line-height: 26px;\n  text-align: left;\n}\n\n/* Fix button padding in firefox */\n\ndiv.jsoneditor-contextmenu ul li button::-moz-focus-inner {\n  padding: 0;\n  border: 0;\n}\n\ndiv.jsoneditor-contextmenu ul li button:hover,\ndiv.jsoneditor-contextmenu ul li button:focus {\n  color: #1a1a1a;\n  background-color: #f5f5f5;\n  outline: none;\n}\n\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-default {\n  width: 92px;\n}\n\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-expand {\n  float: right;\n  width: 32px;\n  height: 24px;\n  border-left: 1px solid #e5e5e5;\n}\n\ndiv.jsoneditor-contextmenu div.jsoneditor-icon {\n  float: left;\n  width: 24px;\n  height: 24px;\n  border: none;\n  padding: 0;\n  margin: 0;\n  background-image: url(\"img/jsoneditor-icons.svg\");\n}\n\ndiv.jsoneditor-contextmenu ul li button div.jsoneditor-expand {\n  float: right;\n  width: 24px;\n  height: 24px;\n  padding: 0;\n  margin: 0 4px 0 0;\n  background: url(\"img/jsoneditor-icons.svg\") 0 -72px;\n  opacity: 0.4;\n}\n\ndiv.jsoneditor-contextmenu ul li button:hover div.jsoneditor-expand,\ndiv.jsoneditor-contextmenu ul li button:focus div.jsoneditor-expand,\ndiv.jsoneditor-contextmenu ul li.jsoneditor-selected div.jsoneditor-expand,\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-expand:hover div.jsoneditor-expand,\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-expand:focus div.jsoneditor-expand {\n  opacity: 1;\n}\n\ndiv.jsoneditor-contextmenu div.jsoneditor-separator {\n  height: 0;\n  border-top: 1px solid #e5e5e5;\n  padding-top: 5px;\n  margin-top: 5px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-remove > div.jsoneditor-icon {\n  background-position: -24px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-remove:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-remove:focus > div.jsoneditor-icon {\n  background-position: -24px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-append > div.jsoneditor-icon {\n  background-position: 0 -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-append:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-append:focus > div.jsoneditor-icon {\n  background-position: 0 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-insert > div.jsoneditor-icon {\n  background-position: 0 -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-insert:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-insert:focus > div.jsoneditor-icon {\n  background-position: 0 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-duplicate > div.jsoneditor-icon {\n  background-position: -48px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-duplicate:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-duplicate:focus > div.jsoneditor-icon {\n  background-position: -48px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-asc > div.jsoneditor-icon {\n  background-position: -168px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-asc:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-asc:focus > div.jsoneditor-icon {\n  background-position: -168px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-desc > div.jsoneditor-icon {\n  background-position: -192px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-desc:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-desc:focus > div.jsoneditor-icon {\n  background-position: -192px 0;\n}\n\n/* ContextMenu - sub menu */\n\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-selected,\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-selected:hover,\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-selected:focus {\n  color: white;\n  background-color: #ee422e;\n}\n\ndiv.jsoneditor-contextmenu ul li {\n  overflow: hidden;\n}\n\ndiv.jsoneditor-contextmenu ul li ul {\n  display: none;\n  position: relative;\n  left: -10px;\n  top: 0;\n  border: none;\n  box-shadow: inset 0 0 10px rgba(128, 128, 128, 0.5);\n  padding: 0 10px;\n  /* TODO: transition is not supported on IE8-9 */\n  -webkit-transition: all 0.3s ease-out;\n  -moz-transition: all 0.3s ease-out;\n  -o-transition: all 0.3s ease-out;\n  transition: all 0.3s ease-out;\n}\n\n\n\ndiv.jsoneditor-contextmenu ul li ul li button {\n  padding-left: 24px;\n  animation: all ease-in-out 1s;\n}\n\ndiv.jsoneditor-contextmenu ul li ul li button:hover,\ndiv.jsoneditor-contextmenu ul li ul li button:focus {\n  background-color: #f5f5f5;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-string > div.jsoneditor-icon {\n  background-position: -144px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-string:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-string:focus > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-string.jsoneditor-selected > div.jsoneditor-icon {\n  background-position: -144px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-auto > div.jsoneditor-icon {\n  background-position: -120px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-auto:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-auto:focus > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-auto.jsoneditor-selected > div.jsoneditor-icon {\n  background-position: -120px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-object > div.jsoneditor-icon {\n  background-position: -72px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-object:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-object:focus > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-object.jsoneditor-selected > div.jsoneditor-icon {\n  background-position: -72px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-array > div.jsoneditor-icon {\n  background-position: -96px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-array:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-array:focus > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-array.jsoneditor-selected > div.jsoneditor-icon {\n  background-position: -96px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-modes > div.jsoneditor-icon {\n  background-image: none;\n  width: 6px;\n}\ndiv.jsoneditor-menu {\n  width: 100%;\n  height: 35px;\n  padding: 2px;\n  margin: 0;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n  color: white;\n  background-color: #3883fa;\n  border-bottom: 1px solid #3883fa;\n}\n\ndiv.jsoneditor-menu > button,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button {\n  width: 26px;\n  height: 26px;\n  margin: 2px;\n  padding: 0;\n  border-radius: 2px;\n  border: 1px solid transparent;\n  background: transparent url(\"img/jsoneditor-icons.svg\");\n  color: white;\n  opacity: 0.8;\n  font-family: arial, sans-serif;\n  font-size: 10pt;\n  float: left;\n}\n\ndiv.jsoneditor-menu > button:hover,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button:hover {\n  background-color: rgba(255,255,255,0.2);\n  border: 1px solid rgba(255,255,255,0.4);\n}\n\ndiv.jsoneditor-menu > button:focus,\ndiv.jsoneditor-menu > button:active,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button:focus,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button:active {\n  background-color: rgba(255,255,255,0.3);\n}\n\ndiv.jsoneditor-menu > button:disabled,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button:disabled {\n  opacity: 0.5;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-collapse-all {\n  background-position: 0 -96px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-expand-all {\n  background-position: 0 -120px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-undo {\n  background-position: -24px -96px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-undo:disabled {\n  background-position: -24px -120px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-redo {\n  background-position: -48px -96px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-redo:disabled {\n  background-position: -48px -120px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-compact {\n  background-position: -72px -96px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-format {\n  background-position: -72px -120px;\n}\n\ndiv.jsoneditor-menu > div.jsoneditor-modes {\n  display: inline-block;\n  float: left;\n}\n\ndiv.jsoneditor-menu > div.jsoneditor-modes > button {\n  background-image: none;\n  width: auto;\n  padding-left: 6px;\n  padding-right: 6px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-separator,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button.jsoneditor-separator {\n  margin-left: 10px;\n}\n\ndiv.jsoneditor-menu a {\n  font-family: arial, sans-serif;\n  font-size: 10pt;\n  color: white;\n  opacity: 0.8;\n  vertical-align: middle;\n}\n\ndiv.jsoneditor-menu a:hover {\n  opacity: 1;\n}\n\ndiv.jsoneditor-menu a.jsoneditor-poweredBy {\n  font-size: 8pt;\n  position: absolute;\n  right: 0;\n  top: 0;\n  padding: 10px;\n}\ntable.jsoneditor-search input,\ntable.jsoneditor-search div.jsoneditor-results {\n  font-family: arial, sans-serif;\n  font-size: 10pt;\n  color: #1A1A1A;\n  background: transparent;\n  /* For Firefox */\n}\n\ntable.jsoneditor-search div.jsoneditor-results {\n  color: white;\n  padding-right: 5px;\n  line-height: 24px;\n}\n\ntable.jsoneditor-search {\n  position: absolute;\n  right: 4px;\n  top: 4px;\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\ntable.jsoneditor-search div.jsoneditor-frame {\n  border: 1px solid transparent;\n  background-color: white;\n  padding: 0 2px;\n  margin: 0;\n}\n\ntable.jsoneditor-search div.jsoneditor-frame table {\n  border-collapse: collapse;\n}\n\ntable.jsoneditor-search input {\n  width: 120px;\n  border: none;\n  outline: none;\n  margin: 1px;\n  line-height: 20px;\n}\n\ntable.jsoneditor-search button {\n  width: 16px;\n  height: 24px;\n  padding: 0;\n  margin: 0;\n  border: none;\n  background: url(\"img/jsoneditor-icons.svg\");\n  vertical-align: top;\n}\n\ntable.jsoneditor-search button:hover {\n  background-color: transparent;\n}\n\ntable.jsoneditor-search button.jsoneditor-refresh {\n  width: 18px;\n  background-position: -99px -73px;\n}\n\ntable.jsoneditor-search button.jsoneditor-next {\n  cursor: pointer;\n  background-position: -124px -73px;\n}\n\ntable.jsoneditor-search button.jsoneditor-next:hover {\n  background-position: -124px -49px;\n}\n\ntable.jsoneditor-search button.jsoneditor-previous {\n  cursor: pointer;\n  background-position: -148px -73px;\n  margin-right: 2px;\n}\n\ntable.jsoneditor-search button.jsoneditor-previous:hover {\n  background-position: -148px -49px;\n}"
+module.exports = "/* reset styling (prevent conflicts with bootstrap, materialize.css, etc.) */\n\ndiv.jsoneditor .jsoneditor-search input {\n  height: auto;\n  border: inherit;\n}\n\ndiv.jsoneditor .jsoneditor-search input:focus {\n  border: none !important;\n  box-shadow: none !important;\n}\n\ndiv.jsoneditor table {\n  border-collapse: collapse;\n  width: auto;\n}\n\ndiv.jsoneditor td,\ndiv.jsoneditor th {\n  padding: 0;\n  display: table-cell;\n  text-align: left;\n  vertical-align: inherit;\n  border-radius: inherit;\n}\n\n\ndiv.jsoneditor-field,\ndiv.jsoneditor-value,\ndiv.jsoneditor-readonly {\n  border: 1px solid transparent;\n  min-height: 16px;\n  min-width: 32px;\n  padding: 2px;\n  margin: 1px;\n  word-wrap: break-word;\n  float: left;\n}\n\n/* adjust margin of p elements inside editable divs, needed for Opera, IE */\n\ndiv.jsoneditor-field p,\ndiv.jsoneditor-value p {\n  margin: 0;\n}\n\ndiv.jsoneditor-value {\n  word-break: break-word;\n}\n\ndiv.jsoneditor-readonly {\n  min-width: 16px;\n  color: gray;\n}\n\ndiv.jsoneditor-empty {\n  border-color: lightgray;\n  border-style: dashed;\n  border-radius: 2px;\n}\n\ndiv.jsoneditor-field.jsoneditor-empty::after,\ndiv.jsoneditor-value.jsoneditor-empty::after {\n  pointer-events: none;\n  color: lightgray;\n  font-size: 8pt;\n}\n\ndiv.jsoneditor-field.jsoneditor-empty::after {\n  content: \"field\";\n}\n\ndiv.jsoneditor-value.jsoneditor-empty::after {\n  content: \"value\";\n}\n\ndiv.jsoneditor-value.jsoneditor-url,\na.jsoneditor-value.jsoneditor-url {\n  color: green;\n  text-decoration: underline;\n}\n\na.jsoneditor-value.jsoneditor-url {\n  display: inline-block;\n  padding: 2px;\n  margin: 2px;\n}\n\na.jsoneditor-value.jsoneditor-url:hover,\na.jsoneditor-value.jsoneditor-url:focus {\n  color: #ee422e;\n}\n\ndiv.jsoneditor td.jsoneditor-separator {\n  padding: 3px 0;\n  vertical-align: top;\n  color: gray;\n}\n\ndiv.jsoneditor-field[contenteditable=true]:focus,\ndiv.jsoneditor-field[contenteditable=true]:hover,\ndiv.jsoneditor-value[contenteditable=true]:focus,\ndiv.jsoneditor-value[contenteditable=true]:hover,\ndiv.jsoneditor-field.jsoneditor-highlight,\ndiv.jsoneditor-value.jsoneditor-highlight {\n  background-color: #FFFFAB;\n  border: 1px solid yellow;\n  border-radius: 2px;\n}\n\ndiv.jsoneditor-field.jsoneditor-highlight-active,\ndiv.jsoneditor-field.jsoneditor-highlight-active:focus,\ndiv.jsoneditor-field.jsoneditor-highlight-active:hover,\ndiv.jsoneditor-value.jsoneditor-highlight-active,\ndiv.jsoneditor-value.jsoneditor-highlight-active:focus,\ndiv.jsoneditor-value.jsoneditor-highlight-active:hover {\n  background-color: #ffee00;\n  border: 1px solid #ffc700;\n  border-radius: 2px;\n}\n\ndiv.jsoneditor-value.jsoneditor-string {\n  color: #008000;\n}\n\ndiv.jsoneditor-value.jsoneditor-object,\ndiv.jsoneditor-value.jsoneditor-array {\n  min-width: 16px;\n  color: #808080;\n}\n\ndiv.jsoneditor-value.jsoneditor-number {\n  color: #ee422e;\n}\n\ndiv.jsoneditor-value.jsoneditor-boolean {\n  color: #ff8c00;\n}\n\ndiv.jsoneditor-value.jsoneditor-null {\n  color: #004ED0;\n}\n\ndiv.jsoneditor-value.jsoneditor-invalid {\n  color: #000000;\n}\n\ndiv.jsoneditor-tree button {\n  width: 24px;\n  height: 24px;\n  padding: 0;\n  margin: 0;\n  border: none;\n  cursor: pointer;\n  background: transparent url(\"img/jsoneditor-icons.svg\");\n}\n\ndiv.jsoneditor-mode-view tr.jsoneditor-expandable td.jsoneditor-tree,\ndiv.jsoneditor-mode-form tr.jsoneditor-expandable td.jsoneditor-tree {\n  cursor: pointer;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-collapsed {\n  background-position: 0 -48px;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-expanded {\n  background-position: 0 -72px;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-contextmenu {\n  background-position: -48px -72px;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-contextmenu:hover,\ndiv.jsoneditor-tree button.jsoneditor-contextmenu:focus,\ndiv.jsoneditor-tree button.jsoneditor-contextmenu.jsoneditor-selected,\ntr.jsoneditor-selected.jsoneditor-first button.jsoneditor-contextmenu {\n  background-position: -48px -48px;\n}\n\ndiv.jsoneditor-tree *:focus {\n  outline: none;\n}\n\ndiv.jsoneditor-tree button:focus {\n  /* TODO: nice outline for buttons with focus\n  outline: #97B0F8 solid 2px;\n  box-shadow: 0 0 8px #97B0F8;\n  */\n  background-color: #f5f5f5;\n  outline: #e5e5e5 solid 1px;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-invisible {\n  visibility: hidden;\n  background: none;\n}\n\ndiv.jsoneditor {\n  color: #1A1A1A;\n  border: 1px solid #3883fa;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  position: relative;\n  padding: 0;\n  line-height: 100%;\n}\n\ndiv.jsoneditor-tree table.jsoneditor-tree {\n  border-collapse: collapse;\n  border-spacing: 0;\n  width: 100%;\n  margin: 0;\n}\n\ndiv.jsoneditor-outer {\n  position: static;\n  width: 100%;\n  height: 100%;\n  margin: -35px 0 0 0;\n  padding: 35px 0 0 0;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n}\n\ntextarea.jsoneditor-text,\n.ace-jsoneditor {\n  min-height: 150px;\n}\n\ndiv.jsoneditor-tree {\n  width: 100%;\n  height: 100%;\n  position: relative;\n  overflow: auto;\n}\n\ntextarea.jsoneditor-text {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n  outline-width: 0;\n  border: none;\n  background-color: white;\n  resize: none;\n}\n\ntr.jsoneditor-highlight,\ntr.jsoneditor-selected {\n  background-color: #e6e6e6;\n}\n\ntr.jsoneditor-selected button.jsoneditor-dragarea,\ntr.jsoneditor-selected button.jsoneditor-contextmenu {\n  visibility: hidden;\n}\n\ntr.jsoneditor-selected.jsoneditor-first button.jsoneditor-dragarea,\ntr.jsoneditor-selected.jsoneditor-first button.jsoneditor-contextmenu {\n  visibility: visible;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-dragarea {\n  background: url(\"img/jsoneditor-icons.svg\") -72px -72px;\n  cursor: move;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-dragarea:hover,\ndiv.jsoneditor-tree button.jsoneditor-dragarea:focus,\ntr.jsoneditor-selected.jsoneditor-first button.jsoneditor-dragarea {\n  background-position: -72px -48px;\n}\n\ndiv.jsoneditor tr,\ndiv.jsoneditor th,\ndiv.jsoneditor td {\n  padding: 0;\n  margin: 0;\n}\n\ndiv.jsoneditor td {\n  vertical-align: top;\n}\n\ndiv.jsoneditor td.jsoneditor-tree {\n  vertical-align: top;\n}\n\ndiv.jsoneditor-field,\ndiv.jsoneditor-value,\ndiv.jsoneditor td,\ndiv.jsoneditor th,\ndiv.jsoneditor textarea,\n.jsoneditor-schema-error {\n  font-family: droid sans mono, consolas, monospace, courier new, courier, sans-serif;\n  font-size: 10pt;\n  color: #1A1A1A;\n}\n\n/* popover */\n\n.jsoneditor-schema-error {\n  cursor: default;\n  display: inline-block;\n  /*font-family: arial, sans-serif;*/\n  height: 24px;\n  line-height: 24px;\n  position: relative;\n  text-align: center;\n  width: 24px;\n}\n\ndiv.jsoneditor-tree .jsoneditor-schema-error {\n  width: 24px;\n  height: 24px;\n  padding: 0;\n  margin: 0 4px 0 0;\n  background: url(\"img/jsoneditor-icons.svg\")  -168px -48px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover {\n  background-color: #4c4c4c;\n  border-radius: 3px;\n  box-shadow: 0 0 5px rgba(0,0,0,0.4);\n  color: #fff;\n  display: none;\n  padding: 7px 10px;\n  position: absolute;\n  width: 200px;\n  z-index: 4;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-above {\n  bottom: 32px;\n  left: -98px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-below {\n  top: 32px;\n  left: -98px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-left {\n  top: -7px;\n  right: 32px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-right {\n  top: -7px;\n  left: 32px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover:before {\n  border-right: 7px solid transparent;\n  border-left: 7px solid transparent;\n  content: '';\n  display: block;\n  left: 50%;\n  margin-left: -7px;\n  position: absolute;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-above:before {\n  border-top: 7px solid #4c4c4c;\n  bottom: -7px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-below:before {\n  border-bottom: 7px solid #4c4c4c;\n  top: -7px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-left:before {\n  border-left: 7px solid #4c4c4c;\n  border-top: 7px solid transparent;\n  border-bottom: 7px solid transparent;\n  content: '';\n  top: 19px;\n  right: -14px;\n  left: inherit;\n  margin-left: inherit;\n  margin-top: -7px;\n  position: absolute;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-right:before {\n  border-right: 7px solid #4c4c4c;\n  border-top: 7px solid transparent;\n  border-bottom: 7px solid transparent;\n  content: '';\n  top: 19px;\n  left: -14px;\n  margin-left: inherit;\n  margin-top: -7px;\n  position: absolute;\n}\n\n.jsoneditor-schema-error:hover .jsoneditor-popover,\n.jsoneditor-schema-error:focus .jsoneditor-popover {\n  display: block;\n  -webkit-animation: fade-in .3s linear 1, move-up .3s linear 1;\n  -moz-animation: fade-in .3s linear 1, move-up .3s linear 1;\n  -ms-animation: fade-in .3s linear 1, move-up .3s linear 1;\n}\n\n@-webkit-keyframes fade-in {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@-moz-keyframes fade-in {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@-ms-keyframes fade-in {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n/*@-webkit-keyframes move-up {*/\n\n/*from   { bottom: 24px; }*/\n\n/*to { bottom: 32px; }*/\n\n/*}*/\n\n/*@-moz-keyframes move-up {*/\n\n/*from   { bottom: 24px; }*/\n\n/*to { bottom: 32px; }*/\n\n/*}*/\n\n/*@-ms-keyframes move-up {*/\n\n/*from   { bottom: 24px; }*/\n\n/*to { bottom: 32px; }*/\n\n/*}*/\n\n/* JSON schema errors displayed at the bottom of the editor in mode text and code */\n\n.jsoneditor .jsoneditor-text-errors {\n  width: 100%;\n  border-collapse: collapse;\n  background-color: #ffef8b;\n  border-top: 1px solid #ffd700;\n}\n\n.jsoneditor .jsoneditor-text-errors td {\n  padding: 3px 6px;\n  vertical-align: middle;\n}\n\n.jsoneditor-text-errors .jsoneditor-schema-error {\n  border: none;\n  width: 24px;\n  height: 24px;\n  padding: 0;\n  margin: 0 4px 0 0;\n  background: url(\"img/jsoneditor-icons.svg\")  -168px -48px;\n}\n/* ContextMenu - main menu */\n\ndiv.jsoneditor-contextmenu-root {\n  position: relative;\n  width: 0;\n  height: 0;\n}\n\ndiv.jsoneditor-contextmenu {\n  position: absolute;\n  box-sizing: content-box;\n  z-index: 99999;\n}\n\ndiv.jsoneditor-contextmenu ul,\ndiv.jsoneditor-contextmenu li {\n  box-sizing: content-box;\n}\n\ndiv.jsoneditor-contextmenu ul {\n  position: relative;\n  left: 0;\n  top: 0;\n  width: 124px;\n  background: white;\n  border: 1px solid #d3d3d3;\n  box-shadow: 2px 2px 12px rgba(128, 128, 128, 0.3);\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\ndiv.jsoneditor-contextmenu ul li button {\n  padding: 0;\n  margin: 0;\n  width: 124px;\n  height: 24px;\n  border: none;\n  cursor: pointer;\n  color: #4d4d4d;\n  background: transparent;\n  font-size: 10pt;\n  font-family: arial, sans-serif;\n  box-sizing: border-box;\n  line-height: 26px;\n  text-align: left;\n}\n\n/* Fix button padding in firefox */\n\ndiv.jsoneditor-contextmenu ul li button::-moz-focus-inner {\n  padding: 0;\n  border: 0;\n}\n\ndiv.jsoneditor-contextmenu ul li button:hover,\ndiv.jsoneditor-contextmenu ul li button:focus {\n  color: #1a1a1a;\n  background-color: #f5f5f5;\n  outline: none;\n}\n\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-default {\n  width: 92px;\n}\n\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-expand {\n  float: right;\n  width: 32px;\n  height: 24px;\n  border-left: 1px solid #e5e5e5;\n}\n\ndiv.jsoneditor-contextmenu div.jsoneditor-icon {\n  float: left;\n  width: 24px;\n  height: 24px;\n  border: none;\n  padding: 0;\n  margin: 0;\n  background-image: url(\"img/jsoneditor-icons.svg\");\n}\n\ndiv.jsoneditor-contextmenu ul li button div.jsoneditor-expand {\n  float: right;\n  width: 24px;\n  height: 24px;\n  padding: 0;\n  margin: 0 4px 0 0;\n  background: url(\"img/jsoneditor-icons.svg\") 0 -72px;\n  opacity: 0.4;\n}\n\ndiv.jsoneditor-contextmenu ul li button:hover div.jsoneditor-expand,\ndiv.jsoneditor-contextmenu ul li button:focus div.jsoneditor-expand,\ndiv.jsoneditor-contextmenu ul li.jsoneditor-selected div.jsoneditor-expand,\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-expand:hover div.jsoneditor-expand,\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-expand:focus div.jsoneditor-expand {\n  opacity: 1;\n}\n\ndiv.jsoneditor-contextmenu div.jsoneditor-separator {\n  height: 0;\n  border-top: 1px solid #e5e5e5;\n  padding-top: 5px;\n  margin-top: 5px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-remove > div.jsoneditor-icon {\n  background-position: -24px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-remove:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-remove:focus > div.jsoneditor-icon {\n  background-position: -24px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-append > div.jsoneditor-icon {\n  background-position: 0 -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-append:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-append:focus > div.jsoneditor-icon {\n  background-position: 0 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-insert > div.jsoneditor-icon {\n  background-position: 0 -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-insert:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-insert:focus > div.jsoneditor-icon {\n  background-position: 0 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-duplicate > div.jsoneditor-icon {\n  background-position: -48px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-duplicate:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-duplicate:focus > div.jsoneditor-icon {\n  background-position: -48px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-asc > div.jsoneditor-icon {\n  background-position: -168px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-asc:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-asc:focus > div.jsoneditor-icon {\n  background-position: -168px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-desc > div.jsoneditor-icon {\n  background-position: -192px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-desc:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-desc:focus > div.jsoneditor-icon {\n  background-position: -192px 0;\n}\n\n/* ContextMenu - sub menu */\n\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-selected,\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-selected:hover,\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-selected:focus {\n  color: white;\n  background-color: #ee422e;\n}\n\ndiv.jsoneditor-contextmenu ul li {\n  overflow: hidden;\n}\n\ndiv.jsoneditor-contextmenu ul li ul {\n  display: none;\n  position: relative;\n  left: -10px;\n  top: 0;\n  border: none;\n  box-shadow: inset 0 0 10px rgba(128, 128, 128, 0.5);\n  padding: 0 10px;\n  /* TODO: transition is not supported on IE8-9 */\n  -webkit-transition: all 0.3s ease-out;\n  -moz-transition: all 0.3s ease-out;\n  -o-transition: all 0.3s ease-out;\n  transition: all 0.3s ease-out;\n}\n\n\n\ndiv.jsoneditor-contextmenu ul li ul li button {\n  padding-left: 24px;\n  animation: all ease-in-out 1s;\n}\n\ndiv.jsoneditor-contextmenu ul li ul li button:hover,\ndiv.jsoneditor-contextmenu ul li ul li button:focus {\n  background-color: #f5f5f5;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-string > div.jsoneditor-icon {\n  background-position: -144px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-string:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-string:focus > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-string.jsoneditor-selected > div.jsoneditor-icon {\n  background-position: -144px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-auto > div.jsoneditor-icon {\n  background-position: -120px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-auto:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-auto:focus > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-auto.jsoneditor-selected > div.jsoneditor-icon {\n  background-position: -120px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-object > div.jsoneditor-icon {\n  background-position: -72px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-object:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-object:focus > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-object.jsoneditor-selected > div.jsoneditor-icon {\n  background-position: -72px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-array > div.jsoneditor-icon {\n  background-position: -96px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-array:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-array:focus > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-array.jsoneditor-selected > div.jsoneditor-icon {\n  background-position: -96px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-modes > div.jsoneditor-icon {\n  background-image: none;\n  width: 6px;\n}\ndiv.jsoneditor-menu {\n  width: 100%;\n  height: 35px;\n  padding: 2px;\n  margin: 0;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n  color: white;\n  background-color: #3883fa;\n  border-bottom: 1px solid #3883fa;\n}\n\ndiv.jsoneditor-menu > button,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button {\n  width: 26px;\n  height: 26px;\n  margin: 2px;\n  padding: 0;\n  border-radius: 2px;\n  border: 1px solid transparent;\n  background: transparent url(\"img/jsoneditor-icons.svg\");\n  color: white;\n  opacity: 0.8;\n  font-family: arial, sans-serif;\n  font-size: 10pt;\n  float: left;\n}\n\ndiv.jsoneditor-menu > button:hover,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button:hover {\n  background-color: rgba(255,255,255,0.2);\n  border: 1px solid rgba(255,255,255,0.4);\n}\n\ndiv.jsoneditor-menu > button:focus,\ndiv.jsoneditor-menu > button:active,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button:focus,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button:active {\n  background-color: rgba(255,255,255,0.3);\n}\n\ndiv.jsoneditor-menu > button:disabled,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button:disabled {\n  opacity: 0.5;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-collapse-all {\n  background-position: 0 -96px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-expand-all {\n  background-position: 0 -120px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-undo {\n  background-position: -24px -96px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-undo:disabled {\n  background-position: -24px -120px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-redo {\n  background-position: -48px -96px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-redo:disabled {\n  background-position: -48px -120px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-compact {\n  background-position: -72px -96px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-format {\n  background-position: -72px -120px;\n}\n\ndiv.jsoneditor-menu > div.jsoneditor-modes {\n  display: inline-block;\n  float: left;\n}\n\ndiv.jsoneditor-menu > div.jsoneditor-modes > button {\n  background-image: none;\n  width: auto;\n  padding-left: 6px;\n  padding-right: 6px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-separator,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button.jsoneditor-separator {\n  margin-left: 10px;\n}\n\ndiv.jsoneditor-menu a {\n  font-family: arial, sans-serif;\n  font-size: 10pt;\n  color: white;\n  opacity: 0.8;\n  vertical-align: middle;\n}\n\ndiv.jsoneditor-menu a:hover {\n  opacity: 1;\n}\n\ndiv.jsoneditor-menu a.jsoneditor-poweredBy {\n  font-size: 8pt;\n  position: absolute;\n  right: 0;\n  top: 0;\n  padding: 10px;\n}\ntable.jsoneditor-search input,\ntable.jsoneditor-search div.jsoneditor-results {\n  font-family: arial, sans-serif;\n  font-size: 10pt;\n  color: #1A1A1A;\n  background: transparent;\n  /* For Firefox */\n}\n\ntable.jsoneditor-search div.jsoneditor-results {\n  color: white;\n  padding-right: 5px;\n  line-height: 24px;\n}\n\ntable.jsoneditor-search {\n  position: absolute;\n  right: 4px;\n  top: 4px;\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\ntable.jsoneditor-search div.jsoneditor-frame {\n  border: 1px solid transparent;\n  background-color: white;\n  padding: 0 2px;\n  margin: 0;\n}\n\ntable.jsoneditor-search div.jsoneditor-frame table {\n  border-collapse: collapse;\n}\n\ntable.jsoneditor-search input {\n  width: 120px;\n  border: none;\n  outline: none;\n  margin: 1px;\n  line-height: 20px;\n}\n\ntable.jsoneditor-search button {\n  width: 16px;\n  height: 24px;\n  padding: 0;\n  margin: 0;\n  border: none;\n  background: url(\"img/jsoneditor-icons.svg\");\n  vertical-align: top;\n}\n\ntable.jsoneditor-search button:hover {\n  background-color: transparent;\n}\n\ntable.jsoneditor-search button.jsoneditor-refresh {\n  width: 18px;\n  background-position: -99px -73px;\n}\n\ntable.jsoneditor-search button.jsoneditor-next {\n  cursor: pointer;\n  background-position: -124px -73px;\n}\n\ntable.jsoneditor-search button.jsoneditor-next:hover {\n  background-position: -124px -49px;\n}\n\ntable.jsoneditor-search button.jsoneditor-previous {\n  cursor: pointer;\n  background-position: -148px -73px;\n  margin-right: 2px;\n}\n\ntable.jsoneditor-search button.jsoneditor-previous:hover {\n  background-position: -148px -49px;\n}"
 
 /***/ },
-/* 176 */
+/* 175 */
 /***/ function(module, exports) {
 
 module.exports = "<vcl-icogram\n  [label]=\"label$ | async \"\n  [flexLabel]=\"flexLabel\"\n  [prepIcon]=\"prepIcon$ | async\"\n  [appIcon]=\"appIcon$ | async\">\n  <ng-content></ng-content>\n</vcl-icogram>\n"
 
 /***/ },
-/* 177 */
+/* 176 */
 /***/ function(module, exports) {
 
 module.exports = "  <vcl-icon [icon]=\"icon\" *ngIf=\"labelPosition=='right'\"></vcl-icon>\n  <ng-content></ng-content>\n  <vcl-icon [icon]=\"icon\" *ngIf=\"labelPosition=='left'\"></vcl-icon>\n"
 
 /***/ },
-/* 178 */
+/* 177 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"vclDataGrid vclDGVAlignMiddle vclDGAlignCentered vclCalendar vclNoMargin vclCalInput\">\n  <div class=\"vclDGRow\">\n    <div class=\"vclDGCell\">\n      <div class=\"vclLayoutFlex vclToolbar vclLayoutHorizontal vclLayoutJustified vclPager vclLayoutCenter\">\n        <button class=\"vclTransparent vclSquare  vclButton\" (tap)=\"prevMonth()\">\n              <div class=\"vclIcogram\">\n                <span class=\"vclIcon fa fa-angle-left\"></span>\n              </div>\n            </button>\n        <span class=\"vclCalHeaderLabel\" (tap)=\"showYearPick=true\" [class.date-picker-pointer]=\"!showYearPick\">\n              {{viewDate.getMonthString() | loc}}&nbsp;&nbsp;{{viewDate.getYearString()}}\n            </span>\n        <button class=\"vclTransparent vclSquare vclButton\" (tap)=\"nextMonth()\">\n               <div class=\"vclIcogram\">\n                  <span class=\"vclIcon fa fa-angle-right\"></span>\n                </div>\n            </button>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"vclSeparator\"></div>\n\n  <div *ngIf=\"!showYearPick\">\n    <div class=\"vclDGRow\">\n      <div *ngIf=\"displayWeekNumbers\" class=\"vclDGCell timeFragment vclCalItem vclOtherMonth\">\n        {{'week' | loc}}\n      </div>\n      <div *ngFor=\"let day of viewDate.getWeekDays()\" class=\"vclDGCell vclWeekdayLabel\" [class.hidden]=\"!displayWeekdays\">\n        {{day | loc}}\n      </div>\n    </div>\n\n    <div class=\"vclDGRow\" *ngFor=\"let week of viewDate.getMonthBlock()\">\n      <div *ngIf=\"displayWeekNumbers && week.length==7\" class=\"vclDGCell\">\n        {{week[5].getWeekNumber()}}\n      </div>\n      <div *ngFor=\"let day of week\" class=\"vclDGCell timeFragment vclCalItem\" [class.vclDisabled]=\"isDisabled(day)\"\n       [class.vclSelected]=\"isMarked(day)\" (tap)=\"!isDisabled(day) && select(day)\"\n       [class.vclToday]=\"highlightSelected && day.isToday()\" [class.vclOtherMonth]=\"!day.isSameMonthAndYear()\">\n        {{day.date.getDate()}}\n      </div>\n    </div>\n\n    <div class=\"vclDGRow\">\n      <div class=\"vclDGCell\">\n        <div class=\"vclToolbar vclTransparent vclLayoutFlex vclLayoutHorizontal vclLayoutJustified\">\n          <button title=\"go to today\" class=\"vclTransparent vclLayoutFlex vclButton\" *ngIf=\"displayJumpToday\" (tap)=\"gotoToday()\">\n               <div class=\" vclIcogram\">\n                 <span class=\"vclText \">go to today</span>\n               </div>\n             </button>\n          <button title=\"go to selected\" class=\"vclTransparent vclLayoutFlex vclButton\" *ngIf=\"displayJumpSelected\" (tap)=\"gotoSelected()\">\n                <div class=\" vclIcogram\">\n                  <span class=\"vclText \">go to selected</span>\n                </div>\n              </button>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div *ngIf=\"showYearPick\">\n    <div class=\"vclDGRow\" role=\"row\" *ngFor=\"let row of viewDate.getYearsBlock()\">\n      <div *ngFor=\"let year of row\" class=\"vclDGCell vclCalItem\" role=\"gridcell\"\n      [class.vclSelected]=\"viewDate.date.getFullYear()==year\"\n       (tap)=\"yearPickSelect(year)\"\n       [class.vclToday]=\"highlightSelected && today.isInYear(year)\">\n        {{year}}\n      </div>\n    </div>\n  </div>\n\n</div>\n"
 
 /***/ },
-/* 179 */
+/* 178 */
 /***/ function(module, exports) {
 
 module.exports = "<ul class=\"vclDropdown\"\n  [class.vclOpen]=\"expanded\"\n  [attr.role]=\"ariaRole\"\n  [attr.tabindex]=\"tabindex\"\n  [attr.aria-multiselectable]=\"maxSelectableItems > 1\"\n  [attr.aria-expanded]=\"expanded\">\n  <li\n    *ngFor=\"let item of items\"\n    class=\"vclDropdownItem\"\n    [class.vclSelected]=\"item.selected\"\n    [attr.aria-selected]=\"item.selected\"\n    [class.vclDisabled]=\"item.disabled\"\n    role=\"menuitem\"\n    tabindex=\"0\"\n    (tap)=\"selectItem(item)\"\n    [ngClass]=\"item.class\">\n    <div class=\"vclDropdownItemLabel\">\n      {{item.label}}\n    </div>\n    <div class=\"vclDropdownItemSubLabel\">\n      {{item.sublabel}}\n    </div>\n  </li>\n</ul>\n"
 
 /***/ },
-/* 180 */
+/* 179 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"vclFlipSwitch\" [class.vclFlipSwitchPressed]=\"value\" touch-action=\"pan-y\" role=\"button\" tabindex=\"0\" aria-pressed=\"true\" aria-labelledby=\"fs-label-0\" (tap)=\"onClick()\">\n  <label class=\"vclFlipSwitchLabel\" id=\"fs-label-0\">\n    <div class=\"vclFlipSwitchTrack\">\n      <div class=\"vclFlipSwitchActive\" aria-hidden=\"false\">{{onLabel}}</div>\n      <div class=\"vclFlipSwitchInactive\" aria-hidden=\"true\">{{offLabel}}</div>\n    </div>\n    <div class=\"vclFlipSwitchKnob\"></div>\n  </label>\n</div>\n"
 
 /***/ },
-/* 181 */
+/* 180 */
 /***/ function(module, exports) {
 
 module.exports = "<ng-content *ngIf=\"prepend\"></ng-content>\n{{label | loc}}\n<em *ngIf=\"required\" class=\"vclRequiredIndicator\" aria-hidden=\"true\" [attr.aria-label]=\"requiredIndLabel | loc\">\n  {{requiredIndicatorCharacter}}\n</em>\n<label *ngIf=\"subLabel\" class=\"vclFormControlSubLabel\">\n  {{subLabel | loc}}\n</label>\n<ng-content *ngIf=\"!prepend\"></ng-content>\n"
 
 /***/ },
-/* 182 */
+/* 181 */
 /***/ function(module, exports) {
 
 module.exports = "<form  #form=\"ngForm\" class=\"vclForm\"\n [class.vclFormInline]=\"true\"\n [class.vclFormHorizontal]=\"layout=='horizontal'\">\n</form>\n"
 
 /***/ },
-/* 183 */
+/* 182 */
 /***/ function(module, exports) {
 
 module.exports = "<ng-content></ng-content>\n<div vcl-icon *ngIf=\"prepIcon\" [icon]=\"prepIcon\"></div>\n<span *ngIf=\"!!label\" [class.vclLayoutFlex]=\"!!flexLabel\" class=\"vclText\">\n  {{label | loc}}\n</span>\n<div vcl-icon *ngIf=\"appIcon\" [icon]=\"appIcon\"></div>\n"
 
 /***/ },
-/* 184 */
+/* 183 */
 /***/ function(module, exports) {
 
 module.exports = "<ng-content></ng-content>\n<img *ngIf=\"src\" src=\"{{src}}\">\n<svg *ngIf=\"svguse\" viewBox=\"0 0 100 100\" preserveAspectRatio=\"xMidYMid meet\">\n  <use xmlns:xlink=\"http://www.w3.org/1999/xlink\" attr.xlink:href=\"{{svguse}}\"></use>\n</svg>\n"
 
 /***/ },
-/* 185 */
+/* 184 */
 /***/ function(module, exports) {
 
 module.exports = "<ng-content></ng-content>\n\n<div *ngIf=\"type!=null && label!=null && label!=''\" class=\"vclFormControlHint\"\n  [class.vclError]=\"type=='error'\"\n  [class.vclWarning]=\"type=='warning'\"\n  [class.vclSuccess]=\"type=='success'\">\n  {{label}}\n</div>\n"
 
 /***/ },
-/* 186 */
+/* 185 */
 /***/ function(module, exports) {
 
 module.exports = "<div #el [style.height]=\"height\"></div>\n"
 
 /***/ },
-/* 187 */
+/* 186 */
 /***/ function(module, exports) {
 
 module.exports = "<div *ngFor=\"let key of keys(schema.properties)\"\n[formGroup]=\"formGroup\"\nstyle=\"border-style:solid;margin:5px;padding: 5px;\">\n\n  <b *ngIf=\"schema.properties[key].properties\">{{key}}:</b>\n\n  <vcl-jss-form-object *ngIf=\"schema.properties[key].properties\"\n    [schema]=\"schema.properties[key]\"\n    [parentPath]=\"parentPath + key + '.'\"\n    [formGroup]=\"formGroup.controls[key]\"\n    [error]=\"error\"\n   >\n  </vcl-jss-form-object>\n\n  <div *ngIf=\"!schema.properties[key].properties\">\n    {{key}}\n    <div [ngSwitch]=\"formType(schema.properties[key])\">\n      <div *ngSwitchCase=\"'text'\">\n        <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n          <input vcl-input type=\"text\" [formControlName]=\"key\"\n            [placeholder]=\"placeholder(schema.properties[key])\" />\n        </vcl-input-control-group>\n      </div>\n      <div *ngSwitchCase=\"'number'\">\n        <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n          <input type=\"number\" valueType=\"number\" placeholder=\"number\"\n            [name]=\"name(parentPath,key)\"\n            [formControlName]=\"key\" />\n        </vcl-input-control-group>\n      </div>\n      <div *ngSwitchCase=\"'select'\">\n        <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n          <vcl-select [formControlName]=\"key\">\n            <vcl-select-option *ngFor=\"let option of selectItems(schema.properties[key])\"\n              [label]=\"option.label\" [value]=\"option.value\"></vcl-select-option>\n          </vcl-select>\n        </vcl-input-control-group>\n      </div>\n      <div *ngSwitchCase=\"'dropdown'\">\n        <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n          <vcl-dropdown [expanded]=\"true\" [formControlName]=\"key\"\n           [items]=\"selectItems(schema.properties[key])\" maxSelectableItems=\"1\"\n          ></vcl-dropdown>\n        </vcl-input-control-group>\n      </div>\n      <div *ngSwitchCase=\"'switch'\">\n        <vcl-flip-switch onLabel=\"{{'Yes' | loc }}\" offLabel=\"{{'No' | loc}}\"\n         [formControlName]=\"key\"></vcl-flip-switch>\n      </div>\n      <div *ngSwitchCase=\"'slider'\">\n        <vcl-slider\n         [min]=\"schema.properties[key].min\"\n         [max]=\"schema.properties[key].max\"\n         [formControlName]=\"key\"></vcl-slider>\n      </div>\n      <div *ngSwitchCase=\"'checkbox'\">\n        <vcl-checkbox [formControlName]=\"key\"></vcl-checkbox>\n      </div>\n      <div *ngSwitchCase=\"'radio'\">\n      <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n        <vcl-radio-group [formControlName]=\"key\"\n         [options]=\"radioOptions(schema.properties[key])\"></vcl-radio-group>\n       </vcl-input-control-group>\n     </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ },
-/* 188 */
+/* 187 */
 /***/ function(module, exports) {
 
 module.exports = "<form class=\"vclForm\" novalidate [formGroup]=\"form\">\n<div>\n  <h1>JSS from</h1>\n  <vcl-jss-form-object [schema]=\"schema\" [formGroup]=\"form\"\n   [error]=\"this.error\"></vcl-jss-form-object>\n</div>\n</form>\n\n<div class=\"value\">\n  <h4>Value: {{ form.value | json }}</h4>\n</div>\n\n<div class=\"status\">\n  <h4>Status: {{ form.status }}</h4>\n</div>\n\n<div class=\"error\">\n  <h4>Errors: {{ form.errors | json }}</h4>\n</div>\n"
 
 /***/ },
-/* 189 */
+/* 188 */
 /***/ function(module, exports) {
 
 module.exports = "{{ label | loc }}\n\n<span *ngIf=\"required\">{{requiredIndicatorCharacter}}</span>\n<ng-content></ng-content>\n\n<label class=\"vclFormControlSubLabel\">\n    {{ subLabel | loc }}\n</label>\n"
 
 /***/ },
-/* 190 */
+/* 189 */
 /***/ function(module, exports) {
 
 module.exports = "<div *ngFor=\"let layerRef of layerRefs; let i = index;\">\n  <div class=\"vclLayer\" role=\"dialog\" [@boxState]=\"layerRef.visible\" [style.pointer-events]=\"'none'\" [style.z-index]=\"zIndex + (i*10+1)\">\n    <div class=\"vclLayerBox vclLayerGutterPadding\" [style.pointer-events]=\"'all'\" (off-click)=\"offClick(layerRef)\">\n      <div [connectWormhole]=\"layerRef.wormhole\" [wormholeIndisposable]=\"true\"></div>\n    </div>\n  </div>\n  <div *ngIf=\"layerRef.modal\" class=\"vclLayerCover\" [@layerState]=\"layerRef.visible\" [style.z-index]=\"zIndex + (i*10+0)\"></div>\n</div>\n"
 
 /***/ },
-/* 191 */
+/* 190 */
 /***/ function(module, exports) {
 
 module.exports = "<ng-content></ng-content>\n<vcl-icogram \n  [label]=\"(label | loc) || href\"\n  [prepIcon]=\"prepIcon\"\n  [appIcon]=\"appIcon\">\n</vcl-icogram>\n"
 
 /***/ },
-/* 192 */
+/* 191 */
 /***/ function(module, exports) {
 
 module.exports = "<template\n  *ngFor=\"let item of items\"\n  [ngTemplateOutlet]=\"template\"\n  [ngOutletContext]=\"{item: item, meta: getMeta(item) }\">\n</template>\n"
 
 /***/ },
-/* 193 */
+/* 192 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"vclDatePicker\"\n    [class.vclLayoutHidden]=\"!expanded\">\n  <div class=\"vclDataGrid vclDGVAlignMiddle vclDGAlignCentered vclCalendar vclCalInput\"\n    [attr.role]=\"grid\"\n    [attr.tabindex]=\"tabindex\"\n    [attr.aria-multiselectable]=\"maxSelectableItems > 1\"\n    [attr.aria-expanded]=\"expanded\">\n\n    <div class=\"vclLayoutFlex vclDGRow vclLayoutAuto\">\n      <div class=\"vclToolbar vclLayoutFlex vclLayoutHorizontal vclLayoutJustified vclLayoutCenter\" role=\"menubar\" aria-level=\"1\">\n        <button vcl-button class=\"vclButton vclTransparent vclSquare\"\n          [class.vclDisabled]=\"!prevYearAvailable\"\n          [appIcon]=\"prevYearBtnIcon\"\n          (tap)=\"onPrevYearTap()\">\n        </button>\n\n        <span class=\"vclCalHeaderLabel\">{{ currentYear }}</span>\n\n        <button vcl-button\n          class=\"vclButton vclTransparent vclSquare\"\n          [class.vclDisabled]=\"!nextYearAvailable\"\n          [appIcon]=\"nextYearBtnIcon\"\n          (tap)=\"onNextYearTap()\">\n        </button>\n\n        <button vcl-button *ngIf=\"expandable\"\n          class=\"vclButton vclTransparent vclSquare\"\n          [appIcon]=\"closeBtnIcon\"\n          (tap)=\"onCloseBtnTap()\">\n        </button>\n      </div>\n    </div>\n\n    <div class=\"vclSeparator\"></div>\n\n    <template ngFor let-iM [ngForOf]=\"months\" let-i=\"index\">\n      <div *ngIf=\"i % monthsPerRow === 0\" class=\"vclLayoutFlex vclDGRow vclLayoutAuto\" role=\"row\">\n        <div *ngFor=\"let jM of months.slice(i, (i + monthsPerRow > months.length ? months.length : i + monthsPerRow)); let j = index;\"\n          (tap)=\"selectMonth(currentYear, i+j)\"\n          class=\"vclDGCell vclCalItem\"\n          [class.vclAvailable]=\"!useAvailableMonths || currentMeta[i+j].available\"\n          [class.vclUnavailable]=\"useAvailableMonths && !currentMeta[i+j].available\"\n          [class.vclToday]=\"isCurrentMonth(i+j)\"\n          [class.vclOtherMonth]=\"!isCurrentMonth(i+j)\"\n          [class.vclDisabled]=\"useAvailableMonths && !currentMeta[i+j].available\"\n          [class.vclSelected]=\"currentMeta[i+j].selected\"\n          [style.background-color]=\"currentMeta[i+j].color\"\n          [style.order]=\"i+j\"\n          [attr.aria-selected]=\"currentMeta[i+j].selected\"\n          role=\"gridcell\"\n          tabindex=\"0\">\n            <div class=\"vclLayoutHorizontal vclLayoutCenterJustified vclMonthPickerListItemLabel\">\n              {{months[i + j] | loc}}\n            </div>\n        </div>\n      </div>\n    </template>\n  </div>\n</div>\n"
 
 /***/ },
-/* 194 */
+/* 193 */
 /***/ function(module, exports) {
 
 module.exports = "  <ul>\n    <li *ngFor=\"let item of navigationItems\"\n        [class.vclSelected]=\"item.selected && !item.items\"\n        [class.vclOpen]=\"item.opened\"\n        [class.vclClose]=\"!item.opened\"\n        [class.vclNavigationHeading]=\"item.heading\"\n        [class.vclNavigationItem]=\"!item.heading\"\n        [attr.touch-action]=\"touchAction\"\n        [attr.aria-selected]=\"item.selected\"\n        [attr.role]=\"item.heading && 'sectionhead' || ariaRole\"\n        [attr.tabindex]=\"tabindex\"\n        [ngClass]=\"item.class\"\n        >\n\n      <span *ngIf=\"item.heading\">\n        {{item.label | loc}}\n      </span>\n\n      <a vcl-link class=\"vclNavigationItemLabel\"\n        *ngIf=\"!item.heading\"\n        [label]=\"item.label | loc\"\n        [href]=\"item.href\"\n        [prepIcon]=\"getPrepIcon(item)\"\n        [appIcon]=\"getAppIcon(item)\"\n        (tap)=\"item.items && toggleMenu(item)\"\n        (tap)=\"selectItem(item)\">\n      </a>\n\n      <vcl-navigation *ngIf=\"item.items\"\n          [navigationItems]=\"item.items\"\n          [type]=\"type\"\n          [subLevelHintIconOpened]=\"subLevelHintIconOpened\"\n          [subLevelHintIconClosed]=\"subLevelHintIconClosed\"\n          [subLevelHintIconSide]=\"subLevelHintIconSide\"\n          [selectedItem]=\"selectedItem\"\n          (select)=\"onSelect($event)\">\n      </vcl-navigation>\n    </li>\n  </ul>\n"
 
 /***/ },
-/* 195 */
+/* 194 */
 /***/ function(module, exports) {
 
 module.exports = "<vcl-tether\n  *ngIf=\"visible\"\n  [zIndex]=\"zIndex\"\n  [class]=\"class\"\n  [target]=\"target\"\n  [targetAttachment]=\"targetAttachment\"\n  [attachment]=\"attachment\">\n  <div [ngStyle]=\"style\" [@popOverState]=\"state\"\n  (off-click)=\"offClick()\">\n    <ng-content></ng-content>\n  </div>\n</vcl-tether>\n<div *ngIf=\"open && layer\" class=\"vclLayerCover\" [style.zIndex]=\"coverZIndex\"></div>\n"
 
 /***/ },
-/* 196 */
+/* 195 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"vclProgressBar\"\n     [attr.aria-valuenow]=\"value\" \n     [attr.aria-valuemin]=\"minValue\" \n     [attr.aria-valuenow]=\"aria-valuemax\" \n     [attr.aria-valuetext]=\"label\"\n     [class.vclIndeterminate]=\"showIndeterminate\"\n     >\n  <div *ngIf=\"showValue\" class=\"vclProgress vclPrimary vclLayoutFit\" [style.transform]=\"transformValue\"></div>\n  <div *ngIf=\"showSecondaryValue\" class=\"vclProgress vclSecondary vclLayoutFit\" [style.transform]=\"transformSecondaryValue\"></div>\n  <div *ngIf=\"showIndeterminate\" class=\"vclProgress vclPrimary vclLayoutFit\"></div>\n</div>\n\n"
 
 /***/ },
-/* 197 */
+/* 196 */
 /***/ function(module, exports) {
 
 module.exports = "<vcl-icon [icon]=\"icon\" *ngIf=\"labelPosition=='right'\"></vcl-icon>\n<ng-content></ng-content>\n<vcl-icon [icon]=\"icon\" *ngIf=\"labelPosition=='left'\"></vcl-icon>\n"
 
 /***/ },
-/* 198 */
+/* 197 */
 /***/ function(module, exports) {
 
 module.exports = "<vcl-radio-button *ngFor=\"let option of options\"\n [checked]=\"isChecked(option)\"\n (change)=\"buttonChanged(option.value, $event)\"\n>\n  {{ option.label }}\n</vcl-radio-button>\n<br *ngFor=\"let option of options\" />\n"
 
 /***/ },
-/* 199 */
+/* 198 */
 /***/ function(module, exports) {
 
 module.exports = "<div\n  [attr.id]=\"popoverTarget\"\n  (tap)=\"expand()\"\n  [attr.aria-autocomplete]=\"list\"\n  class=\"vclLayoutHorizontal vclSelect vclInputGroupEmb\">\n\n  <div class=\"vclInput\" readonly>\n    {{displayValue}}\n  </div>\n\n  <button vcl-button\n    tabindex=\"-1\"\n    class=\"vclTransparent vclSquare vclAppended\"\n    [appIcon]=\"expanded ? expandedIcon : collapsedIcon\">\n  </button>\n</div>\n\n<vcl-popover\n  [target]=\"'#' + popoverTarget\"\n  targetAttachment='bottom left'\n  attachment='top left'\n  [(open)]=\"expanded\">\n  <vcl-dropdown #dropdown\n    [(expanded)]=\"expanded\"\n    [items]=\"items\"\n    (change)=\"onSelect($event)\"\n    [minSelectableItems]=\"minSelectableItems\"\n    [maxSelectableItems]=\"maxSelectableItems\"\n    [tabindex]=\"0\">\n  </vcl-dropdown>\n</vcl-popover>\n"
 
 /***/ },
-/* 200 */
+/* 199 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"vclSliderRail\">\n  <div class=\"vclSliderScale\" horizontal=\"\" justified=\"\" layout=\"\" #scale>\n    <div *ngFor=\"let point of scalePoints\" class=\"vclSliderScalePointMark\"></div>\n  </div>\n  <div class=\"vclSliderKnobContainer\" [style.left]=\"percentLeftKnob + '%'\"\n    (pan)=\"onPan($event)\"\n    >\n    <div class=\"vclSliderKnob\"></div>\n  </div>\n</div>\n<div class=\"vclSliderScale\" horizontal=\"\" justified=\"\" layout=\"\">\n  <div *ngFor=\"let point of scalePoints\" class=\"vclSliderScalePointLabel\">{{point.label}}</div>\n</div>\n"
 
 /***/ },
-/* 201 */
+/* 200 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"vclTabbable {{tabbableClass}}\" \n     [class.vclTabsLeft]=\"layout==='left'\"\n     [class.vclTabsRight]=\"layout==='right'\">\n  <div class=\"vclTabs {{tabsClass}}\" [class.vclTabStyleUni]=\"!!borders\" role=\"tablist\">\n    <div *ngFor=\"let tab of tabs; let i = index\"\n         class=\"vclTab {{tab.tabClass}}\" role=\"tab\"\n         [class.vclDisabled]=\"tab.disabled\"\n         [class.vclSelected]=\"selectedTabIndex===i\"\n         [class.aria-selected]=\"selectedTabIndex===i\"\n         (tap)=\"selectTab(tab)\">\n      <div [connectWormhole]=\"tab.label\"></div>\n    </div>\n  </div>\n  <div *ngIf=\"tabsHaveContent\" class=\"vclTabContent {{tabContentClass}}\" [class.vclNoBorder]=\"!borders\">\n    <div role=\"tabpanel\" class=\"vclTabPanel\" *ngFor=\"let tab of tabs; let i = index\">\n      <div *ngIf=\"selectedTabIndex===i && tab.content\" [connectWormhole]=\"tab.content\" [wormholeIndisposable]=\"true\"></div>\n    </div>\n  </div>\n  <div *ngIf=\"!tabsHaveContent && content\" role=\"tabpanel\" class=\"vclTabPanel\">\n    <div [connectWormhole]=\"content\" [wormholeIndisposable]=\"true\"></div>\n  </div>\n</div>\n\n"
 
 /***/ },
-/* 202 */
+/* 201 */
 /***/ function(module, exports) {
 
 module.exports = "<div [id]=\"id\" [class]=\"class\" [style.z-index]=\"zIndex\">\n  <ng-content></ng-content>\n</div>\n"
 
 /***/ },
-/* 203 */
+/* 202 */
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"vclTokenContainer\">\n  <vcl-token *ngFor=\"let token of tokens\"\n  [(selected)]=\"token.selected\"\n  [removeable]=\"true\"\n  (onRemove)=\"remove(token)\"\n  [label]=\"token.label\"></vcl-token>\n</div>\n\n<input placeholder=\"Type to add tokens\" autocomplete=\"off\" type=\"text\"\n  class=\"vclInput\" (keydown)=\"keydown($event)\"\n  [(ngModel)]=\"addtext\" flex />\n"
 
 /***/ },
-/* 204 */
+/* 203 */
 /***/ function(module, exports) {
 
 module.exports = "<vcl-token *ngFor=\"let token of tokens\"\n [(selected)]=\"token.selected\"\n [label]=\"token.label\"\n (tap)=\"token.selected=!token.selected;change();\"></vcl-token>\n"
 
 /***/ },
-/* 205 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50617,7 +50711,7 @@ exports.InnerSubscriber = InnerSubscriber;
 //# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ },
-/* 206 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50634,11 +50728,12 @@ var Observable_1 = __webpack_require__(0);
 exports.Observable = Observable_1.Observable;
 // statics
 /* tslint:disable:no-use-before-declare */
+__webpack_require__(207);
 __webpack_require__(208);
 __webpack_require__(209);
 __webpack_require__(210);
 __webpack_require__(211);
-__webpack_require__(212);
+__webpack_require__(214);
 __webpack_require__(215);
 __webpack_require__(216);
 __webpack_require__(217);
@@ -50648,21 +50743,21 @@ __webpack_require__(220);
 __webpack_require__(221);
 __webpack_require__(222);
 __webpack_require__(223);
+__webpack_require__(228);
 __webpack_require__(224);
-__webpack_require__(229);
 __webpack_require__(225);
 __webpack_require__(226);
 __webpack_require__(227);
-__webpack_require__(228);
-__webpack_require__(230);
-__webpack_require__(233);
-__webpack_require__(231);
+__webpack_require__(229);
 __webpack_require__(232);
-__webpack_require__(234);
+__webpack_require__(230);
+__webpack_require__(231);
+__webpack_require__(233);
 //dom
+__webpack_require__(212);
 __webpack_require__(213);
-__webpack_require__(214);
 //operators
+__webpack_require__(236);
 __webpack_require__(237);
 __webpack_require__(238);
 __webpack_require__(239);
@@ -50675,21 +50770,21 @@ __webpack_require__(245);
 __webpack_require__(246);
 __webpack_require__(247);
 __webpack_require__(248);
+__webpack_require__(254);
 __webpack_require__(249);
-__webpack_require__(255);
 __webpack_require__(250);
 __webpack_require__(251);
 __webpack_require__(252);
 __webpack_require__(253);
-__webpack_require__(254);
+__webpack_require__(255);
 __webpack_require__(256);
 __webpack_require__(257);
 __webpack_require__(258);
-__webpack_require__(259);
+__webpack_require__(261);
 __webpack_require__(262);
 __webpack_require__(263);
+__webpack_require__(259);
 __webpack_require__(264);
-__webpack_require__(260);
 __webpack_require__(265);
 __webpack_require__(266);
 __webpack_require__(267);
@@ -50697,12 +50792,12 @@ __webpack_require__(268);
 __webpack_require__(269);
 __webpack_require__(270);
 __webpack_require__(271);
-__webpack_require__(272);
+__webpack_require__(234);
 __webpack_require__(235);
-__webpack_require__(236);
+__webpack_require__(272);
 __webpack_require__(273);
+__webpack_require__(260);
 __webpack_require__(274);
-__webpack_require__(261);
 __webpack_require__(275);
 __webpack_require__(276);
 __webpack_require__(277);
@@ -50720,9 +50815,9 @@ __webpack_require__(288);
 __webpack_require__(289);
 __webpack_require__(290);
 __webpack_require__(291);
+__webpack_require__(293);
 __webpack_require__(292);
 __webpack_require__(294);
-__webpack_require__(293);
 __webpack_require__(295);
 __webpack_require__(296);
 __webpack_require__(297);
@@ -50762,13 +50857,12 @@ __webpack_require__(330);
 __webpack_require__(331);
 __webpack_require__(332);
 __webpack_require__(333);
-__webpack_require__(334);
 /* tslint:disable:no-unused-variable */
 var Subscription_1 = __webpack_require__(7);
 exports.Subscription = Subscription_1.Subscription;
 var Subscriber_1 = __webpack_require__(2);
 exports.Subscriber = Subscriber_1.Subscriber;
-var AsyncSubject_1 = __webpack_require__(42);
+var AsyncSubject_1 = __webpack_require__(41);
 exports.AsyncSubject = AsyncSubject_1.AsyncSubject;
 var ReplaySubject_1 = __webpack_require__(74);
 exports.ReplaySubject = ReplaySubject_1.ReplaySubject;
@@ -50778,11 +50872,11 @@ var ConnectableObservable_1 = __webpack_require__(99);
 exports.ConnectableObservable = ConnectableObservable_1.ConnectableObservable;
 var Notification_1 = __webpack_require__(26);
 exports.Notification = Notification_1.Notification;
-var EmptyError_1 = __webpack_require__(47);
+var EmptyError_1 = __webpack_require__(46);
 exports.EmptyError = EmptyError_1.EmptyError;
-var ArgumentOutOfRangeError_1 = __webpack_require__(46);
+var ArgumentOutOfRangeError_1 = __webpack_require__(45);
 exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError_1.ArgumentOutOfRangeError;
-var ObjectUnsubscribedError_1 = __webpack_require__(48);
+var ObjectUnsubscribedError_1 = __webpack_require__(47);
 exports.ObjectUnsubscribedError = ObjectUnsubscribedError_1.ObjectUnsubscribedError;
 var TimeoutError_1 = __webpack_require__(118);
 exports.TimeoutError = TimeoutError_1.TimeoutError;
@@ -50792,7 +50886,7 @@ var timeInterval_1 = __webpack_require__(111);
 exports.TimeInterval = timeInterval_1.TimeInterval;
 var timestamp_1 = __webpack_require__(112);
 exports.Timestamp = timestamp_1.Timestamp;
-var TestScheduler_1 = __webpack_require__(470);
+var TestScheduler_1 = __webpack_require__(469);
 exports.TestScheduler = TestScheduler_1.TestScheduler;
 var VirtualTimeScheduler_1 = __webpack_require__(113);
 exports.VirtualTimeScheduler = VirtualTimeScheduler_1.VirtualTimeScheduler;
@@ -50803,10 +50897,10 @@ exports.AjaxTimeoutError = AjaxObservable_1.AjaxTimeoutError;
 var asap_1 = __webpack_require__(114);
 var async_1 = __webpack_require__(14);
 var queue_1 = __webpack_require__(115);
-var animationFrame_1 = __webpack_require__(467);
-var rxSubscriber_1 = __webpack_require__(45);
+var animationFrame_1 = __webpack_require__(466);
+var rxSubscriber_1 = __webpack_require__(44);
 var iterator_1 = __webpack_require__(29);
-var observable_1 = __webpack_require__(44);
+var observable_1 = __webpack_require__(43);
 /* tslint:enable:no-unused-variable */
 /**
  * @typedef {Object} Rx.Scheduler
@@ -50850,7 +50944,7 @@ exports.Symbol = Symbol;
 //# sourceMappingURL=Rx.js.map
 
 /***/ },
-/* 207 */
+/* 206 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -50905,15 +50999,26 @@ exports.Scheduler = Scheduler;
 //# sourceMappingURL=Scheduler.js.map
 
 /***/ },
+/* 207 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(0);
+var bindCallback_1 = __webpack_require__(352);
+Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
+//# sourceMappingURL=bindCallback.js.map
+
+/***/ },
 /* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var bindCallback_1 = __webpack_require__(353);
-Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
-//# sourceMappingURL=bindCallback.js.map
+var bindNodeCallback_1 = __webpack_require__(353);
+Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
+//# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ },
 /* 209 */
@@ -50922,9 +51027,9 @@ Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var bindNodeCallback_1 = __webpack_require__(354);
-Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
-//# sourceMappingURL=bindNodeCallback.js.map
+var combineLatest_1 = __webpack_require__(354);
+Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
+//# sourceMappingURL=combineLatest.js.map
 
 /***/ },
 /* 210 */
@@ -50933,9 +51038,9 @@ Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var combineLatest_1 = __webpack_require__(355);
-Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
-//# sourceMappingURL=combineLatest.js.map
+var concat_1 = __webpack_require__(355);
+Observable_1.Observable.concat = concat_1.concat;
+//# sourceMappingURL=concat.js.map
 
 /***/ },
 /* 211 */
@@ -50944,9 +51049,9 @@ Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var concat_1 = __webpack_require__(356);
-Observable_1.Observable.concat = concat_1.concat;
-//# sourceMappingURL=concat.js.map
+var defer_1 = __webpack_require__(356);
+Observable_1.Observable.defer = defer_1.defer;
+//# sourceMappingURL=defer.js.map
 
 /***/ },
 /* 212 */
@@ -50955,9 +51060,9 @@ Observable_1.Observable.concat = concat_1.concat;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var defer_1 = __webpack_require__(357);
-Observable_1.Observable.defer = defer_1.defer;
-//# sourceMappingURL=defer.js.map
+var ajax_1 = __webpack_require__(358);
+Observable_1.Observable.ajax = ajax_1.ajax;
+//# sourceMappingURL=ajax.js.map
 
 /***/ },
 /* 213 */
@@ -50966,9 +51071,9 @@ Observable_1.Observable.defer = defer_1.defer;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var ajax_1 = __webpack_require__(359);
-Observable_1.Observable.ajax = ajax_1.ajax;
-//# sourceMappingURL=ajax.js.map
+var webSocket_1 = __webpack_require__(359);
+Observable_1.Observable.webSocket = webSocket_1.webSocket;
+//# sourceMappingURL=webSocket.js.map
 
 /***/ },
 /* 214 */
@@ -50977,9 +51082,9 @@ Observable_1.Observable.ajax = ajax_1.ajax;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var webSocket_1 = __webpack_require__(360);
-Observable_1.Observable.webSocket = webSocket_1.webSocket;
-//# sourceMappingURL=webSocket.js.map
+var empty_1 = __webpack_require__(360);
+Observable_1.Observable.empty = empty_1.empty;
+//# sourceMappingURL=empty.js.map
 
 /***/ },
 /* 215 */
@@ -50988,9 +51093,9 @@ Observable_1.Observable.webSocket = webSocket_1.webSocket;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var empty_1 = __webpack_require__(361);
-Observable_1.Observable.empty = empty_1.empty;
-//# sourceMappingURL=empty.js.map
+var forkJoin_1 = __webpack_require__(361);
+Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
+//# sourceMappingURL=forkJoin.js.map
 
 /***/ },
 /* 216 */
@@ -50999,9 +51104,9 @@ Observable_1.Observable.empty = empty_1.empty;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var forkJoin_1 = __webpack_require__(362);
-Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
-//# sourceMappingURL=forkJoin.js.map
+var from_1 = __webpack_require__(362);
+Observable_1.Observable.from = from_1.from;
+//# sourceMappingURL=from.js.map
 
 /***/ },
 /* 217 */
@@ -51010,9 +51115,9 @@ Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var from_1 = __webpack_require__(363);
-Observable_1.Observable.from = from_1.from;
-//# sourceMappingURL=from.js.map
+var fromEvent_1 = __webpack_require__(363);
+Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
+//# sourceMappingURL=fromEvent.js.map
 
 /***/ },
 /* 218 */
@@ -51021,9 +51126,9 @@ Observable_1.Observable.from = from_1.from;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var fromEvent_1 = __webpack_require__(364);
-Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
-//# sourceMappingURL=fromEvent.js.map
+var fromEventPattern_1 = __webpack_require__(364);
+Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
+//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ },
 /* 219 */
@@ -51032,9 +51137,9 @@ Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var fromEventPattern_1 = __webpack_require__(365);
-Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
-//# sourceMappingURL=fromEventPattern.js.map
+var fromPromise_1 = __webpack_require__(365);
+Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
+//# sourceMappingURL=fromPromise.js.map
 
 /***/ },
 /* 220 */
@@ -51043,9 +51148,9 @@ Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var fromPromise_1 = __webpack_require__(366);
-Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
-//# sourceMappingURL=fromPromise.js.map
+var GenerateObservable_1 = __webpack_require__(342);
+Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.create;
+//# sourceMappingURL=generate.js.map
 
 /***/ },
 /* 221 */
@@ -51054,9 +51159,9 @@ Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var GenerateObservable_1 = __webpack_require__(343);
-Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.create;
-//# sourceMappingURL=generate.js.map
+var if_1 = __webpack_require__(366);
+Observable_1.Observable.if = if_1._if;
+//# sourceMappingURL=if.js.map
 
 /***/ },
 /* 222 */
@@ -51065,9 +51170,9 @@ Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.creat
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var if_1 = __webpack_require__(367);
-Observable_1.Observable.if = if_1._if;
-//# sourceMappingURL=if.js.map
+var interval_1 = __webpack_require__(367);
+Observable_1.Observable.interval = interval_1.interval;
+//# sourceMappingURL=interval.js.map
 
 /***/ },
 /* 223 */
@@ -51076,9 +51181,9 @@ Observable_1.Observable.if = if_1._if;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var interval_1 = __webpack_require__(368);
-Observable_1.Observable.interval = interval_1.interval;
-//# sourceMappingURL=interval.js.map
+var merge_1 = __webpack_require__(368);
+Observable_1.Observable.merge = merge_1.merge;
+//# sourceMappingURL=merge.js.map
 
 /***/ },
 /* 224 */
@@ -51087,9 +51192,9 @@ Observable_1.Observable.interval = interval_1.interval;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var merge_1 = __webpack_require__(369);
-Observable_1.Observable.merge = merge_1.merge;
-//# sourceMappingURL=merge.js.map
+var never_1 = __webpack_require__(369);
+Observable_1.Observable.never = never_1.never;
+//# sourceMappingURL=never.js.map
 
 /***/ },
 /* 225 */
@@ -51098,23 +51203,12 @@ Observable_1.Observable.merge = merge_1.merge;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var never_1 = __webpack_require__(370);
-Observable_1.Observable.never = never_1.never;
-//# sourceMappingURL=never.js.map
-
-/***/ },
-/* 226 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(0);
-var of_1 = __webpack_require__(371);
+var of_1 = __webpack_require__(370);
 Observable_1.Observable.of = of_1.of;
 //# sourceMappingURL=of.js.map
 
 /***/ },
-/* 227 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51125,18 +51219,18 @@ Observable_1.Observable.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNex
 //# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
-/* 228 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var pairs_1 = __webpack_require__(372);
+var pairs_1 = __webpack_require__(371);
 Observable_1.Observable.pairs = pairs_1.pairs;
 //# sourceMappingURL=pairs.js.map
 
 /***/ },
-/* 229 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51147,15 +51241,26 @@ Observable_1.Observable.race = race_1.raceStatic;
 //# sourceMappingURL=race.js.map
 
 /***/ },
+/* 229 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(0);
+var range_1 = __webpack_require__(372);
+Observable_1.Observable.range = range_1.range;
+//# sourceMappingURL=range.js.map
+
+/***/ },
 /* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var range_1 = __webpack_require__(373);
-Observable_1.Observable.range = range_1.range;
-//# sourceMappingURL=range.js.map
+var throw_1 = __webpack_require__(373);
+Observable_1.Observable.throw = throw_1._throw;
+//# sourceMappingURL=throw.js.map
 
 /***/ },
 /* 231 */
@@ -51164,9 +51269,9 @@ Observable_1.Observable.range = range_1.range;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var throw_1 = __webpack_require__(374);
-Observable_1.Observable.throw = throw_1._throw;
-//# sourceMappingURL=throw.js.map
+var timer_1 = __webpack_require__(374);
+Observable_1.Observable.timer = timer_1.timer;
+//# sourceMappingURL=timer.js.map
 
 /***/ },
 /* 232 */
@@ -51175,9 +51280,9 @@ Observable_1.Observable.throw = throw_1._throw;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var timer_1 = __webpack_require__(375);
-Observable_1.Observable.timer = timer_1.timer;
-//# sourceMappingURL=timer.js.map
+var using_1 = __webpack_require__(375);
+Observable_1.Observable.using = using_1.using;
+//# sourceMappingURL=using.js.map
 
 /***/ },
 /* 233 */
@@ -51186,9 +51291,9 @@ Observable_1.Observable.timer = timer_1.timer;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var using_1 = __webpack_require__(376);
-Observable_1.Observable.using = using_1.using;
-//# sourceMappingURL=using.js.map
+var zip_1 = __webpack_require__(376);
+Observable_1.Observable.zip = zip_1.zip;
+//# sourceMappingURL=zip.js.map
 
 /***/ },
 /* 234 */
@@ -51197,9 +51302,9 @@ Observable_1.Observable.using = using_1.using;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var zip_1 = __webpack_require__(377);
-Observable_1.Observable.zip = zip_1.zip;
-//# sourceMappingURL=zip.js.map
+var audit_1 = __webpack_require__(377);
+Observable_1.Observable.prototype.audit = audit_1.audit;
+//# sourceMappingURL=audit.js.map
 
 /***/ },
 /* 235 */
@@ -51208,9 +51313,9 @@ Observable_1.Observable.zip = zip_1.zip;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var audit_1 = __webpack_require__(378);
-Observable_1.Observable.prototype.audit = audit_1.audit;
-//# sourceMappingURL=audit.js.map
+var auditTime_1 = __webpack_require__(378);
+Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
+//# sourceMappingURL=auditTime.js.map
 
 /***/ },
 /* 236 */
@@ -51219,9 +51324,9 @@ Observable_1.Observable.prototype.audit = audit_1.audit;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var auditTime_1 = __webpack_require__(379);
-Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
-//# sourceMappingURL=auditTime.js.map
+var buffer_1 = __webpack_require__(379);
+Observable_1.Observable.prototype.buffer = buffer_1.buffer;
+//# sourceMappingURL=buffer.js.map
 
 /***/ },
 /* 237 */
@@ -51230,9 +51335,9 @@ Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var buffer_1 = __webpack_require__(380);
-Observable_1.Observable.prototype.buffer = buffer_1.buffer;
-//# sourceMappingURL=buffer.js.map
+var bufferCount_1 = __webpack_require__(380);
+Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
+//# sourceMappingURL=bufferCount.js.map
 
 /***/ },
 /* 238 */
@@ -51241,9 +51346,9 @@ Observable_1.Observable.prototype.buffer = buffer_1.buffer;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var bufferCount_1 = __webpack_require__(381);
-Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
-//# sourceMappingURL=bufferCount.js.map
+var bufferTime_1 = __webpack_require__(381);
+Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
+//# sourceMappingURL=bufferTime.js.map
 
 /***/ },
 /* 239 */
@@ -51252,9 +51357,9 @@ Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var bufferTime_1 = __webpack_require__(382);
-Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
-//# sourceMappingURL=bufferTime.js.map
+var bufferToggle_1 = __webpack_require__(382);
+Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
+//# sourceMappingURL=bufferToggle.js.map
 
 /***/ },
 /* 240 */
@@ -51263,9 +51368,9 @@ Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var bufferToggle_1 = __webpack_require__(383);
-Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
-//# sourceMappingURL=bufferToggle.js.map
+var bufferWhen_1 = __webpack_require__(383);
+Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
+//# sourceMappingURL=bufferWhen.js.map
 
 /***/ },
 /* 241 */
@@ -51274,9 +51379,10 @@ Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var bufferWhen_1 = __webpack_require__(384);
-Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
-//# sourceMappingURL=bufferWhen.js.map
+var catch_1 = __webpack_require__(384);
+Observable_1.Observable.prototype.catch = catch_1._catch;
+Observable_1.Observable.prototype._catch = catch_1._catch;
+//# sourceMappingURL=catch.js.map
 
 /***/ },
 /* 242 */
@@ -51285,24 +51391,12 @@ Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var catch_1 = __webpack_require__(385);
-Observable_1.Observable.prototype.catch = catch_1._catch;
-Observable_1.Observable.prototype._catch = catch_1._catch;
-//# sourceMappingURL=catch.js.map
-
-/***/ },
-/* 243 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(0);
-var combineAll_1 = __webpack_require__(386);
+var combineAll_1 = __webpack_require__(385);
 Observable_1.Observable.prototype.combineAll = combineAll_1.combineAll;
 //# sourceMappingURL=combineAll.js.map
 
 /***/ },
-/* 244 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51313,7 +51407,7 @@ Observable_1.Observable.prototype.combineLatest = combineLatest_1.combineLatest;
 //# sourceMappingURL=combineLatest.js.map
 
 /***/ },
-/* 245 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51324,15 +51418,26 @@ Observable_1.Observable.prototype.concat = concat_1.concat;
 //# sourceMappingURL=concat.js.map
 
 /***/ },
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(0);
+var concatAll_1 = __webpack_require__(386);
+Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
+//# sourceMappingURL=concatAll.js.map
+
+/***/ },
 /* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var concatAll_1 = __webpack_require__(387);
-Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
-//# sourceMappingURL=concatAll.js.map
+var concatMap_1 = __webpack_require__(387);
+Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
+//# sourceMappingURL=concatMap.js.map
 
 /***/ },
 /* 247 */
@@ -51341,9 +51446,9 @@ Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var concatMap_1 = __webpack_require__(388);
-Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
-//# sourceMappingURL=concatMap.js.map
+var concatMapTo_1 = __webpack_require__(388);
+Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
+//# sourceMappingURL=concatMapTo.js.map
 
 /***/ },
 /* 248 */
@@ -51352,9 +51457,9 @@ Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var concatMapTo_1 = __webpack_require__(389);
-Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
-//# sourceMappingURL=concatMapTo.js.map
+var count_1 = __webpack_require__(389);
+Observable_1.Observable.prototype.count = count_1.count;
+//# sourceMappingURL=count.js.map
 
 /***/ },
 /* 249 */
@@ -51363,9 +51468,9 @@ Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var count_1 = __webpack_require__(390);
-Observable_1.Observable.prototype.count = count_1.count;
-//# sourceMappingURL=count.js.map
+var debounce_1 = __webpack_require__(390);
+Observable_1.Observable.prototype.debounce = debounce_1.debounce;
+//# sourceMappingURL=debounce.js.map
 
 /***/ },
 /* 250 */
@@ -51374,9 +51479,9 @@ Observable_1.Observable.prototype.count = count_1.count;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var debounce_1 = __webpack_require__(391);
-Observable_1.Observable.prototype.debounce = debounce_1.debounce;
-//# sourceMappingURL=debounce.js.map
+var debounceTime_1 = __webpack_require__(391);
+Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
+//# sourceMappingURL=debounceTime.js.map
 
 /***/ },
 /* 251 */
@@ -51385,9 +51490,9 @@ Observable_1.Observable.prototype.debounce = debounce_1.debounce;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var debounceTime_1 = __webpack_require__(392);
-Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
-//# sourceMappingURL=debounceTime.js.map
+var defaultIfEmpty_1 = __webpack_require__(392);
+Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
+//# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ },
 /* 252 */
@@ -51396,9 +51501,9 @@ Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var defaultIfEmpty_1 = __webpack_require__(393);
-Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
-//# sourceMappingURL=defaultIfEmpty.js.map
+var delay_1 = __webpack_require__(393);
+Observable_1.Observable.prototype.delay = delay_1.delay;
+//# sourceMappingURL=delay.js.map
 
 /***/ },
 /* 253 */
@@ -51407,9 +51512,9 @@ Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmp
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var delay_1 = __webpack_require__(394);
-Observable_1.Observable.prototype.delay = delay_1.delay;
-//# sourceMappingURL=delay.js.map
+var delayWhen_1 = __webpack_require__(394);
+Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
+//# sourceMappingURL=delayWhen.js.map
 
 /***/ },
 /* 254 */
@@ -51418,9 +51523,9 @@ Observable_1.Observable.prototype.delay = delay_1.delay;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var delayWhen_1 = __webpack_require__(395);
-Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
-//# sourceMappingURL=delayWhen.js.map
+var dematerialize_1 = __webpack_require__(395);
+Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
+//# sourceMappingURL=dematerialize.js.map
 
 /***/ },
 /* 255 */
@@ -51429,23 +51534,12 @@ Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var dematerialize_1 = __webpack_require__(396);
-Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
-//# sourceMappingURL=dematerialize.js.map
-
-/***/ },
-/* 256 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(0);
-var distinct_1 = __webpack_require__(397);
+var distinct_1 = __webpack_require__(396);
 Observable_1.Observable.prototype.distinct = distinct_1.distinct;
 //# sourceMappingURL=distinct.js.map
 
 /***/ },
-/* 257 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51456,15 +51550,27 @@ Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.
 //# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ },
+/* 257 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(0);
+var distinctUntilKeyChanged_1 = __webpack_require__(397);
+Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged_1.distinctUntilKeyChanged;
+//# sourceMappingURL=distinctUntilKeyChanged.js.map
+
+/***/ },
 /* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var distinctUntilKeyChanged_1 = __webpack_require__(398);
-Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged_1.distinctUntilKeyChanged;
-//# sourceMappingURL=distinctUntilKeyChanged.js.map
+var do_1 = __webpack_require__(398);
+Observable_1.Observable.prototype.do = do_1._do;
+Observable_1.Observable.prototype._do = do_1._do;
+//# sourceMappingURL=do.js.map
 
 /***/ },
 /* 259 */
@@ -51473,10 +51579,9 @@ Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChan
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var do_1 = __webpack_require__(399);
-Observable_1.Observable.prototype.do = do_1._do;
-Observable_1.Observable.prototype._do = do_1._do;
-//# sourceMappingURL=do.js.map
+var elementAt_1 = __webpack_require__(399);
+Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
+//# sourceMappingURL=elementAt.js.map
 
 /***/ },
 /* 260 */
@@ -51485,9 +51590,9 @@ Observable_1.Observable.prototype._do = do_1._do;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var elementAt_1 = __webpack_require__(400);
-Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
-//# sourceMappingURL=elementAt.js.map
+var every_1 = __webpack_require__(400);
+Observable_1.Observable.prototype.every = every_1.every;
+//# sourceMappingURL=every.js.map
 
 /***/ },
 /* 261 */
@@ -51496,9 +51601,9 @@ Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var every_1 = __webpack_require__(401);
-Observable_1.Observable.prototype.every = every_1.every;
-//# sourceMappingURL=every.js.map
+var exhaust_1 = __webpack_require__(401);
+Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
+//# sourceMappingURL=exhaust.js.map
 
 /***/ },
 /* 262 */
@@ -51507,9 +51612,9 @@ Observable_1.Observable.prototype.every = every_1.every;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var exhaust_1 = __webpack_require__(402);
-Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
-//# sourceMappingURL=exhaust.js.map
+var exhaustMap_1 = __webpack_require__(402);
+Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
+//# sourceMappingURL=exhaustMap.js.map
 
 /***/ },
 /* 263 */
@@ -51518,23 +51623,12 @@ Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var exhaustMap_1 = __webpack_require__(403);
-Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
-//# sourceMappingURL=exhaustMap.js.map
-
-/***/ },
-/* 264 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(0);
-var expand_1 = __webpack_require__(404);
+var expand_1 = __webpack_require__(403);
 Observable_1.Observable.prototype.expand = expand_1.expand;
 //# sourceMappingURL=expand.js.map
 
 /***/ },
-/* 265 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51545,19 +51639,19 @@ Observable_1.Observable.prototype.filter = filter_1.filter;
 //# sourceMappingURL=filter.js.map
 
 /***/ },
-/* 266 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var finally_1 = __webpack_require__(405);
+var finally_1 = __webpack_require__(404);
 Observable_1.Observable.prototype.finally = finally_1._finally;
 Observable_1.Observable.prototype._finally = finally_1._finally;
 //# sourceMappingURL=finally.js.map
 
 /***/ },
-/* 267 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51568,15 +51662,26 @@ Observable_1.Observable.prototype.find = find_1.find;
 //# sourceMappingURL=find.js.map
 
 /***/ },
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(0);
+var findIndex_1 = __webpack_require__(405);
+Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
+//# sourceMappingURL=findIndex.js.map
+
+/***/ },
 /* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var findIndex_1 = __webpack_require__(406);
-Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
-//# sourceMappingURL=findIndex.js.map
+var first_1 = __webpack_require__(406);
+Observable_1.Observable.prototype.first = first_1.first;
+//# sourceMappingURL=first.js.map
 
 /***/ },
 /* 269 */
@@ -51585,9 +51690,9 @@ Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var first_1 = __webpack_require__(407);
-Observable_1.Observable.prototype.first = first_1.first;
-//# sourceMappingURL=first.js.map
+var groupBy_1 = __webpack_require__(407);
+Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
+//# sourceMappingURL=groupBy.js.map
 
 /***/ },
 /* 270 */
@@ -51596,9 +51701,9 @@ Observable_1.Observable.prototype.first = first_1.first;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var groupBy_1 = __webpack_require__(408);
-Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
-//# sourceMappingURL=groupBy.js.map
+var ignoreElements_1 = __webpack_require__(408);
+Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
+//# sourceMappingURL=ignoreElements.js.map
 
 /***/ },
 /* 271 */
@@ -51607,9 +51712,9 @@ Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var ignoreElements_1 = __webpack_require__(409);
-Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
-//# sourceMappingURL=ignoreElements.js.map
+var isEmpty_1 = __webpack_require__(409);
+Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
+//# sourceMappingURL=isEmpty.js.map
 
 /***/ },
 /* 272 */
@@ -51618,9 +51723,9 @@ Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElemen
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var isEmpty_1 = __webpack_require__(410);
-Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
-//# sourceMappingURL=isEmpty.js.map
+var last_1 = __webpack_require__(410);
+Observable_1.Observable.prototype.last = last_1.last;
+//# sourceMappingURL=last.js.map
 
 /***/ },
 /* 273 */
@@ -51629,24 +51734,13 @@ Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var last_1 = __webpack_require__(411);
-Observable_1.Observable.prototype.last = last_1.last;
-//# sourceMappingURL=last.js.map
-
-/***/ },
-/* 274 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(0);
-var let_1 = __webpack_require__(412);
+var let_1 = __webpack_require__(411);
 Observable_1.Observable.prototype.let = let_1.letProto;
 Observable_1.Observable.prototype.letBind = let_1.letProto;
 //# sourceMappingURL=let.js.map
 
 /***/ },
-/* 275 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51657,15 +51751,26 @@ Observable_1.Observable.prototype.map = map_1.map;
 //# sourceMappingURL=map.js.map
 
 /***/ },
+/* 275 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(0);
+var mapTo_1 = __webpack_require__(412);
+Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
+//# sourceMappingURL=mapTo.js.map
+
+/***/ },
 /* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var mapTo_1 = __webpack_require__(413);
-Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
-//# sourceMappingURL=mapTo.js.map
+var materialize_1 = __webpack_require__(413);
+Observable_1.Observable.prototype.materialize = materialize_1.materialize;
+//# sourceMappingURL=materialize.js.map
 
 /***/ },
 /* 277 */
@@ -51674,23 +51779,12 @@ Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var materialize_1 = __webpack_require__(414);
-Observable_1.Observable.prototype.materialize = materialize_1.materialize;
-//# sourceMappingURL=materialize.js.map
-
-/***/ },
-/* 278 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(0);
-var max_1 = __webpack_require__(415);
+var max_1 = __webpack_require__(414);
 Observable_1.Observable.prototype.max = max_1.max;
 //# sourceMappingURL=max.js.map
 
 /***/ },
-/* 279 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51701,18 +51795,18 @@ Observable_1.Observable.prototype.merge = merge_1.merge;
 //# sourceMappingURL=merge.js.map
 
 /***/ },
-/* 280 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var mergeAll_1 = __webpack_require__(43);
+var mergeAll_1 = __webpack_require__(42);
 Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
 //# sourceMappingURL=mergeAll.js.map
 
 /***/ },
-/* 281 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51724,7 +51818,7 @@ Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
 //# sourceMappingURL=mergeMap.js.map
 
 /***/ },
-/* 282 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51736,29 +51830,29 @@ Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
 //# sourceMappingURL=mergeMapTo.js.map
 
 /***/ },
+/* 282 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(0);
+var mergeScan_1 = __webpack_require__(415);
+Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
+//# sourceMappingURL=mergeScan.js.map
+
+/***/ },
 /* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var mergeScan_1 = __webpack_require__(416);
-Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
-//# sourceMappingURL=mergeScan.js.map
-
-/***/ },
-/* 284 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(0);
-var min_1 = __webpack_require__(417);
+var min_1 = __webpack_require__(416);
 Observable_1.Observable.prototype.min = min_1.min;
 //# sourceMappingURL=min.js.map
 
 /***/ },
-/* 285 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51769,7 +51863,7 @@ Observable_1.Observable.prototype.multicast = multicast_1.multicast;
 //# sourceMappingURL=multicast.js.map
 
 /***/ },
-/* 286 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51780,7 +51874,7 @@ Observable_1.Observable.prototype.observeOn = observeOn_1.observeOn;
 //# sourceMappingURL=observeOn.js.map
 
 /***/ },
-/* 287 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51791,15 +51885,26 @@ Observable_1.Observable.prototype.onErrorResumeNext = onErrorResumeNext_1.onErro
 //# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ },
+/* 287 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(0);
+var pairwise_1 = __webpack_require__(417);
+Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
+//# sourceMappingURL=pairwise.js.map
+
+/***/ },
 /* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var pairwise_1 = __webpack_require__(418);
-Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
-//# sourceMappingURL=pairwise.js.map
+var partition_1 = __webpack_require__(418);
+Observable_1.Observable.prototype.partition = partition_1.partition;
+//# sourceMappingURL=partition.js.map
 
 /***/ },
 /* 289 */
@@ -51808,9 +51913,9 @@ Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var partition_1 = __webpack_require__(419);
-Observable_1.Observable.prototype.partition = partition_1.partition;
-//# sourceMappingURL=partition.js.map
+var pluck_1 = __webpack_require__(419);
+Observable_1.Observable.prototype.pluck = pluck_1.pluck;
+//# sourceMappingURL=pluck.js.map
 
 /***/ },
 /* 290 */
@@ -51819,9 +51924,9 @@ Observable_1.Observable.prototype.partition = partition_1.partition;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var pluck_1 = __webpack_require__(420);
-Observable_1.Observable.prototype.pluck = pluck_1.pluck;
-//# sourceMappingURL=pluck.js.map
+var publish_1 = __webpack_require__(420);
+Observable_1.Observable.prototype.publish = publish_1.publish;
+//# sourceMappingURL=publish.js.map
 
 /***/ },
 /* 291 */
@@ -51830,9 +51935,9 @@ Observable_1.Observable.prototype.pluck = pluck_1.pluck;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var publish_1 = __webpack_require__(421);
-Observable_1.Observable.prototype.publish = publish_1.publish;
-//# sourceMappingURL=publish.js.map
+var publishBehavior_1 = __webpack_require__(421);
+Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
+//# sourceMappingURL=publishBehavior.js.map
 
 /***/ },
 /* 292 */
@@ -51841,9 +51946,9 @@ Observable_1.Observable.prototype.publish = publish_1.publish;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var publishBehavior_1 = __webpack_require__(422);
-Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
-//# sourceMappingURL=publishBehavior.js.map
+var publishLast_1 = __webpack_require__(422);
+Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
+//# sourceMappingURL=publishLast.js.map
 
 /***/ },
 /* 293 */
@@ -51852,23 +51957,12 @@ Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBeh
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var publishLast_1 = __webpack_require__(423);
-Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
-//# sourceMappingURL=publishLast.js.map
-
-/***/ },
-/* 294 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(0);
-var publishReplay_1 = __webpack_require__(424);
+var publishReplay_1 = __webpack_require__(423);
 Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
 //# sourceMappingURL=publishReplay.js.map
 
 /***/ },
-/* 295 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51879,7 +51973,7 @@ Observable_1.Observable.prototype.race = race_1.race;
 //# sourceMappingURL=race.js.map
 
 /***/ },
-/* 296 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51890,15 +51984,26 @@ Observable_1.Observable.prototype.reduce = reduce_1.reduce;
 //# sourceMappingURL=reduce.js.map
 
 /***/ },
+/* 296 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(0);
+var repeat_1 = __webpack_require__(424);
+Observable_1.Observable.prototype.repeat = repeat_1.repeat;
+//# sourceMappingURL=repeat.js.map
+
+/***/ },
 /* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var repeat_1 = __webpack_require__(425);
-Observable_1.Observable.prototype.repeat = repeat_1.repeat;
-//# sourceMappingURL=repeat.js.map
+var repeatWhen_1 = __webpack_require__(425);
+Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
+//# sourceMappingURL=repeatWhen.js.map
 
 /***/ },
 /* 298 */
@@ -51907,9 +52012,9 @@ Observable_1.Observable.prototype.repeat = repeat_1.repeat;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var repeatWhen_1 = __webpack_require__(426);
-Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
-//# sourceMappingURL=repeatWhen.js.map
+var retry_1 = __webpack_require__(426);
+Observable_1.Observable.prototype.retry = retry_1.retry;
+//# sourceMappingURL=retry.js.map
 
 /***/ },
 /* 299 */
@@ -51918,9 +52023,9 @@ Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var retry_1 = __webpack_require__(427);
-Observable_1.Observable.prototype.retry = retry_1.retry;
-//# sourceMappingURL=retry.js.map
+var retryWhen_1 = __webpack_require__(427);
+Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
+//# sourceMappingURL=retryWhen.js.map
 
 /***/ },
 /* 300 */
@@ -51929,9 +52034,9 @@ Observable_1.Observable.prototype.retry = retry_1.retry;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var retryWhen_1 = __webpack_require__(428);
-Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
-//# sourceMappingURL=retryWhen.js.map
+var sample_1 = __webpack_require__(428);
+Observable_1.Observable.prototype.sample = sample_1.sample;
+//# sourceMappingURL=sample.js.map
 
 /***/ },
 /* 301 */
@@ -51940,9 +52045,9 @@ Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var sample_1 = __webpack_require__(429);
-Observable_1.Observable.prototype.sample = sample_1.sample;
-//# sourceMappingURL=sample.js.map
+var sampleTime_1 = __webpack_require__(429);
+Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
+//# sourceMappingURL=sampleTime.js.map
 
 /***/ },
 /* 302 */
@@ -51951,9 +52056,9 @@ Observable_1.Observable.prototype.sample = sample_1.sample;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var sampleTime_1 = __webpack_require__(430);
-Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
-//# sourceMappingURL=sampleTime.js.map
+var scan_1 = __webpack_require__(430);
+Observable_1.Observable.prototype.scan = scan_1.scan;
+//# sourceMappingURL=scan.js.map
 
 /***/ },
 /* 303 */
@@ -51962,9 +52067,9 @@ Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var scan_1 = __webpack_require__(431);
-Observable_1.Observable.prototype.scan = scan_1.scan;
-//# sourceMappingURL=scan.js.map
+var sequenceEqual_1 = __webpack_require__(431);
+Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
+//# sourceMappingURL=sequenceEqual.js.map
 
 /***/ },
 /* 304 */
@@ -51973,9 +52078,9 @@ Observable_1.Observable.prototype.scan = scan_1.scan;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var sequenceEqual_1 = __webpack_require__(432);
-Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
-//# sourceMappingURL=sequenceEqual.js.map
+var share_1 = __webpack_require__(432);
+Observable_1.Observable.prototype.share = share_1.share;
+//# sourceMappingURL=share.js.map
 
 /***/ },
 /* 305 */
@@ -51984,9 +52089,9 @@ Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var share_1 = __webpack_require__(433);
-Observable_1.Observable.prototype.share = share_1.share;
-//# sourceMappingURL=share.js.map
+var single_1 = __webpack_require__(433);
+Observable_1.Observable.prototype.single = single_1.single;
+//# sourceMappingURL=single.js.map
 
 /***/ },
 /* 306 */
@@ -51995,9 +52100,9 @@ Observable_1.Observable.prototype.share = share_1.share;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var single_1 = __webpack_require__(434);
-Observable_1.Observable.prototype.single = single_1.single;
-//# sourceMappingURL=single.js.map
+var skip_1 = __webpack_require__(434);
+Observable_1.Observable.prototype.skip = skip_1.skip;
+//# sourceMappingURL=skip.js.map
 
 /***/ },
 /* 307 */
@@ -52006,9 +52111,9 @@ Observable_1.Observable.prototype.single = single_1.single;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var skip_1 = __webpack_require__(435);
-Observable_1.Observable.prototype.skip = skip_1.skip;
-//# sourceMappingURL=skip.js.map
+var skipUntil_1 = __webpack_require__(435);
+Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
+//# sourceMappingURL=skipUntil.js.map
 
 /***/ },
 /* 308 */
@@ -52017,9 +52122,9 @@ Observable_1.Observable.prototype.skip = skip_1.skip;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var skipUntil_1 = __webpack_require__(436);
-Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
-//# sourceMappingURL=skipUntil.js.map
+var skipWhile_1 = __webpack_require__(436);
+Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
+//# sourceMappingURL=skipWhile.js.map
 
 /***/ },
 /* 309 */
@@ -52028,9 +52133,9 @@ Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var skipWhile_1 = __webpack_require__(437);
-Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
-//# sourceMappingURL=skipWhile.js.map
+var startWith_1 = __webpack_require__(437);
+Observable_1.Observable.prototype.startWith = startWith_1.startWith;
+//# sourceMappingURL=startWith.js.map
 
 /***/ },
 /* 310 */
@@ -52039,9 +52144,9 @@ Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var startWith_1 = __webpack_require__(438);
-Observable_1.Observable.prototype.startWith = startWith_1.startWith;
-//# sourceMappingURL=startWith.js.map
+var subscribeOn_1 = __webpack_require__(438);
+Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
+//# sourceMappingURL=subscribeOn.js.map
 
 /***/ },
 /* 311 */
@@ -52050,9 +52155,10 @@ Observable_1.Observable.prototype.startWith = startWith_1.startWith;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var subscribeOn_1 = __webpack_require__(439);
-Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
-//# sourceMappingURL=subscribeOn.js.map
+var switch_1 = __webpack_require__(439);
+Observable_1.Observable.prototype.switch = switch_1._switch;
+Observable_1.Observable.prototype._switch = switch_1._switch;
+//# sourceMappingURL=switch.js.map
 
 /***/ },
 /* 312 */
@@ -52061,10 +52167,9 @@ Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var switch_1 = __webpack_require__(440);
-Observable_1.Observable.prototype.switch = switch_1._switch;
-Observable_1.Observable.prototype._switch = switch_1._switch;
-//# sourceMappingURL=switch.js.map
+var switchMap_1 = __webpack_require__(440);
+Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
+//# sourceMappingURL=switchMap.js.map
 
 /***/ },
 /* 313 */
@@ -52073,9 +52178,9 @@ Observable_1.Observable.prototype._switch = switch_1._switch;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var switchMap_1 = __webpack_require__(441);
-Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
-//# sourceMappingURL=switchMap.js.map
+var switchMapTo_1 = __webpack_require__(441);
+Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
+//# sourceMappingURL=switchMapTo.js.map
 
 /***/ },
 /* 314 */
@@ -52084,9 +52189,9 @@ Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var switchMapTo_1 = __webpack_require__(442);
-Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
-//# sourceMappingURL=switchMapTo.js.map
+var take_1 = __webpack_require__(442);
+Observable_1.Observable.prototype.take = take_1.take;
+//# sourceMappingURL=take.js.map
 
 /***/ },
 /* 315 */
@@ -52095,9 +52200,9 @@ Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var take_1 = __webpack_require__(443);
-Observable_1.Observable.prototype.take = take_1.take;
-//# sourceMappingURL=take.js.map
+var takeLast_1 = __webpack_require__(443);
+Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
+//# sourceMappingURL=takeLast.js.map
 
 /***/ },
 /* 316 */
@@ -52106,9 +52211,9 @@ Observable_1.Observable.prototype.take = take_1.take;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var takeLast_1 = __webpack_require__(444);
-Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
-//# sourceMappingURL=takeLast.js.map
+var takeUntil_1 = __webpack_require__(444);
+Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
+//# sourceMappingURL=takeUntil.js.map
 
 /***/ },
 /* 317 */
@@ -52117,9 +52222,9 @@ Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var takeUntil_1 = __webpack_require__(445);
-Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
-//# sourceMappingURL=takeUntil.js.map
+var takeWhile_1 = __webpack_require__(445);
+Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
+//# sourceMappingURL=takeWhile.js.map
 
 /***/ },
 /* 318 */
@@ -52128,9 +52233,9 @@ Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var takeWhile_1 = __webpack_require__(446);
-Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
-//# sourceMappingURL=takeWhile.js.map
+var throttle_1 = __webpack_require__(446);
+Observable_1.Observable.prototype.throttle = throttle_1.throttle;
+//# sourceMappingURL=throttle.js.map
 
 /***/ },
 /* 319 */
@@ -52139,23 +52244,12 @@ Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var throttle_1 = __webpack_require__(447);
-Observable_1.Observable.prototype.throttle = throttle_1.throttle;
-//# sourceMappingURL=throttle.js.map
-
-/***/ },
-/* 320 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(0);
-var throttleTime_1 = __webpack_require__(448);
+var throttleTime_1 = __webpack_require__(447);
 Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
 //# sourceMappingURL=throttleTime.js.map
 
 /***/ },
-/* 321 */
+/* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52166,29 +52260,29 @@ Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
 //# sourceMappingURL=timeInterval.js.map
 
 /***/ },
+/* 321 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(0);
+var timeout_1 = __webpack_require__(448);
+Observable_1.Observable.prototype.timeout = timeout_1.timeout;
+//# sourceMappingURL=timeout.js.map
+
+/***/ },
 /* 322 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var timeout_1 = __webpack_require__(449);
-Observable_1.Observable.prototype.timeout = timeout_1.timeout;
-//# sourceMappingURL=timeout.js.map
-
-/***/ },
-/* 323 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(0);
-var timeoutWith_1 = __webpack_require__(450);
+var timeoutWith_1 = __webpack_require__(449);
 Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
 //# sourceMappingURL=timeoutWith.js.map
 
 /***/ },
-/* 324 */
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52199,15 +52293,26 @@ Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
 //# sourceMappingURL=timestamp.js.map
 
 /***/ },
+/* 324 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var Observable_1 = __webpack_require__(0);
+var toArray_1 = __webpack_require__(450);
+Observable_1.Observable.prototype.toArray = toArray_1.toArray;
+//# sourceMappingURL=toArray.js.map
+
+/***/ },
 /* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var toArray_1 = __webpack_require__(451);
-Observable_1.Observable.prototype.toArray = toArray_1.toArray;
-//# sourceMappingURL=toArray.js.map
+var toPromise_1 = __webpack_require__(451);
+Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
+//# sourceMappingURL=toPromise.js.map
 
 /***/ },
 /* 326 */
@@ -52216,9 +52321,9 @@ Observable_1.Observable.prototype.toArray = toArray_1.toArray;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var toPromise_1 = __webpack_require__(452);
-Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
-//# sourceMappingURL=toPromise.js.map
+var window_1 = __webpack_require__(452);
+Observable_1.Observable.prototype.window = window_1.window;
+//# sourceMappingURL=window.js.map
 
 /***/ },
 /* 327 */
@@ -52227,9 +52332,9 @@ Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var window_1 = __webpack_require__(453);
-Observable_1.Observable.prototype.window = window_1.window;
-//# sourceMappingURL=window.js.map
+var windowCount_1 = __webpack_require__(453);
+Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
+//# sourceMappingURL=windowCount.js.map
 
 /***/ },
 /* 328 */
@@ -52238,9 +52343,9 @@ Observable_1.Observable.prototype.window = window_1.window;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var windowCount_1 = __webpack_require__(454);
-Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
-//# sourceMappingURL=windowCount.js.map
+var windowTime_1 = __webpack_require__(454);
+Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
+//# sourceMappingURL=windowTime.js.map
 
 /***/ },
 /* 329 */
@@ -52249,9 +52354,9 @@ Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var windowTime_1 = __webpack_require__(455);
-Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
-//# sourceMappingURL=windowTime.js.map
+var windowToggle_1 = __webpack_require__(455);
+Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
+//# sourceMappingURL=windowToggle.js.map
 
 /***/ },
 /* 330 */
@@ -52260,9 +52365,9 @@ Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var windowToggle_1 = __webpack_require__(456);
-Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
-//# sourceMappingURL=windowToggle.js.map
+var windowWhen_1 = __webpack_require__(456);
+Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
+//# sourceMappingURL=windowWhen.js.map
 
 /***/ },
 /* 331 */
@@ -52271,23 +52376,12 @@ Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var windowWhen_1 = __webpack_require__(457);
-Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
-//# sourceMappingURL=windowWhen.js.map
-
-/***/ },
-/* 332 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var Observable_1 = __webpack_require__(0);
-var withLatestFrom_1 = __webpack_require__(458);
+var withLatestFrom_1 = __webpack_require__(457);
 Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFrom;
 //# sourceMappingURL=withLatestFrom.js.map
 
 /***/ },
-/* 333 */
+/* 332 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52298,18 +52392,18 @@ Observable_1.Observable.prototype.zip = zip_1.zipProto;
 //# sourceMappingURL=zip.js.map
 
 /***/ },
-/* 334 */
+/* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Observable_1 = __webpack_require__(0);
-var zipAll_1 = __webpack_require__(459);
+var zipAll_1 = __webpack_require__(458);
 Observable_1.Observable.prototype.zipAll = zipAll_1.zipAll;
 //# sourceMappingURL=zipAll.js.map
 
 /***/ },
-/* 335 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52385,7 +52479,7 @@ exports.ArrayLikeObservable = ArrayLikeObservable;
 //# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ },
-/* 336 */
+/* 335 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52398,7 +52492,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(0);
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(9);
-var AsyncSubject_1 = __webpack_require__(42);
+var AsyncSubject_1 = __webpack_require__(41);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -52555,7 +52649,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=BoundCallbackObservable.js.map
 
 /***/ },
-/* 337 */
+/* 336 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52568,7 +52662,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(0);
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(9);
-var AsyncSubject_1 = __webpack_require__(42);
+var AsyncSubject_1 = __webpack_require__(41);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -52737,7 +52831,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=BoundNodeCallbackObservable.js.map
 
 /***/ },
-/* 338 */
+/* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52842,7 +52936,7 @@ var DeferSubscriber = (function (_super) {
 //# sourceMappingURL=DeferObservable.js.map
 
 /***/ },
-/* 339 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52897,7 +52991,7 @@ var ErrorObservable = (function (_super) {
      * @see {@link of}
      *
      * @param {any} error The particular Error to pass to the error notification.
-     * @param {Scheduler} [scheduler] A {@link Scheduler} to use for scheduling
+     * @param {Scheduler} [scheduler] A {@link IScheduler} to use for scheduling
      * the emission of the error notification.
      * @return {Observable} An error Observable: emits only the error notification
      * using the given error argument.
@@ -52930,7 +53024,7 @@ exports.ErrorObservable = ErrorObservable;
 //# sourceMappingURL=ErrorObservable.js.map
 
 /***/ },
-/* 340 */
+/* 339 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53048,7 +53142,7 @@ var ForkJoinSubscriber = (function (_super) {
 //# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ },
-/* 341 */
+/* 340 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53194,7 +53288,7 @@ exports.FromEventObservable = FromEventObservable;
 //# sourceMappingURL=FromEventObservable.js.map
 
 /***/ },
-/* 342 */
+/* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53308,7 +53402,7 @@ exports.FromEventPatternObservable = FromEventPatternObservable;
 //# sourceMappingURL=FromEventPatternObservable.js.map
 
 /***/ },
-/* 343 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53449,7 +53543,7 @@ exports.GenerateObservable = GenerateObservable;
 //# sourceMappingURL=GenerateObservable.js.map
 
 /***/ },
-/* 344 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53516,7 +53610,7 @@ var IfSubscriber = (function (_super) {
 //# sourceMappingURL=IfObservable.js.map
 
 /***/ },
-/* 345 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53551,7 +53645,7 @@ var IntervalObservable = (function (_super) {
     }
     /**
      * Creates an Observable that emits sequential numbers every specified
-     * interval of time, on a specified Scheduler.
+     * interval of time, on a specified IScheduler.
      *
      * <span class="informal">Emits incremental numbers periodically in time.
      * </span>
@@ -53562,8 +53656,8 @@ var IntervalObservable = (function (_super) {
      * ascending integers, with a constant interval of time of your choosing
      * between those emissions. The first emission is not sent immediately, but
      * only after the first period has passed. By default, this operator uses the
-     * `async` Scheduler to provide a notion of time, but you may pass any
-     * Scheduler to it.
+     * `async` IScheduler to provide a notion of time, but you may pass any
+     * IScheduler to it.
      *
      * @example <caption>Emits ascending numbers, one every second (1000ms)</caption>
      * var numbers = Rx.Observable.interval(1000);
@@ -53574,7 +53668,7 @@ var IntervalObservable = (function (_super) {
      *
      * @param {number} [period=0] The interval size in milliseconds (by default)
      * or the time unit determined by the scheduler's clock.
-     * @param {Scheduler} [scheduler=async] The Scheduler to use for scheduling
+     * @param {Scheduler} [scheduler=async] The IScheduler to use for scheduling
      * the emission of values, and providing a notion of "time".
      * @return {Observable} An Observable that emits a sequential number each time
      * interval.
@@ -53610,7 +53704,7 @@ exports.IntervalObservable = IntervalObservable;
 //# sourceMappingURL=IntervalObservable.js.map
 
 /***/ },
-/* 346 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53779,7 +53873,7 @@ function sign(value) {
 //# sourceMappingURL=IteratorObservable.js.map
 
 /***/ },
-/* 347 */
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53844,7 +53938,7 @@ exports.NeverObservable = NeverObservable;
 //# sourceMappingURL=NeverObservable.js.map
 
 /***/ },
-/* 348 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53881,7 +53975,7 @@ var PairsObservable = (function (_super) {
     }
     /**
      * Convert an object into an observable sequence of [key, value] pairs
-     * using an optional Scheduler to enumerate the object.
+     * using an optional IScheduler to enumerate the object.
      *
      * @example <caption>Converts a javascript object to an Observable</caption>
      * var obj = {
@@ -53905,7 +53999,7 @@ var PairsObservable = (function (_super) {
      *
      * @param {Object} obj The object to inspect and turn into an
      * Observable sequence.
-     * @param {Scheduler} [scheduler] An optional Scheduler to run the
+     * @param {Scheduler} [scheduler] An optional IScheduler to run the
      * enumeration of the input sequence on.
      * @returns {(Observable<Array<string | T>>)} An observable sequence of
      * [key, value] pairs from the object.
@@ -53935,7 +54029,7 @@ exports.PairsObservable = PairsObservable;
 //# sourceMappingURL=PairsObservable.js.map
 
 /***/ },
-/* 349 */
+/* 348 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53969,8 +54063,8 @@ var RangeObservable = (function (_super) {
      *
      * `range` operator emits a range of sequential integers, in order, where you
      * select the `start` of the range and its `length`. By default, uses no
-     * Scheduler and just delivers the notifications synchronously, but may use
-     * an optional Scheduler to regulate those deliveries.
+     * IScheduler and just delivers the notifications synchronously, but may use
+     * an optional IScheduler to regulate those deliveries.
      *
      * @example <caption>Emits the numbers 1 to 10</caption>
      * var numbers = Rx.Observable.range(1, 10);
@@ -53981,7 +54075,7 @@ var RangeObservable = (function (_super) {
      *
      * @param {number} [start=0] The value of the first integer in the sequence.
      * @param {number} [count=0] The number of sequential integers to generate.
-     * @param {Scheduler} [scheduler] A {@link Scheduler} to use for scheduling
+     * @param {Scheduler} [scheduler] A {@link IScheduler} to use for scheduling
      * the emissions of the notifications.
      * @return {Observable} An Observable of numbers that emits a finite range of
      * sequential integers.
@@ -54037,7 +54131,7 @@ exports.RangeObservable = RangeObservable;
 //# sourceMappingURL=RangeObservable.js.map
 
 /***/ },
-/* 350 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54094,7 +54188,7 @@ exports.SubscribeOnObservable = SubscribeOnObservable;
 //# sourceMappingURL=SubscribeOnObservable.js.map
 
 /***/ },
-/* 351 */
+/* 350 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54108,7 +54202,7 @@ var isNumeric_1 = __webpack_require__(83);
 var Observable_1 = __webpack_require__(0);
 var async_1 = __webpack_require__(14);
 var isScheduler_1 = __webpack_require__(20);
-var isDate_1 = __webpack_require__(49);
+var isDate_1 = __webpack_require__(48);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -54148,8 +54242,8 @@ var TimerObservable = (function (_super) {
      * integers, with a constant interval of time, `period` of your choosing
      * between those emissions. The first emission happens after the specified
      * `initialDelay`. The initial delay may be a {@link Date}. By default, this
-     * operator uses the `async` Scheduler to provide a notion of time, but you
-     * may pass any Scheduler to it. If `period` is not specified, the output
+     * operator uses the `async` IScheduler to provide a notion of time, but you
+     * may pass any IScheduler to it. If `period` is not specified, the output
      * Observable emits only one value, `0`. Otherwise, it emits an infinite
      * sequence.
      *
@@ -54168,7 +54262,7 @@ var TimerObservable = (function (_super) {
      * emitting the first value of `0`.
      * @param {number} [period] The period of time between emissions of the
      * subsequent numbers.
-     * @param {Scheduler} [scheduler=async] The Scheduler to use for scheduling
+     * @param {Scheduler} [scheduler=async] The IScheduler to use for scheduling
      * the emission of values, and providing a notion of "time".
      * @return {Observable} An Observable that emits a `0` after the
      * `initialDelay` and ever increasing numbers after each `period` of time
@@ -54207,7 +54301,7 @@ exports.TimerObservable = TimerObservable;
 //# sourceMappingURL=TimerObservable.js.map
 
 /***/ },
-/* 352 */
+/* 351 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54274,27 +54368,27 @@ var UsingSubscriber = (function (_super) {
 //# sourceMappingURL=UsingObservable.js.map
 
 /***/ },
+/* 352 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var BoundCallbackObservable_1 = __webpack_require__(335);
+exports.bindCallback = BoundCallbackObservable_1.BoundCallbackObservable.create;
+//# sourceMappingURL=bindCallback.js.map
+
+/***/ },
 /* 353 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var BoundCallbackObservable_1 = __webpack_require__(336);
-exports.bindCallback = BoundCallbackObservable_1.BoundCallbackObservable.create;
-//# sourceMappingURL=bindCallback.js.map
-
-/***/ },
-/* 354 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var BoundNodeCallbackObservable_1 = __webpack_require__(337);
+var BoundNodeCallbackObservable_1 = __webpack_require__(336);
 exports.bindNodeCallback = BoundNodeCallbackObservable_1.BoundNodeCallbackObservable.create;
 //# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ },
-/* 355 */
+/* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54343,7 +54437,7 @@ var combineLatest_1 = __webpack_require__(76);
  * source Observable. More than one input Observables may be given as argument.
  * @param {function} [project] An optional function to project the values from
  * the combined latest values into a new value on the output Observable.
- * @param {Scheduler} [scheduler=null] The Scheduler to use for subscribing to
+ * @param {Scheduler} [scheduler=null] The IScheduler to use for subscribing to
  * each input Observable.
  * @return {Observable} An Observable of projected values from the most recent
  * values from each input Observable, or an array of the most recent values from
@@ -54376,7 +54470,7 @@ exports.combineLatest = combineLatest;
 //# sourceMappingURL=combineLatest.js.map
 
 /***/ },
-/* 356 */
+/* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54386,17 +54480,17 @@ exports.concat = concat_1.concatStatic;
 //# sourceMappingURL=concat.js.map
 
 /***/ },
-/* 357 */
+/* 356 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var DeferObservable_1 = __webpack_require__(338);
+var DeferObservable_1 = __webpack_require__(337);
 exports.defer = DeferObservable_1.DeferObservable.create;
 //# sourceMappingURL=defer.js.map
 
 /***/ },
-/* 358 */
+/* 357 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54414,7 +54508,7 @@ var root_1 = __webpack_require__(11);
 var ReplaySubject_1 = __webpack_require__(74);
 var tryCatch_1 = __webpack_require__(12);
 var errorObject_1 = __webpack_require__(9);
-var assign_1 = __webpack_require__(477);
+var assign_1 = __webpack_require__(476);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -54618,7 +54712,7 @@ exports.WebSocketSubject = WebSocketSubject;
 //# sourceMappingURL=WebSocketSubject.js.map
 
 /***/ },
-/* 359 */
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54628,17 +54722,17 @@ exports.ajax = AjaxObservable_1.AjaxObservable.create;
 //# sourceMappingURL=ajax.js.map
 
 /***/ },
-/* 360 */
+/* 359 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var WebSocketSubject_1 = __webpack_require__(358);
+var WebSocketSubject_1 = __webpack_require__(357);
 exports.webSocket = WebSocketSubject_1.WebSocketSubject.create;
 //# sourceMappingURL=webSocket.js.map
 
 /***/ },
-/* 361 */
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54648,17 +54742,17 @@ exports.empty = EmptyObservable_1.EmptyObservable.create;
 //# sourceMappingURL=empty.js.map
 
 /***/ },
-/* 362 */
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var ForkJoinObservable_1 = __webpack_require__(340);
+var ForkJoinObservable_1 = __webpack_require__(339);
 exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 //# sourceMappingURL=forkJoin.js.map
 
 /***/ },
-/* 363 */
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54668,27 +54762,27 @@ exports.from = FromObservable_1.FromObservable.create;
 //# sourceMappingURL=from.js.map
 
 /***/ },
+/* 363 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var FromEventObservable_1 = __webpack_require__(340);
+exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
+//# sourceMappingURL=fromEvent.js.map
+
+/***/ },
 /* 364 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var FromEventObservable_1 = __webpack_require__(341);
-exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
-//# sourceMappingURL=fromEvent.js.map
-
-/***/ },
-/* 365 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var FromEventPatternObservable_1 = __webpack_require__(342);
+var FromEventPatternObservable_1 = __webpack_require__(341);
 exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservable.create;
 //# sourceMappingURL=fromEventPattern.js.map
 
 /***/ },
-/* 366 */
+/* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54698,27 +54792,27 @@ exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 //# sourceMappingURL=fromPromise.js.map
 
 /***/ },
+/* 366 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var IfObservable_1 = __webpack_require__(343);
+exports._if = IfObservable_1.IfObservable.create;
+//# sourceMappingURL=if.js.map
+
+/***/ },
 /* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var IfObservable_1 = __webpack_require__(344);
-exports._if = IfObservable_1.IfObservable.create;
-//# sourceMappingURL=if.js.map
-
-/***/ },
-/* 368 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var IntervalObservable_1 = __webpack_require__(345);
+var IntervalObservable_1 = __webpack_require__(344);
 exports.interval = IntervalObservable_1.IntervalObservable.create;
 //# sourceMappingURL=interval.js.map
 
 /***/ },
-/* 369 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54728,17 +54822,17 @@ exports.merge = merge_1.mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ },
-/* 370 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var NeverObservable_1 = __webpack_require__(347);
+var NeverObservable_1 = __webpack_require__(346);
 exports.never = NeverObservable_1.NeverObservable.create;
 //# sourceMappingURL=never.js.map
 
 /***/ },
-/* 371 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54748,14 +54842,24 @@ exports.of = ArrayObservable_1.ArrayObservable.of;
 //# sourceMappingURL=of.js.map
 
 /***/ },
+/* 371 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+"use strict";
+var PairsObservable_1 = __webpack_require__(347);
+exports.pairs = PairsObservable_1.PairsObservable.create;
+//# sourceMappingURL=pairs.js.map
+
+/***/ },
 /* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var PairsObservable_1 = __webpack_require__(348);
-exports.pairs = PairsObservable_1.PairsObservable.create;
-//# sourceMappingURL=pairs.js.map
+var RangeObservable_1 = __webpack_require__(348);
+exports.range = RangeObservable_1.RangeObservable.create;
+//# sourceMappingURL=range.js.map
 
 /***/ },
 /* 373 */
@@ -54763,9 +54867,9 @@ exports.pairs = PairsObservable_1.PairsObservable.create;
 
 "use strict";
 "use strict";
-var RangeObservable_1 = __webpack_require__(349);
-exports.range = RangeObservable_1.RangeObservable.create;
-//# sourceMappingURL=range.js.map
+var ErrorObservable_1 = __webpack_require__(338);
+exports._throw = ErrorObservable_1.ErrorObservable.create;
+//# sourceMappingURL=throw.js.map
 
 /***/ },
 /* 374 */
@@ -54773,9 +54877,9 @@ exports.range = RangeObservable_1.RangeObservable.create;
 
 "use strict";
 "use strict";
-var ErrorObservable_1 = __webpack_require__(339);
-exports._throw = ErrorObservable_1.ErrorObservable.create;
-//# sourceMappingURL=throw.js.map
+var TimerObservable_1 = __webpack_require__(350);
+exports.timer = TimerObservable_1.TimerObservable.create;
+//# sourceMappingURL=timer.js.map
 
 /***/ },
 /* 375 */
@@ -54783,22 +54887,12 @@ exports._throw = ErrorObservable_1.ErrorObservable.create;
 
 "use strict";
 "use strict";
-var TimerObservable_1 = __webpack_require__(351);
-exports.timer = TimerObservable_1.TimerObservable.create;
-//# sourceMappingURL=timer.js.map
-
-/***/ },
-/* 376 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var UsingObservable_1 = __webpack_require__(352);
+var UsingObservable_1 = __webpack_require__(351);
 exports.using = UsingObservable_1.UsingObservable.create;
 //# sourceMappingURL=using.js.map
 
 /***/ },
-/* 377 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54808,7 +54902,7 @@ exports.zip = zip_1.zipStatic;
 //# sourceMappingURL=zip.js.map
 
 /***/ },
-/* 378 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54924,7 +55018,7 @@ var AuditSubscriber = (function (_super) {
 //# sourceMappingURL=audit.js.map
 
 /***/ },
-/* 379 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54955,7 +55049,7 @@ var Subscriber_1 = __webpack_require__(2);
  * the time unit determined internally by the optional `scheduler`) has passed,
  * the timer is disabled, then the most recent source value is emitted on the
  * output Observable, and this process repeats for the next source value.
- * Optionally takes a {@link Scheduler} for managing timers.
+ * Optionally takes a {@link IScheduler} for managing timers.
  *
  * @example <caption>Emit clicks at a rate of at most one click per second</caption>
  * var clicks = Rx.Observable.fromEvent(document, 'click');
@@ -54971,7 +55065,7 @@ var Subscriber_1 = __webpack_require__(2);
  * @param {number} duration Time to wait before emitting the most recent source
  * value, measured in milliseconds or the time unit determined internally
  * by the optional `scheduler`.
- * @param {Scheduler} [scheduler=async] The {@link Scheduler} to use for
+ * @param {Scheduler} [scheduler=async] The {@link IScheduler} to use for
  * managing the timers that handle the rate-limiting behavior.
  * @return {Observable<T>} An Observable that performs rate-limiting of
  * emissions from the source Observable.
@@ -55034,7 +55128,7 @@ function dispatchNext(subscriber) {
 //# sourceMappingURL=auditTime.js.map
 
 /***/ },
-/* 380 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55116,7 +55210,7 @@ var BufferSubscriber = (function (_super) {
 //# sourceMappingURL=buffer.js.map
 
 /***/ },
-/* 381 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55229,7 +55323,7 @@ var BufferCountSubscriber = (function (_super) {
 //# sourceMappingURL=bufferCount.js.map
 
 /***/ },
-/* 382 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55434,7 +55528,7 @@ function dispatchBufferClose(arg) {
 //# sourceMappingURL=bufferTime.js.map
 
 /***/ },
-/* 383 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55592,7 +55686,7 @@ var BufferToggleSubscriber = (function (_super) {
 //# sourceMappingURL=bufferToggle.js.map
 
 /***/ },
-/* 384 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55720,7 +55814,7 @@ var BufferWhenSubscriber = (function (_super) {
 //# sourceMappingURL=bufferWhen.js.map
 
 /***/ },
-/* 385 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55792,7 +55886,7 @@ var CatchSubscriber = (function (_super) {
 //# sourceMappingURL=catch.js.map
 
 /***/ },
-/* 386 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55845,12 +55939,12 @@ exports.combineAll = combineAll;
 //# sourceMappingURL=combineAll.js.map
 
 /***/ },
-/* 387 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var mergeAll_1 = __webpack_require__(43);
+var mergeAll_1 = __webpack_require__(42);
 /* tslint:disable:max-line-length */
 /**
  * Converts a higher-order Observable into a first-order Observable by
@@ -55907,7 +56001,7 @@ exports.concatAll = concatAll;
 //# sourceMappingURL=concatAll.js.map
 
 /***/ },
-/* 388 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -55983,7 +56077,7 @@ exports.concatMap = concatMap;
 //# sourceMappingURL=concatMap.js.map
 
 /***/ },
-/* 389 */
+/* 388 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56053,7 +56147,7 @@ exports.concatMapTo = concatMapTo;
 //# sourceMappingURL=concatMapTo.js.map
 
 /***/ },
-/* 390 */
+/* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56170,7 +56264,7 @@ var CountSubscriber = (function (_super) {
 //# sourceMappingURL=count.js.map
 
 /***/ },
-/* 391 */
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56303,7 +56397,7 @@ var DebounceSubscriber = (function (_super) {
 //# sourceMappingURL=debounce.js.map
 
 /***/ },
-/* 392 */
+/* 391 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56335,7 +56429,7 @@ var async_1 = __webpack_require__(14);
  * This is a rate-limiting operator, because it is impossible for more than one
  * value to be emitted in any time window of duration `dueTime`, but it is also
  * a delay-like operator since output emissions do not occur at the same time as
- * they did on the source Observable. Optionally takes a {@link Scheduler} for
+ * they did on the source Observable. Optionally takes a {@link IScheduler} for
  * managing timers.
  *
  * @example <caption>Emit the most recent click after a burst of clicks</caption>
@@ -56353,7 +56447,7 @@ var async_1 = __webpack_require__(14);
  * unit determined internally by the optional `scheduler`) for the window of
  * time required to wait for emission silence before emitting the most recent
  * source value.
- * @param {Scheduler} [scheduler=async] The {@link Scheduler} to use for
+ * @param {Scheduler} [scheduler=async] The {@link IScheduler} to use for
  * managing the timers that handle the timeout for each value.
  * @return {Observable} An Observable that delays the emissions of the source
  * Observable by the specified `dueTime`, and may drop some values if they occur
@@ -56425,7 +56519,7 @@ function dispatchNext(subscriber) {
 //# sourceMappingURL=debounceTime.js.map
 
 /***/ },
-/* 393 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56508,7 +56602,7 @@ var DefaultIfEmptySubscriber = (function (_super) {
 //# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ },
-/* 394 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56519,7 +56613,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var async_1 = __webpack_require__(14);
-var isDate_1 = __webpack_require__(49);
+var isDate_1 = __webpack_require__(48);
 var Subscriber_1 = __webpack_require__(2);
 var Notification_1 = __webpack_require__(26);
 /**
@@ -56554,7 +56648,7 @@ var Notification_1 = __webpack_require__(26);
  *
  * @param {number|Date} delay The delay duration in milliseconds (a `number`) or
  * a `Date` until which the emission of the source items is delayed.
- * @param {Scheduler} [scheduler=async] The Scheduler to use for
+ * @param {Scheduler} [scheduler=async] The IScheduler to use for
  * managing the timers that handle the time-shift for each item.
  * @return {Observable} An Observable that delays the emissions of the source
  * Observable by the specified timeout or Date.
@@ -56649,7 +56743,7 @@ var DelayMessage = (function () {
 //# sourceMappingURL=delay.js.map
 
 /***/ },
-/* 395 */
+/* 394 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56845,7 +56939,7 @@ var SubscriptionDelaySubscriber = (function (_super) {
 //# sourceMappingURL=delayWhen.js.map
 
 /***/ },
-/* 396 */
+/* 395 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56926,7 +57020,7 @@ var DeMaterializeSubscriber = (function (_super) {
 //# sourceMappingURL=dematerialize.js.map
 
 /***/ },
-/* 397 */
+/* 396 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56938,17 +57032,46 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
-var Set_1 = __webpack_require__(476);
+var Set_1 = __webpack_require__(475);
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from previous items.
+ *
  * If a keySelector function is provided, then it will project each value from the source observable into a new value that it will
  * check for equality with previously projected values. If a keySelector function is not provided, it will use each value from the
  * source observable directly with an equality check against previous values.
+ *
  * In JavaScript runtimes that support `Set`, this operator will use a `Set` to improve performance of the distinct value checking.
+ *
  * In other runtimes, this operator will use a minimal implementation of `Set` that relies on an `Array` and `indexOf` under the
  * hood, so performance will degrade as more values are checked for distinction. Even in newer browsers, a long-running `distinct`
  * use might result in memory leaks. To help alleviate this in some scenarios, an optional `flushes` parameter is also provided so
  * that the internal `Set` can be "flushed", basically clearing it of values.
+ *
+ * @example <caption>A simple example with numbers</caption>
+ * Observable.of(1, 1, 2, 2, 2, 1, 2, 3, 4, 3, 2, 1)
+ *   .distinct()
+ *   .subscribe(x => console.log(x)); // 1, 2, 3, 4
+ *
+ * @example <caption>An example using a keySelector function</caption>
+ * interface Person {
+ *    age: number,
+ *    name: string
+ * }
+ *
+ * Observable.of<Person>(
+ *     { age: 4, name: 'Foo'},
+ *     { age: 7, name: 'Bar'},
+ *     { age: 5, name: 'Foo'})
+ *     .distinct((p: Person) => p.name)
+ *     .subscribe(x => console.log(x));
+ *
+ * // displays:
+ * // { age: 4, name: 'Foo' }
+ * // { age: 7, name: 'Bar' }
+ *
+ * @see {@link distinctUntilChanged}
+ * @see {@link distinctUntilKeyChanged}
+ *
  * @param {function} [keySelector] optional function to select which value you want to check as distinct.
  * @param {Observable} [flushes] optional Observable for flushing the internal HashSet of the operator.
  * @return {Observable} an Observable that emits items from the source Observable with distinct values.
@@ -57023,7 +57146,7 @@ exports.DistinctSubscriber = DistinctSubscriber;
 //# sourceMappingURL=distinct.js.map
 
 /***/ },
-/* 398 */
+/* 397 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57033,8 +57156,54 @@ var distinctUntilChanged_1 = __webpack_require__(103);
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item,
  * using a property accessed by using the key provided to check if the two items are distinct.
+ *
  * If a comparator function is provided, then it will be called for each item to test for whether or not that value should be emitted.
+ *
  * If a comparator function is not provided, an equality check is used by default.
+ *
+ * @example <caption>An example comparing the name of persons</caption>
+ *
+ *  interface Person {
+ *     age: number,
+ *     name: string
+ *  }
+ *
+ * Observable.of<Person>(
+ *     { age: 4, name: 'Foo'},
+ *     { age: 7, name: 'Bar'},
+ *     { age: 5, name: 'Foo'},
+ *     { age: 6, name: 'Foo'})
+ *     .distinctUntilKeyChanged('name')
+ *     .subscribe(x => console.log(x));
+ *
+ * // displays:
+ * // { age: 4, name: 'Foo' }
+ * // { age: 7, name: 'Bar' }
+ * // { age: 5, name: 'Foo' }
+ *
+ * @example <caption>An example comparing the first letters of the name</caption>
+ *
+ * interface Person {
+ *     age: number,
+ *     name: string
+ *  }
+ *
+ * Observable.of<Person>(
+ *     { age: 4, name: 'Foo1'},
+ *     { age: 7, name: 'Bar'},
+ *     { age: 5, name: 'Foo2'},
+ *     { age: 6, name: 'Foo3'})
+ *     .distinctUntilKeyChanged('name', (x: string, y: string) => x.substring(0, 3) === y.substring(0, 3))
+ *     .subscribe(x => console.log(x));
+ *
+ * // displays:
+ * // { age: 4, name: 'Foo1' }
+ * // { age: 7, name: 'Bar' }
+ * // { age: 5, name: 'Foo2' }
+ *
+ * @see {@link distinct}
+ * @see {@link distinctUntilChanged}
+ *
  * @param {string} key string key for object property lookup on each item.
  * @param {function} [compare] optional comparison function called to test if an item is distinct from the previous item in the source.
  * @return {Observable} an Observable that emits items from the source Observable with distinct values based on the key specified.
@@ -57053,7 +57222,7 @@ exports.distinctUntilKeyChanged = distinctUntilKeyChanged;
 //# sourceMappingURL=distinctUntilKeyChanged.js.map
 
 /***/ },
-/* 399 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57172,7 +57341,7 @@ var DoSubscriber = (function (_super) {
 //# sourceMappingURL=do.js.map
 
 /***/ },
-/* 400 */
+/* 399 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57183,7 +57352,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var ArgumentOutOfRangeError_1 = __webpack_require__(46);
+var ArgumentOutOfRangeError_1 = __webpack_require__(45);
 /**
  * Emits the single value at the specified `index` in a sequence of emissions
  * from the source Observable.
@@ -57278,7 +57447,7 @@ var ElementAtSubscriber = (function (_super) {
 //# sourceMappingURL=elementAt.js.map
 
 /***/ },
-/* 401 */
+/* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57291,6 +57460,12 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Subscriber_1 = __webpack_require__(2);
 /**
  * Returns an Observable that emits whether or not every item of the source satisfies the condition specified.
+ *
+ * @example <caption>A simple example emitting true if all elements are less than 5, false otherwise</caption>
+ *  Observable.of(1, 2, 3, 4, 5, 6)
+ *     .every(x => x < 5)
+ *     .subscribe(x => console.log(x)); // -> false
+ *
  * @param {function} predicate a function for determining if an item meets a specified condition.
  * @param {any} [thisArg] optional object to use for `this` in the callback
  * @return {Observable} an Observable of booleans that determines if all items of the source Observable meet the condition specified.
@@ -57352,7 +57527,7 @@ var EverySubscriber = (function (_super) {
 //# sourceMappingURL=every.js.map
 
 /***/ },
-/* 402 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57448,7 +57623,7 @@ var SwitchFirstSubscriber = (function (_super) {
 //# sourceMappingURL=exhaust.js.map
 
 /***/ },
-/* 403 */
+/* 402 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57592,7 +57767,7 @@ var SwitchFirstMapSubscriber = (function (_super) {
 //# sourceMappingURL=exhaustMap.js.map
 
 /***/ },
-/* 404 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57643,7 +57818,7 @@ var subscribeToResult_1 = __webpack_require__(4);
  * returns an Observable.
  * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of input
  * Observables being subscribed to concurrently.
- * @param {Scheduler} [scheduler=null] The Scheduler to use for subscribing to
+ * @param {Scheduler} [scheduler=null] The IScheduler to use for subscribing to
  * each projected inner Observable.
  * @return {Observable} An Observable that emits the source values and also
  * result of applying the projection function to each value emitted on the
@@ -57749,7 +57924,7 @@ exports.ExpandSubscriber = ExpandSubscriber;
 //# sourceMappingURL=expand.js.map
 
 /***/ },
-/* 405 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57798,7 +57973,7 @@ var FinallySubscriber = (function (_super) {
 //# sourceMappingURL=finally.js.map
 
 /***/ },
-/* 406 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57845,7 +58020,7 @@ exports.findIndex = findIndex;
 //# sourceMappingURL=findIndex.js.map
 
 /***/ },
-/* 407 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -57856,7 +58031,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var EmptyError_1 = __webpack_require__(47);
+var EmptyError_1 = __webpack_require__(46);
 /**
  * Emits only the first value (or the first value that meets some condition)
  * emitted by the source Observable.
@@ -58003,7 +58178,7 @@ var FirstSubscriber = (function (_super) {
 //# sourceMappingURL=first.js.map
 
 /***/ },
-/* 408 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58017,8 +58192,8 @@ var Subscriber_1 = __webpack_require__(2);
 var Subscription_1 = __webpack_require__(7);
 var Observable_1 = __webpack_require__(0);
 var Subject_1 = __webpack_require__(8);
-var Map_1 = __webpack_require__(474);
-var FastMap_1 = __webpack_require__(472);
+var Map_1 = __webpack_require__(473);
+var FastMap_1 = __webpack_require__(471);
 /* tslint:disable:max-line-length */
 /**
  * Groups the items emitted by an Observable according to a specified criterion,
@@ -58148,7 +58323,7 @@ var GroupBySubscriber = (function (_super) {
         this.groups.delete(key);
     };
     GroupBySubscriber.prototype.unsubscribe = function () {
-        if (!this.closed && !this.attemptedToUnsubscribe) {
+        if (!this.closed) {
             this.attemptedToUnsubscribe = true;
             if (this.count === 0) {
                 _super.prototype.unsubscribe.call(this);
@@ -58244,7 +58419,7 @@ var InnerRefCountSubscription = (function (_super) {
 //# sourceMappingURL=groupBy.js.map
 
 /***/ },
-/* 409 */
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58297,7 +58472,7 @@ var IgnoreElementsSubscriber = (function (_super) {
 //# sourceMappingURL=ignoreElements.js.map
 
 /***/ },
-/* 410 */
+/* 409 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58355,7 +58530,7 @@ var IsEmptySubscriber = (function (_super) {
 //# sourceMappingURL=isEmpty.js.map
 
 /***/ },
-/* 411 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58366,7 +58541,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var EmptyError_1 = __webpack_require__(47);
+var EmptyError_1 = __webpack_require__(46);
 /* tslint:disable:max-line-length */
 /**
  * Returns an Observable that emits only the last item emitted by the source Observable.
@@ -58480,7 +58655,7 @@ var LastSubscriber = (function (_super) {
 //# sourceMappingURL=last.js.map
 
 /***/ },
-/* 412 */
+/* 411 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -58498,7 +58673,7 @@ exports.letProto = letProto;
 //# sourceMappingURL=let.js.map
 
 /***/ },
-/* 413 */
+/* 412 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58567,7 +58742,7 @@ var MapToSubscriber = (function (_super) {
 //# sourceMappingURL=mapTo.js.map
 
 /***/ },
-/* 414 */
+/* 413 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58663,21 +58838,40 @@ var MaterializeSubscriber = (function (_super) {
 //# sourceMappingURL=materialize.js.map
 
 /***/ },
-/* 415 */
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var reduce_1 = __webpack_require__(80);
 /**
- * The Max operator operates on an Observable that emits numbers (or items that can be evaluated as numbers),
- * and when source Observable completes it emits a single item: the item with the largest number.
+ * The Max operator operates on an Observable that emits numbers (or items that can be compared with a provided function),
+ * and when source Observable completes it emits a single item: the item with the largest value.
  *
  * <img src="./img/max.png" width="100%">
  *
+ * @example <caption>Get the maximal value of a series of numbers</caption>
+ * Rx.Observable.of(5, 4, 7, 2, 8)
+ *   .max()
+ *   .subscribe(x => console.log(x)); // -> 8
+ *
+ * @example <caption>Use a comparer function to get the maximal item</caption>
+ * interface Person {
+ *   age: number,
+ *   name: string
+ * }
+ * Observable.of<Person>({age: 7, name: 'Foo'},
+ *                       {age: 5, name: 'Bar'},
+ *                       {age: 9, name: 'Beer'})
+ *           .max<Person>((a: Person, b: Person) => a.age < b.age ? -1 : 1)
+ *           .subscribe((x: Person) => console.log(x.name)); // -> 'Beer'
+ * }
+ *
+ * @see {@link min}
+ *
  * @param {Function} optional comparer function that it will use instead of its default to compare the value of two
  * items.
- * @return {Observable} an Observable that emits item with the largest number.
+ * @return {Observable} an Observable that emits item with the largest value.
  * @method max
  * @owner Observable
  */
@@ -58691,7 +58885,7 @@ exports.max = max;
 //# sourceMappingURL=max.js.map
 
 /***/ },
-/* 416 */
+/* 415 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58803,20 +58997,39 @@ exports.MergeScanSubscriber = MergeScanSubscriber;
 //# sourceMappingURL=mergeScan.js.map
 
 /***/ },
-/* 417 */
+/* 416 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var reduce_1 = __webpack_require__(80);
 /**
- * The Min operator operates on an Observable that emits numbers (or items that can be evaluated as numbers),
- * and when source Observable completes it emits a single item: the item with the smallest number.
+ * The Min operator operates on an Observable that emits numbers (or items that can be compared with a provided function),
+ * and when source Observable completes it emits a single item: the item with the smallest value.
  *
  * <img src="./img/min.png" width="100%">
  *
+ * @example <caption>Get the minimal value of a series of numbers</caption>
+ * Rx.Observable.of(5, 4, 7, 2, 8)
+ *   .min()
+ *   .subscribe(x => console.log(x)); // -> 2
+ *
+ * @example <caption>Use a comparer function to get the minimal item</caption>
+ * interface Person {
+ *   age: number,
+ *   name: string
+ * }
+ * Observable.of<Person>({age: 7, name: 'Foo'},
+ *                       {age: 5, name: 'Bar'},
+ *                       {age: 9, name: 'Beer'})
+ *           .min<Person>( (a: Person, b: Person) => a.age < b.age ? -1 : 1)
+ *           .subscribe((x: Person) => console.log(x.name)); // -> 'Bar'
+ * }
+ *
+ * @see {@link max}
+ *
  * @param {Function} optional comparer function that it will use instead of its default to compare the value of two items.
- * @return {Observable<R>} an Observable that emits item with the smallest number.
+ * @return {Observable<R>} an Observable that emits item with the smallest value.
  * @method min
  * @owner Observable
  */
@@ -58830,7 +59043,7 @@ exports.min = min;
 //# sourceMappingURL=min.js.map
 
 /***/ },
-/* 418 */
+/* 417 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -58913,12 +59126,12 @@ var PairwiseSubscriber = (function (_super) {
 //# sourceMappingURL=pairwise.js.map
 
 /***/ },
-/* 419 */
+/* 418 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var not_1 = __webpack_require__(478);
+var not_1 = __webpack_require__(477);
 var filter_1 = __webpack_require__(104);
 /**
  * Splits the source Observable into two, one with values that satisfy a
@@ -58971,7 +59184,7 @@ exports.partition = partition;
 //# sourceMappingURL=partition.js.map
 
 /***/ },
-/* 420 */
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59035,7 +59248,7 @@ function plucker(props, length) {
 //# sourceMappingURL=pluck.js.map
 
 /***/ },
-/* 421 */
+/* 420 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59064,7 +59277,7 @@ exports.publish = publish;
 //# sourceMappingURL=publish.js.map
 
 /***/ },
-/* 422 */
+/* 421 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59084,12 +59297,12 @@ exports.publishBehavior = publishBehavior;
 //# sourceMappingURL=publishBehavior.js.map
 
 /***/ },
-/* 423 */
+/* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var AsyncSubject_1 = __webpack_require__(42);
+var AsyncSubject_1 = __webpack_require__(41);
 var multicast_1 = __webpack_require__(24);
 /**
  * @return {ConnectableObservable<T>}
@@ -59103,7 +59316,7 @@ exports.publishLast = publishLast;
 //# sourceMappingURL=publishLast.js.map
 
 /***/ },
-/* 424 */
+/* 423 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59127,7 +59340,7 @@ exports.publishReplay = publishReplay;
 //# sourceMappingURL=publishReplay.js.map
 
 /***/ },
-/* 425 */
+/* 424 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59141,11 +59354,11 @@ var Subscriber_1 = __webpack_require__(2);
 var EmptyObservable_1 = __webpack_require__(19);
 /**
  * Returns an Observable that repeats the stream of items emitted by the source Observable at most count times,
- * on a particular Scheduler.
+ * on a particular IScheduler.
  *
  * <img src="./img/repeat.png" width="100%">
  *
- * @param {Scheduler} [scheduler] the Scheduler to emit the items on.
+ * @param {Scheduler} [scheduler] the IScheduler to emit the items on.
  * @param {number} [count] the number of times the source Observable items are repeated, a count of 0 will yield
  * an empty Observable.
  * @return {Observable} an Observable that repeats the stream of items emitted by the source Observable at most
@@ -59208,7 +59421,7 @@ var RepeatSubscriber = (function (_super) {
 //# sourceMappingURL=repeat.js.map
 
 /***/ },
-/* 426 */
+/* 425 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59228,13 +59441,13 @@ var subscribeToResult_1 = __webpack_require__(4);
  * A `complete` will cause the emission of the Throwable that cause the complete to the Observable returned from
  * notificationHandler. If that Observable calls onComplete or `complete` then retry will call `complete` or `error`
  * on the child subscription. Otherwise, this Observable will resubscribe to the source observable, on a particular
- * Scheduler.
+ * IScheduler.
  *
  * <img src="./img/repeatWhen.png" width="100%">
  *
  * @param {notificationHandler} receives an Observable of notifications with which a user can `complete` or `error`,
  * aborting the retry.
- * @param {scheduler} the Scheduler on which to subscribe to the source Observable.
+ * @param {scheduler} the IScheduler on which to subscribe to the source Observable.
  * @return {Observable} the source Observable modified with retry logic.
  * @method repeatWhen
  * @owner Observable
@@ -59320,7 +59533,7 @@ var RepeatWhenSubscriber = (function (_super) {
 //# sourceMappingURL=repeatWhen.js.map
 
 /***/ },
-/* 427 */
+/* 426 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59395,7 +59608,7 @@ var RetrySubscriber = (function (_super) {
 //# sourceMappingURL=retry.js.map
 
 /***/ },
-/* 428 */
+/* 427 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59415,13 +59628,13 @@ var subscribeToResult_1 = __webpack_require__(4);
  * An `error` will cause the emission of the Throwable that cause the error to the Observable returned from
  * notificationHandler. If that Observable calls onComplete or `error` then retry will call `complete` or `error`
  * on the child subscription. Otherwise, this Observable will resubscribe to the source observable, on a particular
- * Scheduler.
+ * IScheduler.
  *
  * <img src="./img/retryWhen.png" width="100%">
  *
  * @param {notificationHandler} receives an Observable of notifications with which a user can `complete` or `error`,
  * aborting the retry.
- * @param {scheduler} the Scheduler on which to subscribe to the source Observable.
+ * @param {scheduler} the IScheduler on which to subscribe to the source Observable.
  * @return {Observable} the source Observable modified with retry logic.
  * @method retryWhen
  * @owner Observable
@@ -59507,7 +59720,7 @@ var RetryWhenSubscriber = (function (_super) {
 //# sourceMappingURL=retryWhen.js.map
 
 /***/ },
-/* 429 */
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59601,7 +59814,7 @@ var SampleSubscriber = (function (_super) {
 //# sourceMappingURL=sample.js.map
 
 /***/ },
-/* 430 */
+/* 429 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59642,7 +59855,7 @@ var async_1 = __webpack_require__(14);
  *
  * @param {number} period The sampling period expressed in milliseconds or the
  * time unit determined internally by the optional `scheduler`.
- * @param {Scheduler} [scheduler=async] The {@link Scheduler} to use for
+ * @param {Scheduler} [scheduler=async] The {@link IScheduler} to use for
  * managing the timers that handle the sampling.
  * @return {Observable<T>} An Observable that emits the results of sampling the
  * values emitted by the source Observable at the specified time interval.
@@ -59698,7 +59911,7 @@ function dispatchNotification(state) {
 //# sourceMappingURL=sampleTime.js.map
 
 /***/ },
-/* 431 */
+/* 430 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59823,7 +60036,7 @@ var ScanSubscriber = (function (_super) {
 //# sourceMappingURL=scan.js.map
 
 /***/ },
-/* 432 */
+/* 431 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -59993,7 +60206,7 @@ var SequenceEqualCompareToSubscriber = (function (_super) {
 //# sourceMappingURL=sequenceEqual.js.map
 
 /***/ },
-/* 433 */
+/* 432 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60023,7 +60236,7 @@ exports.share = share;
 //# sourceMappingURL=share.js.map
 
 /***/ },
-/* 434 */
+/* 433 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60034,7 +60247,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var EmptyError_1 = __webpack_require__(47);
+var EmptyError_1 = __webpack_require__(46);
 /**
  * Returns an Observable that emits the single item emitted by the source Observable that matches a specified
  * predicate, if that Observable emits one such item. If the source Observable emits more than one such item or no
@@ -60124,7 +60337,7 @@ var SingleSubscriber = (function (_super) {
 //# sourceMappingURL=single.js.map
 
 /***/ },
-/* 435 */
+/* 434 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60181,7 +60394,7 @@ var SkipSubscriber = (function (_super) {
 //# sourceMappingURL=skip.js.map
 
 /***/ },
-/* 436 */
+/* 435 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60258,7 +60471,7 @@ var SkipUntilSubscriber = (function (_super) {
 //# sourceMappingURL=skipUntil.js.map
 
 /***/ },
-/* 437 */
+/* 436 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60330,7 +60543,7 @@ var SkipWhileSubscriber = (function (_super) {
 //# sourceMappingURL=skipWhile.js.map
 
 /***/ },
-/* 438 */
+/* 437 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60380,19 +60593,19 @@ exports.startWith = startWith;
 //# sourceMappingURL=startWith.js.map
 
 /***/ },
-/* 439 */
+/* 438 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var SubscribeOnObservable_1 = __webpack_require__(350);
+var SubscribeOnObservable_1 = __webpack_require__(349);
 /**
- * Asynchronously subscribes Observers to this Observable on the specified Scheduler.
+ * Asynchronously subscribes Observers to this Observable on the specified IScheduler.
  *
  * <img src="./img/subscribeOn.png" width="100%">
  *
- * @param {Scheduler} the Scheduler to perform subscription actions on.
- * @return {Observable<T>} the source Observable modified so that its subscriptions happen on the specified Scheduler
+ * @param {Scheduler} the IScheduler to perform subscription actions on.
+ * @return {Observable<T>} the source Observable modified so that its subscriptions happen on the specified IScheduler
  .
  * @method subscribeOn
  * @owner Observable
@@ -60415,7 +60628,7 @@ var SubscribeOnOperator = (function () {
 //# sourceMappingURL=subscribeOn.js.map
 
 /***/ },
-/* 440 */
+/* 439 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60529,7 +60742,7 @@ var SwitchSubscriber = (function (_super) {
 //# sourceMappingURL=switch.js.map
 
 /***/ },
-/* 441 */
+/* 440 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60675,7 +60888,7 @@ var SwitchMapSubscriber = (function (_super) {
 //# sourceMappingURL=switchMap.js.map
 
 /***/ },
-/* 442 */
+/* 441 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60808,7 +61021,7 @@ var SwitchMapToSubscriber = (function (_super) {
 //# sourceMappingURL=switchMapTo.js.map
 
 /***/ },
-/* 443 */
+/* 442 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60819,7 +61032,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var ArgumentOutOfRangeError_1 = __webpack_require__(46);
+var ArgumentOutOfRangeError_1 = __webpack_require__(45);
 var EmptyObservable_1 = __webpack_require__(19);
 /**
  * Emits only the first `count` values emitted by the source Observable.
@@ -60903,7 +61116,7 @@ var TakeSubscriber = (function (_super) {
 //# sourceMappingURL=take.js.map
 
 /***/ },
-/* 444 */
+/* 443 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -60914,7 +61127,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var ArgumentOutOfRangeError_1 = __webpack_require__(46);
+var ArgumentOutOfRangeError_1 = __webpack_require__(45);
 var EmptyObservable_1 = __webpack_require__(19);
 /**
  * Emits only the last `count` values emitted by the source Observable.
@@ -61016,7 +61229,7 @@ var TakeLastSubscriber = (function (_super) {
 //# sourceMappingURL=takeLast.js.map
 
 /***/ },
-/* 445 */
+/* 444 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61097,7 +61310,7 @@ var TakeUntilSubscriber = (function (_super) {
 //# sourceMappingURL=takeUntil.js.map
 
 /***/ },
-/* 446 */
+/* 445 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61195,7 +61408,7 @@ var TakeWhileSubscriber = (function (_super) {
 //# sourceMappingURL=takeWhile.js.map
 
 /***/ },
-/* 447 */
+/* 446 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61309,7 +61522,7 @@ var ThrottleSubscriber = (function (_super) {
 //# sourceMappingURL=throttle.js.map
 
 /***/ },
-/* 448 */
+/* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61337,7 +61550,7 @@ var async_1 = __webpack_require__(14);
  * is enabled. After `duration` milliseconds (or the time unit determined
  * internally by the optional `scheduler`) has passed, the timer is disabled,
  * and this process repeats for the next source value. Optionally takes a
- * {@link Scheduler} for managing timers.
+ * {@link IScheduler} for managing timers.
  *
  * @example <caption>Emit clicks at a rate of at most one click per second</caption>
  * var clicks = Rx.Observable.fromEvent(document, 'click');
@@ -61353,7 +61566,7 @@ var async_1 = __webpack_require__(14);
  * @param {number} duration Time to wait before emitting another value after
  * emitting the last value, measured in milliseconds or the time unit determined
  * internally by the optional `scheduler`.
- * @param {Scheduler} [scheduler=async] The {@link Scheduler} to use for
+ * @param {Scheduler} [scheduler=async] The {@link IScheduler} to use for
  * managing the timers that handle the sampling.
  * @return {Observable<T>} An Observable that performs the throttle operation to
  * limit the rate of emissions from the source.
@@ -61410,7 +61623,7 @@ function dispatchNext(arg) {
 //# sourceMappingURL=throttleTime.js.map
 
 /***/ },
-/* 449 */
+/* 448 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61421,7 +61634,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var async_1 = __webpack_require__(14);
-var isDate_1 = __webpack_require__(49);
+var isDate_1 = __webpack_require__(48);
 var Subscriber_1 = __webpack_require__(2);
 var TimeoutError_1 = __webpack_require__(118);
 /**
@@ -61517,7 +61730,7 @@ var TimeoutSubscriber = (function (_super) {
 //# sourceMappingURL=timeout.js.map
 
 /***/ },
-/* 450 */
+/* 449 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61528,7 +61741,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var async_1 = __webpack_require__(14);
-var isDate_1 = __webpack_require__(49);
+var isDate_1 = __webpack_require__(48);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
 /* tslint:disable:max-line-length */
@@ -61634,7 +61847,7 @@ var TimeoutWithSubscriber = (function (_super) {
 //# sourceMappingURL=timeoutWith.js.map
 
 /***/ },
-/* 451 */
+/* 450 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61685,7 +61898,7 @@ var ToArraySubscriber = (function (_super) {
 //# sourceMappingURL=toArray.js.map
 
 /***/ },
-/* 452 */
+/* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61720,7 +61933,7 @@ exports.toPromise = toPromise;
 //# sourceMappingURL=toPromise.js.map
 
 /***/ },
-/* 453 */
+/* 452 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61836,7 +62049,7 @@ var WindowSubscriber = (function (_super) {
 //# sourceMappingURL=window.js.map
 
 /***/ },
-/* 454 */
+/* 453 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -61973,7 +62186,7 @@ var WindowCountSubscriber = (function (_super) {
 //# sourceMappingURL=windowCount.js.map
 
 /***/ },
-/* 455 */
+/* 454 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62148,7 +62361,7 @@ function dispatchWindowClose(arg) {
 //# sourceMappingURL=windowTime.js.map
 
 /***/ },
-/* 456 */
+/* 455 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62334,7 +62547,7 @@ var WindowToggleSubscriber = (function (_super) {
 //# sourceMappingURL=windowToggle.js.map
 
 /***/ },
-/* 457 */
+/* 456 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62467,7 +62680,7 @@ var WindowSubscriber = (function (_super) {
 //# sourceMappingURL=windowWhen.js.map
 
 /***/ },
-/* 458 */
+/* 457 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62603,7 +62816,7 @@ var WithLatestFromSubscriber = (function (_super) {
 //# sourceMappingURL=withLatestFrom.js.map
 
 /***/ },
-/* 459 */
+/* 458 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62622,7 +62835,7 @@ exports.zipAll = zipAll;
 //# sourceMappingURL=zipAll.js.map
 
 /***/ },
-/* 460 */
+/* 459 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62672,7 +62885,7 @@ exports.Action = Action;
 //# sourceMappingURL=Action.js.map
 
 /***/ },
-/* 461 */
+/* 460 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62683,7 +62896,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var AsyncAction_1 = __webpack_require__(27);
-var AnimationFrame_1 = __webpack_require__(471);
+var AnimationFrame_1 = __webpack_require__(470);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -62733,7 +62946,7 @@ exports.AnimationFrameAction = AnimationFrameAction;
 //# sourceMappingURL=AnimationFrameAction.js.map
 
 /***/ },
-/* 462 */
+/* 461 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62776,7 +62989,7 @@ exports.AnimationFrameScheduler = AnimationFrameScheduler;
 //# sourceMappingURL=AnimationFrameScheduler.js.map
 
 /***/ },
-/* 463 */
+/* 462 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62786,7 +62999,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Immediate_1 = __webpack_require__(473);
+var Immediate_1 = __webpack_require__(472);
 var AsyncAction_1 = __webpack_require__(27);
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -62837,7 +63050,7 @@ exports.AsapAction = AsapAction;
 //# sourceMappingURL=AsapAction.js.map
 
 /***/ },
-/* 464 */
+/* 463 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62880,7 +63093,7 @@ exports.AsapScheduler = AsapScheduler;
 //# sourceMappingURL=AsapScheduler.js.map
 
 /***/ },
-/* 465 */
+/* 464 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62935,7 +63148,7 @@ exports.QueueAction = QueueAction;
 //# sourceMappingURL=QueueAction.js.map
 
 /***/ },
-/* 466 */
+/* 465 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -62957,18 +63170,18 @@ exports.QueueScheduler = QueueScheduler;
 //# sourceMappingURL=QueueScheduler.js.map
 
 /***/ },
-/* 467 */
+/* 466 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var AnimationFrameAction_1 = __webpack_require__(461);
-var AnimationFrameScheduler_1 = __webpack_require__(462);
+var AnimationFrameAction_1 = __webpack_require__(460);
+var AnimationFrameScheduler_1 = __webpack_require__(461);
 exports.animationFrame = new AnimationFrameScheduler_1.AnimationFrameScheduler(AnimationFrameAction_1.AnimationFrameAction);
 //# sourceMappingURL=animationFrame.js.map
 
 /***/ },
-/* 468 */
+/* 467 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63020,7 +63233,7 @@ applyMixins_1.applyMixins(ColdObservable, [SubscriptionLoggable_1.SubscriptionLo
 //# sourceMappingURL=ColdObservable.js.map
 
 /***/ },
-/* 469 */
+/* 468 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63074,7 +63287,7 @@ applyMixins_1.applyMixins(HotObservable, [SubscriptionLoggable_1.SubscriptionLog
 //# sourceMappingURL=HotObservable.js.map
 
 /***/ },
-/* 470 */
+/* 469 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63086,8 +63299,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(0);
 var Notification_1 = __webpack_require__(26);
-var ColdObservable_1 = __webpack_require__(468);
-var HotObservable_1 = __webpack_require__(469);
+var ColdObservable_1 = __webpack_require__(467);
+var HotObservable_1 = __webpack_require__(468);
 var SubscriptionLog_1 = __webpack_require__(116);
 var VirtualTimeScheduler_1 = __webpack_require__(113);
 var defaultMaxFrame = 750;
@@ -63303,7 +63516,7 @@ exports.TestScheduler = TestScheduler;
 //# sourceMappingURL=TestScheduler.js.map
 
 /***/ },
-/* 471 */
+/* 470 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63343,7 +63556,7 @@ exports.AnimationFrame = new RequestAnimationFrameDefinition(root_1.root);
 //# sourceMappingURL=AnimationFrame.js.map
 
 /***/ },
-/* 472 */
+/* 471 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -63380,7 +63593,7 @@ exports.FastMap = FastMap;
 //# sourceMappingURL=FastMap.js.map
 
 /***/ },
-/* 473 */
+/* 472 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63593,21 +63806,21 @@ var ImmediateDefinition = (function () {
 exports.ImmediateDefinition = ImmediateDefinition;
 exports.Immediate = new ImmediateDefinition(root_1.root);
 //# sourceMappingURL=Immediate.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(50).clearImmediate, __webpack_require__(50).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(49).clearImmediate, __webpack_require__(49).setImmediate))
 
 /***/ },
-/* 474 */
+/* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var root_1 = __webpack_require__(11);
-var MapPolyfill_1 = __webpack_require__(475);
+var MapPolyfill_1 = __webpack_require__(474);
 exports.Map = root_1.root.Map || (function () { return MapPolyfill_1.MapPolyfill; })();
 //# sourceMappingURL=Map.js.map
 
 /***/ },
-/* 475 */
+/* 474 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -63660,7 +63873,7 @@ exports.MapPolyfill = MapPolyfill;
 //# sourceMappingURL=MapPolyfill.js.map
 
 /***/ },
-/* 476 */
+/* 475 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63699,7 +63912,7 @@ exports.Set = root_1.root.Set || minimalSetImpl();
 //# sourceMappingURL=Set.js.map
 
 /***/ },
-/* 477 */
+/* 476 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63731,7 +63944,7 @@ exports.assign = getAssign(root_1.root);
 //# sourceMappingURL=assign.js.map
 
 /***/ },
-/* 478 */
+/* 477 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -63748,13 +63961,13 @@ exports.not = not;
 //# sourceMappingURL=not.js.map
 
 /***/ },
-/* 479 */
+/* 478 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
 var Subscriber_1 = __webpack_require__(2);
-var rxSubscriber_1 = __webpack_require__(45);
+var rxSubscriber_1 = __webpack_require__(44);
 var Observer_1 = __webpack_require__(97);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
@@ -63774,7 +63987,7 @@ exports.toSubscriber = toSubscriber;
 //# sourceMappingURL=toSubscriber.js.map
 
 /***/ },
-/* 480 */
+/* 479 */
 /***/ function(module, exports) {
 
 var g;
@@ -63797,6 +64010,12 @@ try {
 
 module.exports = g;
 
+
+/***/ },
+/* 480 */
+/***/ function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_480__;
 
 /***/ },
 /* 481 */
@@ -63896,12 +64115,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_496__;
 
 /***/ },
 /* 497 */
-/***/ function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_497__;
-
-/***/ },
-/* 498 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -63925,7 +64138,7 @@ var textarea_module_1 = __webpack_require__(66);
 var flip_switch_module_1 = __webpack_require__(85);
 var icon_module_1 = __webpack_require__(17);
 var metalist_module_1 = __webpack_require__(22);
-var dropdown_module_1 = __webpack_require__(53);
+var dropdown_module_1 = __webpack_require__(52);
 var select_module_1 = __webpack_require__(86);
 var icogram_module_1 = __webpack_require__(25);
 var button_module_1 = __webpack_require__(21);
@@ -63934,13 +64147,13 @@ var layer_module_1 = __webpack_require__(61);
 var tab_nav_module_1 = __webpack_require__(65);
 var navigation_module_1 = __webpack_require__(63);
 var toolbar_module_1 = __webpack_require__(68);
-var tether_module_1 = __webpack_require__(38);
-var link_module_1 = __webpack_require__(33);
-var popover_module_1 = __webpack_require__(34);
+var tether_module_1 = __webpack_require__(37);
+var link_module_1 = __webpack_require__(32);
+var popover_module_1 = __webpack_require__(33);
 var progress_bar_module_1 = __webpack_require__(64);
-var radio_button_module_1 = __webpack_require__(35);
-var radio_group_module_1 = __webpack_require__(36);
-var checkbox_module_1 = __webpack_require__(31);
+var radio_button_module_1 = __webpack_require__(34);
+var radio_group_module_1 = __webpack_require__(35);
+var checkbox_module_1 = __webpack_require__(30);
 var off_click_module_1 = __webpack_require__(23);
 var form_control_label_module_1 = __webpack_require__(130);
 var form_module_1 = __webpack_require__(56);
@@ -63950,10 +64163,10 @@ var month_picker_module_1 = __webpack_require__(62);
 var date_picker_module_1 = __webpack_require__(55);
 var label_module_1 = __webpack_require__(60);
 var token_module_1 = __webpack_require__(67);
-var slider_module_1 = __webpack_require__(37);
+var slider_module_1 = __webpack_require__(36);
 var jss_form_module_1 = __webpack_require__(59);
-var input_control_group_module_1 = __webpack_require__(32);
-__export(__webpack_require__(30));
+var input_control_group_module_1 = __webpack_require__(31);
+__export(__webpack_require__(53));
 __export(__webpack_require__(57));
 __export(__webpack_require__(66));
 __export(__webpack_require__(17));
@@ -63965,21 +64178,21 @@ __export(__webpack_require__(65));
 __export(__webpack_require__(63));
 __export(__webpack_require__(56));
 __export(__webpack_require__(68));
-__export(__webpack_require__(38));
+__export(__webpack_require__(37));
+__export(__webpack_require__(32));
 __export(__webpack_require__(33));
-__export(__webpack_require__(34));
 __export(__webpack_require__(64));
+__export(__webpack_require__(34));
 __export(__webpack_require__(35));
-__export(__webpack_require__(36));
-__export(__webpack_require__(31));
+__export(__webpack_require__(30));
 __export(__webpack_require__(62));
 __export(__webpack_require__(55));
 __export(__webpack_require__(58));
 __export(__webpack_require__(60));
 __export(__webpack_require__(67));
-__export(__webpack_require__(37));
+__export(__webpack_require__(36));
 __export(__webpack_require__(59));
-__export(__webpack_require__(32));
+__export(__webpack_require__(31));
 __export(__webpack_require__(23));
 __export(__webpack_require__(18));
 __export(__webpack_require__(6));
@@ -63988,84 +64201,84 @@ __export(__webpack_require__(131));
 var VCLModule = (function () {
     function VCLModule() {
     }
-    VCLModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                wormhole_module_1.VCLWormholeModule,
-                icon_module_1.VCLIconModule,
-                icogram_module_1.VCLIcogramModule,
-                button_module_1.VCLButtonModule,
-                button_group_module_1.VCLButtonGroupModule,
-                layer_module_1.VCLLayerModule,
-                tether_module_1.VCLTetherModule,
-                link_module_1.VCLLinkModule,
-                input_module_1.VCLInputModule,
-                textarea_module_1.VCLTextareaModule,
-                flip_switch_module_1.VCLFlipSwitchModule,
-                tab_nav_module_1.VCLTabNavModule,
-                navigation_module_1.VCLNavigationModule,
-                toolbar_module_1.VCLToolbarModule,
-                popover_module_1.VCLPopoverModule,
-                progress_bar_module_1.VCLProgressBarModule,
-                radio_button_module_1.VCLRadioButtonModule,
-                radio_group_module_1.VCLRadioGroupModule,
-                checkbox_module_1.VCLCheckboxModule,
-                form_control_label_module_1.VCLFormControlLabelModule,
-                form_module_1.VCLFormModule,
-                metalist_module_1.VCLMetalistModule,
-                dropdown_module_1.VCLDropdownModule,
-                select_module_1.VCLSelectModule,
-                off_click_module_1.VCLOffClickModule,
-                month_picker_module_1.VCLMonthPickerModule,
-                date_picker_module_1.VCLDatePickerModule,
-                json_editor_module_1.VCLJsonEditorModule,
-                label_module_1.VCLLabelModule,
-                token_module_1.VCLTokenModule,
-                slider_module_1.VCLSliderModule,
-                jss_form_module_1.VCLJssFormModule,
-                input_control_group_module_1.VCLInputControlGroupModule
-            ],
-            exports: [
-                wormhole_module_1.VCLWormholeModule,
-                icon_module_1.VCLIconModule,
-                icogram_module_1.VCLIcogramModule,
-                button_module_1.VCLButtonModule,
-                button_group_module_1.VCLButtonGroupModule,
-                layer_module_1.VCLLayerModule,
-                tether_module_1.VCLTetherModule,
-                link_module_1.VCLLinkModule,
-                input_module_1.VCLInputModule,
-                textarea_module_1.VCLTextareaModule,
-                flip_switch_module_1.VCLFlipSwitchModule,
-                tab_nav_module_1.VCLTabNavModule,
-                navigation_module_1.VCLNavigationModule,
-                toolbar_module_1.VCLToolbarModule,
-                popover_module_1.VCLPopoverModule,
-                progress_bar_module_1.VCLProgressBarModule,
-                radio_button_module_1.VCLRadioButtonModule,
-                radio_group_module_1.VCLRadioGroupModule,
-                checkbox_module_1.VCLCheckboxModule,
-                form_control_label_module_1.VCLFormControlLabelModule,
-                form_module_1.VCLFormModule,
-                metalist_module_1.VCLMetalistModule,
-                dropdown_module_1.VCLDropdownModule,
-                select_module_1.VCLSelectModule,
-                off_click_module_1.VCLOffClickModule,
-                month_picker_module_1.VCLMonthPickerModule,
-                date_picker_module_1.VCLDatePickerModule,
-                json_editor_module_1.VCLJsonEditorModule,
-                label_module_1.VCLLabelModule,
-                token_module_1.VCLTokenModule,
-                slider_module_1.VCLSliderModule,
-                jss_form_module_1.VCLJssFormModule,
-                input_control_group_module_1.VCLInputControlGroupModule
-            ],
-            providers: [],
-        }), 
-        __metadata('design:paramtypes', [])
-    ], VCLModule);
     return VCLModule;
 }());
+VCLModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            wormhole_module_1.VCLWormholeModule,
+            icon_module_1.VCLIconModule,
+            icogram_module_1.VCLIcogramModule,
+            button_module_1.VCLButtonModule,
+            button_group_module_1.VCLButtonGroupModule,
+            layer_module_1.VCLLayerModule,
+            tether_module_1.VCLTetherModule,
+            link_module_1.VCLLinkModule,
+            input_module_1.VCLInputModule,
+            textarea_module_1.VCLTextareaModule,
+            flip_switch_module_1.VCLFlipSwitchModule,
+            tab_nav_module_1.VCLTabNavModule,
+            navigation_module_1.VCLNavigationModule,
+            toolbar_module_1.VCLToolbarModule,
+            popover_module_1.VCLPopoverModule,
+            progress_bar_module_1.VCLProgressBarModule,
+            radio_button_module_1.VCLRadioButtonModule,
+            radio_group_module_1.VCLRadioGroupModule,
+            checkbox_module_1.VCLCheckboxModule,
+            form_control_label_module_1.VCLFormControlLabelModule,
+            form_module_1.VCLFormModule,
+            metalist_module_1.VCLMetalistModule,
+            dropdown_module_1.VCLDropdownModule,
+            select_module_1.VCLSelectModule,
+            off_click_module_1.VCLOffClickModule,
+            month_picker_module_1.VCLMonthPickerModule,
+            date_picker_module_1.VCLDatePickerModule,
+            json_editor_module_1.VCLJsonEditorModule,
+            label_module_1.VCLLabelModule,
+            token_module_1.VCLTokenModule,
+            slider_module_1.VCLSliderModule,
+            jss_form_module_1.VCLJssFormModule,
+            input_control_group_module_1.VCLInputControlGroupModule
+        ],
+        exports: [
+            wormhole_module_1.VCLWormholeModule,
+            icon_module_1.VCLIconModule,
+            icogram_module_1.VCLIcogramModule,
+            button_module_1.VCLButtonModule,
+            button_group_module_1.VCLButtonGroupModule,
+            layer_module_1.VCLLayerModule,
+            tether_module_1.VCLTetherModule,
+            link_module_1.VCLLinkModule,
+            input_module_1.VCLInputModule,
+            textarea_module_1.VCLTextareaModule,
+            flip_switch_module_1.VCLFlipSwitchModule,
+            tab_nav_module_1.VCLTabNavModule,
+            navigation_module_1.VCLNavigationModule,
+            toolbar_module_1.VCLToolbarModule,
+            popover_module_1.VCLPopoverModule,
+            progress_bar_module_1.VCLProgressBarModule,
+            radio_button_module_1.VCLRadioButtonModule,
+            radio_group_module_1.VCLRadioGroupModule,
+            checkbox_module_1.VCLCheckboxModule,
+            form_control_label_module_1.VCLFormControlLabelModule,
+            form_module_1.VCLFormModule,
+            metalist_module_1.VCLMetalistModule,
+            dropdown_module_1.VCLDropdownModule,
+            select_module_1.VCLSelectModule,
+            off_click_module_1.VCLOffClickModule,
+            month_picker_module_1.VCLMonthPickerModule,
+            date_picker_module_1.VCLDatePickerModule,
+            json_editor_module_1.VCLJsonEditorModule,
+            label_module_1.VCLLabelModule,
+            token_module_1.VCLTokenModule,
+            slider_module_1.VCLSliderModule,
+            jss_form_module_1.VCLJssFormModule,
+            input_control_group_module_1.VCLInputControlGroupModule
+        ],
+        providers: [],
+    }),
+    __metadata("design:paramtypes", [])
+], VCLModule);
 exports.VCLModule = VCLModule;
 
 

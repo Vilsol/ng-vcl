@@ -1,4 +1,3 @@
-/// <reference types="core-js" />
 import { ControlValueAccessor } from '@angular/forms';
 export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR2: any;
 export declare class TokenInputComponent implements ControlValueAccessor {

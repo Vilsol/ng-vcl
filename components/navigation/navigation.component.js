@@ -1,7 +1,16 @@
 "use strict";
-var router_1 = require('@angular/router');
-var core_1 = require('@angular/core');
-var NavigationItemComponent = (function () {
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var router_1 = require("@angular/router");
+var core_1 = require("@angular/core");
+var NavigationItemComponent = NavigationItemComponent_1 = (function () {
     function NavigationItemComponent() {
         this.active = true;
         this.selected = false;
@@ -39,28 +48,58 @@ var NavigationItemComponent = (function () {
             ret['items'] = items; // only add if length>0 to not show nested-icons
         return ret;
     };
-    NavigationItemComponent.decorators = [
-        { type: core_1.Directive, args: [{
-                    selector: 'vcl-navitem'
-                },] },
-    ];
-    /** @nocollapse */
-    NavigationItemComponent.ctorParameters = function () { return []; };
-    NavigationItemComponent.propDecorators = {
-        'label': [{ type: core_1.Input, args: ['label',] },],
-        'route': [{ type: core_1.Input, args: ['route',] },],
-        'items': [{ type: core_1.ContentChildren, args: [NavigationItemComponent,] },],
-        'active': [{ type: core_1.Input },],
-        'selected': [{ type: core_1.Input },],
-        'opened': [{ type: core_1.Input },],
-        'heading': [{ type: core_1.Input },],
-        'href': [{ type: core_1.Input, args: ['href',] },],
-        'prepIcon': [{ type: core_1.Input, args: ['prepIcon',] },],
-        'appIcon': [{ type: core_1.Input, args: ['appIcon',] },],
-        'class': [{ type: core_1.Input, args: ['class',] },],
-    };
     return NavigationItemComponent;
 }());
+__decorate([
+    core_1.Input('label'),
+    __metadata("design:type", String)
+], NavigationItemComponent.prototype, "label", void 0);
+__decorate([
+    core_1.Input('route'),
+    __metadata("design:type", Object)
+], NavigationItemComponent.prototype, "route", void 0);
+__decorate([
+    core_1.ContentChildren(NavigationItemComponent_1),
+    __metadata("design:type", core_1.QueryList)
+], NavigationItemComponent.prototype, "items", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], NavigationItemComponent.prototype, "active", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], NavigationItemComponent.prototype, "selected", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], NavigationItemComponent.prototype, "opened", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], NavigationItemComponent.prototype, "heading", void 0);
+__decorate([
+    core_1.Input('href'),
+    __metadata("design:type", String)
+], NavigationItemComponent.prototype, "href", void 0);
+__decorate([
+    core_1.Input('prepIcon'),
+    __metadata("design:type", String)
+], NavigationItemComponent.prototype, "prepIcon", void 0);
+__decorate([
+    core_1.Input('appIcon'),
+    __metadata("design:type", String)
+], NavigationItemComponent.prototype, "appIcon", void 0);
+__decorate([
+    core_1.Input('class'),
+    __metadata("design:type", String)
+], NavigationItemComponent.prototype, "class", void 0);
+NavigationItemComponent = NavigationItemComponent_1 = __decorate([
+    core_1.Directive({
+        selector: 'vcl-navitem'
+    }),
+    __metadata("design:paramtypes", [])
+], NavigationItemComponent);
 exports.NavigationItemComponent = NavigationItemComponent;
 var NavigationComponent = (function () {
     //  isVert: boolean = true;
@@ -142,33 +181,66 @@ var NavigationComponent = (function () {
     NavigationComponent.prototype.toggleMenu = function (item) {
         item.opened = !item.opened;
     };
-    NavigationComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-navigation',
-                    host: {
-                        '[class.vclNavigation]': 'true'
-                    },
-                    templateUrl: 'navigation.component.html',
-                },] },
-    ];
-    /** @nocollapse */
-    NavigationComponent.ctorParameters = function () { return [
-        { type: router_1.Router, },
-    ]; };
-    NavigationComponent.propDecorators = {
-        'ident': [{ type: core_1.Input, args: ['ident',] },],
-        'selectedItem': [{ type: core_1.Input },],
-        'ariaRole': [{ type: core_1.Input },],
-        'tabindex': [{ type: core_1.Input },],
-        'type': [{ type: core_1.Input },],
-        'subLevelHintIconClosed': [{ type: core_1.Input },],
-        'subLevelHintIconOpened': [{ type: core_1.Input },],
-        'subLevelHintIconSide': [{ type: core_1.Input, args: ['subLevelHintIconSide',] },],
-        'templateItems': [{ type: core_1.ContentChildren, args: [NavigationItemComponent,] },],
-        'navigationItems': [{ type: core_1.Input },],
-        'select': [{ type: core_1.Output },],
-        'isVertical': [{ type: core_1.HostBinding, args: ['class.vclVertical',] },],
-    };
     return NavigationComponent;
 }());
+__decorate([
+    core_1.Input('ident'),
+    __metadata("design:type", String)
+], NavigationComponent.prototype, "ident", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], NavigationComponent.prototype, "selectedItem", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], NavigationComponent.prototype, "ariaRole", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], NavigationComponent.prototype, "tabindex", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], NavigationComponent.prototype, "type", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], NavigationComponent.prototype, "subLevelHintIconClosed", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], NavigationComponent.prototype, "subLevelHintIconOpened", void 0);
+__decorate([
+    core_1.Input('subLevelHintIconSide'),
+    __metadata("design:type", String)
+], NavigationComponent.prototype, "subLevelHintIconSide", void 0);
+__decorate([
+    core_1.ContentChildren(NavigationItemComponent),
+    __metadata("design:type", core_1.QueryList)
+], NavigationComponent.prototype, "templateItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Array)
+], NavigationComponent.prototype, "navigationItems", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], NavigationComponent.prototype, "select", void 0);
+__decorate([
+    core_1.HostBinding('class.vclVertical'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], NavigationComponent.prototype, "isVertical", null);
+NavigationComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-navigation',
+        host: {
+            '[class.vclNavigation]': 'true'
+        },
+        templateUrl: 'navigation.component.html',
+    }),
+    __metadata("design:paramtypes", [router_1.Router])
+], NavigationComponent);
 exports.NavigationComponent = NavigationComponent;
+var NavigationItemComponent_1;

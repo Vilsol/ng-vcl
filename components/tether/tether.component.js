@@ -1,6 +1,16 @@
 "use strict";
-var core_1 = require('@angular/core');
-var Tether = require('tether');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var Observable_1 = require("rxjs/Observable");
+var core_1 = require("@angular/core");
+var Tether = require("tether");
 var tetherID = 10000;
 var TetherComponent = (function () {
     function TetherComponent(myElement) {
@@ -45,24 +55,38 @@ var TetherComponent = (function () {
         }
         catch (ex) { }
     };
-    TetherComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-tether',
-                    templateUrl: 'tether.component.html'
-                },] },
-    ];
-    /** @nocollapse */
-    TetherComponent.ctorParameters = function () { return [
-        { type: core_1.ElementRef, },
-    ]; };
-    TetherComponent.propDecorators = {
-        'target': [{ type: core_1.Input },],
-        'class': [{ type: core_1.Input },],
-        'zIndex': [{ type: core_1.Input },],
-        'targetAttachment': [{ type: core_1.Input },],
-        'attachment': [{ type: core_1.Input },],
-        'error': [{ type: core_1.Output },],
-    };
     return TetherComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], TetherComponent.prototype, "target", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], TetherComponent.prototype, "class", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], TetherComponent.prototype, "zIndex", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], TetherComponent.prototype, "targetAttachment", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], TetherComponent.prototype, "attachment", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], TetherComponent.prototype, "error", null);
+TetherComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-tether',
+        templateUrl: 'tether.component.html'
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], TetherComponent);
 exports.TetherComponent = TetherComponent;

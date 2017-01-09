@@ -1,6 +1,15 @@
 "use strict";
-var core_1 = require('@angular/core');
-var forms_1 = require('@angular/forms');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require("@angular/core");
+var forms_1 = require("@angular/forms");
 var TextareaDirective = (function () {
     function TextareaDirective(elRef, ngModel) {
         this.elRef = elRef;
@@ -38,28 +47,47 @@ var TextareaDirective = (function () {
             }
         }
     };
-    TextareaDirective.decorators = [
-        { type: core_1.Directive, args: [{
-                    selector: '[vcl-textarea]',
-                    host: {
-                        '[class.vclInput]': 'true',
-                    }
-                },] },
-    ];
-    /** @nocollapse */
-    TextareaDirective.ctorParameters = function () { return [
-        { type: core_1.ElementRef, },
-        { type: forms_1.NgModel, },
-    ]; };
-    TextareaDirective.propDecorators = {
-        'selectAllOnFocus': [{ type: core_1.Input },],
-        'autogrow': [{ type: core_1.Input },],
-        'maxRows': [{ type: core_1.Input },],
-        'minRows': [{ type: core_1.Input },],
-        'onModelChange': [{ type: core_1.HostListener, args: ['ngModelChange', ['$event'],] },],
-        'onFocus': [{ type: core_1.HostListener, args: ['focus', ['$event.target.value'],] },],
-        'rows': [{ type: core_1.HostBinding, args: ['attr.rows',] },],
-    };
     return TextareaDirective;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], TextareaDirective.prototype, "selectAllOnFocus", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], TextareaDirective.prototype, "autogrow", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], TextareaDirective.prototype, "maxRows", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], TextareaDirective.prototype, "minRows", void 0);
+__decorate([
+    core_1.HostListener('ngModelChange', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], TextareaDirective.prototype, "onModelChange", null);
+__decorate([
+    core_1.HostListener('focus', ['$event.target.value']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], TextareaDirective.prototype, "onFocus", null);
+__decorate([
+    core_1.HostBinding('attr.rows'),
+    __metadata("design:type", Number)
+], TextareaDirective.prototype, "rows", void 0);
+TextareaDirective = __decorate([
+    core_1.Directive({
+        selector: '[vcl-textarea]',
+        host: {
+            '[class.vclInput]': 'true',
+        }
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef, forms_1.NgModel])
+], TextareaDirective);
 exports.TextareaDirective = TextareaDirective;

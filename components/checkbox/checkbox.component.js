@@ -1,6 +1,16 @@
 "use strict";
-var core_1 = require('@angular/core');
-var forms_1 = require('@angular/forms');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require("@angular/core");
+var Observable_1 = require("rxjs/Observable");
+var forms_1 = require("@angular/forms");
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return CheckboxComponent; }),
@@ -103,37 +113,76 @@ var CheckboxComponent = (function () {
     CheckboxComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    CheckboxComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-checkbox',
-                    templateUrl: 'checkbox.component.html',
-                    host: {
-                        '[attr.role]': '"checkbox"',
-                        '[class.vclCheckbox]': 'true',
-                        '[class.vclScale130p]': 'true',
-                    },
-                    providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
-                    changeDetection: core_1.ChangeDetectionStrategy.OnPush
-                },] },
-    ];
-    /** @nocollapse */
-    CheckboxComponent.ctorParameters = function () { return [
-        { type: core_1.ElementRef, },
-    ]; };
-    CheckboxComponent.propDecorators = {
-        'checkedIcon': [{ type: core_1.Input },],
-        'uncheckedIcon': [{ type: core_1.Input },],
-        'disabled': [{ type: core_1.Input },],
-        'labelPosition': [{ type: core_1.Input },],
-        'tabindex': [{ type: core_1.Input },],
-        'checked': [{ type: core_1.Input },],
-        'checkedChange': [{ type: core_1.Output },],
-        'clsVclDisabled': [{ type: core_1.HostBinding, args: ['class.vclDisabled',] },],
-        'attrAriaDisabled': [{ type: core_1.HostBinding, args: ['attr.aria-disabled',] },],
-        'attrChecked': [{ type: core_1.HostBinding, args: ['attr.checked',] },],
-        'onKeyup': [{ type: core_1.HostListener, args: ['keyup', ['$event'],] },],
-        'onClick': [{ type: core_1.HostListener, args: ['click', ['$event'],] },],
-    };
     return CheckboxComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], CheckboxComponent.prototype, "checkedIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], CheckboxComponent.prototype, "uncheckedIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], CheckboxComponent.prototype, "disabled", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], CheckboxComponent.prototype, "labelPosition", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], CheckboxComponent.prototype, "tabindex", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], CheckboxComponent.prototype, "checked", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Observable_1.Observable),
+    __metadata("design:paramtypes", [])
+], CheckboxComponent.prototype, "checkedChange", null);
+__decorate([
+    core_1.HostBinding('class.vclDisabled'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], CheckboxComponent.prototype, "clsVclDisabled", null);
+__decorate([
+    core_1.HostBinding('attr.aria-disabled'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], CheckboxComponent.prototype, "attrAriaDisabled", null);
+__decorate([
+    core_1.HostBinding('attr.checked'),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [])
+], CheckboxComponent.prototype, "attrChecked", null);
+__decorate([
+    core_1.HostListener('keyup', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], CheckboxComponent.prototype, "onKeyup", null);
+__decorate([
+    core_1.HostListener('click', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], CheckboxComponent.prototype, "onClick", null);
+CheckboxComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-checkbox',
+        templateUrl: 'checkbox.component.html',
+        host: {
+            '[attr.role]': '"checkbox"',
+            '[class.vclCheckbox]': 'true',
+            '[class.vclScale130p]': 'true',
+        },
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], CheckboxComponent);
 exports.CheckboxComponent = CheckboxComponent;

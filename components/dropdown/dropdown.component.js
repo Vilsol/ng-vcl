@@ -1,6 +1,15 @@
 "use strict";
-var core_1 = require('@angular/core');
-var forms_1 = require('@angular/forms');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require("@angular/core");
+var forms_1 = require("@angular/forms");
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return DropdownComponent; }),
@@ -85,27 +94,49 @@ var DropdownComponent = (function () {
     DropdownComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    DropdownComponent.TAG = 'DropdownComponent';
-    DropdownComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-dropdown',
-                    templateUrl: 'dropdown.component.html',
-                    changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-                    providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
-                },] },
-    ];
-    /** @nocollapse */
-    DropdownComponent.ctorParameters = function () { return []; };
-    DropdownComponent.propDecorators = {
-        'change$': [{ type: core_1.Output, args: ['change',] },],
-        'items': [{ type: core_1.Input },],
-        'tabindex': [{ type: core_1.Input },],
-        'expanded': [{ type: core_1.Input },],
-        'maxSelectableItems': [{ type: core_1.Input },],
-        'minSelectableItems': [{ type: core_1.Input },],
-        'ariaRole': [{ type: core_1.Input },],
-        'value': [{ type: core_1.Input },],
-    };
     return DropdownComponent;
 }());
+DropdownComponent.TAG = 'DropdownComponent';
+__decorate([
+    core_1.Output('change'),
+    __metadata("design:type", Object)
+], DropdownComponent.prototype, "change$", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Array)
+], DropdownComponent.prototype, "items", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], DropdownComponent.prototype, "tabindex", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], DropdownComponent.prototype, "expanded", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], DropdownComponent.prototype, "maxSelectableItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], DropdownComponent.prototype, "minSelectableItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], DropdownComponent.prototype, "ariaRole", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [Object])
+], DropdownComponent.prototype, "value", null);
+DropdownComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-dropdown',
+        templateUrl: 'dropdown.component.html',
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+    }),
+    __metadata("design:paramtypes", [])
+], DropdownComponent);
 exports.DropdownComponent = DropdownComponent;

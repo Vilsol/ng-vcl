@@ -4,22 +4,32 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var core_1 = require('@angular/core');
-var Subject_1 = require('rxjs/Subject');
-var Observable_1 = require('rxjs/Observable');
-var wormhole_module_1 = require('./../../directives/wormhole/wormhole.module');
-var layer_directive_1 = require('./layer.directive');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require("@angular/core");
+var Subject_1 = require("rxjs/Subject");
+var Observable_1 = require("rxjs/Observable");
+var wormhole_module_1 = require("./../../directives/wormhole/wormhole.module");
+var layer_directive_1 = require("./layer.directive");
 var LayerReference = (function (_super) {
     __extends(LayerReference, _super);
     function LayerReference(opts) {
-        _super.call(this);
-        this.stateChange = new Subject_1.Subject();
-        this.source = this.stateChange.asObservable();
-        this.visible = false;
-        this.base = opts.base || 'default';
-        this.modal = !!opts.modal;
-        this.closeOnOffClick = !!opts.closeOnOffClick;
-        this.data = {};
+        var _this = _super.call(this) || this;
+        _this.stateChange = new Subject_1.Subject();
+        _this.source = _this.stateChange.asObservable();
+        _this.visible = false;
+        _this.base = opts.base || 'default';
+        _this.modal = !!opts.modal;
+        _this.closeOnOffClick = !!opts.closeOnOffClick;
+        _this.data = {};
+        return _this;
     }
     LayerReference.prototype.open = function (data) {
         this.visible = true;
@@ -35,11 +45,13 @@ var LayerReference = (function (_super) {
         this.visible = false;
         this.data = {};
         this.wormhole = null;
-        if (typeof result !== 'undefined') {
-            this.results.next(result);
+        if (this.results) {
+            if (typeof result !== 'undefined') {
+                this.results.next(result);
+            }
+            this.results.complete();
+            this.results = null;
         }
-        this.results.complete();
-        this.results = null;
         this.stateChange.next(this);
     };
     LayerReference.prototype.send = function (result) {
@@ -53,33 +65,31 @@ exports.LayerReference = LayerReference;
 var LayerDirectiveReference = (function (_super) {
     __extends(LayerDirectiveReference, _super);
     function LayerDirectiveReference(opts, layer) {
-        _super.call(this, opts);
-        this.layer = layer;
+        var _this = _super.call(this, opts) || this;
+        _this.layer = layer;
+        return _this;
     }
     LayerDirectiveReference.prototype.createWormhole = function () {
         return this.layer;
     };
-    LayerDirectiveReference.decorators = [
-        { type: core_1.Injectable },
-    ];
-    /** @nocollapse */
-    LayerDirectiveReference.ctorParameters = function () { return [
-        null,
-        { type: layer_directive_1.LayerDirective, },
-    ]; };
     return LayerDirectiveReference;
 }(LayerReference));
+LayerDirectiveReference = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [Object, layer_directive_1.LayerDirective])
+], LayerDirectiveReference);
 exports.LayerDirectiveReference = LayerDirectiveReference;
-var LayerComponentReference = (function (_super) {
+var LayerComponentReference = LayerComponentReference_1 = (function (_super) {
     __extends(LayerComponentReference, _super);
     function LayerComponentReference(opts, defaultInjector, LayerClass) {
-        _super.call(this, opts);
-        this.defaultInjector = defaultInjector;
-        this.LayerClass = LayerClass;
-        this.injector = core_1.ReflectiveInjector.resolveAndCreate([{
-                provide: LayerComponentReference,
-                useValue: this
-            }], this.defaultInjector);
+        var _this = _super.call(this, opts) || this;
+        _this.defaultInjector = defaultInjector;
+        _this.LayerClass = LayerClass;
+        _this.injector = core_1.ReflectiveInjector.resolveAndCreate([{
+                provide: LayerComponentReference_1,
+                useValue: _this
+            }], _this.defaultInjector);
+        return _this;
     }
     LayerComponentReference.prototype.createWormhole = function () {
         if (this.wormhole instanceof wormhole_module_1.ComponentWormhole) {
@@ -90,15 +100,11 @@ var LayerComponentReference = (function (_super) {
         }
         return new wormhole_module_1.ComponentWormhole(this.LayerClass, { data: this.data, injector: this.injector });
     };
-    LayerComponentReference.decorators = [
-        { type: core_1.Injectable },
-    ];
-    /** @nocollapse */
-    LayerComponentReference.ctorParameters = function () { return [
-        null,
-        { type: core_1.Injector, },
-        null,
-    ]; };
     return LayerComponentReference;
 }(LayerReference));
+LayerComponentReference = LayerComponentReference_1 = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [Object, core_1.Injector, Object])
+], LayerComponentReference);
 exports.LayerComponentReference = LayerComponentReference;
+var LayerComponentReference_1;

@@ -4,7 +4,16 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var core_1 = require('@angular/core');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require("@angular/core");
 var Wormhole = (function () {
     function Wormhole() {
     }
@@ -33,8 +42,9 @@ var TemplateWormhole = (function (_super) {
     __extends(TemplateWormhole, _super);
     // The wormhole directive needs a reference to the template
     function TemplateWormhole(templateRef) {
-        _super.call(this);
-        this.templateRef = templateRef;
+        var _this = _super.call(this) || this;
+        _this.templateRef = templateRef;
+        return _this;
     }
     TemplateWormhole.prototype.attach = function () {
         var _this = this;
@@ -50,27 +60,25 @@ var TemplateWormhole = (function (_super) {
                 this.bridge.viewContainerRef.remove(i);
         }
     };
-    TemplateWormhole.decorators = [
-        { type: core_1.Directive, args: [{
-                    selector: '[wormhole]',
-                    exportAs: 'wormhole',
-                },] },
-    ];
-    /** @nocollapse */
-    TemplateWormhole.ctorParameters = function () { return [
-        { type: core_1.TemplateRef, },
-    ]; };
     return TemplateWormhole;
 }(Wormhole));
+TemplateWormhole = __decorate([
+    core_1.Directive({
+        selector: '[wormhole]',
+        exportAs: 'wormhole',
+    }),
+    __metadata("design:paramtypes", [core_1.TemplateRef])
+], TemplateWormhole);
 exports.TemplateWormhole = TemplateWormhole;
 var ComponentWormhole = (function (_super) {
     __extends(ComponentWormhole, _super);
     function ComponentWormhole(componentClass, opts) {
         if (opts === void 0) { opts = {}; }
-        _super.call(this);
-        this.componentClass = componentClass;
-        this.injector = opts.injector;
-        this.data = opts.data;
+        var _this = _super.call(this) || this;
+        _this.componentClass = componentClass;
+        _this.injector = opts.injector;
+        _this.data = opts.data;
+        return _this;
     }
     ComponentWormhole.prototype.attach = function () {
         var _this = this;
@@ -146,20 +154,21 @@ var ConnectWormholeDirective = (function () {
             this.disconnect();
         }
     };
-    ConnectWormholeDirective.decorators = [
-        { type: core_1.Directive, args: [{
-                    selector: '[connectWormhole]'
-                },] },
-    ];
-    /** @nocollapse */
-    ConnectWormholeDirective.ctorParameters = function () { return [
-        { type: core_1.ViewContainerRef, },
-        { type: core_1.ComponentFactoryResolver, },
-    ]; };
-    ConnectWormholeDirective.propDecorators = {
-        'indisposable': [{ type: core_1.Input, args: ['wormholeIndisposable',] },],
-        'connectWormhole': [{ type: core_1.Input, args: ['connectWormhole',] },],
-    };
     return ConnectWormholeDirective;
 }());
+__decorate([
+    core_1.Input('wormholeIndisposable'),
+    __metadata("design:type", Boolean)
+], ConnectWormholeDirective.prototype, "indisposable", void 0);
+__decorate([
+    core_1.Input('connectWormhole'),
+    __metadata("design:type", Wormhole),
+    __metadata("design:paramtypes", [Wormhole])
+], ConnectWormholeDirective.prototype, "connectWormhole", null);
+ConnectWormholeDirective = __decorate([
+    core_1.Directive({
+        selector: '[connectWormhole]'
+    }),
+    __metadata("design:paramtypes", [core_1.ViewContainerRef, core_1.ComponentFactoryResolver])
+], ConnectWormholeDirective);
 exports.ConnectWormholeDirective = ConnectWormholeDirective;

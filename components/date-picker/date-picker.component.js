@@ -1,7 +1,16 @@
 "use strict";
-var core_1 = require('@angular/core');
-var forms_1 = require('@angular/forms');
-var PickDate_1 = require('./PickDate');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require("@angular/core");
+var forms_1 = require("@angular/forms");
+var PickDate_1 = require("./PickDate");
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return DatePickerComponent; }),
@@ -127,39 +136,81 @@ var DatePickerComponent = (function () {
     DatePickerComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    DatePickerComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-date-picker',
-                    templateUrl: 'date-picker.component.html',
-                    styles: [
-                        ".hidden{display:none;}\n     .date-picker-pointer{cursor: pointer;}\n    "
-                    ],
-                    providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
-                    changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-                    host: {
-                        '[class.vclDatePicker]': 'true'
-                    }
-                },] },
-    ];
-    /** @nocollapse */
-    DatePickerComponent.ctorParameters = function () { return []; };
-    DatePickerComponent.propDecorators = {
-        'closeOnSelect': [{ type: core_1.Input, args: ['closeOnSelect',] },],
-        'highlightToday': [{ type: core_1.Input, args: ['highlightToday',] },],
-        'highlightSelected': [{ type: core_1.Input, args: ['highlightSelected',] },],
-        'displayWeekNumbers': [{ type: core_1.Input, args: ['displayWeekNumbers',] },],
-        'displayWeekdays': [{ type: core_1.Input, args: ['displayWeekdays',] },],
-        'prevYearBtnIcon': [{ type: core_1.Input, args: ['prevYearBtnIcon',] },],
-        'nextYearBtnIcon': [{ type: core_1.Input, args: ['nextYearBtnIcon',] },],
-        'displayJumpToday': [{ type: core_1.Input, args: ['displayJumpToday',] },],
-        'displayJumpSelected': [{ type: core_1.Input, args: ['displayJumpSelected',] },],
-        'selectedDate': [{ type: core_1.Input, args: ['selectedDate',] },],
-        'selectRange': [{ type: core_1.Input, args: ['selectRange',] },],
-        'selectedRangeEnd': [{ type: core_1.Input, args: ['selectedRangeEnd',] },],
-        'maxRangeLength': [{ type: core_1.Input, args: ['maxRangeLength',] },],
-        'minDate': [{ type: core_1.Input, args: ['minDate',] },],
-        'maxDate': [{ type: core_1.Input, args: ['maxDate',] },],
-    };
     return DatePickerComponent;
 }());
+__decorate([
+    core_1.Input('closeOnSelect'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "closeOnSelect", void 0);
+__decorate([
+    core_1.Input('highlightToday'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "highlightToday", void 0);
+__decorate([
+    core_1.Input('highlightSelected'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "highlightSelected", void 0);
+__decorate([
+    core_1.Input('displayWeekNumbers'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "displayWeekNumbers", void 0);
+__decorate([
+    core_1.Input('displayWeekdays'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "displayWeekdays", void 0);
+__decorate([
+    core_1.Input('prevYearBtnIcon'),
+    __metadata("design:type", String)
+], DatePickerComponent.prototype, "prevYearBtnIcon", void 0);
+__decorate([
+    core_1.Input('nextYearBtnIcon'),
+    __metadata("design:type", String)
+], DatePickerComponent.prototype, "nextYearBtnIcon", void 0);
+__decorate([
+    core_1.Input('displayJumpToday'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "displayJumpToday", void 0);
+__decorate([
+    core_1.Input('displayJumpSelected'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "displayJumpSelected", void 0);
+__decorate([
+    core_1.Input('selectedDate'),
+    __metadata("design:type", Date)
+], DatePickerComponent.prototype, "selectedDate", void 0);
+__decorate([
+    core_1.Input('selectRange'),
+    __metadata("design:type", Boolean)
+], DatePickerComponent.prototype, "selectRange", void 0);
+__decorate([
+    core_1.Input('selectedRangeEnd'),
+    __metadata("design:type", Date)
+], DatePickerComponent.prototype, "selectedRangeEnd", void 0);
+__decorate([
+    core_1.Input('maxRangeLength'),
+    __metadata("design:type", Number)
+], DatePickerComponent.prototype, "maxRangeLength", void 0);
+__decorate([
+    core_1.Input('minDate'),
+    __metadata("design:type", Date)
+], DatePickerComponent.prototype, "minDate", void 0);
+__decorate([
+    core_1.Input('maxDate'),
+    __metadata("design:type", Date)
+], DatePickerComponent.prototype, "maxDate", void 0);
+DatePickerComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-date-picker',
+        templateUrl: 'date-picker.component.html',
+        styles: [
+            ".hidden{display:none;}\n     .date-picker-pointer{cursor: pointer;}\n    "
+        ],
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+        host: {
+            '[class.vclDatePicker]': 'true'
+        }
+    }),
+    __metadata("design:paramtypes", [])
+], DatePickerComponent);
 exports.DatePickerComponent = DatePickerComponent;

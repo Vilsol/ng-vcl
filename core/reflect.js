@@ -1,5 +1,5 @@
 "use strict";
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 function setAnnotation(cls, key, value) {
     var annotation = getAnnotation(cls);
     // Change metadata

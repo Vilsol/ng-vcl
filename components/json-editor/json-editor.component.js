@@ -1,6 +1,15 @@
 "use strict";
-var core_1 = require('@angular/core');
-var forms_1 = require('@angular/forms');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require("@angular/core");
+var forms_1 = require("@angular/forms");
 var JSONEditor = require('jsoneditor/dist/jsoneditor.js');
 /**
  * The JSON editor needs styling and some graphics
@@ -55,25 +64,37 @@ var JsonEditorComponent = (function () {
     JsonEditorComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
-    JsonEditorComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-json-editor',
-                    styles: [JSONEditorCSS],
-                    encapsulation: core_1.ViewEncapsulation.None,
-                    templateUrl: 'json-editor.component.html',
-                    providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
-                    changeDetection: core_1.ChangeDetectionStrategy.OnPush
-                },] },
-    ];
-    /** @nocollapse */
-    JsonEditorComponent.ctorParameters = function () { return []; };
-    JsonEditorComponent.propDecorators = {
-        'el': [{ type: core_1.ViewChild, args: ['el',] },],
-        'mode': [{ type: core_1.Input, args: ['mode',] },],
-        'value': [{ type: core_1.Input, args: ['value',] },],
-        'options': [{ type: core_1.Input, args: ['options',] },],
-        'height': [{ type: core_1.Input, args: ['height',] },],
-    };
     return JsonEditorComponent;
 }());
+__decorate([
+    core_1.ViewChild('el'),
+    __metadata("design:type", Object)
+], JsonEditorComponent.prototype, "el", void 0);
+__decorate([
+    core_1.Input('mode'),
+    __metadata("design:type", String)
+], JsonEditorComponent.prototype, "mode", void 0);
+__decorate([
+    core_1.Input('value'),
+    __metadata("design:type", Object)
+], JsonEditorComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Input('options'),
+    __metadata("design:type", Object)
+], JsonEditorComponent.prototype, "options", void 0);
+__decorate([
+    core_1.Input('height'),
+    __metadata("design:type", String)
+], JsonEditorComponent.prototype, "height", void 0);
+JsonEditorComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-json-editor',
+        styles: [JSONEditorCSS],
+        encapsulation: core_1.ViewEncapsulation.None,
+        templateUrl: 'json-editor.component.html',
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush
+    }),
+    __metadata("design:paramtypes", [])
+], JsonEditorComponent);
 exports.JsonEditorComponent = JsonEditorComponent;

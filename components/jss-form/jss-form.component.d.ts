@@ -1,4 +1,3 @@
-/// <reference types="core-js" />
 import { EventEmitter, OnInit, OnDestroy } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Observable } from 'rxjs';

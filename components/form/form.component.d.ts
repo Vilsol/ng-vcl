@@ -1,4 +1,3 @@
-/// <reference types="core-js" />
 import { OnInit, EventEmitter } from '@angular/core';
 export declare class FormComponent implements OnInit {
     layout: 'vertical' | 'horizontal' | 'inline';

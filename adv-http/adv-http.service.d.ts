@@ -1,4 +1,3 @@
-/// <reference types="core-js" />
 import { Observable } from 'rxjs/Observable';
 import { ConnectableObservable } from 'rxjs/observable/ConnectableObservable';
 import { Subscription } from 'rxjs/Subscription';

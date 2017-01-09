@@ -1,4 +1,3 @@
-/// <reference types="core-js" />
 import { EventEmitter, QueryList, ElementRef, OnInit } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 /**
@@ -38,7 +37,7 @@ export declare class SelectComponent implements ControlValueAccessor {
     changeEE: EventEmitter<string | string[]>;
     constructor();
     expand: () => boolean;
-    onOutsideClick: () => false;
+    onOutsideClick: () => boolean;
     ngOnInit(): void;
     ngAfterContentInit(): void;
     reDisplayValue(newValue: any): void;

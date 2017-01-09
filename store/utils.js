@@ -2,7 +2,7 @@
 exports.compose = function () {
     var functions = [];
     for (var _i = 0; _i < arguments.length; _i++) {
-        functions[_i - 0] = arguments[_i];
+        functions[_i] = arguments[_i];
     }
     return function (arg) {
         if (functions.length === 0) {
@@ -16,7 +16,7 @@ exports.compose = function () {
 function reduceReducers() {
     var reducers = [];
     for (var _i = 0; _i < arguments.length; _i++) {
-        reducers[_i - 0] = arguments[_i];
+        reducers[_i] = arguments[_i];
     }
     return function (state, action) {
         return reducers.reduce(function (prevState, reducer) { return reducer(prevState, action); }, state);

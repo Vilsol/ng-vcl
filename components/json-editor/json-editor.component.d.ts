@@ -1,4 +1,3 @@
-/// <reference types="core-js" />
 import { ControlValueAccessor } from '@angular/forms';
 export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any;
 export declare class JsonEditorComponent implements ControlValueAccessor {

@@ -8,14 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-require('rxjs/add/operator/filter');
-require('rxjs/add/operator/map');
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var store_1 = require('./store');
-var actions_1 = require('./actions');
-var utils_1 = require('./utils');
-var effects_1 = require('./effects');
+require("rxjs/add/operator/filter");
+require("rxjs/add/operator/map");
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var store_1 = require("./store");
+var actions_1 = require("./actions");
+var utils_1 = require("./utils");
+var effects_1 = require("./effects");
 exports.initialRouterState = {
     url: ''
 };
@@ -70,25 +70,20 @@ var StoreRouterEffects = (function () {
         if (this.routerSub && !this.routerSub.closed)
             this.routerSub.unsubscribe();
     };
-    StoreRouterEffects.decorators = [
-        { type: core_1.Injectable },
-    ];
-    /** @nocollapse */
-    StoreRouterEffects.ctorParameters = function () { return [
-        { type: router_1.Router, },
-        { type: store_1.Store, },
-        { type: actions_1.StoreActions, },
-    ]; };
-    __decorate([
-        effects_1.Effect(), 
-        __metadata('design:type', Object)
-    ], StoreRouterEffects.prototype, "navigateEffect", void 0);
-    __decorate([
-        effects_1.Effect(), 
-        __metadata('design:type', Object)
-    ], StoreRouterEffects.prototype, "navigateByUrlEffect", void 0);
     return StoreRouterEffects;
 }());
+__decorate([
+    effects_1.Effect(),
+    __metadata("design:type", Object)
+], StoreRouterEffects.prototype, "navigateEffect", void 0);
+__decorate([
+    effects_1.Effect(),
+    __metadata("design:type", Object)
+], StoreRouterEffects.prototype, "navigateByUrlEffect", void 0);
+StoreRouterEffects = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [router_1.Router, store_1.Store, actions_1.StoreActions])
+], StoreRouterEffects);
 exports.StoreRouterEffects = StoreRouterEffects;
 var StoreRouter = (function () {
     function StoreRouter(store) {
@@ -100,15 +95,12 @@ var StoreRouter = (function () {
     StoreRouter.prototype.navigateByUrl = function (url, extras) {
         this.store.dispatch(new RouterNavigateByUrlAction(url, extras));
     };
-    StoreRouter.decorators = [
-        { type: core_1.Injectable },
-    ];
-    /** @nocollapse */
-    StoreRouter.ctorParameters = function () { return [
-        { type: store_1.Store, },
-    ]; };
     return StoreRouter;
 }());
+StoreRouter = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [store_1.Store])
+], StoreRouter);
 exports.StoreRouter = StoreRouter;
 exports.routerReducer = utils_1.combineReducers({
     router: function (state, action) {

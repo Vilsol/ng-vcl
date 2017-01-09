@@ -1,4 +1,3 @@
-/// <reference types="core-js" />
 /**
  * this is a helper-class so that the Date-logic
  * is not mashed with the components logic

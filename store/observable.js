@@ -4,10 +4,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Observable_1 = require('rxjs/Observable');
-require('rxjs/add/operator/distinctUntilChanged');
-require('rxjs/add/operator/pluck');
-require('rxjs/add/operator/map');
+var Observable_1 = require("rxjs/Observable");
+require("rxjs/add/operator/distinctUntilChanged");
+require("rxjs/add/operator/pluck");
+require("rxjs/add/operator/map");
 function select(path) {
     var paths = [];
     for (var _i = 1; _i < arguments.length; _i++) {
@@ -30,8 +30,9 @@ exports.select = select;
 var StoreObservable = (function (_super) {
     __extends(StoreObservable, _super);
     function StoreObservable(source) {
-        _super.call(this);
-        this.source = source;
+        var _this = _super.call(this) || this;
+        _this.source = source;
+        return _this;
     }
     StoreObservable.prototype.select = function (path) {
         var paths = [];

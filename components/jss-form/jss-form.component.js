@@ -1,7 +1,16 @@
 "use strict";
-var core_1 = require('@angular/core');
-var forms_1 = require('@angular/forms');
-var rxjs_1 = require('rxjs');
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require("@angular/core");
+var forms_1 = require("@angular/forms");
+var rxjs_1 = require("rxjs");
 var Validator = require('jsonschema').Validator; // TODO use import { Validator } from 'jsonschema'; when typings available
 var VALIDATOR;
 var JssFormObjectComponent = (function () {
@@ -109,22 +118,31 @@ var JssFormObjectComponent = (function () {
             });
         }
     };
-    JssFormObjectComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-jss-form-object',
-                    templateUrl: 'jss-form-object.component.html',
-                },] },
-    ];
-    /** @nocollapse */
-    JssFormObjectComponent.ctorParameters = function () { return []; };
-    JssFormObjectComponent.propDecorators = {
-        'schema': [{ type: core_1.Input, args: ['schema',] },],
-        'parentPath': [{ type: core_1.Input, args: ['parentPath',] },],
-        'formGroup': [{ type: core_1.Input, args: ['formGroup',] },],
-        'error': [{ type: core_1.Input, args: ['error',] },],
-    };
     return JssFormObjectComponent;
 }());
+__decorate([
+    core_1.Input('schema'),
+    __metadata("design:type", Object)
+], JssFormObjectComponent.prototype, "schema", void 0);
+__decorate([
+    core_1.Input('parentPath'),
+    __metadata("design:type", String)
+], JssFormObjectComponent.prototype, "parentPath", void 0);
+__decorate([
+    core_1.Input('formGroup'),
+    __metadata("design:type", forms_1.FormGroup)
+], JssFormObjectComponent.prototype, "formGroup", void 0);
+__decorate([
+    core_1.Input('error'),
+    __metadata("design:type", Object)
+], JssFormObjectComponent.prototype, "error", void 0);
+JssFormObjectComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-jss-form-object',
+        templateUrl: 'jss-form-object.component.html',
+    }),
+    __metadata("design:paramtypes", [])
+], JssFormObjectComponent);
 exports.JssFormObjectComponent = JssFormObjectComponent;
 var JssFormComponent = (function () {
     function JssFormComponent(fb) {
@@ -180,21 +198,25 @@ var JssFormComponent = (function () {
     };
     JssFormComponent.prototype.ngAfterViewInit = function () {
     };
-    JssFormComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-jss-form',
-                    templateUrl: 'jss-form.component.html'
-                },] },
-    ];
-    /** @nocollapse */
-    JssFormComponent.ctorParameters = function () { return [
-        { type: forms_1.FormBuilder, },
-    ]; };
-    JssFormComponent.propDecorators = {
-        'schema': [{ type: core_1.Input, args: ['schema',] },],
-        'value': [{ type: core_1.Input, args: ['value',] },],
-        'error': [{ type: core_1.Output, args: ['error',] },],
-    };
     return JssFormComponent;
 }());
+__decorate([
+    core_1.Input('schema'),
+    __metadata("design:type", Object)
+], JssFormComponent.prototype, "schema", void 0);
+__decorate([
+    core_1.Input('value'),
+    __metadata("design:type", Object)
+], JssFormComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Output('error'),
+    __metadata("design:type", Object)
+], JssFormComponent.prototype, "error", void 0);
+JssFormComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-jss-form',
+        templateUrl: 'jss-form.component.html'
+    }),
+    __metadata("design:paramtypes", [forms_1.FormBuilder])
+], JssFormComponent);
 exports.JssFormComponent = JssFormComponent;

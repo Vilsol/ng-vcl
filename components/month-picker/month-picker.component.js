@@ -1,6 +1,15 @@
 "use strict";
-var core_1 = require('@angular/core');
-var MonthPickerComponent = (function () {
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = require("@angular/core");
+var MonthPickerComponent = MonthPickerComponent_1 = (function () {
     function MonthPickerComponent() {
         this.now = new Date();
         this.yearMeta = {};
@@ -30,7 +39,7 @@ var MonthPickerComponent = (function () {
     MonthPickerComponent.prototype.ngOnInit = function () {
         // TODO: Localize here instead of in the template so outside components
         // when calling month-picker.getMonth(month) get calendar's localized and used label.
-        this.months = this.useShortNames ? MonthPickerComponent.monthNamesShort : MonthPickerComponent.monthNames;
+        this.months = this.useShortNames ? MonthPickerComponent_1.monthNamesShort : MonthPickerComponent_1.monthNames;
         if (!this.maxSelectableItems) {
             this.maxSelectableItems = this.colors && this.colors.length || 1;
         }
@@ -207,57 +216,124 @@ var MonthPickerComponent = (function () {
             }, this.getYearMeta(year)[month]);
         }
     };
-    MonthPickerComponent.TAG = 'MonthPickerComponent';
-    MonthPickerComponent.monthNames = [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December'
-    ];
-    MonthPickerComponent.monthNamesShort = MonthPickerComponent.monthNames.
-        map(function (name) { return name.substr(0, 3); });
-    MonthPickerComponent.decorators = [
-        { type: core_1.Component, args: [{
-                    selector: 'vcl-month-picker',
-                    templateUrl: 'month-picker.component.html',
-                    changeDetection: core_1.ChangeDetectionStrategy.OnPush
-                },] },
-    ];
-    /** @nocollapse */
-    MonthPickerComponent.ctorParameters = function () { return []; };
-    MonthPickerComponent.propDecorators = {
-        'expanded': [{ type: core_1.Input },],
-        'expandedChange': [{ type: core_1.Output },],
-        'currentYear': [{ type: core_1.Input },],
-        'currentYearChange': [{ type: core_1.Output },],
-        'prevYearBtnTap': [{ type: core_1.Output },],
-        'nextYearBtnTap': [{ type: core_1.Output },],
-        'select': [{ type: core_1.Output },],
-        'deselect': [{ type: core_1.Output },],
-        'colors': [{ type: core_1.Input },],
-        'tabindex': [{ type: core_1.Input },],
-        'monthsPerRow': [{ type: core_1.Input },],
-        'useShortNames': [{ type: core_1.Input },],
-        'useAvailableMonths': [{ type: core_1.Input },],
-        'expandable': [{ type: core_1.Input },],
-        'prevYearAvailable': [{ type: core_1.Input },],
-        'nextYearAvailable': [{ type: core_1.Input },],
-        'minYear': [{ type: core_1.Input },],
-        'maxYear': [{ type: core_1.Input },],
-        'closeBtnIcon': [{ type: core_1.Input },],
-        'prevYearBtnIcon': [{ type: core_1.Input },],
-        'nextYearBtnIcon': [{ type: core_1.Input },],
-        'maxSelectableItems': [{ type: core_1.Input },],
-        'minSelectableItems': [{ type: core_1.Input },],
-    };
     return MonthPickerComponent;
 }());
+MonthPickerComponent.TAG = 'MonthPickerComponent';
+MonthPickerComponent.monthNames = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+];
+MonthPickerComponent.monthNamesShort = MonthPickerComponent_1.monthNames.
+    map(function (name) { return name.substr(0, 3); });
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], MonthPickerComponent.prototype, "expanded", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", core_1.EventEmitter)
+], MonthPickerComponent.prototype, "expandedChange", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "currentYear", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", core_1.EventEmitter)
+], MonthPickerComponent.prototype, "currentYearChange", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], MonthPickerComponent.prototype, "prevYearBtnTap", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], MonthPickerComponent.prototype, "nextYearBtnTap", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], MonthPickerComponent.prototype, "select", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], MonthPickerComponent.prototype, "deselect", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Array)
+], MonthPickerComponent.prototype, "colors", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "tabindex", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "monthsPerRow", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], MonthPickerComponent.prototype, "useShortNames", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], MonthPickerComponent.prototype, "useAvailableMonths", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], MonthPickerComponent.prototype, "expandable", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], MonthPickerComponent.prototype, "prevYearAvailable", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], MonthPickerComponent.prototype, "nextYearAvailable", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "minYear", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "maxYear", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], MonthPickerComponent.prototype, "closeBtnIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], MonthPickerComponent.prototype, "prevYearBtnIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], MonthPickerComponent.prototype, "nextYearBtnIcon", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "maxSelectableItems", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], MonthPickerComponent.prototype, "minSelectableItems", void 0);
+MonthPickerComponent = MonthPickerComponent_1 = __decorate([
+    core_1.Component({
+        selector: 'vcl-month-picker',
+        templateUrl: 'month-picker.component.html',
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush
+    }),
+    __metadata("design:paramtypes", [])
+], MonthPickerComponent);
 exports.MonthPickerComponent = MonthPickerComponent;
+var MonthPickerComponent_1;
