@@ -1,6 +1,7 @@
 import { ControlValueAccessor } from '@angular/forms';
 export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any;
 export declare class SliderComponent implements ControlValueAccessor {
+    tabindex: number;
     value: number;
     min: number;
     max: number;
@@ -13,7 +14,7 @@ export declare class SliderComponent implements ControlValueAccessor {
     ngAfterContentInit(): void;
     percentLeftKnob: number;
     scalePoints: any[];
-    calculatePercentLeftKnob(): void;
+    calculatePercentLeftKnob(): number;
     percentToValue(per: number): number;
     getScalePoints(): void;
     closestScalePoint(percentValue: any): number;
@@ -23,6 +24,9 @@ export declare class SliderComponent implements ControlValueAccessor {
      * clicking the rail should also reposition the bar
      */
     onTap(event: any): void;
+    moveToPoint(direction?: 'left' | 'right'): void;
+    moveValue(direction?: 'left' | 'right'): void;
+    keydown(ev: any): void;
     lastPercentLeftKnob: number;
     firstPan: boolean;
     onPan(ev: any): void;

@@ -20,11 +20,11 @@ var CheckboxComponent = (function () {
     function CheckboxComponent(elementRef) {
         var _this = this;
         this.elementRef = elementRef;
+        this.tabindex = 0;
         this.checkedIcon = 'fa:check-square-o';
         this.uncheckedIcon = 'fa:square-o';
         this.disabled = false;
         this.labelPosition = 'right';
-        this.tabindex = 0;
         /**
         Reflects the checked state, `true` is checked and `false` is unchecked
         @public
@@ -116,6 +116,10 @@ var CheckboxComponent = (function () {
     return CheckboxComponent;
 }());
 __decorate([
+    core_1.HostBinding(),
+    __metadata("design:type", Object)
+], CheckboxComponent.prototype, "tabindex", void 0);
+__decorate([
     core_1.Input(),
     __metadata("design:type", String)
 ], CheckboxComponent.prototype, "checkedIcon", void 0);
@@ -131,10 +135,6 @@ __decorate([
     core_1.Input(),
     __metadata("design:type", String)
 ], CheckboxComponent.prototype, "labelPosition", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Number)
-], CheckboxComponent.prototype, "tabindex", void 0);
 __decorate([
     core_1.Input(),
     __metadata("design:type", Boolean)

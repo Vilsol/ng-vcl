@@ -17,6 +17,7 @@ exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
 };
 var SliderComponent = (function () {
     function SliderComponent() {
+        this.tabindex = 0;
         this.value = 0;
         this.stepsOnly = false;
         this.round = 0;
@@ -40,6 +41,7 @@ var SliderComponent = (function () {
         var valueLeft = this.value - this.min;
         var delta = rangeLength / valueLeft;
         this.percentLeftKnob = 100 / delta;
+        return this.percentLeftKnob;
     };
     SliderComponent.prototype.percentToValue = function (per) {
         var rangeLength = this.max - this.min;
@@ -99,6 +101,65 @@ var SliderComponent = (function () {
         this.value = this.percentToValue(this.percentLeftKnob);
         !!this.onChangeCallback && this.onChangeCallback(this.value);
     };
+    SliderComponent.prototype.moveToPoint = function (direction) {
+        if (direction === void 0) { direction = 'right'; }
+        var currentPointValue = this.closestScalePoint(this.calculatePercentLeftKnob());
+        var currentPoint = this.scalePoints
+            .find(function (p) { return p.percent == currentPointValue; });
+        var i = this.scalePoints.indexOf(currentPoint);
+        var nextPoint;
+        if (direction == 'right') {
+            var nextI = i + 1;
+            if (!this.scalePoints[nextI])
+                nextI = this.scalePoints.length - 1;
+            nextPoint = this.scalePoints[nextI];
+        }
+        else {
+            var nextI = i - 1;
+            if (nextI < 0)
+                nextI = 0;
+            nextPoint = this.scalePoints[nextI];
+        }
+        this.value = this.percentToValue(nextPoint.percent);
+        !!this.onChangeCallback && this.onChangeCallback(this.value);
+    };
+    SliderComponent.prototype.moveValue = function (direction) {
+        if (direction === void 0) { direction = 'right'; }
+        var newValue;
+        if (direction == 'right')
+            newValue = this.value + 1;
+        else
+            newValue = this.value - 1;
+        if (newValue < this.min)
+            newValue = this.min;
+        if (newValue > this.max)
+            newValue = this.max;
+        this.value = newValue;
+        this.calculatePercentLeftKnob();
+        !!this.onChangeCallback && this.onChangeCallback(this.value);
+    };
+    SliderComponent.prototype.keydown = function (ev) {
+        switch (ev.code) {
+            case 'ArrowLeft':
+                if (this.stepsOnly)
+                    this.moveToPoint('left');
+                else
+                    this.moveValue('left');
+                ev.preventDefault();
+                break;
+            case 'ArrowRight':
+                if (this.stepsOnly)
+                    this.moveToPoint('right');
+                else
+                    this.moveValue('right');
+                ev.preventDefault();
+                break;
+            case 'Space':
+                this.moveToPoint('right');
+                ev.preventDefault();
+                break;
+        }
+    };
     SliderComponent.prototype.onPan = function (ev) {
         if (this.firstPan) {
             this.firstPan = false;
@@ -131,6 +192,10 @@ var SliderComponent = (function () {
     };
     return SliderComponent;
 }());
+__decorate([
+    core_1.HostBinding(),
+    __metadata("design:type", Object)
+], SliderComponent.prototype, "tabindex", void 0);
 __decorate([
     core_1.Input('value'),
     __metadata("design:type", Number)
@@ -169,6 +234,12 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], SliderComponent.prototype, "onTap", null);
+__decorate([
+    core_1.HostListener('keydown', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], SliderComponent.prototype, "keydown", null);
 SliderComponent = __decorate([
     core_1.Component({
         selector: 'vcl-slider',

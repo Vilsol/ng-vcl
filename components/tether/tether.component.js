@@ -27,6 +27,9 @@ var TetherComponent = (function () {
     });
     TetherComponent.prototype.ngAfterViewInit = function () {
         try {
+            console.log(this.target);
+            var t = document.querySelector(this.target);
+            console.dir(t);
             this.tether = new Tether({
                 element: '#' + this.id,
                 target: this.target,
@@ -35,6 +38,7 @@ var TetherComponent = (function () {
             });
         }
         catch (ex) {
+            console.dir(ex);
             this._error.emit(ex);
         }
     };
@@ -42,9 +46,9 @@ var TetherComponent = (function () {
         try {
             if (this.tether) {
                 this.tether.destroy();
-                // Workaround for a special case when using position:relative 
+                // Workaround for a special case when using position:relative
                 // The target elements are removed from the DOM before tether.js is able to clean the tethered elements.
-                // This workaround removes them manually 
+                // This workaround removes them manually
                 var tether = this.tether;
                 var el = tether.element;
                 var target = tether.target;

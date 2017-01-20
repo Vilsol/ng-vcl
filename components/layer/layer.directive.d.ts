@@ -1,24 +1,25 @@
-import { LayerData } from './layer.directive';
-import { Observable } from 'rxjs/Observable';
-import { TemplateRef, ElementRef } from '@angular/core';
+import { TemplateRef, ChangeDetectorRef } from '@angular/core';
 import { TemplateWormhole } from './../../directives/wormhole/wormhole.module';
 import { LayerService } from './layer.service';
-import { LayerDirectiveReference } from './layer.references';
+import { LayerRef, LayerData } from './layer.references';
 export interface LayerData {
     [key: string]: any;
 }
-export declare class LayerDirective extends TemplateWormhole {
+export declare class DirectiveLayerRef extends LayerRef {
     templateRef: TemplateRef<any>;
-    private elementRef;
     private layerService;
+    private cdRef;
     modal: boolean;
-    closeOnOffClick: boolean;
+    offClickClose: boolean;
     base: string;
-    layerRef: LayerDirectiveReference;
-    constructor(templateRef: TemplateRef<any>, elementRef: ElementRef, layerService: LayerService);
+    transparent: boolean;
+    fill: boolean;
+    stickToBottom: boolean;
+    gutterPadding: boolean;
+    customClass: string;
+    constructor(templateRef: TemplateRef<any>, layerService: LayerService, cdRef: ChangeDetectorRef);
     ngOnInit(): void;
     ngOnDestroy(): void;
-    open(data?: LayerData): Observable<any>;
-    send(result: any): void;
-    close(result?: any): void;
+    createWormhole(): TemplateWormhole;
+    setData(data?: LayerData): void;
 }

@@ -4,11 +4,11 @@ import { ControlValueAccessor } from '@angular/forms';
 export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any;
 export declare class CheckboxComponent implements OnInit, OnChanges, ControlValueAccessor {
     private elementRef;
+    tabindex: number;
     checkedIcon: string;
     uncheckedIcon: string;
     disabled: boolean;
     labelPosition: 'left' | 'right';
-    tabindex: number;
     /**
     Reflects the checked state, `true` is checked and `false` is unchecked
     @public

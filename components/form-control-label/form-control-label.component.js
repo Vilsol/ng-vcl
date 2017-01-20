@@ -64,7 +64,6 @@ FormControlLabelComponent = __decorate([
             '[class.vclFormControlLabel]': 'true',
         },
         changeDetection: core_1.ChangeDetectionStrategy.OnPush
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], FormControlLabelComponent);
 exports.FormControlLabelComponent = FormControlLabelComponent;

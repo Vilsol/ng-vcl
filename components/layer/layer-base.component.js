@@ -8,21 +8,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+require("rxjs/operator/debounceTime");
 var core_1 = require("@angular/core");
 var layer_service_1 = require("./layer.service");
 var LayerBaseComponent = (function () {
     function LayerBaseComponent(layerService, cdRef) {
         this.layerService = layerService;
         this.cdRef = cdRef;
+        this.layerRefs = [];
         this.name = 'default';
         this.zIndex = 1000;
     }
     LayerBaseComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.layerService.registerBase(this);
-        this.sub = this.layerService.getVisibleLayersFor$(this.name).subscribe(function (layerRefs) {
+        this.sub = this.layerService
+            .visibleLayersChange$(this.name)
+            .debounceTime(1) // Minor debounce to avoid flashing when the layerRefs change shortly after each other
+            .subscribe(function (layerRefs) {
             _this.layerRefs = layerRefs;
-            _this.cdRef.detectChanges();
+            _this.cdRef.markForCheck();
         });
     };
     LayerBaseComponent.prototype.ngOnDestroy = function () {
@@ -33,8 +38,9 @@ var LayerBaseComponent = (function () {
         }
     };
     LayerBaseComponent.prototype.offClick = function (layerRef) {
-        if (!layerRef.modal && layerRef.closeOnOffClick) {
-            layerRef.close();
+        // Only the top layer may trigger an offClick
+        if (this.layerRefs.length > 0 && this.layerRefs[this.layerRefs.length - 1] === layerRef) {
+            layerRef.offClick();
         }
     };
     return LayerBaseComponent;
@@ -51,11 +57,11 @@ LayerBaseComponent = __decorate([
     core_1.Component({
         selector: 'vcl-layer-base',
         templateUrl: 'layer-base.component.html',
-        // changeDetection: ChangeDetectionStrategy.OnPush,
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
         animations: [
             core_1.trigger('boxState', []),
             core_1.trigger('layerState', [])
-        ]
+        ],
     }),
     __metadata("design:paramtypes", [layer_service_1.LayerService, core_1.ChangeDetectorRef])
 ], LayerBaseComponent);

@@ -76,7 +76,7 @@ exports.L10nStaticLoaderService = L10nStaticLoaderService;
 var L10nNoopLoaderService = (function (_super) {
     __extends(L10nNoopLoaderService, _super);
     function L10nNoopLoaderService() {
-        return _super.apply(this, arguments) || this;
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     L10nNoopLoaderService.prototype.getTranslationPackage = function (locale) {
         return Observable_1.Observable.of({});
@@ -84,7 +84,6 @@ var L10nNoopLoaderService = (function (_super) {
     return L10nNoopLoaderService;
 }(L10nLoaderService));
 L10nNoopLoaderService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [])
+    core_1.Injectable()
 ], L10nNoopLoaderService);
 exports.L10nNoopLoaderService = L10nNoopLoaderService;

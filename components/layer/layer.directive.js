@@ -16,56 +16,74 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var wormhole_module_1 = require("./../../directives/wormhole/wormhole.module");
 var layer_service_1 = require("./layer.service");
-var LayerDirective = (function (_super) {
-    __extends(LayerDirective, _super);
-    function LayerDirective(templateRef, elementRef, layerService) {
-        var _this = _super.call(this, templateRef) || this;
+var layer_references_1 = require("./layer.references");
+var DirectiveLayerRef = (function (_super) {
+    __extends(DirectiveLayerRef, _super);
+    function DirectiveLayerRef(templateRef, layerService, cdRef) {
+        var _this = _super.call(this) || this;
         _this.templateRef = templateRef;
-        _this.elementRef = elementRef;
         _this.layerService = layerService;
-        _this.modal = true;
-        _this.closeOnOffClick = true;
+        _this.cdRef = cdRef;
+        _this.modal = false;
+        _this.offClickClose = true;
         _this.base = 'default';
+        _this.transparent = false;
+        _this.fill = false;
+        _this.stickToBottom = false;
+        _this.gutterPadding = false;
+        _this.customClass = null;
         return _this;
     }
-    LayerDirective.prototype.ngOnInit = function () {
-        this.layerRef = this.layerService.registerDirective(this, {
-            base: this.base,
-            closeOnOffClick: !!this.closeOnOffClick,
-            modal: !!this.modal
-        });
+    DirectiveLayerRef.prototype.ngOnInit = function () {
+        this.layerService.register(this);
     };
-    LayerDirective.prototype.ngOnDestroy = function () {
-        this.layerService.unregisterDirective(this);
+    DirectiveLayerRef.prototype.ngOnDestroy = function () {
+        this.layerService.unregister(this);
     };
-    LayerDirective.prototype.open = function (data) {
-        return this.layerRef.open(data);
+    DirectiveLayerRef.prototype.createWormhole = function () {
+        return new wormhole_module_1.TemplateWormhole(this.templateRef);
     };
-    LayerDirective.prototype.send = function (result) {
-        this.layerRef.send(result);
+    DirectiveLayerRef.prototype.setData = function (data) {
     };
-    LayerDirective.prototype.close = function (result) {
-        this.layerRef.close();
-    };
-    return LayerDirective;
-}(wormhole_module_1.TemplateWormhole));
+    return DirectiveLayerRef;
+}(layer_references_1.LayerRef));
 __decorate([
     core_1.Input(),
     __metadata("design:type", Boolean)
-], LayerDirective.prototype, "modal", void 0);
+], DirectiveLayerRef.prototype, "modal", void 0);
 __decorate([
     core_1.Input(),
     __metadata("design:type", Boolean)
-], LayerDirective.prototype, "closeOnOffClick", void 0);
+], DirectiveLayerRef.prototype, "offClickClose", void 0);
 __decorate([
     core_1.Input(),
     __metadata("design:type", String)
-], LayerDirective.prototype, "base", void 0);
-LayerDirective = __decorate([
+], DirectiveLayerRef.prototype, "base", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], DirectiveLayerRef.prototype, "transparent", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], DirectiveLayerRef.prototype, "fill", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], DirectiveLayerRef.prototype, "stickToBottom", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], DirectiveLayerRef.prototype, "gutterPadding", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], DirectiveLayerRef.prototype, "customClass", void 0);
+DirectiveLayerRef = __decorate([
     core_1.Directive({
         selector: '[vcl-layer]',
         exportAs: 'layer',
     }),
-    __metadata("design:paramtypes", [core_1.TemplateRef, core_1.ElementRef, layer_service_1.LayerService])
-], LayerDirective);
-exports.LayerDirective = LayerDirective;
+    __metadata("design:paramtypes", [core_1.TemplateRef, layer_service_1.LayerService, core_1.ChangeDetectorRef])
+], DirectiveLayerRef);
+exports.DirectiveLayerRef = DirectiveLayerRef;

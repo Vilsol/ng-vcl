@@ -17,24 +17,6 @@ var core_1 = require("@angular/core");
 var Wormhole = (function () {
     function Wormhole() {
     }
-    Object.defineProperty(Wormhole.prototype, "isConnected", {
-        get: function () {
-            return !!this.bridge;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Wormhole.prototype.disconnect = function () {
-        this.detach();
-        this.bridge = null;
-    };
-    Wormhole.prototype.connect = function (bridge) {
-        if (this.bridge) {
-            this.disconnect();
-        }
-        this.bridge = bridge;
-        this.attach();
-    };
     return Wormhole;
 }());
 exports.Wormhole = Wormhole;
@@ -46,18 +28,27 @@ var TemplateWormhole = (function (_super) {
         _this.templateRef = templateRef;
         return _this;
     }
-    TemplateWormhole.prototype.attach = function () {
+    Object.defineProperty(TemplateWormhole.prototype, "isConnected", {
+        get: function () {
+            return !!(this.viewRef && this.viewContainerRef);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    TemplateWormhole.prototype.connect = function (viewContainerRef) {
         var _this = this;
-        this.viewRef = this.bridge.viewContainerRef.createEmbeddedView(this.templateRef);
+        this.disconnect();
+        this.viewContainerRef = viewContainerRef;
+        this.viewRef = this.viewContainerRef.createEmbeddedView(this.templateRef);
         this.viewRef.onDestroy(function () {
             _this.viewRef = null;
         });
     };
-    TemplateWormhole.prototype.detach = function () {
-        if (this.viewRef) {
-            var i = this.bridge.viewContainerRef.indexOf(this.viewRef);
+    TemplateWormhole.prototype.disconnect = function () {
+        if (this.isConnected) {
+            var i = this.viewContainerRef.indexOf(this.viewRef);
             if (i >= 0)
-                this.bridge.viewContainerRef.remove(i);
+                this.viewContainerRef.remove(i);
         }
     };
     return TemplateWormhole;
@@ -72,39 +63,71 @@ TemplateWormhole = __decorate([
 exports.TemplateWormhole = TemplateWormhole;
 var ComponentWormhole = (function (_super) {
     __extends(ComponentWormhole, _super);
-    function ComponentWormhole(componentClass, opts) {
-        if (opts === void 0) { opts = {}; }
+    function ComponentWormhole(componentClass, initialData) {
+        if (initialData === void 0) { initialData = {}; }
         var _this = _super.call(this) || this;
         _this.componentClass = componentClass;
-        _this.injector = opts.injector;
-        _this.data = opts.data;
+        _this.data = initialData;
         return _this;
     }
-    ComponentWormhole.prototype.attach = function () {
+    Object.defineProperty(ComponentWormhole.prototype, "isConnected", {
+        get: function () {
+            return !!(this.compRef && this.viewContainerRef);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ComponentWormhole.prototype.connect = function (viewContainerRef) {
+        this.destroyComponent();
+        this.viewContainerRef = viewContainerRef;
+        this.initializeComponent();
+    };
+    ComponentWormhole.prototype.disconnect = function () {
+        this.destroyComponent();
+    };
+    ComponentWormhole.prototype.initializeComponent = function () {
         var _this = this;
-        var viewContainerRef = this.bridge.viewContainerRef;
-        var componentFactory = this.bridge.componentFactoryResolver.resolveComponentFactory(this.componentClass);
-        this.compRef = viewContainerRef.createComponent(componentFactory, viewContainerRef.length, this.injector || viewContainerRef.parentInjector);
+        if (!this.injector) {
+            this.injector = this.createInjector();
+        }
+        if (!this.compFactory) {
+            var componentFactoryResolver = this.injector.get(core_1.ComponentFactoryResolver);
+            this.compFactory = componentFactoryResolver.resolveComponentFactory(this.componentClass);
+        }
+        this.destroyComponent();
+        this.compRef = this.viewContainerRef.createComponent(this.compFactory, this.viewContainerRef.length, this.injector);
         this.compRef.onDestroy(function () {
             _this.compRef = null;
         });
-        this.setData(this.data);
+        if (this.data && typeof this.data === 'object') {
+            Object.assign(this.compRef.instance, this.data);
+        }
+        this.compRef.changeDetectorRef.detectChanges();
     };
-    ComponentWormhole.prototype.detach = function () {
-        if (this.compRef) {
-            var i = this.bridge.viewContainerRef.indexOf(this.compRef.hostView);
+    ComponentWormhole.prototype.destroyComponent = function () {
+        if (this.isConnected) {
+            var i = this.viewContainerRef.indexOf(this.compRef.hostView);
             if (i >= 0)
-                this.bridge.viewContainerRef.remove(i);
+                this.viewContainerRef.remove(i);
         }
     };
+    ComponentWormhole.prototype.createInjector = function () {
+        return this.viewContainerRef.parentInjector;
+    };
     ComponentWormhole.prototype.setData = function (data) {
-        if (data && typeof data === 'object') {
-            if (this.compRef && !this.compRef.hostView.destroyed) {
-                Object.assign(this.compRef.instance, data);
-                this.compRef.changeDetectorRef.detectChanges();
+        this.data = data;
+        if (this.isConnected && this.data && typeof this.data === 'object') {
+            // TODO: Change detection is not triggering
+            // this.compRef.changeDetectorRef.markForCheck();
+            // this.compRef.changeDetectorRef.detectChanges();
+            // Workaround
+            // if call markForCheck on component instance or reinitialize component
+            if (this.compRef.instance.markForCheck) {
+                Object.assign(this.compRef.instance, this.data);
+                this.compRef.instance.markForCheck();
             }
             else {
-                this.data = data;
+                this.initializeComponent();
             }
         }
     };
@@ -112,54 +135,42 @@ var ComponentWormhole = (function (_super) {
 }(Wormhole));
 exports.ComponentWormhole = ComponentWormhole;
 var ConnectWormholeDirective = (function () {
-    function ConnectWormholeDirective(viewContainerRef, componentFactoryResolver) {
+    function ConnectWormholeDirective(viewContainerRef) {
         this.viewContainerRef = viewContainerRef;
-        this.componentFactoryResolver = componentFactoryResolver;
-        // TODO: workaround. Does not disconnect the view when destroying the element when true
-        // ngOnDestroy is called before the animations are fully traversed. This would remove the wormhole's ContentChild
-        // before its host is removed from the DOM
-        this.indisposable = false;
     }
-    Object.defineProperty(ConnectWormholeDirective.prototype, "isConnected", {
+    Object.defineProperty(ConnectWormholeDirective.prototype, "isAttached", {
         get: function () {
-            return !!this.connectedWormhole;
+            return !!this.wormhole;
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(ConnectWormholeDirective.prototype, "connectWormhole", {
         set: function (wormhole) {
-            if (this.isConnected) {
-                this.disconnect();
+            if (this.isAttached) {
+                this.detach();
             }
-            if (wormhole) {
-                this.connect(wormhole);
-                this.wormhole = wormhole;
-            }
+            this.attach(wormhole);
         },
         enumerable: true,
         configurable: true
     });
-    ConnectWormholeDirective.prototype.connect = function (wormhole) {
-        this.connectedWormhole = wormhole;
-        wormhole.connect(this);
+    ConnectWormholeDirective.prototype.attach = function (wormhole) {
+        this.wormhole = wormhole;
+        wormhole.connect(this.viewContainerRef);
     };
-    ConnectWormholeDirective.prototype.disconnect = function () {
-        if (this.connectedWormhole) {
-            this.connectedWormhole.disconnect();
+    ConnectWormholeDirective.prototype.detach = function () {
+        if (this.isAttached) {
+            this.wormhole.disconnect();
         }
     };
     ConnectWormholeDirective.prototype.ngOnDestroy = function () {
-        if (this.isConnected && !this.indisposable) {
-            this.disconnect();
+        if (this.isAttached) {
+            this.detach();
         }
     };
     return ConnectWormholeDirective;
 }());
-__decorate([
-    core_1.Input('wormholeIndisposable'),
-    __metadata("design:type", Boolean)
-], ConnectWormholeDirective.prototype, "indisposable", void 0);
 __decorate([
     core_1.Input('connectWormhole'),
     __metadata("design:type", Wormhole),
@@ -169,6 +180,6 @@ ConnectWormholeDirective = __decorate([
     core_1.Directive({
         selector: '[connectWormhole]'
     }),
-    __metadata("design:paramtypes", [core_1.ViewContainerRef, core_1.ComponentFactoryResolver])
+    __metadata("design:paramtypes", [core_1.ViewContainerRef])
 ], ConnectWormholeDirective);
 exports.ConnectWormholeDirective = ConnectWormholeDirective;

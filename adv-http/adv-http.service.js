@@ -133,8 +133,7 @@ var ErrorHandlerService = (function () {
     return ErrorHandlerService;
 }());
 ErrorHandlerService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [])
+    core_1.Injectable()
 ], ErrorHandlerService);
 exports.ErrorHandlerService = ErrorHandlerService;
 var AdvHttp = (function (_super) {

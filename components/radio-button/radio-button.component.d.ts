@@ -18,7 +18,7 @@ export declare class RadioButtonComponent implements OnInit, OnChanges, ControlV
     readonly clsVclDisabled: boolean;
     readonly attrAriaDisabled: boolean;
     readonly attrChecked: boolean;
-    onKeyup(e: any): void;
+    keydown(ev: any): void;
     onClick(e: any): void;
     triggerChangeAction(e: any): void;
     focusMaintenance(checked: boolean): void;

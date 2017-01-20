@@ -22,7 +22,7 @@ export declare class ButtonComponent extends ObservableComponent {
     title: string;
     disabled: boolean;
     disableA11yClick: boolean;
-    readonly isDisabled: boolean;
+    readonly isDisabled: boolean | null;
     busy: boolean;
     flexLabel: boolean;
     busyLabel: string;

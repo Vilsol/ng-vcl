@@ -1,6 +1,7 @@
 import 'hammerjs';
 export * from './core/index';
 export * from './components/input/input.module';
+export * from './components/file-input/file-input.module';
 export * from './components/textarea/textarea.module';
 export * from './components/icon/icon.module';
 export * from './components/icogram/icogram.module';
@@ -26,6 +27,9 @@ export * from './components/token/token.module';
 export * from './components/slider/slider.module';
 export * from './components/jss-form/jss-form.module';
 export * from './components/input-control-group/input-control-group.module';
+export * from './components/alert/alert.module';
+export * from './components/busy/busy.module';
+export * from './components/growl/growl.module';
 export * from './directives/off-click/off-click.module';
 export * from './directives/wormhole/wormhole.module';
 export * from './l10n/l10n.module';

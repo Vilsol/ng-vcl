@@ -70,9 +70,11 @@ var RadioButtonComponent = (function () {
         enumerable: true,
         configurable: true
     });
-    RadioButtonComponent.prototype.onKeyup = function (e) {
-        if (e.keyCode === 32) {
-            return this.triggerChangeAction(e);
+    RadioButtonComponent.prototype.keydown = function (ev) {
+        switch (ev.code) {
+            case 'Space':
+                this.triggerChangeAction(ev);
+                break;
         }
     };
     RadioButtonComponent.prototype.onClick = function (e) {
@@ -129,8 +131,7 @@ __decorate([
     __metadata("design:type", String)
 ], RadioButtonComponent.prototype, "labelPosition", void 0);
 __decorate([
-    core_1.HostBinding('attr.tabindex'),
-    core_1.Input(),
+    core_1.HostBinding(),
     __metadata("design:type", Object)
 ], RadioButtonComponent.prototype, "tabindex", void 0);
 __decorate([
@@ -162,11 +163,11 @@ __decorate([
     __metadata("design:paramtypes", [])
 ], RadioButtonComponent.prototype, "attrChecked", null);
 __decorate([
-    core_1.HostListener('keyup', ['$event']),
+    core_1.HostListener('keydown', ['$event']),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
-], RadioButtonComponent.prototype, "onKeyup", null);
+], RadioButtonComponent.prototype, "keydown", null);
 __decorate([
     core_1.HostListener('click', ['$event']),
     __metadata("design:type", Function),

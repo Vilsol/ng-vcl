@@ -1,11 +1,28 @@
 <div
-  [attr.id]="popoverTarget"
-  (tap)="expand()"
+  #select
   [attr.aria-autocomplete]="list"
-  class="vclLayoutHorizontal vclSelect vclInputGroupEmb">
+  class="vclLayoutHorizontal vclSelect vclInputGroupEmb"
+  [style.marginBottom]="0"
+  >
 
-  <div class="vclInput" readonly>
+  <div class="vclInput" readonly *ngIf="!displayValueTokens()">
     {{displayValue}}
+  </div>
+
+  <div class="vclInput vclTokenInput vclLayoutHorizontal vclLayoutWrap" readonly *ngIf="displayValueTokens()">
+    <div class="vclTokenContainer">
+      <ng-container *ngFor="let item of dropdown.items">
+        <div *ngIf="item.selected" class="vclToken">
+          <span class="vclTokenLabel">{{item.label}}</span>
+          <button type="button" tabindex="-1" touch-action="none" aria-label="Remove" title="Remove"
+          class="vclTransparent vclButton">
+            <div class="vclIcogram" (click)="unselectItem(item)">
+              <span role="img" class="vclIcon fa fa-remove"></span>
+            </div>
+          </button>
+        </div>
+      </ng-container>
+    </div>
   </div>
 
   <button vcl-button
@@ -15,17 +32,14 @@
   </button>
 </div>
 
-<vcl-popover
-  [target]="'#' + popoverTarget"
-  targetAttachment='bottom left'
-  attachment='top left'
-  [(open)]="expanded">
-  <vcl-dropdown #dropdown
+<vcl-dropdown #dropdown
     [(expanded)]="expanded"
     [items]="items"
     (change)="onSelect($event)"
     [minSelectableItems]="minSelectableItems"
     [maxSelectableItems]="maxSelectableItems"
-    [tabindex]="0">
-  </vcl-dropdown>
-</vcl-popover>
+    tabindex="-1"
+    [style.position]="'relative'"
+    [style.top.px]="dropdownTop"
+    >
+</vcl-dropdown>

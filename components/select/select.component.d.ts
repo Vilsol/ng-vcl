@@ -1,4 +1,5 @@
-import { EventEmitter, QueryList, ElementRef, OnInit } from '@angular/core';
+/// <reference types="core-js" />
+import { EventEmitter, QueryList, ElementRef, OnInit, NgZone } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 /**
  * see
@@ -23,9 +24,11 @@ export declare class SelectOptionComponent implements OnInit {
 }
 export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any;
 export declare class SelectComponent implements ControlValueAccessor {
-    popoverTarget: string;
+    private zone;
+    tabindex: number;
     dropdown: any;
-    value: string | string[];
+    select: any;
+    value: any;
     expanded: boolean;
     items: any[];
     templateItems: QueryList<SelectOptionComponent>;
@@ -33,14 +36,26 @@ export declare class SelectComponent implements ControlValueAccessor {
     maxSelectableItems: number;
     expandedIcon: string;
     collapsedIcon: string;
-    displayValue: string;
+    displayValue: string | string[];
     changeEE: EventEmitter<string | string[]>;
-    constructor();
-    expand: () => boolean;
-    onOutsideClick: () => boolean;
+    me: ElementRef;
+    constructor(me: ElementRef, zone: NgZone);
+    expand(): void;
+    keydown(ev: any): void;
+    doTap(ev: any): void;
+    onFocus(event?: any): Promise<void>;
+    onBlur(event?: any): void;
     ngOnInit(): void;
     ngAfterContentInit(): void;
+    dropdownTop: number;
+    dropDirection: 'top' | 'bottom';
+    /**
+     * calculate if the dropdown should be displayed above or under the select-input
+     */
+    calculateDropDirection(): Promise<void>;
     reDisplayValue(newValue: any): void;
+    unselectItem(item: any): void;
+    displayValueTokens(): boolean;
     selectItem(item: any): void;
     onSelect(newValue: any[]): void;
     /**

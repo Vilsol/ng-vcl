@@ -332,8 +332,7 @@ MonthPickerComponent = MonthPickerComponent_1 = __decorate([
         selector: 'vcl-month-picker',
         templateUrl: 'month-picker.component.html',
         changeDetection: core_1.ChangeDetectionStrategy.OnPush
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], MonthPickerComponent);
 exports.MonthPickerComponent = MonthPickerComponent;
 var MonthPickerComponent_1;

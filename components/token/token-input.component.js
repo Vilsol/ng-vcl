@@ -57,7 +57,6 @@ TokenInputComponent = __decorate([
             '[class.vclTokenInput]': 'true'
         },
         providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR2]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], TokenInputComponent);
 exports.TokenInputComponent = TokenInputComponent;

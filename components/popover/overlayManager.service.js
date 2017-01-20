@@ -15,6 +15,9 @@ var OverlayManagerService = (function () {
     }
     OverlayManagerService.prototype.register = function (component) {
         var zIndex = 100;
+        // this.components
+        // .filter(component => component.zIndex >= zIndex)
+        // .forEach(component => zIndex=component.zIndex);
         for (var i = 0; i < this.components.length; i++) {
             if (this.components[i].zIndex >= zIndex) {
                 zIndex = this.components[i].zIndex;

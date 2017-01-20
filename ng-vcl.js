@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("jsonschema"), require("hammerjs"), require("tether"), require("rxjs/add/operator/catch"), require("rxjs/add/operator/combineLatest"), require("rxjs/add/operator/distinctUntilChanged"), require("rxjs/add/operator/filter"), require("rxjs/add/operator/let"), require("rxjs/add/operator/map"), require("rxjs/add/operator/pluck"), require("rxjs/add/operator/publish"), require("rxjs/add/operator/publishBehavior"), require("rxjs/add/operator/publishReplay"), require("rxjs/add/operator/retryWhen"), require("rxjs/add/operator/scan"), require("rxjs/add/operator/switchMap"), require("rxjs/add/operator/withLatestFrom"), require("rxjs/add/observable/combineLatest"), require("rxjs/add/observable/of"), require("rxjs/add/observable/throw"), require("rxjs/BehaviorSubject"), require("rxjs/Observable"), require("rxjs/ReplaySubject"), require("rxjs/Subject"), require("rxjs/observable/merge"), require("@angular/common"), require("@angular/core"), require("@angular/forms"), require("@angular/http"), require("@angular/router"));
+		module.exports = factory(require("@angular/core"), require("@angular/common"), require("@angular/forms"), require("rxjs/Observable"), require("rxjs/Subject"), require("rxjs/add/operator/map"), require("rxjs/BehaviorSubject"), require("rxjs/add/operator/filter"), require("rxjs/add/operator/distinctUntilChanged"), require("rxjs/add/operator/publishReplay"), require("rxjs/observable/merge"), require("@angular/http"), require("@angular/router"), require("hammerjs"), require("jsonschema"), require("tether"), require("rxjs/add/operator/catch"), require("rxjs/add/operator/combineLatest"), require("rxjs/add/operator/let"), require("rxjs/add/operator/pluck"), require("rxjs/add/operator/publish"), require("rxjs/add/operator/publishBehavior"), require("rxjs/add/operator/retryWhen"), require("rxjs/add/operator/scan"), require("rxjs/add/operator/switchMap"), require("rxjs/add/operator/withLatestFrom"), require("rxjs/add/observable/combineLatest"), require("rxjs/add/observable/of"), require("rxjs/add/observable/throw"), require("rxjs/ReplaySubject"), require("rxjs/observable/timer"), require("rxjs/operator/debounceTime"), require("rxjs/operator/distinctUntilChanged"), require("rxjs/operator/filter"), require("rxjs/operator/first"), require("rxjs/operator/map"));
 	else if(typeof define === 'function' && define.amd)
-		define(["jsonschema", "hammerjs", "tether", "rxjs/add/operator/catch", "rxjs/add/operator/combineLatest", "rxjs/add/operator/distinctUntilChanged", "rxjs/add/operator/filter", "rxjs/add/operator/let", "rxjs/add/operator/map", "rxjs/add/operator/pluck", "rxjs/add/operator/publish", "rxjs/add/operator/publishBehavior", "rxjs/add/operator/publishReplay", "rxjs/add/operator/retryWhen", "rxjs/add/operator/scan", "rxjs/add/operator/switchMap", "rxjs/add/operator/withLatestFrom", "rxjs/add/observable/combineLatest", "rxjs/add/observable/of", "rxjs/add/observable/throw", "rxjs/BehaviorSubject", "rxjs/Observable", "rxjs/ReplaySubject", "rxjs/Subject", "rxjs/observable/merge", "@angular/common", "@angular/core", "@angular/forms", "@angular/http", "@angular/router"], factory);
+		define(["@angular/core", "@angular/common", "@angular/forms", "rxjs/Observable", "rxjs/Subject", "rxjs/add/operator/map", "rxjs/BehaviorSubject", "rxjs/add/operator/filter", "rxjs/add/operator/distinctUntilChanged", "rxjs/add/operator/publishReplay", "rxjs/observable/merge", "@angular/http", "@angular/router", "hammerjs", "jsonschema", "tether", "rxjs/add/operator/catch", "rxjs/add/operator/combineLatest", "rxjs/add/operator/let", "rxjs/add/operator/pluck", "rxjs/add/operator/publish", "rxjs/add/operator/publishBehavior", "rxjs/add/operator/retryWhen", "rxjs/add/operator/scan", "rxjs/add/operator/switchMap", "rxjs/add/operator/withLatestFrom", "rxjs/add/observable/combineLatest", "rxjs/add/observable/of", "rxjs/add/observable/throw", "rxjs/ReplaySubject", "rxjs/observable/timer", "rxjs/operator/debounceTime", "rxjs/operator/distinctUntilChanged", "rxjs/operator/filter", "rxjs/operator/first", "rxjs/operator/map"], factory);
 	else if(typeof exports === 'object')
-		exports["NgVCL"] = factory(require("jsonschema"), require("hammerjs"), require("tether"), require("rxjs/add/operator/catch"), require("rxjs/add/operator/combineLatest"), require("rxjs/add/operator/distinctUntilChanged"), require("rxjs/add/operator/filter"), require("rxjs/add/operator/let"), require("rxjs/add/operator/map"), require("rxjs/add/operator/pluck"), require("rxjs/add/operator/publish"), require("rxjs/add/operator/publishBehavior"), require("rxjs/add/operator/publishReplay"), require("rxjs/add/operator/retryWhen"), require("rxjs/add/operator/scan"), require("rxjs/add/operator/switchMap"), require("rxjs/add/operator/withLatestFrom"), require("rxjs/add/observable/combineLatest"), require("rxjs/add/observable/of"), require("rxjs/add/observable/throw"), require("rxjs/BehaviorSubject"), require("rxjs/Observable"), require("rxjs/ReplaySubject"), require("rxjs/Subject"), require("rxjs/observable/merge"), require("@angular/common"), require("@angular/core"), require("@angular/forms"), require("@angular/http"), require("@angular/router"));
+		exports["NgVCL"] = factory(require("@angular/core"), require("@angular/common"), require("@angular/forms"), require("rxjs/Observable"), require("rxjs/Subject"), require("rxjs/add/operator/map"), require("rxjs/BehaviorSubject"), require("rxjs/add/operator/filter"), require("rxjs/add/operator/distinctUntilChanged"), require("rxjs/add/operator/publishReplay"), require("rxjs/observable/merge"), require("@angular/http"), require("@angular/router"), require("hammerjs"), require("jsonschema"), require("tether"), require("rxjs/add/operator/catch"), require("rxjs/add/operator/combineLatest"), require("rxjs/add/operator/let"), require("rxjs/add/operator/pluck"), require("rxjs/add/operator/publish"), require("rxjs/add/operator/publishBehavior"), require("rxjs/add/operator/retryWhen"), require("rxjs/add/operator/scan"), require("rxjs/add/operator/switchMap"), require("rxjs/add/operator/withLatestFrom"), require("rxjs/add/observable/combineLatest"), require("rxjs/add/observable/of"), require("rxjs/add/observable/throw"), require("rxjs/ReplaySubject"), require("rxjs/observable/timer"), require("rxjs/operator/debounceTime"), require("rxjs/operator/distinctUntilChanged"), require("rxjs/operator/filter"), require("rxjs/operator/first"), require("rxjs/operator/map"));
 	else
-		root["NgVCL"] = factory(root[undefined], root["Hammer"], root["Tether"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"], root["Rx"]["Observable"], root["Rx"]["Observable"], root["Rx"], root["Rx"], root["Rx"], root["Rx"], root["Rx"], root["ng"]["common"], root["ng"]["core"], root["ng"]["forms"], root["ng"]["http"], root["ng"]["router"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_480__, __WEBPACK_EXTERNAL_MODULE_132__, __WEBPACK_EXTERNAL_MODULE_481__, __WEBPACK_EXTERNAL_MODULE_482__, __WEBPACK_EXTERNAL_MODULE_483__, __WEBPACK_EXTERNAL_MODULE_124__, __WEBPACK_EXTERNAL_MODULE_84__, __WEBPACK_EXTERNAL_MODULE_484__, __WEBPACK_EXTERNAL_MODULE_50__, __WEBPACK_EXTERNAL_MODULE_485__, __WEBPACK_EXTERNAL_MODULE_486__, __WEBPACK_EXTERNAL_MODULE_487__, __WEBPACK_EXTERNAL_MODULE_125__, __WEBPACK_EXTERNAL_MODULE_488__, __WEBPACK_EXTERNAL_MODULE_489__, __WEBPACK_EXTERNAL_MODULE_490__, __WEBPACK_EXTERNAL_MODULE_491__, __WEBPACK_EXTERNAL_MODULE_492__, __WEBPACK_EXTERNAL_MODULE_493__, __WEBPACK_EXTERNAL_MODULE_494__, __WEBPACK_EXTERNAL_MODULE_126__, __WEBPACK_EXTERNAL_MODULE_13__, __WEBPACK_EXTERNAL_MODULE_495__, __WEBPACK_EXTERNAL_MODULE_51__, __WEBPACK_EXTERNAL_MODULE_496__, __WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_10__, __WEBPACK_EXTERNAL_MODULE_127__, __WEBPACK_EXTERNAL_MODULE_128__) {
+		root["NgVCL"] = factory(root["ng"]["core"], root["ng"]["common"], root["ng"]["forms"], root["Rx"], root["Rx"], root["Rx"]["Observable"]["prototype"], root["Rx"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"], root["ng"]["http"], root["ng"]["router"], root["Hammer"], root[undefined], root["Tether"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"]["prototype"], root["Rx"]["Observable"], root["Rx"]["Observable"], root["Rx"]["Observable"], root["Rx"], root["Rx"], root["Rx"], root["Rx"], root["Rx"], root["Rx"], root["Rx"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_5__, __WEBPACK_EXTERNAL_MODULE_7__, __WEBPACK_EXTERNAL_MODULE_13__, __WEBPACK_EXTERNAL_MODULE_27__, __WEBPACK_EXTERNAL_MODULE_53__, __WEBPACK_EXTERNAL_MODULE_54__, __WEBPACK_EXTERNAL_MODULE_91__, __WEBPACK_EXTERNAL_MODULE_135__, __WEBPACK_EXTERNAL_MODULE_136__, __WEBPACK_EXTERNAL_MODULE_137__, __WEBPACK_EXTERNAL_MODULE_138__, __WEBPACK_EXTERNAL_MODULE_139__, __WEBPACK_EXTERNAL_MODULE_143__, __WEBPACK_EXTERNAL_MODULE_503__, __WEBPACK_EXTERNAL_MODULE_504__, __WEBPACK_EXTERNAL_MODULE_505__, __WEBPACK_EXTERNAL_MODULE_506__, __WEBPACK_EXTERNAL_MODULE_507__, __WEBPACK_EXTERNAL_MODULE_508__, __WEBPACK_EXTERNAL_MODULE_509__, __WEBPACK_EXTERNAL_MODULE_510__, __WEBPACK_EXTERNAL_MODULE_511__, __WEBPACK_EXTERNAL_MODULE_512__, __WEBPACK_EXTERNAL_MODULE_513__, __WEBPACK_EXTERNAL_MODULE_514__, __WEBPACK_EXTERNAL_MODULE_515__, __WEBPACK_EXTERNAL_MODULE_516__, __WEBPACK_EXTERNAL_MODULE_517__, __WEBPACK_EXTERNAL_MODULE_518__, __WEBPACK_EXTERNAL_MODULE_519__, __WEBPACK_EXTERNAL_MODULE_520__, __WEBPACK_EXTERNAL_MODULE_521__, __WEBPACK_EXTERNAL_MODULE_522__, __WEBPACK_EXTERNAL_MODULE_523__, __WEBPACK_EXTERNAL_MODULE_524__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -43,16 +43,18 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
 /******/
-/******/ 	// identity function for calling harmory imports with the correct context
+/******/ 	// identity function for calling harmony imports with the correct context
 /******/ 	__webpack_require__.i = function(value) { return value; };
 /******/
-/******/ 	// define getter function for harmory exports
+/******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		Object.defineProperty(exports, name, {
-/******/ 			configurable: false,
-/******/ 			enumerable: true,
-/******/ 			get: getter
-/******/ 		});
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
 /******/ 	};
 /******/
 /******/ 	// getDefaultExport function for compatibility with non-harmony modules
@@ -71,18 +73,18 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 497);
+/******/ 	return __webpack_require__(__webpack_require__.s = 525);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var root_1 = __webpack_require__(11);
-var toSubscriber_1 = __webpack_require__(478);
-var observable_1 = __webpack_require__(43);
+var toSubscriber_1 = __webpack_require__(501);
+var observable_1 = __webpack_require__(47);
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
  * of RxJS.
@@ -209,27 +211,27 @@ var Observable = (function () {
 exports.Observable = Observable;
 //# sourceMappingURL=Observable.js.map
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_1__;
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isFunction_1 = __webpack_require__(82);
-var Subscription_1 = __webpack_require__(7);
-var Observer_1 = __webpack_require__(97);
-var rxSubscriber_1 = __webpack_require__(44);
+var isFunction_1 = __webpack_require__(89);
+var Subscription_1 = __webpack_require__(8);
+var Observer_1 = __webpack_require__(106);
+var rxSubscriber_1 = __webpack_require__(48);
 /**
  * Implements the {@link Observer} interface and extends the
  * {@link Subscription} class. While the {@link Observer} is the public API for
@@ -470,12 +472,12 @@ var SafeSubscriber = (function (_super) {
 }(Subscriber));
 //# sourceMappingURL=Subscriber.js.map
 
-/***/ },
+/***/ }),
 /* 3 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -506,20 +508,20 @@ var OuterSubscriber = (function (_super) {
 exports.OuterSubscriber = OuterSubscriber;
 //# sourceMappingURL=OuterSubscriber.js.map
 
-/***/ },
+/***/ }),
 /* 4 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var root_1 = __webpack_require__(11);
 var isArray_1 = __webpack_require__(15);
-var isPromise_1 = __webpack_require__(122);
-var isObject_1 = __webpack_require__(121);
+var isPromise_1 = __webpack_require__(131);
+var isObject_1 = __webpack_require__(130);
 var Observable_1 = __webpack_require__(0);
-var iterator_1 = __webpack_require__(29);
-var InnerSubscriber_1 = __webpack_require__(204);
-var observable_1 = __webpack_require__(43);
+var iterator_1 = __webpack_require__(31);
+var InnerSubscriber_1 = __webpack_require__(227);
+var observable_1 = __webpack_require__(47);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
     if (destination.closed) {
@@ -590,38 +592,35 @@ function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
 exports.subscribeToResult = subscribeToResult;
 //# sourceMappingURL=subscribeToResult.js.map
 
-/***/ },
+/***/ }),
 /* 5 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_5__;
 
-/***/ },
+/***/ }),
 /* 6 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
-var l10n_loader_service_1 = __webpack_require__(70);
-var l10n_parser_service_1 = __webpack_require__(71);
-var l10n_service_1 = __webpack_require__(72);
-var l10n_pipe_1 = __webpack_require__(170);
-var l10n_loader_service_2 = __webpack_require__(70);
+var l10n_loader_service_1 = __webpack_require__(77);
+var l10n_parser_service_1 = __webpack_require__(78);
+var l10n_service_1 = __webpack_require__(79);
+var l10n_pipe_1 = __webpack_require__(188);
+var l10n_loader_service_2 = __webpack_require__(77);
 exports.L10nNoopLoaderService = l10n_loader_service_2.L10nNoopLoaderService;
 exports.L10nStaticLoaderService = l10n_loader_service_2.L10nStaticLoaderService;
-var l10n_parser_service_2 = __webpack_require__(71);
+var l10n_parser_service_2 = __webpack_require__(78);
 exports.L10nFormatParserService = l10n_parser_service_2.L10nFormatParserService;
-var l10n_service_2 = __webpack_require__(72);
+var l10n_service_2 = __webpack_require__(79);
 exports.L10nService = l10n_service_2.L10nService;
 var L10nModule = L10nModule_1 = (function () {
     function L10nModule() {
@@ -680,30 +679,35 @@ L10nModule = L10nModule_1 = __decorate([
                 useClass: l10n_parser_service_1.L10nFormatParserService
             }
         ]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], L10nModule);
 exports.L10nModule = L10nModule;
 var L10nModule_1;
 
 
-/***/ },
+/***/ }),
 /* 7 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_7__;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var isArray_1 = __webpack_require__(15);
-var isObject_1 = __webpack_require__(121);
-var isFunction_1 = __webpack_require__(82);
+var isObject_1 = __webpack_require__(130);
+var isFunction_1 = __webpack_require__(89);
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
-var UnsubscriptionError_1 = __webpack_require__(119);
+var errorObject_1 = __webpack_require__(10);
+var UnsubscriptionError_1 = __webpack_require__(128);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -871,12 +875,12 @@ function flattenUnsubscriptionErrors(errors) {
 }
 //# sourceMappingURL=Subscription.js.map
 
-/***/ },
-/* 8 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -884,10 +888,10 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(0);
 var Subscriber_1 = __webpack_require__(2);
-var Subscription_1 = __webpack_require__(7);
-var ObjectUnsubscribedError_1 = __webpack_require__(47);
-var SubjectSubscription_1 = __webpack_require__(98);
-var rxSubscriber_1 = __webpack_require__(44);
+var Subscription_1 = __webpack_require__(8);
+var ObjectUnsubscribedError_1 = __webpack_require__(51);
+var SubjectSubscription_1 = __webpack_require__(107);
+var rxSubscriber_1 = __webpack_require__(48);
 /**
  * @class SubjectSubscriber<T>
  */
@@ -1037,28 +1041,22 @@ var AnonymousSubject = (function (_super) {
 exports.AnonymousSubject = AnonymousSubject;
 //# sourceMappingURL=Subject.js.map
 
-/***/ },
-/* 9 */
-/***/ function(module, exports) {
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 // typeof any so that it we don't have to cast when comparing a result to the error object
 exports.errorObject = { e: {} };
 //# sourceMappingURL=errorObject.js.map
 
-/***/ },
-/* 10 */
-/***/ function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_10__;
-
-/***/ },
+/***/ }),
 /* 11 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {
 /**
  * window: browser in DOM main thread
  * self: browser in WebWorker
@@ -1071,15 +1069,15 @@ if (!exports.root) {
     throw new Error('RxJS could not find any global context (window, self, global)');
 }
 //# sourceMappingURL=root.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(479)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(134)))
 
-/***/ },
+/***/ }),
 /* 12 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var errorObject_1 = __webpack_require__(9);
+
+var errorObject_1 = __webpack_require__(10);
 var tryCatchTarget;
 function tryCatcher() {
     try {
@@ -1098,47 +1096,80 @@ exports.tryCatch = tryCatch;
 ;
 //# sourceMappingURL=tryCatch.js.map
 
-/***/ },
+/***/ }),
 /* 13 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
 module.exports = __WEBPACK_EXTERNAL_MODULE_13__;
 
-/***/ },
+/***/ }),
 /* 14 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var AsyncAction_1 = __webpack_require__(27);
-var AsyncScheduler_1 = __webpack_require__(28);
+
+var AsyncAction_1 = __webpack_require__(29);
+var AsyncScheduler_1 = __webpack_require__(30);
 exports.async = new AsyncScheduler_1.AsyncScheduler(AsyncAction_1.AsyncAction);
 //# sourceMappingURL=async.js.map
 
-/***/ },
+/***/ }),
 /* 15 */
-/***/ function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 exports.isArray = Array.isArray || (function (x) { return x && typeof x.length === 'number'; });
 //# sourceMappingURL=isArray.js.map
 
-/***/ },
+/***/ }),
 /* 16 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var core_1 = __webpack_require__(1);
+var common_1 = __webpack_require__(5);
+var button_component_1 = __webpack_require__(96);
+var icogram_module_1 = __webpack_require__(24);
+var l10n_module_1 = __webpack_require__(6);
+var VCLButtonModule = (function () {
+    function VCLButtonModule() {
+    }
+    return VCLButtonModule;
+}());
+VCLButtonModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, icogram_module_1.VCLIcogramModule, l10n_module_1.L10nModule],
+        exports: [button_component_1.ButtonComponent, button_component_1.ButtonContentDirective],
+        declarations: [button_component_1.ButtonComponent, button_component_1.ButtonContentDirective],
+        providers: [],
+    })
+], VCLButtonModule);
+exports.VCLButtonModule = VCLButtonModule;
+
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var ScalarObservable_1 = __webpack_require__(75);
-var EmptyObservable_1 = __webpack_require__(19);
-var isScheduler_1 = __webpack_require__(20);
+var ScalarObservable_1 = __webpack_require__(82);
+var EmptyObservable_1 = __webpack_require__(21);
+var isScheduler_1 = __webpack_require__(22);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -1252,26 +1283,23 @@ var ArrayObservable = (function (_super) {
 exports.ArrayObservable = ArrayObservable;
 //# sourceMappingURL=ArrayObservable.js.map
 
-/***/ },
-/* 17 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var icon_component_1 = __webpack_require__(142);
+var icon_component_1 = __webpack_require__(158);
 exports.IconComponent = icon_component_1.IconComponent;
-var icon_service_1 = __webpack_require__(89);
+var icon_service_1 = __webpack_require__(100);
 exports.IconService = icon_service_1.IconService;
 var l10n_module_1 = __webpack_require__(6);
 var VCLIconModule = VCLIconModule_1 = (function () {
@@ -1296,35 +1324,114 @@ VCLIconModule = VCLIconModule_1 = __decorate([
         exports: [icon_component_1.IconComponent],
         declarations: [icon_component_1.IconComponent],
         providers: [icon_service_1.IconService],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLIconModule);
 exports.VCLIconModule = VCLIconModule;
 var VCLIconModule_1;
 
 
-/***/ },
-/* 18 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+var core_1 = __webpack_require__(1);
+var common_1 = __webpack_require__(5);
+var off_click_module_1 = __webpack_require__(25);
+var wormhole_module_1 = __webpack_require__(20);
+var layer_directive_1 = __webpack_require__(166);
+exports.DirectiveLayerRef = layer_directive_1.DirectiveLayerRef;
+var layer_component_1 = __webpack_require__(165);
+exports.ComponentLayerRef = layer_component_1.ComponentLayerRef;
+var layer_base_component_1 = __webpack_require__(164);
+exports.LayerBaseComponent = layer_base_component_1.LayerBaseComponent;
+var layer_service_1 = __webpack_require__(76);
+exports.LayerService = layer_service_1.LayerService;
+var layer_references_1 = __webpack_require__(41);
+exports.LayerRef = layer_references_1.LayerRef;
+var LAYER_BOOTSTRAP = [{
+        provide: core_1.APP_BOOTSTRAP_LISTENER,
+        multi: true,
+        deps: [wormhole_module_1.WormholeService, layer_service_1.LayerService],
+        useFactory: function (wormholeService) {
+            return function () {
+                wormholeService.attachComponent(layer_base_component_1.LayerBaseComponent);
+            };
+        }
+    }];
+var VCLLayerModule = VCLLayerModule_1 = (function () {
+    function VCLLayerModule() {
+    }
+    VCLLayerModule.withConfig = function (config) {
+        var layers = config.layers || [];
+        return {
+            ngModule: VCLLayerModule_1,
+            providers: layers.concat([
+                {
+                    provide: core_1.APP_BOOTSTRAP_LISTENER,
+                    multi: true,
+                    deps: [layer_service_1.LayerService, core_1.Injector].concat(layers),
+                    useFactory: function (layerService, injector) {
+                        var layers = [];
+                        for (var _i = 2; _i < arguments.length; _i++) {
+                            layers[_i - 2] = arguments[_i];
+                        }
+                        return function () {
+                            layers.forEach(function (layer) { return layer.initialize(layerService); });
+                        };
+                    }
+                }
+            ])
+        };
+    };
+    return VCLLayerModule;
+}());
+VCLLayerModule = VCLLayerModule_1 = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, wormhole_module_1.VCLWormholeModule, off_click_module_1.VCLOffClickModule],
+        exports: [layer_base_component_1.LayerBaseComponent, layer_directive_1.DirectiveLayerRef],
+        declarations: [layer_base_component_1.LayerBaseComponent, layer_directive_1.DirectiveLayerRef],
+        entryComponents: [layer_base_component_1.LayerBaseComponent],
+        providers: [
+            layer_service_1.LayerService
+        ].concat(LAYER_BOOTSTRAP, [
+            {
+                provide: layer_references_1.LayerRef,
+                useValue: null
+            }
+        ])
+    })
+], VCLLayerModule);
+exports.VCLLayerModule = VCLLayerModule;
+var VCLLayerModule_1;
+
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = __webpack_require__(1);
-var wormhole_1 = __webpack_require__(169);
+var wormhole_1 = __webpack_require__(187);
 exports.TemplateWormhole = wormhole_1.TemplateWormhole;
 exports.ComponentWormhole = wormhole_1.ComponentWormhole;
 exports.ConnectWormholeDirective = wormhole_1.ConnectWormholeDirective;
 exports.Wormhole = wormhole_1.Wormhole;
-var wormhole_service_1 = __webpack_require__(168);
+var wormhole_service_1 = __webpack_require__(186);
 exports.WormholeService = wormhole_service_1.WormholeService;
 var VCLWormholeModule = VCLWormholeModule_1 = (function () {
     function VCLWormholeModule() {
@@ -1369,19 +1476,18 @@ VCLWormholeModule = VCLWormholeModule_1 = __decorate([
                 }
             }
         ]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLWormholeModule);
 exports.VCLWormholeModule = VCLWormholeModule;
 var VCLWormholeModule_1;
 
 
-/***/ },
-/* 19 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -1463,73 +1569,33 @@ var EmptyObservable = (function (_super) {
 exports.EmptyObservable = EmptyObservable;
 //# sourceMappingURL=EmptyObservable.js.map
 
-/***/ },
-/* 20 */
-/***/ function(module, exports) {
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 function isScheduler(value) {
     return value && typeof value.schedule === 'function';
 }
 exports.isScheduler = isScheduler;
 //# sourceMappingURL=isScheduler.js.map
 
-/***/ },
-/* 21 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var button_component_1 = __webpack_require__(88);
-var icogram_module_1 = __webpack_require__(25);
-var l10n_module_1 = __webpack_require__(6);
-var VCLButtonModule = (function () {
-    function VCLButtonModule() {
-    }
-    return VCLButtonModule;
-}());
-VCLButtonModule = __decorate([
-    core_1.NgModule({
-        imports: [common_1.CommonModule, icogram_module_1.VCLIcogramModule, l10n_module_1.L10nModule],
-        exports: [button_component_1.ButtonComponent, button_component_1.ButtonContentDirective],
-        declarations: [button_component_1.ButtonComponent, button_component_1.ButtonContentDirective],
-        providers: [],
-    }),
-    __metadata("design:paramtypes", [])
-], VCLButtonModule);
-exports.VCLButtonModule = VCLButtonModule;
-
-
-/***/ },
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = __webpack_require__(1);
-var common_1 = __webpack_require__(5);
-var metalist_component_1 = __webpack_require__(150);
+var metalist_component_1 = __webpack_require__(168);
 var l10n_module_1 = __webpack_require__(6);
 var VCLMetalistModule = (function () {
     function VCLMetalistModule() {
@@ -1542,29 +1608,58 @@ VCLMetalistModule = __decorate([
         exports: [metalist_component_1.MetalistComponent],
         declarations: [metalist_component_1.MetalistComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLMetalistModule);
 exports.VCLMetalistModule = VCLMetalistModule;
 
 
-/***/ },
-/* 23 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+var core_1 = __webpack_require__(1);
+var common_1 = __webpack_require__(5);
+var icogram_component_1 = __webpack_require__(157);
+var icon_module_1 = __webpack_require__(18);
+var l10n_module_1 = __webpack_require__(6);
+var VCLIcogramModule = (function () {
+    function VCLIcogramModule() {
+    }
+    return VCLIcogramModule;
+}());
+VCLIcogramModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule, icon_module_1.VCLIconModule, l10n_module_1.L10nModule],
+        exports: [icogram_component_1.IcogramComponent],
+        declarations: [icogram_component_1.IcogramComponent],
+        providers: [],
+    })
+], VCLIcogramModule);
+exports.VCLIcogramModule = VCLIcogramModule;
+
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = __webpack_require__(1);
-var off_click_directive_1 = __webpack_require__(167);
+var off_click_directive_1 = __webpack_require__(185);
 var VCLOffClickModule = (function () {
     function VCLOffClickModule() {
     }
@@ -1574,19 +1669,18 @@ VCLOffClickModule = __decorate([
     core_1.NgModule({
         declarations: [off_click_directive_1.OffClickDirective],
         exports: [off_click_directive_1.OffClickDirective]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLOffClickModule);
 exports.VCLOffClickModule = VCLOffClickModule;
 
 
-/***/ },
-/* 24 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var ConnectableObservable_1 = __webpack_require__(99);
+
+var ConnectableObservable_1 = __webpack_require__(108);
 /* tslint:disable:max-line-length */
 /**
  * Returns an Observable that emits the results of invoking a specified selector on items
@@ -1643,49 +1737,18 @@ var MulticastOperator = (function () {
 exports.MulticastOperator = MulticastOperator;
 //# sourceMappingURL=multicast.js.map
 
-/***/ },
-/* 25 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 27 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_27__;
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = __webpack_require__(1);
-var common_1 = __webpack_require__(5);
-var icogram_component_1 = __webpack_require__(141);
-var icon_module_1 = __webpack_require__(17);
-var l10n_module_1 = __webpack_require__(6);
-var VCLIcogramModule = (function () {
-    function VCLIcogramModule() {
-    }
-    return VCLIcogramModule;
-}());
-VCLIcogramModule = __decorate([
-    core_1.NgModule({
-        imports: [common_1.CommonModule, icon_module_1.VCLIconModule, l10n_module_1.L10nModule],
-        exports: [icogram_component_1.IcogramComponent],
-        declarations: [icogram_component_1.IcogramComponent],
-        providers: [],
-    }),
-    __metadata("design:paramtypes", [])
-], VCLIcogramModule);
-exports.VCLIcogramModule = VCLIcogramModule;
 
-
-/***/ },
-/* 26 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
 var Observable_1 = __webpack_require__(0);
 /**
  * Represents a push-based event or value that an {@link Observable} can emit.
@@ -1813,19 +1876,19 @@ var Notification = (function () {
 exports.Notification = Notification;
 //# sourceMappingURL=Notification.js.map
 
-/***/ },
-/* 27 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var root_1 = __webpack_require__(11);
-var Action_1 = __webpack_require__(459);
+var Action_1 = __webpack_require__(482);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -1961,18 +2024,18 @@ var AsyncAction = (function (_super) {
 exports.AsyncAction = AsyncAction;
 //# sourceMappingURL=AsyncAction.js.map
 
-/***/ },
-/* 28 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Scheduler_1 = __webpack_require__(206);
+var Scheduler_1 = __webpack_require__(229);
 var AsyncScheduler = (function (_super) {
     __extends(AsyncScheduler, _super);
     function AsyncScheduler() {
@@ -2018,12 +2081,12 @@ var AsyncScheduler = (function (_super) {
 exports.AsyncScheduler = AsyncScheduler;
 //# sourceMappingURL=AsyncScheduler.js.map
 
-/***/ },
-/* 29 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var root_1 = __webpack_require__(11);
 function symbolIteratorPonyfill(root) {
     var Symbol = root.Symbol;
@@ -2058,25 +2121,22 @@ exports.symbolIteratorPonyfill = symbolIteratorPonyfill;
 exports.$$iterator = symbolIteratorPonyfill(root_1.root);
 //# sourceMappingURL=iterator.js.map
 
-/***/ },
-/* 30 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var icon_module_1 = __webpack_require__(17);
-var checkbox_component_1 = __webpack_require__(134);
+var icon_module_1 = __webpack_require__(18);
+var checkbox_component_1 = __webpack_require__(148);
 exports.CheckboxComponent = checkbox_component_1.CheckboxComponent;
 var VCLCheckboxModule = (function () {
     function VCLCheckboxModule() {
@@ -2088,29 +2148,25 @@ VCLCheckboxModule = __decorate([
         imports: [common_1.CommonModule, icon_module_1.VCLIconModule],
         exports: [checkbox_component_1.CheckboxComponent],
         declarations: [checkbox_component_1.CheckboxComponent]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLCheckboxModule);
 exports.VCLCheckboxModule = VCLCheckboxModule;
 
 
-/***/ },
-/* 31 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
-var input_control_group_component_1 = __webpack_require__(143);
+var input_control_group_component_1 = __webpack_require__(159);
 var common_1 = __webpack_require__(5);
 var VCLInputControlGroupModule = (function () {
     function VCLInputControlGroupModule() {
@@ -2123,31 +2179,57 @@ VCLInputControlGroupModule = __decorate([
         exports: [input_control_group_component_1.InputControlGroup],
         declarations: [input_control_group_component_1.InputControlGroup],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLInputControlGroupModule);
 exports.VCLInputControlGroupModule = VCLInputControlGroupModule;
 
 
-/***/ },
-/* 32 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+var core_1 = __webpack_require__(1);
+var input_component_1 = __webpack_require__(160);
+var VCLInputModule = (function () {
+    function VCLInputModule() {
+    }
+    return VCLInputModule;
+}());
+VCLInputModule = __decorate([
+    core_1.NgModule({
+        imports: [],
+        exports: [input_component_1.InputComponent],
+        declarations: [input_component_1.InputComponent],
+        providers: [],
+    })
+], VCLInputModule);
+exports.VCLInputModule = VCLInputModule;
+
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var link_component_1 = __webpack_require__(149);
-var icogram_module_1 = __webpack_require__(25);
+var link_component_1 = __webpack_require__(167);
+var icogram_module_1 = __webpack_require__(24);
 var l10n_module_1 = __webpack_require__(6);
 var VCLLinkModule = (function () {
     function VCLLinkModule() {
@@ -2160,34 +2242,30 @@ VCLLinkModule = __decorate([
         exports: [link_component_1.LinkComponent],
         declarations: [link_component_1.LinkComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLLinkModule);
 exports.VCLLinkModule = VCLLinkModule;
 
 
-/***/ },
-/* 33 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var popover_component_1 = __webpack_require__(153);
+var popover_component_1 = __webpack_require__(171);
 exports.PopoverComponent = popover_component_1.PopoverComponent;
-var tether_module_1 = __webpack_require__(37);
-var off_click_module_1 = __webpack_require__(23);
-var overlayManager_service_1 = __webpack_require__(92);
+var tether_module_1 = __webpack_require__(40);
+var off_click_module_1 = __webpack_require__(25);
+var overlayManager_service_1 = __webpack_require__(101);
 exports.OverlayManagerService = overlayManager_service_1.OverlayManagerService;
 var VCLPopoverModule = (function () {
     function VCLPopoverModule() {
@@ -2204,31 +2282,27 @@ VCLPopoverModule = __decorate([
         providers: [overlayManager_service_1.OverlayManagerService],
         exports: [popover_component_1.PopoverComponent],
         declarations: [popover_component_1.PopoverComponent]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLPopoverModule);
 exports.VCLPopoverModule = VCLPopoverModule;
 
 
-/***/ },
-/* 34 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var icon_module_1 = __webpack_require__(17);
-var radio_button_component_1 = __webpack_require__(155);
+var icon_module_1 = __webpack_require__(18);
+var radio_button_component_1 = __webpack_require__(173);
 var VCLRadioButtonModule = (function () {
     function VCLRadioButtonModule() {
     }
@@ -2239,32 +2313,28 @@ VCLRadioButtonModule = __decorate([
         imports: [common_1.CommonModule, icon_module_1.VCLIconModule],
         exports: [radio_button_component_1.RadioButtonComponent],
         declarations: [radio_button_component_1.RadioButtonComponent]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLRadioButtonModule);
 exports.VCLRadioButtonModule = VCLRadioButtonModule;
 
 
-/***/ },
-/* 35 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var icon_module_1 = __webpack_require__(17);
-var radio_group_component_1 = __webpack_require__(156);
-var radio_button_module_1 = __webpack_require__(34);
+var icon_module_1 = __webpack_require__(18);
+var radio_group_component_1 = __webpack_require__(174);
+var radio_button_module_1 = __webpack_require__(37);
 var VCLRadioGroupModule = (function () {
     function VCLRadioGroupModule() {
     }
@@ -2275,30 +2345,26 @@ VCLRadioGroupModule = __decorate([
         imports: [common_1.CommonModule, icon_module_1.VCLIconModule, radio_button_module_1.VCLRadioButtonModule],
         exports: [radio_group_component_1.RadioGroupComponent],
         declarations: [radio_group_component_1.RadioGroupComponent]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLRadioGroupModule);
 exports.VCLRadioGroupModule = VCLRadioGroupModule;
 
 
-/***/ },
-/* 36 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var slider_component_1 = __webpack_require__(158);
+var slider_component_1 = __webpack_require__(176);
 var l10n_module_1 = __webpack_require__(6);
 var VCLSliderModule = (function () {
     function VCLSliderModule() {
@@ -2311,30 +2377,26 @@ VCLSliderModule = __decorate([
         exports: [slider_component_1.SliderComponent],
         declarations: [slider_component_1.SliderComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLSliderModule);
 exports.VCLSliderModule = VCLSliderModule;
 
 
-/***/ },
-/* 37 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 40 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var tether_component_1 = __webpack_require__(160);
+var tether_component_1 = __webpack_require__(178);
 var VCLTetherModule = (function () {
     function VCLTetherModule() {
     }
@@ -2345,18 +2407,92 @@ VCLTetherModule = __decorate([
         imports: [common_1.CommonModule],
         exports: [tether_component_1.TetherComponent],
         declarations: [tether_component_1.TetherComponent]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLTetherModule);
 exports.VCLTetherModule = VCLTetherModule;
 
 
-/***/ },
-/* 38 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+var Subject_1 = __webpack_require__(27);
+var LayerRef = (function () {
+    function LayerRef() {
+        this.visibilityChange = new Subject_1.Subject();
+        this.visible$ = this.visibilityChange.asObservable();
+        this.base = 'default';
+        this.modal = false;
+        this.offClickClose = true;
+        this.transparent = false;
+        this.fill = false;
+        this.stickToBottom = false;
+        this.gutterPadding = false;
+        this.customClass = null;
+    }
+    Object.defineProperty(LayerRef.prototype, "visible", {
+        get: function () {
+            return this._visible;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ;
+    LayerRef.prototype.setVisibility = function (value) {
+        if (this.visible !== value) {
+            this._visible = value;
+            this.visibilityChange.next(value);
+        }
+    };
+    LayerRef.prototype.open = function (data) {
+        if (!this.wormhole) {
+            this.wormhole = this.createWormhole(data);
+        }
+        else {
+            this.setData(data);
+        }
+        this.setVisibility(true);
+        this.results = new Subject_1.Subject();
+        return this.results.asObservable();
+    };
+    LayerRef.prototype.close = function (data) {
+        this.setVisibility(false);
+        if (this.results) {
+            if (data !== undefined) {
+                this.results.next(data);
+            }
+            this.results.complete();
+        }
+    };
+    LayerRef.prototype.closeWithError = function (data) {
+        this.setVisibility(false);
+        if (this.results) {
+            this.results.error(data);
+        }
+    };
+    LayerRef.prototype.send = function (data) {
+        if (data !== undefined && this.results) {
+            this.results.next(data);
+        }
+    };
+    LayerRef.prototype.offClick = function () {
+        if (!this.modal && this.offClickClose) {
+            this.close();
+        }
+    };
+    return LayerRef;
+}());
+exports.LayerRef = LayerRef;
+
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -2371,9 +2507,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var Subject_1 = __webpack_require__(51);
+var Subject_1 = __webpack_require__(27);
 var Observable_1 = __webpack_require__(13);
-__webpack_require__(84);
+__webpack_require__(91);
 var core_1 = __webpack_require__(1);
 var StoreActions = (function (_super) {
     __extends(StoreActions, _super);
@@ -2411,12 +2547,12 @@ StoreActions = __decorate([
 exports.StoreActions = StoreActions;
 
 
-/***/ },
-/* 39 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -2434,15 +2570,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
-var BehaviorSubject_1 = __webpack_require__(126);
+var BehaviorSubject_1 = __webpack_require__(54);
 var Observable_1 = __webpack_require__(13);
-__webpack_require__(489);
-__webpack_require__(491);
-__webpack_require__(124);
+__webpack_require__(512);
+__webpack_require__(514);
+__webpack_require__(135);
 var core_1 = __webpack_require__(1);
-var actions_1 = __webpack_require__(38);
-var observable_1 = __webpack_require__(94);
-var utils_1 = __webpack_require__(40);
+var actions_1 = __webpack_require__(42);
+var observable_1 = __webpack_require__(103);
+var utils_1 = __webpack_require__(44);
 exports.STORE_INITIAL_REDUCERS = new core_1.OpaqueToken('store.initial.reducers');
 exports.STORE_INITIAL_STATE = new core_1.OpaqueToken('store.initial.state');
 // Some store actions
@@ -2540,12 +2676,12 @@ Store = __decorate([
 exports.Store = Store;
 
 
-/***/ },
-/* 40 */
-/***/ function(module, exports) {
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 exports.compose = function () {
     var functions = [];
     for (var _i = 0; _i < arguments.length; _i++) {
@@ -2598,19 +2734,19 @@ function combineReducers(reducers) {
 exports.combineReducers = combineReducers;
 
 
-/***/ },
-/* 41 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(8);
-var Subscription_1 = __webpack_require__(7);
+var Subject_1 = __webpack_require__(9);
+var Subscription_1 = __webpack_require__(8);
 /**
  * @class AsyncSubject<T>
  */
@@ -2652,12 +2788,12 @@ var AsyncSubject = (function (_super) {
 exports.AsyncSubject = AsyncSubject;
 //# sourceMappingURL=AsyncSubject.js.map
 
-/***/ },
-/* 42 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -2769,12 +2905,12 @@ var MergeAllSubscriber = (function (_super) {
 exports.MergeAllSubscriber = MergeAllSubscriber;
 //# sourceMappingURL=mergeAll.js.map
 
-/***/ },
-/* 43 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var root_1 = __webpack_require__(11);
 function getSymbolObservable(context) {
     var $$observable;
@@ -2797,24 +2933,24 @@ exports.getSymbolObservable = getSymbolObservable;
 exports.$$observable = getSymbolObservable(root_1.root);
 //# sourceMappingURL=observable.js.map
 
-/***/ },
-/* 44 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var root_1 = __webpack_require__(11);
 var Symbol = root_1.root.Symbol;
 exports.$$rxSubscriber = (typeof Symbol === 'function' && typeof Symbol.for === 'function') ?
     Symbol.for('rxSubscriber') : '@@rxSubscriber';
 //# sourceMappingURL=rxSubscriber.js.map
 
-/***/ },
-/* 45 */
-/***/ function(module, exports) {
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -2843,12 +2979,12 @@ var ArgumentOutOfRangeError = (function (_super) {
 exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError;
 //# sourceMappingURL=ArgumentOutOfRangeError.js.map
 
-/***/ },
-/* 46 */
-/***/ function(module, exports) {
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -2877,12 +3013,12 @@ var EmptyError = (function (_super) {
 exports.EmptyError = EmptyError;
 //# sourceMappingURL=EmptyError.js.map
 
-/***/ },
-/* 47 */
-/***/ function(module, exports) {
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -2910,131 +3046,46 @@ var ObjectUnsubscribedError = (function (_super) {
 exports.ObjectUnsubscribedError = ObjectUnsubscribedError;
 //# sourceMappingURL=ObjectUnsubscribedError.js.map
 
-/***/ },
-/* 48 */
-/***/ function(module, exports) {
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 function isDate(value) {
     return value instanceof Date && !isNaN(+value);
 }
 exports.isDate = isDate;
 //# sourceMappingURL=isDate.js.map
 
-/***/ },
-/* 49 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 53 */
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {var nextTick = __webpack_require__(172).nextTick;
-var apply = Function.prototype.apply;
-var slice = Array.prototype.slice;
-var immediateIds = {};
-var nextImmediateId = 0;
+module.exports = __WEBPACK_EXTERNAL_MODULE_53__;
 
-// DOM APIs, for completeness
+/***/ }),
+/* 54 */
+/***/ (function(module, exports) {
 
-exports.setTimeout = function() {
-  return new Timeout(apply.call(setTimeout, window, arguments), clearTimeout);
-};
-exports.setInterval = function() {
-  return new Timeout(apply.call(setInterval, window, arguments), clearInterval);
-};
-exports.clearTimeout =
-exports.clearInterval = function(timeout) { timeout.close(); };
+module.exports = __WEBPACK_EXTERNAL_MODULE_54__;
 
-function Timeout(id, clearFn) {
-  this._id = id;
-  this._clearFn = clearFn;
-}
-Timeout.prototype.unref = Timeout.prototype.ref = function() {};
-Timeout.prototype.close = function() {
-  this._clearFn.call(window, this._id);
-};
-
-// Does not start the time, just sets up the members needed.
-exports.enroll = function(item, msecs) {
-  clearTimeout(item._idleTimeoutId);
-  item._idleTimeout = msecs;
-};
-
-exports.unenroll = function(item) {
-  clearTimeout(item._idleTimeoutId);
-  item._idleTimeout = -1;
-};
-
-exports._unrefActive = exports.active = function(item) {
-  clearTimeout(item._idleTimeoutId);
-
-  var msecs = item._idleTimeout;
-  if (msecs >= 0) {
-    item._idleTimeoutId = setTimeout(function onTimeout() {
-      if (item._onTimeout)
-        item._onTimeout();
-    }, msecs);
-  }
-};
-
-// That's not how node.js implements it but the exposed api is the same.
-exports.setImmediate = typeof setImmediate === "function" ? setImmediate : function(fn) {
-  var id = nextImmediateId++;
-  var args = arguments.length < 2 ? false : slice.call(arguments, 1);
-
-  immediateIds[id] = true;
-
-  nextTick(function onNextTick() {
-    if (immediateIds[id]) {
-      // fn.call() is faster so we optimize for the common use-case
-      // @see http://jsperf.com/call-apply-segu
-      if (args) {
-        fn.apply(null, args);
-      } else {
-        fn.call(null);
-      }
-      // Prevent ids from leaking
-      exports.clearImmediate(id);
-    }
-  });
-
-  return id;
-};
-
-exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate : function(id) {
-  delete immediateIds[id];
-};
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(49).setImmediate, __webpack_require__(49).clearImmediate))
-
-/***/ },
-/* 50 */
-/***/ function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_50__;
-
-/***/ },
-/* 51 */
-/***/ function(module, exports) {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE_51__;
-
-/***/ },
-/* 52 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var dropdown_component_1 = __webpack_require__(137);
-var metalist_module_1 = __webpack_require__(22);
+var dropdown_component_1 = __webpack_require__(151);
+var metalist_module_1 = __webpack_require__(23);
 var l10n_module_1 = __webpack_require__(6);
 var VCLDropdownModule = (function () {
     function VCLDropdownModule() {
@@ -3047,44 +3098,123 @@ VCLDropdownModule = __decorate([
         exports: [dropdown_component_1.DropdownComponent],
         declarations: [dropdown_component_1.DropdownComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLDropdownModule);
 exports.VCLDropdownModule = VCLDropdownModule;
 
 
-/***/ },
-/* 53 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-__export(__webpack_require__(165));
-__export(__webpack_require__(166));
+__export(__webpack_require__(183));
+__export(__webpack_require__(184));
 
 
-/***/ },
-/* 54 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+var forms_1 = __webpack_require__(7);
+var core_1 = __webpack_require__(1);
+var common_1 = __webpack_require__(5);
+var icogram_module_1 = __webpack_require__(24);
+var button_module_1 = __webpack_require__(16);
+var layer_module_1 = __webpack_require__(19);
+var input_module_1 = __webpack_require__(34);
+var alert_component_1 = __webpack_require__(95);
+var alert_service_1 = __webpack_require__(145);
+exports.AlertService = alert_service_1.AlertService;
+var types_1 = __webpack_require__(74);
+exports.AlertType = types_1.AlertType;
+exports.AlertError = types_1.AlertError;
+exports.AlertInput = types_1.AlertInput;
+exports.AlertAlignment = types_1.AlertAlignment;
+var VCLAlertModule = (function () {
+    function VCLAlertModule() {
+    }
+    return VCLAlertModule;
+}());
+VCLAlertModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            forms_1.FormsModule,
+            common_1.CommonModule,
+            button_module_1.VCLButtonModule,
+            input_module_1.VCLInputModule,
+            icogram_module_1.VCLIcogramModule,
+            layer_module_1.VCLLayerModule.withConfig({
+                layers: [alert_component_1.AlertLayer]
+            })
+        ],
+        exports: [],
+        declarations: [alert_component_1.AlertComponent, alert_component_1.AlertInputComponent],
+        entryComponents: [alert_component_1.AlertComponent],
+        providers: [alert_service_1.AlertService],
+    })
+], VCLAlertModule);
+exports.VCLAlertModule = VCLAlertModule;
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var button_group_component_1 = __webpack_require__(133);
-var button_module_1 = __webpack_require__(21);
+var busy_component_1 = __webpack_require__(146);
+var VCLBusyModule = (function () {
+    function VCLBusyModule() {
+    }
+    return VCLBusyModule;
+}());
+VCLBusyModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule],
+        exports: [busy_component_1.BusyComponent],
+        declarations: [busy_component_1.BusyComponent]
+    })
+], VCLBusyModule);
+exports.VCLBusyModule = VCLBusyModule;
+
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var core_1 = __webpack_require__(1);
+var common_1 = __webpack_require__(5);
+var button_group_component_1 = __webpack_require__(147);
+var button_module_1 = __webpack_require__(16);
 var l10n_module_1 = __webpack_require__(6);
 var VCLButtonGroupModule = (function () {
     function VCLButtonGroupModule() {
@@ -3097,31 +3227,27 @@ VCLButtonGroupModule = __decorate([
         exports: [button_group_component_1.ButtonGroupComponent],
         declarations: [button_group_component_1.ButtonGroupComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLButtonGroupModule);
 exports.VCLButtonGroupModule = VCLButtonGroupModule;
 
 
-/***/ },
-/* 55 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var date_picker_component_1 = __webpack_require__(136);
-var button_module_1 = __webpack_require__(21);
+var date_picker_component_1 = __webpack_require__(150);
+var button_module_1 = __webpack_require__(16);
 var l10n_module_1 = __webpack_require__(6);
 var VCLDatePickerModule = (function () {
     function VCLDatePickerModule() {
@@ -3134,30 +3260,57 @@ VCLDatePickerModule = __decorate([
         exports: [date_picker_component_1.DatePickerComponent],
         declarations: [date_picker_component_1.DatePickerComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLDatePickerModule);
 exports.VCLDatePickerModule = VCLDatePickerModule;
 
 
-/***/ },
-/* 56 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+var core_1 = __webpack_require__(1);
+var file_input_component_1 = __webpack_require__(152);
+var common_1 = __webpack_require__(5);
+var VCLFileInputModule = (function () {
+    function VCLFileInputModule() {
+    }
+    return VCLFileInputModule;
+}());
+VCLFileInputModule = __decorate([
+    core_1.NgModule({
+        imports: [common_1.CommonModule],
+        exports: [file_input_component_1.FileInputComponent],
+        declarations: [file_input_component_1.FileInputComponent],
+        providers: [],
+    })
+], VCLFileInputModule);
+exports.VCLFileInputModule = VCLFileInputModule;
+
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
-var form_component_1 = __webpack_require__(140);
+var forms_1 = __webpack_require__(7);
+var form_component_1 = __webpack_require__(155);
 var VCLFormModule = (function () {
     function VCLFormModule() {
     }
@@ -3168,65 +3321,77 @@ VCLFormModule = __decorate([
         imports: [forms_1.ReactiveFormsModule, forms_1.FormsModule],
         exports: [form_component_1.FormComponent, forms_1.FormsModule, forms_1.ReactiveFormsModule],
         declarations: [form_component_1.FormComponent]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLFormModule);
 exports.VCLFormModule = VCLFormModule;
 
 
-/***/ },
-/* 57 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+var forms_1 = __webpack_require__(7);
 var core_1 = __webpack_require__(1);
-var input_directive_1 = __webpack_require__(144);
-var VCLInputModule = (function () {
-    function VCLInputModule() {
+var common_1 = __webpack_require__(5);
+var button_module_1 = __webpack_require__(16);
+var layer_module_1 = __webpack_require__(19);
+var growl_component_1 = __webpack_require__(97);
+var growl_layer_1 = __webpack_require__(98);
+var growl_service_1 = __webpack_require__(156);
+exports.GrowlService = growl_service_1.GrowlService;
+var growl_1 = __webpack_require__(99);
+exports.Growl = growl_1.Growl;
+var types_1 = __webpack_require__(75);
+exports.GrowlType = types_1.GrowlType;
+exports.GrowlPosition = types_1.GrowlPosition;
+var VCLGrowlModule = (function () {
+    function VCLGrowlModule() {
     }
-    return VCLInputModule;
+    return VCLGrowlModule;
 }());
-VCLInputModule = __decorate([
+VCLGrowlModule = __decorate([
     core_1.NgModule({
-        imports: [],
-        exports: [input_directive_1.InputDirective],
-        declarations: [input_directive_1.InputDirective],
-        providers: [],
-    }),
-    __metadata("design:paramtypes", [])
-], VCLInputModule);
-exports.VCLInputModule = VCLInputModule;
+        imports: [
+            forms_1.FormsModule,
+            common_1.CommonModule,
+            button_module_1.VCLButtonModule,
+            layer_module_1.VCLLayerModule.withConfig({
+                layers: [growl_layer_1.GrowlLayerTopRight, growl_layer_1.GrowlLayerBottomRight, growl_layer_1.GrowlLayerBottom, growl_layer_1.GrowlLayerBottomLeft, growl_layer_1.GrowlLayerTopLeft, growl_layer_1.GrowlLayerTop]
+            })
+        ],
+        exports: [],
+        declarations: [growl_component_1.GrowlComponent],
+        entryComponents: [growl_component_1.GrowlComponent],
+        providers: [growl_service_1.GrowlService],
+    })
+], VCLGrowlModule);
+exports.VCLGrowlModule = VCLGrowlModule;
 
 
-/***/ },
-/* 58 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var json_editor_component_1 = __webpack_require__(145);
-var metalist_module_1 = __webpack_require__(22);
+var json_editor_component_1 = __webpack_require__(161);
+var metalist_module_1 = __webpack_require__(23);
 var l10n_module_1 = __webpack_require__(6);
 var VCLJsonEditorModule = (function () {
     function VCLJsonEditorModule() {
@@ -3239,39 +3404,35 @@ VCLJsonEditorModule = __decorate([
         exports: [json_editor_component_1.JsonEditorComponent],
         declarations: [json_editor_component_1.JsonEditorComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLJsonEditorModule);
 exports.VCLJsonEditorModule = VCLJsonEditorModule;
 
 
-/***/ },
-/* 59 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var jss_form_component_1 = __webpack_require__(146);
+var jss_form_component_1 = __webpack_require__(162);
 var l10n_module_1 = __webpack_require__(6);
-var forms_1 = __webpack_require__(10);
-var dropdown_module_1 = __webpack_require__(52);
-var flip_switch_module_1 = __webpack_require__(85);
-var slider_module_1 = __webpack_require__(36);
-var checkbox_module_1 = __webpack_require__(30);
-var select_module_1 = __webpack_require__(86);
-var radio_group_module_1 = __webpack_require__(35);
-var input_control_group_module_1 = __webpack_require__(31);
+var forms_1 = __webpack_require__(7);
+var dropdown_module_1 = __webpack_require__(55);
+var flip_switch_module_1 = __webpack_require__(92);
+var slider_module_1 = __webpack_require__(39);
+var checkbox_module_1 = __webpack_require__(32);
+var select_module_1 = __webpack_require__(93);
+var radio_group_module_1 = __webpack_require__(38);
+var input_control_group_module_1 = __webpack_require__(33);
 var VCLJssFormModule = (function () {
     function VCLJssFormModule() {
     }
@@ -3292,31 +3453,27 @@ VCLJssFormModule = __decorate([
         exports: [jss_form_component_1.JssFormComponent, jss_form_component_1.JssFormObjectComponent],
         declarations: [jss_form_component_1.JssFormComponent, jss_form_component_1.JssFormObjectComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLJssFormModule);
 exports.VCLJssFormModule = VCLJssFormModule;
 
 
-/***/ },
-/* 60 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var label_component_1 = __webpack_require__(147);
-var metalist_module_1 = __webpack_require__(22);
+var label_component_1 = __webpack_require__(163);
+var metalist_module_1 = __webpack_require__(23);
 var l10n_module_1 = __webpack_require__(6);
 var VCLLabelModule = (function () {
     function VCLLabelModule() {
@@ -3329,90 +3486,27 @@ VCLLabelModule = __decorate([
         exports: [label_component_1.LabelComponent],
         declarations: [label_component_1.LabelComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLLabelModule);
 exports.VCLLabelModule = VCLLabelModule;
 
 
-/***/ },
-/* 61 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var layer_directive_1 = __webpack_require__(90);
-exports.LayerDirective = layer_directive_1.LayerDirective;
-var layer_base_component_1 = __webpack_require__(148);
-exports.LayerBaseComponent = layer_base_component_1.LayerBaseComponent;
-var layer_service_1 = __webpack_require__(69);
-exports.LayerService = layer_service_1.LayerService;
-var off_click_module_1 = __webpack_require__(23);
-var wormhole_module_1 = __webpack_require__(18);
-var layer_references_1 = __webpack_require__(91);
-exports.LayerDirectiveReference = layer_references_1.LayerDirectiveReference;
-exports.LayerComponentReference = layer_references_1.LayerComponentReference;
-function getComponentRootNode(componentRef) {
-    return componentRef.hostView.rootNodes[0];
-}
-var LAYER_BOOTSTRAP = {
-    provide: core_1.APP_BOOTSTRAP_LISTENER,
-    multi: true,
-    deps: [wormhole_module_1.WormholeService],
-    useFactory: function (wormholeService) {
-        return function () {
-            wormholeService.attachComponent(layer_base_component_1.LayerBaseComponent);
-        };
-    }
-};
-var VCLLayerModule = (function () {
-    function VCLLayerModule() {
-    }
-    return VCLLayerModule;
-}());
-VCLLayerModule = __decorate([
-    core_1.NgModule({
-        imports: [common_1.CommonModule, wormhole_module_1.VCLWormholeModule, off_click_module_1.VCLOffClickModule],
-        exports: [layer_base_component_1.LayerBaseComponent, layer_directive_1.LayerDirective],
-        declarations: [layer_base_component_1.LayerBaseComponent, layer_directive_1.LayerDirective],
-        entryComponents: [layer_base_component_1.LayerBaseComponent],
-        providers: [layer_service_1.LayerService, LAYER_BOOTSTRAP]
-    }),
-    __metadata("design:paramtypes", [])
-], VCLLayerModule);
-exports.VCLLayerModule = VCLLayerModule;
-
-
-/***/ },
-/* 62 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = __webpack_require__(1);
-var common_1 = __webpack_require__(5);
-var month_picker_component_1 = __webpack_require__(151);
-var button_module_1 = __webpack_require__(21);
+var month_picker_component_1 = __webpack_require__(169);
+var button_module_1 = __webpack_require__(16);
 var l10n_module_1 = __webpack_require__(6);
 var VCLMonthPickerModule = (function () {
     function VCLMonthPickerModule() {
@@ -3425,31 +3519,27 @@ VCLMonthPickerModule = __decorate([
         exports: [month_picker_component_1.MonthPickerComponent],
         declarations: [month_picker_component_1.MonthPickerComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLMonthPickerModule);
 exports.VCLMonthPickerModule = VCLMonthPickerModule;
 
 
-/***/ },
-/* 63 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 68 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var navigation_component_1 = __webpack_require__(152);
-var link_module_1 = __webpack_require__(32);
+var navigation_component_1 = __webpack_require__(170);
+var link_module_1 = __webpack_require__(35);
 var l10n_module_1 = __webpack_require__(6);
 var VCLNavigationModule = (function () {
     function VCLNavigationModule() {
@@ -3462,30 +3552,26 @@ VCLNavigationModule = __decorate([
         exports: [navigation_component_1.NavigationComponent, navigation_component_1.NavigationItemComponent],
         declarations: [navigation_component_1.NavigationComponent, navigation_component_1.NavigationItemComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLNavigationModule);
 exports.VCLNavigationModule = VCLNavigationModule;
 
 
-/***/ },
-/* 64 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var common_1 = __webpack_require__(5);
 var core_1 = __webpack_require__(1);
-var progress_bar_component_1 = __webpack_require__(154);
+var progress_bar_component_1 = __webpack_require__(172);
 var VCLProgressBarModule = (function () {
     function VCLProgressBarModule() {
     }
@@ -3496,32 +3582,28 @@ VCLProgressBarModule = __decorate([
         imports: [common_1.CommonModule],
         exports: [progress_bar_component_1.ProgressBarComponent],
         declarations: [progress_bar_component_1.ProgressBarComponent]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLProgressBarModule);
 exports.VCLProgressBarModule = VCLProgressBarModule;
 
 
-/***/ },
-/* 65 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var tab_nav_component_1 = __webpack_require__(159);
+var tab_nav_component_1 = __webpack_require__(177);
 var l10n_module_1 = __webpack_require__(6);
-var wormhole_module_1 = __webpack_require__(18);
+var wormhole_module_1 = __webpack_require__(20);
 var VCLTabNavModule = (function () {
     function VCLTabNavModule() {
     }
@@ -3533,30 +3615,26 @@ VCLTabNavModule = __decorate([
         exports: [tab_nav_component_1.TabComponent, tab_nav_component_1.TabContentDirective, tab_nav_component_1.TabLabelDirective, tab_nav_component_1.TabNavComponent],
         declarations: [tab_nav_component_1.TabComponent, tab_nav_component_1.TabContentDirective, tab_nav_component_1.TabLabelDirective, tab_nav_component_1.TabNavComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLTabNavModule);
 exports.VCLTabNavModule = VCLTabNavModule;
 
 
-/***/ },
-/* 66 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
-var textarea_directive_1 = __webpack_require__(161);
+var forms_1 = __webpack_require__(7);
+var textarea_directive_1 = __webpack_require__(179);
 var VCLTextareaModule = (function () {
     function VCLTextareaModule() {
     }
@@ -3568,35 +3646,31 @@ VCLTextareaModule = __decorate([
         exports: [textarea_directive_1.TextareaDirective],
         declarations: [textarea_directive_1.TextareaDirective],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLTextareaModule);
 exports.VCLTextareaModule = VCLTextareaModule;
 
 
-/***/ },
-/* 67 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var metalist_module_1 = __webpack_require__(22);
+var metalist_module_1 = __webpack_require__(23);
 var l10n_module_1 = __webpack_require__(6);
-var forms_1 = __webpack_require__(10);
-var token_component_1 = __webpack_require__(93);
-var token_list_component_1 = __webpack_require__(163);
-var token_input_component_1 = __webpack_require__(162);
+var forms_1 = __webpack_require__(7);
+var token_component_1 = __webpack_require__(102);
+var token_list_component_1 = __webpack_require__(181);
+var token_input_component_1 = __webpack_require__(180);
 var VCLTokenModule = (function () {
     function VCLTokenModule() {
     }
@@ -3608,30 +3682,26 @@ VCLTokenModule = __decorate([
         exports: [token_component_1.TokenComponent, token_list_component_1.TokenListComponent, token_input_component_1.TokenInputComponent],
         declarations: [token_component_1.TokenComponent, token_list_component_1.TokenListComponent, token_input_component_1.TokenInputComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLTokenModule);
 exports.VCLTokenModule = VCLTokenModule;
 
 
-/***/ },
-/* 68 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var toolbar_component_1 = __webpack_require__(164);
+var toolbar_component_1 = __webpack_require__(182);
 var l10n_module_1 = __webpack_require__(6);
 var VCLToolbarModule = (function () {
     function VCLToolbarModule() {
@@ -3644,141 +3714,274 @@ VCLToolbarModule = __decorate([
         exports: [toolbar_component_1.ToolbarComponent],
         declarations: [toolbar_component_1.ToolbarComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLToolbarModule);
 exports.VCLToolbarModule = VCLToolbarModule;
 
 
-/***/ },
-/* 69 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var AlertType;
+(function (AlertType) {
+    AlertType[AlertType["None"] = 0] = "None";
+    AlertType[AlertType["Question"] = 1] = "Question";
+    AlertType[AlertType["Info"] = 2] = "Info";
+    AlertType[AlertType["Success"] = 3] = "Success";
+    AlertType[AlertType["Warning"] = 4] = "Warning";
+    AlertType[AlertType["Error"] = 5] = "Error";
+})(AlertType = exports.AlertType || (exports.AlertType = {}));
+var AlertAlignment;
+(function (AlertAlignment) {
+    AlertAlignment[AlertAlignment["Left"] = 0] = "Left";
+    AlertAlignment[AlertAlignment["Center"] = 1] = "Center";
+    AlertAlignment[AlertAlignment["Right"] = 2] = "Right";
+})(AlertAlignment = exports.AlertAlignment || (exports.AlertAlignment = {}));
+var AlertInput;
+(function (AlertInput) {
+    AlertInput[AlertInput["None"] = 0] = "None";
+    AlertInput[AlertInput["Text"] = 1] = "Text";
+})(AlertInput = exports.AlertInput || (exports.AlertInput = {}));
+exports.ALERT_DEFAULTS = {
+    type: AlertType.None,
+    html: false,
+    showConfirmButton: true,
+    showCancelButton: false,
+    showCloseButton: false,
+    offClickClose: true,
+    escClose: true,
+    cancelButtonLabel: 'Cancel',
+    cancelButtonClass: 'vclDanger',
+    confirmButtonLabel: 'OK',
+    confirmButtonClass: 'vclEmphasized',
+    loader: false,
+    loaderOnConfirm: false,
+    input: AlertInput.None,
+    contentAlignment: AlertAlignment.Left,
+    titleAlignment: AlertAlignment.Left,
+    iconAlignment: AlertAlignment.Left,
+    buttonAlignment: AlertAlignment.Right,
+};
+exports.TYPE_CLASS_MAP = (_a = {},
+    _a[AlertType.None] = {
+        alertClass: '',
+        iconClass: ''
+    },
+    _a[AlertType.Question] = {
+        alertClass: '',
+        iconClass: 'fa fa-question-circle'
+    },
+    _a[AlertType.Info] = {
+        alertClass: 'vclInfo',
+        iconClass: 'fa fa-info-circle'
+    },
+    _a[AlertType.Success] = {
+        alertClass: 'vclSuccess',
+        iconClass: 'fa fa-check-circle'
+    },
+    _a[AlertType.Warning] = {
+        alertClass: 'vclWarning',
+        iconClass: 'fa fa-warning'
+    },
+    _a[AlertType.Error] = {
+        alertClass: 'vclError',
+        iconClass: 'fa fa-exclamation-circle'
+    },
+    _a);
+exports.TEXT_ALIGNMENT_CLASS_MAP = (_b = {},
+    _b[AlertAlignment.Left] = 'vclAlignLeft',
+    _b[AlertAlignment.Center] = 'vclAlignCentered',
+    _b[AlertAlignment.Right] = 'vclAlignRight',
+    _b);
+exports.BUTTON_ALIGNMENT_CLASS_MAP = (_c = {},
+    _c[AlertAlignment.Left] = 'vclLayoutStartJustified',
+    _c[AlertAlignment.Center] = 'vclLayoutCenterJustified',
+    _c[AlertAlignment.Right] = 'vclLayoutEndJustified',
+    _c);
+var AlertError = (function (_super) {
+    __extends(AlertError, _super);
+    function AlertError(reason, message) {
+        var _this = _super.call(this, message) || this;
+        _this.reason = reason;
+        return _this;
+    }
+    return AlertError;
+}(Error));
+exports.AlertError = AlertError;
+var _a, _b, _c;
+
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
+
+var GrowlType;
+(function (GrowlType) {
+    GrowlType[GrowlType["None"] = 0] = "None";
+    GrowlType[GrowlType["Info"] = 1] = "Info";
+    GrowlType[GrowlType["Success"] = 2] = "Success";
+    GrowlType[GrowlType["Warning"] = 3] = "Warning";
+    GrowlType[GrowlType["Error"] = 4] = "Error";
+})(GrowlType = exports.GrowlType || (exports.GrowlType = {}));
+var GrowlPosition;
+(function (GrowlPosition) {
+    GrowlPosition[GrowlPosition["TopRight"] = 0] = "TopRight";
+    GrowlPosition[GrowlPosition["Top"] = 1] = "Top";
+    GrowlPosition[GrowlPosition["TopLeft"] = 2] = "TopLeft";
+    GrowlPosition[GrowlPosition["BottomRight"] = 3] = "BottomRight";
+    GrowlPosition[GrowlPosition["Bottom"] = 4] = "Bottom";
+    GrowlPosition[GrowlPosition["BottomLeft"] = 5] = "BottomLeft";
+})(GrowlPosition = exports.GrowlPosition || (exports.GrowlPosition = {}));
+exports.GROWL_DEFAULTS = {
+    html: false,
+    type: GrowlType.None,
+    position: GrowlPosition.TopRight,
+    showCloseButton: true
+};
+exports.POSITION_CLASS_MAP = (_a = {},
+    _a[GrowlPosition.TopRight] = 'vclLayerGrowlTopRight',
+    _a[GrowlPosition.Top] = 'vclLayerGrowlTop',
+    _a[GrowlPosition.TopLeft] = 'vclLayerGrowlTopLeft',
+    _a[GrowlPosition.BottomRight] = 'vclLayerGrowlBottomRight',
+    _a[GrowlPosition.Bottom] = 'vclLayerGrowlBottom',
+    _a[GrowlPosition.BottomLeft] = 'vclLayerGrowlBottomLeft',
+    _a);
+exports.TYPE_CLASS_MAP = (_b = {},
+    _b[GrowlType.None] = {
+        growlClass: '',
+        iconClass: ''
+    },
+    _b[GrowlType.Info] = {
+        growlClass: 'vclInfo',
+        iconClass: 'fa fa-info-circle'
+    },
+    _b[GrowlType.Success] = {
+        growlClass: 'vclSuccess',
+        iconClass: 'fa fa-check-circle'
+    },
+    _b[GrowlType.Warning] = {
+        growlClass: 'vclWarning',
+        iconClass: 'fa fa-warning'
+    },
+    _b[GrowlType.Error] = {
+        growlClass: 'vclError',
+        iconClass: 'fa fa-exclamation-circle'
+    },
+    _b);
+var _a, _b;
+
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
-var Subject_1 = __webpack_require__(51);
-var layer_references_1 = __webpack_require__(91);
+__webpack_require__(522);
+__webpack_require__(524);
+__webpack_require__(521);
+var Subject_1 = __webpack_require__(27);
+var layer_references_1 = __webpack_require__(41);
 var LayerService = (function () {
-    function LayerService(defaultInjector) {
-        this.defaultInjector = defaultInjector;
-        this.baseNameMap = new Map();
-        this.layerDirectiveMap = new Map();
-        // private layers = new Set<LayerReference>();
+    function LayerService() {
+        this.bases = [];
+        this.visibleLayers = new Map();
         this.layers = new Map();
-        this.layersChange = new Subject_1.Subject();
+        this.layerChange = new Subject_1.Subject();
     }
-    LayerService.prototype.getVisibleLayersFor$ = function (base) {
+    LayerService.prototype.layerChange$ = function (base) {
         if (base === void 0) { base = 'default'; }
-        return this.layersChange.scan(function (layers, layerRef) {
-            if (layerRef.visible) {
-                return layers.concat([layerRef]);
-            }
-            else {
-                return layers.filter(function (layer) { return layer !== layerRef; });
-            }
-        }, []);
+        return this.layerChange.filter(function (layer) { return layer.base === base; });
     };
-    LayerService.prototype.getLayersFor = function (base) {
+    LayerService.prototype.visibleLayersChange$ = function (base) {
+        var _this = this;
+        if (base === void 0) { base = 'default'; }
+        return this.layerChange.filter(function (layer) { return layer.base === base; })
+            .map(function () { return _this.getVisibleLayers(base); })
+            .distinctUntilChanged();
+    };
+    LayerService.prototype.getLayers = function (base) {
         if (base === void 0) { base = 'default'; }
         return Array.from(this.layers.keys()).filter(function (li) { return li.base === base; });
     };
-    LayerService.prototype.getVisibleLayersFor = function (base) {
+    LayerService.prototype.getVisibleLayers = function (base) {
         if (base === void 0) { base = 'default'; }
-        return this.getLayersFor(base).filter(function (layer) { return !!layer.visible; });
+        return (this.visibleLayers.get(base) || []).slice();
     };
     LayerService.prototype.hasVisibleLayers = function (base) {
-        if (base === void 0) { base = 'default'; }
-        return this.getLayersFor(base).some(function (layer) { return layer.visible; });
+        return this.getVisibleLayers(base).length > 0;
     };
     LayerService.prototype.closeAll = function (base) {
-        if (base === void 0) { base = 'default'; }
-        this.getVisibleLayersFor(base).forEach(function (layer) { return layer.close(); });
+        this.getVisibleLayers(base).forEach(function (layer) { return layer.close(); });
     };
     LayerService.prototype.closeTop = function (base) {
-        if (base === void 0) { base = 'default'; }
-        var layer = this.getVisibleLayersFor(base).slice(-1)[0];
+        var layer = this.getVisibleLayers(base).pop();
         if (layer)
             layer.close();
     };
-    LayerService.prototype.registerComponent = function (layer, opts) {
-        if (opts === void 0) { opts = {}; }
-        var layerRef = new layer_references_1.LayerComponentReference(opts, this.defaultInjector, layer);
-        this.registerReference(layerRef);
-        return layerRef;
-    };
-    LayerService.prototype.registerDirective = function (layer, opts) {
-        if (opts === void 0) { opts = {}; }
-        var layerRef = new layer_references_1.LayerDirectiveReference(opts, layer);
-        this.layerDirectiveMap.set(layer, layerRef);
-        this.registerReference(layerRef);
-        return layerRef;
-    };
-    LayerService.prototype.registerReference = function (layerRef) {
+    LayerService.prototype.register = function (layerRef) {
         var _this = this;
-        this.layers.set(layerRef, layerRef.subscribe(function (layerRef) {
-            _this.layersChange.next(layerRef);
+        if (!(layerRef instanceof layer_references_1.LayerRef)) {
+            throw 'Invalid layerRef';
+        }
+        this.layers.set(layerRef, layerRef.visible$.subscribe(function (visible) {
+            var layerRefs = _this.visibleLayers.get(layerRef.base) || [];
+            _this.visibleLayers.set(layerRef.base, visible ? layerRefs.concat([layerRef]) : layerRefs.filter(function (lr) { return lr !== layerRef; }));
+            _this.layerChange.next(layerRef);
         }));
     };
-    LayerService.prototype.disposeReference = function (layerRef) {
+    LayerService.prototype.unregister = function (layerRef) {
+        layerRef.close();
         var sub = this.layers.get(layerRef);
         if (sub && !sub.closed) {
             sub.unsubscribe();
         }
         this.layers.delete(layerRef);
     };
-    LayerService.prototype.unregisterDirective = function (layer) {
-        var layerRef = this.layerDirectiveMap.get(layer);
-        if (layerRef) {
-            layerRef.close();
-            this.layers.delete(layerRef);
-            this.layerDirectiveMap.delete(layer);
-            this.disposeReference(layerRef);
-        }
-    };
-    LayerService.prototype.registerBase = function (layerBase, opts) {
-        if (opts === void 0) { opts = {}; }
-        if (layerBase.name && this.baseNameMap.has(layerBase.name)) {
+    LayerService.prototype.registerBase = function (layerBase) {
+        if (layerBase.name && this.bases.indexOf(layerBase.name) >= 0) {
             throw 'Duplicate vcl-layer-base: ' + layerBase.name;
         }
-        this.baseNameMap.set(layerBase.name, layerBase);
+        this.bases.push(layerBase.name);
     };
     LayerService.prototype.unregisterBase = function (layerBase) {
-        this.baseNameMap.delete(layerBase.name);
+        this.bases = this.bases.filter(function (base) { return base !== layerBase.name; });
     };
     LayerService.prototype.ngOnDestroy = function () {
-        this.layerDirectiveMap.clear();
-        this.layers.forEach(function (sub) {
-            if (sub && !sub.closed) {
-                sub.unsubscribe();
-            }
-        });
-        this.layers.clear();
+        var _this = this;
+        this.layers.forEach(function (sub, layerRef) { return _this.unregister(layerRef); });
     };
     return LayerService;
 }());
 LayerService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [core_1.Injector])
+    core_1.Injectable()
 ], LayerService);
 exports.LayerService = LayerService;
 
 
-/***/ },
-/* 70 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -3798,7 +4001,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 var core_1 = __webpack_require__(1);
 var Observable_1 = __webpack_require__(13);
-__webpack_require__(493);
+__webpack_require__(516);
 ;
 exports.L10N_LOADER_CONFIG = new core_1.OpaqueToken('l10n.loader.config');
 var L10nLoaderService = (function () {
@@ -3856,7 +4059,7 @@ exports.L10nStaticLoaderService = L10nStaticLoaderService;
 var L10nNoopLoaderService = (function (_super) {
     __extends(L10nNoopLoaderService, _super);
     function L10nNoopLoaderService() {
-        return _super.apply(this, arguments) || this;
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     L10nNoopLoaderService.prototype.getTranslationPackage = function (locale) {
         return Observable_1.Observable.of({});
@@ -3864,18 +4067,17 @@ var L10nNoopLoaderService = (function (_super) {
     return L10nNoopLoaderService;
 }(L10nLoaderService));
 L10nNoopLoaderService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [])
+    core_1.Injectable()
 ], L10nNoopLoaderService);
 exports.L10nNoopLoaderService = L10nNoopLoaderService;
 
 
-/***/ },
-/* 71 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -3887,9 +4089,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var L10nParserService = (function () {
     function L10nParserService() {
@@ -3900,7 +4099,7 @@ exports.L10nParserService = L10nParserService;
 var L10nFormatParserService = (function (_super) {
     __extends(L10nFormatParserService, _super);
     function L10nFormatParserService() {
-        return _super.apply(this, arguments) || this;
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     L10nFormatParserService.prototype.parse = function (value) {
         var args = [];
@@ -3914,18 +4113,17 @@ var L10nFormatParserService = (function (_super) {
     return L10nFormatParserService;
 }(L10nParserService));
 L10nFormatParserService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [])
+    core_1.Injectable()
 ], L10nFormatParserService);
 exports.L10nFormatParserService = L10nFormatParserService;
 
 
-/***/ },
-/* 72 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3940,14 +4138,14 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 var core_1 = __webpack_require__(1);
 var Observable_1 = __webpack_require__(13);
-var BehaviorSubject_1 = __webpack_require__(126);
-__webpack_require__(492);
-__webpack_require__(483);
-__webpack_require__(50);
-__webpack_require__(490);
-__webpack_require__(125);
-var l10n_loader_service_1 = __webpack_require__(70);
-var l10n_parser_service_1 = __webpack_require__(71);
+var BehaviorSubject_1 = __webpack_require__(54);
+__webpack_require__(515);
+__webpack_require__(506);
+__webpack_require__(53);
+__webpack_require__(513);
+__webpack_require__(136);
+var l10n_loader_service_1 = __webpack_require__(77);
+var l10n_parser_service_1 = __webpack_require__(78);
 exports.L10N_CONFIG = new core_1.OpaqueToken('l10n.config');
 ;
 var L10nService = (function () {
@@ -4088,12 +4286,12 @@ L10nService = __decorate([
 exports.L10nService = L10nService;
 
 
-/***/ },
-/* 73 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4107,9 +4305,9 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 var Observable_1 = __webpack_require__(13);
-var merge_1 = __webpack_require__(496);
+var merge_1 = __webpack_require__(137);
 var core_1 = __webpack_require__(1);
-var store_1 = __webpack_require__(39);
+var store_1 = __webpack_require__(43);
 var EFFECTS_METADATA_KEY = 'ng-vcl/effects';
 exports.STORE_EFFECTS = new core_1.OpaqueToken('store.effects');
 function Effect() {
@@ -4165,23 +4363,23 @@ Effects = __decorate([
 exports.Effects = Effects;
 
 
-/***/ },
-/* 74 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(8);
-var queue_1 = __webpack_require__(115);
-var Subscription_1 = __webpack_require__(7);
-var observeOn_1 = __webpack_require__(79);
-var ObjectUnsubscribedError_1 = __webpack_require__(47);
-var SubjectSubscription_1 = __webpack_require__(98);
+var Subject_1 = __webpack_require__(9);
+var queue_1 = __webpack_require__(124);
+var Subscription_1 = __webpack_require__(8);
+var observeOn_1 = __webpack_require__(86);
+var ObjectUnsubscribedError_1 = __webpack_require__(51);
+var SubjectSubscription_1 = __webpack_require__(107);
 /**
  * @class ReplaySubject<T>
  */
@@ -4273,12 +4471,12 @@ var ReplayEvent = (function () {
 }());
 //# sourceMappingURL=ReplaySubject.js.map
 
-/***/ },
-/* 75 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -4337,18 +4535,18 @@ var ScalarObservable = (function (_super) {
 exports.ScalarObservable = ScalarObservable;
 //# sourceMappingURL=ScalarObservable.js.map
 
-/***/ },
-/* 76 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var ArrayObservable_1 = __webpack_require__(16);
+var ArrayObservable_1 = __webpack_require__(17);
 var isArray_1 = __webpack_require__(15);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
@@ -4495,15 +4693,15 @@ var CombineLatestSubscriber = (function (_super) {
 exports.CombineLatestSubscriber = CombineLatestSubscriber;
 //# sourceMappingURL=combineLatest.js.map
 
-/***/ },
-/* 77 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var isScheduler_1 = __webpack_require__(20);
-var ArrayObservable_1 = __webpack_require__(16);
-var mergeAll_1 = __webpack_require__(42);
+
+var isScheduler_1 = __webpack_require__(22);
+var ArrayObservable_1 = __webpack_require__(17);
+var mergeAll_1 = __webpack_require__(46);
 /* tslint:disable:max-line-length */
 /**
  * Creates an output Observable which sequentially emits all values from every
@@ -4631,12 +4829,12 @@ function concatStatic() {
 exports.concatStatic = concatStatic;
 //# sourceMappingURL=concat.js.map
 
-/***/ },
-/* 78 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 85 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -4724,19 +4922,19 @@ var MapSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=map.js.map
 
-/***/ },
-/* 79 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var Notification_1 = __webpack_require__(26);
+var Notification_1 = __webpack_require__(28);
 /**
  * @see {@link Notification}
  *
@@ -4809,12 +5007,12 @@ var ObserveOnMessage = (function () {
 exports.ObserveOnMessage = ObserveOnMessage;
 //# sourceMappingURL=observeOn.js.map
 
-/***/ },
-/* 80 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -4938,23 +5136,23 @@ var ReduceSubscriber = (function (_super) {
 exports.ReduceSubscriber = ReduceSubscriber;
 //# sourceMappingURL=reduce.js.map
 
-/***/ },
-/* 81 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var ArrayObservable_1 = __webpack_require__(16);
+var ArrayObservable_1 = __webpack_require__(17);
 var isArray_1 = __webpack_require__(15);
 var Subscriber_1 = __webpack_require__(2);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
-var iterator_1 = __webpack_require__(29);
+var iterator_1 = __webpack_require__(31);
 /* tslint:disable:max-line-length */
 /**
  * @param observables
@@ -5219,24 +5417,24 @@ var ZipBufferIterator = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=zip.js.map
 
-/***/ },
-/* 82 */
-/***/ function(module, exports) {
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 function isFunction(x) {
     return typeof x === 'function';
 }
 exports.isFunction = isFunction;
 //# sourceMappingURL=isFunction.js.map
 
-/***/ },
-/* 83 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var isArray_1 = __webpack_require__(15);
 function isNumeric(val) {
     // parseFloat NaNs numeric-cast false positives (null|true|false|"")
@@ -5249,31 +5447,28 @@ exports.isNumeric = isNumeric;
 ;
 //# sourceMappingURL=isNumeric.js.map
 
-/***/ },
-/* 84 */
-/***/ function(module, exports) {
+/***/ }),
+/* 91 */
+/***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_84__;
+module.exports = __WEBPACK_EXTERNAL_MODULE_91__;
 
-/***/ },
-/* 85 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var flip_switch_component_1 = __webpack_require__(138);
-var metalist_module_1 = __webpack_require__(22);
+var flip_switch_component_1 = __webpack_require__(153);
+var metalist_module_1 = __webpack_require__(23);
 var l10n_module_1 = __webpack_require__(6);
 var VCLFlipSwitchModule = (function () {
     function VCLFlipSwitchModule() {
@@ -5286,35 +5481,31 @@ VCLFlipSwitchModule = __decorate([
         exports: [flip_switch_component_1.FlipSwitchComponent],
         declarations: [flip_switch_component_1.FlipSwitchComponent],
         providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLFlipSwitchModule);
 exports.VCLFlipSwitchModule = VCLFlipSwitchModule;
 
 
-/***/ },
-/* 86 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var dropdown_module_1 = __webpack_require__(52);
-var button_module_1 = __webpack_require__(21);
-var select_component_1 = __webpack_require__(157);
-var popover_module_1 = __webpack_require__(33);
+var dropdown_module_1 = __webpack_require__(55);
+var button_module_1 = __webpack_require__(16);
+var select_component_1 = __webpack_require__(175);
+var popover_module_1 = __webpack_require__(36);
 var l10n_module_1 = __webpack_require__(6);
-var off_click_module_1 = __webpack_require__(23);
+var off_click_module_1 = __webpack_require__(25);
 var VCLSelectModule = (function () {
     function VCLSelectModule() {
     }
@@ -5326,18 +5517,17 @@ VCLSelectModule = __decorate([
         exports: [select_component_1.SelectComponent, select_component_1.SelectOptionComponent],
         declarations: [select_component_1.SelectComponent, select_component_1.SelectOptionComponent],
         providers: []
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLSelectModule);
 exports.VCLSelectModule = VCLSelectModule;
 
 
-/***/ },
-/* 87 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 94 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -5356,14 +5546,14 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 var Observable_1 = __webpack_require__(13);
-var ReplaySubject_1 = __webpack_require__(495);
-__webpack_require__(125);
-__webpack_require__(486);
-__webpack_require__(482);
-__webpack_require__(488);
-__webpack_require__(484);
-__webpack_require__(494);
-var http_1 = __webpack_require__(127);
+var ReplaySubject_1 = __webpack_require__(518);
+__webpack_require__(136);
+__webpack_require__(509);
+__webpack_require__(505);
+__webpack_require__(511);
+__webpack_require__(507);
+__webpack_require__(517);
+var http_1 = __webpack_require__(138);
 var core_1 = __webpack_require__(1);
 /**
  *  Data caching
@@ -5472,8 +5662,7 @@ var ErrorHandlerService = (function () {
     return ErrorHandlerService;
 }());
 ErrorHandlerService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [])
+    core_1.Injectable()
 ], ErrorHandlerService);
 exports.ErrorHandlerService = ErrorHandlerService;
 var AdvHttp = (function (_super) {
@@ -5528,12 +5717,267 @@ AdvHttp = __decorate([
 exports.AdvHttp = AdvHttp;
 
 
-/***/ },
-/* 88 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var Subject_1 = __webpack_require__(27);
+var core_1 = __webpack_require__(1);
+var layer_module_1 = __webpack_require__(19);
+var types_1 = __webpack_require__(74);
+// TODO: support text, password, textarea, select, radio, checkbox file.
+var AlertInputComponent = (function () {
+    function AlertInputComponent() {
+        this.alert = {};
+        this.valueChange = new core_1.EventEmitter();
+        this.inputValue = '';
+    }
+    AlertInputComponent.prototype.ngOnInit = function () {
+        if (this.control === 'input' && typeof this.alert.inputValue === 'string') {
+            this.inputValue = this.alert.inputValue;
+        }
+    };
+    AlertInputComponent.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        if (this.input && this.input.nativeElement && this.input.nativeElement.focus) {
+            setTimeout(function () { return _this.input.nativeElement.focus(); }, 1);
+        }
+        ;
+    };
+    Object.defineProperty(AlertInputComponent.prototype, "control", {
+        get: function () {
+            switch (this.alert.input) {
+                case types_1.AlertInput.Text: return 'input';
+            }
+            return null;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AlertInputComponent.prototype, "placeholder", {
+        get: function () {
+            return this.alert.inputPlaceholder || '';
+        },
+        enumerable: true,
+        configurable: true
+    });
+    AlertInputComponent.prototype.inputValueChange = function (value) {
+        this.valueChange.emit(value);
+    };
+    return AlertInputComponent;
+}());
+__decorate([
+    core_1.ViewChild('input'),
+    __metadata("design:type", Object)
+], AlertInputComponent.prototype, "input", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], AlertInputComponent.prototype, "alert", void 0);
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], AlertInputComponent.prototype, "valueChange", void 0);
+AlertInputComponent = __decorate([
+    core_1.Component({
+        template: __webpack_require__(193),
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+        selector: 'alert-input'
+    })
+], AlertInputComponent);
+exports.AlertInputComponent = AlertInputComponent;
+var AlertComponent = (function () {
+    function AlertComponent(layerRef, layerService, cdRef) {
+        this.layerService = layerService;
+        this.cdRef = cdRef;
+        this.alert = {};
+        this.layerRef = layerRef;
+    }
+    Object.defineProperty(AlertComponent.prototype, "alertOpts", {
+        set: function (opts) {
+            this.updateAlertOpts(types_1.ALERT_DEFAULTS, opts);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ;
+    AlertComponent.prototype.updateAlertOpts = function () {
+        var opts = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            opts[_i] = arguments[_i];
+        }
+        this.alert = Object.assign.apply(Object, [{}, this.alert].concat(opts));
+    };
+    // Close the top layer when escape is pressed
+    AlertComponent.prototype.onKeyUp = function (ev) {
+        if (this.layerService.getVisibleLayers().pop() === this.layerRef) {
+            if (ev.key === 'Escape' && this.alert.escClose) {
+                this.dismiss('esc');
+            }
+            else if (ev.key === 'Enter') {
+                this.confirm();
+            }
+        }
+    };
+    Object.defineProperty(AlertComponent.prototype, "alertClass", {
+        get: function () {
+            return types_1.TYPE_CLASS_MAP[this.alert.type || types_1.AlertType.None].alertClass + ' ' + this.alert.customClass || '';
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AlertComponent.prototype, "iconClass", {
+        get: function () {
+            return types_1.TYPE_CLASS_MAP[this.alert.type || types_1.AlertType.None].iconClass;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AlertComponent.prototype, "titleAlignmentClass", {
+        get: function () {
+            return types_1.TEXT_ALIGNMENT_CLASS_MAP[this.alert.titleAlignment || types_1.AlertAlignment.Left];
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AlertComponent.prototype, "iconAlignmentClass", {
+        get: function () {
+            return types_1.TEXT_ALIGNMENT_CLASS_MAP[this.alert.iconAlignment || types_1.AlertAlignment.Center];
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AlertComponent.prototype, "contentAlignmentClass", {
+        get: function () {
+            return types_1.TEXT_ALIGNMENT_CLASS_MAP[this.alert.contentAlignment || types_1.AlertAlignment.Left];
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(AlertComponent.prototype, "buttonAlignmentClass", {
+        get: function () {
+            return types_1.BUTTON_ALIGNMENT_CLASS_MAP[this.alert.buttonAlignment || types_1.AlertAlignment.Right];
+        },
+        enumerable: true,
+        configurable: true
+    });
+    AlertComponent.prototype.confirm = function () {
+        if (this.alert.loader)
+            return;
+        var result = {};
+        if (this.alert.input) {
+            if (this.alert.inputValidator) {
+                var validationError = 'Invalid value';
+                try {
+                    var valid = this.alert.inputValidator(this.value);
+                    if (!valid) {
+                        this.validationError = 'Invalid value';
+                        return;
+                    }
+                    result.value = this.value;
+                }
+                catch (ex) {
+                    this.validationError = String(ex);
+                    return;
+                }
+            }
+        }
+        if (this.alert.loaderOnConfirm) {
+            this.updateAlertOpts({ loader: true });
+            this.layerRef.send(result);
+        }
+        else {
+            this.layerRef.close(result);
+        }
+    };
+    AlertComponent.prototype.dismiss = function (reason) {
+        this.layerRef.closeWithError(new types_1.AlertError(reason));
+    };
+    AlertComponent.prototype.cancel = function (reason) {
+        this.dismiss('cancel');
+    };
+    AlertComponent.prototype.offClick = function () {
+        this.dismiss('offClick');
+    };
+    AlertComponent.prototype.close = function (reason) {
+        this.dismiss('close');
+    };
+    AlertComponent.prototype.valueChange = function (value) {
+        this.value = value;
+    };
+    AlertComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.offClickSub = this.layerRef.offClick$.subscribe(function () { return _this.offClick(); });
+    };
+    AlertComponent.prototype.ngOnDestroy = function () {
+        if (this.offClickSub && !this.offClickSub.closed)
+            this.offClickSub.unsubscribe();
+    };
+    return AlertComponent;
+}());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object),
+    __metadata("design:paramtypes", [Object])
+], AlertComponent.prototype, "alertOpts", null);
+__decorate([
+    core_1.HostListener('document:keyup', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [KeyboardEvent]),
+    __metadata("design:returntype", void 0)
+], AlertComponent.prototype, "onKeyUp", null);
+AlertComponent = __decorate([
+    core_1.Component({
+        template: __webpack_require__(194),
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush
+    }),
+    __metadata("design:paramtypes", [layer_module_1.LayerRef, layer_module_1.LayerService, core_1.ChangeDetectorRef])
+], AlertComponent);
+exports.AlertComponent = AlertComponent;
+var AlertLayer = (function (_super) {
+    __extends(AlertLayer, _super);
+    function AlertLayer() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.component = AlertComponent;
+        _this.modal = true;
+        _this.transparent = true;
+        _this.offClick$ = new Subject_1.Subject();
+        return _this;
+    }
+    AlertLayer.prototype.offClick = function () {
+        this.offClick$.next();
+    };
+    return AlertLayer;
+}(layer_module_1.ComponentLayerRef));
+AlertLayer = __decorate([
+    core_1.Injectable()
+], AlertLayer);
+exports.AlertLayer = AlertLayer;
+;
+
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -5549,9 +5993,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var Observable_1 = __webpack_require__(13);
-__webpack_require__(487);
+__webpack_require__(510);
 var core_1 = __webpack_require__(1);
-var index_1 = __webpack_require__(53);
+var index_1 = __webpack_require__(56);
 var InteractionType;
 (function (InteractionType) {
     InteractionType[InteractionType["Click"] = 0] = "Click";
@@ -5581,7 +6025,9 @@ __decorate([
     __metadata("design:type", String)
 ], ButtonContentDirective.prototype, "state", void 0);
 ButtonContentDirective = __decorate([
-    core_1.Directive({ selector: '[vcl-button-content]' }),
+    core_1.Directive({
+        selector: '[vcl-button-content]'
+    }),
     __metadata("design:paramtypes", [core_1.ViewContainerRef, core_1.TemplateRef])
 ], ButtonContentDirective);
 exports.ButtonContentDirective = ButtonContentDirective;
@@ -5650,7 +6096,7 @@ var ButtonComponent = (function (_super) {
     }
     Object.defineProperty(ButtonComponent.prototype, "isDisabled", {
         get: function () {
-            return this.disabled ? true : null;
+            return this.disabled || this.busy ? true : null;
         },
         enumerable: true,
         configurable: true
@@ -5671,7 +6117,7 @@ var ButtonComponent = (function (_super) {
     });
     Object.defineProperty(ButtonComponent.prototype, "state", {
         get: function () {
-            return this.disabled ? 'disabled' : (this.busy ? 'busy' : 'enabled');
+            return this.busy ? 'busy' : (this.disabled ? 'disabled' : 'enabled');
         },
         enumerable: true,
         configurable: true
@@ -5860,11 +6306,11 @@ __decorate([
 ], ButtonComponent.prototype, "onClick", null);
 ButtonComponent = __decorate([
     core_1.Component({
-        selector: '[vcl-button]',
+        selector: 'button[vcl-button]',
         host: {
             '[class.vclButton]': 'true',
         },
-        template: __webpack_require__(175),
+        template: __webpack_require__(196),
         changeDetection: core_1.ChangeDetectionStrategy.OnPush,
     }),
     __metadata("design:paramtypes", [core_1.ElementRef])
@@ -5872,12 +6318,12 @@ ButtonComponent = __decorate([
 exports.ButtonComponent = ButtonComponent;
 
 
-/***/ },
-/* 89 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 97 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5886,6 +6332,323 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = __webpack_require__(1);
+var GrowlComponent = (function () {
+    function GrowlComponent(cdRef) {
+        this.cdRef = cdRef;
+        this.growls = [];
+    }
+    GrowlComponent.prototype.markForCheck = function () {
+        this.cdRef.markForCheck();
+    };
+    return GrowlComponent;
+}());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], GrowlComponent.prototype, "growls", void 0);
+GrowlComponent = __decorate([
+    core_1.Component({
+        template: __webpack_require__(204),
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+        encapsulation: core_1.ViewEncapsulation.None,
+        styles: [
+            "\n     .vclLayerGrowlTopRight { left: auto; bottom: auto; top: 1em; right: 1em; }\n     .vclLayerGrowlTop { left: 0; bottom: auto; top: 1em; right: 0; }\n     .vclLayerGrowlTopLeft { left: 1em; bottom: auto; top: 1em; right: auto; }\n     .vclLayerGrowlBottomRight { left: auto; bottom: 1em; top: auto; right: 1em; }\n     .vclLayerGrowlBottom { left: 0; bottom: 1em; top: auto; right: 0; }\n     .vclLayerGrowlBottomLeft { left: 1em; bottom: 1em; top: auto; right: auto; }\n    "
+        ],
+        animations: [
+            core_1.trigger('growlState', [
+                core_1.state('visible', core_1.style({ opacity: 0.91 })),
+                core_1.state('hovered', core_1.style({ opacity: 1.0 })),
+                core_1.state('void', core_1.style({ opacity: 0 })),
+                // TODO: leave animation not working
+                // layer needs some changes so it destroys the wormhole comp instead of removing it
+                // transition('void => *', [
+                //   animate('200ms ease-in')
+                // ]),
+                // transition('* => void', [
+                //   animate('200ms ease-out', style({ opacity: 0 }))
+                // ]),
+                core_1.transition('visible <=> hovered', core_1.animate('300ms'))
+            ])
+        ]
+    }),
+    __metadata("design:paramtypes", [core_1.ChangeDetectorRef])
+], GrowlComponent);
+exports.GrowlComponent = GrowlComponent;
+
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var core_1 = __webpack_require__(1);
+var layer_module_1 = __webpack_require__(19);
+var growl_component_1 = __webpack_require__(97);
+var GrowlLayer = (function (_super) {
+    __extends(GrowlLayer, _super);
+    function GrowlLayer() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.component = growl_component_1.GrowlComponent;
+        _this.transparent = true;
+        _this.offClickClose = false;
+        _this.growls = [];
+        return _this;
+    }
+    GrowlLayer.prototype.add = function (growl) {
+        var _this = this;
+        growl.subscribe(function () {
+            _this.remove(growl);
+        });
+        this.growls = this.reverse ? [growl].concat(this.growls) : this.growls.concat([growl]);
+        this.open({ growls: this.growls });
+        return growl;
+    };
+    GrowlLayer.prototype.remove = function (growl) {
+        this.growls = this.growls.filter(function (g) { return g !== growl; });
+        if (this.growls.length === 0) {
+            this.close();
+        }
+        else {
+            this.open({ growls: this.growls });
+        }
+    };
+    return GrowlLayer;
+}(layer_module_1.ComponentLayerRef));
+exports.GrowlLayer = GrowlLayer;
+var GrowlLayerTopRight = (function (_super) {
+    __extends(GrowlLayerTopRight, _super);
+    function GrowlLayerTopRight() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.customClass = 'vclLayerGrowlTopRight';
+        _this.reverse = true;
+        return _this;
+    }
+    return GrowlLayerTopRight;
+}(GrowlLayer));
+GrowlLayerTopRight = __decorate([
+    core_1.Injectable()
+], GrowlLayerTopRight);
+exports.GrowlLayerTopRight = GrowlLayerTopRight;
+;
+var GrowlLayerTop = (function (_super) {
+    __extends(GrowlLayerTop, _super);
+    function GrowlLayerTop() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.customClass = 'vclLayerGrowlTop';
+        _this.reverse = true;
+        return _this;
+    }
+    return GrowlLayerTop;
+}(GrowlLayer));
+GrowlLayerTop = __decorate([
+    core_1.Injectable()
+], GrowlLayerTop);
+exports.GrowlLayerTop = GrowlLayerTop;
+;
+var GrowlLayerTopLeft = (function (_super) {
+    __extends(GrowlLayerTopLeft, _super);
+    function GrowlLayerTopLeft() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.customClass = 'vclLayerGrowlTopLeft';
+        _this.reverse = true;
+        return _this;
+    }
+    return GrowlLayerTopLeft;
+}(GrowlLayer));
+GrowlLayerTopLeft = __decorate([
+    core_1.Injectable()
+], GrowlLayerTopLeft);
+exports.GrowlLayerTopLeft = GrowlLayerTopLeft;
+;
+var GrowlLayerBottomRight = (function (_super) {
+    __extends(GrowlLayerBottomRight, _super);
+    function GrowlLayerBottomRight() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.customClass = 'vclLayerGrowlBottomRight';
+        _this.reverse = false;
+        return _this;
+    }
+    return GrowlLayerBottomRight;
+}(GrowlLayer));
+GrowlLayerBottomRight = __decorate([
+    core_1.Injectable()
+], GrowlLayerBottomRight);
+exports.GrowlLayerBottomRight = GrowlLayerBottomRight;
+;
+var GrowlLayerBottom = (function (_super) {
+    __extends(GrowlLayerBottom, _super);
+    function GrowlLayerBottom() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.customClass = 'vclLayerGrowlBottom';
+        _this.reverse = false;
+        return _this;
+    }
+    return GrowlLayerBottom;
+}(GrowlLayer));
+GrowlLayerBottom = __decorate([
+    core_1.Injectable()
+], GrowlLayerBottom);
+exports.GrowlLayerBottom = GrowlLayerBottom;
+;
+var GrowlLayerBottomLeft = (function (_super) {
+    __extends(GrowlLayerBottomLeft, _super);
+    function GrowlLayerBottomLeft() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.customClass = 'vclLayerGrowlBottomLeft';
+        _this.reverse = false;
+        return _this;
+    }
+    return GrowlLayerBottomLeft;
+}(GrowlLayer));
+GrowlLayerBottomLeft = __decorate([
+    core_1.Injectable()
+], GrowlLayerBottomLeft);
+exports.GrowlLayerBottomLeft = GrowlLayerBottomLeft;
+;
+
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Observable_1 = __webpack_require__(13);
+__webpack_require__(137);
+__webpack_require__(519);
+__webpack_require__(523);
+var Subject_1 = __webpack_require__(27);
+var types_1 = __webpack_require__(75);
+var Growl = (function (_super) {
+    __extends(Growl, _super);
+    function Growl(opts) {
+        var _this = _super.call(this) || this;
+        _this.opts = opts;
+        _this.closeSubject = new Subject_1.Subject();
+        _this.state = 'visible';
+        var timeout = _this.calculatedTimeout;
+        _this.source = Observable_1.Observable.merge(_this.closeSubject, (typeof timeout === 'number' ? Observable_1.Observable.interval(timeout).skipWhile(function () {
+            return _this.state === 'hovered';
+        }) : null)).first();
+        return _this;
+    }
+    Growl.prototype.close = function () {
+        this.closeSubject.next();
+    };
+    Growl.prototype.mouseEnter = function () {
+        this.state = 'hovered';
+    };
+    Growl.prototype.mouseLeave = function () {
+        this.state = 'active';
+    };
+    Object.defineProperty(Growl.prototype, "text", {
+        get: function () {
+            return this.opts.text;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Growl.prototype, "html", {
+        get: function () {
+            return this.opts.html;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Growl.prototype, "showCloseButton", {
+        get: function () {
+            return this.opts.showCloseButton;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Growl.prototype, "backgroundColor", {
+        get: function () {
+            return this.opts.backgroundColor;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Growl.prototype, "textColor", {
+        get: function () {
+            return this.opts.textColor;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Growl.prototype, "layerClass", {
+        get: function () {
+            return types_1.TYPE_CLASS_MAP[this.opts.type || types_1.GrowlType.None].growlClass;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Growl.prototype, "iconClass", {
+        get: function () {
+            return types_1.TYPE_CLASS_MAP[this.opts.type || types_1.GrowlType.None].iconClass;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(Growl.prototype, "calculatedTimeout", {
+        get: function () {
+            if (typeof this.opts.timeout === 'number') {
+                return this.opts.timeout;
+            }
+            else if (typeof this.opts.timeout === 'boolean' && !this.opts.timeout) {
+                return null;
+            }
+            else if (!this.opts.html && typeof this.opts.text === 'string') {
+                // avg reading speed per min (WPM): 19
+                // min 4 secs
+                var wordCnt = this.opts.text.split(/\s+/).length;
+                return Math.min((wordCnt / 19) * 60 * 1000, 4000);
+            }
+            else if (this.opts.html) {
+                return 5000;
+            }
+            else {
+                return 4000;
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    return Growl;
+}(Observable_1.Observable));
+exports.Growl = Growl;
+
+
+/***/ }),
+/* 100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = __webpack_require__(1);
 var IconService = (function () {
@@ -5929,213 +6692,17 @@ var IconService = (function () {
     return IconService;
 }());
 IconService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [])
+    core_1.Injectable()
 ], IconService);
 exports.IconService = IconService;
 
 
-/***/ },
-/* 90 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 101 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = __webpack_require__(1);
-var wormhole_module_1 = __webpack_require__(18);
-var layer_service_1 = __webpack_require__(69);
-var LayerDirective = (function (_super) {
-    __extends(LayerDirective, _super);
-    function LayerDirective(templateRef, elementRef, layerService) {
-        var _this = _super.call(this, templateRef) || this;
-        _this.templateRef = templateRef;
-        _this.elementRef = elementRef;
-        _this.layerService = layerService;
-        _this.modal = true;
-        _this.closeOnOffClick = true;
-        _this.base = 'default';
-        return _this;
-    }
-    LayerDirective.prototype.ngOnInit = function () {
-        this.layerRef = this.layerService.registerDirective(this, {
-            base: this.base,
-            closeOnOffClick: !!this.closeOnOffClick,
-            modal: !!this.modal
-        });
-    };
-    LayerDirective.prototype.ngOnDestroy = function () {
-        this.layerService.unregisterDirective(this);
-    };
-    LayerDirective.prototype.open = function (data) {
-        return this.layerRef.open(data);
-    };
-    LayerDirective.prototype.send = function (result) {
-        this.layerRef.send(result);
-    };
-    LayerDirective.prototype.close = function (result) {
-        this.layerRef.close();
-    };
-    return LayerDirective;
-}(wormhole_module_1.TemplateWormhole));
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Boolean)
-], LayerDirective.prototype, "modal", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Boolean)
-], LayerDirective.prototype, "closeOnOffClick", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", String)
-], LayerDirective.prototype, "base", void 0);
-LayerDirective = __decorate([
-    core_1.Directive({
-        selector: '[vcl-layer]',
-        exportAs: 'layer',
-    }),
-    __metadata("design:paramtypes", [core_1.TemplateRef, core_1.ElementRef, layer_service_1.LayerService])
-], LayerDirective);
-exports.LayerDirective = LayerDirective;
 
-
-/***/ },
-/* 91 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var core_1 = __webpack_require__(1);
-var Subject_1 = __webpack_require__(51);
-var Observable_1 = __webpack_require__(13);
-var wormhole_module_1 = __webpack_require__(18);
-var layer_directive_1 = __webpack_require__(90);
-var LayerReference = (function (_super) {
-    __extends(LayerReference, _super);
-    function LayerReference(opts) {
-        var _this = _super.call(this) || this;
-        _this.stateChange = new Subject_1.Subject();
-        _this.source = _this.stateChange.asObservable();
-        _this.visible = false;
-        _this.base = opts.base || 'default';
-        _this.modal = !!opts.modal;
-        _this.closeOnOffClick = !!opts.closeOnOffClick;
-        _this.data = {};
-        return _this;
-    }
-    LayerReference.prototype.open = function (data) {
-        this.visible = true;
-        this.data = data || {};
-        this.wormhole = this.createWormhole();
-        if (!this.results) {
-            this.results = new Subject_1.Subject();
-        }
-        this.stateChange.next(this);
-        return this.results.asObservable();
-    };
-    LayerReference.prototype.close = function (result) {
-        this.visible = false;
-        this.data = {};
-        this.wormhole = null;
-        if (this.results) {
-            if (typeof result !== 'undefined') {
-                this.results.next(result);
-            }
-            this.results.complete();
-            this.results = null;
-        }
-        this.stateChange.next(this);
-    };
-    LayerReference.prototype.send = function (result) {
-        if (result !== undefined && this.results) {
-            this.results.next(result);
-        }
-    };
-    return LayerReference;
-}(Observable_1.Observable));
-exports.LayerReference = LayerReference;
-var LayerDirectiveReference = (function (_super) {
-    __extends(LayerDirectiveReference, _super);
-    function LayerDirectiveReference(opts, layer) {
-        var _this = _super.call(this, opts) || this;
-        _this.layer = layer;
-        return _this;
-    }
-    LayerDirectiveReference.prototype.createWormhole = function () {
-        return this.layer;
-    };
-    return LayerDirectiveReference;
-}(LayerReference));
-LayerDirectiveReference = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [Object, layer_directive_1.LayerDirective])
-], LayerDirectiveReference);
-exports.LayerDirectiveReference = LayerDirectiveReference;
-var LayerComponentReference = LayerComponentReference_1 = (function (_super) {
-    __extends(LayerComponentReference, _super);
-    function LayerComponentReference(opts, defaultInjector, LayerClass) {
-        var _this = _super.call(this, opts) || this;
-        _this.defaultInjector = defaultInjector;
-        _this.LayerClass = LayerClass;
-        _this.injector = core_1.ReflectiveInjector.resolveAndCreate([{
-                provide: LayerComponentReference_1,
-                useValue: _this
-            }], _this.defaultInjector);
-        return _this;
-    }
-    LayerComponentReference.prototype.createWormhole = function () {
-        if (this.wormhole instanceof wormhole_module_1.ComponentWormhole) {
-            // Reuse existing wormhole and update data
-            // Change detection is triggered within setData() 
-            this.wormhole.setData(this.data);
-            return this.wormhole;
-        }
-        return new wormhole_module_1.ComponentWormhole(this.LayerClass, { data: this.data, injector: this.injector });
-    };
-    return LayerComponentReference;
-}(LayerReference));
-LayerComponentReference = LayerComponentReference_1 = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [Object, core_1.Injector, Object])
-], LayerComponentReference);
-exports.LayerComponentReference = LayerComponentReference;
-var LayerComponentReference_1;
-
-
-/***/ },
-/* 92 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6152,6 +6719,9 @@ var OverlayManagerService = (function () {
     }
     OverlayManagerService.prototype.register = function (component) {
         var zIndex = 100;
+        // this.components
+        // .filter(component => component.zIndex >= zIndex)
+        // .forEach(component => zIndex=component.zIndex);
         for (var i = 0; i < this.components.length; i++) {
             if (this.components[i].zIndex >= zIndex) {
                 zIndex = this.components[i].zIndex;
@@ -6174,12 +6744,12 @@ OverlayManagerService = __decorate([
 exports.OverlayManagerService = OverlayManagerService;
 
 
-/***/ },
-/* 93 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 102 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6231,21 +6801,21 @@ TokenComponent = __decorate([
 exports.TokenComponent = TokenComponent;
 
 
-/***/ },
-/* 94 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 103 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(13);
-__webpack_require__(124);
-__webpack_require__(485);
-__webpack_require__(50);
+__webpack_require__(135);
+__webpack_require__(508);
+__webpack_require__(53);
 function select(path) {
     var paths = [];
     for (var _i = 1; _i < arguments.length; _i++) {
@@ -6290,12 +6860,12 @@ exports.StoreObservable = StoreObservable;
 ;
 
 
-/***/ },
-/* 95 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 104 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6305,14 +6875,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-__webpack_require__(84);
-__webpack_require__(50);
+__webpack_require__(91);
+__webpack_require__(53);
 var core_1 = __webpack_require__(1);
-var router_1 = __webpack_require__(128);
-var store_1 = __webpack_require__(39);
-var actions_1 = __webpack_require__(38);
-var utils_1 = __webpack_require__(40);
-var effects_1 = __webpack_require__(73);
+var router_1 = __webpack_require__(139);
+var store_1 = __webpack_require__(43);
+var actions_1 = __webpack_require__(42);
+var utils_1 = __webpack_require__(44);
+var effects_1 = __webpack_require__(80);
 exports.initialRouterState = {
     url: ''
 };
@@ -6412,19 +6982,19 @@ exports.routerReducer = utils_1.combineReducers({
 });
 
 
-/***/ },
-/* 96 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(8);
-var ObjectUnsubscribedError_1 = __webpack_require__(47);
+var Subject_1 = __webpack_require__(9);
+var ObjectUnsubscribedError_1 = __webpack_require__(51);
 /**
  * @class BehaviorSubject<T>
  */
@@ -6467,12 +7037,12 @@ var BehaviorSubject = (function (_super) {
 exports.BehaviorSubject = BehaviorSubject;
 //# sourceMappingURL=BehaviorSubject.js.map
 
-/***/ },
-/* 97 */
-/***/ function(module, exports) {
+/***/ }),
+/* 106 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 exports.empty = {
     closed: true,
     next: function (value) { },
@@ -6481,18 +7051,18 @@ exports.empty = {
 };
 //# sourceMappingURL=Observer.js.map
 
-/***/ },
-/* 98 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 107 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscription_1 = __webpack_require__(7);
+var Subscription_1 = __webpack_require__(8);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -6527,21 +7097,21 @@ var SubjectSubscription = (function (_super) {
 exports.SubjectSubscription = SubjectSubscription;
 //# sourceMappingURL=SubjectSubscription.js.map
 
-/***/ },
-/* 99 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 108 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(8);
+var Subject_1 = __webpack_require__(9);
 var Observable_1 = __webpack_require__(0);
 var Subscriber_1 = __webpack_require__(2);
-var Subscription_1 = __webpack_require__(7);
+var Subscription_1 = __webpack_require__(8);
 /**
  * @class ConnectableObservable<T>
  */
@@ -6695,27 +7265,27 @@ var RefCountSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=ConnectableObservable.js.map
 
-/***/ },
-/* 100 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 109 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var isArray_1 = __webpack_require__(15);
-var isPromise_1 = __webpack_require__(122);
-var PromiseObservable_1 = __webpack_require__(101);
-var IteratorObservable_1 = __webpack_require__(345);
-var ArrayObservable_1 = __webpack_require__(16);
-var ArrayLikeObservable_1 = __webpack_require__(334);
-var iterator_1 = __webpack_require__(29);
+var isPromise_1 = __webpack_require__(131);
+var PromiseObservable_1 = __webpack_require__(110);
+var IteratorObservable_1 = __webpack_require__(368);
+var ArrayObservable_1 = __webpack_require__(17);
+var ArrayLikeObservable_1 = __webpack_require__(357);
+var iterator_1 = __webpack_require__(31);
 var Observable_1 = __webpack_require__(0);
-var observeOn_1 = __webpack_require__(79);
-var observable_1 = __webpack_require__(43);
+var observeOn_1 = __webpack_require__(86);
+var observable_1 = __webpack_require__(47);
 var isArrayLike = (function (x) { return x && typeof x.length === 'number'; });
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -6823,12 +7393,12 @@ var FromObservable = (function (_super) {
 exports.FromObservable = FromObservable;
 //# sourceMappingURL=FromObservable.js.map
 
-/***/ },
-/* 101 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 110 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -6950,12 +7520,12 @@ function dispatchError(arg) {
 }
 //# sourceMappingURL=PromiseObservable.js.map
 
-/***/ },
-/* 102 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 111 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -6963,10 +7533,10 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var root_1 = __webpack_require__(11);
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
+var errorObject_1 = __webpack_require__(10);
 var Observable_1 = __webpack_require__(0);
 var Subscriber_1 = __webpack_require__(2);
-var map_1 = __webpack_require__(78);
+var map_1 = __webpack_require__(85);
 function getCORSRequest() {
     if (root_1.root.XMLHttpRequest) {
         var xhr = new root_1.root.XMLHttpRequest();
@@ -7364,12 +7934,12 @@ var AjaxTimeoutError = (function (_super) {
 exports.AjaxTimeoutError = AjaxTimeoutError;
 //# sourceMappingURL=AjaxObservable.js.map
 
-/***/ },
-/* 103 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 112 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -7377,7 +7947,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Subscriber_1 = __webpack_require__(2);
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
+var errorObject_1 = __webpack_require__(10);
 /* tslint:disable:max-line-length */
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item.
@@ -7478,12 +8048,12 @@ var DistinctUntilChangedSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=distinctUntilChanged.js.map
 
-/***/ },
-/* 104 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 113 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -7577,12 +8147,12 @@ var FilterSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=filter.js.map
 
-/***/ },
-/* 105 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 114 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -7684,15 +8254,15 @@ var FindValueSubscriber = (function (_super) {
 exports.FindValueSubscriber = FindValueSubscriber;
 //# sourceMappingURL=find.js.map
 
-/***/ },
-/* 106 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 115 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var ArrayObservable_1 = __webpack_require__(16);
-var mergeAll_1 = __webpack_require__(42);
-var isScheduler_1 = __webpack_require__(20);
+
+var ArrayObservable_1 = __webpack_require__(17);
+var mergeAll_1 = __webpack_require__(46);
+var isScheduler_1 = __webpack_require__(22);
 /* tslint:disable:max-line-length */
 /**
  * Creates an output Observable which concurrently emits all values from every
@@ -7834,12 +8404,12 @@ function mergeStatic() {
 exports.mergeStatic = mergeStatic;
 //# sourceMappingURL=merge.js.map
 
-/***/ },
-/* 107 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 116 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -8011,12 +8581,12 @@ var MergeMapSubscriber = (function (_super) {
 exports.MergeMapSubscriber = MergeMapSubscriber;
 //# sourceMappingURL=mergeMap.js.map
 
-/***/ },
-/* 108 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 117 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -8172,18 +8742,18 @@ var MergeMapToSubscriber = (function (_super) {
 exports.MergeMapToSubscriber = MergeMapToSubscriber;
 //# sourceMappingURL=mergeMapTo.js.map
 
-/***/ },
-/* 109 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 118 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var FromObservable_1 = __webpack_require__(100);
+var FromObservable_1 = __webpack_require__(109);
 var isArray_1 = __webpack_require__(15);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
@@ -8254,19 +8824,19 @@ var OnErrorResumeNextSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=onErrorResumeNext.js.map
 
-/***/ },
-/* 110 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 119 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var isArray_1 = __webpack_require__(15);
-var ArrayObservable_1 = __webpack_require__(16);
+var ArrayObservable_1 = __webpack_require__(17);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
 /* tslint:disable:max-line-length */
@@ -8371,12 +8941,12 @@ var RaceSubscriber = (function (_super) {
 exports.RaceSubscriber = RaceSubscriber;
 //# sourceMappingURL=race.js.map
 
-/***/ },
-/* 111 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 120 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -8436,12 +9006,12 @@ var TimeIntervalSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=timeInterval.js.map
 
-/***/ },
-/* 112 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 121 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -8492,19 +9062,19 @@ var TimestampSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=timestamp.js.map
 
-/***/ },
-/* 113 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 122 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncAction_1 = __webpack_require__(27);
-var AsyncScheduler_1 = __webpack_require__(28);
+var AsyncAction_1 = __webpack_require__(29);
+var AsyncScheduler_1 = __webpack_require__(30);
 var VirtualTimeScheduler = (function (_super) {
     __extends(VirtualTimeScheduler, _super);
     function VirtualTimeScheduler(SchedulerAction, maxFrames) {
@@ -8604,34 +9174,34 @@ var VirtualAction = (function (_super) {
 exports.VirtualAction = VirtualAction;
 //# sourceMappingURL=VirtualTimeScheduler.js.map
 
-/***/ },
-/* 114 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 123 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var AsapAction_1 = __webpack_require__(462);
-var AsapScheduler_1 = __webpack_require__(463);
+
+var AsapAction_1 = __webpack_require__(485);
+var AsapScheduler_1 = __webpack_require__(486);
 exports.asap = new AsapScheduler_1.AsapScheduler(AsapAction_1.AsapAction);
 //# sourceMappingURL=asap.js.map
 
-/***/ },
-/* 115 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 124 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var QueueAction_1 = __webpack_require__(464);
-var QueueScheduler_1 = __webpack_require__(465);
+
+var QueueAction_1 = __webpack_require__(487);
+var QueueScheduler_1 = __webpack_require__(488);
 exports.queue = new QueueScheduler_1.QueueScheduler(QueueAction_1.QueueAction);
 //# sourceMappingURL=queue.js.map
 
-/***/ },
-/* 116 */
-/***/ function(module, exports) {
+/***/ }),
+/* 125 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var SubscriptionLog = (function () {
     function SubscriptionLog(subscribedFrame, unsubscribedFrame) {
         if (unsubscribedFrame === void 0) { unsubscribedFrame = Number.POSITIVE_INFINITY; }
@@ -8643,13 +9213,13 @@ var SubscriptionLog = (function () {
 exports.SubscriptionLog = SubscriptionLog;
 //# sourceMappingURL=SubscriptionLog.js.map
 
-/***/ },
-/* 117 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 126 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var SubscriptionLog_1 = __webpack_require__(116);
+
+var SubscriptionLog_1 = __webpack_require__(125);
 var SubscriptionLoggable = (function () {
     function SubscriptionLoggable() {
         this.subscriptions = [];
@@ -8668,12 +9238,12 @@ var SubscriptionLoggable = (function () {
 exports.SubscriptionLoggable = SubscriptionLoggable;
 //# sourceMappingURL=SubscriptionLoggable.js.map
 
-/***/ },
-/* 118 */
-/***/ function(module, exports) {
+/***/ }),
+/* 127 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -8699,12 +9269,12 @@ var TimeoutError = (function (_super) {
 exports.TimeoutError = TimeoutError;
 //# sourceMappingURL=TimeoutError.js.map
 
-/***/ },
-/* 119 */
-/***/ function(module, exports) {
+/***/ }),
+/* 128 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -8730,12 +9300,12 @@ var UnsubscriptionError = (function (_super) {
 exports.UnsubscriptionError = UnsubscriptionError;
 //# sourceMappingURL=UnsubscriptionError.js.map
 
-/***/ },
-/* 120 */
-/***/ function(module, exports) {
+/***/ }),
+/* 129 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 function applyMixins(derivedCtor, baseCtors) {
     for (var i = 0, len = baseCtors.length; i < len; i++) {
         var baseCtor = baseCtors[i];
@@ -8749,93 +9319,176 @@ function applyMixins(derivedCtor, baseCtors) {
 exports.applyMixins = applyMixins;
 //# sourceMappingURL=applyMixins.js.map
 
-/***/ },
-/* 121 */
-/***/ function(module, exports) {
+/***/ }),
+/* 130 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 function isObject(x) {
     return x != null && typeof x === 'object';
 }
 exports.isObject = isObject;
 //# sourceMappingURL=isObject.js.map
 
-/***/ },
-/* 122 */
-/***/ function(module, exports) {
+/***/ }),
+/* 131 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 function isPromise(value) {
     return value && typeof value.subscribe !== 'function' && typeof value.then === 'function';
 }
 exports.isPromise = isPromise;
 //# sourceMappingURL=isPromise.js.map
 
-/***/ },
-/* 123 */
-/***/ function(module, exports) {
+/***/ }),
+/* 132 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 /* tslint:disable:no-empty */
 function noop() { }
 exports.noop = noop;
 //# sourceMappingURL=noop.js.map
 
-/***/ },
-/* 124 */
-/***/ function(module, exports) {
+/***/ }),
+/* 133 */
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_124__;
+var apply = Function.prototype.apply;
 
-/***/ },
-/* 125 */
-/***/ function(module, exports) {
+// DOM APIs, for completeness
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_125__;
+exports.setTimeout = function() {
+  return new Timeout(apply.call(setTimeout, window, arguments), clearTimeout);
+};
+exports.setInterval = function() {
+  return new Timeout(apply.call(setInterval, window, arguments), clearInterval);
+};
+exports.clearTimeout =
+exports.clearInterval = function(timeout) {
+  if (timeout) {
+    timeout.close();
+  }
+};
 
-/***/ },
-/* 126 */
-/***/ function(module, exports) {
+function Timeout(id, clearFn) {
+  this._id = id;
+  this._clearFn = clearFn;
+}
+Timeout.prototype.unref = Timeout.prototype.ref = function() {};
+Timeout.prototype.close = function() {
+  this._clearFn.call(window, this._id);
+};
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_126__;
+// Does not start the time, just sets up the members needed.
+exports.enroll = function(item, msecs) {
+  clearTimeout(item._idleTimeoutId);
+  item._idleTimeout = msecs;
+};
 
-/***/ },
-/* 127 */
-/***/ function(module, exports) {
+exports.unenroll = function(item) {
+  clearTimeout(item._idleTimeoutId);
+  item._idleTimeout = -1;
+};
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_127__;
+exports._unrefActive = exports.active = function(item) {
+  clearTimeout(item._idleTimeoutId);
 
-/***/ },
-/* 128 */
-/***/ function(module, exports) {
+  var msecs = item._idleTimeout;
+  if (msecs >= 0) {
+    item._idleTimeoutId = setTimeout(function onTimeout() {
+      if (item._onTimeout)
+        item._onTimeout();
+    }, msecs);
+  }
+};
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_128__;
+// setimmediate attaches itself to the global object
+__webpack_require__(502);
+exports.setImmediate = setImmediate;
+exports.clearImmediate = clearImmediate;
 
-/***/ },
-/* 129 */
-/***/ function(module, exports, __webpack_require__) {
+
+/***/ }),
+/* 134 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 135 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_135__;
+
+/***/ }),
+/* 136 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_136__;
+
+/***/ }),
+/* 137 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_137__;
+
+/***/ }),
+/* 138 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_138__;
+
+/***/ }),
+/* 139 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_139__;
+
+/***/ }),
+/* 140 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 var core_1 = __webpack_require__(1);
-var http_1 = __webpack_require__(127);
-var adv_http_service_1 = __webpack_require__(87);
-__export(__webpack_require__(87));
+var http_1 = __webpack_require__(138);
+var adv_http_service_1 = __webpack_require__(94);
+__export(__webpack_require__(94));
 var AdvHttpModule = AdvHttpModule_1 = (function () {
     function AdvHttpModule() {
     }
@@ -8891,32 +9544,28 @@ AdvHttpModule = AdvHttpModule_1 = __decorate([
                 useValue: {}
             }
         ]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], AdvHttpModule);
 exports.AdvHttpModule = AdvHttpModule;
 var AdvHttpModule_1;
 
 
-/***/ },
-/* 130 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 141 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 var core_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(5);
-var icon_module_1 = __webpack_require__(17);
-var form_control_label_component_1 = __webpack_require__(139);
+var icon_module_1 = __webpack_require__(18);
+var form_control_label_component_1 = __webpack_require__(154);
 var l10n_module_1 = __webpack_require__(6);
 var VCLFormControlLabelModule = (function () {
     function VCLFormControlLabelModule() {
@@ -8928,18 +9577,17 @@ VCLFormControlLabelModule = __decorate([
         imports: [common_1.CommonModule, icon_module_1.VCLIconModule, l10n_module_1.L10nModule],
         exports: [form_control_label_component_1.FormControlLabelComponent],
         declarations: [form_control_label_component_1.FormControlLabelComponent]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], VCLFormControlLabelModule);
 exports.VCLFormControlLabelModule = VCLFormControlLabelModule;
 
 
-/***/ },
-/* 131 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 142 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8955,18 +9603,18 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
-var utils_1 = __webpack_require__(40);
+var utils_1 = __webpack_require__(44);
 var core_1 = __webpack_require__(1);
-var store_1 = __webpack_require__(39);
-var actions_1 = __webpack_require__(38);
-var effects_1 = __webpack_require__(73);
-var router_1 = __webpack_require__(95);
-__export(__webpack_require__(38));
-__export(__webpack_require__(40));
-__export(__webpack_require__(73));
-__export(__webpack_require__(94));
-__export(__webpack_require__(39));
-__export(__webpack_require__(95));
+var store_1 = __webpack_require__(43);
+var actions_1 = __webpack_require__(42);
+var effects_1 = __webpack_require__(80);
+var router_1 = __webpack_require__(104);
+__export(__webpack_require__(42));
+__export(__webpack_require__(44));
+__export(__webpack_require__(80));
+__export(__webpack_require__(103));
+__export(__webpack_require__(43));
+__export(__webpack_require__(104));
 exports.STORE_FORROOT_GUARD = new core_1.OpaqueToken('STORE_FORROOT_GUARD');
 function provideForRootGuard(store) {
     if (store) {
@@ -9092,18 +9740,130 @@ exports.StoreModule = StoreModule;
 var StoreModule_1;
 
 
-/***/ },
-/* 132 */
-/***/ function(module, exports) {
+/***/ }),
+/* 143 */
+/***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_132__;
+module.exports = __WEBPACK_EXTERNAL_MODULE_143__;
 
-/***/ },
-/* 133 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 144 */
+/***/ (function(module, exports) {
+
+module.exports=function(t){function n(e){if(r[e])return r[e].exports;var o=r[e]={exports:{},id:e,loaded:!1};return t[e].call(o.exports,o,o.exports,n),o.loaded=!0,o.exports}var r={};return n.m=t,n.c=r,n.p="",n(0)}([function(t,n,r){"use strict";n.__esModule=!0,r(8),r(9),n["default"]=function(t,n){if(t&&n){var r=function(){var r=Array.isArray(n)?n:n.split(","),e=t.name||"",o=t.type||"",i=o.replace(/\/.*$/,"");return{v:r.some(function(t){var n=t.trim();return"."===n.charAt(0)?e.toLowerCase().endsWith(n.toLowerCase()):/\/\*$/.test(n)?i===n.replace(/\/.*$/,""):o===n})}}();if("object"==typeof r)return r.v}return!0},t.exports=n["default"]},function(t,n){var r=t.exports={version:"1.2.2"};"number"==typeof __e&&(__e=r)},function(t,n){var r=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=r)},function(t,n,r){var e=r(2),o=r(1),i=r(4),u=r(19),c="prototype",f=function(t,n){return function(){return t.apply(n,arguments)}},s=function(t,n,r){var a,p,l,y,d=t&s.G,h=t&s.P,v=d?e:t&s.S?e[n]||(e[n]={}):(e[n]||{})[c],x=d?o:o[n]||(o[n]={});d&&(r=n);for(a in r)p=!(t&s.F)&&v&&a in v,l=(p?v:r)[a],y=t&s.B&&p?f(l,e):h&&"function"==typeof l?f(Function.call,l):l,v&&!p&&u(v,a,l),x[a]!=l&&i(x,a,y),h&&((x[c]||(x[c]={}))[a]=l)};e.core=o,s.F=1,s.G=2,s.S=4,s.P=8,s.B=16,s.W=32,t.exports=s},function(t,n,r){var e=r(5),o=r(18);t.exports=r(22)?function(t,n,r){return e.setDesc(t,n,o(1,r))}:function(t,n,r){return t[n]=r,t}},function(t,n){var r=Object;t.exports={create:r.create,getProto:r.getPrototypeOf,isEnum:{}.propertyIsEnumerable,getDesc:r.getOwnPropertyDescriptor,setDesc:r.defineProperty,setDescs:r.defineProperties,getKeys:r.keys,getNames:r.getOwnPropertyNames,getSymbols:r.getOwnPropertySymbols,each:[].forEach}},function(t,n){var r=0,e=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++r+e).toString(36))}},function(t,n,r){var e=r(20)("wks"),o=r(2).Symbol;t.exports=function(t){return e[t]||(e[t]=o&&o[t]||(o||r(6))("Symbol."+t))}},function(t,n,r){r(26),t.exports=r(1).Array.some},function(t,n,r){r(25),t.exports=r(1).String.endsWith},function(t,n){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,n){var r={}.toString;t.exports=function(t){return r.call(t).slice(8,-1)}},function(t,n,r){var e=r(10);t.exports=function(t,n,r){if(e(t),void 0===n)return t;switch(r){case 1:return function(r){return t.call(n,r)};case 2:return function(r,e){return t.call(n,r,e)};case 3:return function(r,e,o){return t.call(n,r,e,o)}}return function(){return t.apply(n,arguments)}}},function(t,n){t.exports=function(t){if(void 0==t)throw TypeError("Can't call method on  "+t);return t}},function(t,n,r){t.exports=function(t){var n=/./;try{"/./"[t](n)}catch(e){try{return n[r(7)("match")]=!1,!"/./"[t](n)}catch(o){}}return!0}},function(t,n){t.exports=function(t){try{return!!t()}catch(n){return!0}}},function(t,n){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,n,r){var e=r(16),o=r(11),i=r(7)("match");t.exports=function(t){var n;return e(t)&&(void 0!==(n=t[i])?!!n:"RegExp"==o(t))}},function(t,n){t.exports=function(t,n){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:n}}},function(t,n,r){var e=r(2),o=r(4),i=r(6)("src"),u="toString",c=Function[u],f=(""+c).split(u);r(1).inspectSource=function(t){return c.call(t)},(t.exports=function(t,n,r,u){"function"==typeof r&&(o(r,i,t[n]?""+t[n]:f.join(String(n))),"name"in r||(r.name=n)),t===e?t[n]=r:(u||delete t[n],o(t,n,r))})(Function.prototype,u,function(){return"function"==typeof this&&this[i]||c.call(this)})},function(t,n,r){var e=r(2),o="__core-js_shared__",i=e[o]||(e[o]={});t.exports=function(t){return i[t]||(i[t]={})}},function(t,n,r){var e=r(17),o=r(13);t.exports=function(t,n,r){if(e(n))throw TypeError("String#"+r+" doesn't accept regex!");return String(o(t))}},function(t,n,r){t.exports=!r(15)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(t,n){var r=Math.ceil,e=Math.floor;t.exports=function(t){return isNaN(t=+t)?0:(t>0?e:r)(t)}},function(t,n,r){var e=r(23),o=Math.min;t.exports=function(t){return t>0?o(e(t),9007199254740991):0}},function(t,n,r){"use strict";var e=r(3),o=r(24),i=r(21),u="endsWith",c=""[u];e(e.P+e.F*r(14)(u),"String",{endsWith:function(t){var n=i(this,t,u),r=arguments,e=r.length>1?r[1]:void 0,f=o(n.length),s=void 0===e?f:Math.min(o(e),f),a=String(t);return c?c.call(n,a,s):n.slice(s-a.length,s)===a}})},function(t,n,r){var e=r(5),o=r(3),i=r(1).Array||Array,u={},c=function(t,n){e.each.call(t.split(","),function(t){void 0==n&&t in i?u[t]=i[t]:t in[]&&(u[t]=r(12)(Function.call,[][t],n))})};c("pop,reverse,shift,keys,values,entries",1),c("indexOf,every,some,forEach,map,filter,find,findIndex,includes",3),c("join,slice,concat,push,splice,unshift,sort,lastIndexOf,reduce,reduceRight,copyWithin,fill"),o(o.S,"Array",u)}]);
+
+/***/ }),
+/* 145 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = __webpack_require__(1);
+var layer_module_1 = __webpack_require__(19);
+var types_1 = __webpack_require__(74);
+var alert_component_1 = __webpack_require__(95);
+var AlertService = (function () {
+    function AlertService(layerService, alertLayerRef) {
+        this.layerService = layerService;
+        this.alertLayerRef = alertLayerRef;
+        this.noop = function () { };
+    }
+    AlertService.prototype.alert = function (text, opts) {
+        return this.open({ text: text }, opts);
+    };
+    AlertService.prototype.info = function (text, opts) {
+        return this.open({ text: text, type: types_1.AlertType.Info }, opts);
+    };
+    AlertService.prototype.success = function (text, opts) {
+        return this.open({ text: text, type: types_1.AlertType.Success }, opts);
+    };
+    AlertService.prototype.warning = function (text, opts) {
+        return this.open({ text: text, type: types_1.AlertType.Warning }, opts);
+    };
+    AlertService.prototype.error = function (text, opts) {
+        return this.open({ text: text, type: types_1.AlertType.Error }, opts);
+    };
+    AlertService.prototype.question = function (text, opts) {
+        return this.open({ text: text, type: types_1.AlertType.Question, showCancelButton: true }, opts);
+    };
+    AlertService.prototype.open = function () {
+        var opts = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            opts[_i] = arguments[_i];
+        }
+        var alertOpts = Object.assign.apply(Object, [{}].concat(opts));
+        return this.alertLayerRef.open({ alertOpts: alertOpts });
+    };
+    AlertService.prototype.close = function () {
+        this.alertLayerRef.close();
+    };
+    return AlertService;
+}());
+AlertService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [layer_module_1.LayerService,
+        alert_component_1.AlertLayer])
+], AlertService);
+exports.AlertService = AlertService;
+
+
+/***/ }),
+/* 146 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = __webpack_require__(1);
+var BusyComponent = (function () {
+    function BusyComponent() {
+        this.busy = false;
+        this.busyLabel = null;
+    }
+    return BusyComponent;
+}());
+__decorate([
+    core_1.Input('vcl-busy'),
+    core_1.HostBinding('class.vclLoadingLayerContainer'),
+    __metadata("design:type", Object)
+], BusyComponent.prototype, "busy", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], BusyComponent.prototype, "busyLabel", void 0);
+BusyComponent = __decorate([
+    core_1.Component({
+        selector: '[vcl-busy]',
+        template: __webpack_require__(195),
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush
+    })
+], BusyComponent);
+exports.BusyComponent = BusyComponent;
+
+
+/***/ }),
+/* 147 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9115,7 +9875,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var Observable_1 = __webpack_require__(13);
 var core_1 = __webpack_require__(1);
-var button_component_1 = __webpack_require__(88);
+var button_component_1 = __webpack_require__(96);
 var SelectionMode;
 (function (SelectionMode) {
     SelectionMode[SelectionMode["Single"] = 0] = "Single";
@@ -9261,18 +10021,17 @@ ButtonGroupComponent = __decorate([
         },
         template: "<ng-content></ng-content>",
         changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], ButtonGroupComponent);
 exports.ButtonGroupComponent = ButtonGroupComponent;
 
 
-/***/ },
-/* 134 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 148 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9284,7 +10043,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var Observable_1 = __webpack_require__(13);
-var forms_1 = __webpack_require__(10);
+var forms_1 = __webpack_require__(7);
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return CheckboxComponent; }),
@@ -9294,11 +10053,11 @@ var CheckboxComponent = (function () {
     function CheckboxComponent(elementRef) {
         var _this = this;
         this.elementRef = elementRef;
+        this.tabindex = 0;
         this.checkedIcon = 'fa:check-square-o';
         this.uncheckedIcon = 'fa:square-o';
         this.disabled = false;
         this.labelPosition = 'right';
-        this.tabindex = 0;
         /**
         Reflects the checked state, `true` is checked and `false` is unchecked
         @public
@@ -9390,6 +10149,10 @@ var CheckboxComponent = (function () {
     return CheckboxComponent;
 }());
 __decorate([
+    core_1.HostBinding(),
+    __metadata("design:type", Object)
+], CheckboxComponent.prototype, "tabindex", void 0);
+__decorate([
     core_1.Input(),
     __metadata("design:type", String)
 ], CheckboxComponent.prototype, "checkedIcon", void 0);
@@ -9405,10 +10168,6 @@ __decorate([
     core_1.Input(),
     __metadata("design:type", String)
 ], CheckboxComponent.prototype, "labelPosition", void 0);
-__decorate([
-    core_1.Input(),
-    __metadata("design:type", Number)
-], CheckboxComponent.prototype, "tabindex", void 0);
 __decorate([
     core_1.Input(),
     __metadata("design:type", Boolean)
@@ -9448,7 +10207,7 @@ __decorate([
 CheckboxComponent = __decorate([
     core_1.Component({
         selector: 'vcl-checkbox',
-        template: __webpack_require__(176),
+        template: __webpack_require__(197),
         host: {
             '[attr.role]': '"checkbox"',
             '[class.vclCheckbox]': 'true',
@@ -9462,12 +10221,12 @@ CheckboxComponent = __decorate([
 exports.CheckboxComponent = CheckboxComponent;
 
 
-/***/ },
-/* 135 */
-/***/ function(module, exports) {
+/***/ }),
+/* 149 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 /**
  * this is a helper-class so that the Date-logic
  * is not mashed with the components logic
@@ -9691,12 +10450,12 @@ function PickDateCreate(date) {
 exports.PickDateCreate = PickDateCreate;
 
 
-/***/ },
-/* 136 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 150 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9707,8 +10466,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
-var PickDate_1 = __webpack_require__(135);
+var forms_1 = __webpack_require__(7);
+var PickDate_1 = __webpack_require__(149);
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return DatePickerComponent; }),
@@ -9899,7 +10658,7 @@ __decorate([
 DatePickerComponent = __decorate([
     core_1.Component({
         selector: 'vcl-date-picker',
-        template: __webpack_require__(177),
+        template: __webpack_require__(198),
         styles: [
             ".hidden{display:none;}\n     .date-picker-pointer{cursor: pointer;}\n    "
         ],
@@ -9914,12 +10673,12 @@ DatePickerComponent = __decorate([
 exports.DatePickerComponent = DatePickerComponent;
 
 
-/***/ },
-/* 137 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 151 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9929,21 +10688,58 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t;
+    return { next: verb(0), "throw": verb(1), "return": verb(2) };
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
+var forms_1 = __webpack_require__(7);
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return DropdownComponent; }),
     multi: true
 };
 var DropdownComponent = (function () {
-    function DropdownComponent() {
+    function DropdownComponent(me) {
         this.change$ = new core_1.EventEmitter();
         this.tabindex = 0;
         this.expanded = false;
         this.maxSelectableItems = 1;
         this.minSelectableItems = 1;
         this.ariaRole = 'listbox';
+        this.listenKeys = false;
+        this.me = me;
     }
     Object.defineProperty(DropdownComponent.prototype, "value", {
         get: function () {
@@ -10005,8 +10801,90 @@ var DropdownComponent = (function () {
         this.change$.emit(this.value);
         !!this.onChangeCallback && this.onChangeCallback(this.value);
     };
+    DropdownComponent.prototype.markNext = function () {
+        if (this.items.length == 0)
+            return;
+        var ix = this.items.findIndex(function (i) { return i.marked == true; });
+        if (this.items[ix])
+            this.items[ix].marked = false;
+        if (ix < 0 ||
+            !this.items[ix + 1])
+            this.items[0].marked = true;
+        else
+            this.items[ix + 1].marked = true;
+    };
+    DropdownComponent.prototype.markPrev = function () {
+        if (this.items.length == 0)
+            return;
+        var ix = this.items.findIndex(function (i) { return i.marked == true; });
+        if (this.items[ix])
+            this.items[ix].marked = false;
+        if (ix <= 0)
+            this.items[this.items.length - 1].marked = true;
+        else
+            this.items[ix - 1].marked = true;
+    };
+    DropdownComponent.prototype.selectMarked = function () {
+        var firstMarked = this.items.filter(function (i) { return i.marked == true; })[0];
+        this.selectItem(firstMarked);
+    };
+    DropdownComponent.prototype.scrollToMarked = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var itemEl, boxHeight, isTop, itemHeight, itemTop;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, new Promise(function (res) { return setTimeout(res, 0); })];
+                    case 1:
+                        _a.sent();
+                        itemEl = this.listbox.nativeElement.querySelectorAll('.vclHighlighted')[0];
+                        if (!itemEl)
+                            return [2 /*return*/];
+                        boxHeight = this.listbox.nativeElement.offsetHeight;
+                        isTop = this.listbox.nativeElement.scrollTop;
+                        itemHeight = itemEl.offsetHeight;
+                        itemTop = itemEl.offsetTop;
+                        // to low
+                        if ((itemTop + itemHeight) > (isTop + boxHeight))
+                            this.listbox.nativeElement.scrollTop = itemTop;
+                        // to height
+                        if (itemTop < isTop)
+                            this.listbox.nativeElement.scrollTop = itemTop;
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    DropdownComponent.prototype.keyboardInput = function (ev) {
+        if (!this.listenKeys)
+            return;
+        var prevent = true;
+        switch (ev.code) {
+            case 'ArrowDown':
+                this.markNext();
+                this.scrollToMarked();
+                break;
+            case 'ArrowUp':
+                this.markPrev();
+                this.scrollToMarked();
+                break;
+            case 'Enter':
+                this.selectMarked();
+                this.scrollToMarked();
+                break;
+            case 'Space':
+                this.listbox.nativeElement.scrollTop += 10;
+                break;
+            default:
+                var prevent_1 = false;
+        }
+        prevent && ev.preventDefault();
+    };
     DropdownComponent.prototype.writeValue = function (v) {
-        if (v.toString() != this.value.toStrig())
+        if (!v) {
+            this.value = '';
+            return;
+        }
+        if (v.toString() != this.value.toString())
             this.value = v;
     };
     DropdownComponent.prototype.registerOnChange = function (fn) {
@@ -10018,6 +10896,10 @@ var DropdownComponent = (function () {
     return DropdownComponent;
 }());
 DropdownComponent.TAG = 'DropdownComponent';
+__decorate([
+    core_1.ViewChild('listbox'),
+    __metadata("design:type", Object)
+], DropdownComponent.prototype, "listbox", void 0);
 __decorate([
     core_1.Output('change'),
     __metadata("design:type", Object)
@@ -10048,27 +10930,32 @@ __decorate([
 ], DropdownComponent.prototype, "ariaRole", void 0);
 __decorate([
     core_1.Input(),
+    __metadata("design:type", Boolean)
+], DropdownComponent.prototype, "listenKeys", void 0);
+__decorate([
+    core_1.Input(),
     __metadata("design:type", Object),
     __metadata("design:paramtypes", [Object])
 ], DropdownComponent.prototype, "value", null);
 DropdownComponent = __decorate([
     core_1.Component({
         selector: 'vcl-dropdown',
-        template: __webpack_require__(178),
+        template: __webpack_require__(199),
         changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
+        host: { '(window:keydown)': 'keyboardInput($event)' }
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [core_1.ElementRef])
 ], DropdownComponent);
 exports.DropdownComponent = DropdownComponent;
 
 
-/***/ },
-/* 138 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 152 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10079,7 +10966,191 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
+var forms_1 = __webpack_require__(7);
+var BehaviorSubject_1 = __webpack_require__(54);
+var Observable_1 = __webpack_require__(13);
+var accept = __webpack_require__(144);
+exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
+    provide: forms_1.NG_VALUE_ACCESSOR,
+    useExisting: core_1.forwardRef(function () { return FileInputComponent; }),
+    multi: true
+};
+var FileInputComponent = (function () {
+    function FileInputComponent(elRef) {
+        var _this = this;
+        this.elRef = elRef;
+        this.layout = 'horizontal';
+        this.placeholder = 'Choose a file or drag it here';
+        this.accept = '*';
+        this.disabled = false;
+        this.multiple = false;
+        this.files$ = new BehaviorSubject_1.BehaviorSubject([]);
+        this.value$ = this.files$
+            .filter(function (fs) { return fs.length > 0; })
+            .map(function (fs) {
+            var name = fs[0]['name'];
+            if (_this.multiple)
+                name += ' (' + fs.length + ')';
+            return name;
+        });
+        this.subs = [];
+        this.isDragging = false;
+        this.isFocused = false;
+        var hostEl = elRef.nativeElement;
+        // file drop
+        hostEl.addEventListener("dragover", function (e) {
+            if (!_this.disabled) {
+                e.stopPropagation();
+                e.preventDefault();
+                _this.isDragging = true;
+            }
+        }, false);
+        hostEl.addEventListener("dragleave", function (e) {
+            e.stopPropagation();
+            e.preventDefault();
+            _this.isDragging = false;
+        }, false);
+        hostEl.addEventListener("drop", function (e) {
+            _this.onDrop(e);
+        }, false);
+    }
+    FileInputComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.subs.push(Observable_1.Observable.fromEvent(this.input.nativeElement, 'change')
+            .subscribe(function (event) {
+            _this.value = event['target'].value;
+            _this.files$.next(event['target'].files);
+            !!_this.onChangeCallback && _this.onChangeCallback(event['target'].files);
+            // check file-type
+            var typeOK = true;
+            var wrongFiles = Array.prototype.filter.call(event['target'].files, function (file) { return !accept(file, _this.accept); });
+            if (wrongFiles.length > 0 && _this.accept != '*')
+                _this.state = 'error'; // TODO remove *-check after issue https://github.com/okonet/attr-accept/issues/8
+            else
+                _this.state = 'busy';
+        }));
+        this.subs.push(Observable_1.Observable.fromEvent(this.input.nativeElement, 'focus')
+            .subscribe(function (event) { return _this.isFocused = true; }));
+        this.subs.push(Observable_1.Observable.fromEvent(this.input.nativeElement, 'focus')
+            .subscribe(function (event) { return _this.isFocused = false; }));
+    };
+    FileInputComponent.prototype.onClick = function (value) {
+        if (this.disabled)
+            return;
+        // opens file-choser
+        this.input.nativeElement.click();
+    };
+    FileInputComponent.prototype.onDrop = function (e) {
+        if (this.disabled)
+            return;
+        this.isDragging = false;
+        // cancel event and hover styling
+        e.stopPropagation();
+        e.preventDefault();
+        // fetch FileList object
+        var files = e.target.files || e.dataTransfer.files;
+        this.input.nativeElement.files = files;
+    };
+    FileInputComponent.prototype.ngOnDestroy = function () {
+        this.subs.map(function (sub) { return sub.unsubscribe(); });
+    };
+    FileInputComponent.prototype.writeValue = function (files) {
+        this.input.nativeElement.files = files;
+    };
+    FileInputComponent.prototype.registerOnChange = function (fn) {
+        this.onChangeCallback = fn;
+    };
+    FileInputComponent.prototype.registerOnTouched = function (fn) {
+        this.onTouchedCallback = fn;
+    };
+    return FileInputComponent;
+}());
+__decorate([
+    core_1.Input('state'),
+    __metadata("design:type", String)
+], FileInputComponent.prototype, "state", void 0);
+__decorate([
+    core_1.Input('layout'),
+    __metadata("design:type", String)
+], FileInputComponent.prototype, "layout", void 0);
+__decorate([
+    core_1.Input('placeholder'),
+    __metadata("design:type", String)
+], FileInputComponent.prototype, "placeholder", void 0);
+__decorate([
+    core_1.Input('accept'),
+    __metadata("design:type", String)
+], FileInputComponent.prototype, "accept", void 0);
+__decorate([
+    core_1.Input('name'),
+    __metadata("design:type", String)
+], FileInputComponent.prototype, "name", void 0);
+__decorate([
+    core_1.Input('disabled'),
+    __metadata("design:type", Boolean)
+], FileInputComponent.prototype, "disabled", void 0);
+__decorate([
+    core_1.Input('multiple'),
+    __metadata("design:type", Boolean)
+], FileInputComponent.prototype, "multiple", void 0);
+__decorate([
+    core_1.Input('value'),
+    __metadata("design:type", String)
+], FileInputComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Output('files'),
+    __metadata("design:type", BehaviorSubject_1.BehaviorSubject)
+], FileInputComponent.prototype, "files$", void 0);
+__decorate([
+    core_1.ViewChild('input'),
+    __metadata("design:type", Object)
+], FileInputComponent.prototype, "input", void 0);
+__decorate([
+    core_1.HostListener('click', ['$event.target.value']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], FileInputComponent.prototype, "onClick", null);
+FileInputComponent = __decorate([
+    core_1.Component({
+        selector: 'vcl-file-input',
+        template: __webpack_require__(200),
+        host: {
+            '[class.vclFileInput]': 'true',
+            '[class.vclDisabled]': 'disabled',
+            '[class.vclDragndrop]': 'isDragging',
+            '[class.vclFocused]': 'isFocused',
+            '[class.vclError]': '(state=="error")',
+            '[class.vclWarning]': '(state=="warning")',
+            '[class.vclSuccess]': '(state=="success")',
+            role: 'button',
+            tabindex: '0'
+        },
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+    }),
+    __metadata("design:paramtypes", [core_1.ElementRef])
+], FileInputComponent);
+exports.FileInputComponent = FileInputComponent;
+
+
+/***/ }),
+/* 153 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = __webpack_require__(1);
+var forms_1 = __webpack_require__(7);
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return FlipSwitchComponent; }),
@@ -10088,6 +11159,7 @@ exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
 var FlipSwitchComponent = (function () {
     function FlipSwitchComponent() {
         var _this = this;
+        this.tabindex = 0;
         this.onLabel = 'On';
         this.offLabel = 'Off';
         this.value = false;
@@ -10101,6 +11173,14 @@ var FlipSwitchComponent = (function () {
         this.value = !this.value;
         this.change$.emit(this.value);
     };
+    FlipSwitchComponent.prototype.keydown = function (ev) {
+        switch (ev.code) {
+            case 'Space':
+                ev.preventDefault();
+                this.onClick();
+                break;
+        }
+    };
     FlipSwitchComponent.prototype.writeValue = function (value) {
         if (value !== this.value)
             this.value = value;
@@ -10113,6 +11193,10 @@ var FlipSwitchComponent = (function () {
     };
     return FlipSwitchComponent;
 }());
+__decorate([
+    core_1.HostBinding(),
+    __metadata("design:type", Object)
+], FlipSwitchComponent.prototype, "tabindex", void 0);
 __decorate([
     core_1.Input('onLabel'),
     __metadata("design:type", String)
@@ -10129,24 +11213,43 @@ __decorate([
     core_1.Output('change'),
     __metadata("design:type", Object)
 ], FlipSwitchComponent.prototype, "change$", void 0);
+__decorate([
+    core_1.HostListener('tap', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], FlipSwitchComponent.prototype, "onClick", null);
+__decorate([
+    core_1.HostListener('keydown', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], FlipSwitchComponent.prototype, "keydown", null);
 FlipSwitchComponent = __decorate([
     core_1.Component({
         selector: 'vcl-flip-switch',
-        template: __webpack_require__(179),
+        template: __webpack_require__(201),
         changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
+        host: {
+            '[class.vclFlipSwitch]': 'true',
+            '[class.vclFlipSwitchPressed]': 'value',
+            '[attr.role]': '"button"',
+            '[attr.aria-pressed]': 'value',
+            '[attr.touch-action]': '"pan-y"'
+        }
     }),
     __metadata("design:paramtypes", [])
 ], FlipSwitchComponent);
 exports.FlipSwitchComponent = FlipSwitchComponent;
 
 
-/***/ },
-/* 139 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 154 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10207,23 +11310,22 @@ __decorate([
 FormControlLabelComponent = __decorate([
     core_1.Component({
         selector: '[vcl-form-control-label]',
-        template: __webpack_require__(180),
+        template: __webpack_require__(202),
         host: {
             '[class.vclFormControlLabel]': 'true',
         },
         changeDetection: core_1.ChangeDetectionStrategy.OnPush
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], FormControlLabelComponent);
 exports.FormControlLabelComponent = FormControlLabelComponent;
 
 
-/***/ },
-/* 140 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 155 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10258,7 +11360,7 @@ __decorate([
 FormComponent = __decorate([
     core_1.Component({
         selector: 'vcl-form',
-        template: __webpack_require__(181),
+        template: __webpack_require__(203),
         host: {
             '[class.vclForm]': 'true',
         }
@@ -10268,12 +11370,99 @@ FormComponent = __decorate([
 exports.FormComponent = FormComponent;
 
 
-/***/ },
-/* 141 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 156 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = __webpack_require__(1);
+var types_1 = __webpack_require__(75);
+var growl_1 = __webpack_require__(99);
+var growl_layer_1 = __webpack_require__(98);
+var GrowlService = (function () {
+    function GrowlService(growlLayerTopRightRef, growlLayerBottomRightRef, growlLayerBottomRef, growlLayerBottomLeftRef, growlLayerTopLeftRef, growlLayerTopRef) {
+        this.growlLayerTopRightRef = growlLayerTopRightRef;
+        this.growlLayerBottomRightRef = growlLayerBottomRightRef;
+        this.growlLayerBottomRef = growlLayerBottomRef;
+        this.growlLayerBottomLeftRef = growlLayerBottomLeftRef;
+        this.growlLayerTopLeftRef = growlLayerTopLeftRef;
+        this.growlLayerTopRef = growlLayerTopRef;
+    }
+    GrowlService.prototype.growl = function (text, opts) {
+        return this.queue({ text: text }, opts);
+    };
+    GrowlService.prototype.info = function (text, opts) {
+        return this.queue({ text: text, type: types_1.GrowlType.Info }, opts);
+    };
+    GrowlService.prototype.success = function (text, opts) {
+        return this.queue({ text: text, type: types_1.GrowlType.Success }, opts);
+    };
+    GrowlService.prototype.warning = function (text, opts) {
+        return this.queue({ text: text, type: types_1.GrowlType.Warning }, opts);
+    };
+    GrowlService.prototype.error = function (text, opts) {
+        return this.queue({ text: text, type: types_1.GrowlType.Error }, opts);
+    };
+    GrowlService.prototype.queue = function () {
+        var opts = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            opts[_i] = arguments[_i];
+        }
+        var growlOpts = Object.assign.apply(Object, [{}, types_1.GROWL_DEFAULTS].concat(opts));
+        var growl = new growl_1.Growl(growlOpts);
+        if (growlOpts.position === types_1.GrowlPosition.TopRight) {
+            this.growlLayerTopRightRef.add(growl);
+        }
+        else if (growlOpts.position === types_1.GrowlPosition.BottomRight) {
+            this.growlLayerBottomRightRef.add(growl);
+        }
+        else if (growlOpts.position === types_1.GrowlPosition.Bottom) {
+            this.growlLayerBottomRef.add(growl);
+        }
+        else if (growlOpts.position === types_1.GrowlPosition.BottomLeft) {
+            this.growlLayerBottomLeftRef.add(growl);
+        }
+        else if (growlOpts.position === types_1.GrowlPosition.TopLeft) {
+            this.growlLayerTopLeftRef.add(growl);
+        }
+        else if (growlOpts.position === types_1.GrowlPosition.Top) {
+            this.growlLayerTopRef.add(growl);
+        }
+        else {
+            this.growlLayerTopRightRef.add(growl);
+        }
+        return growl;
+    };
+    return GrowlService;
+}());
+GrowlService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [growl_layer_1.GrowlLayerTopRight,
+        growl_layer_1.GrowlLayerBottomRight,
+        growl_layer_1.GrowlLayerBottom,
+        growl_layer_1.GrowlLayerBottomLeft,
+        growl_layer_1.GrowlLayerTopLeft,
+        growl_layer_1.GrowlLayerTop])
+], GrowlService);
+exports.GrowlService = GrowlService;
+
+
+/***/ }),
+/* 157 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10321,7 +11510,7 @@ IcogramComponent = __decorate([
             '[class.vclIcogram]': 'true',
             '[attr.role]': 'img'
         },
-        template: __webpack_require__(182),
+        template: __webpack_require__(205),
         changeDetection: core_1.ChangeDetectionStrategy.OnPush
     }),
     __metadata("design:paramtypes", [core_1.ElementRef])
@@ -10329,12 +11518,12 @@ IcogramComponent = __decorate([
 exports.IcogramComponent = IcogramComponent;
 
 
-/***/ },
-/* 142 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 158 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10345,7 +11534,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var icon_service_1 = __webpack_require__(89);
+var icon_service_1 = __webpack_require__(100);
 var IconComponent = (function () {
     function IconComponent(_iconService) {
         this._iconService = _iconService;
@@ -10407,7 +11596,7 @@ __decorate([
 IconComponent = __decorate([
     core_1.Component({
         selector: 'vcl-icon, [vcl-icon]',
-        template: __webpack_require__(183),
+        template: __webpack_require__(206),
         changeDetection: core_1.ChangeDetectionStrategy.OnPush,
         host: {
             '[class.vclIcon]': 'true',
@@ -10418,12 +11607,12 @@ IconComponent = __decorate([
 exports.IconComponent = IconComponent;
 
 
-/***/ },
-/* 143 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 159 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10495,19 +11684,19 @@ InputControlGroup = __decorate([
         host: {
             '[class.vclInputControlGroup]': 'true',
         },
-        template: __webpack_require__(184)
+        template: __webpack_require__(207)
     }),
     __metadata("design:paramtypes", [core_1.ElementRef])
 ], InputControlGroup);
 exports.InputControlGroup = InputControlGroup;
 
 
-/***/ },
-/* 144 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 160 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10518,91 +11707,106 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var Observable_1 = __webpack_require__(13);
-var InputDirective = (function () {
-    function InputDirective(elRef) {
+var BehaviorSubject_1 = __webpack_require__(54);
+// Invalid input type. Using one of these will throw an error
+var INPUT_INVALID_TYPES = [
+    'button',
+    'checkbox',
+    'color',
+    'file',
+    'hidden',
+    'image',
+    'radio',
+    'range',
+    'reset',
+    'submit'
+];
+var InputComponent = (function () {
+    function InputComponent(elRef) {
         this.elRef = elRef;
-        this.valueType = null;
-        this.typedValue = null;
-        this._typedValueChange = new core_1.EventEmitter();
-        this.selectAllOnFocus = false;
+        this.type = 'text';
+        this.selectOnFocus = false;
+        this._valueSubject = new BehaviorSubject_1.BehaviorSubject(this.value);
+        this.typedValueChange = this._valueSubject.asObservable();
+        this.subs = [];
+        if (INPUT_INVALID_TYPES.includes(this.type))
+            throw new Error('type not allowed for vcl-input: ' + this.type);
     }
-    Object.defineProperty(InputDirective.prototype, "typedValueChange", {
-        get: function () {
-            return this._typedValueChange.asObservable();
-        },
-        enumerable: true,
-        configurable: true
-    });
-    InputDirective.prototype.ngOnInit = function () { };
-    InputDirective.prototype.onChange = function (value) {
-        this._typedValueChange.emit(this.toType(value));
+    InputComponent.prototype.ngOnInit = function () {
     };
-    InputDirective.prototype.toType = function (value) {
-        if (this.valueType === 'number') {
+    InputComponent.prototype.toType = function (value) {
+        if (this.type === 'number') {
             var tValue = Number(value);
             return isNaN(tValue) ? 0 : tValue;
         }
-        else {
+        else
             return value;
-        }
     };
-    InputDirective.prototype.onFocus = function (value) {
-        if (this.selectAllOnFocus) {
+    InputComponent.prototype.onChange = function (value) {
+        this._valueSubject.next(this.toType(value));
+    };
+    InputComponent.prototype.onFocus = function (value) {
+        if (this.selectOnFocus) {
             if (this.elRef && this.elRef.nativeElement) {
                 this.elRef.nativeElement.select();
             }
         }
     };
-    return InputDirective;
+    InputComponent.prototype.ngOnDestroy = function () {
+        this.subs.forEach(function (sub) { return sub.unsubscribe(); });
+    };
+    return InputComponent;
 }());
 __decorate([
-    core_1.Input(),
+    core_1.Input('state'),
     __metadata("design:type", String)
-], InputDirective.prototype, "valueType", void 0);
+], InputComponent.prototype, "state", void 0);
 __decorate([
-    core_1.Input(),
-    __metadata("design:type", Object)
-], InputDirective.prototype, "typedValue", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", Observable_1.Observable),
-    __metadata("design:paramtypes", [])
-], InputDirective.prototype, "typedValueChange", null);
+    core_1.Input('type'),
+    __metadata("design:type", String)
+], InputComponent.prototype, "type", void 0);
 __decorate([
     core_1.Input(),
     __metadata("design:type", Boolean)
-], InputDirective.prototype, "selectAllOnFocus", void 0);
+], InputComponent.prototype, "selectOnFocus", void 0);
+__decorate([
+    core_1.Input('value'),
+    __metadata("design:type", Object)
+], InputComponent.prototype, "value", void 0);
+__decorate([
+    core_1.Output('typedValueChange'),
+    __metadata("design:type", Object)
+], InputComponent.prototype, "typedValueChange", void 0);
 __decorate([
     core_1.HostListener('input', ['$event.target.value']),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
-], InputDirective.prototype, "onChange", null);
+], InputComponent.prototype, "onChange", null);
 __decorate([
     core_1.HostListener('focus', ['$event.target.value']),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
-], InputDirective.prototype, "onFocus", null);
-InputDirective = __decorate([
+], InputComponent.prototype, "onFocus", null);
+InputComponent = __decorate([
     core_1.Directive({
         selector: '[vcl-input]',
         host: {
             '[class.vclInput]': 'true',
-        },
+        }
     }),
     __metadata("design:paramtypes", [core_1.ElementRef])
-], InputDirective);
-exports.InputDirective = InputDirective;
+], InputComponent);
+exports.InputComponent = InputComponent;
 
 
-/***/ },
-/* 145 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 161 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10613,8 +11817,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
-var JSONEditor = __webpack_require__(171);
+var forms_1 = __webpack_require__(7);
+var JSONEditor = __webpack_require__(189);
 /**
  * The JSON editor needs styling and some graphics
  * We read the raw css and svg files and replace any file reference to the svg with
@@ -10622,8 +11826,8 @@ var JSONEditor = __webpack_require__(171);
  *
  * The css must be added as a style with  ViewEncapsulation set to None
  */
-var JSONEditorSVG = __webpack_require__(173);
-var JSONEditorCSS = __webpack_require__(174)
+var JSONEditorSVG = __webpack_require__(191);
+var JSONEditorCSS = __webpack_require__(192)
     .replace(/img\/jsoneditor-icons\.svg/g, 'data:image/svg+xml;base64,' + btoa(JSONEditorSVG));
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
@@ -10695,7 +11899,7 @@ JsonEditorComponent = __decorate([
         selector: 'vcl-json-editor',
         styles: [JSONEditorCSS],
         encapsulation: core_1.ViewEncapsulation.None,
-        template: __webpack_require__(185),
+        template: __webpack_require__(208),
         providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
         changeDetection: core_1.ChangeDetectionStrategy.OnPush
     }),
@@ -10704,12 +11908,12 @@ JsonEditorComponent = __decorate([
 exports.JsonEditorComponent = JsonEditorComponent;
 
 
-/***/ },
-/* 146 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 162 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10720,9 +11924,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
-var rxjs_1 = __webpack_require__(205);
-var Validator = __webpack_require__(480).Validator; // TODO use import { Validator } from 'jsonschema'; when typings available
+var forms_1 = __webpack_require__(7);
+var rxjs_1 = __webpack_require__(228);
+var Validator = __webpack_require__(503).Validator; // TODO use import { Validator } from 'jsonschema'; when typings available
 var VALIDATOR;
 var JssFormObjectComponent = (function () {
     function JssFormObjectComponent() {
@@ -10850,7 +12054,7 @@ __decorate([
 JssFormObjectComponent = __decorate([
     core_1.Component({
         selector: 'vcl-jss-form-object',
-        template: __webpack_require__(186),
+        template: __webpack_require__(209),
     }),
     __metadata("design:paramtypes", [])
 ], JssFormObjectComponent);
@@ -10926,19 +12130,19 @@ __decorate([
 JssFormComponent = __decorate([
     core_1.Component({
         selector: 'vcl-jss-form',
-        template: __webpack_require__(187)
+        template: __webpack_require__(210)
     }),
     __metadata("design:paramtypes", [forms_1.FormBuilder])
 ], JssFormComponent);
 exports.JssFormComponent = JssFormComponent;
 
 
-/***/ },
-/* 147 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 163 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -10996,7 +12200,7 @@ __decorate([
 LabelComponent = __decorate([
     core_1.Component({
         selector: 'vcl-label',
-        template: __webpack_require__(188),
+        template: __webpack_require__(211),
         host: {
             '[class.vclFormControlLabel]': 'true',
             '[class]': 'labelClass',
@@ -11007,12 +12211,12 @@ LabelComponent = __decorate([
 exports.LabelComponent = LabelComponent;
 
 
-/***/ },
-/* 148 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 164 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -11022,21 +12226,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+__webpack_require__(520);
 var core_1 = __webpack_require__(1);
-var layer_service_1 = __webpack_require__(69);
+var layer_service_1 = __webpack_require__(76);
 var LayerBaseComponent = (function () {
     function LayerBaseComponent(layerService, cdRef) {
         this.layerService = layerService;
         this.cdRef = cdRef;
+        this.layerRefs = [];
         this.name = 'default';
         this.zIndex = 1000;
     }
     LayerBaseComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.layerService.registerBase(this);
-        this.sub = this.layerService.getVisibleLayersFor$(this.name).subscribe(function (layerRefs) {
+        this.sub = this.layerService
+            .visibleLayersChange$(this.name)
+            .debounceTime(1) // Minor debounce to avoid flashing when the layerRefs change shortly after each other
+            .subscribe(function (layerRefs) {
             _this.layerRefs = layerRefs;
-            _this.cdRef.detectChanges();
+            _this.cdRef.markForCheck();
         });
     };
     LayerBaseComponent.prototype.ngOnDestroy = function () {
@@ -11047,8 +12256,9 @@ var LayerBaseComponent = (function () {
         }
     };
     LayerBaseComponent.prototype.offClick = function (layerRef) {
-        if (!layerRef.modal && layerRef.closeOnOffClick) {
-            layerRef.close();
+        // Only the top layer may trigger an offClick
+        if (this.layerRefs.length > 0 && this.layerRefs[this.layerRefs.length - 1] === layerRef) {
+            layerRef.offClick();
         }
     };
     return LayerBaseComponent;
@@ -11064,24 +12274,180 @@ __decorate([
 LayerBaseComponent = __decorate([
     core_1.Component({
         selector: 'vcl-layer-base',
-        template: __webpack_require__(189),
-        // changeDetection: ChangeDetectionStrategy.OnPush,
+        template: __webpack_require__(212),
+        changeDetection: core_1.ChangeDetectionStrategy.OnPush,
         animations: [
             core_1.trigger('boxState', []),
             core_1.trigger('layerState', [])
-        ]
+        ],
     }),
     __metadata("design:paramtypes", [layer_service_1.LayerService, core_1.ChangeDetectorRef])
 ], LayerBaseComponent);
 exports.LayerBaseComponent = LayerBaseComponent;
 
 
-/***/ },
-/* 149 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 165 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var core_1 = __webpack_require__(1);
+var wormhole_module_1 = __webpack_require__(20);
+var layer_references_1 = __webpack_require__(41);
+var LayerComponentWormhole = (function (_super) {
+    __extends(LayerComponentWormhole, _super);
+    function LayerComponentWormhole(layerRef, componentClass, data) {
+        var _this = _super.call(this, componentClass, data) || this;
+        _this.layerRef = layerRef;
+        return _this;
+    }
+    LayerComponentWormhole.prototype.createInjector = function () {
+        var injector = _super.prototype.createInjector.call(this);
+        // The created injector injects this instance as LayerRef
+        // It is used in the component instance created within the wormhole
+        return core_1.ReflectiveInjector.resolveAndCreate([{
+                provide: layer_references_1.LayerRef,
+                useValue: this.layerRef
+            }], injector);
+    };
+    return LayerComponentWormhole;
+}(wormhole_module_1.ComponentWormhole));
+var ComponentLayerRef = (function (_super) {
+    __extends(ComponentLayerRef, _super);
+    function ComponentLayerRef() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    ComponentLayerRef.prototype.initialize = function (layerService) {
+        layerService.register(this);
+    };
+    ComponentLayerRef.prototype.setData = function (data) {
+        // Update wormhole data
+        // Change detection is triggered within setData()
+        this.wormhole.setData(data);
+    };
+    Object.defineProperty(ComponentLayerRef.prototype, "instance", {
+        get: function () {
+            return this.visible ? this.wormhole.compRef.instance : null;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ComponentLayerRef.prototype.createWormhole = function (data) {
+        return new LayerComponentWormhole(this, this.component, data);
+    };
+    return ComponentLayerRef;
+}(layer_references_1.LayerRef));
+exports.ComponentLayerRef = ComponentLayerRef;
+
+
+/***/ }),
+/* 166 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var core_1 = __webpack_require__(1);
+var wormhole_module_1 = __webpack_require__(20);
+var layer_service_1 = __webpack_require__(76);
+var layer_references_1 = __webpack_require__(41);
+var DirectiveLayerRef = (function (_super) {
+    __extends(DirectiveLayerRef, _super);
+    function DirectiveLayerRef(templateRef, layerService, cdRef) {
+        var _this = _super.call(this) || this;
+        _this.templateRef = templateRef;
+        _this.layerService = layerService;
+        _this.cdRef = cdRef;
+        _this.modal = false;
+        _this.offClickClose = true;
+        _this.base = 'default';
+        _this.transparent = false;
+        _this.fill = false;
+        _this.stickToBottom = false;
+        _this.gutterPadding = false;
+        _this.customClass = null;
+        return _this;
+    }
+    DirectiveLayerRef.prototype.ngOnInit = function () {
+        this.layerService.register(this);
+    };
+    DirectiveLayerRef.prototype.ngOnDestroy = function () {
+        this.layerService.unregister(this);
+    };
+    DirectiveLayerRef.prototype.createWormhole = function () {
+        return new wormhole_module_1.TemplateWormhole(this.templateRef);
+    };
+    DirectiveLayerRef.prototype.setData = function (data) {
+    };
+    return DirectiveLayerRef;
+}(layer_references_1.LayerRef));
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], DirectiveLayerRef.prototype, "modal", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], DirectiveLayerRef.prototype, "offClickClose", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], DirectiveLayerRef.prototype, "base", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], DirectiveLayerRef.prototype, "transparent", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], DirectiveLayerRef.prototype, "fill", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], DirectiveLayerRef.prototype, "stickToBottom", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], DirectiveLayerRef.prototype, "gutterPadding", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], DirectiveLayerRef.prototype, "customClass", void 0);
+DirectiveLayerRef = __decorate([
+    core_1.Directive({
+        selector: '[vcl-layer]',
+        exportAs: 'layer',
+    }),
+    __metadata("design:paramtypes", [core_1.TemplateRef, layer_service_1.LayerService, core_1.ChangeDetectorRef])
+], DirectiveLayerRef);
+exports.DirectiveLayerRef = DirectiveLayerRef;
+
+
+/***/ }),
+/* 167 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -11098,7 +12464,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = __webpack_require__(1);
 var l10n_module_1 = __webpack_require__(6);
-var index_1 = __webpack_require__(53);
+var index_1 = __webpack_require__(56);
 var LinkComponent = (function (_super) {
     __extends(LinkComponent, _super);
     function LinkComponent(l10n) {
@@ -11169,7 +12535,7 @@ __decorate([
 LinkComponent = __decorate([
     core_1.Component({
         selector: '[vcl-link]',
-        template: __webpack_require__(190),
+        template: __webpack_require__(213),
         host: {
             '[attr.touch-action]': 'touchAction' // TODO - no function?
         },
@@ -11179,12 +12545,12 @@ LinkComponent = __decorate([
 exports.LinkComponent = LinkComponent;
 
 
-/***/ },
-/* 150 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 168 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -11197,12 +12563,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = __webpack_require__(1);
 var MetalistComponent = (function () {
     function MetalistComponent() {
-        this.select = new core_1.EventEmitter();
         this.minSelectableItems = 1;
         this.maxSelectableItems = 1;
-        this.maxItemsSelected = false;
+        this.select = new core_1.EventEmitter(); // returns all items
     }
     MetalistComponent.prototype.next = function () {
+        // console.log('next');
         var oldIndex = this.getMarkedItemIndex();
         if (oldIndex !== -1) {
             var newIndex = oldIndex + 1;
@@ -11215,6 +12581,7 @@ var MetalistComponent = (function () {
         }
     };
     MetalistComponent.prototype.prev = function () {
+        // console.log('prev');
         var oldIndex = this.getMarkedItemIndex();
         if (oldIndex !== -1) {
             var newIndex = oldIndex - 1;
@@ -11229,13 +12596,18 @@ var MetalistComponent = (function () {
             this.meta = [];
         }
     };
+    MetalistComponent.prototype.metaFromItem = function (item) {
+        var i = this.items.indexOf(item);
+        return this.meta[i];
+    };
     MetalistComponent.prototype.selectItem = function (item) {
+        // console.log('selectItem');
+        if (!this.items.includes(item))
+            return false;
         var itemIndex = this.items.indexOf(item);
-        if (itemIndex === -1) {
-            return;
-        }
         // maxSelectableItems === 1 -> deselect old item
         if (this.maxSelectableItems === 1) {
+            // TODO is metaItems even used?
             var metaItems = this.meta.filter(function (obj) {
                 return obj && obj.selected === true;
             });
@@ -11243,12 +12615,15 @@ var MetalistComponent = (function () {
                 metaItems[i].selected = false;
             }
         }
-        if (this.getSelectedItems().length < this.maxSelectableItems && this.meta[itemIndex]) {
-            this.meta[itemIndex].selected = true;
-        }
+        var metaItem = this.metaFromItem(item);
+        if (this.getSelectedItems().length < this.maxSelectableItems &&
+            metaItem)
+            metaItem.selected = true;
         this.select.emit(this.getSelectedItems());
+        return true;
     };
     MetalistComponent.prototype.deSelectItem = function (item) {
+        // console.log('deSelectItem');
         var itemIndex = this.items.indexOf(item);
         if (itemIndex === -1) {
             return;
@@ -11259,19 +12634,18 @@ var MetalistComponent = (function () {
         this.select.emit(this.getSelectedItems());
     };
     MetalistComponent.prototype.getSelectedItems = function () {
-        var metaItems = this.meta.filter(function (obj) {
-            return obj && obj.selected === true;
-        });
-        var result = [];
-        for (var i = 0; i < metaItems.length; i++) {
-            result.push(this.items[this.meta.indexOf(metaItems[i])]);
-        }
+        var _this = this;
+        // console.log('getSelectedItems');
+        var result = this.meta
+            .filter(function (obj) { return obj.selected; })
+            .map(function (metaItem) { return _this.items[_this.meta.indexOf(metaItem)]; });
         return result;
     };
     MetalistComponent.prototype.setSelectedItems = function () {
     };
     MetalistComponent.prototype.ngAfterContentInit = function () { };
     MetalistComponent.prototype.getMarkedItemIndex = function () {
+        // console.log('getMarkedItemIndex');
         var meta = this.getMarkedItemMeta();
         if (meta) {
             return this.meta.indexOf(meta);
@@ -11279,11 +12653,11 @@ var MetalistComponent = (function () {
         return -1;
     };
     MetalistComponent.prototype.getMarkedItemMeta = function () {
-        return this.meta.filter(function (obj) {
-            return obj && obj.marked === true;
-        })[0];
+        // console.log('getMarkedItemMeta');
+        return this.meta.filter(function (obj) { return obj.marked; })[0];
     };
     MetalistComponent.prototype.setMarkedIndex = function (index) {
+        // console.log('setMarkedIndex');
         // unset old item
         var oldItem = this.getMarkedItemMeta();
         if (oldItem) {
@@ -11295,24 +12669,24 @@ var MetalistComponent = (function () {
         }
     };
     MetalistComponent.prototype.setMarkedItem = function (item) {
+        // console.log('setMarkedItem');
         var markedIndex = this.items.indexOf(item);
         if (markedIndex !== -1) {
             this.setMarkedIndex(markedIndex);
         }
     };
     MetalistComponent.prototype.getMeta = function (item) {
+        // console.log('getMeta');
+        // console.dir(this.items);
         var key = this.items.indexOf(item);
         if (!this.meta[key]) {
             this.meta[key] = {};
         }
+        // console.dir(JSON.stringify(this.meta[key]));
         return this.meta[key];
     };
     return MetalistComponent;
 }());
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", Object)
-], MetalistComponent.prototype, "select", void 0);
 __decorate([
     core_1.Input(),
     __metadata("design:type", Array)
@@ -11330,29 +12704,29 @@ __decorate([
     __metadata("design:type", Number)
 ], MetalistComponent.prototype, "maxSelectableItems", void 0);
 __decorate([
-    core_1.Output(),
-    __metadata("design:type", Boolean)
-], MetalistComponent.prototype, "maxItemsSelected", void 0);
+    core_1.Output('select'),
+    __metadata("design:type", Object)
+], MetalistComponent.prototype, "select", void 0);
 __decorate([
     core_1.ContentChild(core_1.TemplateRef),
     __metadata("design:type", Object)
-], MetalistComponent.prototype, "template", void 0);
+], MetalistComponent.prototype, "template1", void 0);
 MetalistComponent = __decorate([
     core_1.Component({
         selector: 'vcl-metalist',
-        template: __webpack_require__(191)
+        template: __webpack_require__(214),
     }),
     __metadata("design:paramtypes", [])
 ], MetalistComponent);
 exports.MetalistComponent = MetalistComponent;
 
 
-/***/ },
-/* 151 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 169 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -11684,21 +13058,20 @@ __decorate([
 MonthPickerComponent = MonthPickerComponent_1 = __decorate([
     core_1.Component({
         selector: 'vcl-month-picker',
-        template: __webpack_require__(192),
+        template: __webpack_require__(215),
         changeDetection: core_1.ChangeDetectionStrategy.OnPush
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], MonthPickerComponent);
 exports.MonthPickerComponent = MonthPickerComponent;
 var MonthPickerComponent_1;
 
 
-/***/ },
-/* 152 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 170 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -11708,7 +13081,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var router_1 = __webpack_require__(128);
+var router_1 = __webpack_require__(139);
 var core_1 = __webpack_require__(1);
 var NavigationItemComponent = NavigationItemComponent_1 = (function () {
     function NavigationItemComponent() {
@@ -11938,7 +13311,7 @@ NavigationComponent = __decorate([
         host: {
             '[class.vclNavigation]': 'true'
         },
-        template: __webpack_require__(193),
+        template: __webpack_require__(216),
     }),
     __metadata("design:paramtypes", [router_1.Router])
 ], NavigationComponent);
@@ -11946,12 +13319,12 @@ exports.NavigationComponent = NavigationComponent;
 var NavigationItemComponent_1;
 
 
-/***/ },
-/* 153 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 171 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -11962,7 +13335,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var overlayManager_service_1 = __webpack_require__(92);
+var overlayManager_service_1 = __webpack_require__(101);
 var PopoverComponent = (function () {
     function PopoverComponent(overlayManger, myElement, zone) {
         this.overlayManger = overlayManger;
@@ -12068,7 +13441,7 @@ __decorate([
 PopoverComponent = __decorate([
     core_1.Component({
         selector: 'vcl-popover',
-        template: __webpack_require__(194),
+        template: __webpack_require__(217),
         animations: [
             core_1.trigger('popOverState', [])
         ]
@@ -12080,12 +13453,12 @@ PopoverComponent = __decorate([
 exports.PopoverComponent = PopoverComponent;
 
 
-/***/ },
-/* 154 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 172 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -12187,23 +13560,22 @@ __decorate([
 ProgressBarComponent = __decorate([
     core_1.Component({
         selector: 'vcl-progress-bar',
-        template: __webpack_require__(195),
+        template: __webpack_require__(218),
         host: {
             '[attr.role]': '"progressbar"',
         },
         changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], ProgressBarComponent);
 exports.ProgressBarComponent = ProgressBarComponent;
 
 
-/***/ },
-/* 155 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 173 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -12218,7 +13590,7 @@ var Observable_1 = __webpack_require__(13);
 // Use inheritance once supported
 // https://github.com/angular/angular/issues/11606
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
+var forms_1 = __webpack_require__(7);
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return RadioButtonComponent; }),
@@ -12275,9 +13647,11 @@ var RadioButtonComponent = (function () {
         enumerable: true,
         configurable: true
     });
-    RadioButtonComponent.prototype.onKeyup = function (e) {
-        if (e.keyCode === 32) {
-            return this.triggerChangeAction(e);
+    RadioButtonComponent.prototype.keydown = function (ev) {
+        switch (ev.code) {
+            case 'Space':
+                this.triggerChangeAction(ev);
+                break;
         }
     };
     RadioButtonComponent.prototype.onClick = function (e) {
@@ -12334,8 +13708,7 @@ __decorate([
     __metadata("design:type", String)
 ], RadioButtonComponent.prototype, "labelPosition", void 0);
 __decorate([
-    core_1.HostBinding('attr.tabindex'),
-    core_1.Input(),
+    core_1.HostBinding(),
     __metadata("design:type", Object)
 ], RadioButtonComponent.prototype, "tabindex", void 0);
 __decorate([
@@ -12367,11 +13740,11 @@ __decorate([
     __metadata("design:paramtypes", [])
 ], RadioButtonComponent.prototype, "attrChecked", null);
 __decorate([
-    core_1.HostListener('keyup', ['$event']),
+    core_1.HostListener('keydown', ['$event']),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
-], RadioButtonComponent.prototype, "onKeyup", null);
+], RadioButtonComponent.prototype, "keydown", null);
 __decorate([
     core_1.HostListener('click', ['$event']),
     __metadata("design:type", Function),
@@ -12381,7 +13754,7 @@ __decorate([
 RadioButtonComponent = __decorate([
     core_1.Component({
         selector: 'vcl-radio-button',
-        template: __webpack_require__(196),
+        template: __webpack_require__(219),
         host: {
             '[attr.role]': '"radio"',
             '[class.vclCheckbox]': 'true',
@@ -12395,12 +13768,12 @@ RadioButtonComponent = __decorate([
 exports.RadioButtonComponent = RadioButtonComponent;
 
 
-/***/ },
-/* 156 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 174 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -12414,7 +13787,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 // Use inheritance once supported
 // https://github.com/angular/angular/issues/11606
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
+var forms_1 = __webpack_require__(7);
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return RadioGroupComponent; }),
@@ -12456,7 +13829,7 @@ __decorate([
 RadioGroupComponent = __decorate([
     core_1.Component({
         selector: 'vcl-radio-group',
-        template: __webpack_require__(197),
+        template: __webpack_require__(220),
         host: {},
         changeDetection: core_1.ChangeDetectionStrategy.OnPush,
         providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
@@ -12466,12 +13839,12 @@ RadioGroupComponent = __decorate([
 exports.RadioGroupComponent = RadioGroupComponent;
 
 
-/***/ },
-/* 157 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 175 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -12481,8 +13854,43 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t;
+    return { next: verb(0), "throw": verb(1), "return": verb(2) };
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
+var forms_1 = __webpack_require__(7);
 /**
  * see
  * @link http://www.w3schools.com/tags/tag_option.asp
@@ -12557,9 +13965,9 @@ exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     multi: true
 };
 var SelectComponent = (function () {
-    function SelectComponent() {
-        var _this = this;
-        this.popoverTarget = 'popoverTarget' + Math.random().toString().slice(2); // TODO cant this be solved via view/content-childs?
+    function SelectComponent(me, zone) {
+        this.zone = zone;
+        this.tabindex = 0;
         this.expanded = false;
         // options
         this.items = [];
@@ -12571,9 +13979,53 @@ var SelectComponent = (function () {
         this.collapsedIcon = 'fa:chevron-down';
         this.displayValue = 'Select value';
         this.changeEE = new core_1.EventEmitter(); // string[] if multi-select
-        this.expand = function () { return _this.expanded = !_this.expanded; };
-        this.onOutsideClick = function () { return _this.expanded = false; };
+        this.dropdownTop = -1;
+        this.dropDirection = 'bottom';
+        this.zone = zone;
+        this.me = me;
     }
+    SelectComponent.prototype.expand = function () {
+        this.expanded = !this.expanded;
+        this.calculateDropDirection();
+    };
+    SelectComponent.prototype.keydown = function (ev) {
+        switch (ev.code) {
+            case 'ArrowDown':
+            case 'ArrowUp':
+                this.expanded = true;
+                break;
+            case 'Space':
+                this.expanded = !this.expanded;
+                break;
+            case 'Tab':
+                if (!this.expanded)
+                    this.me.nativeElement.blur();
+            case 'Escape':
+                this.expanded = false;
+                break;
+        }
+    };
+    SelectComponent.prototype.doTap = function (ev) {
+        this.expanded = !this.expanded;
+    };
+    SelectComponent.prototype.onFocus = function (event) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, new Promise(function (res) { return setTimeout(res, 100); })];
+                    case 1:
+                        _a.sent();
+                        this.expanded = true;
+                        this.dropdown.listenKeys = true;
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    SelectComponent.prototype.onBlur = function (event) {
+        this.expanded = false;
+        this.dropdown.listenKeys = false;
+    };
     SelectComponent.prototype.ngOnInit = function () { };
     SelectComponent.prototype.ngAfterContentInit = function () {
         var _this = this;
@@ -12597,6 +14049,46 @@ var SelectComponent = (function () {
             !!_this.onChangeCallback && _this.onChangeCallback(newValue);
         });
     };
+    /**
+     * calculate if the dropdown should be displayed above or under the select-input
+     */
+    SelectComponent.prototype.calculateDropDirection = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var position, screenHeight, spaceBottom, spaceTop;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        position = this.me.nativeElement.getBoundingClientRect();
+                        screenHeight = window.innerHeight
+                            || document.documentElement.clientHeight
+                            || document.body.clientHeight;
+                        spaceBottom = screenHeight - position.bottom;
+                        spaceTop = position.top;
+                        if (spaceBottom < spaceTop)
+                            this.dropDirection = 'top';
+                        else
+                            this.dropDirection = 'bottom';
+                        return [4 /*yield*/, new Promise(function (res) { return setTimeout(res, 0); })];
+                    case 1:
+                        _a.sent();
+                        switch (this.dropDirection) {
+                            case 'top':
+                                this.dropdownTop = -1 *
+                                    (this.dropdown.me.nativeElement.children[0].offsetHeight
+                                        + this.select.nativeElement.offsetHeight
+                                        - 1 // border
+                                        + 0.3 // fix chrome ugly 1-pixel-render
+                                    );
+                                break;
+                            case 'bottom':
+                                this.dropdownTop = -1.1;
+                                break;
+                        }
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
     SelectComponent.prototype.reDisplayValue = function (newValue) {
         var _this = this;
         if (!newValue)
@@ -12609,15 +14101,28 @@ var SelectComponent = (function () {
         if (newValue.length) {
             this.displayValue = this.items
                 .filter(function (i) { return _this.value.includes(i.value); })
-                .map(function (i) { return i.label; })
-                .join(', ');
+                .map(function (i) { return i.label; });
         }
+    };
+    SelectComponent.prototype.unselectItem = function (item) {
+        item.selected = false;
+        this.dropdown.value = this.dropdown.items
+            .filter(function (i) { return i.selected; })
+            .map(function (i) { return i.value; });
+    };
+    SelectComponent.prototype.displayValueTokens = function () {
+        if (this.maxSelectableItems <= 1 || typeof this.displayValue === 'string')
+            return false;
+        else
+            return true;
     };
     SelectComponent.prototype.selectItem = function (item) {
         this.dropdown.selectItem(item);
     };
     SelectComponent.prototype.onSelect = function (newValue) {
         this.value = newValue;
+        if (this.maxSelectableItems == 1)
+            this.expanded = false;
         this.changeEE.emit(this.value);
     };
     SelectComponent.prototype.writeValue = function (value) {
@@ -12635,9 +14140,17 @@ var SelectComponent = (function () {
     return SelectComponent;
 }());
 __decorate([
+    core_1.HostBinding(),
+    __metadata("design:type", Object)
+], SelectComponent.prototype, "tabindex", void 0);
+__decorate([
     core_1.ViewChild('dropdown'),
     __metadata("design:type", Object)
 ], SelectComponent.prototype, "dropdown", void 0);
+__decorate([
+    core_1.ViewChild('select'),
+    __metadata("design:type", Object)
+], SelectComponent.prototype, "select", void 0);
 __decorate([
     core_1.Input('value'),
     __metadata("design:type", Object)
@@ -12672,30 +14185,58 @@ __decorate([
 ], SelectComponent.prototype, "collapsedIcon", void 0);
 __decorate([
     core_1.Input('displayValue'),
-    __metadata("design:type", String)
+    __metadata("design:type", Object)
 ], SelectComponent.prototype, "displayValue", void 0);
 __decorate([
     core_1.Output('change'),
     __metadata("design:type", Object)
 ], SelectComponent.prototype, "changeEE", void 0);
+__decorate([
+    core_1.HostListener('keydown', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], SelectComponent.prototype, "keydown", null);
+__decorate([
+    core_1.HostListener('tap', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], SelectComponent.prototype, "doTap", null);
+__decorate([
+    core_1.HostListener('focus', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], SelectComponent.prototype, "onFocus", null);
+__decorate([
+    core_1.HostListener('blur', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], SelectComponent.prototype, "onBlur", null);
 SelectComponent = __decorate([
     core_1.Component({
         selector: 'vcl-select',
-        template: __webpack_require__(198),
-        //  changeDetection: ChangeDetectionStrategy.OnPush,
+        template: __webpack_require__(221),
+        /**
+         * OnPush cannot be used because then the this.dropdownTop - style will not
+         * be applied. Maybe this is a bug of ng2?
+         */
+        // changeDetection: ChangeDetectionStrategy.OnPush,
         providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [core_1.ElementRef, core_1.NgZone])
 ], SelectComponent);
 exports.SelectComponent = SelectComponent;
 
 
-/***/ },
-/* 158 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 176 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -12706,7 +14247,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
+var forms_1 = __webpack_require__(7);
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return SliderComponent; }),
@@ -12714,6 +14255,7 @@ exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
 };
 var SliderComponent = (function () {
     function SliderComponent() {
+        this.tabindex = 0;
         this.value = 0;
         this.stepsOnly = false;
         this.round = 0;
@@ -12737,6 +14279,7 @@ var SliderComponent = (function () {
         var valueLeft = this.value - this.min;
         var delta = rangeLength / valueLeft;
         this.percentLeftKnob = 100 / delta;
+        return this.percentLeftKnob;
     };
     SliderComponent.prototype.percentToValue = function (per) {
         var rangeLength = this.max - this.min;
@@ -12796,6 +14339,65 @@ var SliderComponent = (function () {
         this.value = this.percentToValue(this.percentLeftKnob);
         !!this.onChangeCallback && this.onChangeCallback(this.value);
     };
+    SliderComponent.prototype.moveToPoint = function (direction) {
+        if (direction === void 0) { direction = 'right'; }
+        var currentPointValue = this.closestScalePoint(this.calculatePercentLeftKnob());
+        var currentPoint = this.scalePoints
+            .find(function (p) { return p.percent == currentPointValue; });
+        var i = this.scalePoints.indexOf(currentPoint);
+        var nextPoint;
+        if (direction == 'right') {
+            var nextI = i + 1;
+            if (!this.scalePoints[nextI])
+                nextI = this.scalePoints.length - 1;
+            nextPoint = this.scalePoints[nextI];
+        }
+        else {
+            var nextI = i - 1;
+            if (nextI < 0)
+                nextI = 0;
+            nextPoint = this.scalePoints[nextI];
+        }
+        this.value = this.percentToValue(nextPoint.percent);
+        !!this.onChangeCallback && this.onChangeCallback(this.value);
+    };
+    SliderComponent.prototype.moveValue = function (direction) {
+        if (direction === void 0) { direction = 'right'; }
+        var newValue;
+        if (direction == 'right')
+            newValue = this.value + 1;
+        else
+            newValue = this.value - 1;
+        if (newValue < this.min)
+            newValue = this.min;
+        if (newValue > this.max)
+            newValue = this.max;
+        this.value = newValue;
+        this.calculatePercentLeftKnob();
+        !!this.onChangeCallback && this.onChangeCallback(this.value);
+    };
+    SliderComponent.prototype.keydown = function (ev) {
+        switch (ev.code) {
+            case 'ArrowLeft':
+                if (this.stepsOnly)
+                    this.moveToPoint('left');
+                else
+                    this.moveValue('left');
+                ev.preventDefault();
+                break;
+            case 'ArrowRight':
+                if (this.stepsOnly)
+                    this.moveToPoint('right');
+                else
+                    this.moveValue('right');
+                ev.preventDefault();
+                break;
+            case 'Space':
+                this.moveToPoint('right');
+                ev.preventDefault();
+                break;
+        }
+    };
     SliderComponent.prototype.onPan = function (ev) {
         if (this.firstPan) {
             this.firstPan = false;
@@ -12828,6 +14430,10 @@ var SliderComponent = (function () {
     };
     return SliderComponent;
 }());
+__decorate([
+    core_1.HostBinding(),
+    __metadata("design:type", Object)
+], SliderComponent.prototype, "tabindex", void 0);
 __decorate([
     core_1.Input('value'),
     __metadata("design:type", Number)
@@ -12866,10 +14472,16 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)
 ], SliderComponent.prototype, "onTap", null);
+__decorate([
+    core_1.HostListener('keydown', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], SliderComponent.prototype, "keydown", null);
 SliderComponent = __decorate([
     core_1.Component({
         selector: 'vcl-slider',
-        template: __webpack_require__(199),
+        template: __webpack_require__(222),
         providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
         host: {
             '[class.vclSlider]': 'true'
@@ -12881,12 +14493,12 @@ SliderComponent = __decorate([
 exports.SliderComponent = SliderComponent;
 
 
-/***/ },
-/* 159 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 177 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -12902,7 +14514,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var Observable_1 = __webpack_require__(13);
-var wormhole_module_1 = __webpack_require__(18);
+var wormhole_module_1 = __webpack_require__(20);
 var core_1 = __webpack_require__(1);
 var TabLabelDirective = (function (_super) {
     __extends(TabLabelDirective, _super);
@@ -13057,19 +14669,18 @@ __decorate([
 TabNavComponent = __decorate([
     core_1.Component({
         selector: 'vcl-tab-nav',
-        template: __webpack_require__(200)
-    }),
-    __metadata("design:paramtypes", [])
+        template: __webpack_require__(223)
+    })
 ], TabNavComponent);
 exports.TabNavComponent = TabNavComponent;
 
 
-/***/ },
-/* 160 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 178 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13081,7 +14692,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var Observable_1 = __webpack_require__(13);
 var core_1 = __webpack_require__(1);
-var Tether = __webpack_require__(481);
+var Tether = __webpack_require__(504);
 var tetherID = 10000;
 var TetherComponent = (function () {
     function TetherComponent(myElement) {
@@ -13098,6 +14709,9 @@ var TetherComponent = (function () {
     });
     TetherComponent.prototype.ngAfterViewInit = function () {
         try {
+            console.log(this.target);
+            var t = document.querySelector(this.target);
+            console.dir(t);
             this.tether = new Tether({
                 element: '#' + this.id,
                 target: this.target,
@@ -13106,6 +14720,7 @@ var TetherComponent = (function () {
             });
         }
         catch (ex) {
+            console.dir(ex);
             this._error.emit(ex);
         }
     };
@@ -13113,9 +14728,9 @@ var TetherComponent = (function () {
         try {
             if (this.tether) {
                 this.tether.destroy();
-                // Workaround for a special case when using position:relative 
+                // Workaround for a special case when using position:relative
                 // The target elements are removed from the DOM before tether.js is able to clean the tethered elements.
-                // This workaround removes them manually 
+                // This workaround removes them manually
                 var tether = this.tether;
                 var el = tether.element;
                 var target = tether.target;
@@ -13156,19 +14771,19 @@ __decorate([
 TetherComponent = __decorate([
     core_1.Component({
         selector: 'vcl-tether',
-        template: __webpack_require__(201)
+        template: __webpack_require__(224)
     }),
     __metadata("design:paramtypes", [core_1.ElementRef])
 ], TetherComponent);
 exports.TetherComponent = TetherComponent;
 
 
-/***/ },
-/* 161 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 179 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13179,7 +14794,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
+var forms_1 = __webpack_require__(7);
 var TextareaDirective = (function () {
     function TextareaDirective(elRef, ngModel) {
         this.elRef = elRef;
@@ -13263,12 +14878,12 @@ TextareaDirective = __decorate([
 exports.TextareaDirective = TextareaDirective;
 
 
-/***/ },
-/* 162 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 180 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13279,7 +14894,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
+var forms_1 = __webpack_require__(7);
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR2 = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return TokenInputComponent; }),
@@ -13321,24 +14936,23 @@ __decorate([
 TokenInputComponent = __decorate([
     core_1.Component({
         selector: 'vcl-token-input',
-        template: __webpack_require__(202),
+        template: __webpack_require__(225),
         host: {
             '[class.vclInput]': 'true',
             '[class.vclTokenInput]': 'true'
         },
         providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR2]
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], TokenInputComponent);
 exports.TokenInputComponent = TokenInputComponent;
 
 
-/***/ },
-/* 163 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 181 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13349,8 +14963,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = __webpack_require__(1);
-var forms_1 = __webpack_require__(10);
-var token_component_1 = __webpack_require__(93);
+var forms_1 = __webpack_require__(7);
+var token_component_1 = __webpack_require__(102);
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return TokenListComponent; }),
@@ -13395,7 +15009,7 @@ __decorate([
 TokenListComponent = __decorate([
     core_1.Component({
         selector: 'vcl-token-list',
-        template: __webpack_require__(203),
+        template: __webpack_require__(226),
         host: {
             '[class.vclTokenList]': 'true',
             '[class.vclTokenContainer]': 'true'
@@ -13407,12 +15021,12 @@ TokenListComponent = __decorate([
 exports.TokenListComponent = TokenListComponent;
 
 
-/***/ },
-/* 164 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 182 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13451,15 +15065,15 @@ ToolbarComponent = __decorate([
 exports.ToolbarComponent = ToolbarComponent;
 
 
-/***/ },
-/* 165 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 183 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var Subject_1 = __webpack_require__(51);
-__webpack_require__(84);
-__webpack_require__(50);
+
+var Subject_1 = __webpack_require__(27);
+__webpack_require__(91);
+__webpack_require__(53);
 var ObservableComponent = (function () {
     function ObservableComponent() {
         this.changesSubject = new Subject_1.Subject();
@@ -13484,12 +15098,12 @@ var ObservableComponent = (function () {
 exports.ObservableComponent = ObservableComponent;
 
 
-/***/ },
-/* 166 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 184 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var core_1 = __webpack_require__(1);
 function setAnnotation(cls, key, value) {
     var annotation = getAnnotation(cls);
@@ -13514,12 +15128,12 @@ function setAnimations(cls, animations) {
 exports.setAnimations = setAnimations;
 
 
-/***/ },
-/* 167 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 185 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13572,12 +15186,12 @@ OffClickDirective = __decorate([
 exports.OffClickDirective = OffClickDirective;
 
 
-/***/ },
-/* 168 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 186 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13653,12 +15267,12 @@ WormholeService = __decorate([
 exports.WormholeService = WormholeService;
 
 
-/***/ },
-/* 169 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 187 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -13677,24 +15291,6 @@ var core_1 = __webpack_require__(1);
 var Wormhole = (function () {
     function Wormhole() {
     }
-    Object.defineProperty(Wormhole.prototype, "isConnected", {
-        get: function () {
-            return !!this.bridge;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Wormhole.prototype.disconnect = function () {
-        this.detach();
-        this.bridge = null;
-    };
-    Wormhole.prototype.connect = function (bridge) {
-        if (this.bridge) {
-            this.disconnect();
-        }
-        this.bridge = bridge;
-        this.attach();
-    };
     return Wormhole;
 }());
 exports.Wormhole = Wormhole;
@@ -13706,18 +15302,27 @@ var TemplateWormhole = (function (_super) {
         _this.templateRef = templateRef;
         return _this;
     }
-    TemplateWormhole.prototype.attach = function () {
+    Object.defineProperty(TemplateWormhole.prototype, "isConnected", {
+        get: function () {
+            return !!(this.viewRef && this.viewContainerRef);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    TemplateWormhole.prototype.connect = function (viewContainerRef) {
         var _this = this;
-        this.viewRef = this.bridge.viewContainerRef.createEmbeddedView(this.templateRef);
+        this.disconnect();
+        this.viewContainerRef = viewContainerRef;
+        this.viewRef = this.viewContainerRef.createEmbeddedView(this.templateRef);
         this.viewRef.onDestroy(function () {
             _this.viewRef = null;
         });
     };
-    TemplateWormhole.prototype.detach = function () {
-        if (this.viewRef) {
-            var i = this.bridge.viewContainerRef.indexOf(this.viewRef);
+    TemplateWormhole.prototype.disconnect = function () {
+        if (this.isConnected) {
+            var i = this.viewContainerRef.indexOf(this.viewRef);
             if (i >= 0)
-                this.bridge.viewContainerRef.remove(i);
+                this.viewContainerRef.remove(i);
         }
     };
     return TemplateWormhole;
@@ -13732,39 +15337,71 @@ TemplateWormhole = __decorate([
 exports.TemplateWormhole = TemplateWormhole;
 var ComponentWormhole = (function (_super) {
     __extends(ComponentWormhole, _super);
-    function ComponentWormhole(componentClass, opts) {
-        if (opts === void 0) { opts = {}; }
+    function ComponentWormhole(componentClass, initialData) {
+        if (initialData === void 0) { initialData = {}; }
         var _this = _super.call(this) || this;
         _this.componentClass = componentClass;
-        _this.injector = opts.injector;
-        _this.data = opts.data;
+        _this.data = initialData;
         return _this;
     }
-    ComponentWormhole.prototype.attach = function () {
+    Object.defineProperty(ComponentWormhole.prototype, "isConnected", {
+        get: function () {
+            return !!(this.compRef && this.viewContainerRef);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ComponentWormhole.prototype.connect = function (viewContainerRef) {
+        this.destroyComponent();
+        this.viewContainerRef = viewContainerRef;
+        this.initializeComponent();
+    };
+    ComponentWormhole.prototype.disconnect = function () {
+        this.destroyComponent();
+    };
+    ComponentWormhole.prototype.initializeComponent = function () {
         var _this = this;
-        var viewContainerRef = this.bridge.viewContainerRef;
-        var componentFactory = this.bridge.componentFactoryResolver.resolveComponentFactory(this.componentClass);
-        this.compRef = viewContainerRef.createComponent(componentFactory, viewContainerRef.length, this.injector || viewContainerRef.parentInjector);
+        if (!this.injector) {
+            this.injector = this.createInjector();
+        }
+        if (!this.compFactory) {
+            var componentFactoryResolver = this.injector.get(core_1.ComponentFactoryResolver);
+            this.compFactory = componentFactoryResolver.resolveComponentFactory(this.componentClass);
+        }
+        this.destroyComponent();
+        this.compRef = this.viewContainerRef.createComponent(this.compFactory, this.viewContainerRef.length, this.injector);
         this.compRef.onDestroy(function () {
             _this.compRef = null;
         });
-        this.setData(this.data);
+        if (this.data && typeof this.data === 'object') {
+            Object.assign(this.compRef.instance, this.data);
+        }
+        this.compRef.changeDetectorRef.detectChanges();
     };
-    ComponentWormhole.prototype.detach = function () {
-        if (this.compRef) {
-            var i = this.bridge.viewContainerRef.indexOf(this.compRef.hostView);
+    ComponentWormhole.prototype.destroyComponent = function () {
+        if (this.isConnected) {
+            var i = this.viewContainerRef.indexOf(this.compRef.hostView);
             if (i >= 0)
-                this.bridge.viewContainerRef.remove(i);
+                this.viewContainerRef.remove(i);
         }
     };
+    ComponentWormhole.prototype.createInjector = function () {
+        return this.viewContainerRef.parentInjector;
+    };
     ComponentWormhole.prototype.setData = function (data) {
-        if (data && typeof data === 'object') {
-            if (this.compRef && !this.compRef.hostView.destroyed) {
-                Object.assign(this.compRef.instance, data);
-                this.compRef.changeDetectorRef.detectChanges();
+        this.data = data;
+        if (this.isConnected && this.data && typeof this.data === 'object') {
+            // TODO: Change detection is not triggering
+            // this.compRef.changeDetectorRef.markForCheck();
+            // this.compRef.changeDetectorRef.detectChanges();
+            // Workaround
+            // if call markForCheck on component instance or reinitialize component
+            if (this.compRef.instance.markForCheck) {
+                Object.assign(this.compRef.instance, this.data);
+                this.compRef.instance.markForCheck();
             }
             else {
-                this.data = data;
+                this.initializeComponent();
             }
         }
     };
@@ -13772,54 +15409,42 @@ var ComponentWormhole = (function (_super) {
 }(Wormhole));
 exports.ComponentWormhole = ComponentWormhole;
 var ConnectWormholeDirective = (function () {
-    function ConnectWormholeDirective(viewContainerRef, componentFactoryResolver) {
+    function ConnectWormholeDirective(viewContainerRef) {
         this.viewContainerRef = viewContainerRef;
-        this.componentFactoryResolver = componentFactoryResolver;
-        // TODO: workaround. Does not disconnect the view when destroying the element when true
-        // ngOnDestroy is called before the animations are fully traversed. This would remove the wormhole's ContentChild
-        // before its host is removed from the DOM
-        this.indisposable = false;
     }
-    Object.defineProperty(ConnectWormholeDirective.prototype, "isConnected", {
+    Object.defineProperty(ConnectWormholeDirective.prototype, "isAttached", {
         get: function () {
-            return !!this.connectedWormhole;
+            return !!this.wormhole;
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(ConnectWormholeDirective.prototype, "connectWormhole", {
         set: function (wormhole) {
-            if (this.isConnected) {
-                this.disconnect();
+            if (this.isAttached) {
+                this.detach();
             }
-            if (wormhole) {
-                this.connect(wormhole);
-                this.wormhole = wormhole;
-            }
+            this.attach(wormhole);
         },
         enumerable: true,
         configurable: true
     });
-    ConnectWormholeDirective.prototype.connect = function (wormhole) {
-        this.connectedWormhole = wormhole;
-        wormhole.connect(this);
+    ConnectWormholeDirective.prototype.attach = function (wormhole) {
+        this.wormhole = wormhole;
+        wormhole.connect(this.viewContainerRef);
     };
-    ConnectWormholeDirective.prototype.disconnect = function () {
-        if (this.connectedWormhole) {
-            this.connectedWormhole.disconnect();
+    ConnectWormholeDirective.prototype.detach = function () {
+        if (this.isAttached) {
+            this.wormhole.disconnect();
         }
     };
     ConnectWormholeDirective.prototype.ngOnDestroy = function () {
-        if (this.isConnected && !this.indisposable) {
-            this.disconnect();
+        if (this.isAttached) {
+            this.detach();
         }
     };
     return ConnectWormholeDirective;
 }());
-__decorate([
-    core_1.Input('wormholeIndisposable'),
-    __metadata("design:type", Boolean)
-], ConnectWormholeDirective.prototype, "indisposable", void 0);
 __decorate([
     core_1.Input('connectWormhole'),
     __metadata("design:type", Wormhole),
@@ -13829,17 +15454,17 @@ ConnectWormholeDirective = __decorate([
     core_1.Directive({
         selector: '[connectWormhole]'
     }),
-    __metadata("design:paramtypes", [core_1.ViewContainerRef, core_1.ComponentFactoryResolver])
+    __metadata("design:paramtypes", [core_1.ViewContainerRef])
 ], ConnectWormholeDirective);
 exports.ConnectWormholeDirective = ConnectWormholeDirective;
 
 
-/***/ },
-/* 170 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13853,7 +15478,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 var core_1 = __webpack_require__(1);
-var l10n_service_1 = __webpack_require__(72);
+var l10n_service_1 = __webpack_require__(79);
 var L10nPipe = (function () {
     function L10nPipe(l10n) {
         this.l10n = l10n;
@@ -13914,9 +15539,9 @@ L10nPipe = __decorate([
 exports.L10nPipe = L10nPipe;
 
 
-/***/ },
-/* 171 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
 
 /*!
  * jsoneditor.js
@@ -50296,9 +51921,9 @@ return /******/ (function(modules) { // webpackBootstrap
 });
 ;
 
-/***/ },
-/* 172 */
-/***/ function(module, exports) {
+/***/ }),
+/* 190 */
+/***/ (function(module, exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -50482,198 +52107,228 @@ process.chdir = function (dir) {
 process.umask = function() { return 0; };
 
 
-/***/ },
-/* 173 */
-/***/ function(module, exports) {
+/***/ }),
+/* 191 */
+/***/ (function(module, exports) {
 
 module.exports = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:cc=\"http://creativecommons.org/ns#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:svg=\"http://www.w3.org/2000/svg\"\n   xmlns=\"http://www.w3.org/2000/svg\"\n   xmlns:sodipodi=\"http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd\"\n   xmlns:inkscape=\"http://www.inkscape.org/namespaces/inkscape\"\n   width=\"216\"\n   height=\"144\"\n   id=\"svg4136\"\n   version=\"1.1\"\n   inkscape:version=\"0.91 r\"\n   sodipodi:docname=\"jsoneditor-icons.svg\">\n  <title\n     id=\"title6512\">JSON Editor Icons</title>\n  <metadata\n     id=\"metadata4148\">\n    <rdf:RDF>\n      <cc:Work\n         rdf:about=\"\">\n        <dc:format>image/svg+xml</dc:format>\n        <dc:type\n           rdf:resource=\"http://purl.org/dc/dcmitype/StillImage\" />\n        <dc:title>JSON Editor Icons</dc:title>\n      </cc:Work>\n    </rdf:RDF>\n  </metadata>\n  <defs\n     id=\"defs4146\" />\n  <sodipodi:namedview\n     pagecolor=\"#ffffff\"\n     bordercolor=\"#666666\"\n     borderopacity=\"1\"\n     objecttolerance=\"10\"\n     gridtolerance=\"10\"\n     guidetolerance=\"10\"\n     inkscape:pageopacity=\"0\"\n     inkscape:pageshadow=\"2\"\n     inkscape:window-width=\"1920\"\n     inkscape:window-height=\"1028\"\n     id=\"namedview4144\"\n     showgrid=\"true\"\n     inkscape:zoom=\"4\"\n     inkscape:cx=\"97.217248\"\n     inkscape:cy=\"59.950227\"\n     inkscape:window-x=\"0\"\n     inkscape:window-y=\"0\"\n     inkscape:window-maximized=\"1\"\n     inkscape:current-layer=\"svg4136\"\n     showguides=\"false\"\n     borderlayer=\"false\"\n     inkscape:showpageshadow=\"true\"\n     showborder=\"true\">\n    <inkscape:grid\n       type=\"xygrid\"\n       id=\"grid4640\"\n       empspacing=\"24\" />\n  </sodipodi:namedview>\n  <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->\n  <g\n     id=\"g4394\">\n    <rect\n       x=\"4\"\n       y=\"4\"\n       width=\"16\"\n       height=\"16\"\n       id=\"svg_1\"\n       style=\"fill:#1aae1c;fill-opacity:1;stroke:none;stroke-width:0\" />\n    <rect\n       style=\"fill:#ec3f29;fill-opacity:0.94117647;stroke:none;stroke-width:0\"\n       x=\"28.000006\"\n       y=\"3.999995\"\n       width=\"16\"\n       height=\"16\"\n       id=\"svg_1-7\" />\n    <rect\n       id=\"rect4165\"\n       height=\"16\"\n       width=\"16\"\n       y=\"3.999995\"\n       x=\"52.000004\"\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none;stroke-width:0\" />\n    <rect\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none;stroke-width:0\"\n       x=\"172.00002\"\n       y=\"3.9999852\"\n       width=\"16\"\n       height=\"16\"\n       id=\"rect4175\" />\n    <rect\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none;stroke-width:0\"\n       x=\"196\"\n       y=\"3.999995\"\n       width=\"16\"\n       height=\"16\"\n       id=\"rect4175-3\" />\n    <g\n       style=\"stroke:none\"\n       id=\"g4299\">\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n         id=\"svg_1-1\"\n         height=\"1.9999986\"\n         width=\"9.9999924\"\n         y=\"10.999998\"\n         x=\"7.0000048\" />\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n         id=\"svg_1-1-1\"\n         height=\"9.9999838\"\n         width=\"1.9999955\"\n         y=\"7.0000114\"\n         x=\"11.000005\" />\n    </g>\n    <g\n       style=\"stroke:none\"\n       transform=\"matrix(0.70710678,-0.70710678,0.70710678,0.70710678,19.029435,12.000001)\"\n       id=\"g4299-3\">\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n         id=\"svg_1-1-0\"\n         height=\"1.9999986\"\n         width=\"9.9999924\"\n         y=\"10.999998\"\n         x=\"7.0000048\" />\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n         id=\"svg_1-1-1-9\"\n         height=\"9.9999838\"\n         width=\"1.9999955\"\n         y=\"7.0000114\"\n         x=\"11.000005\" />\n    </g>\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n       x=\"55.000004\"\n       y=\"7.0000048\"\n       width=\"6.9999909\"\n       height=\"6.9999905\"\n       id=\"svg_1-7-5\" />\n    <rect\n       id=\"rect4354\"\n       height=\"6.9999905\"\n       width=\"6.9999909\"\n       y=\"10.00001\"\n       x=\"58\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#4c4c4c;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#3c80df;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.94117647\"\n       x=\"58.000004\"\n       y=\"10.000005\"\n       width=\"6.9999909\"\n       height=\"6.9999905\"\n       id=\"svg_1-7-5-7\" />\n    <g\n       id=\"g4378\">\n      <rect\n         id=\"svg_1-7-5-3\"\n         height=\"1.9999965\"\n         width=\"7.9999909\"\n         y=\"10.999999\"\n         x=\"198\"\n         style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n         x=\"198\"\n         y=\"7.0000005\"\n         width=\"11.999995\"\n         height=\"1.9999946\"\n         id=\"rect4374\" />\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n         x=\"198\"\n         y=\"14.999996\"\n         width=\"3.9999928\"\n         height=\"1.9999995\"\n         id=\"rect4376\" />\n    </g>\n    <g\n       id=\"g4383\"\n       transform=\"matrix(1,0,0,-1,-23.999995,23.999995)\">\n      <rect\n         style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n         x=\"198\"\n         y=\"10.999999\"\n         width=\"7.9999909\"\n         height=\"1.9999965\"\n         id=\"rect4385\" />\n      <rect\n         id=\"rect4387\"\n         height=\"1.9999946\"\n         width=\"11.999995\"\n         y=\"7.0000005\"\n         x=\"198\"\n         style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n      <rect\n         id=\"rect4389\"\n         height=\"1.9999995\"\n         width=\"3.9999928\"\n         y=\"14.999996\"\n         x=\"198\"\n         style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n    </g>\n    <rect\n       y=\"3.9999199\"\n       x=\"76\"\n       height=\"16\"\n       width=\"16\"\n       id=\"rect3754-4\"\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none\" />\n    <path\n       sodipodi:nodetypes=\"cccccccc\"\n       inkscape:connector-curvature=\"0\"\n       id=\"path4351\"\n       d=\"m 85.10447,6.0157384 -0.0156,1.4063 c 3.02669,-0.2402 0.33008,3.6507996 2.48438,4.5780996 -2.18694,1.0938 0.49191,4.9069 -2.45313,4.5781 l -0.0156,1.4219 c 5.70828,0.559 1.03264,-5.1005 4.70313,-5.2656 l 0,-1.4063 c -3.61303,-0.027 1.11893,-5.7069996 -4.70313,-5.3124996 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n    <path\n       sodipodi:nodetypes=\"cccccccc\"\n       inkscape:connector-curvature=\"0\"\n       id=\"path4351-9\"\n       d=\"m 82.78125,5.9984384 0.0156,1.4063 c -3.02668,-0.2402 -0.33007,3.6506996 -2.48437,4.5780996 2.18694,1.0938 -0.49192,4.9069 2.45312,4.5781 l 0.0156,1.4219 c -5.70827,0.559 -1.03263,-5.1004 -4.70312,-5.2656 l 0,-1.4063 c 3.61303,-0.027 -1.11894,-5.7070996 4.70312,-5.3124996 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n    <rect\n       y=\"3.9999199\"\n       x=\"100\"\n       height=\"16\"\n       width=\"16\"\n       id=\"rect3754-25\"\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n       id=\"path2987\"\n       d=\"m 103.719,5.6719384 0,12.7187996 3.03125,0 0,-1.5313 -1.34375,0 0,-9.6249996 1.375,0 0,-1.5625 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n       id=\"path2987-1\"\n       d=\"m 112.2185,5.6721984 0,12.7187996 -3.03125,0 0,-1.5313 1.34375,0 0,-9.6249996 -1.375,0 0,-1.5625 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none\" />\n    <rect\n       y=\"3.9999199\"\n       x=\"124\"\n       height=\"16\"\n       width=\"16\"\n       id=\"rect3754-73\"\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none\" />\n    <path\n       sodipodi:nodetypes=\"ccccccccc\"\n       inkscape:connector-curvature=\"0\"\n       id=\"path3780\"\n       d=\"m 126.2824,17.602938 1.78957,0 1.14143,-2.8641 5.65364,0 1.14856,2.8641 1.76565,0 -4.78687,-11.1610996 -1.91903,0 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none\" />\n    <path\n       inkscape:connector-curvature=\"0\"\n       id=\"path3782\"\n       d=\"m 129.72704,13.478838 4.60852,0.01 -2.30426,-5.5497996 z\"\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none\" />\n    <rect\n       y=\"3.9999199\"\n       x=\"148\"\n       height=\"16\"\n       width=\"16\"\n       id=\"rect3754-35\"\n       style=\"fill:#4c4c4c;fill-opacity:1;stroke:none\" />\n    <path\n       sodipodi:nodetypes=\"ccccccc\"\n       inkscape:connector-curvature=\"0\"\n       id=\"path5008-2\"\n       d=\"m 156.47655,5.8917384 0,2.1797 0.46093,2.3983996 1.82813,0 0.39844,-2.3983996 0,-2.1797 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none\" />\n    <path\n       sodipodi:nodetypes=\"ccccccc\"\n       inkscape:connector-curvature=\"0\"\n       id=\"path5008-2-8\"\n       d=\"m 152.51561,5.8906384 0,2.1797 0.46094,2.3983996 1.82812,0 0.39844,-2.3983996 0,-2.1797 z\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none\" />\n  </g>\n  <rect\n     x=\"4\"\n     y=\"27.999994\"\n     width=\"16\"\n     height=\"16\"\n     id=\"rect4432\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0\"\n     x=\"28.000006\"\n     y=\"27.99999\"\n     width=\"16\"\n     height=\"16\"\n     id=\"rect4434\" />\n  <rect\n     id=\"rect4436\"\n     height=\"16\"\n     width=\"16\"\n     y=\"27.99999\"\n     x=\"52.000004\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n  <rect\n     style=\"fill:#d3d3d3;stroke:#000000;stroke-width:0\"\n     x=\"172.00002\"\n     y=\"27.999981\"\n     width=\"16\"\n     height=\"16\"\n     id=\"rect4446\" />\n  <rect\n     style=\"fill:#d3d3d3;stroke:#000000;stroke-width:0\"\n     x=\"196\"\n     y=\"27.99999\"\n     width=\"16\"\n     height=\"16\"\n     id=\"rect4448\" />\n  <g\n     id=\"g4466\"\n     style=\"stroke:none\"\n     transform=\"translate(0,23.999995)\">\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n       id=\"rect4468\"\n       height=\"1.9999986\"\n       width=\"9.9999924\"\n       y=\"10.999998\"\n       x=\"7.0000048\" />\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n       id=\"rect4470\"\n       height=\"9.9999838\"\n       width=\"1.9999955\"\n       y=\"7.0000114\"\n       x=\"11.000005\" />\n  </g>\n  <g\n     transform=\"matrix(0.70710678,-0.70710678,0.70710678,0.70710678,19.029435,35.999996)\"\n     id=\"g4472\"\n     style=\"stroke:none\">\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n       id=\"rect4474\"\n       height=\"1.9999986\"\n       width=\"9.9999924\"\n       y=\"10.999998\"\n       x=\"7.0000048\" />\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0\"\n       id=\"rect4476\"\n       height=\"9.9999838\"\n       width=\"1.9999955\"\n       y=\"7.0000114\"\n       x=\"11.000005\" />\n  </g>\n  <rect\n     style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n     x=\"55.000004\"\n     y=\"31\"\n     width=\"6.9999909\"\n     height=\"6.9999905\"\n     id=\"rect4478\" />\n  <rect\n     id=\"rect4480\"\n     height=\"6.9999905\"\n     width=\"6.9999909\"\n     y=\"34.000008\"\n     x=\"58\"\n     style=\"fill:#ffffff;fill-opacity:1;stroke:#d3d3d3;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none\" />\n  <rect\n     style=\"fill:#ffffff;fill-opacity:1;stroke:#d3d3d3;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none\"\n     x=\"58.000004\"\n     y=\"34.000004\"\n     width=\"6.9999909\"\n     height=\"6.9999905\"\n     id=\"rect4482\" />\n  <g\n     id=\"g4484\"\n     transform=\"translate(0,23.999995)\">\n    <rect\n       id=\"rect4486\"\n       height=\"1.9999965\"\n       width=\"7.9999909\"\n       y=\"10.999999\"\n       x=\"198\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n       x=\"198\"\n       y=\"7.0000005\"\n       width=\"11.999995\"\n       height=\"1.9999946\"\n       id=\"rect4488\" />\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n       x=\"198\"\n       y=\"14.999996\"\n       width=\"3.9999928\"\n       height=\"1.9999995\"\n       id=\"rect4490\" />\n  </g>\n  <g\n     id=\"g4492\"\n     transform=\"matrix(1,0,0,-1,-23.999995,47.99999)\">\n    <rect\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\"\n       x=\"198\"\n       y=\"10.999999\"\n       width=\"7.9999909\"\n       height=\"1.9999965\"\n       id=\"rect4494\" />\n    <rect\n       id=\"rect4496\"\n       height=\"1.9999946\"\n       width=\"11.999995\"\n       y=\"7.0000005\"\n       x=\"198\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n    <rect\n       id=\"rect4498\"\n       height=\"1.9999995\"\n       width=\"3.9999928\"\n       y=\"14.999996\"\n       x=\"198\"\n       style=\"fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0\" />\n  </g>\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none\"\n     id=\"rect3754-8\"\n     width=\"16\"\n     height=\"16\"\n     x=\"76\"\n     y=\"27.99992\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\"\n     d=\"m 85.10448,30.015537 -0.0156,1.4063 c 3.02668,-0.2402 0.33007,3.6508 2.48438,4.5781 -2.18695,1.0938 0.49191,4.90688 -2.45313,4.57808 l -0.0156,1.4219 c 5.70827,0.559 1.03263,-5.10048 4.70313,-5.26558 l 0,-1.4063 c -3.61304,-0.027 1.11893,-5.707 -4.70313,-5.3125 z\"\n     id=\"path4351-1\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cccccccc\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\"\n     d=\"m 82.78126,29.998237 0.0156,1.4063 c -3.02668,-0.2402 -0.33008,3.6507 -2.48438,4.5781 2.18694,1.0938 -0.49191,4.90688 2.45313,4.57808 l 0.0156,1.4219 c -5.70828,0.559 -1.03264,-5.10038 -4.70313,-5.26558 l 0,-1.4063 c 3.61303,-0.027 -1.11893,-5.7071 4.70313,-5.3125 z\"\n     id=\"path4351-9-5\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cccccccc\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none\"\n     id=\"rect3754-65\"\n     width=\"16\"\n     height=\"16\"\n     x=\"100\"\n     y=\"27.99992\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:none\"\n     d=\"m 103.719,29.671937 0,12.71878 3.03125,0 0,-1.5313 -1.34375,0 0,-9.62498 1.375,0 0,-1.5625 z\"\n     id=\"path2987-8\"\n     inkscape:connector-curvature=\"0\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:none\"\n     d=\"m 112.2185,29.671937 0,12.71878 -3.03125,0 0,-1.5313 1.34375,0 0,-9.62498 -1.375,0 0,-1.5625 z\"\n     id=\"path2987-1-9\"\n     inkscape:connector-curvature=\"0\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none\"\n     id=\"rect3754-92\"\n     width=\"16\"\n     height=\"16\"\n     x=\"124\"\n     y=\"27.99992\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:none\"\n     d=\"m 126.2824,41.602917 1.78957,0 1.14143,-2.86408 5.65364,0 1.14856,2.86408 1.76565,0 -4.78687,-11.16108 -1.91902,0 z\"\n     id=\"path3780-9\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"ccccccccc\" />\n  <path\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none\"\n     d=\"m 129.72704,37.478837 4.60852,0.01 -2.30426,-5.5498 z\"\n     id=\"path3782-2\"\n     inkscape:connector-curvature=\"0\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none\"\n     id=\"rect3754-47\"\n     width=\"16\"\n     height=\"16\"\n     x=\"148\"\n     y=\"27.99992\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:none\"\n     d=\"m 156.47656,29.891737 0,2.1797 0.46093,2.3984 1.82813,0 0.39844,-2.3984 0,-2.1797 z\"\n     id=\"path5008-2-1\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"ccccccc\" />\n  <path\n     style=\"fill:#ffffff;fill-opacity:1;stroke:none\"\n     d=\"m 152.51562,29.890637 0,2.1797 0.46094,2.3984 1.82812,0 0.39844,-2.3984 0,-2.1797 z\"\n     id=\"path5008-2-8-8\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"ccccccc\" />\n  <rect\n     id=\"svg_1-7-2\"\n     height=\"1.9999961\"\n     width=\"11.999996\"\n     y=\"64\"\n     x=\"54\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"svg_1-7-2-2\"\n     height=\"2.9999905\"\n     width=\"2.9999907\"\n     y=\"52\"\n     x=\"80.000008\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\" />\n  <rect\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     x=\"85.000008\"\n     y=\"52\"\n     width=\"2.9999907\"\n     height=\"2.9999905\"\n     id=\"rect4561\" />\n  <rect\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     x=\"80.000008\"\n     y=\"58\"\n     width=\"2.9999907\"\n     height=\"2.9999905\"\n     id=\"rect4563\" />\n  <rect\n     id=\"rect4565\"\n     height=\"2.9999905\"\n     width=\"2.9999907\"\n     y=\"58\"\n     x=\"85.000008\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4567\"\n     height=\"2.9999905\"\n     width=\"2.9999907\"\n     y=\"64\"\n     x=\"80.000008\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\" />\n  <rect\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     x=\"85.000008\"\n     y=\"64\"\n     width=\"2.9999907\"\n     height=\"2.9999905\"\n     id=\"rect4569\" />\n  <circle\n     style=\"opacity:1;fill:none;fill-opacity:1;stroke:#4c4c4c;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none\"\n     id=\"path4571\"\n     cx=\"110.06081\"\n     cy=\"57.939209\"\n     r=\"4.7438836\" />\n  <rect\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     x=\"116.64566\"\n     y=\"-31.79752\"\n     width=\"4.229713\"\n     height=\"6.4053884\"\n     id=\"rect4563-2\"\n     transform=\"matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)\" />\n  <path\n     style=\"fill:#4c4c4c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\"\n     d=\"M 125,56 138.77027,56.095 132,64 Z\"\n     id=\"path4613\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cccc\" />\n  <path\n     sodipodi:nodetypes=\"cccc\"\n     inkscape:connector-curvature=\"0\"\n     id=\"path4615\"\n     d=\"M 149,64 162.77027,63.905 156,56 Z\"\n     style=\"fill:#4c4c4c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n  <rect\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     x=\"54\"\n     y=\"53\"\n     width=\"11.999996\"\n     height=\"1.9999961\"\n     id=\"rect4638\" />\n  <rect\n     id=\"svg_1-7-2-24\"\n     height=\"1.9999957\"\n     width=\"12.99999\"\n     y=\"-56\"\n     x=\"53\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     transform=\"matrix(0,1,-1,0,0,0)\" />\n  <rect\n     transform=\"matrix(0,1,-1,0,0,0)\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\"\n     x=\"53\"\n     y=\"-66\"\n     width=\"12.99999\"\n     height=\"1.9999957\"\n     id=\"rect4657\" />\n  <rect\n     id=\"rect4659\"\n     height=\"0.99999291\"\n     width=\"11.999999\"\n     y=\"57\"\n     x=\"54\"\n     style=\"fill:#4c4c4c;fill-opacity:0.98431373;stroke:none;stroke-width:0\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     x=\"54\"\n     y=\"88.000122\"\n     width=\"11.999996\"\n     height=\"1.9999961\"\n     id=\"rect4661\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     x=\"80.000008\"\n     y=\"76.000122\"\n     width=\"2.9999907\"\n     height=\"2.9999905\"\n     id=\"rect4663\" />\n  <rect\n     id=\"rect4665\"\n     height=\"2.9999905\"\n     width=\"2.9999907\"\n     y=\"76.000122\"\n     x=\"85.000008\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\" />\n  <rect\n     id=\"rect4667\"\n     height=\"2.9999905\"\n     width=\"2.9999907\"\n     y=\"82.000122\"\n     x=\"80.000008\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     x=\"85.000008\"\n     y=\"82.000122\"\n     width=\"2.9999907\"\n     height=\"2.9999905\"\n     id=\"rect4669\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     x=\"80.000008\"\n     y=\"88.000122\"\n     width=\"2.9999907\"\n     height=\"2.9999905\"\n     id=\"rect4671\" />\n  <rect\n     id=\"rect4673\"\n     height=\"2.9999905\"\n     width=\"2.9999907\"\n     y=\"88.000122\"\n     x=\"85.000008\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\" />\n  <circle\n     r=\"4.7438836\"\n     cy=\"81.939331\"\n     cx=\"110.06081\"\n     id=\"circle4675\"\n     style=\"opacity:1;fill:none;fill-opacity:1;stroke:#d3d3d3;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n  <rect\n     transform=\"matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)\"\n     id=\"rect4677\"\n     height=\"6.4053884\"\n     width=\"4.229713\"\n     y=\"-14.826816\"\n     x=\"133.6163\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:#d3d3d3;stroke-width:0;stroke-opacity:1\" />\n  <path\n     sodipodi:nodetypes=\"cccc\"\n     inkscape:connector-curvature=\"0\"\n     id=\"path4679\"\n     d=\"m 125,80.000005 13.77027,0.09499 L 132,87.999992 Z\"\n     style=\"fill:#d3d3d3;fill-opacity:1;fill-rule:evenodd;stroke:#d3d3d3;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n  <path\n     style=\"fill:#d3d3d3;fill-opacity:1;fill-rule:evenodd;stroke:#d3d3d3;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\"\n     d=\"M 149,88.0002 162.77027,87.9052 156,80.0002 Z\"\n     id=\"path4681\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cccc\" />\n  <rect\n     id=\"rect4683\"\n     height=\"1.9999961\"\n     width=\"11.999996\"\n     y=\"77.000122\"\n     x=\"54\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\" />\n  <rect\n     transform=\"matrix(0,1,-1,0,0,0)\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     x=\"77.000122\"\n     y=\"-56\"\n     width=\"12.99999\"\n     height=\"1.9999957\"\n     id=\"rect4685\" />\n  <rect\n     id=\"rect4687\"\n     height=\"1.9999957\"\n     width=\"12.99999\"\n     y=\"-66\"\n     x=\"77.000122\"\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     transform=\"matrix(0,1,-1,0,0,0)\" />\n  <rect\n     style=\"fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1\"\n     x=\"54\"\n     y=\"81.000122\"\n     width=\"11.999999\"\n     height=\"0.99999291\"\n     id=\"rect4689\" />\n  <rect\n     id=\"rect4761-1\"\n     height=\"1.9999945\"\n     width=\"15.99999\"\n     y=\"101\"\n     x=\"76.000008\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4761-0\"\n     height=\"1.9999945\"\n     width=\"15.99999\"\n     y=\"105\"\n     x=\"76.000008\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4761-7\"\n     height=\"1.9999945\"\n     width=\"9\"\n     y=\"109\"\n     x=\"76.000008\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4761-1-1\"\n     height=\"1.9999945\"\n     width=\"12\"\n     y=\"125\"\n     x=\"76.000008\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4761-1-1-4\"\n     height=\"1.9999945\"\n     width=\"10\"\n     y=\"137\"\n     x=\"76.000008\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4761-1-1-4-4\"\n     height=\"1.9999945\"\n     width=\"10\"\n     y=\"129\"\n     x=\"82\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <rect\n     id=\"rect4761-1-1-4-4-3\"\n     height=\"1.9999945\"\n     width=\"9\"\n     y=\"133\"\n     x=\"82\"\n     style=\"fill:#ffffff;fill-opacity:0.80000007;stroke:none;stroke-width:0\" />\n  <path\n     inkscape:connector-curvature=\"0\"\n     style=\"color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.8;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.66157866;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate\"\n     d=\"m 36.398438,100.0254 c -0.423362,-0.013 -0.846847,0.01 -1.265626,0.062 -1.656562,0.2196 -3.244567,0.9739 -4.507812,2.2266 L 29,100.5991 l -2.324219,7.7129 7.826172,-1.9062 -1.804687,-1.9063 c 1.597702,-1.5308 4.048706,-1.8453 5.984375,-0.7207 1.971162,1.1452 2.881954,3.3975 2.308593,5.5508 -0.573361,2.1533 -2.533865,3.6953 -4.830078,3.6953 l 0,3.0742 c 3.550756,0 6.710442,-2.4113 7.650391,-5.9414 0.939949,-3.5301 -0.618463,-7.2736 -3.710938,-9.0703 -1.159678,-0.6738 -2.431087,-1.0231 -3.701171,-1.0625 z\"\n     id=\"path4138\" />\n  <path\n     inkscape:connector-curvature=\"0\"\n     style=\"color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.8;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.66157866;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate\"\n     d=\"m 59.722656,99.9629 c -1.270084,0.039 -2.541493,0.3887 -3.701172,1.0625 -3.092475,1.7967 -4.650886,5.5402 -3.710937,9.0703 0.939949,3.5301 4.09768,5.9414 7.648437,5.9414 l 0,-3.0742 c -2.296214,0 -4.256717,-1.542 -4.830078,-3.6953 -0.573361,-2.1533 0.337432,-4.4056 2.308594,-5.5508 1.935731,-1.1246 4.38863,-0.8102 5.986326,0.7207 l -1.806638,1.9063 7.828128,1.9062 -2.32422,-7.7129 -1.62696,1.7168 c -1.26338,-1.2531 -2.848917,-2.0088 -4.505855,-2.2285 -0.418778,-0.055 -0.842263,-0.076 -1.265625,-0.062 z\"\n     id=\"path4138-1\" />\n  <path\n     inkscape:connector-curvature=\"0\"\n     style=\"opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.966;stroke-miterlimit:4;stroke-dasharray:none\"\n     d=\"m 10.5,100 0,2 -2.4999996,0 L 12,107 l 4,-5 -2.5,0 0,-2 -3,0 z\"\n     id=\"path3055-0-77\" />\n  <path\n     style=\"opacity:0.8;fill:none;stroke:#ffffff;stroke-width:1.966;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\"\n     d=\"m 4.9850574,108.015 14.0298856,-0.03\"\n     id=\"path5244-5-0-5\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cc\" />\n  <path\n     style=\"opacity:0.8;fill:none;stroke:#ffffff;stroke-width:1.966;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\"\n     d=\"m 4.9849874,132.015 14.0298866,-0.03\"\n     id=\"path5244-5-0-5-8\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cc\" />\n  <path\n     inkscape:connector-curvature=\"0\"\n     style=\"color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.4;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.66157866;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate\"\n     d=\"m 36.398438,123.9629 c -0.423362,-0.013 -0.846847,0.01 -1.265626,0.062 -1.656562,0.2196 -3.244567,0.9739 -4.507812,2.2266 L 29,124.5366 l -2.324219,7.7129 7.826172,-1.9062 -1.804687,-1.9063 c 1.597702,-1.5308 4.048706,-1.8453 5.984375,-0.7207 1.971162,1.1453 2.881954,3.3975 2.308593,5.5508 -0.573361,2.1533 -2.533864,3.6953 -4.830078,3.6953 l 0,3.0742 c 3.550757,0 6.710442,-2.4093 7.650391,-5.9394 0.939949,-3.5301 -0.618463,-7.2756 -3.710938,-9.0723 -1.159678,-0.6737 -2.431087,-1.0231 -3.701171,-1.0625 z\"\n     id=\"path4138-12\" />\n  <path\n     inkscape:connector-curvature=\"0\"\n     style=\"color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.4;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#4d4d4d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.66157866;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate\"\n     d=\"m 59.722656,123.9629 c -1.270084,0.039 -2.541493,0.3888 -3.701172,1.0625 -3.092475,1.7967 -4.650886,5.5422 -3.710937,9.0723 0.939949,3.5301 4.09768,5.9394 7.648437,5.9394 l 0,-3.0742 c -2.296214,0 -4.256717,-1.542 -4.830078,-3.6953 -0.573361,-2.1533 0.337432,-4.4055 2.308594,-5.5508 1.935731,-1.1246 4.38863,-0.8102 5.986326,0.7207 l -1.806638,1.9063 7.828128,1.9062 -2.32422,-7.7129 -1.62696,1.7168 c -1.26338,-1.2531 -2.848917,-2.0088 -4.505855,-2.2285 -0.418778,-0.055 -0.842263,-0.076 -1.265625,-0.062 z\"\n     id=\"path4138-1-3\" />\n  <path\n     id=\"path6191\"\n     d=\"m 10.5,116 0,-2 -2.4999996,0 L 12,109 l 4,5 -2.5,0 0,2 -3,0 z\"\n     style=\"opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.966;stroke-miterlimit:4;stroke-dasharray:none\"\n     inkscape:connector-curvature=\"0\" />\n  <path\n     inkscape:connector-curvature=\"0\"\n     style=\"opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.966;stroke-miterlimit:4;stroke-dasharray:none\"\n     d=\"m 10.5,129 0,-2 -2.4999996,0 L 12,122 l 4,5 -2.5,0 0,2 -3,0 z\"\n     id=\"path6193\" />\n  <path\n     id=\"path6195\"\n     d=\"m 10.5,135 0,2 -2.4999996,0 L 12,142 l 4,-5 -2.5,0 0,-2 -3,0 z\"\n     style=\"opacity:0.8;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.966;stroke-miterlimit:4;stroke-dasharray:none\"\n     inkscape:connector-curvature=\"0\" />\n  <path\n     sodipodi:type=\"star\"\n     style=\"fill:#4d4d4d;fill-opacity:0.90196078;stroke:#d3d3d3;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none\"\n     id=\"path4500\"\n     sodipodi:sides=\"3\"\n     sodipodi:cx=\"11.55581\"\n     sodipodi:cy=\"60.073242\"\n     sodipodi:r1=\"5.1116104\"\n     sodipodi:r2=\"2.5558052\"\n     sodipodi:arg1=\"0\"\n     sodipodi:arg2=\"1.0471976\"\n     inkscape:flatsided=\"false\"\n     inkscape:rounded=\"0\"\n     inkscape:randomized=\"0\"\n     d=\"m 16.66742,60.073242 -3.833708,2.213392 -3.8337072,2.213393 0,-4.426785 0,-4.426784 3.8337082,2.213392 z\"\n     inkscape:transform-center-x=\"-1.2779026\" />\n  <path\n     inkscape:transform-center-x=\"1.277902\"\n     d=\"m -31.500004,60.073242 -3.833708,2.213392 -3.833707,2.213393 0,-4.426785 0,-4.426784 3.833707,2.213392 z\"\n     inkscape:randomized=\"0\"\n     inkscape:rounded=\"0\"\n     inkscape:flatsided=\"false\"\n     sodipodi:arg2=\"1.0471976\"\n     sodipodi:arg1=\"0\"\n     sodipodi:r2=\"2.5558052\"\n     sodipodi:r1=\"5.1116104\"\n     sodipodi:cy=\"60.073242\"\n     sodipodi:cx=\"-36.611614\"\n     sodipodi:sides=\"3\"\n     id=\"path4502\"\n     style=\"fill:#4d4d4d;fill-opacity:0.90196078;stroke:#d3d3d3;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none\"\n     sodipodi:type=\"star\"\n     transform=\"scale(-1,1)\" />\n  <path\n     d=\"m 16.66742,60.073212 -3.833708,2.213392 -3.8337072,2.213392 0,-4.426784 0,-4.426785 3.8337082,2.213392 z\"\n     inkscape:randomized=\"0\"\n     inkscape:rounded=\"0\"\n     inkscape:flatsided=\"false\"\n     sodipodi:arg2=\"1.0471976\"\n     sodipodi:arg1=\"0\"\n     sodipodi:r2=\"2.5558052\"\n     sodipodi:r1=\"5.1116104\"\n     sodipodi:cy=\"60.073212\"\n     sodipodi:cx=\"11.55581\"\n     sodipodi:sides=\"3\"\n     id=\"path4504\"\n     style=\"fill:#4d4d4d;fill-opacity:0.90196078;stroke:#d3d3d3;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none\"\n     sodipodi:type=\"star\"\n     transform=\"matrix(0,1,-1,0,72.0074,71.7877)\"\n     inkscape:transform-center-y=\"1.2779029\" />\n  <path\n     inkscape:transform-center-y=\"-1.2779026\"\n     transform=\"matrix(0,-1,-1,0,96,96)\"\n     sodipodi:type=\"star\"\n     style=\"fill:#4d4d4d;fill-opacity:0.90196078;stroke:#d3d3d3;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none\"\n     id=\"path4506\"\n     sodipodi:sides=\"3\"\n     sodipodi:cx=\"11.55581\"\n     sodipodi:cy=\"60.073212\"\n     sodipodi:r1=\"5.1116104\"\n     sodipodi:r2=\"2.5558052\"\n     sodipodi:arg1=\"0\"\n     sodipodi:arg2=\"1.0471976\"\n     inkscape:flatsided=\"false\"\n     inkscape:rounded=\"0\"\n     inkscape:randomized=\"0\"\n     d=\"m 16.66742,60.073212 -3.833708,2.213392 -3.8337072,2.213392 0,-4.426784 0,-4.426785 3.8337082,2.213392 z\" />\n  <path\n     sodipodi:nodetypes=\"cccc\"\n     inkscape:connector-curvature=\"0\"\n     id=\"path4615-5\"\n     d=\"m 171.82574,65.174193 16.34854,0 -8.17427,-13.348454 z\"\n     style=\"fill:#fbb917;fill-opacity:1;fill-rule:evenodd;stroke:#fbb917;stroke-width:1.65161395;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1\" />\n  <path\n     style=\"opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"\n     d=\"m 179,55 0,6 2,0 0,-6\"\n     id=\"path4300\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cccc\" />\n  <path\n     style=\"opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1\"\n     d=\"m 179,62 0,2 2,0 0,-2\"\n     id=\"path4300-6\"\n     inkscape:connector-curvature=\"0\"\n     sodipodi:nodetypes=\"cccc\" />\n</svg>\n"
 
-/***/ },
-/* 174 */
-/***/ function(module, exports) {
+/***/ }),
+/* 192 */
+/***/ (function(module, exports) {
 
 module.exports = "/* reset styling (prevent conflicts with bootstrap, materialize.css, etc.) */\n\ndiv.jsoneditor .jsoneditor-search input {\n  height: auto;\n  border: inherit;\n}\n\ndiv.jsoneditor .jsoneditor-search input:focus {\n  border: none !important;\n  box-shadow: none !important;\n}\n\ndiv.jsoneditor table {\n  border-collapse: collapse;\n  width: auto;\n}\n\ndiv.jsoneditor td,\ndiv.jsoneditor th {\n  padding: 0;\n  display: table-cell;\n  text-align: left;\n  vertical-align: inherit;\n  border-radius: inherit;\n}\n\n\ndiv.jsoneditor-field,\ndiv.jsoneditor-value,\ndiv.jsoneditor-readonly {\n  border: 1px solid transparent;\n  min-height: 16px;\n  min-width: 32px;\n  padding: 2px;\n  margin: 1px;\n  word-wrap: break-word;\n  float: left;\n}\n\n/* adjust margin of p elements inside editable divs, needed for Opera, IE */\n\ndiv.jsoneditor-field p,\ndiv.jsoneditor-value p {\n  margin: 0;\n}\n\ndiv.jsoneditor-value {\n  word-break: break-word;\n}\n\ndiv.jsoneditor-readonly {\n  min-width: 16px;\n  color: gray;\n}\n\ndiv.jsoneditor-empty {\n  border-color: lightgray;\n  border-style: dashed;\n  border-radius: 2px;\n}\n\ndiv.jsoneditor-field.jsoneditor-empty::after,\ndiv.jsoneditor-value.jsoneditor-empty::after {\n  pointer-events: none;\n  color: lightgray;\n  font-size: 8pt;\n}\n\ndiv.jsoneditor-field.jsoneditor-empty::after {\n  content: \"field\";\n}\n\ndiv.jsoneditor-value.jsoneditor-empty::after {\n  content: \"value\";\n}\n\ndiv.jsoneditor-value.jsoneditor-url,\na.jsoneditor-value.jsoneditor-url {\n  color: green;\n  text-decoration: underline;\n}\n\na.jsoneditor-value.jsoneditor-url {\n  display: inline-block;\n  padding: 2px;\n  margin: 2px;\n}\n\na.jsoneditor-value.jsoneditor-url:hover,\na.jsoneditor-value.jsoneditor-url:focus {\n  color: #ee422e;\n}\n\ndiv.jsoneditor td.jsoneditor-separator {\n  padding: 3px 0;\n  vertical-align: top;\n  color: gray;\n}\n\ndiv.jsoneditor-field[contenteditable=true]:focus,\ndiv.jsoneditor-field[contenteditable=true]:hover,\ndiv.jsoneditor-value[contenteditable=true]:focus,\ndiv.jsoneditor-value[contenteditable=true]:hover,\ndiv.jsoneditor-field.jsoneditor-highlight,\ndiv.jsoneditor-value.jsoneditor-highlight {\n  background-color: #FFFFAB;\n  border: 1px solid yellow;\n  border-radius: 2px;\n}\n\ndiv.jsoneditor-field.jsoneditor-highlight-active,\ndiv.jsoneditor-field.jsoneditor-highlight-active:focus,\ndiv.jsoneditor-field.jsoneditor-highlight-active:hover,\ndiv.jsoneditor-value.jsoneditor-highlight-active,\ndiv.jsoneditor-value.jsoneditor-highlight-active:focus,\ndiv.jsoneditor-value.jsoneditor-highlight-active:hover {\n  background-color: #ffee00;\n  border: 1px solid #ffc700;\n  border-radius: 2px;\n}\n\ndiv.jsoneditor-value.jsoneditor-string {\n  color: #008000;\n}\n\ndiv.jsoneditor-value.jsoneditor-object,\ndiv.jsoneditor-value.jsoneditor-array {\n  min-width: 16px;\n  color: #808080;\n}\n\ndiv.jsoneditor-value.jsoneditor-number {\n  color: #ee422e;\n}\n\ndiv.jsoneditor-value.jsoneditor-boolean {\n  color: #ff8c00;\n}\n\ndiv.jsoneditor-value.jsoneditor-null {\n  color: #004ED0;\n}\n\ndiv.jsoneditor-value.jsoneditor-invalid {\n  color: #000000;\n}\n\ndiv.jsoneditor-tree button {\n  width: 24px;\n  height: 24px;\n  padding: 0;\n  margin: 0;\n  border: none;\n  cursor: pointer;\n  background: transparent url(\"img/jsoneditor-icons.svg\");\n}\n\ndiv.jsoneditor-mode-view tr.jsoneditor-expandable td.jsoneditor-tree,\ndiv.jsoneditor-mode-form tr.jsoneditor-expandable td.jsoneditor-tree {\n  cursor: pointer;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-collapsed {\n  background-position: 0 -48px;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-expanded {\n  background-position: 0 -72px;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-contextmenu {\n  background-position: -48px -72px;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-contextmenu:hover,\ndiv.jsoneditor-tree button.jsoneditor-contextmenu:focus,\ndiv.jsoneditor-tree button.jsoneditor-contextmenu.jsoneditor-selected,\ntr.jsoneditor-selected.jsoneditor-first button.jsoneditor-contextmenu {\n  background-position: -48px -48px;\n}\n\ndiv.jsoneditor-tree *:focus {\n  outline: none;\n}\n\ndiv.jsoneditor-tree button:focus {\n  /* TODO: nice outline for buttons with focus\n  outline: #97B0F8 solid 2px;\n  box-shadow: 0 0 8px #97B0F8;\n  */\n  background-color: #f5f5f5;\n  outline: #e5e5e5 solid 1px;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-invisible {\n  visibility: hidden;\n  background: none;\n}\n\ndiv.jsoneditor {\n  color: #1A1A1A;\n  border: 1px solid #3883fa;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  position: relative;\n  padding: 0;\n  line-height: 100%;\n}\n\ndiv.jsoneditor-tree table.jsoneditor-tree {\n  border-collapse: collapse;\n  border-spacing: 0;\n  width: 100%;\n  margin: 0;\n}\n\ndiv.jsoneditor-outer {\n  position: static;\n  width: 100%;\n  height: 100%;\n  margin: -35px 0 0 0;\n  padding: 35px 0 0 0;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n}\n\ntextarea.jsoneditor-text,\n.ace-jsoneditor {\n  min-height: 150px;\n}\n\ndiv.jsoneditor-tree {\n  width: 100%;\n  height: 100%;\n  position: relative;\n  overflow: auto;\n}\n\ntextarea.jsoneditor-text {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n  outline-width: 0;\n  border: none;\n  background-color: white;\n  resize: none;\n}\n\ntr.jsoneditor-highlight,\ntr.jsoneditor-selected {\n  background-color: #e6e6e6;\n}\n\ntr.jsoneditor-selected button.jsoneditor-dragarea,\ntr.jsoneditor-selected button.jsoneditor-contextmenu {\n  visibility: hidden;\n}\n\ntr.jsoneditor-selected.jsoneditor-first button.jsoneditor-dragarea,\ntr.jsoneditor-selected.jsoneditor-first button.jsoneditor-contextmenu {\n  visibility: visible;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-dragarea {\n  background: url(\"img/jsoneditor-icons.svg\") -72px -72px;\n  cursor: move;\n}\n\ndiv.jsoneditor-tree button.jsoneditor-dragarea:hover,\ndiv.jsoneditor-tree button.jsoneditor-dragarea:focus,\ntr.jsoneditor-selected.jsoneditor-first button.jsoneditor-dragarea {\n  background-position: -72px -48px;\n}\n\ndiv.jsoneditor tr,\ndiv.jsoneditor th,\ndiv.jsoneditor td {\n  padding: 0;\n  margin: 0;\n}\n\ndiv.jsoneditor td {\n  vertical-align: top;\n}\n\ndiv.jsoneditor td.jsoneditor-tree {\n  vertical-align: top;\n}\n\ndiv.jsoneditor-field,\ndiv.jsoneditor-value,\ndiv.jsoneditor td,\ndiv.jsoneditor th,\ndiv.jsoneditor textarea,\n.jsoneditor-schema-error {\n  font-family: droid sans mono, consolas, monospace, courier new, courier, sans-serif;\n  font-size: 10pt;\n  color: #1A1A1A;\n}\n\n/* popover */\n\n.jsoneditor-schema-error {\n  cursor: default;\n  display: inline-block;\n  /*font-family: arial, sans-serif;*/\n  height: 24px;\n  line-height: 24px;\n  position: relative;\n  text-align: center;\n  width: 24px;\n}\n\ndiv.jsoneditor-tree .jsoneditor-schema-error {\n  width: 24px;\n  height: 24px;\n  padding: 0;\n  margin: 0 4px 0 0;\n  background: url(\"img/jsoneditor-icons.svg\")  -168px -48px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover {\n  background-color: #4c4c4c;\n  border-radius: 3px;\n  box-shadow: 0 0 5px rgba(0,0,0,0.4);\n  color: #fff;\n  display: none;\n  padding: 7px 10px;\n  position: absolute;\n  width: 200px;\n  z-index: 4;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-above {\n  bottom: 32px;\n  left: -98px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-below {\n  top: 32px;\n  left: -98px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-left {\n  top: -7px;\n  right: 32px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-right {\n  top: -7px;\n  left: 32px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover:before {\n  border-right: 7px solid transparent;\n  border-left: 7px solid transparent;\n  content: '';\n  display: block;\n  left: 50%;\n  margin-left: -7px;\n  position: absolute;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-above:before {\n  border-top: 7px solid #4c4c4c;\n  bottom: -7px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-below:before {\n  border-bottom: 7px solid #4c4c4c;\n  top: -7px;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-left:before {\n  border-left: 7px solid #4c4c4c;\n  border-top: 7px solid transparent;\n  border-bottom: 7px solid transparent;\n  content: '';\n  top: 19px;\n  right: -14px;\n  left: inherit;\n  margin-left: inherit;\n  margin-top: -7px;\n  position: absolute;\n}\n\n.jsoneditor-schema-error .jsoneditor-popover.jsoneditor-right:before {\n  border-right: 7px solid #4c4c4c;\n  border-top: 7px solid transparent;\n  border-bottom: 7px solid transparent;\n  content: '';\n  top: 19px;\n  left: -14px;\n  margin-left: inherit;\n  margin-top: -7px;\n  position: absolute;\n}\n\n.jsoneditor-schema-error:hover .jsoneditor-popover,\n.jsoneditor-schema-error:focus .jsoneditor-popover {\n  display: block;\n  -webkit-animation: fade-in .3s linear 1, move-up .3s linear 1;\n  -moz-animation: fade-in .3s linear 1, move-up .3s linear 1;\n  -ms-animation: fade-in .3s linear 1, move-up .3s linear 1;\n}\n\n@-webkit-keyframes fade-in {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@-moz-keyframes fade-in {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n@-ms-keyframes fade-in {\n  from {\n    opacity: 0;\n  }\n\n  to {\n    opacity: 1;\n  }\n}\n\n/*@-webkit-keyframes move-up {*/\n\n/*from   { bottom: 24px; }*/\n\n/*to { bottom: 32px; }*/\n\n/*}*/\n\n/*@-moz-keyframes move-up {*/\n\n/*from   { bottom: 24px; }*/\n\n/*to { bottom: 32px; }*/\n\n/*}*/\n\n/*@-ms-keyframes move-up {*/\n\n/*from   { bottom: 24px; }*/\n\n/*to { bottom: 32px; }*/\n\n/*}*/\n\n/* JSON schema errors displayed at the bottom of the editor in mode text and code */\n\n.jsoneditor .jsoneditor-text-errors {\n  width: 100%;\n  border-collapse: collapse;\n  background-color: #ffef8b;\n  border-top: 1px solid #ffd700;\n}\n\n.jsoneditor .jsoneditor-text-errors td {\n  padding: 3px 6px;\n  vertical-align: middle;\n}\n\n.jsoneditor-text-errors .jsoneditor-schema-error {\n  border: none;\n  width: 24px;\n  height: 24px;\n  padding: 0;\n  margin: 0 4px 0 0;\n  background: url(\"img/jsoneditor-icons.svg\")  -168px -48px;\n}\n/* ContextMenu - main menu */\n\ndiv.jsoneditor-contextmenu-root {\n  position: relative;\n  width: 0;\n  height: 0;\n}\n\ndiv.jsoneditor-contextmenu {\n  position: absolute;\n  box-sizing: content-box;\n  z-index: 99999;\n}\n\ndiv.jsoneditor-contextmenu ul,\ndiv.jsoneditor-contextmenu li {\n  box-sizing: content-box;\n}\n\ndiv.jsoneditor-contextmenu ul {\n  position: relative;\n  left: 0;\n  top: 0;\n  width: 124px;\n  background: white;\n  border: 1px solid #d3d3d3;\n  box-shadow: 2px 2px 12px rgba(128, 128, 128, 0.3);\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\ndiv.jsoneditor-contextmenu ul li button {\n  padding: 0;\n  margin: 0;\n  width: 124px;\n  height: 24px;\n  border: none;\n  cursor: pointer;\n  color: #4d4d4d;\n  background: transparent;\n  font-size: 10pt;\n  font-family: arial, sans-serif;\n  box-sizing: border-box;\n  line-height: 26px;\n  text-align: left;\n}\n\n/* Fix button padding in firefox */\n\ndiv.jsoneditor-contextmenu ul li button::-moz-focus-inner {\n  padding: 0;\n  border: 0;\n}\n\ndiv.jsoneditor-contextmenu ul li button:hover,\ndiv.jsoneditor-contextmenu ul li button:focus {\n  color: #1a1a1a;\n  background-color: #f5f5f5;\n  outline: none;\n}\n\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-default {\n  width: 92px;\n}\n\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-expand {\n  float: right;\n  width: 32px;\n  height: 24px;\n  border-left: 1px solid #e5e5e5;\n}\n\ndiv.jsoneditor-contextmenu div.jsoneditor-icon {\n  float: left;\n  width: 24px;\n  height: 24px;\n  border: none;\n  padding: 0;\n  margin: 0;\n  background-image: url(\"img/jsoneditor-icons.svg\");\n}\n\ndiv.jsoneditor-contextmenu ul li button div.jsoneditor-expand {\n  float: right;\n  width: 24px;\n  height: 24px;\n  padding: 0;\n  margin: 0 4px 0 0;\n  background: url(\"img/jsoneditor-icons.svg\") 0 -72px;\n  opacity: 0.4;\n}\n\ndiv.jsoneditor-contextmenu ul li button:hover div.jsoneditor-expand,\ndiv.jsoneditor-contextmenu ul li button:focus div.jsoneditor-expand,\ndiv.jsoneditor-contextmenu ul li.jsoneditor-selected div.jsoneditor-expand,\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-expand:hover div.jsoneditor-expand,\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-expand:focus div.jsoneditor-expand {\n  opacity: 1;\n}\n\ndiv.jsoneditor-contextmenu div.jsoneditor-separator {\n  height: 0;\n  border-top: 1px solid #e5e5e5;\n  padding-top: 5px;\n  margin-top: 5px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-remove > div.jsoneditor-icon {\n  background-position: -24px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-remove:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-remove:focus > div.jsoneditor-icon {\n  background-position: -24px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-append > div.jsoneditor-icon {\n  background-position: 0 -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-append:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-append:focus > div.jsoneditor-icon {\n  background-position: 0 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-insert > div.jsoneditor-icon {\n  background-position: 0 -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-insert:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-insert:focus > div.jsoneditor-icon {\n  background-position: 0 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-duplicate > div.jsoneditor-icon {\n  background-position: -48px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-duplicate:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-duplicate:focus > div.jsoneditor-icon {\n  background-position: -48px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-asc > div.jsoneditor-icon {\n  background-position: -168px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-asc:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-asc:focus > div.jsoneditor-icon {\n  background-position: -168px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-desc > div.jsoneditor-icon {\n  background-position: -192px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-desc:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-sort-desc:focus > div.jsoneditor-icon {\n  background-position: -192px 0;\n}\n\n/* ContextMenu - sub menu */\n\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-selected,\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-selected:hover,\ndiv.jsoneditor-contextmenu ul li button.jsoneditor-selected:focus {\n  color: white;\n  background-color: #ee422e;\n}\n\ndiv.jsoneditor-contextmenu ul li {\n  overflow: hidden;\n}\n\ndiv.jsoneditor-contextmenu ul li ul {\n  display: none;\n  position: relative;\n  left: -10px;\n  top: 0;\n  border: none;\n  box-shadow: inset 0 0 10px rgba(128, 128, 128, 0.5);\n  padding: 0 10px;\n  /* TODO: transition is not supported on IE8-9 */\n  -webkit-transition: all 0.3s ease-out;\n  -moz-transition: all 0.3s ease-out;\n  -o-transition: all 0.3s ease-out;\n  transition: all 0.3s ease-out;\n}\n\n\n\ndiv.jsoneditor-contextmenu ul li ul li button {\n  padding-left: 24px;\n  animation: all ease-in-out 1s;\n}\n\ndiv.jsoneditor-contextmenu ul li ul li button:hover,\ndiv.jsoneditor-contextmenu ul li ul li button:focus {\n  background-color: #f5f5f5;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-string > div.jsoneditor-icon {\n  background-position: -144px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-string:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-string:focus > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-string.jsoneditor-selected > div.jsoneditor-icon {\n  background-position: -144px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-auto > div.jsoneditor-icon {\n  background-position: -120px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-auto:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-auto:focus > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-auto.jsoneditor-selected > div.jsoneditor-icon {\n  background-position: -120px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-object > div.jsoneditor-icon {\n  background-position: -72px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-object:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-object:focus > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-object.jsoneditor-selected > div.jsoneditor-icon {\n  background-position: -72px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-array > div.jsoneditor-icon {\n  background-position: -96px -24px;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-array:hover > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-array:focus > div.jsoneditor-icon,\ndiv.jsoneditor-contextmenu button.jsoneditor-type-array.jsoneditor-selected > div.jsoneditor-icon {\n  background-position: -96px 0;\n}\n\ndiv.jsoneditor-contextmenu button.jsoneditor-type-modes > div.jsoneditor-icon {\n  background-image: none;\n  width: 6px;\n}\ndiv.jsoneditor-menu {\n  width: 100%;\n  height: 35px;\n  padding: 2px;\n  margin: 0;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box;\n  color: white;\n  background-color: #3883fa;\n  border-bottom: 1px solid #3883fa;\n}\n\ndiv.jsoneditor-menu > button,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button {\n  width: 26px;\n  height: 26px;\n  margin: 2px;\n  padding: 0;\n  border-radius: 2px;\n  border: 1px solid transparent;\n  background: transparent url(\"img/jsoneditor-icons.svg\");\n  color: white;\n  opacity: 0.8;\n  font-family: arial, sans-serif;\n  font-size: 10pt;\n  float: left;\n}\n\ndiv.jsoneditor-menu > button:hover,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button:hover {\n  background-color: rgba(255,255,255,0.2);\n  border: 1px solid rgba(255,255,255,0.4);\n}\n\ndiv.jsoneditor-menu > button:focus,\ndiv.jsoneditor-menu > button:active,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button:focus,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button:active {\n  background-color: rgba(255,255,255,0.3);\n}\n\ndiv.jsoneditor-menu > button:disabled,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button:disabled {\n  opacity: 0.5;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-collapse-all {\n  background-position: 0 -96px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-expand-all {\n  background-position: 0 -120px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-undo {\n  background-position: -24px -96px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-undo:disabled {\n  background-position: -24px -120px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-redo {\n  background-position: -48px -96px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-redo:disabled {\n  background-position: -48px -120px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-compact {\n  background-position: -72px -96px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-format {\n  background-position: -72px -120px;\n}\n\ndiv.jsoneditor-menu > div.jsoneditor-modes {\n  display: inline-block;\n  float: left;\n}\n\ndiv.jsoneditor-menu > div.jsoneditor-modes > button {\n  background-image: none;\n  width: auto;\n  padding-left: 6px;\n  padding-right: 6px;\n}\n\ndiv.jsoneditor-menu > button.jsoneditor-separator,\ndiv.jsoneditor-menu > div.jsoneditor-modes > button.jsoneditor-separator {\n  margin-left: 10px;\n}\n\ndiv.jsoneditor-menu a {\n  font-family: arial, sans-serif;\n  font-size: 10pt;\n  color: white;\n  opacity: 0.8;\n  vertical-align: middle;\n}\n\ndiv.jsoneditor-menu a:hover {\n  opacity: 1;\n}\n\ndiv.jsoneditor-menu a.jsoneditor-poweredBy {\n  font-size: 8pt;\n  position: absolute;\n  right: 0;\n  top: 0;\n  padding: 10px;\n}\ntable.jsoneditor-search input,\ntable.jsoneditor-search div.jsoneditor-results {\n  font-family: arial, sans-serif;\n  font-size: 10pt;\n  color: #1A1A1A;\n  background: transparent;\n  /* For Firefox */\n}\n\ntable.jsoneditor-search div.jsoneditor-results {\n  color: white;\n  padding-right: 5px;\n  line-height: 24px;\n}\n\ntable.jsoneditor-search {\n  position: absolute;\n  right: 4px;\n  top: 4px;\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\ntable.jsoneditor-search div.jsoneditor-frame {\n  border: 1px solid transparent;\n  background-color: white;\n  padding: 0 2px;\n  margin: 0;\n}\n\ntable.jsoneditor-search div.jsoneditor-frame table {\n  border-collapse: collapse;\n}\n\ntable.jsoneditor-search input {\n  width: 120px;\n  border: none;\n  outline: none;\n  margin: 1px;\n  line-height: 20px;\n}\n\ntable.jsoneditor-search button {\n  width: 16px;\n  height: 24px;\n  padding: 0;\n  margin: 0;\n  border: none;\n  background: url(\"img/jsoneditor-icons.svg\");\n  vertical-align: top;\n}\n\ntable.jsoneditor-search button:hover {\n  background-color: transparent;\n}\n\ntable.jsoneditor-search button.jsoneditor-refresh {\n  width: 18px;\n  background-position: -99px -73px;\n}\n\ntable.jsoneditor-search button.jsoneditor-next {\n  cursor: pointer;\n  background-position: -124px -73px;\n}\n\ntable.jsoneditor-search button.jsoneditor-next:hover {\n  background-position: -124px -49px;\n}\n\ntable.jsoneditor-search button.jsoneditor-previous {\n  cursor: pointer;\n  background-position: -148px -73px;\n  margin-right: 2px;\n}\n\ntable.jsoneditor-search button.jsoneditor-previous:hover {\n  background-position: -148px -49px;\n}"
 
-/***/ },
-/* 175 */
-/***/ function(module, exports) {
+/***/ }),
+/* 193 */
+/***/ (function(module, exports) {
+
+module.exports = "<input #input *ngIf=\"control==='input'\" class=\"vclInput\" [placeholder]=\"placeholder\" [ngModel]=\"inputValue\" (ngModelChange)=\"inputValueChange($event)\" autofocus>\n"
+
+/***/ }),
+/* 194 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"vclNotification\" [ngClass]=\"alertClass\">\n\n  <div class=\"vclNotificationHeader vclLayoutHorizontal vclLayoutCenter\" [ngClass]=\"titleAlignmentClass\" *ngIf=\"alert.title\">\n    <div class=\"vclLayoutFlex\">{{alert.title}}</div>\n    <button *ngIf=\"alert.showCloseButton\" class=\"vclButton vclTransparent vclSquare\" (tap)=\"close()\"><i class=\"fa fa-times\"></i></button>\n  </div>\n\n  <div class=\"vclNotificationContent vclLayoutVertical vclLayoutCenterJustified \">\n    \n    <div style=\"padding-bottom: 1em\" *ngIf=\"iconClass\" [ngClass]=\"iconAlignmentClass\">\n      <span class=\"vclIcon vclNotificationIcon\" [ngClass]=\"iconClass\"></span>\n    </div>\n\n    <div style=\"padding-bottom: 1em\" [ngClass]=\"contentAlignmentClass\" *ngIf=\"alert.text && !alert.html\">{{alert.text}}</div>\n    <div style=\"padding-bottom: 1em\" [ngClass]=\"contentAlignmentClass\" [innerHtml]=\"alert.text\" *ngIf=\"alert.text && alert.html\"></div>\n\n    <div style=\"padding-bottom: 0.5em\" *ngIf=\"alert.input\"><alert-input [alert]=\"alert\" (valueChange)=\"valueChange($event)\"></alert-input></div>\n\n    <div *ngIf=\"validationError\" class=\"vclNotification vclError\">\n      <div class=\"vclNotificationContent\">\n        <vcl-icogram label=\"{{validationError}}\" prepIcon=\"fa:exclamation-circle\"></vcl-icogram>\n      </div>\n    </div>\n\n    <div class=\"vclLayoutHorizontal vclLooseButtonGroup\" [ngClass]=\"buttonAlignmentClass\">\n      <button vcl-button \n              *ngIf=\"alert.showConfirmButton\"\n              (tap)=\"confirm()\"\n              [style.background-color]=\"alert.confirmButtonColor\"\n              [ngClass]=\"alert.confirmButtonClass\"\n              [label]=\"alert.confirmButtonLabel\"\n              [busy]=\"alert.loader\"\n              prepIconBusy=\"fa:refresh fa-spin\"\n              [appIcon]=\"alert.confirmButtonAppIcon\" \n              [prepIcon]=\"alert.confirmButtonPrepIcon\" \n              ></button>\n      <button vcl-button \n              *ngIf=\"alert.showCancelButton\" \n              (tap)=\"cancel()\" \n              [style.background-color]=\"alert.cancelButtonColor\" \n              [ngClass]=\"alert.cancelButtonClass\"\n              [label]=\"alert.cancelButtonLabel\"\n              [busy]=\"!alert.showConfirmButton && alert.loader\"\n              [disabled]=\"alert.showConfirmButton && alert.loader\"\n              prepIconBusy=\"fa:refresh fa-spin\"\n              [appIcon]=\"alert.cancelButtonAppIcon\" \n              [prepIcon]=\"alert.cancelButtonPrepIcon\" \n              ></button>\n    </div>\n    <div *ngIf=\"!alert.showCancelButton && !alert.showConfirmButton && alert.loader\">\n      <div class=\"vclBusyIndicator\" role=\"status\">\n        <i class=\"vclBusy-busyIndCircular\"></i>\n      </div>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+/* 195 */
+/***/ (function(module, exports) {
+
+module.exports = "<ng-content></ng-content>\n<div *ngIf=\"busy\" tabindex=\"-1\" class=\"vclLoadingLayer\">\n  <div class=\"vclLoadingLayerContent\">\n    <div class=\"vclBusyIndicator\" role=\"status\">\n      <i class=\"vclBusy-busyIndCircular\"></i>\n    </div>\n    <span *ngIf=\"busyLabel\">{{busyLabel}}</span>\n  </div>\n</div>\n"
+
+/***/ }),
+/* 196 */
+/***/ (function(module, exports) {
 
 module.exports = "<vcl-icogram\n  [label]=\"label$ | async \"\n  [flexLabel]=\"flexLabel\"\n  [prepIcon]=\"prepIcon$ | async\"\n  [appIcon]=\"appIcon$ | async\">\n  <ng-content></ng-content>\n</vcl-icogram>\n"
 
-/***/ },
-/* 176 */
-/***/ function(module, exports) {
+/***/ }),
+/* 197 */
+/***/ (function(module, exports) {
 
 module.exports = "  <vcl-icon [icon]=\"icon\" *ngIf=\"labelPosition=='right'\"></vcl-icon>\n  <ng-content></ng-content>\n  <vcl-icon [icon]=\"icon\" *ngIf=\"labelPosition=='left'\"></vcl-icon>\n"
 
-/***/ },
-/* 177 */
-/***/ function(module, exports) {
+/***/ }),
+/* 198 */
+/***/ (function(module, exports) {
 
 module.exports = "<div class=\"vclDataGrid vclDGVAlignMiddle vclDGAlignCentered vclCalendar vclNoMargin vclCalInput\">\n  <div class=\"vclDGRow\">\n    <div class=\"vclDGCell\">\n      <div class=\"vclLayoutFlex vclToolbar vclLayoutHorizontal vclLayoutJustified vclPager vclLayoutCenter\">\n        <button class=\"vclTransparent vclSquare  vclButton\" (tap)=\"prevMonth()\">\n              <div class=\"vclIcogram\">\n                <span class=\"vclIcon fa fa-angle-left\"></span>\n              </div>\n            </button>\n        <span class=\"vclCalHeaderLabel\" (tap)=\"showYearPick=true\" [class.date-picker-pointer]=\"!showYearPick\">\n              {{viewDate.getMonthString() | loc}}&nbsp;&nbsp;{{viewDate.getYearString()}}\n            </span>\n        <button class=\"vclTransparent vclSquare vclButton\" (tap)=\"nextMonth()\">\n               <div class=\"vclIcogram\">\n                  <span class=\"vclIcon fa fa-angle-right\"></span>\n                </div>\n            </button>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"vclSeparator\"></div>\n\n  <div *ngIf=\"!showYearPick\">\n    <div class=\"vclDGRow\">\n      <div *ngIf=\"displayWeekNumbers\" class=\"vclDGCell timeFragment vclCalItem vclOtherMonth\">\n        {{'week' | loc}}\n      </div>\n      <div *ngFor=\"let day of viewDate.getWeekDays()\" class=\"vclDGCell vclWeekdayLabel\" [class.hidden]=\"!displayWeekdays\">\n        {{day | loc}}\n      </div>\n    </div>\n\n    <div class=\"vclDGRow\" *ngFor=\"let week of viewDate.getMonthBlock()\">\n      <div *ngIf=\"displayWeekNumbers && week.length==7\" class=\"vclDGCell\">\n        {{week[5].getWeekNumber()}}\n      </div>\n      <div *ngFor=\"let day of week\" class=\"vclDGCell timeFragment vclCalItem\" [class.vclDisabled]=\"isDisabled(day)\"\n       [class.vclSelected]=\"isMarked(day)\" (tap)=\"!isDisabled(day) && select(day)\"\n       [class.vclToday]=\"highlightSelected && day.isToday()\" [class.vclOtherMonth]=\"!day.isSameMonthAndYear()\">\n        {{day.date.getDate()}}\n      </div>\n    </div>\n\n    <div class=\"vclDGRow\">\n      <div class=\"vclDGCell\">\n        <div class=\"vclToolbar vclTransparent vclLayoutFlex vclLayoutHorizontal vclLayoutJustified\">\n          <button title=\"go to today\" class=\"vclTransparent vclLayoutFlex vclButton\" *ngIf=\"displayJumpToday\" (tap)=\"gotoToday()\">\n               <div class=\" vclIcogram\">\n                 <span class=\"vclText \">go to today</span>\n               </div>\n             </button>\n          <button title=\"go to selected\" class=\"vclTransparent vclLayoutFlex vclButton\" *ngIf=\"displayJumpSelected\" (tap)=\"gotoSelected()\">\n                <div class=\" vclIcogram\">\n                  <span class=\"vclText \">go to selected</span>\n                </div>\n              </button>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div *ngIf=\"showYearPick\">\n    <div class=\"vclDGRow\" role=\"row\" *ngFor=\"let row of viewDate.getYearsBlock()\">\n      <div *ngFor=\"let year of row\" class=\"vclDGCell vclCalItem\" role=\"gridcell\"\n      [class.vclSelected]=\"viewDate.date.getFullYear()==year\"\n       (tap)=\"yearPickSelect(year)\"\n       [class.vclToday]=\"highlightSelected && today.isInYear(year)\">\n        {{year}}\n      </div>\n    </div>\n  </div>\n\n</div>\n"
 
-/***/ },
-/* 178 */
-/***/ function(module, exports) {
+/***/ }),
+/* 199 */
+/***/ (function(module, exports) {
 
-module.exports = "<ul class=\"vclDropdown\"\n  [class.vclOpen]=\"expanded\"\n  [attr.role]=\"ariaRole\"\n  [attr.tabindex]=\"tabindex\"\n  [attr.aria-multiselectable]=\"maxSelectableItems > 1\"\n  [attr.aria-expanded]=\"expanded\">\n  <li\n    *ngFor=\"let item of items\"\n    class=\"vclDropdownItem\"\n    [class.vclSelected]=\"item.selected\"\n    [attr.aria-selected]=\"item.selected\"\n    [class.vclDisabled]=\"item.disabled\"\n    role=\"menuitem\"\n    tabindex=\"0\"\n    (tap)=\"selectItem(item)\"\n    [ngClass]=\"item.class\">\n    <div class=\"vclDropdownItemLabel\">\n      {{item.label}}\n    </div>\n    <div class=\"vclDropdownItemSubLabel\">\n      {{item.sublabel}}\n    </div>\n  </li>\n</ul>\n"
+module.exports = "<ul class=\"vclDropdown\"\n  #listbox\n  [class.vclOpen]=\"expanded\"\n  [attr.role]=\"ariaRole\"\n  [attr.tabindex]=\"tabindex\"\n  [attr.aria-multiselectable]=\"maxSelectableItems > 1\"\n  [attr.aria-expanded]=\"expanded\">\n  <li\n    *ngFor=\"let item of items\"\n    class=\"vclDropdownItem\"\n    [class.vclHighlighted]=\"item.marked\"\n    [class.vclSelected]=\"item.selected\"\n    [attr.aria-selected]=\"item.selected\"\n    [class.vclDisabled]=\"item.disabled\"\n    role=\"menuitem\"\n    tabindex=\"-1\"\n    (tap)=\"selectItem(item)\"\n    [ngClass]=\"item.class\">\n    <div class=\"vclDropdownItemLabel\">\n      {{item.label}}\n    </div>\n    <div class=\"vclDropdownItemSubLabel\">\n      {{item.sublabel}}\n    </div>\n  </li>\n</ul>\n"
 
-/***/ },
-/* 179 */
-/***/ function(module, exports) {
+/***/ }),
+/* 200 */
+/***/ (function(module, exports) {
 
-module.exports = "<div class=\"vclFlipSwitch\" [class.vclFlipSwitchPressed]=\"value\" touch-action=\"pan-y\" role=\"button\" tabindex=\"0\" aria-pressed=\"true\" aria-labelledby=\"fs-label-0\" (tap)=\"onClick()\">\n  <label class=\"vclFlipSwitchLabel\" id=\"fs-label-0\">\n    <div class=\"vclFlipSwitchTrack\">\n      <div class=\"vclFlipSwitchActive\" aria-hidden=\"false\">{{onLabel}}</div>\n      <div class=\"vclFlipSwitchInactive\" aria-hidden=\"true\">{{offLabel}}</div>\n    </div>\n    <div class=\"vclFlipSwitchKnob\"></div>\n  </label>\n</div>\n"
+module.exports = "<input #input type=\"file\" style=\"display: none;\" [accept]=\"accept\" [multiple]=\"multiple\" [placeholder]=\"placeholder\" [disabled]=\"disabled\" />\n<div class=\"vclFileInputIcon vclIcon fa fa-upload\" aria-hidden=\"true\" aria-label=\"account\" role=\"img\"></div>\n<div class=\"vclFileInputPlaceholder\">\n\n  <div *ngIf=\"value$ | async\">{{ value$ | async }}</div>\n  <div *ngIf=\"!(value$ | async)\">\n    <ng-content></ng-content>\n  </div>\n</div>\n"
 
-/***/ },
-/* 180 */
-/***/ function(module, exports) {
+/***/ }),
+/* 201 */
+/***/ (function(module, exports) {
+
+module.exports = "<label class=\"vclFlipSwitchLabel\">\n  <div class=\"vclFlipSwitchTrack\">\n    <div class=\"vclFlipSwitchActive\" [attr.aria-hidden]=\"!value\">{{onLabel}}</div>\n    <div class=\"vclFlipSwitchInactive\" [attr.aria-hidden]=\"value\">{{offLabel}}</div>\n  </div>\n  <div class=\"vclFlipSwitchKnob\"></div>\n</label>\n"
+
+/***/ }),
+/* 202 */
+/***/ (function(module, exports) {
 
 module.exports = "<ng-content *ngIf=\"prepend\"></ng-content>\n{{label | loc}}\n<em *ngIf=\"required\" class=\"vclRequiredIndicator\" aria-hidden=\"true\" [attr.aria-label]=\"requiredIndLabel | loc\">\n  {{requiredIndicatorCharacter}}\n</em>\n<label *ngIf=\"subLabel\" class=\"vclFormControlSubLabel\">\n  {{subLabel | loc}}\n</label>\n<ng-content *ngIf=\"!prepend\"></ng-content>\n"
 
-/***/ },
-/* 181 */
-/***/ function(module, exports) {
+/***/ }),
+/* 203 */
+/***/ (function(module, exports) {
 
 module.exports = "<form  #form=\"ngForm\" class=\"vclForm\"\n [class.vclFormInline]=\"true\"\n [class.vclFormHorizontal]=\"layout=='horizontal'\">\n</form>\n"
 
-/***/ },
-/* 182 */
-/***/ function(module, exports) {
+/***/ }),
+/* 204 */
+/***/ (function(module, exports) {
+
+module.exports = "<div *ngFor=\"let growl of growls\" \n  (mouseenter)=\"growl.mouseEnter()\" \n  (mouseleave)=\"growl.mouseLeave()\" \n  class=\"vclNotification vclLayoutHorizontal vclLayoutCenter\" \n  [ngClass]=\"growl.layerClass\" \n  [style.color]=\"growl.textColor\"\n  [style.background-color]=\"growl.backgroundColor\"\n  [@growlState]=\"growl.state\" \n\n  >\n  <div class=\"vclNotificationIconContainer\">\n    <span *ngIf=\"growl.iconClass\" class=\"vclIcon vclNotificationIcon\" [ngClass]=\"growl.iconClass\"></span>\n  </div>\n  <div class=\"vclNotificationContent vclLayoutFlex\">\n    <div *ngIf=\"growl.text && !growl.html\">{{growl.text}}</div>\n    <div *ngIf=\"growl.text && growl.html\" [innerHtml]=\"growl.text\"></div>\n  </div>\n   <button vcl-button *ngIf=\"growl.showCloseButton\" (tap)=\"growl.close()\" class=\"vclSquare vclTransparent vclLayoutSelfStart\" prepIcon=\"fa:times\" title=\"Close\"></button>\n</div>\n"
+
+/***/ }),
+/* 205 */
+/***/ (function(module, exports) {
 
 module.exports = "<ng-content></ng-content>\n<div vcl-icon *ngIf=\"prepIcon\" [icon]=\"prepIcon\"></div>\n<span *ngIf=\"!!label\" [class.vclLayoutFlex]=\"!!flexLabel\" class=\"vclText\">\n  {{label | loc}}\n</span>\n<div vcl-icon *ngIf=\"appIcon\" [icon]=\"appIcon\"></div>\n"
 
-/***/ },
-/* 183 */
-/***/ function(module, exports) {
+/***/ }),
+/* 206 */
+/***/ (function(module, exports) {
 
 module.exports = "<ng-content></ng-content>\n<img *ngIf=\"src\" src=\"{{src}}\">\n<svg *ngIf=\"svguse\" viewBox=\"0 0 100 100\" preserveAspectRatio=\"xMidYMid meet\">\n  <use xmlns:xlink=\"http://www.w3.org/1999/xlink\" attr.xlink:href=\"{{svguse}}\"></use>\n</svg>\n"
 
-/***/ },
-/* 184 */
-/***/ function(module, exports) {
+/***/ }),
+/* 207 */
+/***/ (function(module, exports) {
 
 module.exports = "<ng-content></ng-content>\n\n<div *ngIf=\"type!=null && label!=null && label!=''\" class=\"vclFormControlHint\"\n  [class.vclError]=\"type=='error'\"\n  [class.vclWarning]=\"type=='warning'\"\n  [class.vclSuccess]=\"type=='success'\">\n  {{label}}\n</div>\n"
 
-/***/ },
-/* 185 */
-/***/ function(module, exports) {
+/***/ }),
+/* 208 */
+/***/ (function(module, exports) {
 
 module.exports = "<div #el [style.height]=\"height\"></div>\n"
 
-/***/ },
-/* 186 */
-/***/ function(module, exports) {
+/***/ }),
+/* 209 */
+/***/ (function(module, exports) {
 
-module.exports = "<div *ngFor=\"let key of keys(schema.properties)\"\n[formGroup]=\"formGroup\"\nstyle=\"border-style:solid;margin:5px;padding: 5px;\">\n\n  <b *ngIf=\"schema.properties[key].properties\">{{key}}:</b>\n\n  <vcl-jss-form-object *ngIf=\"schema.properties[key].properties\"\n    [schema]=\"schema.properties[key]\"\n    [parentPath]=\"parentPath + key + '.'\"\n    [formGroup]=\"formGroup.controls[key]\"\n    [error]=\"error\"\n   >\n  </vcl-jss-form-object>\n\n  <div *ngIf=\"!schema.properties[key].properties\">\n    {{key}}\n    <div [ngSwitch]=\"formType(schema.properties[key])\">\n      <div *ngSwitchCase=\"'text'\">\n        <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n          <input vcl-input type=\"text\" [formControlName]=\"key\"\n            [placeholder]=\"placeholder(schema.properties[key])\" />\n        </vcl-input-control-group>\n      </div>\n      <div *ngSwitchCase=\"'number'\">\n        <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n          <input type=\"number\" valueType=\"number\" placeholder=\"number\"\n            [name]=\"name(parentPath,key)\"\n            [formControlName]=\"key\" />\n        </vcl-input-control-group>\n      </div>\n      <div *ngSwitchCase=\"'select'\">\n        <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n          <vcl-select [formControlName]=\"key\">\n            <vcl-select-option *ngFor=\"let option of selectItems(schema.properties[key])\"\n              [label]=\"option.label\" [value]=\"option.value\"></vcl-select-option>\n          </vcl-select>\n        </vcl-input-control-group>\n      </div>\n      <div *ngSwitchCase=\"'dropdown'\">\n        <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n          <vcl-dropdown [expanded]=\"true\" [formControlName]=\"key\"\n           [items]=\"selectItems(schema.properties[key])\" maxSelectableItems=\"1\"\n          ></vcl-dropdown>\n        </vcl-input-control-group>\n      </div>\n      <div *ngSwitchCase=\"'switch'\">\n        <vcl-flip-switch onLabel=\"{{'Yes' | loc }}\" offLabel=\"{{'No' | loc}}\"\n         [formControlName]=\"key\"></vcl-flip-switch>\n      </div>\n      <div *ngSwitchCase=\"'slider'\">\n        <vcl-slider\n         [min]=\"schema.properties[key].min\"\n         [max]=\"schema.properties[key].max\"\n         [formControlName]=\"key\"></vcl-slider>\n      </div>\n      <div *ngSwitchCase=\"'checkbox'\">\n        <vcl-checkbox [formControlName]=\"key\"></vcl-checkbox>\n      </div>\n      <div *ngSwitchCase=\"'radio'\">\n      <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n        <vcl-radio-group [formControlName]=\"key\"\n         [options]=\"radioOptions(schema.properties[key])\"></vcl-radio-group>\n       </vcl-input-control-group>\n     </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div *ngFor=\"let key of keys(schema.properties)\"\n[formGroup]=\"formGroup\"\nstyle=\"border-style:solid;margin:5px;padding: 5px;\">\n\n  <b *ngIf=\"schema.properties[key].properties\">{{key}}:</b>\n\n  <vcl-jss-form-object *ngIf=\"schema.properties[key].properties\"\n    [schema]=\"schema.properties[key]\"\n    [parentPath]=\"parentPath + key + '.'\"\n    [formGroup]=\"formGroup.controls[key]\"\n    [error]=\"error\"\n   >\n  </vcl-jss-form-object>\n\n  <div *ngIf=\"!schema.properties[key].properties\">\n    {{key}}\n    <div [ngSwitch]=\"formType(schema.properties[key])\">\n      <div *ngSwitchCase=\"'text'\">\n        <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n          <input vcl-input type=\"text\" [formControlName]=\"key\"\n            [placeholder]=\"placeholder(schema.properties[key])\" />\n        </vcl-input-control-group>\n      </div>\n      <div *ngSwitchCase=\"'number'\">\n        <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n          <input type=\"number\" valueType=\"number\" placeholder=\"number\"\n            [name]=\"name(parentPath,key)\"\n            [formControlName]=\"key\" />\n        </vcl-input-control-group>\n      </div>\n      <div *ngSwitchCase=\"'select'\">\n        <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n          <vcl-select [formControlName]=\"key\">\n            <vcl-select-option *ngFor=\"let option of selectItems(schema.properties[key])\"\n              [value]=\"option.value\">{{option.label}}</vcl-select-option>\n          </vcl-select>\n        </vcl-input-control-group>\n      </div>\n      <div *ngSwitchCase=\"'dropdown'\">\n        <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n          <vcl-dropdown [expanded]=\"true\" [formControlName]=\"key\"\n           [items]=\"selectItems(schema.properties[key])\" maxSelectableItems=\"1\"\n          ></vcl-dropdown>\n        </vcl-input-control-group>\n      </div>\n      <div *ngSwitchCase=\"'switch'\">\n        <vcl-flip-switch onLabel=\"{{'Yes' | loc }}\" offLabel=\"{{'No' | loc}}\"\n         [formControlName]=\"key\"></vcl-flip-switch>\n      </div>\n      <div *ngSwitchCase=\"'slider'\">\n        <vcl-slider\n         [min]=\"schema.properties[key].min\"\n         [max]=\"schema.properties[key].max\"\n         [formControlName]=\"key\"></vcl-slider>\n      </div>\n      <div *ngSwitchCase=\"'checkbox'\">\n        <vcl-checkbox [formControlName]=\"key\"></vcl-checkbox>\n      </div>\n      <div *ngSwitchCase=\"'radio'\">\n      <vcl-input-control-group [type]=\"'error'\" [label]=\"fieldErrors[key]\">\n        <vcl-radio-group [formControlName]=\"key\"\n         [options]=\"radioOptions(schema.properties[key])\"></vcl-radio-group>\n       </vcl-input-control-group>\n     </div>\n    </div>\n  </div>\n</div>\n"
 
-/***/ },
-/* 187 */
-/***/ function(module, exports) {
+/***/ }),
+/* 210 */
+/***/ (function(module, exports) {
 
 module.exports = "<form class=\"vclForm\" novalidate [formGroup]=\"form\">\n<div>\n  <h1>JSS from</h1>\n  <vcl-jss-form-object [schema]=\"schema\" [formGroup]=\"form\"\n   [error]=\"this.error\"></vcl-jss-form-object>\n</div>\n</form>\n\n<div class=\"value\">\n  <h4>Value: {{ form.value | json }}</h4>\n</div>\n\n<div class=\"status\">\n  <h4>Status: {{ form.status }}</h4>\n</div>\n\n<div class=\"error\">\n  <h4>Errors: {{ form.errors | json }}</h4>\n</div>\n"
 
-/***/ },
-/* 188 */
-/***/ function(module, exports) {
+/***/ }),
+/* 211 */
+/***/ (function(module, exports) {
 
 module.exports = "{{ label | loc }}\n\n<span *ngIf=\"required\">{{requiredIndicatorCharacter}}</span>\n<ng-content></ng-content>\n\n<label class=\"vclFormControlSubLabel\">\n    {{ subLabel | loc }}\n</label>\n"
 
-/***/ },
-/* 189 */
-/***/ function(module, exports) {
+/***/ }),
+/* 212 */
+/***/ (function(module, exports) {
 
-module.exports = "<div *ngFor=\"let layerRef of layerRefs; let i = index;\">\n  <div class=\"vclLayer\" role=\"dialog\" [@boxState]=\"layerRef.visible\" [style.pointer-events]=\"'none'\" [style.z-index]=\"zIndex + (i*10+1)\">\n    <div class=\"vclLayerBox vclLayerGutterPadding\" [style.pointer-events]=\"'all'\" (off-click)=\"offClick(layerRef)\">\n      <div [connectWormhole]=\"layerRef.wormhole\" [wormholeIndisposable]=\"true\"></div>\n    </div>\n  </div>\n  <div *ngIf=\"layerRef.modal\" class=\"vclLayerCover\" [@layerState]=\"layerRef.visible\" [style.z-index]=\"zIndex + (i*10+0)\"></div>\n</div>\n"
+module.exports = "<div *ngFor=\"let layerRef of layerRefs; let i = index;\">\n  <div \n    class=\"vclLayer\"\n    [ngClass]=\"layerRef.customClass\"\n    [class.vclTransparent]=\"layerRef.transparent\"\n    [class.vclLayerFill]=\"layerRef.fill\"\n    [class.vclLayerStickToBottom]=\"layerRef.stickToBottom\"\n    [style.pointer-events]=\"'none'\" \n    [style.z-index]=\"zIndex + (i*10+1)\"\n    role=\"dialog\" \n    [@boxState]=\"layerRef.visible\" \n    >\n    <div class=\"vclLayerBox\" [class.vclLayerGutterPadding]=\"layerRef.gutterPadding\" [style.pointer-events]=\"'all'\" (off-click)=\"offClick(layerRef)\">\n      <div [connectWormhole]=\"layerRef.wormhole\"></div>\n    </div>\n  </div>\n  <div *ngIf=\"layerRef.modal\" class=\"vclLayerCover\" [@layerState]=\"layerRef.visible\" [style.z-index]=\"zIndex + (i*10+0)\"></div>\n</div>\n\n"
 
-/***/ },
-/* 190 */
-/***/ function(module, exports) {
+/***/ }),
+/* 213 */
+/***/ (function(module, exports) {
 
 module.exports = "<ng-content></ng-content>\n<vcl-icogram \n  [label]=\"(label | loc) || href\"\n  [prepIcon]=\"prepIcon\"\n  [appIcon]=\"appIcon\">\n</vcl-icogram>\n"
 
-/***/ },
-/* 191 */
-/***/ function(module, exports) {
+/***/ }),
+/* 214 */
+/***/ (function(module, exports) {
 
-module.exports = "<template\n  *ngFor=\"let item of items\"\n  [ngTemplateOutlet]=\"template\"\n  [ngOutletContext]=\"{item: item, meta: getMeta(item) }\">\n</template>\n"
+module.exports = "<template\n  *ngFor=\"let item of items\"\n  [ngTemplateOutlet]=\"template1\"\n  [ngOutletContext]=\"{item: item, meta: getMeta(item) }\">\n</template>\n"
 
-/***/ },
-/* 192 */
-/***/ function(module, exports) {
+/***/ }),
+/* 215 */
+/***/ (function(module, exports) {
 
 module.exports = "<div class=\"vclDatePicker\"\n    [class.vclLayoutHidden]=\"!expanded\">\n  <div class=\"vclDataGrid vclDGVAlignMiddle vclDGAlignCentered vclCalendar vclCalInput\"\n    [attr.role]=\"grid\"\n    [attr.tabindex]=\"tabindex\"\n    [attr.aria-multiselectable]=\"maxSelectableItems > 1\"\n    [attr.aria-expanded]=\"expanded\">\n\n    <div class=\"vclLayoutFlex vclDGRow vclLayoutAuto\">\n      <div class=\"vclToolbar vclLayoutFlex vclLayoutHorizontal vclLayoutJustified vclLayoutCenter\" role=\"menubar\" aria-level=\"1\">\n        <button vcl-button class=\"vclButton vclTransparent vclSquare\"\n          [class.vclDisabled]=\"!prevYearAvailable\"\n          [appIcon]=\"prevYearBtnIcon\"\n          (tap)=\"onPrevYearTap()\">\n        </button>\n\n        <span class=\"vclCalHeaderLabel\">{{ currentYear }}</span>\n\n        <button vcl-button\n          class=\"vclButton vclTransparent vclSquare\"\n          [class.vclDisabled]=\"!nextYearAvailable\"\n          [appIcon]=\"nextYearBtnIcon\"\n          (tap)=\"onNextYearTap()\">\n        </button>\n\n        <button vcl-button *ngIf=\"expandable\"\n          class=\"vclButton vclTransparent vclSquare\"\n          [appIcon]=\"closeBtnIcon\"\n          (tap)=\"onCloseBtnTap()\">\n        </button>\n      </div>\n    </div>\n\n    <div class=\"vclSeparator\"></div>\n\n    <template ngFor let-iM [ngForOf]=\"months\" let-i=\"index\">\n      <div *ngIf=\"i % monthsPerRow === 0\" class=\"vclLayoutFlex vclDGRow vclLayoutAuto\" role=\"row\">\n        <div *ngFor=\"let jM of months.slice(i, (i + monthsPerRow > months.length ? months.length : i + monthsPerRow)); let j = index;\"\n          (tap)=\"selectMonth(currentYear, i+j)\"\n          class=\"vclDGCell vclCalItem\"\n          [class.vclAvailable]=\"!useAvailableMonths || currentMeta[i+j].available\"\n          [class.vclUnavailable]=\"useAvailableMonths && !currentMeta[i+j].available\"\n          [class.vclToday]=\"isCurrentMonth(i+j)\"\n          [class.vclOtherMonth]=\"!isCurrentMonth(i+j)\"\n          [class.vclDisabled]=\"useAvailableMonths && !currentMeta[i+j].available\"\n          [class.vclSelected]=\"currentMeta[i+j].selected\"\n          [style.background-color]=\"currentMeta[i+j].color\"\n          [style.order]=\"i+j\"\n          [attr.aria-selected]=\"currentMeta[i+j].selected\"\n          role=\"gridcell\"\n          tabindex=\"0\">\n            <div class=\"vclLayoutHorizontal vclLayoutCenterJustified vclMonthPickerListItemLabel\">\n              {{months[i + j] | loc}}\n            </div>\n        </div>\n      </div>\n    </template>\n  </div>\n</div>\n"
 
-/***/ },
-/* 193 */
-/***/ function(module, exports) {
+/***/ }),
+/* 216 */
+/***/ (function(module, exports) {
 
 module.exports = "  <ul>\n    <li *ngFor=\"let item of navigationItems\"\n        [class.vclSelected]=\"item.selected && !item.items\"\n        [class.vclOpen]=\"item.opened\"\n        [class.vclClose]=\"!item.opened\"\n        [class.vclNavigationHeading]=\"item.heading\"\n        [class.vclNavigationItem]=\"!item.heading\"\n        [attr.touch-action]=\"touchAction\"\n        [attr.aria-selected]=\"item.selected\"\n        [attr.role]=\"item.heading && 'sectionhead' || ariaRole\"\n        [attr.tabindex]=\"tabindex\"\n        [ngClass]=\"item.class\"\n        >\n\n      <span *ngIf=\"item.heading\">\n        {{item.label | loc}}\n      </span>\n\n      <a vcl-link class=\"vclNavigationItemLabel\"\n        *ngIf=\"!item.heading\"\n        [label]=\"item.label | loc\"\n        [href]=\"item.href\"\n        [prepIcon]=\"getPrepIcon(item)\"\n        [appIcon]=\"getAppIcon(item)\"\n        (tap)=\"item.items && toggleMenu(item)\"\n        (tap)=\"selectItem(item)\">\n      </a>\n\n      <vcl-navigation *ngIf=\"item.items\"\n          [navigationItems]=\"item.items\"\n          [type]=\"type\"\n          [subLevelHintIconOpened]=\"subLevelHintIconOpened\"\n          [subLevelHintIconClosed]=\"subLevelHintIconClosed\"\n          [subLevelHintIconSide]=\"subLevelHintIconSide\"\n          [selectedItem]=\"selectedItem\"\n          (select)=\"onSelect($event)\">\n      </vcl-navigation>\n    </li>\n  </ul>\n"
 
-/***/ },
-/* 194 */
-/***/ function(module, exports) {
+/***/ }),
+/* 217 */
+/***/ (function(module, exports) {
 
 module.exports = "<vcl-tether\n  *ngIf=\"visible\"\n  [zIndex]=\"zIndex\"\n  [class]=\"class\"\n  [target]=\"target\"\n  [targetAttachment]=\"targetAttachment\"\n  [attachment]=\"attachment\">\n  <div [ngStyle]=\"style\" [@popOverState]=\"state\"\n  (off-click)=\"offClick()\">\n    <ng-content></ng-content>\n  </div>\n</vcl-tether>\n<div *ngIf=\"open && layer\" class=\"vclLayerCover\" [style.zIndex]=\"coverZIndex\"></div>\n"
 
-/***/ },
-/* 195 */
-/***/ function(module, exports) {
+/***/ }),
+/* 218 */
+/***/ (function(module, exports) {
 
 module.exports = "<div class=\"vclProgressBar\"\n     [attr.aria-valuenow]=\"value\" \n     [attr.aria-valuemin]=\"minValue\" \n     [attr.aria-valuenow]=\"aria-valuemax\" \n     [attr.aria-valuetext]=\"label\"\n     [class.vclIndeterminate]=\"showIndeterminate\"\n     >\n  <div *ngIf=\"showValue\" class=\"vclProgress vclPrimary vclLayoutFit\" [style.transform]=\"transformValue\"></div>\n  <div *ngIf=\"showSecondaryValue\" class=\"vclProgress vclSecondary vclLayoutFit\" [style.transform]=\"transformSecondaryValue\"></div>\n  <div *ngIf=\"showIndeterminate\" class=\"vclProgress vclPrimary vclLayoutFit\"></div>\n</div>\n\n"
 
-/***/ },
-/* 196 */
-/***/ function(module, exports) {
+/***/ }),
+/* 219 */
+/***/ (function(module, exports) {
 
 module.exports = "<vcl-icon [icon]=\"icon\" *ngIf=\"labelPosition=='right'\"></vcl-icon>\n<ng-content></ng-content>\n<vcl-icon [icon]=\"icon\" *ngIf=\"labelPosition=='left'\"></vcl-icon>\n"
 
-/***/ },
-/* 197 */
-/***/ function(module, exports) {
+/***/ }),
+/* 220 */
+/***/ (function(module, exports) {
 
 module.exports = "<vcl-radio-button *ngFor=\"let option of options\"\n [checked]=\"isChecked(option)\"\n (change)=\"buttonChanged(option.value, $event)\"\n>\n  {{ option.label }}\n</vcl-radio-button>\n<br *ngFor=\"let option of options\" />\n"
 
-/***/ },
-/* 198 */
-/***/ function(module, exports) {
+/***/ }),
+/* 221 */
+/***/ (function(module, exports) {
 
-module.exports = "<div\n  [attr.id]=\"popoverTarget\"\n  (tap)=\"expand()\"\n  [attr.aria-autocomplete]=\"list\"\n  class=\"vclLayoutHorizontal vclSelect vclInputGroupEmb\">\n\n  <div class=\"vclInput\" readonly>\n    {{displayValue}}\n  </div>\n\n  <button vcl-button\n    tabindex=\"-1\"\n    class=\"vclTransparent vclSquare vclAppended\"\n    [appIcon]=\"expanded ? expandedIcon : collapsedIcon\">\n  </button>\n</div>\n\n<vcl-popover\n  [target]=\"'#' + popoverTarget\"\n  targetAttachment='bottom left'\n  attachment='top left'\n  [(open)]=\"expanded\">\n  <vcl-dropdown #dropdown\n    [(expanded)]=\"expanded\"\n    [items]=\"items\"\n    (change)=\"onSelect($event)\"\n    [minSelectableItems]=\"minSelectableItems\"\n    [maxSelectableItems]=\"maxSelectableItems\"\n    [tabindex]=\"0\">\n  </vcl-dropdown>\n</vcl-popover>\n"
+module.exports = "<div\n  #select\n  [attr.aria-autocomplete]=\"list\"\n  class=\"vclLayoutHorizontal vclSelect vclInputGroupEmb\"\n  [style.marginBottom]=\"0\"\n  >\n\n  <div class=\"vclInput\" readonly *ngIf=\"!displayValueTokens()\">\n    {{displayValue}}\n  </div>\n\n  <div class=\"vclInput vclTokenInput vclLayoutHorizontal vclLayoutWrap\" readonly *ngIf=\"displayValueTokens()\">\n    <div class=\"vclTokenContainer\">\n      <ng-container *ngFor=\"let item of dropdown.items\">\n        <div *ngIf=\"item.selected\" class=\"vclToken\">\n          <span class=\"vclTokenLabel\">{{item.label}}</span>\n          <button type=\"button\" tabindex=\"-1\" touch-action=\"none\" aria-label=\"Remove\" title=\"Remove\"\n          class=\"vclTransparent vclButton\">\n            <div class=\"vclIcogram\" (click)=\"unselectItem(item)\">\n              <span role=\"img\" class=\"vclIcon fa fa-remove\"></span>\n            </div>\n          </button>\n        </div>\n      </ng-container>\n    </div>\n  </div>\n\n  <button vcl-button\n    tabindex=\"-1\"\n    class=\"vclTransparent vclSquare vclAppended\"\n    [appIcon]=\"expanded ? expandedIcon : collapsedIcon\">\n  </button>\n</div>\n\n<vcl-dropdown #dropdown\n    [(expanded)]=\"expanded\"\n    [items]=\"items\"\n    (change)=\"onSelect($event)\"\n    [minSelectableItems]=\"minSelectableItems\"\n    [maxSelectableItems]=\"maxSelectableItems\"\n    tabindex=\"-1\"\n    [style.position]=\"'relative'\"\n    [style.top.px]=\"dropdownTop\"\n    >\n</vcl-dropdown>\n"
 
-/***/ },
-/* 199 */
-/***/ function(module, exports) {
+/***/ }),
+/* 222 */
+/***/ (function(module, exports) {
 
 module.exports = "<div class=\"vclSliderRail\">\n  <div class=\"vclSliderScale\" horizontal=\"\" justified=\"\" layout=\"\" #scale>\n    <div *ngFor=\"let point of scalePoints\" class=\"vclSliderScalePointMark\"></div>\n  </div>\n  <div class=\"vclSliderKnobContainer\" [style.left]=\"percentLeftKnob + '%'\"\n    (pan)=\"onPan($event)\"\n    >\n    <div class=\"vclSliderKnob\"></div>\n  </div>\n</div>\n<div class=\"vclSliderScale\" horizontal=\"\" justified=\"\" layout=\"\">\n  <div *ngFor=\"let point of scalePoints\" class=\"vclSliderScalePointLabel\">{{point.label}}</div>\n</div>\n"
 
-/***/ },
-/* 200 */
-/***/ function(module, exports) {
+/***/ }),
+/* 223 */
+/***/ (function(module, exports) {
 
-module.exports = "<div class=\"vclTabbable {{tabbableClass}}\" \n     [class.vclTabsLeft]=\"layout==='left'\"\n     [class.vclTabsRight]=\"layout==='right'\">\n  <div class=\"vclTabs {{tabsClass}}\" [class.vclTabStyleUni]=\"!!borders\" role=\"tablist\">\n    <div *ngFor=\"let tab of tabs; let i = index\"\n         class=\"vclTab {{tab.tabClass}}\" role=\"tab\"\n         [class.vclDisabled]=\"tab.disabled\"\n         [class.vclSelected]=\"selectedTabIndex===i\"\n         [class.aria-selected]=\"selectedTabIndex===i\"\n         (tap)=\"selectTab(tab)\">\n      <div [connectWormhole]=\"tab.label\"></div>\n    </div>\n  </div>\n  <div *ngIf=\"tabsHaveContent\" class=\"vclTabContent {{tabContentClass}}\" [class.vclNoBorder]=\"!borders\">\n    <div role=\"tabpanel\" class=\"vclTabPanel\" *ngFor=\"let tab of tabs; let i = index\">\n      <div *ngIf=\"selectedTabIndex===i && tab.content\" [connectWormhole]=\"tab.content\" [wormholeIndisposable]=\"true\"></div>\n    </div>\n  </div>\n  <div *ngIf=\"!tabsHaveContent && content\" role=\"tabpanel\" class=\"vclTabPanel\">\n    <div [connectWormhole]=\"content\" [wormholeIndisposable]=\"true\"></div>\n  </div>\n</div>\n\n"
+module.exports = "<div class=\"vclTabbable {{tabbableClass}}\" \n     [class.vclTabsLeft]=\"layout==='left'\"\n     [class.vclTabsRight]=\"layout==='right'\">\n  <div class=\"vclTabs {{tabsClass}}\" [class.vclTabStyleUni]=\"!!borders\" role=\"tablist\">\n    <div *ngFor=\"let tab of tabs; let i = index\"\n         class=\"vclTab {{tab.tabClass}}\" role=\"tab\"\n         [class.vclDisabled]=\"tab.disabled\"\n         [class.vclSelected]=\"selectedTabIndex===i\"\n         [class.aria-selected]=\"selectedTabIndex===i\"\n         (tap)=\"selectTab(tab)\">\n      <div [connectWormhole]=\"tab.label\"></div>\n    </div>\n  </div>\n  <div *ngIf=\"tabsHaveContent\" class=\"vclTabContent {{tabContentClass}}\" [class.vclNoBorder]=\"!borders\">\n    <div role=\"tabpanel\" class=\"vclTabPanel\" *ngFor=\"let tab of tabs; let i = index\">\n      <div *ngIf=\"selectedTabIndex===i && tab.content\" [connectWormhole]=\"tab.content\"></div>\n    </div>\n  </div>\n  <div *ngIf=\"!tabsHaveContent && content\" role=\"tabpanel\" class=\"vclTabPanel\">\n    <div [connectWormhole]=\"content\"></div>\n  </div>\n</div>\n\n"
 
-/***/ },
-/* 201 */
-/***/ function(module, exports) {
+/***/ }),
+/* 224 */
+/***/ (function(module, exports) {
 
 module.exports = "<div [id]=\"id\" [class]=\"class\" [style.z-index]=\"zIndex\">\n  <ng-content></ng-content>\n</div>\n"
 
-/***/ },
-/* 202 */
-/***/ function(module, exports) {
+/***/ }),
+/* 225 */
+/***/ (function(module, exports) {
 
 module.exports = "<div class=\"vclTokenContainer\">\n  <vcl-token *ngFor=\"let token of tokens\"\n  [(selected)]=\"token.selected\"\n  [removeable]=\"true\"\n  (onRemove)=\"remove(token)\"\n  [label]=\"token.label\"></vcl-token>\n</div>\n\n<input placeholder=\"Type to add tokens\" autocomplete=\"off\" type=\"text\"\n  class=\"vclInput\" (keydown)=\"keydown($event)\"\n  [(ngModel)]=\"addtext\" flex />\n"
 
-/***/ },
-/* 203 */
-/***/ function(module, exports) {
+/***/ }),
+/* 226 */
+/***/ (function(module, exports) {
 
 module.exports = "<vcl-token *ngFor=\"let token of tokens\"\n [(selected)]=\"token.selected\"\n [label]=\"token.label\"\n (tap)=\"token.selected=!token.selected;change();\"></vcl-token>\n"
 
-/***/ },
-/* 204 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 227 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -50710,17 +52365,17 @@ var InnerSubscriber = (function (_super) {
 exports.InnerSubscriber = InnerSubscriber;
 //# sourceMappingURL=InnerSubscriber.js.map
 
-/***/ },
-/* 205 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 228 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 /* tslint:disable:no-unused-variable */
 // Subject imported before Observable to bypass circular dependency issue since
 // Subject extends Observable and Observable references Subject in it's
 // definition
-var Subject_1 = __webpack_require__(8);
+var Subject_1 = __webpack_require__(9);
 exports.Subject = Subject_1.Subject;
 exports.AnonymousSubject = Subject_1.AnonymousSubject;
 /* tslint:enable:no-unused-variable */
@@ -50728,36 +52383,11 @@ var Observable_1 = __webpack_require__(0);
 exports.Observable = Observable_1.Observable;
 // statics
 /* tslint:disable:no-use-before-declare */
-__webpack_require__(207);
-__webpack_require__(208);
-__webpack_require__(209);
-__webpack_require__(210);
-__webpack_require__(211);
-__webpack_require__(214);
-__webpack_require__(215);
-__webpack_require__(216);
-__webpack_require__(217);
-__webpack_require__(218);
-__webpack_require__(219);
-__webpack_require__(220);
-__webpack_require__(221);
-__webpack_require__(222);
-__webpack_require__(223);
-__webpack_require__(228);
-__webpack_require__(224);
-__webpack_require__(225);
-__webpack_require__(226);
-__webpack_require__(227);
-__webpack_require__(229);
-__webpack_require__(232);
 __webpack_require__(230);
 __webpack_require__(231);
+__webpack_require__(232);
 __webpack_require__(233);
-//dom
-__webpack_require__(212);
-__webpack_require__(213);
-//operators
-__webpack_require__(236);
+__webpack_require__(234);
 __webpack_require__(237);
 __webpack_require__(238);
 __webpack_require__(239);
@@ -50768,22 +52398,25 @@ __webpack_require__(243);
 __webpack_require__(244);
 __webpack_require__(245);
 __webpack_require__(246);
+__webpack_require__(251);
 __webpack_require__(247);
 __webpack_require__(248);
-__webpack_require__(254);
 __webpack_require__(249);
 __webpack_require__(250);
-__webpack_require__(251);
 __webpack_require__(252);
-__webpack_require__(253);
 __webpack_require__(255);
+__webpack_require__(253);
+__webpack_require__(254);
 __webpack_require__(256);
-__webpack_require__(257);
-__webpack_require__(258);
+//dom
+__webpack_require__(235);
+__webpack_require__(236);
+//operators
+__webpack_require__(259);
+__webpack_require__(260);
 __webpack_require__(261);
 __webpack_require__(262);
 __webpack_require__(263);
-__webpack_require__(259);
 __webpack_require__(264);
 __webpack_require__(265);
 __webpack_require__(266);
@@ -50792,34 +52425,33 @@ __webpack_require__(268);
 __webpack_require__(269);
 __webpack_require__(270);
 __webpack_require__(271);
-__webpack_require__(234);
-__webpack_require__(235);
+__webpack_require__(277);
 __webpack_require__(272);
 __webpack_require__(273);
-__webpack_require__(260);
 __webpack_require__(274);
 __webpack_require__(275);
 __webpack_require__(276);
-__webpack_require__(277);
 __webpack_require__(278);
 __webpack_require__(279);
 __webpack_require__(280);
 __webpack_require__(281);
-__webpack_require__(282);
-__webpack_require__(283);
 __webpack_require__(284);
 __webpack_require__(285);
 __webpack_require__(286);
+__webpack_require__(282);
 __webpack_require__(287);
 __webpack_require__(288);
 __webpack_require__(289);
 __webpack_require__(290);
 __webpack_require__(291);
-__webpack_require__(293);
 __webpack_require__(292);
+__webpack_require__(293);
 __webpack_require__(294);
+__webpack_require__(257);
+__webpack_require__(258);
 __webpack_require__(295);
 __webpack_require__(296);
+__webpack_require__(283);
 __webpack_require__(297);
 __webpack_require__(298);
 __webpack_require__(299);
@@ -50838,8 +52470,8 @@ __webpack_require__(311);
 __webpack_require__(312);
 __webpack_require__(313);
 __webpack_require__(314);
-__webpack_require__(315);
 __webpack_require__(316);
+__webpack_require__(315);
 __webpack_require__(317);
 __webpack_require__(318);
 __webpack_require__(319);
@@ -50857,50 +52489,73 @@ __webpack_require__(330);
 __webpack_require__(331);
 __webpack_require__(332);
 __webpack_require__(333);
+__webpack_require__(334);
+__webpack_require__(335);
+__webpack_require__(336);
+__webpack_require__(337);
+__webpack_require__(338);
+__webpack_require__(339);
+__webpack_require__(340);
+__webpack_require__(341);
+__webpack_require__(342);
+__webpack_require__(343);
+__webpack_require__(344);
+__webpack_require__(345);
+__webpack_require__(346);
+__webpack_require__(347);
+__webpack_require__(348);
+__webpack_require__(349);
+__webpack_require__(350);
+__webpack_require__(351);
+__webpack_require__(352);
+__webpack_require__(353);
+__webpack_require__(354);
+__webpack_require__(355);
+__webpack_require__(356);
 /* tslint:disable:no-unused-variable */
-var Subscription_1 = __webpack_require__(7);
+var Subscription_1 = __webpack_require__(8);
 exports.Subscription = Subscription_1.Subscription;
 var Subscriber_1 = __webpack_require__(2);
 exports.Subscriber = Subscriber_1.Subscriber;
-var AsyncSubject_1 = __webpack_require__(41);
+var AsyncSubject_1 = __webpack_require__(45);
 exports.AsyncSubject = AsyncSubject_1.AsyncSubject;
-var ReplaySubject_1 = __webpack_require__(74);
+var ReplaySubject_1 = __webpack_require__(81);
 exports.ReplaySubject = ReplaySubject_1.ReplaySubject;
-var BehaviorSubject_1 = __webpack_require__(96);
+var BehaviorSubject_1 = __webpack_require__(105);
 exports.BehaviorSubject = BehaviorSubject_1.BehaviorSubject;
-var ConnectableObservable_1 = __webpack_require__(99);
+var ConnectableObservable_1 = __webpack_require__(108);
 exports.ConnectableObservable = ConnectableObservable_1.ConnectableObservable;
-var Notification_1 = __webpack_require__(26);
+var Notification_1 = __webpack_require__(28);
 exports.Notification = Notification_1.Notification;
-var EmptyError_1 = __webpack_require__(46);
+var EmptyError_1 = __webpack_require__(50);
 exports.EmptyError = EmptyError_1.EmptyError;
-var ArgumentOutOfRangeError_1 = __webpack_require__(45);
+var ArgumentOutOfRangeError_1 = __webpack_require__(49);
 exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError_1.ArgumentOutOfRangeError;
-var ObjectUnsubscribedError_1 = __webpack_require__(47);
+var ObjectUnsubscribedError_1 = __webpack_require__(51);
 exports.ObjectUnsubscribedError = ObjectUnsubscribedError_1.ObjectUnsubscribedError;
-var TimeoutError_1 = __webpack_require__(118);
+var TimeoutError_1 = __webpack_require__(127);
 exports.TimeoutError = TimeoutError_1.TimeoutError;
-var UnsubscriptionError_1 = __webpack_require__(119);
+var UnsubscriptionError_1 = __webpack_require__(128);
 exports.UnsubscriptionError = UnsubscriptionError_1.UnsubscriptionError;
-var timeInterval_1 = __webpack_require__(111);
+var timeInterval_1 = __webpack_require__(120);
 exports.TimeInterval = timeInterval_1.TimeInterval;
-var timestamp_1 = __webpack_require__(112);
+var timestamp_1 = __webpack_require__(121);
 exports.Timestamp = timestamp_1.Timestamp;
-var TestScheduler_1 = __webpack_require__(469);
+var TestScheduler_1 = __webpack_require__(492);
 exports.TestScheduler = TestScheduler_1.TestScheduler;
-var VirtualTimeScheduler_1 = __webpack_require__(113);
+var VirtualTimeScheduler_1 = __webpack_require__(122);
 exports.VirtualTimeScheduler = VirtualTimeScheduler_1.VirtualTimeScheduler;
-var AjaxObservable_1 = __webpack_require__(102);
+var AjaxObservable_1 = __webpack_require__(111);
 exports.AjaxResponse = AjaxObservable_1.AjaxResponse;
 exports.AjaxError = AjaxObservable_1.AjaxError;
 exports.AjaxTimeoutError = AjaxObservable_1.AjaxTimeoutError;
-var asap_1 = __webpack_require__(114);
+var asap_1 = __webpack_require__(123);
 var async_1 = __webpack_require__(14);
-var queue_1 = __webpack_require__(115);
-var animationFrame_1 = __webpack_require__(466);
-var rxSubscriber_1 = __webpack_require__(44);
-var iterator_1 = __webpack_require__(29);
-var observable_1 = __webpack_require__(43);
+var queue_1 = __webpack_require__(124);
+var animationFrame_1 = __webpack_require__(489);
+var rxSubscriber_1 = __webpack_require__(48);
+var iterator_1 = __webpack_require__(31);
+var observable_1 = __webpack_require__(47);
 /* tslint:enable:no-unused-variable */
 /**
  * @typedef {Object} Rx.Scheduler
@@ -50943,12 +52598,12 @@ var Symbol = {
 exports.Symbol = Symbol;
 //# sourceMappingURL=Rx.js.map
 
-/***/ },
-/* 206 */
-/***/ function(module, exports) {
+/***/ }),
+/* 229 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 /**
  * An execution context and a data structure to order tasks and schedule their
  * execution. Provides a notion of (potentially virtual) time, through the
@@ -50998,1424 +52653,1424 @@ var Scheduler = (function () {
 exports.Scheduler = Scheduler;
 //# sourceMappingURL=Scheduler.js.map
 
-/***/ },
-/* 207 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 230 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var bindCallback_1 = __webpack_require__(352);
+var bindCallback_1 = __webpack_require__(375);
 Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
 //# sourceMappingURL=bindCallback.js.map
 
-/***/ },
-/* 208 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 231 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var bindNodeCallback_1 = __webpack_require__(353);
+var bindNodeCallback_1 = __webpack_require__(376);
 Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
 //# sourceMappingURL=bindNodeCallback.js.map
 
-/***/ },
-/* 209 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 232 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var combineLatest_1 = __webpack_require__(354);
+var combineLatest_1 = __webpack_require__(377);
 Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
 //# sourceMappingURL=combineLatest.js.map
 
-/***/ },
-/* 210 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 233 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var concat_1 = __webpack_require__(355);
+var concat_1 = __webpack_require__(378);
 Observable_1.Observable.concat = concat_1.concat;
 //# sourceMappingURL=concat.js.map
 
-/***/ },
-/* 211 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 234 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var defer_1 = __webpack_require__(356);
+var defer_1 = __webpack_require__(379);
 Observable_1.Observable.defer = defer_1.defer;
 //# sourceMappingURL=defer.js.map
 
-/***/ },
-/* 212 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 235 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var ajax_1 = __webpack_require__(358);
+var ajax_1 = __webpack_require__(381);
 Observable_1.Observable.ajax = ajax_1.ajax;
 //# sourceMappingURL=ajax.js.map
 
-/***/ },
-/* 213 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 236 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var webSocket_1 = __webpack_require__(359);
+var webSocket_1 = __webpack_require__(382);
 Observable_1.Observable.webSocket = webSocket_1.webSocket;
 //# sourceMappingURL=webSocket.js.map
 
-/***/ },
-/* 214 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 237 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var empty_1 = __webpack_require__(360);
+var empty_1 = __webpack_require__(383);
 Observable_1.Observable.empty = empty_1.empty;
 //# sourceMappingURL=empty.js.map
 
-/***/ },
-/* 215 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 238 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var forkJoin_1 = __webpack_require__(361);
+var forkJoin_1 = __webpack_require__(384);
 Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
 //# sourceMappingURL=forkJoin.js.map
 
-/***/ },
-/* 216 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 239 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var from_1 = __webpack_require__(362);
+var from_1 = __webpack_require__(385);
 Observable_1.Observable.from = from_1.from;
 //# sourceMappingURL=from.js.map
 
-/***/ },
-/* 217 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 240 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var fromEvent_1 = __webpack_require__(363);
+var fromEvent_1 = __webpack_require__(386);
 Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 //# sourceMappingURL=fromEvent.js.map
 
-/***/ },
-/* 218 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 241 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var fromEventPattern_1 = __webpack_require__(364);
+var fromEventPattern_1 = __webpack_require__(387);
 Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
 //# sourceMappingURL=fromEventPattern.js.map
 
-/***/ },
-/* 219 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 242 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var fromPromise_1 = __webpack_require__(365);
+var fromPromise_1 = __webpack_require__(388);
 Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
 //# sourceMappingURL=fromPromise.js.map
 
-/***/ },
-/* 220 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 243 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var GenerateObservable_1 = __webpack_require__(342);
+var GenerateObservable_1 = __webpack_require__(365);
 Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.create;
 //# sourceMappingURL=generate.js.map
 
-/***/ },
-/* 221 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 244 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var if_1 = __webpack_require__(366);
+var if_1 = __webpack_require__(389);
 Observable_1.Observable.if = if_1._if;
 //# sourceMappingURL=if.js.map
 
-/***/ },
-/* 222 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 245 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var interval_1 = __webpack_require__(367);
+var interval_1 = __webpack_require__(390);
 Observable_1.Observable.interval = interval_1.interval;
 //# sourceMappingURL=interval.js.map
 
-/***/ },
-/* 223 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 246 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var merge_1 = __webpack_require__(368);
+var merge_1 = __webpack_require__(391);
 Observable_1.Observable.merge = merge_1.merge;
 //# sourceMappingURL=merge.js.map
 
-/***/ },
-/* 224 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 247 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var never_1 = __webpack_require__(369);
+var never_1 = __webpack_require__(392);
 Observable_1.Observable.never = never_1.never;
 //# sourceMappingURL=never.js.map
 
-/***/ },
-/* 225 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 248 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var of_1 = __webpack_require__(370);
+var of_1 = __webpack_require__(393);
 Observable_1.Observable.of = of_1.of;
 //# sourceMappingURL=of.js.map
 
-/***/ },
-/* 226 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 249 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var onErrorResumeNext_1 = __webpack_require__(109);
+var onErrorResumeNext_1 = __webpack_require__(118);
 Observable_1.Observable.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNextStatic;
 //# sourceMappingURL=onErrorResumeNext.js.map
 
-/***/ },
-/* 227 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 250 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var pairs_1 = __webpack_require__(371);
+var pairs_1 = __webpack_require__(394);
 Observable_1.Observable.pairs = pairs_1.pairs;
 //# sourceMappingURL=pairs.js.map
 
-/***/ },
-/* 228 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 251 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var race_1 = __webpack_require__(110);
+var race_1 = __webpack_require__(119);
 Observable_1.Observable.race = race_1.raceStatic;
 //# sourceMappingURL=race.js.map
 
-/***/ },
-/* 229 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 252 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var range_1 = __webpack_require__(372);
+var range_1 = __webpack_require__(395);
 Observable_1.Observable.range = range_1.range;
 //# sourceMappingURL=range.js.map
 
-/***/ },
-/* 230 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 253 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var throw_1 = __webpack_require__(373);
+var throw_1 = __webpack_require__(396);
 Observable_1.Observable.throw = throw_1._throw;
 //# sourceMappingURL=throw.js.map
 
-/***/ },
-/* 231 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 254 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var timer_1 = __webpack_require__(374);
+var timer_1 = __webpack_require__(397);
 Observable_1.Observable.timer = timer_1.timer;
 //# sourceMappingURL=timer.js.map
 
-/***/ },
-/* 232 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 255 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var using_1 = __webpack_require__(375);
+var using_1 = __webpack_require__(398);
 Observable_1.Observable.using = using_1.using;
 //# sourceMappingURL=using.js.map
 
-/***/ },
-/* 233 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 256 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var zip_1 = __webpack_require__(376);
+var zip_1 = __webpack_require__(399);
 Observable_1.Observable.zip = zip_1.zip;
 //# sourceMappingURL=zip.js.map
 
-/***/ },
-/* 234 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 257 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var audit_1 = __webpack_require__(377);
+var audit_1 = __webpack_require__(400);
 Observable_1.Observable.prototype.audit = audit_1.audit;
 //# sourceMappingURL=audit.js.map
 
-/***/ },
-/* 235 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 258 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var auditTime_1 = __webpack_require__(378);
+var auditTime_1 = __webpack_require__(401);
 Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
 //# sourceMappingURL=auditTime.js.map
 
-/***/ },
-/* 236 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 259 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var buffer_1 = __webpack_require__(379);
+var buffer_1 = __webpack_require__(402);
 Observable_1.Observable.prototype.buffer = buffer_1.buffer;
 //# sourceMappingURL=buffer.js.map
 
-/***/ },
-/* 237 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 260 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var bufferCount_1 = __webpack_require__(380);
+var bufferCount_1 = __webpack_require__(403);
 Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
 //# sourceMappingURL=bufferCount.js.map
 
-/***/ },
-/* 238 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 261 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var bufferTime_1 = __webpack_require__(381);
+var bufferTime_1 = __webpack_require__(404);
 Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
 //# sourceMappingURL=bufferTime.js.map
 
-/***/ },
-/* 239 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 262 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var bufferToggle_1 = __webpack_require__(382);
+var bufferToggle_1 = __webpack_require__(405);
 Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
 //# sourceMappingURL=bufferToggle.js.map
 
-/***/ },
-/* 240 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 263 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var bufferWhen_1 = __webpack_require__(383);
+var bufferWhen_1 = __webpack_require__(406);
 Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
 //# sourceMappingURL=bufferWhen.js.map
 
-/***/ },
-/* 241 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 264 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var catch_1 = __webpack_require__(384);
+var catch_1 = __webpack_require__(407);
 Observable_1.Observable.prototype.catch = catch_1._catch;
 Observable_1.Observable.prototype._catch = catch_1._catch;
 //# sourceMappingURL=catch.js.map
 
-/***/ },
-/* 242 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 265 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var combineAll_1 = __webpack_require__(385);
+var combineAll_1 = __webpack_require__(408);
 Observable_1.Observable.prototype.combineAll = combineAll_1.combineAll;
 //# sourceMappingURL=combineAll.js.map
 
-/***/ },
-/* 243 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 266 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var combineLatest_1 = __webpack_require__(76);
+var combineLatest_1 = __webpack_require__(83);
 Observable_1.Observable.prototype.combineLatest = combineLatest_1.combineLatest;
 //# sourceMappingURL=combineLatest.js.map
 
-/***/ },
-/* 244 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 267 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var concat_1 = __webpack_require__(77);
+var concat_1 = __webpack_require__(84);
 Observable_1.Observable.prototype.concat = concat_1.concat;
 //# sourceMappingURL=concat.js.map
 
-/***/ },
-/* 245 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 268 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var concatAll_1 = __webpack_require__(386);
+var concatAll_1 = __webpack_require__(409);
 Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
 //# sourceMappingURL=concatAll.js.map
 
-/***/ },
-/* 246 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 269 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var concatMap_1 = __webpack_require__(387);
+var concatMap_1 = __webpack_require__(410);
 Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
 //# sourceMappingURL=concatMap.js.map
 
-/***/ },
-/* 247 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 270 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var concatMapTo_1 = __webpack_require__(388);
+var concatMapTo_1 = __webpack_require__(411);
 Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
 //# sourceMappingURL=concatMapTo.js.map
 
-/***/ },
-/* 248 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 271 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var count_1 = __webpack_require__(389);
+var count_1 = __webpack_require__(412);
 Observable_1.Observable.prototype.count = count_1.count;
 //# sourceMappingURL=count.js.map
 
-/***/ },
-/* 249 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 272 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var debounce_1 = __webpack_require__(390);
+var debounce_1 = __webpack_require__(413);
 Observable_1.Observable.prototype.debounce = debounce_1.debounce;
 //# sourceMappingURL=debounce.js.map
 
-/***/ },
-/* 250 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 273 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var debounceTime_1 = __webpack_require__(391);
+var debounceTime_1 = __webpack_require__(414);
 Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
 //# sourceMappingURL=debounceTime.js.map
 
-/***/ },
-/* 251 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 274 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var defaultIfEmpty_1 = __webpack_require__(392);
+var defaultIfEmpty_1 = __webpack_require__(415);
 Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
 //# sourceMappingURL=defaultIfEmpty.js.map
 
-/***/ },
-/* 252 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 275 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var delay_1 = __webpack_require__(393);
+var delay_1 = __webpack_require__(416);
 Observable_1.Observable.prototype.delay = delay_1.delay;
 //# sourceMappingURL=delay.js.map
 
-/***/ },
-/* 253 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 276 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var delayWhen_1 = __webpack_require__(394);
+var delayWhen_1 = __webpack_require__(417);
 Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
 //# sourceMappingURL=delayWhen.js.map
 
-/***/ },
-/* 254 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 277 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var dematerialize_1 = __webpack_require__(395);
+var dematerialize_1 = __webpack_require__(418);
 Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
 //# sourceMappingURL=dematerialize.js.map
 
-/***/ },
-/* 255 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 278 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var distinct_1 = __webpack_require__(396);
+var distinct_1 = __webpack_require__(419);
 Observable_1.Observable.prototype.distinct = distinct_1.distinct;
 //# sourceMappingURL=distinct.js.map
 
-/***/ },
-/* 256 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 279 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var distinctUntilChanged_1 = __webpack_require__(103);
+var distinctUntilChanged_1 = __webpack_require__(112);
 Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
 //# sourceMappingURL=distinctUntilChanged.js.map
 
-/***/ },
-/* 257 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 280 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var distinctUntilKeyChanged_1 = __webpack_require__(397);
+var distinctUntilKeyChanged_1 = __webpack_require__(420);
 Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged_1.distinctUntilKeyChanged;
 //# sourceMappingURL=distinctUntilKeyChanged.js.map
 
-/***/ },
-/* 258 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 281 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var do_1 = __webpack_require__(398);
+var do_1 = __webpack_require__(421);
 Observable_1.Observable.prototype.do = do_1._do;
 Observable_1.Observable.prototype._do = do_1._do;
 //# sourceMappingURL=do.js.map
 
-/***/ },
-/* 259 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 282 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var elementAt_1 = __webpack_require__(399);
+var elementAt_1 = __webpack_require__(422);
 Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
 //# sourceMappingURL=elementAt.js.map
 
-/***/ },
-/* 260 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 283 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var every_1 = __webpack_require__(400);
+var every_1 = __webpack_require__(423);
 Observable_1.Observable.prototype.every = every_1.every;
 //# sourceMappingURL=every.js.map
 
-/***/ },
-/* 261 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 284 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var exhaust_1 = __webpack_require__(401);
+var exhaust_1 = __webpack_require__(424);
 Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
 //# sourceMappingURL=exhaust.js.map
 
-/***/ },
-/* 262 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 285 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var exhaustMap_1 = __webpack_require__(402);
+var exhaustMap_1 = __webpack_require__(425);
 Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
 //# sourceMappingURL=exhaustMap.js.map
 
-/***/ },
-/* 263 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 286 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var expand_1 = __webpack_require__(403);
+var expand_1 = __webpack_require__(426);
 Observable_1.Observable.prototype.expand = expand_1.expand;
 //# sourceMappingURL=expand.js.map
 
-/***/ },
-/* 264 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 287 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var filter_1 = __webpack_require__(104);
+var filter_1 = __webpack_require__(113);
 Observable_1.Observable.prototype.filter = filter_1.filter;
 //# sourceMappingURL=filter.js.map
 
-/***/ },
-/* 265 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 288 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var finally_1 = __webpack_require__(404);
+var finally_1 = __webpack_require__(427);
 Observable_1.Observable.prototype.finally = finally_1._finally;
 Observable_1.Observable.prototype._finally = finally_1._finally;
 //# sourceMappingURL=finally.js.map
 
-/***/ },
-/* 266 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 289 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var find_1 = __webpack_require__(105);
+var find_1 = __webpack_require__(114);
 Observable_1.Observable.prototype.find = find_1.find;
 //# sourceMappingURL=find.js.map
 
-/***/ },
-/* 267 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 290 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var findIndex_1 = __webpack_require__(405);
+var findIndex_1 = __webpack_require__(428);
 Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
 //# sourceMappingURL=findIndex.js.map
 
-/***/ },
-/* 268 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 291 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var first_1 = __webpack_require__(406);
+var first_1 = __webpack_require__(429);
 Observable_1.Observable.prototype.first = first_1.first;
 //# sourceMappingURL=first.js.map
 
-/***/ },
-/* 269 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 292 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var groupBy_1 = __webpack_require__(407);
+var groupBy_1 = __webpack_require__(430);
 Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
 //# sourceMappingURL=groupBy.js.map
 
-/***/ },
-/* 270 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 293 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var ignoreElements_1 = __webpack_require__(408);
+var ignoreElements_1 = __webpack_require__(431);
 Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
 //# sourceMappingURL=ignoreElements.js.map
 
-/***/ },
-/* 271 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 294 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var isEmpty_1 = __webpack_require__(409);
+var isEmpty_1 = __webpack_require__(432);
 Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
 //# sourceMappingURL=isEmpty.js.map
 
-/***/ },
-/* 272 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 295 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var last_1 = __webpack_require__(410);
+var last_1 = __webpack_require__(433);
 Observable_1.Observable.prototype.last = last_1.last;
 //# sourceMappingURL=last.js.map
 
-/***/ },
-/* 273 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 296 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var let_1 = __webpack_require__(411);
+var let_1 = __webpack_require__(434);
 Observable_1.Observable.prototype.let = let_1.letProto;
 Observable_1.Observable.prototype.letBind = let_1.letProto;
 //# sourceMappingURL=let.js.map
 
-/***/ },
-/* 274 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 297 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var map_1 = __webpack_require__(78);
+var map_1 = __webpack_require__(85);
 Observable_1.Observable.prototype.map = map_1.map;
 //# sourceMappingURL=map.js.map
 
-/***/ },
-/* 275 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 298 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var mapTo_1 = __webpack_require__(412);
+var mapTo_1 = __webpack_require__(435);
 Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
 //# sourceMappingURL=mapTo.js.map
 
-/***/ },
-/* 276 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 299 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var materialize_1 = __webpack_require__(413);
+var materialize_1 = __webpack_require__(436);
 Observable_1.Observable.prototype.materialize = materialize_1.materialize;
 //# sourceMappingURL=materialize.js.map
 
-/***/ },
-/* 277 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 300 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var max_1 = __webpack_require__(414);
+var max_1 = __webpack_require__(437);
 Observable_1.Observable.prototype.max = max_1.max;
 //# sourceMappingURL=max.js.map
 
-/***/ },
-/* 278 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 301 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var merge_1 = __webpack_require__(106);
+var merge_1 = __webpack_require__(115);
 Observable_1.Observable.prototype.merge = merge_1.merge;
 //# sourceMappingURL=merge.js.map
 
-/***/ },
-/* 279 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 302 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var mergeAll_1 = __webpack_require__(42);
+var mergeAll_1 = __webpack_require__(46);
 Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
 //# sourceMappingURL=mergeAll.js.map
 
-/***/ },
-/* 280 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 303 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var mergeMap_1 = __webpack_require__(107);
+var mergeMap_1 = __webpack_require__(116);
 Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
 Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
 //# sourceMappingURL=mergeMap.js.map
 
-/***/ },
-/* 281 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 304 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var mergeMapTo_1 = __webpack_require__(108);
+var mergeMapTo_1 = __webpack_require__(117);
 Observable_1.Observable.prototype.flatMapTo = mergeMapTo_1.mergeMapTo;
 Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
 //# sourceMappingURL=mergeMapTo.js.map
 
-/***/ },
-/* 282 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 305 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var mergeScan_1 = __webpack_require__(415);
+var mergeScan_1 = __webpack_require__(438);
 Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
 //# sourceMappingURL=mergeScan.js.map
 
-/***/ },
-/* 283 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 306 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var min_1 = __webpack_require__(416);
+var min_1 = __webpack_require__(439);
 Observable_1.Observable.prototype.min = min_1.min;
 //# sourceMappingURL=min.js.map
 
-/***/ },
-/* 284 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 307 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var multicast_1 = __webpack_require__(24);
+var multicast_1 = __webpack_require__(26);
 Observable_1.Observable.prototype.multicast = multicast_1.multicast;
 //# sourceMappingURL=multicast.js.map
 
-/***/ },
-/* 285 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 308 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var observeOn_1 = __webpack_require__(79);
+var observeOn_1 = __webpack_require__(86);
 Observable_1.Observable.prototype.observeOn = observeOn_1.observeOn;
 //# sourceMappingURL=observeOn.js.map
 
-/***/ },
-/* 286 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 309 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var onErrorResumeNext_1 = __webpack_require__(109);
+var onErrorResumeNext_1 = __webpack_require__(118);
 Observable_1.Observable.prototype.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNext;
 //# sourceMappingURL=onErrorResumeNext.js.map
 
-/***/ },
-/* 287 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 310 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var pairwise_1 = __webpack_require__(417);
+var pairwise_1 = __webpack_require__(440);
 Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
 //# sourceMappingURL=pairwise.js.map
 
-/***/ },
-/* 288 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 311 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var partition_1 = __webpack_require__(418);
+var partition_1 = __webpack_require__(441);
 Observable_1.Observable.prototype.partition = partition_1.partition;
 //# sourceMappingURL=partition.js.map
 
-/***/ },
-/* 289 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 312 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var pluck_1 = __webpack_require__(419);
+var pluck_1 = __webpack_require__(442);
 Observable_1.Observable.prototype.pluck = pluck_1.pluck;
 //# sourceMappingURL=pluck.js.map
 
-/***/ },
-/* 290 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 313 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var publish_1 = __webpack_require__(420);
+var publish_1 = __webpack_require__(443);
 Observable_1.Observable.prototype.publish = publish_1.publish;
 //# sourceMappingURL=publish.js.map
 
-/***/ },
-/* 291 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 314 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var publishBehavior_1 = __webpack_require__(421);
+var publishBehavior_1 = __webpack_require__(444);
 Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
 //# sourceMappingURL=publishBehavior.js.map
 
-/***/ },
-/* 292 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 315 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var publishLast_1 = __webpack_require__(422);
+var publishLast_1 = __webpack_require__(445);
 Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
 //# sourceMappingURL=publishLast.js.map
 
-/***/ },
-/* 293 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 316 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var publishReplay_1 = __webpack_require__(423);
+var publishReplay_1 = __webpack_require__(446);
 Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
 //# sourceMappingURL=publishReplay.js.map
 
-/***/ },
-/* 294 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 317 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var race_1 = __webpack_require__(110);
+var race_1 = __webpack_require__(119);
 Observable_1.Observable.prototype.race = race_1.race;
 //# sourceMappingURL=race.js.map
 
-/***/ },
-/* 295 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 318 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var reduce_1 = __webpack_require__(80);
+var reduce_1 = __webpack_require__(87);
 Observable_1.Observable.prototype.reduce = reduce_1.reduce;
 //# sourceMappingURL=reduce.js.map
 
-/***/ },
-/* 296 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 319 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var repeat_1 = __webpack_require__(424);
+var repeat_1 = __webpack_require__(447);
 Observable_1.Observable.prototype.repeat = repeat_1.repeat;
 //# sourceMappingURL=repeat.js.map
 
-/***/ },
-/* 297 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 320 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var repeatWhen_1 = __webpack_require__(425);
+var repeatWhen_1 = __webpack_require__(448);
 Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
 //# sourceMappingURL=repeatWhen.js.map
 
-/***/ },
-/* 298 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 321 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var retry_1 = __webpack_require__(426);
+var retry_1 = __webpack_require__(449);
 Observable_1.Observable.prototype.retry = retry_1.retry;
 //# sourceMappingURL=retry.js.map
 
-/***/ },
-/* 299 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 322 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var retryWhen_1 = __webpack_require__(427);
+var retryWhen_1 = __webpack_require__(450);
 Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
 //# sourceMappingURL=retryWhen.js.map
 
-/***/ },
-/* 300 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 323 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var sample_1 = __webpack_require__(428);
+var sample_1 = __webpack_require__(451);
 Observable_1.Observable.prototype.sample = sample_1.sample;
 //# sourceMappingURL=sample.js.map
 
-/***/ },
-/* 301 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 324 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var sampleTime_1 = __webpack_require__(429);
+var sampleTime_1 = __webpack_require__(452);
 Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
 //# sourceMappingURL=sampleTime.js.map
 
-/***/ },
-/* 302 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 325 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var scan_1 = __webpack_require__(430);
+var scan_1 = __webpack_require__(453);
 Observable_1.Observable.prototype.scan = scan_1.scan;
 //# sourceMappingURL=scan.js.map
 
-/***/ },
-/* 303 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 326 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var sequenceEqual_1 = __webpack_require__(431);
+var sequenceEqual_1 = __webpack_require__(454);
 Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
 //# sourceMappingURL=sequenceEqual.js.map
 
-/***/ },
-/* 304 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 327 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var share_1 = __webpack_require__(432);
+var share_1 = __webpack_require__(455);
 Observable_1.Observable.prototype.share = share_1.share;
 //# sourceMappingURL=share.js.map
 
-/***/ },
-/* 305 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 328 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var single_1 = __webpack_require__(433);
+var single_1 = __webpack_require__(456);
 Observable_1.Observable.prototype.single = single_1.single;
 //# sourceMappingURL=single.js.map
 
-/***/ },
-/* 306 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 329 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var skip_1 = __webpack_require__(434);
+var skip_1 = __webpack_require__(457);
 Observable_1.Observable.prototype.skip = skip_1.skip;
 //# sourceMappingURL=skip.js.map
 
-/***/ },
-/* 307 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 330 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var skipUntil_1 = __webpack_require__(435);
+var skipUntil_1 = __webpack_require__(458);
 Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
 //# sourceMappingURL=skipUntil.js.map
 
-/***/ },
-/* 308 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 331 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var skipWhile_1 = __webpack_require__(436);
+var skipWhile_1 = __webpack_require__(459);
 Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
 //# sourceMappingURL=skipWhile.js.map
 
-/***/ },
-/* 309 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 332 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var startWith_1 = __webpack_require__(437);
+var startWith_1 = __webpack_require__(460);
 Observable_1.Observable.prototype.startWith = startWith_1.startWith;
 //# sourceMappingURL=startWith.js.map
 
-/***/ },
-/* 310 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 333 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var subscribeOn_1 = __webpack_require__(438);
+var subscribeOn_1 = __webpack_require__(461);
 Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
 //# sourceMappingURL=subscribeOn.js.map
 
-/***/ },
-/* 311 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 334 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var switch_1 = __webpack_require__(439);
+var switch_1 = __webpack_require__(462);
 Observable_1.Observable.prototype.switch = switch_1._switch;
 Observable_1.Observable.prototype._switch = switch_1._switch;
 //# sourceMappingURL=switch.js.map
 
-/***/ },
-/* 312 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 335 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var switchMap_1 = __webpack_require__(440);
+var switchMap_1 = __webpack_require__(463);
 Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
 //# sourceMappingURL=switchMap.js.map
 
-/***/ },
-/* 313 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 336 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var switchMapTo_1 = __webpack_require__(441);
+var switchMapTo_1 = __webpack_require__(464);
 Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
 //# sourceMappingURL=switchMapTo.js.map
 
-/***/ },
-/* 314 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 337 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var take_1 = __webpack_require__(442);
+var take_1 = __webpack_require__(465);
 Observable_1.Observable.prototype.take = take_1.take;
 //# sourceMappingURL=take.js.map
 
-/***/ },
-/* 315 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 338 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var takeLast_1 = __webpack_require__(443);
+var takeLast_1 = __webpack_require__(466);
 Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
 //# sourceMappingURL=takeLast.js.map
 
-/***/ },
-/* 316 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 339 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var takeUntil_1 = __webpack_require__(444);
+var takeUntil_1 = __webpack_require__(467);
 Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
 //# sourceMappingURL=takeUntil.js.map
 
-/***/ },
-/* 317 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 340 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var takeWhile_1 = __webpack_require__(445);
+var takeWhile_1 = __webpack_require__(468);
 Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
 //# sourceMappingURL=takeWhile.js.map
 
-/***/ },
-/* 318 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 341 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var throttle_1 = __webpack_require__(446);
+var throttle_1 = __webpack_require__(469);
 Observable_1.Observable.prototype.throttle = throttle_1.throttle;
 //# sourceMappingURL=throttle.js.map
 
-/***/ },
-/* 319 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 342 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var throttleTime_1 = __webpack_require__(447);
+var throttleTime_1 = __webpack_require__(470);
 Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
 //# sourceMappingURL=throttleTime.js.map
 
-/***/ },
-/* 320 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 343 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var timeInterval_1 = __webpack_require__(111);
+var timeInterval_1 = __webpack_require__(120);
 Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
 //# sourceMappingURL=timeInterval.js.map
 
-/***/ },
-/* 321 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 344 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var timeout_1 = __webpack_require__(448);
+var timeout_1 = __webpack_require__(471);
 Observable_1.Observable.prototype.timeout = timeout_1.timeout;
 //# sourceMappingURL=timeout.js.map
 
-/***/ },
-/* 322 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 345 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var timeoutWith_1 = __webpack_require__(449);
+var timeoutWith_1 = __webpack_require__(472);
 Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
 //# sourceMappingURL=timeoutWith.js.map
 
-/***/ },
-/* 323 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 346 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var timestamp_1 = __webpack_require__(112);
+var timestamp_1 = __webpack_require__(121);
 Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
 //# sourceMappingURL=timestamp.js.map
 
-/***/ },
-/* 324 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 347 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var toArray_1 = __webpack_require__(450);
+var toArray_1 = __webpack_require__(473);
 Observable_1.Observable.prototype.toArray = toArray_1.toArray;
 //# sourceMappingURL=toArray.js.map
 
-/***/ },
-/* 325 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 348 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var toPromise_1 = __webpack_require__(451);
+var toPromise_1 = __webpack_require__(474);
 Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
 //# sourceMappingURL=toPromise.js.map
 
-/***/ },
-/* 326 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 349 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var window_1 = __webpack_require__(452);
+var window_1 = __webpack_require__(475);
 Observable_1.Observable.prototype.window = window_1.window;
 //# sourceMappingURL=window.js.map
 
-/***/ },
-/* 327 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 350 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var windowCount_1 = __webpack_require__(453);
+var windowCount_1 = __webpack_require__(476);
 Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
 //# sourceMappingURL=windowCount.js.map
 
-/***/ },
-/* 328 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 351 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var windowTime_1 = __webpack_require__(454);
+var windowTime_1 = __webpack_require__(477);
 Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
 //# sourceMappingURL=windowTime.js.map
 
-/***/ },
-/* 329 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 352 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var windowToggle_1 = __webpack_require__(455);
+var windowToggle_1 = __webpack_require__(478);
 Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
 //# sourceMappingURL=windowToggle.js.map
 
-/***/ },
-/* 330 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 353 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var windowWhen_1 = __webpack_require__(456);
+var windowWhen_1 = __webpack_require__(479);
 Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
 //# sourceMappingURL=windowWhen.js.map
 
-/***/ },
-/* 331 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 354 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var withLatestFrom_1 = __webpack_require__(457);
+var withLatestFrom_1 = __webpack_require__(480);
 Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFrom;
 //# sourceMappingURL=withLatestFrom.js.map
 
-/***/ },
-/* 332 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 355 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var zip_1 = __webpack_require__(81);
+var zip_1 = __webpack_require__(88);
 Observable_1.Observable.prototype.zip = zip_1.zipProto;
 //# sourceMappingURL=zip.js.map
 
-/***/ },
-/* 333 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 356 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Observable_1 = __webpack_require__(0);
-var zipAll_1 = __webpack_require__(458);
+var zipAll_1 = __webpack_require__(481);
 Observable_1.Observable.prototype.zipAll = zipAll_1.zipAll;
 //# sourceMappingURL=zipAll.js.map
 
-/***/ },
-/* 334 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 357 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var ScalarObservable_1 = __webpack_require__(75);
-var EmptyObservable_1 = __webpack_require__(19);
+var ScalarObservable_1 = __webpack_require__(82);
+var EmptyObservable_1 = __webpack_require__(21);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -52478,12 +54133,12 @@ var ArrayLikeObservable = (function (_super) {
 exports.ArrayLikeObservable = ArrayLikeObservable;
 //# sourceMappingURL=ArrayLikeObservable.js.map
 
-/***/ },
-/* 335 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 358 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -52491,8 +54146,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(0);
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
-var AsyncSubject_1 = __webpack_require__(41);
+var errorObject_1 = __webpack_require__(10);
+var AsyncSubject_1 = __webpack_require__(45);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -52648,12 +54303,12 @@ function dispatchError(arg) {
 }
 //# sourceMappingURL=BoundCallbackObservable.js.map
 
-/***/ },
-/* 336 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 359 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -52661,8 +54316,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(0);
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
-var AsyncSubject_1 = __webpack_require__(41);
+var errorObject_1 = __webpack_require__(10);
+var AsyncSubject_1 = __webpack_require__(45);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -52830,12 +54485,12 @@ function dispatchError(arg) {
 }
 //# sourceMappingURL=BoundNodeCallbackObservable.js.map
 
-/***/ },
-/* 337 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 360 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -52935,12 +54590,12 @@ var DeferSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=DeferObservable.js.map
 
-/***/ },
-/* 338 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 361 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -53023,19 +54678,19 @@ var ErrorObservable = (function (_super) {
 exports.ErrorObservable = ErrorObservable;
 //# sourceMappingURL=ErrorObservable.js.map
 
-/***/ },
-/* 339 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 362 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var EmptyObservable_1 = __webpack_require__(19);
+var EmptyObservable_1 = __webpack_require__(21);
 var isArray_1 = __webpack_require__(15);
 var subscribeToResult_1 = __webpack_require__(4);
 var OuterSubscriber_1 = __webpack_require__(3);
@@ -53141,12 +54796,12 @@ var ForkJoinSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=ForkJoinObservable.js.map
 
-/***/ },
-/* 340 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 363 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -53154,9 +54809,9 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(0);
 var tryCatch_1 = __webpack_require__(12);
-var isFunction_1 = __webpack_require__(82);
-var errorObject_1 = __webpack_require__(9);
-var Subscription_1 = __webpack_require__(7);
+var isFunction_1 = __webpack_require__(89);
+var errorObject_1 = __webpack_require__(10);
+var Subscription_1 = __webpack_require__(8);
 var toString = Object.prototype.toString;
 function isNodeStyleEventEmmitter(sourceObj) {
     return !!sourceObj && typeof sourceObj.addListener === 'function' && typeof sourceObj.removeListener === 'function';
@@ -53287,19 +54942,19 @@ var FromEventObservable = (function (_super) {
 exports.FromEventObservable = FromEventObservable;
 //# sourceMappingURL=FromEventObservable.js.map
 
-/***/ },
-/* 341 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 364 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var Subscription_1 = __webpack_require__(7);
+var Subscription_1 = __webpack_require__(8);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -53401,19 +55056,19 @@ var FromEventPatternObservable = (function (_super) {
 exports.FromEventPatternObservable = FromEventPatternObservable;
 //# sourceMappingURL=FromEventPatternObservable.js.map
 
-/***/ },
-/* 342 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 365 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var isScheduler_1 = __webpack_require__(20);
+var isScheduler_1 = __webpack_require__(22);
 var selfSelector = function (value) { return value; };
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -53542,12 +55197,12 @@ var GenerateObservable = (function (_super) {
 exports.GenerateObservable = GenerateObservable;
 //# sourceMappingURL=GenerateObservable.js.map
 
-/***/ },
-/* 343 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 366 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -53609,18 +55264,18 @@ var IfSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=IfObservable.js.map
 
-/***/ },
-/* 344 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 367 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isNumeric_1 = __webpack_require__(83);
+var isNumeric_1 = __webpack_require__(90);
 var Observable_1 = __webpack_require__(0);
 var async_1 = __webpack_require__(14);
 /**
@@ -53703,12 +55358,12 @@ var IntervalObservable = (function (_super) {
 exports.IntervalObservable = IntervalObservable;
 //# sourceMappingURL=IntervalObservable.js.map
 
-/***/ },
-/* 345 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 368 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -53716,7 +55371,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var root_1 = __webpack_require__(11);
 var Observable_1 = __webpack_require__(0);
-var iterator_1 = __webpack_require__(29);
+var iterator_1 = __webpack_require__(31);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -53872,19 +55527,19 @@ function sign(value) {
 }
 //# sourceMappingURL=IteratorObservable.js.map
 
-/***/ },
-/* 346 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 369 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var noop_1 = __webpack_require__(123);
+var noop_1 = __webpack_require__(132);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -53937,12 +55592,12 @@ var NeverObservable = (function (_super) {
 exports.NeverObservable = NeverObservable;
 //# sourceMappingURL=NeverObservable.js.map
 
-/***/ },
-/* 347 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 370 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -54028,12 +55683,12 @@ var PairsObservable = (function (_super) {
 exports.PairsObservable = PairsObservable;
 //# sourceMappingURL=PairsObservable.js.map
 
-/***/ },
-/* 348 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 371 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -54130,20 +55785,20 @@ var RangeObservable = (function (_super) {
 exports.RangeObservable = RangeObservable;
 //# sourceMappingURL=RangeObservable.js.map
 
-/***/ },
-/* 349 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 372 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var asap_1 = __webpack_require__(114);
-var isNumeric_1 = __webpack_require__(83);
+var asap_1 = __webpack_require__(123);
+var isNumeric_1 = __webpack_require__(90);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -54187,22 +55842,22 @@ var SubscribeOnObservable = (function (_super) {
 exports.SubscribeOnObservable = SubscribeOnObservable;
 //# sourceMappingURL=SubscribeOnObservable.js.map
 
-/***/ },
-/* 350 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 373 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isNumeric_1 = __webpack_require__(83);
+var isNumeric_1 = __webpack_require__(90);
 var Observable_1 = __webpack_require__(0);
 var async_1 = __webpack_require__(14);
-var isScheduler_1 = __webpack_require__(20);
-var isDate_1 = __webpack_require__(48);
+var isScheduler_1 = __webpack_require__(22);
+var isDate_1 = __webpack_require__(52);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -54300,12 +55955,12 @@ var TimerObservable = (function (_super) {
 exports.TimerObservable = TimerObservable;
 //# sourceMappingURL=TimerObservable.js.map
 
-/***/ },
-/* 351 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 374 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -54367,36 +56022,36 @@ var UsingSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=UsingObservable.js.map
 
-/***/ },
-/* 352 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 375 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var BoundCallbackObservable_1 = __webpack_require__(335);
+
+var BoundCallbackObservable_1 = __webpack_require__(358);
 exports.bindCallback = BoundCallbackObservable_1.BoundCallbackObservable.create;
 //# sourceMappingURL=bindCallback.js.map
 
-/***/ },
-/* 353 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 376 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var BoundNodeCallbackObservable_1 = __webpack_require__(336);
+
+var BoundNodeCallbackObservable_1 = __webpack_require__(359);
 exports.bindNodeCallback = BoundNodeCallbackObservable_1.BoundNodeCallbackObservable.create;
 //# sourceMappingURL=bindNodeCallback.js.map
 
-/***/ },
-/* 354 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 377 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var isScheduler_1 = __webpack_require__(20);
+
+var isScheduler_1 = __webpack_require__(22);
 var isArray_1 = __webpack_require__(15);
-var ArrayObservable_1 = __webpack_require__(16);
-var combineLatest_1 = __webpack_require__(76);
+var ArrayObservable_1 = __webpack_require__(17);
+var combineLatest_1 = __webpack_require__(83);
 /* tslint:enable:max-line-length */
 /**
  * Combines multiple Observables to create an Observable whose values are
@@ -54469,46 +56124,46 @@ function combineLatest() {
 exports.combineLatest = combineLatest;
 //# sourceMappingURL=combineLatest.js.map
 
-/***/ },
-/* 355 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 378 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var concat_1 = __webpack_require__(77);
+
+var concat_1 = __webpack_require__(84);
 exports.concat = concat_1.concatStatic;
 //# sourceMappingURL=concat.js.map
 
-/***/ },
-/* 356 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 379 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var DeferObservable_1 = __webpack_require__(337);
+
+var DeferObservable_1 = __webpack_require__(360);
 exports.defer = DeferObservable_1.DeferObservable.create;
 //# sourceMappingURL=defer.js.map
 
-/***/ },
-/* 357 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 380 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(8);
+var Subject_1 = __webpack_require__(9);
 var Subscriber_1 = __webpack_require__(2);
 var Observable_1 = __webpack_require__(0);
-var Subscription_1 = __webpack_require__(7);
+var Subscription_1 = __webpack_require__(8);
 var root_1 = __webpack_require__(11);
-var ReplaySubject_1 = __webpack_require__(74);
+var ReplaySubject_1 = __webpack_require__(81);
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
-var assign_1 = __webpack_require__(476);
+var errorObject_1 = __webpack_require__(10);
+var assign_1 = __webpack_require__(499);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -54711,209 +56366,209 @@ var WebSocketSubject = (function (_super) {
 exports.WebSocketSubject = WebSocketSubject;
 //# sourceMappingURL=WebSocketSubject.js.map
 
-/***/ },
-/* 358 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 381 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var AjaxObservable_1 = __webpack_require__(102);
+
+var AjaxObservable_1 = __webpack_require__(111);
 exports.ajax = AjaxObservable_1.AjaxObservable.create;
 //# sourceMappingURL=ajax.js.map
 
-/***/ },
-/* 359 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 382 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var WebSocketSubject_1 = __webpack_require__(357);
+
+var WebSocketSubject_1 = __webpack_require__(380);
 exports.webSocket = WebSocketSubject_1.WebSocketSubject.create;
 //# sourceMappingURL=webSocket.js.map
 
-/***/ },
-/* 360 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 383 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var EmptyObservable_1 = __webpack_require__(19);
+
+var EmptyObservable_1 = __webpack_require__(21);
 exports.empty = EmptyObservable_1.EmptyObservable.create;
 //# sourceMappingURL=empty.js.map
 
-/***/ },
-/* 361 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 384 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var ForkJoinObservable_1 = __webpack_require__(339);
+
+var ForkJoinObservable_1 = __webpack_require__(362);
 exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
 //# sourceMappingURL=forkJoin.js.map
 
-/***/ },
-/* 362 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 385 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var FromObservable_1 = __webpack_require__(100);
+
+var FromObservable_1 = __webpack_require__(109);
 exports.from = FromObservable_1.FromObservable.create;
 //# sourceMappingURL=from.js.map
 
-/***/ },
-/* 363 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 386 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var FromEventObservable_1 = __webpack_require__(340);
+
+var FromEventObservable_1 = __webpack_require__(363);
 exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
 //# sourceMappingURL=fromEvent.js.map
 
-/***/ },
-/* 364 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 387 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var FromEventPatternObservable_1 = __webpack_require__(341);
+
+var FromEventPatternObservable_1 = __webpack_require__(364);
 exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservable.create;
 //# sourceMappingURL=fromEventPattern.js.map
 
-/***/ },
-/* 365 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 388 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var PromiseObservable_1 = __webpack_require__(101);
+
+var PromiseObservable_1 = __webpack_require__(110);
 exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 //# sourceMappingURL=fromPromise.js.map
 
-/***/ },
-/* 366 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 389 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var IfObservable_1 = __webpack_require__(343);
+
+var IfObservable_1 = __webpack_require__(366);
 exports._if = IfObservable_1.IfObservable.create;
 //# sourceMappingURL=if.js.map
 
-/***/ },
-/* 367 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 390 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var IntervalObservable_1 = __webpack_require__(344);
+
+var IntervalObservable_1 = __webpack_require__(367);
 exports.interval = IntervalObservable_1.IntervalObservable.create;
 //# sourceMappingURL=interval.js.map
 
-/***/ },
-/* 368 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 391 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var merge_1 = __webpack_require__(106);
+
+var merge_1 = __webpack_require__(115);
 exports.merge = merge_1.mergeStatic;
 //# sourceMappingURL=merge.js.map
 
-/***/ },
-/* 369 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 392 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var NeverObservable_1 = __webpack_require__(346);
+
+var NeverObservable_1 = __webpack_require__(369);
 exports.never = NeverObservable_1.NeverObservable.create;
 //# sourceMappingURL=never.js.map
 
-/***/ },
-/* 370 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 393 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var ArrayObservable_1 = __webpack_require__(16);
+
+var ArrayObservable_1 = __webpack_require__(17);
 exports.of = ArrayObservable_1.ArrayObservable.of;
 //# sourceMappingURL=of.js.map
 
-/***/ },
-/* 371 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 394 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var PairsObservable_1 = __webpack_require__(347);
+
+var PairsObservable_1 = __webpack_require__(370);
 exports.pairs = PairsObservable_1.PairsObservable.create;
 //# sourceMappingURL=pairs.js.map
 
-/***/ },
-/* 372 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 395 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var RangeObservable_1 = __webpack_require__(348);
+
+var RangeObservable_1 = __webpack_require__(371);
 exports.range = RangeObservable_1.RangeObservable.create;
 //# sourceMappingURL=range.js.map
 
-/***/ },
-/* 373 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 396 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var ErrorObservable_1 = __webpack_require__(338);
+
+var ErrorObservable_1 = __webpack_require__(361);
 exports._throw = ErrorObservable_1.ErrorObservable.create;
 //# sourceMappingURL=throw.js.map
 
-/***/ },
-/* 374 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 397 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var TimerObservable_1 = __webpack_require__(350);
+
+var TimerObservable_1 = __webpack_require__(373);
 exports.timer = TimerObservable_1.TimerObservable.create;
 //# sourceMappingURL=timer.js.map
 
-/***/ },
-/* 375 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 398 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var UsingObservable_1 = __webpack_require__(351);
+
+var UsingObservable_1 = __webpack_require__(374);
 exports.using = UsingObservable_1.UsingObservable.create;
 //# sourceMappingURL=using.js.map
 
-/***/ },
-/* 376 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 399 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var zip_1 = __webpack_require__(81);
+
+var zip_1 = __webpack_require__(88);
 exports.zip = zip_1.zipStatic;
 //# sourceMappingURL=zip.js.map
 
-/***/ },
-/* 377 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 400 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
+var errorObject_1 = __webpack_require__(10);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
 /**
@@ -55017,12 +56672,12 @@ var AuditSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=audit.js.map
 
-/***/ },
-/* 378 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 401 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -55127,12 +56782,12 @@ function dispatchNext(subscriber) {
 }
 //# sourceMappingURL=auditTime.js.map
 
-/***/ },
-/* 379 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 402 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -55209,12 +56864,12 @@ var BufferSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=buffer.js.map
 
-/***/ },
-/* 380 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 403 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -55322,12 +56977,12 @@ var BufferCountSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=bufferCount.js.map
 
-/***/ },
-/* 381 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 404 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -55335,7 +56990,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var async_1 = __webpack_require__(14);
 var Subscriber_1 = __webpack_require__(2);
-var isScheduler_1 = __webpack_require__(20);
+var isScheduler_1 = __webpack_require__(22);
 /* tslint:disable:max-line-length */
 /**
  * Buffers the source Observable values for a specific time period.
@@ -55527,18 +57182,18 @@ function dispatchBufferClose(arg) {
 }
 //# sourceMappingURL=bufferTime.js.map
 
-/***/ },
-/* 382 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 405 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscription_1 = __webpack_require__(7);
+var Subscription_1 = __webpack_require__(8);
 var subscribeToResult_1 = __webpack_require__(4);
 var OuterSubscriber_1 = __webpack_require__(3);
 /**
@@ -55685,20 +57340,20 @@ var BufferToggleSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=bufferToggle.js.map
 
-/***/ },
-/* 383 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 406 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscription_1 = __webpack_require__(7);
+var Subscription_1 = __webpack_require__(8);
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
+var errorObject_1 = __webpack_require__(10);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
 /**
@@ -55813,12 +57468,12 @@ var BufferWhenSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=bufferWhen.js.map
 
-/***/ },
-/* 384 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 407 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -55885,13 +57540,13 @@ var CatchSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=catch.js.map
 
-/***/ },
-/* 385 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 408 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var combineLatest_1 = __webpack_require__(76);
+
+var combineLatest_1 = __webpack_require__(83);
 /**
  * Converts a higher-order Observable into a first-order Observable by waiting
  * for the outer Observable to complete, then applying {@link combineLatest}.
@@ -55938,13 +57593,13 @@ function combineAll(project) {
 exports.combineAll = combineAll;
 //# sourceMappingURL=combineAll.js.map
 
-/***/ },
-/* 386 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 409 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var mergeAll_1 = __webpack_require__(42);
+
+var mergeAll_1 = __webpack_require__(46);
 /* tslint:disable:max-line-length */
 /**
  * Converts a higher-order Observable into a first-order Observable by
@@ -56000,13 +57655,13 @@ function concatAll() {
 exports.concatAll = concatAll;
 //# sourceMappingURL=concatAll.js.map
 
-/***/ },
-/* 387 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 410 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var mergeMap_1 = __webpack_require__(107);
+
+var mergeMap_1 = __webpack_require__(116);
 /* tslint:disable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -56076,13 +57731,13 @@ function concatMap(project, resultSelector) {
 exports.concatMap = concatMap;
 //# sourceMappingURL=concatMap.js.map
 
-/***/ },
-/* 388 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 411 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var mergeMapTo_1 = __webpack_require__(108);
+
+var mergeMapTo_1 = __webpack_require__(117);
 /* tslint:disable:max-line-length */
 /**
  * Projects each source value to the same Observable which is merged multiple
@@ -56146,12 +57801,12 @@ function concatMapTo(innerObservable, resultSelector) {
 exports.concatMapTo = concatMapTo;
 //# sourceMappingURL=concatMapTo.js.map
 
-/***/ },
-/* 389 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 412 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -56263,12 +57918,12 @@ var CountSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=count.js.map
 
-/***/ },
-/* 390 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 413 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -56396,12 +58051,12 @@ var DebounceSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=debounce.js.map
 
-/***/ },
-/* 391 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 414 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -56518,12 +58173,12 @@ function dispatchNext(subscriber) {
 }
 //# sourceMappingURL=debounceTime.js.map
 
-/***/ },
-/* 392 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 415 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -56601,21 +58256,21 @@ var DefaultIfEmptySubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=defaultIfEmpty.js.map
 
-/***/ },
-/* 393 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 416 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var async_1 = __webpack_require__(14);
-var isDate_1 = __webpack_require__(48);
+var isDate_1 = __webpack_require__(52);
 var Subscriber_1 = __webpack_require__(2);
-var Notification_1 = __webpack_require__(26);
+var Notification_1 = __webpack_require__(28);
 /**
  * Delays the emission of items from the source Observable by a given timeout or
  * until a given Date.
@@ -56742,12 +58397,12 @@ var DelayMessage = (function () {
 }());
 //# sourceMappingURL=delay.js.map
 
-/***/ },
-/* 394 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 417 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -56938,12 +58593,12 @@ var SubscriptionDelaySubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=delayWhen.js.map
 
-/***/ },
-/* 395 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 418 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -57019,12 +58674,12 @@ var DeMaterializeSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=dematerialize.js.map
 
-/***/ },
-/* 396 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 419 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -57032,7 +58687,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
-var Set_1 = __webpack_require__(475);
+var Set_1 = __webpack_require__(498);
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from previous items.
  *
@@ -57145,13 +58800,13 @@ var DistinctSubscriber = (function (_super) {
 exports.DistinctSubscriber = DistinctSubscriber;
 //# sourceMappingURL=distinct.js.map
 
-/***/ },
-/* 397 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 420 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var distinctUntilChanged_1 = __webpack_require__(103);
+
+var distinctUntilChanged_1 = __webpack_require__(112);
 /* tslint:disable:max-line-length */
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item,
@@ -57221,12 +58876,12 @@ function distinctUntilKeyChanged(key, compare) {
 exports.distinctUntilKeyChanged = distinctUntilKeyChanged;
 //# sourceMappingURL=distinctUntilKeyChanged.js.map
 
-/***/ },
-/* 398 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 421 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -57340,19 +58995,19 @@ var DoSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=do.js.map
 
-/***/ },
-/* 399 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 422 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var ArgumentOutOfRangeError_1 = __webpack_require__(45);
+var ArgumentOutOfRangeError_1 = __webpack_require__(49);
 /**
  * Emits the single value at the specified `index` in a sequence of emissions
  * from the source Observable.
@@ -57446,12 +59101,12 @@ var ElementAtSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=elementAt.js.map
 
-/***/ },
-/* 400 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 423 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -57526,12 +59181,12 @@ var EverySubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=every.js.map
 
-/***/ },
-/* 401 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 424 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -57622,12 +59277,12 @@ var SwitchFirstSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=exhaust.js.map
 
-/***/ },
-/* 402 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 425 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -57766,19 +59421,19 @@ var SwitchFirstMapSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=exhaustMap.js.map
 
-/***/ },
-/* 403 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 426 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
+var errorObject_1 = __webpack_require__(10);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
 /* tslint:disable:max-line-length */
@@ -57923,19 +59578,19 @@ var ExpandSubscriber = (function (_super) {
 exports.ExpandSubscriber = ExpandSubscriber;
 //# sourceMappingURL=expand.js.map
 
-/***/ },
-/* 404 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 427 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var Subscription_1 = __webpack_require__(7);
+var Subscription_1 = __webpack_require__(8);
 /**
  * Returns an Observable that mirrors the source Observable, but will call a specified function when
  * the source terminates on complete or error.
@@ -57972,13 +59627,13 @@ var FinallySubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=finally.js.map
 
-/***/ },
-/* 405 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 428 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var find_1 = __webpack_require__(105);
+
+var find_1 = __webpack_require__(114);
 /**
  * Emits only the index of the first value emitted by the source Observable that
  * meets some condition.
@@ -58019,19 +59674,19 @@ function findIndex(predicate, thisArg) {
 exports.findIndex = findIndex;
 //# sourceMappingURL=findIndex.js.map
 
-/***/ },
-/* 406 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 429 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var EmptyError_1 = __webpack_require__(46);
+var EmptyError_1 = __webpack_require__(50);
 /**
  * Emits only the first value (or the first value that meets some condition)
  * emitted by the source Observable.
@@ -58177,23 +59832,23 @@ var FirstSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=first.js.map
 
-/***/ },
-/* 407 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 430 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var Subscription_1 = __webpack_require__(7);
+var Subscription_1 = __webpack_require__(8);
 var Observable_1 = __webpack_require__(0);
-var Subject_1 = __webpack_require__(8);
-var Map_1 = __webpack_require__(473);
-var FastMap_1 = __webpack_require__(471);
+var Subject_1 = __webpack_require__(9);
+var Map_1 = __webpack_require__(496);
+var FastMap_1 = __webpack_require__(494);
 /* tslint:disable:max-line-length */
 /**
  * Groups the items emitted by an Observable according to a specified criterion,
@@ -58418,19 +60073,19 @@ var InnerRefCountSubscription = (function (_super) {
 }(Subscription_1.Subscription));
 //# sourceMappingURL=groupBy.js.map
 
-/***/ },
-/* 408 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 431 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var noop_1 = __webpack_require__(123);
+var noop_1 = __webpack_require__(132);
 /**
  * Ignores all items emitted by the source Observable and only passes calls of `complete` or `error`.
  *
@@ -58471,12 +60126,12 @@ var IgnoreElementsSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=ignoreElements.js.map
 
-/***/ },
-/* 409 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 432 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -58529,19 +60184,19 @@ var IsEmptySubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=isEmpty.js.map
 
-/***/ },
-/* 410 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 433 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var EmptyError_1 = __webpack_require__(46);
+var EmptyError_1 = __webpack_require__(50);
 /* tslint:disable:max-line-length */
 /**
  * Returns an Observable that emits only the last item emitted by the source Observable.
@@ -58654,12 +60309,12 @@ var LastSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=last.js.map
 
-/***/ },
-/* 411 */
-/***/ function(module, exports) {
+/***/ }),
+/* 434 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 /**
  * @param func
  * @return {Observable<R>}
@@ -58672,12 +60327,12 @@ function letProto(func) {
 exports.letProto = letProto;
 //# sourceMappingURL=let.js.map
 
-/***/ },
-/* 412 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 435 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -58741,19 +60396,19 @@ var MapToSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=mapTo.js.map
 
-/***/ },
-/* 413 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 436 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var Notification_1 = __webpack_require__(26);
+var Notification_1 = __webpack_require__(28);
 /**
  * Represents all of the notifications from the source Observable as `next`
  * emissions marked with their original types within {@link Notification}
@@ -58837,13 +60492,13 @@ var MaterializeSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=materialize.js.map
 
-/***/ },
-/* 414 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 437 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var reduce_1 = __webpack_require__(80);
+
+var reduce_1 = __webpack_require__(87);
 /**
  * The Max operator operates on an Observable that emits numbers (or items that can be compared with a provided function),
  * and when source Observable completes it emits a single item: the item with the largest value.
@@ -58884,19 +60539,19 @@ function max(comparer) {
 exports.max = max;
 //# sourceMappingURL=max.js.map
 
-/***/ },
-/* 415 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 438 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
+var errorObject_1 = __webpack_require__(10);
 var subscribeToResult_1 = __webpack_require__(4);
 var OuterSubscriber_1 = __webpack_require__(3);
 /**
@@ -58996,13 +60651,13 @@ var MergeScanSubscriber = (function (_super) {
 exports.MergeScanSubscriber = MergeScanSubscriber;
 //# sourceMappingURL=mergeScan.js.map
 
-/***/ },
-/* 416 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 439 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var reduce_1 = __webpack_require__(80);
+
+var reduce_1 = __webpack_require__(87);
 /**
  * The Min operator operates on an Observable that emits numbers (or items that can be compared with a provided function),
  * and when source Observable completes it emits a single item: the item with the smallest value.
@@ -59042,12 +60697,12 @@ function min(comparer) {
 exports.min = min;
 //# sourceMappingURL=min.js.map
 
-/***/ },
-/* 417 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 440 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -59125,14 +60780,14 @@ var PairwiseSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=pairwise.js.map
 
-/***/ },
-/* 418 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 441 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var not_1 = __webpack_require__(477);
-var filter_1 = __webpack_require__(104);
+
+var not_1 = __webpack_require__(500);
+var filter_1 = __webpack_require__(113);
 /**
  * Splits the source Observable into two, one with values that satisfy a
  * predicate, and another with values that don't satisfy the predicate.
@@ -59183,13 +60838,13 @@ function partition(predicate, thisArg) {
 exports.partition = partition;
 //# sourceMappingURL=partition.js.map
 
-/***/ },
-/* 419 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 442 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var map_1 = __webpack_require__(78);
+
+var map_1 = __webpack_require__(85);
 /**
  * Maps each source value (an object) to its specified nested property.
  *
@@ -59247,14 +60902,14 @@ function plucker(props, length) {
 }
 //# sourceMappingURL=pluck.js.map
 
-/***/ },
-/* 420 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 443 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var Subject_1 = __webpack_require__(8);
-var multicast_1 = __webpack_require__(24);
+
+var Subject_1 = __webpack_require__(9);
+var multicast_1 = __webpack_require__(26);
 /* tslint:disable:max-line-length */
 /**
  * Returns a ConnectableObservable, which is a variety of Observable that waits until its connect method is called
@@ -59276,14 +60931,14 @@ function publish(selector) {
 exports.publish = publish;
 //# sourceMappingURL=publish.js.map
 
-/***/ },
-/* 421 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 444 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var BehaviorSubject_1 = __webpack_require__(96);
-var multicast_1 = __webpack_require__(24);
+
+var BehaviorSubject_1 = __webpack_require__(105);
+var multicast_1 = __webpack_require__(26);
 /**
  * @param value
  * @return {ConnectableObservable<T>}
@@ -59296,14 +60951,14 @@ function publishBehavior(value) {
 exports.publishBehavior = publishBehavior;
 //# sourceMappingURL=publishBehavior.js.map
 
-/***/ },
-/* 422 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 445 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var AsyncSubject_1 = __webpack_require__(41);
-var multicast_1 = __webpack_require__(24);
+
+var AsyncSubject_1 = __webpack_require__(45);
+var multicast_1 = __webpack_require__(26);
 /**
  * @return {ConnectableObservable<T>}
  * @method publishLast
@@ -59315,14 +60970,14 @@ function publishLast() {
 exports.publishLast = publishLast;
 //# sourceMappingURL=publishLast.js.map
 
-/***/ },
-/* 423 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 446 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var ReplaySubject_1 = __webpack_require__(74);
-var multicast_1 = __webpack_require__(24);
+
+var ReplaySubject_1 = __webpack_require__(81);
+var multicast_1 = __webpack_require__(26);
 /**
  * @param bufferSize
  * @param windowTime
@@ -59339,19 +60994,19 @@ function publishReplay(bufferSize, windowTime, scheduler) {
 exports.publishReplay = publishReplay;
 //# sourceMappingURL=publishReplay.js.map
 
-/***/ },
-/* 424 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 447 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var EmptyObservable_1 = __webpack_require__(19);
+var EmptyObservable_1 = __webpack_require__(21);
 /**
  * Returns an Observable that repeats the stream of items emitted by the source Observable at most count times,
  * on a particular IScheduler.
@@ -59420,20 +61075,20 @@ var RepeatSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=repeat.js.map
 
-/***/ },
-/* 425 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 448 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(8);
+var Subject_1 = __webpack_require__(9);
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
+var errorObject_1 = __webpack_require__(10);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
 /**
@@ -59532,12 +61187,12 @@ var RepeatWhenSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=repeatWhen.js.map
 
-/***/ },
-/* 426 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 449 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -59607,20 +61262,20 @@ var RetrySubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=retry.js.map
 
-/***/ },
-/* 427 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 450 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(8);
+var Subject_1 = __webpack_require__(9);
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
+var errorObject_1 = __webpack_require__(10);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
 /**
@@ -59719,12 +61374,12 @@ var RetryWhenSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=retryWhen.js.map
 
-/***/ },
-/* 428 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 451 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -59813,12 +61468,12 @@ var SampleSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=sample.js.map
 
-/***/ },
-/* 429 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 452 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -59910,12 +61565,12 @@ function dispatchNotification(state) {
 }
 //# sourceMappingURL=sampleTime.js.map
 
-/***/ },
-/* 430 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 453 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -60035,12 +61690,12 @@ var ScanSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=scan.js.map
 
-/***/ },
-/* 431 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 454 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -60048,7 +61703,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Subscriber_1 = __webpack_require__(2);
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
+var errorObject_1 = __webpack_require__(10);
 /**
  * Compares all values of two observables in sequence using an optional comparor function
  * and returns an observable of a single boolean value representing whether or not the two sequences
@@ -60205,14 +61860,14 @@ var SequenceEqualCompareToSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=sequenceEqual.js.map
 
-/***/ },
-/* 432 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 455 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var multicast_1 = __webpack_require__(24);
-var Subject_1 = __webpack_require__(8);
+
+var multicast_1 = __webpack_require__(26);
+var Subject_1 = __webpack_require__(9);
 function shareSubjectFactory() {
     return new Subject_1.Subject();
 }
@@ -60235,19 +61890,19 @@ exports.share = share;
 ;
 //# sourceMappingURL=share.js.map
 
-/***/ },
-/* 433 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 456 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var EmptyError_1 = __webpack_require__(46);
+var EmptyError_1 = __webpack_require__(50);
 /**
  * Returns an Observable that emits the single item emitted by the source Observable that matches a specified
  * predicate, if that Observable emits one such item. If the source Observable emits more than one such item or no
@@ -60336,12 +61991,12 @@ var SingleSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=single.js.map
 
-/***/ },
-/* 434 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 457 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -60393,12 +62048,12 @@ var SkipSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=skip.js.map
 
-/***/ },
-/* 435 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 458 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -60470,12 +62125,12 @@ var SkipUntilSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=skipUntil.js.map
 
-/***/ },
-/* 436 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 459 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -60542,17 +62197,17 @@ var SkipWhileSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=skipWhile.js.map
 
-/***/ },
-/* 437 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 460 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var ArrayObservable_1 = __webpack_require__(16);
-var ScalarObservable_1 = __webpack_require__(75);
-var EmptyObservable_1 = __webpack_require__(19);
-var concat_1 = __webpack_require__(77);
-var isScheduler_1 = __webpack_require__(20);
+
+var ArrayObservable_1 = __webpack_require__(17);
+var ScalarObservable_1 = __webpack_require__(82);
+var EmptyObservable_1 = __webpack_require__(21);
+var concat_1 = __webpack_require__(84);
+var isScheduler_1 = __webpack_require__(22);
 /* tslint:disable:max-line-length */
 /**
  * Returns an Observable that emits the items in a specified Iterable before it begins to emit items emitted by the
@@ -60592,13 +62247,13 @@ function startWith() {
 exports.startWith = startWith;
 //# sourceMappingURL=startWith.js.map
 
-/***/ },
-/* 438 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 461 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var SubscribeOnObservable_1 = __webpack_require__(349);
+
+var SubscribeOnObservable_1 = __webpack_require__(372);
 /**
  * Asynchronously subscribes Observers to this Observable on the specified IScheduler.
  *
@@ -60627,12 +62282,12 @@ var SubscribeOnOperator = (function () {
 }());
 //# sourceMappingURL=subscribeOn.js.map
 
-/***/ },
-/* 439 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 462 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -60741,12 +62396,12 @@ var SwitchSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=switch.js.map
 
-/***/ },
-/* 440 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 463 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -60887,12 +62542,12 @@ var SwitchMapSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=switchMap.js.map
 
-/***/ },
-/* 441 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 464 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -61020,20 +62675,20 @@ var SwitchMapToSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=switchMapTo.js.map
 
-/***/ },
-/* 442 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 465 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var ArgumentOutOfRangeError_1 = __webpack_require__(45);
-var EmptyObservable_1 = __webpack_require__(19);
+var ArgumentOutOfRangeError_1 = __webpack_require__(49);
+var EmptyObservable_1 = __webpack_require__(21);
 /**
  * Emits only the first `count` values emitted by the source Observable.
  *
@@ -61115,20 +62770,20 @@ var TakeSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=take.js.map
 
-/***/ },
-/* 443 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 466 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var ArgumentOutOfRangeError_1 = __webpack_require__(45);
-var EmptyObservable_1 = __webpack_require__(19);
+var ArgumentOutOfRangeError_1 = __webpack_require__(49);
+var EmptyObservable_1 = __webpack_require__(21);
 /**
  * Emits only the last `count` values emitted by the source Observable.
  *
@@ -61228,12 +62883,12 @@ var TakeLastSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=takeLast.js.map
 
-/***/ },
-/* 444 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 467 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -61309,12 +62964,12 @@ var TakeUntilSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=takeUntil.js.map
 
-/***/ },
-/* 445 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 468 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -61407,12 +63062,12 @@ var TakeWhileSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=takeWhile.js.map
 
-/***/ },
-/* 446 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 469 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -61521,12 +63176,12 @@ var ThrottleSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=throttle.js.map
 
-/***/ },
-/* 447 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 470 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -61622,21 +63277,21 @@ function dispatchNext(arg) {
 }
 //# sourceMappingURL=throttleTime.js.map
 
-/***/ },
-/* 448 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 471 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var async_1 = __webpack_require__(14);
-var isDate_1 = __webpack_require__(48);
+var isDate_1 = __webpack_require__(52);
 var Subscriber_1 = __webpack_require__(2);
-var TimeoutError_1 = __webpack_require__(118);
+var TimeoutError_1 = __webpack_require__(127);
 /**
  * @param {number} due
  * @param {Scheduler} [scheduler]
@@ -61729,19 +63384,19 @@ var TimeoutSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=timeout.js.map
 
-/***/ },
-/* 449 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 472 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var async_1 = __webpack_require__(14);
-var isDate_1 = __webpack_require__(48);
+var isDate_1 = __webpack_require__(52);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
 /* tslint:disable:max-line-length */
@@ -61846,12 +63501,12 @@ var TimeoutWithSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=timeoutWith.js.map
 
-/***/ },
-/* 450 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 473 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -61897,12 +63552,12 @@ var ToArraySubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=toArray.js.map
 
-/***/ },
-/* 451 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 474 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var root_1 = __webpack_require__(11);
 /* tslint:disable:max-line-length */
 /**
@@ -61932,18 +63587,18 @@ function toPromise(PromiseCtor) {
 exports.toPromise = toPromise;
 //# sourceMappingURL=toPromise.js.map
 
-/***/ },
-/* 452 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 475 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(8);
+var Subject_1 = __webpack_require__(9);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
 /**
@@ -62048,19 +63703,19 @@ var WindowSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=window.js.map
 
-/***/ },
-/* 453 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 476 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var Subject_1 = __webpack_require__(8);
+var Subject_1 = __webpack_require__(9);
 /**
  * Branch out the source Observable values as a nested Observable with each
  * nested Observable emitting at most `windowSize` values.
@@ -62185,18 +63840,18 @@ var WindowCountSubscriber = (function (_super) {
 }(Subscriber_1.Subscriber));
 //# sourceMappingURL=windowCount.js.map
 
-/***/ },
-/* 454 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 477 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(8);
+var Subject_1 = __webpack_require__(9);
 var async_1 = __webpack_require__(14);
 var Subscriber_1 = __webpack_require__(2);
 /**
@@ -62360,21 +64015,21 @@ function dispatchWindowClose(arg) {
 }
 //# sourceMappingURL=windowTime.js.map
 
-/***/ },
-/* 455 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 478 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(8);
-var Subscription_1 = __webpack_require__(7);
+var Subject_1 = __webpack_require__(9);
+var Subscription_1 = __webpack_require__(8);
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
+var errorObject_1 = __webpack_require__(10);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
 /**
@@ -62546,20 +64201,20 @@ var WindowToggleSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=windowToggle.js.map
 
-/***/ },
-/* 456 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 479 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(8);
+var Subject_1 = __webpack_require__(9);
 var tryCatch_1 = __webpack_require__(12);
-var errorObject_1 = __webpack_require__(9);
+var errorObject_1 = __webpack_require__(10);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
 /**
@@ -62679,12 +64334,12 @@ var WindowSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=windowWhen.js.map
 
-/***/ },
-/* 457 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 480 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -62815,13 +64470,13 @@ var WithLatestFromSubscriber = (function (_super) {
 }(OuterSubscriber_1.OuterSubscriber));
 //# sourceMappingURL=withLatestFrom.js.map
 
-/***/ },
-/* 458 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 481 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var zip_1 = __webpack_require__(81);
+
+var zip_1 = __webpack_require__(88);
 /**
  * @param project
  * @return {Observable<R>|WebSocketSubject<T>|Observable<T>}
@@ -62834,18 +64489,18 @@ function zipAll(project) {
 exports.zipAll = zipAll;
 //# sourceMappingURL=zipAll.js.map
 
-/***/ },
-/* 459 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 482 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subscription_1 = __webpack_require__(7);
+var Subscription_1 = __webpack_require__(8);
 /**
  * A unit of work to be executed in a {@link Scheduler}. An action is typically
  * created from within a Scheduler and an RxJS user does not need to concern
@@ -62884,19 +64539,19 @@ var Action = (function (_super) {
 exports.Action = Action;
 //# sourceMappingURL=Action.js.map
 
-/***/ },
-/* 460 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 483 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncAction_1 = __webpack_require__(27);
-var AnimationFrame_1 = __webpack_require__(470);
+var AsyncAction_1 = __webpack_require__(29);
+var AnimationFrame_1 = __webpack_require__(493);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -62945,18 +64600,18 @@ var AnimationFrameAction = (function (_super) {
 exports.AnimationFrameAction = AnimationFrameAction;
 //# sourceMappingURL=AnimationFrameAction.js.map
 
-/***/ },
-/* 461 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 484 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncScheduler_1 = __webpack_require__(28);
+var AsyncScheduler_1 = __webpack_require__(30);
 var AnimationFrameScheduler = (function (_super) {
     __extends(AnimationFrameScheduler, _super);
     function AnimationFrameScheduler() {
@@ -62988,19 +64643,19 @@ var AnimationFrameScheduler = (function (_super) {
 exports.AnimationFrameScheduler = AnimationFrameScheduler;
 //# sourceMappingURL=AnimationFrameScheduler.js.map
 
-/***/ },
-/* 462 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 485 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Immediate_1 = __webpack_require__(472);
-var AsyncAction_1 = __webpack_require__(27);
+var Immediate_1 = __webpack_require__(495);
+var AsyncAction_1 = __webpack_require__(29);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -63049,18 +64704,18 @@ var AsapAction = (function (_super) {
 exports.AsapAction = AsapAction;
 //# sourceMappingURL=AsapAction.js.map
 
-/***/ },
-/* 463 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 486 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncScheduler_1 = __webpack_require__(28);
+var AsyncScheduler_1 = __webpack_require__(30);
 var AsapScheduler = (function (_super) {
     __extends(AsapScheduler, _super);
     function AsapScheduler() {
@@ -63092,18 +64747,18 @@ var AsapScheduler = (function (_super) {
 exports.AsapScheduler = AsapScheduler;
 //# sourceMappingURL=AsapScheduler.js.map
 
-/***/ },
-/* 464 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 487 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncAction_1 = __webpack_require__(27);
+var AsyncAction_1 = __webpack_require__(29);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -63147,18 +64802,18 @@ var QueueAction = (function (_super) {
 exports.QueueAction = QueueAction;
 //# sourceMappingURL=QueueAction.js.map
 
-/***/ },
-/* 465 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 488 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncScheduler_1 = __webpack_require__(28);
+var AsyncScheduler_1 = __webpack_require__(30);
 var QueueScheduler = (function (_super) {
     __extends(QueueScheduler, _super);
     function QueueScheduler() {
@@ -63169,32 +64824,32 @@ var QueueScheduler = (function (_super) {
 exports.QueueScheduler = QueueScheduler;
 //# sourceMappingURL=QueueScheduler.js.map
 
-/***/ },
-/* 466 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 489 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
-var AnimationFrameAction_1 = __webpack_require__(460);
-var AnimationFrameScheduler_1 = __webpack_require__(461);
+
+var AnimationFrameAction_1 = __webpack_require__(483);
+var AnimationFrameScheduler_1 = __webpack_require__(484);
 exports.animationFrame = new AnimationFrameScheduler_1.AnimationFrameScheduler(AnimationFrameAction_1.AnimationFrameAction);
 //# sourceMappingURL=animationFrame.js.map
 
-/***/ },
-/* 467 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 490 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var Subscription_1 = __webpack_require__(7);
-var SubscriptionLoggable_1 = __webpack_require__(117);
-var applyMixins_1 = __webpack_require__(120);
+var Subscription_1 = __webpack_require__(8);
+var SubscriptionLoggable_1 = __webpack_require__(126);
+var applyMixins_1 = __webpack_require__(129);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -63232,21 +64887,21 @@ exports.ColdObservable = ColdObservable;
 applyMixins_1.applyMixins(ColdObservable, [SubscriptionLoggable_1.SubscriptionLoggable]);
 //# sourceMappingURL=ColdObservable.js.map
 
-/***/ },
-/* 468 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 491 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(8);
-var Subscription_1 = __webpack_require__(7);
-var SubscriptionLoggable_1 = __webpack_require__(117);
-var applyMixins_1 = __webpack_require__(120);
+var Subject_1 = __webpack_require__(9);
+var Subscription_1 = __webpack_require__(8);
+var SubscriptionLoggable_1 = __webpack_require__(126);
+var applyMixins_1 = __webpack_require__(129);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -63286,23 +64941,23 @@ exports.HotObservable = HotObservable;
 applyMixins_1.applyMixins(HotObservable, [SubscriptionLoggable_1.SubscriptionLoggable]);
 //# sourceMappingURL=HotObservable.js.map
 
-/***/ },
-/* 469 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 492 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var Notification_1 = __webpack_require__(26);
-var ColdObservable_1 = __webpack_require__(467);
-var HotObservable_1 = __webpack_require__(468);
-var SubscriptionLog_1 = __webpack_require__(116);
-var VirtualTimeScheduler_1 = __webpack_require__(113);
+var Notification_1 = __webpack_require__(28);
+var ColdObservable_1 = __webpack_require__(490);
+var HotObservable_1 = __webpack_require__(491);
+var SubscriptionLog_1 = __webpack_require__(125);
+var VirtualTimeScheduler_1 = __webpack_require__(122);
 var defaultMaxFrame = 750;
 var TestScheduler = (function (_super) {
     __extends(TestScheduler, _super);
@@ -63515,12 +65170,12 @@ var TestScheduler = (function (_super) {
 exports.TestScheduler = TestScheduler;
 //# sourceMappingURL=TestScheduler.js.map
 
-/***/ },
-/* 470 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 493 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var root_1 = __webpack_require__(11);
 var RequestAnimationFrameDefinition = (function () {
     function RequestAnimationFrameDefinition(root) {
@@ -63555,12 +65210,12 @@ exports.RequestAnimationFrameDefinition = RequestAnimationFrameDefinition;
 exports.AnimationFrame = new RequestAnimationFrameDefinition(root_1.root);
 //# sourceMappingURL=AnimationFrame.js.map
 
-/***/ },
-/* 471 */
-/***/ function(module, exports) {
+/***/ }),
+/* 494 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var FastMap = (function () {
     function FastMap() {
         this.values = {};
@@ -63592,15 +65247,15 @@ var FastMap = (function () {
 exports.FastMap = FastMap;
 //# sourceMappingURL=FastMap.js.map
 
-/***/ },
-/* 472 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 495 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(clearImmediate, setImmediate) {/**
 Some credit for this helper goes to http://github.com/YuzuJS/setImmediate
 */
-"use strict";
+
 var root_1 = __webpack_require__(11);
 var ImmediateDefinition = (function () {
     function ImmediateDefinition(root) {
@@ -63806,25 +65461,25 @@ var ImmediateDefinition = (function () {
 exports.ImmediateDefinition = ImmediateDefinition;
 exports.Immediate = new ImmediateDefinition(root_1.root);
 //# sourceMappingURL=Immediate.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(49).clearImmediate, __webpack_require__(49).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(133).clearImmediate, __webpack_require__(133).setImmediate))
 
-/***/ },
-/* 473 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 496 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var root_1 = __webpack_require__(11);
-var MapPolyfill_1 = __webpack_require__(474);
+var MapPolyfill_1 = __webpack_require__(497);
 exports.Map = root_1.root.Map || (function () { return MapPolyfill_1.MapPolyfill; })();
 //# sourceMappingURL=Map.js.map
 
-/***/ },
-/* 474 */
-/***/ function(module, exports) {
+/***/ }),
+/* 497 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var MapPolyfill = (function () {
     function MapPolyfill() {
         this.size = 0;
@@ -63872,12 +65527,12 @@ var MapPolyfill = (function () {
 exports.MapPolyfill = MapPolyfill;
 //# sourceMappingURL=MapPolyfill.js.map
 
-/***/ },
-/* 475 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 498 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var root_1 = __webpack_require__(11);
 function minimalSetImpl() {
     // THIS IS NOT a full impl of Set, this is just the minimum
@@ -63911,12 +65566,12 @@ exports.minimalSetImpl = minimalSetImpl;
 exports.Set = root_1.root.Set || minimalSetImpl();
 //# sourceMappingURL=Set.js.map
 
-/***/ },
-/* 476 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 499 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var root_1 = __webpack_require__(11);
 function assignImpl(target) {
     var sources = [];
@@ -63943,12 +65598,12 @@ exports.getAssign = getAssign;
 exports.assign = getAssign(root_1.root);
 //# sourceMappingURL=assign.js.map
 
-/***/ },
-/* 477 */
-/***/ function(module, exports) {
+/***/ }),
+/* 500 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 function not(pred, thisArg) {
     function notPred() {
         return !(notPred.pred.apply(notPred.thisArg, arguments));
@@ -63960,15 +65615,15 @@ function not(pred, thisArg) {
 exports.not = not;
 //# sourceMappingURL=not.js.map
 
-/***/ },
-/* 478 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ }),
+/* 501 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var Subscriber_1 = __webpack_require__(2);
-var rxSubscriber_1 = __webpack_require__(44);
-var Observer_1 = __webpack_require__(97);
+var rxSubscriber_1 = __webpack_require__(48);
+var Observer_1 = __webpack_require__(106);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
         if (nextOrObserver instanceof Subscriber_1.Subscriber) {
@@ -63986,218 +65641,421 @@ function toSubscriber(nextOrObserver, error, complete) {
 exports.toSubscriber = toSubscriber;
 //# sourceMappingURL=toSubscriber.js.map
 
-/***/ },
-/* 479 */
-/***/ function(module, exports) {
+/***/ }),
+/* 502 */
+/***/ (function(module, exports, __webpack_require__) {
 
-var g;
+/* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
+    "use strict";
 
-// This works in non-strict mode
-g = (function() { return this; })();
+    if (global.setImmediate) {
+        return;
+    }
 
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
-}
+    var nextHandle = 1; // Spec says greater than zero
+    var tasksByHandle = {};
+    var currentlyRunningATask = false;
+    var doc = global.document;
+    var registerImmediate;
 
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
+    function setImmediate(callback) {
+      // Callback can either be a function or a string
+      if (typeof callback !== "function") {
+        callback = new Function("" + callback);
+      }
+      // Copy function arguments
+      var args = new Array(arguments.length - 1);
+      for (var i = 0; i < args.length; i++) {
+          args[i] = arguments[i + 1];
+      }
+      // Store and register the task
+      var task = { callback: callback, args: args };
+      tasksByHandle[nextHandle] = task;
+      registerImmediate(nextHandle);
+      return nextHandle++;
+    }
 
-module.exports = g;
+    function clearImmediate(handle) {
+        delete tasksByHandle[handle];
+    }
 
+    function run(task) {
+        var callback = task.callback;
+        var args = task.args;
+        switch (args.length) {
+        case 0:
+            callback();
+            break;
+        case 1:
+            callback(args[0]);
+            break;
+        case 2:
+            callback(args[0], args[1]);
+            break;
+        case 3:
+            callback(args[0], args[1], args[2]);
+            break;
+        default:
+            callback.apply(undefined, args);
+            break;
+        }
+    }
 
-/***/ },
-/* 480 */
-/***/ function(module, exports) {
+    function runIfPresent(handle) {
+        // From the spec: "Wait until any invocations of this algorithm started before this one have completed."
+        // So if we're currently running a task, we'll need to delay this invocation.
+        if (currentlyRunningATask) {
+            // Delay by doing a setTimeout. setImmediate was tried instead, but in Firefox 7 it generated a
+            // "too much recursion" error.
+            setTimeout(runIfPresent, 0, handle);
+        } else {
+            var task = tasksByHandle[handle];
+            if (task) {
+                currentlyRunningATask = true;
+                try {
+                    run(task);
+                } finally {
+                    clearImmediate(handle);
+                    currentlyRunningATask = false;
+                }
+            }
+        }
+    }
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_480__;
+    function installNextTickImplementation() {
+        registerImmediate = function(handle) {
+            process.nextTick(function () { runIfPresent(handle); });
+        };
+    }
 
-/***/ },
-/* 481 */
-/***/ function(module, exports) {
+    function canUsePostMessage() {
+        // The test against `importScripts` prevents this implementation from being installed inside a web worker,
+        // where `global.postMessage` means something completely different and can't be used for this purpose.
+        if (global.postMessage && !global.importScripts) {
+            var postMessageIsAsynchronous = true;
+            var oldOnMessage = global.onmessage;
+            global.onmessage = function() {
+                postMessageIsAsynchronous = false;
+            };
+            global.postMessage("", "*");
+            global.onmessage = oldOnMessage;
+            return postMessageIsAsynchronous;
+        }
+    }
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_481__;
+    function installPostMessageImplementation() {
+        // Installs an event handler on `global` for the `message` event: see
+        // * https://developer.mozilla.org/en/DOM/window.postMessage
+        // * http://www.whatwg.org/specs/web-apps/current-work/multipage/comms.html#crossDocumentMessages
 
-/***/ },
-/* 482 */
-/***/ function(module, exports) {
+        var messagePrefix = "setImmediate$" + Math.random() + "$";
+        var onGlobalMessage = function(event) {
+            if (event.source === global &&
+                typeof event.data === "string" &&
+                event.data.indexOf(messagePrefix) === 0) {
+                runIfPresent(+event.data.slice(messagePrefix.length));
+            }
+        };
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_482__;
+        if (global.addEventListener) {
+            global.addEventListener("message", onGlobalMessage, false);
+        } else {
+            global.attachEvent("onmessage", onGlobalMessage);
+        }
 
-/***/ },
-/* 483 */
-/***/ function(module, exports) {
+        registerImmediate = function(handle) {
+            global.postMessage(messagePrefix + handle, "*");
+        };
+    }
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_483__;
+    function installMessageChannelImplementation() {
+        var channel = new MessageChannel();
+        channel.port1.onmessage = function(event) {
+            var handle = event.data;
+            runIfPresent(handle);
+        };
 
-/***/ },
-/* 484 */
-/***/ function(module, exports) {
+        registerImmediate = function(handle) {
+            channel.port2.postMessage(handle);
+        };
+    }
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_484__;
+    function installReadyStateChangeImplementation() {
+        var html = doc.documentElement;
+        registerImmediate = function(handle) {
+            // Create a <script> element; its readystatechange event will be fired asynchronously once it is inserted
+            // into the document. Do so, thus queuing up the task. Remember to clean up once it's been called.
+            var script = doc.createElement("script");
+            script.onreadystatechange = function () {
+                runIfPresent(handle);
+                script.onreadystatechange = null;
+                html.removeChild(script);
+                script = null;
+            };
+            html.appendChild(script);
+        };
+    }
 
-/***/ },
-/* 485 */
-/***/ function(module, exports) {
+    function installSetTimeoutImplementation() {
+        registerImmediate = function(handle) {
+            setTimeout(runIfPresent, 0, handle);
+        };
+    }
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_485__;
+    // If supported, we should attach to the prototype of global, since that is where setTimeout et al. live.
+    var attachTo = Object.getPrototypeOf && Object.getPrototypeOf(global);
+    attachTo = attachTo && attachTo.setTimeout ? attachTo : global;
 
-/***/ },
-/* 486 */
-/***/ function(module, exports) {
+    // Don't get fooled by e.g. browserify environments.
+    if ({}.toString.call(global.process) === "[object process]") {
+        // For Node.js before 0.9
+        installNextTickImplementation();
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_486__;
+    } else if (canUsePostMessage()) {
+        // For non-IE10 modern browsers
+        installPostMessageImplementation();
 
-/***/ },
-/* 487 */
-/***/ function(module, exports) {
+    } else if (global.MessageChannel) {
+        // For web workers, where supported
+        installMessageChannelImplementation();
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_487__;
+    } else if (doc && "onreadystatechange" in doc.createElement("script")) {
+        // For IE 6–8
+        installReadyStateChangeImplementation();
 
-/***/ },
-/* 488 */
-/***/ function(module, exports) {
+    } else {
+        // For older browsers
+        installSetTimeoutImplementation();
+    }
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_488__;
+    attachTo.setImmediate = setImmediate;
+    attachTo.clearImmediate = clearImmediate;
+}(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/***/ },
-/* 489 */
-/***/ function(module, exports) {
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(134), __webpack_require__(190)))
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_489__;
+/***/ }),
+/* 503 */
+/***/ (function(module, exports) {
 
-/***/ },
-/* 490 */
-/***/ function(module, exports) {
+module.exports = __WEBPACK_EXTERNAL_MODULE_503__;
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_490__;
+/***/ }),
+/* 504 */
+/***/ (function(module, exports) {
 
-/***/ },
-/* 491 */
-/***/ function(module, exports) {
+module.exports = __WEBPACK_EXTERNAL_MODULE_504__;
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_491__;
+/***/ }),
+/* 505 */
+/***/ (function(module, exports) {
 
-/***/ },
-/* 492 */
-/***/ function(module, exports) {
+module.exports = __WEBPACK_EXTERNAL_MODULE_505__;
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_492__;
+/***/ }),
+/* 506 */
+/***/ (function(module, exports) {
 
-/***/ },
-/* 493 */
-/***/ function(module, exports) {
+module.exports = __WEBPACK_EXTERNAL_MODULE_506__;
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_493__;
+/***/ }),
+/* 507 */
+/***/ (function(module, exports) {
 
-/***/ },
-/* 494 */
-/***/ function(module, exports) {
+module.exports = __WEBPACK_EXTERNAL_MODULE_507__;
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_494__;
+/***/ }),
+/* 508 */
+/***/ (function(module, exports) {
 
-/***/ },
-/* 495 */
-/***/ function(module, exports) {
+module.exports = __WEBPACK_EXTERNAL_MODULE_508__;
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_495__;
+/***/ }),
+/* 509 */
+/***/ (function(module, exports) {
 
-/***/ },
-/* 496 */
-/***/ function(module, exports) {
+module.exports = __WEBPACK_EXTERNAL_MODULE_509__;
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_496__;
+/***/ }),
+/* 510 */
+/***/ (function(module, exports) {
 
-/***/ },
-/* 497 */
-/***/ function(module, exports, __webpack_require__) {
+module.exports = __WEBPACK_EXTERNAL_MODULE_510__;
+
+/***/ }),
+/* 511 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_511__;
+
+/***/ }),
+/* 512 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_512__;
+
+/***/ }),
+/* 513 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_513__;
+
+/***/ }),
+/* 514 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_514__;
+
+/***/ }),
+/* 515 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_515__;
+
+/***/ }),
+/* 516 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_516__;
+
+/***/ }),
+/* 517 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_517__;
+
+/***/ }),
+/* 518 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_518__;
+
+/***/ }),
+/* 519 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_519__;
+
+/***/ }),
+/* 520 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_520__;
+
+/***/ }),
+/* 521 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_521__;
+
+/***/ }),
+/* 522 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_522__;
+
+/***/ }),
+/* 523 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_523__;
+
+/***/ }),
+/* 524 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_524__;
+
+/***/ }),
+/* 525 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-"use strict";
+
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 var core_1 = __webpack_require__(1);
-__webpack_require__(132);
-var input_module_1 = __webpack_require__(57);
-var textarea_module_1 = __webpack_require__(66);
-var flip_switch_module_1 = __webpack_require__(85);
-var icon_module_1 = __webpack_require__(17);
-var metalist_module_1 = __webpack_require__(22);
-var dropdown_module_1 = __webpack_require__(52);
-var select_module_1 = __webpack_require__(86);
-var icogram_module_1 = __webpack_require__(25);
-var button_module_1 = __webpack_require__(21);
-var button_group_module_1 = __webpack_require__(54);
-var layer_module_1 = __webpack_require__(61);
-var tab_nav_module_1 = __webpack_require__(65);
-var navigation_module_1 = __webpack_require__(63);
-var toolbar_module_1 = __webpack_require__(68);
-var tether_module_1 = __webpack_require__(37);
-var link_module_1 = __webpack_require__(32);
-var popover_module_1 = __webpack_require__(33);
-var progress_bar_module_1 = __webpack_require__(64);
-var radio_button_module_1 = __webpack_require__(34);
-var radio_group_module_1 = __webpack_require__(35);
-var checkbox_module_1 = __webpack_require__(30);
-var off_click_module_1 = __webpack_require__(23);
-var form_control_label_module_1 = __webpack_require__(130);
-var form_module_1 = __webpack_require__(56);
-var json_editor_module_1 = __webpack_require__(58);
-var wormhole_module_1 = __webpack_require__(18);
-var month_picker_module_1 = __webpack_require__(62);
-var date_picker_module_1 = __webpack_require__(55);
-var label_module_1 = __webpack_require__(60);
-var token_module_1 = __webpack_require__(67);
-var slider_module_1 = __webpack_require__(36);
-var jss_form_module_1 = __webpack_require__(59);
-var input_control_group_module_1 = __webpack_require__(31);
-__export(__webpack_require__(53));
-__export(__webpack_require__(57));
-__export(__webpack_require__(66));
-__export(__webpack_require__(17));
-__export(__webpack_require__(25));
-__export(__webpack_require__(21));
-__export(__webpack_require__(54));
-__export(__webpack_require__(61));
-__export(__webpack_require__(65));
-__export(__webpack_require__(63));
+__webpack_require__(143);
+var input_module_1 = __webpack_require__(34);
+var file_input_module_1 = __webpack_require__(61);
+var textarea_module_1 = __webpack_require__(71);
+var flip_switch_module_1 = __webpack_require__(92);
+var icon_module_1 = __webpack_require__(18);
+var metalist_module_1 = __webpack_require__(23);
+var dropdown_module_1 = __webpack_require__(55);
+var select_module_1 = __webpack_require__(93);
+var icogram_module_1 = __webpack_require__(24);
+var button_module_1 = __webpack_require__(16);
+var button_group_module_1 = __webpack_require__(59);
+var layer_module_1 = __webpack_require__(19);
+var tab_nav_module_1 = __webpack_require__(70);
+var navigation_module_1 = __webpack_require__(68);
+var toolbar_module_1 = __webpack_require__(73);
+var tether_module_1 = __webpack_require__(40);
+var link_module_1 = __webpack_require__(35);
+var popover_module_1 = __webpack_require__(36);
+var progress_bar_module_1 = __webpack_require__(69);
+var radio_button_module_1 = __webpack_require__(37);
+var radio_group_module_1 = __webpack_require__(38);
+var checkbox_module_1 = __webpack_require__(32);
+var off_click_module_1 = __webpack_require__(25);
+var form_control_label_module_1 = __webpack_require__(141);
+var form_module_1 = __webpack_require__(62);
+var json_editor_module_1 = __webpack_require__(64);
+var wormhole_module_1 = __webpack_require__(20);
+var month_picker_module_1 = __webpack_require__(67);
+var date_picker_module_1 = __webpack_require__(60);
+var label_module_1 = __webpack_require__(66);
+var token_module_1 = __webpack_require__(72);
+var slider_module_1 = __webpack_require__(39);
+var jss_form_module_1 = __webpack_require__(65);
+var input_control_group_module_1 = __webpack_require__(33);
+var alert_module_1 = __webpack_require__(57);
+var busy_module_1 = __webpack_require__(58);
+var growl_module_1 = __webpack_require__(63);
 __export(__webpack_require__(56));
-__export(__webpack_require__(68));
-__export(__webpack_require__(37));
-__export(__webpack_require__(32));
-__export(__webpack_require__(33));
-__export(__webpack_require__(64));
 __export(__webpack_require__(34));
-__export(__webpack_require__(35));
-__export(__webpack_require__(30));
-__export(__webpack_require__(62));
-__export(__webpack_require__(55));
-__export(__webpack_require__(58));
-__export(__webpack_require__(60));
-__export(__webpack_require__(67));
-__export(__webpack_require__(36));
-__export(__webpack_require__(59));
-__export(__webpack_require__(31));
-__export(__webpack_require__(23));
+__export(__webpack_require__(61));
+__export(__webpack_require__(71));
 __export(__webpack_require__(18));
+__export(__webpack_require__(24));
+__export(__webpack_require__(16));
+__export(__webpack_require__(59));
+__export(__webpack_require__(19));
+__export(__webpack_require__(70));
+__export(__webpack_require__(68));
+__export(__webpack_require__(62));
+__export(__webpack_require__(73));
+__export(__webpack_require__(40));
+__export(__webpack_require__(35));
+__export(__webpack_require__(36));
+__export(__webpack_require__(69));
+__export(__webpack_require__(37));
+__export(__webpack_require__(38));
+__export(__webpack_require__(32));
+__export(__webpack_require__(67));
+__export(__webpack_require__(60));
+__export(__webpack_require__(64));
+__export(__webpack_require__(66));
+__export(__webpack_require__(72));
+__export(__webpack_require__(39));
+__export(__webpack_require__(65));
+__export(__webpack_require__(33));
+__export(__webpack_require__(57));
+__export(__webpack_require__(58));
+__export(__webpack_require__(63));
+__export(__webpack_require__(25));
+__export(__webpack_require__(20));
 __export(__webpack_require__(6));
-__export(__webpack_require__(129));
-__export(__webpack_require__(131));
+__export(__webpack_require__(140));
+__export(__webpack_require__(142));
 var VCLModule = (function () {
     function VCLModule() {
     }
@@ -64205,41 +66063,7 @@ var VCLModule = (function () {
 }());
 VCLModule = __decorate([
     core_1.NgModule({
-        imports: [
-            wormhole_module_1.VCLWormholeModule,
-            icon_module_1.VCLIconModule,
-            icogram_module_1.VCLIcogramModule,
-            button_module_1.VCLButtonModule,
-            button_group_module_1.VCLButtonGroupModule,
-            layer_module_1.VCLLayerModule,
-            tether_module_1.VCLTetherModule,
-            link_module_1.VCLLinkModule,
-            input_module_1.VCLInputModule,
-            textarea_module_1.VCLTextareaModule,
-            flip_switch_module_1.VCLFlipSwitchModule,
-            tab_nav_module_1.VCLTabNavModule,
-            navigation_module_1.VCLNavigationModule,
-            toolbar_module_1.VCLToolbarModule,
-            popover_module_1.VCLPopoverModule,
-            progress_bar_module_1.VCLProgressBarModule,
-            radio_button_module_1.VCLRadioButtonModule,
-            radio_group_module_1.VCLRadioGroupModule,
-            checkbox_module_1.VCLCheckboxModule,
-            form_control_label_module_1.VCLFormControlLabelModule,
-            form_module_1.VCLFormModule,
-            metalist_module_1.VCLMetalistModule,
-            dropdown_module_1.VCLDropdownModule,
-            select_module_1.VCLSelectModule,
-            off_click_module_1.VCLOffClickModule,
-            month_picker_module_1.VCLMonthPickerModule,
-            date_picker_module_1.VCLDatePickerModule,
-            json_editor_module_1.VCLJsonEditorModule,
-            label_module_1.VCLLabelModule,
-            token_module_1.VCLTokenModule,
-            slider_module_1.VCLSliderModule,
-            jss_form_module_1.VCLJssFormModule,
-            input_control_group_module_1.VCLInputControlGroupModule
-        ],
+        imports: [],
         exports: [
             wormhole_module_1.VCLWormholeModule,
             icon_module_1.VCLIconModule,
@@ -64250,6 +66074,7 @@ VCLModule = __decorate([
             tether_module_1.VCLTetherModule,
             link_module_1.VCLLinkModule,
             input_module_1.VCLInputModule,
+            file_input_module_1.VCLFileInputModule,
             textarea_module_1.VCLTextareaModule,
             flip_switch_module_1.VCLFlipSwitchModule,
             tab_nav_module_1.VCLTabNavModule,
@@ -64273,16 +66098,17 @@ VCLModule = __decorate([
             token_module_1.VCLTokenModule,
             slider_module_1.VCLSliderModule,
             jss_form_module_1.VCLJssFormModule,
-            input_control_group_module_1.VCLInputControlGroupModule
-        ],
-        providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+            input_control_group_module_1.VCLInputControlGroupModule,
+            alert_module_1.VCLAlertModule,
+            busy_module_1.VCLBusyModule,
+            growl_module_1.VCLGrowlModule
+        ]
+    })
 ], VCLModule);
 exports.VCLModule = VCLModule;
 
 
-/***/ }
+/***/ })
 /******/ ]);
 });
 //# sourceMappingURL=ng-vcl.js.map

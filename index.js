@@ -5,15 +5,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 var core_1 = require("@angular/core");
 require("hammerjs");
 var input_module_1 = require("./components/input/input.module");
+var file_input_module_1 = require("./components/file-input/file-input.module");
 var textarea_module_1 = require("./components/textarea/textarea.module");
 var flip_switch_module_1 = require("./components/flip-switch/flip-switch.module");
 var icon_module_1 = require("./components/icon/icon.module");
@@ -46,8 +44,12 @@ var token_module_1 = require("./components/token/token.module");
 var slider_module_1 = require("./components/slider/slider.module");
 var jss_form_module_1 = require("./components/jss-form/jss-form.module");
 var input_control_group_module_1 = require("./components/input-control-group/input-control-group.module");
+var alert_module_1 = require("./components/alert/alert.module");
+var busy_module_1 = require("./components/busy/busy.module");
+var growl_module_1 = require("./components/growl/growl.module");
 __export(require("./core/index"));
 __export(require("./components/input/input.module"));
+__export(require("./components/file-input/file-input.module"));
 __export(require("./components/textarea/textarea.module"));
 __export(require("./components/icon/icon.module"));
 __export(require("./components/icogram/icogram.module"));
@@ -73,6 +75,9 @@ __export(require("./components/token/token.module"));
 __export(require("./components/slider/slider.module"));
 __export(require("./components/jss-form/jss-form.module"));
 __export(require("./components/input-control-group/input-control-group.module"));
+__export(require("./components/alert/alert.module"));
+__export(require("./components/busy/busy.module"));
+__export(require("./components/growl/growl.module"));
 __export(require("./directives/off-click/off-click.module"));
 __export(require("./directives/wormhole/wormhole.module"));
 __export(require("./l10n/l10n.module"));
@@ -85,41 +90,7 @@ var VCLModule = (function () {
 }());
 VCLModule = __decorate([
     core_1.NgModule({
-        imports: [
-            wormhole_module_1.VCLWormholeModule,
-            icon_module_1.VCLIconModule,
-            icogram_module_1.VCLIcogramModule,
-            button_module_1.VCLButtonModule,
-            button_group_module_1.VCLButtonGroupModule,
-            layer_module_1.VCLLayerModule,
-            tether_module_1.VCLTetherModule,
-            link_module_1.VCLLinkModule,
-            input_module_1.VCLInputModule,
-            textarea_module_1.VCLTextareaModule,
-            flip_switch_module_1.VCLFlipSwitchModule,
-            tab_nav_module_1.VCLTabNavModule,
-            navigation_module_1.VCLNavigationModule,
-            toolbar_module_1.VCLToolbarModule,
-            popover_module_1.VCLPopoverModule,
-            progress_bar_module_1.VCLProgressBarModule,
-            radio_button_module_1.VCLRadioButtonModule,
-            radio_group_module_1.VCLRadioGroupModule,
-            checkbox_module_1.VCLCheckboxModule,
-            form_control_label_module_1.VCLFormControlLabelModule,
-            form_module_1.VCLFormModule,
-            metalist_module_1.VCLMetalistModule,
-            dropdown_module_1.VCLDropdownModule,
-            select_module_1.VCLSelectModule,
-            off_click_module_1.VCLOffClickModule,
-            month_picker_module_1.VCLMonthPickerModule,
-            date_picker_module_1.VCLDatePickerModule,
-            json_editor_module_1.VCLJsonEditorModule,
-            label_module_1.VCLLabelModule,
-            token_module_1.VCLTokenModule,
-            slider_module_1.VCLSliderModule,
-            jss_form_module_1.VCLJssFormModule,
-            input_control_group_module_1.VCLInputControlGroupModule
-        ],
+        imports: [],
         exports: [
             wormhole_module_1.VCLWormholeModule,
             icon_module_1.VCLIconModule,
@@ -130,6 +101,7 @@ VCLModule = __decorate([
             tether_module_1.VCLTetherModule,
             link_module_1.VCLLinkModule,
             input_module_1.VCLInputModule,
+            file_input_module_1.VCLFileInputModule,
             textarea_module_1.VCLTextareaModule,
             flip_switch_module_1.VCLFlipSwitchModule,
             tab_nav_module_1.VCLTabNavModule,
@@ -153,10 +125,11 @@ VCLModule = __decorate([
             token_module_1.VCLTokenModule,
             slider_module_1.VCLSliderModule,
             jss_form_module_1.VCLJssFormModule,
-            input_control_group_module_1.VCLInputControlGroupModule
-        ],
-        providers: [],
-    }),
-    __metadata("design:paramtypes", [])
+            input_control_group_module_1.VCLInputControlGroupModule,
+            alert_module_1.VCLAlertModule,
+            busy_module_1.VCLBusyModule,
+            growl_module_1.VCLGrowlModule
+        ]
+    })
 ], VCLModule);
 exports.VCLModule = VCLModule;

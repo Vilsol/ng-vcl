@@ -105,7 +105,6 @@ ProgressBarComponent = __decorate([
             '[attr.role]': '"progressbar"',
         },
         changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], ProgressBarComponent);
 exports.ProgressBarComponent = ProgressBarComponent;

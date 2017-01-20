@@ -46,7 +46,9 @@ __decorate([
     __metadata("design:type", String)
 ], ButtonContentDirective.prototype, "state", void 0);
 ButtonContentDirective = __decorate([
-    core_1.Directive({ selector: '[vcl-button-content]' }),
+    core_1.Directive({
+        selector: '[vcl-button-content]'
+    }),
     __metadata("design:paramtypes", [core_1.ViewContainerRef, core_1.TemplateRef])
 ], ButtonContentDirective);
 exports.ButtonContentDirective = ButtonContentDirective;
@@ -115,7 +117,7 @@ var ButtonComponent = (function (_super) {
     }
     Object.defineProperty(ButtonComponent.prototype, "isDisabled", {
         get: function () {
-            return this.disabled ? true : null;
+            return this.disabled || this.busy ? true : null;
         },
         enumerable: true,
         configurable: true
@@ -136,7 +138,7 @@ var ButtonComponent = (function (_super) {
     });
     Object.defineProperty(ButtonComponent.prototype, "state", {
         get: function () {
-            return this.disabled ? 'disabled' : (this.busy ? 'busy' : 'enabled');
+            return this.busy ? 'busy' : (this.disabled ? 'disabled' : 'enabled');
         },
         enumerable: true,
         configurable: true
@@ -325,7 +327,7 @@ __decorate([
 ], ButtonComponent.prototype, "onClick", null);
 ButtonComponent = __decorate([
     core_1.Component({
-        selector: '[vcl-button]',
+        selector: 'button[vcl-button]',
         host: {
             '[class.vclButton]': 'true',
         },

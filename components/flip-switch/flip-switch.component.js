@@ -18,6 +18,7 @@ exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
 var FlipSwitchComponent = (function () {
     function FlipSwitchComponent() {
         var _this = this;
+        this.tabindex = 0;
         this.onLabel = 'On';
         this.offLabel = 'Off';
         this.value = false;
@@ -31,6 +32,14 @@ var FlipSwitchComponent = (function () {
         this.value = !this.value;
         this.change$.emit(this.value);
     };
+    FlipSwitchComponent.prototype.keydown = function (ev) {
+        switch (ev.code) {
+            case 'Space':
+                ev.preventDefault();
+                this.onClick();
+                break;
+        }
+    };
     FlipSwitchComponent.prototype.writeValue = function (value) {
         if (value !== this.value)
             this.value = value;
@@ -43,6 +52,10 @@ var FlipSwitchComponent = (function () {
     };
     return FlipSwitchComponent;
 }());
+__decorate([
+    core_1.HostBinding(),
+    __metadata("design:type", Object)
+], FlipSwitchComponent.prototype, "tabindex", void 0);
 __decorate([
     core_1.Input('onLabel'),
     __metadata("design:type", String)
@@ -59,12 +72,31 @@ __decorate([
     core_1.Output('change'),
     __metadata("design:type", Object)
 ], FlipSwitchComponent.prototype, "change$", void 0);
+__decorate([
+    core_1.HostListener('tap', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", []),
+    __metadata("design:returntype", void 0)
+], FlipSwitchComponent.prototype, "onClick", null);
+__decorate([
+    core_1.HostListener('keydown', ['$event']),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", void 0)
+], FlipSwitchComponent.prototype, "keydown", null);
 FlipSwitchComponent = __decorate([
     core_1.Component({
         selector: 'vcl-flip-switch',
         templateUrl: 'flip-switch.component.html',
         changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR]
+        providers: [exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR],
+        host: {
+            '[class.vclFlipSwitch]': 'true',
+            '[class.vclFlipSwitchPressed]': 'value',
+            '[attr.role]': '"button"',
+            '[attr.aria-pressed]': 'value',
+            '[attr.touch-action]': '"pan-y"'
+        }
     }),
     __metadata("design:paramtypes", [])
 ], FlipSwitchComponent);

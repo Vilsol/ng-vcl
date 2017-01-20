@@ -156,7 +156,6 @@ ButtonGroupComponent = __decorate([
         },
         template: "<ng-content></ng-content>",
         changeDetection: core_1.ChangeDetectionStrategy.OnPush,
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], ButtonGroupComponent);
 exports.ButtonGroupComponent = ButtonGroupComponent;

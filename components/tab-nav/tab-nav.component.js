@@ -170,7 +170,6 @@ TabNavComponent = __decorate([
     core_1.Component({
         selector: 'vcl-tab-nav',
         templateUrl: 'tab-nav.component.html'
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], TabNavComponent);
 exports.TabNavComponent = TabNavComponent;

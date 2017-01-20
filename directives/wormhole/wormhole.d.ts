@@ -1,43 +1,42 @@
-import { ComponentRef, EmbeddedViewRef, TemplateRef, ViewContainerRef, ComponentFactoryResolver, Injector } from '@angular/core';
+import { ComponentRef, ComponentFactory, EmbeddedViewRef, TemplateRef, ViewContainerRef, Injector } from '@angular/core';
 import { ComponentType } from './../../core/index';
 export declare abstract class Wormhole {
-    protected bridge: ConnectWormholeDirective;
-    readonly isConnected: boolean;
-    disconnect(): void;
-    connect(bridge: ConnectWormholeDirective): void;
-    abstract attach(): any;
-    abstract detach(): any;
+    readonly abstract isConnected: boolean;
+    abstract connect(viewContainerRef: ViewContainerRef): any;
+    abstract disconnect(): any;
 }
 export declare class TemplateWormhole extends Wormhole {
     templateRef: TemplateRef<any>;
+    viewContainerRef: ViewContainerRef;
     viewRef: EmbeddedViewRef<any>;
     constructor(templateRef: TemplateRef<any>);
-    attach(): void;
-    detach(): void;
+    readonly isConnected: boolean;
+    connect(viewContainerRef: ViewContainerRef): void;
+    disconnect(): void;
 }
 export declare class ComponentWormhole<T> extends Wormhole {
     private componentClass;
+    viewContainerRef: ViewContainerRef;
+    compFactory: ComponentFactory<T>;
     compRef: ComponentRef<T>;
     injector: Injector;
     data: any;
-    constructor(componentClass: ComponentType<T>, opts?: {
-        injector?: Injector;
-        data?: any;
-    });
-    attach(): void;
-    detach(): void;
+    constructor(componentClass: ComponentType<T>, initialData?: any);
+    readonly isConnected: boolean;
+    connect(viewContainerRef: ViewContainerRef): void;
+    disconnect(): void;
+    private initializeComponent();
+    private destroyComponent();
+    protected createInjector(): Injector;
     setData(data?: any): void;
 }
 export declare class ConnectWormholeDirective {
     viewContainerRef: ViewContainerRef;
-    componentFactoryResolver: ComponentFactoryResolver;
     private wormhole;
-    private connectedWormhole;
-    constructor(viewContainerRef: ViewContainerRef, componentFactoryResolver: ComponentFactoryResolver);
-    readonly isConnected: boolean;
-    indisposable: boolean;
+    constructor(viewContainerRef: ViewContainerRef);
+    readonly isAttached: boolean;
     connectWormhole: Wormhole;
-    connect(wormhole: Wormhole): void;
-    disconnect(): void;
+    attach(wormhole: Wormhole): void;
+    detach(): void;
     ngOnDestroy(): void;
 }

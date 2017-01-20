@@ -11,12 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var MetalistComponent = (function () {
     function MetalistComponent() {
-        this.select = new core_1.EventEmitter();
         this.minSelectableItems = 1;
         this.maxSelectableItems = 1;
-        this.maxItemsSelected = false;
+        this.select = new core_1.EventEmitter(); // returns all items
     }
     MetalistComponent.prototype.next = function () {
+        // console.log('next');
         var oldIndex = this.getMarkedItemIndex();
         if (oldIndex !== -1) {
             var newIndex = oldIndex + 1;
@@ -29,6 +29,7 @@ var MetalistComponent = (function () {
         }
     };
     MetalistComponent.prototype.prev = function () {
+        // console.log('prev');
         var oldIndex = this.getMarkedItemIndex();
         if (oldIndex !== -1) {
             var newIndex = oldIndex - 1;
@@ -43,13 +44,18 @@ var MetalistComponent = (function () {
             this.meta = [];
         }
     };
+    MetalistComponent.prototype.metaFromItem = function (item) {
+        var i = this.items.indexOf(item);
+        return this.meta[i];
+    };
     MetalistComponent.prototype.selectItem = function (item) {
+        // console.log('selectItem');
+        if (!this.items.includes(item))
+            return false;
         var itemIndex = this.items.indexOf(item);
-        if (itemIndex === -1) {
-            return;
-        }
         // maxSelectableItems === 1 -> deselect old item
         if (this.maxSelectableItems === 1) {
+            // TODO is metaItems even used?
             var metaItems = this.meta.filter(function (obj) {
                 return obj && obj.selected === true;
             });
@@ -57,12 +63,15 @@ var MetalistComponent = (function () {
                 metaItems[i].selected = false;
             }
         }
-        if (this.getSelectedItems().length < this.maxSelectableItems && this.meta[itemIndex]) {
-            this.meta[itemIndex].selected = true;
-        }
+        var metaItem = this.metaFromItem(item);
+        if (this.getSelectedItems().length < this.maxSelectableItems &&
+            metaItem)
+            metaItem.selected = true;
         this.select.emit(this.getSelectedItems());
+        return true;
     };
     MetalistComponent.prototype.deSelectItem = function (item) {
+        // console.log('deSelectItem');
         var itemIndex = this.items.indexOf(item);
         if (itemIndex === -1) {
             return;
@@ -73,19 +82,18 @@ var MetalistComponent = (function () {
         this.select.emit(this.getSelectedItems());
     };
     MetalistComponent.prototype.getSelectedItems = function () {
-        var metaItems = this.meta.filter(function (obj) {
-            return obj && obj.selected === true;
-        });
-        var result = [];
-        for (var i = 0; i < metaItems.length; i++) {
-            result.push(this.items[this.meta.indexOf(metaItems[i])]);
-        }
+        var _this = this;
+        // console.log('getSelectedItems');
+        var result = this.meta
+            .filter(function (obj) { return obj.selected; })
+            .map(function (metaItem) { return _this.items[_this.meta.indexOf(metaItem)]; });
         return result;
     };
     MetalistComponent.prototype.setSelectedItems = function () {
     };
     MetalistComponent.prototype.ngAfterContentInit = function () { };
     MetalistComponent.prototype.getMarkedItemIndex = function () {
+        // console.log('getMarkedItemIndex');
         var meta = this.getMarkedItemMeta();
         if (meta) {
             return this.meta.indexOf(meta);
@@ -93,11 +101,11 @@ var MetalistComponent = (function () {
         return -1;
     };
     MetalistComponent.prototype.getMarkedItemMeta = function () {
-        return this.meta.filter(function (obj) {
-            return obj && obj.marked === true;
-        })[0];
+        // console.log('getMarkedItemMeta');
+        return this.meta.filter(function (obj) { return obj.marked; })[0];
     };
     MetalistComponent.prototype.setMarkedIndex = function (index) {
+        // console.log('setMarkedIndex');
         // unset old item
         var oldItem = this.getMarkedItemMeta();
         if (oldItem) {
@@ -109,24 +117,24 @@ var MetalistComponent = (function () {
         }
     };
     MetalistComponent.prototype.setMarkedItem = function (item) {
+        // console.log('setMarkedItem');
         var markedIndex = this.items.indexOf(item);
         if (markedIndex !== -1) {
             this.setMarkedIndex(markedIndex);
         }
     };
     MetalistComponent.prototype.getMeta = function (item) {
+        // console.log('getMeta');
+        // console.dir(this.items);
         var key = this.items.indexOf(item);
         if (!this.meta[key]) {
             this.meta[key] = {};
         }
+        // console.dir(JSON.stringify(this.meta[key]));
         return this.meta[key];
     };
     return MetalistComponent;
 }());
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", Object)
-], MetalistComponent.prototype, "select", void 0);
 __decorate([
     core_1.Input(),
     __metadata("design:type", Array)
@@ -144,17 +152,17 @@ __decorate([
     __metadata("design:type", Number)
 ], MetalistComponent.prototype, "maxSelectableItems", void 0);
 __decorate([
-    core_1.Output(),
-    __metadata("design:type", Boolean)
-], MetalistComponent.prototype, "maxItemsSelected", void 0);
+    core_1.Output('select'),
+    __metadata("design:type", Object)
+], MetalistComponent.prototype, "select", void 0);
 __decorate([
     core_1.ContentChild(core_1.TemplateRef),
     __metadata("design:type", Object)
-], MetalistComponent.prototype, "template", void 0);
+], MetalistComponent.prototype, "template1", void 0);
 MetalistComponent = __decorate([
     core_1.Component({
         selector: 'vcl-metalist',
-        templateUrl: 'metalist.component.html'
+        templateUrl: 'metalist.component.html',
     }),
     __metadata("design:paramtypes", [])
 ], MetalistComponent);
