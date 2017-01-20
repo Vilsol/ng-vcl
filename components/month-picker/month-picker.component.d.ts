@@ -1,6 +1,7 @@
 import { EventEmitter } from '@angular/core';
 export declare class MonthPickerComponent {
     private static readonly TAG;
+    private static readonly MonthCount;
     private now;
     private months;
     private yearMeta;
@@ -14,21 +15,22 @@ export declare class MonthPickerComponent {
     nextYearBtnTap: EventEmitter<{}>;
     select: EventEmitter<string>;
     deselect: EventEmitter<string>;
-    colors: string[];
     tabindex: number;
     monthsPerRow: number;
-    useShortNames: boolean;
-    useAvailableMonths: boolean;
+    colors: string[];
+    locales: string | string[];
+    dateOptions: any;
     expandable: boolean;
     prevYearAvailable: boolean;
     nextYearAvailable: boolean;
-    minYear: number;
-    maxYear: number;
+    useAvailableMonths: boolean;
     closeBtnIcon: string;
     prevYearBtnIcon: string;
     nextYearBtnIcon: string;
     maxSelectableItems: number;
     minSelectableItems: number;
+    minYear: number;
+    maxYear: number;
     ngOnInit(): void;
     private setYearMeta(year);
     private createYearMeta(year);
@@ -56,6 +58,4 @@ export declare class MonthPickerComponent {
     private notifyDeselect(date);
     isCurrentMonth(year: number, month: number): boolean;
     getMonth(year: number, month: number): any;
-    static readonly monthNames: string[];
-    static readonly monthNamesShort: string[];
 }
