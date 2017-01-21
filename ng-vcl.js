@@ -6141,10 +6141,10 @@ var ButtonComponent = (function (_super) {
     ButtonComponent.prototype.onFocus = function (e) { this.focused = true; };
     ButtonComponent.prototype.onBlur = function (e) { this.focused = false; };
     ButtonComponent.prototype.onTap = function (e) {
-        this.handleGhostClick(InteractionType.Tap, event);
+        this.handleGhostClick(InteractionType.Tap, e);
     };
     ButtonComponent.prototype.onClick = function (e) {
-        this.handleGhostClick(InteractionType.Click, event);
+        this.handleGhostClick(InteractionType.Click, e);
     };
     ButtonComponent.prototype.handleGhostClick = function (type, e) {
         var ANTI_GHOST_DELAY = 2000;
