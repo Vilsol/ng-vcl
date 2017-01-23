@@ -38,6 +38,7 @@ export declare class SelectComponent implements ControlValueAccessor {
     collapsedIcon: string;
     displayValue: string | string[];
     changeEE: EventEmitter<string | string[]>;
+    focused: boolean;
     me: ElementRef;
     constructor(me: ElementRef, zone: NgZone);
     expand(): void;

@@ -7,9 +7,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
-var month_picker_component_1 = require("./month-picker.component");
-var button_module_1 = require("../button/button.module");
 var l10n_module_1 = require("../../l10n/l10n.module");
+var button_module_1 = require("../button/button.module");
+var month_picker_component_1 = require("./month-picker.component");
 var VCLMonthPickerModule = (function () {
     function VCLMonthPickerModule() {
     }

@@ -45,6 +45,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
+var utils_1 = require("../../utils");
 exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
     useExisting: core_1.forwardRef(function () { return DropdownComponent; }),
@@ -75,7 +76,7 @@ var DropdownComponent = (function () {
                 v = [v];
             this.items
                 .forEach(function (i) {
-                if (v.includes(i.value))
+                if (utils_1.includes(v, i.value))
                     i.selected = true;
                 else
                     i.selected = false;

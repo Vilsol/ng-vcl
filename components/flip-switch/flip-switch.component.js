@@ -95,7 +95,8 @@ FlipSwitchComponent = __decorate([
             '[class.vclFlipSwitchPressed]': 'value',
             '[attr.role]': '"button"',
             '[attr.aria-pressed]': 'value',
-            '[attr.touch-action]': '"pan-y"'
+            '[attr.touch-action]': '"pan-y"',
+            '[style.display]': '"block"' // TODO this should be done by vcl itself
         }
     }),
     __metadata("design:paramtypes", [])

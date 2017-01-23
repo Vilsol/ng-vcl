@@ -1,6 +1,8 @@
+import { NgZone } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any;
 export declare class SliderComponent implements ControlValueAccessor {
+    private zone;
     tabindex: number;
     value: number;
     min: number;
@@ -10,7 +12,7 @@ export declare class SliderComponent implements ControlValueAccessor {
     round: number;
     scaleNames: string[];
     scale: any;
-    constructor();
+    constructor(zone: NgZone);
     ngAfterContentInit(): void;
     percentLeftKnob: number;
     scalePoints: any[];

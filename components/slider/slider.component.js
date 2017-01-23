@@ -16,7 +16,8 @@ exports.CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR = {
     multi: true
 };
 var SliderComponent = (function () {
-    function SliderComponent() {
+    function SliderComponent(zone) {
+        this.zone = zone;
         this.tabindex = 0;
         this.value = 0;
         this.stepsOnly = false;
@@ -108,19 +109,19 @@ var SliderComponent = (function () {
             .find(function (p) { return p.percent == currentPointValue; });
         var i = this.scalePoints.indexOf(currentPoint);
         var nextPoint;
+        var nextI = direction == 'right' ? i + 1 : i - 1;
         if (direction == 'right') {
-            var nextI = i + 1;
             if (!this.scalePoints[nextI])
                 nextI = this.scalePoints.length - 1;
             nextPoint = this.scalePoints[nextI];
         }
         else {
-            var nextI = i - 1;
             if (nextI < 0)
                 nextI = 0;
             nextPoint = this.scalePoints[nextI];
         }
         this.value = this.percentToValue(nextPoint.percent);
+        this.calculatePercentLeftKnob();
         !!this.onChangeCallback && this.onChangeCallback(this.value);
     };
     SliderComponent.prototype.moveValue = function (direction) {
@@ -250,6 +251,6 @@ SliderComponent = __decorate([
         },
         changeDetection: core_1.ChangeDetectionStrategy.OnPush
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [core_1.NgZone])
 ], SliderComponent);
 exports.SliderComponent = SliderComponent;

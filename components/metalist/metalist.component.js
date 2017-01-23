@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
+var utils_1 = require("../../utils");
 var MetalistComponent = (function () {
     function MetalistComponent() {
         this.minSelectableItems = 1;
@@ -50,7 +51,7 @@ var MetalistComponent = (function () {
     };
     MetalistComponent.prototype.selectItem = function (item) {
         // console.log('selectItem');
-        if (!this.items.includes(item))
+        if (!utils_1.includes(this.items, item))
             return false;
         var itemIndex = this.items.indexOf(item);
         // maxSelectableItems === 1 -> deselect old item

@@ -45,6 +45,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
+var utils_1 = require("../../utils");
 /**
  * see
  * @link http://www.w3schools.com/tags/tag_option.asp
@@ -133,6 +134,7 @@ var SelectComponent = (function () {
         this.collapsedIcon = 'fa:chevron-down';
         this.displayValue = 'Select value';
         this.changeEE = new core_1.EventEmitter(); // string[] if multi-select
+        this.focused = false;
         this.dropdownTop = -1;
         this.dropDirection = 'bottom';
         this.zone = zone;
@@ -166,10 +168,11 @@ var SelectComponent = (function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, new Promise(function (res) { return setTimeout(res, 100); })];
+                    case 0:
+                        this.focused = true;
+                        return [4 /*yield*/, new Promise(function (res) { return setTimeout(res, 100); })];
                     case 1:
                         _a.sent();
-                        this.expanded = true;
                         this.dropdown.listenKeys = true;
                         return [2 /*return*/];
                 }
@@ -177,6 +180,7 @@ var SelectComponent = (function () {
         });
     };
     SelectComponent.prototype.onBlur = function (event) {
+        this.focused = false;
         this.expanded = false;
         this.dropdown.listenKeys = false;
     };
@@ -254,7 +258,7 @@ var SelectComponent = (function () {
         // displayValue for multiselect
         if (newValue.length) {
             this.displayValue = this.items
-                .filter(function (i) { return _this.value.includes(i.value); })
+                .filter(function (i) { return utils_1.includes(_this.value, i.value); })
                 .map(function (i) { return i.label; });
         }
     };

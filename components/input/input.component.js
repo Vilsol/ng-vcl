@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var BehaviorSubject_1 = require("rxjs/BehaviorSubject");
+var utils_1 = require("../../utils");
 // Invalid input type. Using one of these will throw an error
 var INPUT_INVALID_TYPES = [
     'button',
@@ -31,7 +32,7 @@ var InputComponent = (function () {
         this._valueSubject = new BehaviorSubject_1.BehaviorSubject(this.value);
         this.typedValueChange = this._valueSubject.asObservable();
         this.subs = [];
-        if (INPUT_INVALID_TYPES.includes(this.type))
+        if (utils_1.includes(INPUT_INVALID_TYPES, this.type))
             throw new Error('type not allowed for vcl-input: ' + this.type);
     }
     InputComponent.prototype.ngOnInit = function () {
