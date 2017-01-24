@@ -1,4 +1,3 @@
-/// <reference types="core-js" />
 import { EventEmitter, OnInit, ElementRef } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 export declare const CUSTOM_INPUT_CONTROL_VALUE_ACCESSOR: any;

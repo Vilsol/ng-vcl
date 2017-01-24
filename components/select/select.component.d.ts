@@ -1,4 +1,3 @@
-/// <reference types="core-js" />
 import { EventEmitter, QueryList, ElementRef, OnInit, NgZone } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 /**

@@ -1,3 +1,4 @@
+/// <reference types="tether" />
 import { Observable } from 'rxjs/Observable';
 import { ElementRef, EventEmitter } from '@angular/core';
 import * as Tether from 'tether';

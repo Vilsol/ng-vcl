@@ -1,4 +1,3 @@
-/// <reference types="core-js" />
 import { ApplicationRef, ComponentFactoryResolver, Injector, ComponentRef } from '@angular/core';
 import { ComponentType } from './../../core/index';
 export declare class WormholeService {
@@ -13,6 +12,6 @@ export declare class WormholeService {
         componentRef: ComponentRef<T>;
         dispose: () => void;
     };
-    getNode(node?: HTMLElement): Promise<HTMLElement>;
+    getNode(node?: HTMLElement): Promise<any>;
     getComponentRootNode(componentRef: ComponentRef<any>): HTMLElement;
 }
