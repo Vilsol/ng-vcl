@@ -25,7 +25,7 @@ export declare class CheckboxComponent implements OnInit, OnChanges, ControlValu
     readonly clsVclDisabled: boolean;
     readonly attrAriaDisabled: boolean;
     readonly attrChecked: boolean;
-    onKeyup(e: any): void;
+    onKeyup(ev: any): void;
     onClick(e: any): void;
     triggerChangeAction(e: any): void;
     focusMaintenance(checked: boolean): void;

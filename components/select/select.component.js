@@ -45,7 +45,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var core_1 = require("@angular/core");
 var forms_1 = require("@angular/forms");
-var utils_1 = require("../../utils");
 /**
  * see
  * @link http://www.w3schools.com/tags/tag_option.asp
@@ -258,7 +257,7 @@ var SelectComponent = (function () {
         // displayValue for multiselect
         if (newValue.length) {
             this.displayValue = this.items
-                .filter(function (i) { return utils_1.includes(_this.value, i.value); })
+                .filter(function (i) { return _this.value.includes(i.value); })
                 .map(function (i) { return i.label; });
         }
     };

@@ -75,9 +75,11 @@ var CheckboxComponent = (function () {
         enumerable: true,
         configurable: true
     });
-    CheckboxComponent.prototype.onKeyup = function (e) {
-        if (e.keyCode === 32) {
-            return this.triggerChangeAction(e);
+    CheckboxComponent.prototype.onKeyup = function (ev) {
+        switch (ev.code) {
+            case 'Space':
+                this.triggerChangeAction(ev);
+                break;
         }
     };
     CheckboxComponent.prototype.onClick = function (e) {
@@ -160,7 +162,7 @@ __decorate([
     __metadata("design:paramtypes", [])
 ], CheckboxComponent.prototype, "attrChecked", null);
 __decorate([
-    core_1.HostListener('keyup', ['$event']),
+    core_1.HostListener('keydown', ['$event']),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", void 0)

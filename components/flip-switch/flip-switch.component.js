@@ -38,6 +38,18 @@ var FlipSwitchComponent = (function () {
                 ev.preventDefault();
                 this.onClick();
                 break;
+            case 'ArrowLeft':
+                if (!this.value) {
+                    ev.preventDefault();
+                    this.onClick();
+                }
+                break;
+            case 'ArrowRight':
+                if (this.value) {
+                    ev.preventDefault();
+                    this.onClick();
+                }
+                break;
         }
     };
     FlipSwitchComponent.prototype.writeValue = function (value) {

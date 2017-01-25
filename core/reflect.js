@@ -1,5 +1,13 @@
 "use strict";
 var core_1 = require("@angular/core");
+function defineMetadata(key, value, target) {
+    Reflect.defineMetadata(key, value, target);
+}
+exports.defineMetadata = defineMetadata;
+function getMetadata(key, target) {
+    return Reflect.getMetadata(key, target);
+}
+exports.getMetadata = getMetadata;
 function setAnnotation(cls, key, value) {
     var annotation = getAnnotation(cls);
     // Change metadata
@@ -17,6 +25,7 @@ function getAnnotation(cls) {
     }
     return clsAnnotations[0];
 }
+exports.getAnnotation = getAnnotation;
 function setAnimations(cls, animations) {
     setAnnotation(cls, 'animations', animations);
 }
